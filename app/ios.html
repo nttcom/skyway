@@ -1,0 +1,280 @@
+<!--
+@license
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<!doctype html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Polymer Starter Kit" />
+  <title>SkyWay</title>
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+  <!-- Chrome for Android theme color -->
+  <meta name="theme-color" content="#5487FF">
+
+  <!-- Web Application Manifest -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Tile color for Win8 -->
+  <meta name="msapplication-TileColor" content="#5487FF">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="Polymer Starter Kit">
+  <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Polymer Starter Kit">
+  <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+
+  <!-- Tile icon for Win8 (144x144) -->
+  <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+
+  <!-- build:css styles/main.css -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild-->
+
+  <!-- build:js bower_components/webcomponentsjs/webcomponents-lite.min.js -->
+  <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+  <!-- endbuild -->
+
+  <!-- will be replaced with elements/elements.vulcanized.html -->
+  <link rel="import" href="elements/elements.html">
+  <!-- endreplace-->
+    <link rel="import" href="../paper-button.html">
+    
+    
+    
+    <style is="custom-style">
+        .horizontal-section {
+          min-width: 130px;
+        }
+
+        paper-button {
+          display: block;
+          margin-bottom: 24px;
+        }
+
+        paper-button.colorful {
+          color: #4285f4;
+        }
+        
+        paper-button.colorful-red {
+          background: #FC3931;
+          color: #fff;
+        }
+
+        paper-button[raised].colorful {
+          background: #4285f4;
+          color: #fff;
+        }
+
+        paper-button[toggles] {
+          transition: background-color 0.3s;
+        }
+
+        paper-button[toggles][active] {
+          background-color: rgba(0, 0, 0, 0.25);
+        }
+
+        paper-button[toggles][active].colorful {
+          background-color: rgba(66, 133, 244, 0.25);
+        }
+
+        paper-button[toggles][active][raised].colorful {
+          background-color: rgba(66, 133, 244, 0.75);
+        }
+
+        paper-button.blue {
+          color: var(--paper-light-blue-500);
+          --paper-button-flat-focus-color: var(--paper-light-blue-50);
+        }
+        paper-button.blue:hover {
+          background: var(--paper-light-blue-50);
+        }
+        paper-button.red {
+          color: var(--paper-red-500);
+          --paper-button-flat-focus-color: var(--paper-red-50);
+        }
+        paper-button.red:hover {
+          background: var(--paper-red-50);
+        }
+        paper-button.green {
+          color: var(--paper-green-500);
+          --paper-button-flat-focus-color: var(--paper-green-50);
+        }
+        paper-button.green:hover {
+          background: var(--paper-green-50);
+        }
+        paper-button.orange {
+          color: var(--paper-orange-500);
+          --paper-button-flat-focus-color: var(--paper-orange-50);
+        }
+        paper-button.orange:hover {
+          background: var(--paper-orange-50);
+        }
+
+        paper-button.hover:hover {
+          background: #eee;
+        }
+
+        paper-button.ripple::shadow paper-ripple {
+          color: var(--paper-pink-a200);
+        }
+
+        paper-button.ripple paper-ripple {
+          color: var(--paper-pink-a200);
+        }
+
+    </style>
+</head>
+
+<body unresolved class="fullbleed layout vertical">
+  <span id="browser-sync-binding"></span>
+  <template is="dom-bind" id="app">
+        
+      <paper-header-panel main>
+          
+        <!-- Main Toolbar -->
+        <paper-toolbar id="custom-toolbar">
+            <div id="toolbar-inner">
+                <div id="logo-div">
+                    <img id="logo" src="images/logo-full.png"></img>
+                </div>
+
+                <div id="button-div">
+                    <paper-button id="loginButton" raised class="colorful">Login</paper-button>
+                    <paper-button id="langButton">日本語</paper-button>
+                </div>
+            
+                <div id="tabBar-div">
+                    <paper-tabs flex alignBottom>
+
+                        <paper-tab>iOS</paper-tab>
+                        <paper-tab>Android</paper-tab>
+                        <paper-tab>JavaScript</paper-tab>
+                        <paper-tab>Docs</paper-tab>
+                        <paper-tab>Support</paper-tab>
+                        <paper-tab>Features</paper-tab>
+
+                    </paper-tabs>
+                </div>
+            </div>
+        </paper-toolbar>
+              
+        <div>
+            <paper-material id="content-div" elevation="2">
+                <div id="content-explanation-div">
+                    <h2 class="content-title">SkyWay for iOS.</h2>
+                    <h3 class="content-subtitle">Who would've thought it?</h2>
+                    
+                    <div class="content-highlight">
+                        <img class="content-highlight-icon" src="images/outline_star_white.png">
+                        <div class="content-highlight-text">You can send and receive video and audio from any compatible camera or microphone connected.</div>
+                    </div>
+                    <div class="content-highlight">
+                        <img class="content-highlight-icon" src="images/outline_star_white.png">
+                        <div class="content-highlight-text">This is a SkyWay Feature.</div>
+                    </div>
+                    <div class="content-highlight">
+                        <img class="content-highlight-icon" src="images/outline_star_white.png">
+                        <div class="content-highlight-text">This is a SkyWay Feature.</div>
+                    </div>
+                </div>
+                <div id="content-animation-div"></div>
+            </paper-material>
+              
+            <paper-material id="highlights-div" elevation="2">
+                <h2 class="material-header">A Simple and Flexible WebRTC Platform.</h2>
+                <div id="highlights-internal-div">
+                    <div id="highlight1" class="highlight">
+                        <img src="images/logo.png" class="highlight-icon"></img>
+                        <h3 class="highlight-title">Title</h3>
+                        <div class="highlight-text">This is some placeholder text. But it should describe a neat feature.</div>
+                    </div>
+                    <div id="highlight2" class="highlight">
+                        <img src="images/logo.png" class="highlight-icon"></img>
+                        <h3 class="highlight-title">Title</h3>
+                        <div class="highlight-text">This is some placeholder text. But it should describe a neat feature.</div>
+                    </div>
+                    <div id="highlight3" class="highlight">
+                        <img src="images/logo.png" class="highlight-icon"></img>
+                        <h3 class="highlight-title">Title</h3>
+                        <div class="highlight-text">This is some placeholder text. But it should describe a neat feature.</div>
+                    </div>
+                    <div id="highlight4" class="highlight">
+                        <img src="images/logo.png" class="highlight-icon"></img>
+                        <h3 class="highlight-title">Title</h3>
+                        <div class="highlight-text">This is some placeholder text. But it should describe a neat feature.</div>
+                    </div>
+                </div>
+            </paper-material>
+              
+            <div id="signup-div">
+                <h2 class="background-header">Like what you see? SkyWay is free to try.</h2>
+                <paper-button id="signupButton">Sign Up</paper-button>
+            </div>
+              
+            <paper-material id="news-div" elevation="1">
+                <h2 class="material-header">Our latest updates.</h2>
+                
+                <div id="news-headlines-div">
+                    <div class="news-headline">
+                        <div class="news-headline-date">16.5.2015</div>
+                        <div class="news-headline-content">This is a news headline. Recently the SkyWay team has achieved some pretty awesome stuff and we want to share it with you. Also, how about you check out our new website? Click around and see if anything interests you.</div>
+                    </div>
+                    <div class="news-headline">
+                        <div class="news-headline-date">27.3.2015</div>
+                        <div class="news-headline-content">This is a news headline. Recently the SkyWay team has achieved some pretty awesome stuff and we want to share it with you. Also, how about you check out our new website? Click around and see if anything interests you.</div>
+                    </div>
+                    <div class="news-headline">
+                        <div class="news-headline-date">14.2.2015</div>
+                        <div class="news-headline-content">This is a news headline. Recently the SkyWay team has achieved some pretty awesome stuff and we want to share it with you. Also, how about you check out our new website? Click around and see if anything interests you.</div>
+                    </div>
+                </div>
+            </paper-material>
+
+            <paper-material id="footer" elevation="1" >
+                
+
+            </paper-material>
+        </div>
+          
+       
+      </paper-header-panel>
+
+    <paper-toast id="caching-complete"
+                 duration="6000"
+                 text="Caching complete! This app will work offline.">
+    </paper-toast>
+
+    <platinum-sw-register auto-register
+                          clients-claim
+                          skip-waiting
+                          on-service-worker-installed="displayInstalledToast">
+      <platinum-sw-cache default-cache-strategy="networkFirst"
+                         precache-file="precache.json">
+      </platinum-sw-cache>
+    </platinum-sw-register>
+
+  </template>
+
+  <!-- build:js scripts/app.js -->
+  <script src="scripts/app.js"></script>
+  <!-- endbuild-->
+</body>
+
+</html>

@@ -1,0 +1,661 @@
+<!--
+@license
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<style is="custom-style">
+
+  /*
+   Polymer includes a shim for CSS Custom Properties that we can use for application theming.
+   Below, you'll find the default palette for the Polymer Starter Kit layout. Feel free to play
+   with changing the colors used or generate your own palette of colours at MaterialPalette.com.
+
+   See https://www.polymer-project.org/1.0/docs/devguide/styling.html#xscope-styling-details
+   for further information on custom CSS properties.
+   */
+
+  /* Application theme */
+
+    :root {
+    --dark-primary-color:       #1976D2;
+    --default-primary-color:    #2196F3;
+    --light-primary-color:      #BBDEFB;
+    --text-primary-color:       #FFFFFF;
+    --accent-color:             #536DFE;
+    --primary-background-color: #BBDEFB;
+    --primary-text-color:       #212121;
+    --secondary-text-color:     #727272;
+    --disabled-text-color:      #BDBDBD;
+    --divider-color:            #B6B6B6;
+
+
+    /* Components */
+
+    /* paper-drawer-panel */
+    --drawer-menu-color:           #ffffff;
+    --drawer-border-color:         1px solid #ccc;
+    --drawer-toolbar-border-color: 1px solid rgba(0, 0, 0, 0.22);
+
+    /* paper-menu */
+    --paper-menu-background-color: #fff;
+    --menu-link-color:             #111111;
+
+    /* paper-input */
+   --paper-input-container-color:       rgba(255, 255, 255, 0.64);
+   --paper-input-container-focus-color: rgba(255, 255, 255, 1);
+   --paper-input-container-input-color: #fff;
+        
+        background: #5588FE;
+  }
+        
+  * {
+      font-family: 'Open Sans', sans-serif;
+  }
+        
+  /* General styles */
+
+  #drawerToolbar {
+    color: var(--secondary-text-color);
+    background-color: var(--drawer-menu-color);
+    border-bottom: var(--drawer-toolbar-border-color);
+    height: 64px;
+  }
+
+  paper-material {
+    border-radius: 2px;
+    height: 100%;
+    padding: 16px 0 16px 0;
+    width: calc(98.66% - 16px);
+    margin: 16px auto;
+    background: white;
+  }
+        
+    paper-tabs, core-toolbar {
+/*        position: fixed;*/
+        margin: auto;
+      background-color: #fff;
+      color: #2196F3;
+/*      box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.2);*/
+        height: 72px;
+        font-size: 16px;
+    }
+    
+    core-toolbar paper-tabs {
+      box-shadow: none;
+    }
+    
+      paper-tab.iron-selected {
+        color: #2196F3;
+        
+      }
+    paper-tabs /deep/ #ink {
+        color: #2196F3;
+    }
+    paper-tabs /deep/ #bar {
+        color: #2196F3;
+    }
+        
+    .background-header {  
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        
+        color: #FFFFFF;
+        
+    }
+        
+    .material-header {  
+        text-align: center;
+        
+        color: #5f5f5f;
+    }
+    
+    #custom-toolbar {
+        
+        background-color: #fff;
+        padding-left: 0;
+        
+    }
+        
+    #toolbar-inner {
+        position:relative;
+        
+        margin-top: 0px;
+        padding: 0px;
+        
+        width: 100%;
+        height: inherit;
+    }
+        
+        
+/*
+    #topBar {
+        position:absolute;
+        
+        margin-top: 0px;
+        padding: 0px;
+        
+        width: auto;
+        height: 78px;
+
+        background-color: #fff;
+    }
+*/
+        
+    #logo-div {
+        float: left;
+        padding-left: 48px;
+        
+        width: 200px;
+        height: inherit;   
+        
+/*        background-color: red;*/
+    }
+        
+    #logo-div img {
+        margin-top: 11px;
+        height: 42px;
+    }
+        
+    #tabBar-div {
+        display: inline;
+        top: 0px;
+        
+        margin: 0 auto;
+        
+        width: 600px;
+        height: inherit;
+        
+
+        font-family: 'Open Sans', sans-serif;
+
+    }
+        
+    #tabBar-div paper-tabs {
+        
+        max-width: 600px;
+        height: inherit;
+        --paper-tabs-selection-bar-color: #5588FE;
+        align-bottom: TRUE;
+        font-size: 18px;
+/*                background-color: orange;  */
+    }
+        
+/*
+    #tabBar-div paper-tabsselectionBar.align-bottom {
+      top: 0;
+      bottom: auto;
+    }
+*/
+        
+    #button-div {
+        float: right;
+        
+        width: 240px;
+        height: inherit; 
+
+/*        background-color: lightgreen;*/
+    }
+        
+    #langButton {
+        float: right;
+        
+        right: 30px;
+        top: 11px;
+        
+        width: 80px;
+        height: 41px;
+        
+/*        padding-top: -10px;*/
+        
+        color: #5588FE;
+        
+        border: 5px solid #5588FE;
+        border-radius: 0.3em;
+    }
+        
+    #langButton ::content * {
+        margin-top: -7px;
+    }
+        
+    #loginButton {
+        float: right;
+        
+        right: 20px;
+        top: 11px;
+        
+        width: 80px;  
+    }
+        
+    #signupButton {
+        display: inline;
+        width: 120px;  
+    }
+        
+        
+        
+    #content-div {
+/*        position: relative;*/
+        min-width: 800px;
+        height: 600px;
+        background-color: #5500FE;
+        
+        border-radius: 5px;
+        z-index: -1;
+    }
+        
+    #highlights-div {
+        position: relative;
+        
+        width: 75%;
+        min-width: 884px;
+        height: 280px;
+        
+        border-radius: 5px;
+        font-family: 'Open Sans', sans-serif;
+    }
+        
+    #highlights-internal-div {
+        margin: auto;
+        
+        width: 884px;
+        height: 200px;
+/*                background-color: orange;*/
+    }
+        
+    .highlight {
+        position: relative;
+        float: left;
+        
+        margin-left: 20px;
+        margin-right: 20px;
+        
+        width: 180px;
+        height: 190px;
+        
+        border-radius: 5px;
+    }
+        
+    .highlight-icon {
+        position: relative;
+        left: 55px;
+        
+        top: 0px;
+        
+        height: 70px;
+        width: 70px;
+        
+        object-fit: scale-down;
+/*        background-color: orange;*/
+    }
+        
+    .highlight-title {
+        position: absolute;
+        
+        top: 70px;
+        
+        width: 100%;
+        margin: 0;
+        
+        text-align: center;
+        
+        height: 20px;
+    }
+        
+    .highlight-text {
+        position: absolute;
+        top: 90px;
+        
+        padding: 10px;
+        
+        height: 76px;
+        overflow: hidden;
+    }
+        
+/*
+    #highlight1 {
+        background-color: #F00;
+    }
+        
+    #highlight2 {
+        background-color: #FF0;
+    }
+        
+    #highlight3 {
+        background-color: #0F0;
+    }
+        
+    #highlight4 {
+        background-color: #0FF;
+    }
+*/
+        
+    #signup-div {
+        position: relative;
+        
+        width: auto;
+        height: 150px;
+        
+        border-radius: 5px;
+    }
+        
+    #news-div {
+        position: relative;
+        
+        width: 75%;
+        min-width: 860px;
+        height: 360px;
+        
+        border-radius: 5px;
+        font-family: 'Open Sans', sans-serif;
+    }
+        
+    #news-headlines-div {
+        position: relative;
+        
+        margin: 0 auto;
+        
+        max-width: 800px;
+        height: 262px;
+        
+/*        background-color: green;*/
+    }
+        
+    .news-headline {
+        
+        margin-bottom: 32px;
+        
+        width: 800px;
+        height: 66px;
+        
+/*        background-color: yellow;*/
+    }
+        
+    .news-headline-date {
+        float: left;
+/*        margin: 20px;*/
+        
+        margin-top: 4px;
+        
+        width: 120px;
+        height: 28px;
+        line-height: 28px;
+        
+        font-size: 18px;
+        text-align: center;
+        
+        color: #FFF;
+        background-color: #5588FE;
+        
+        border-radius: 6px;
+    }
+        
+    .news-headline-content {
+        float: right;
+/*        background-color: orange;*/
+        
+        width: 660px;
+        max-height: 66px;
+    }
+        
+        
+    #footer {
+        position: relative;
+        
+        width: 92%;
+        height: 200px;
+        
+        border-radius: 5px;
+        
+        background: #3f3f3f;
+    }
+        
+    
+/*
+    paper-tabs.transparent-teal {
+      background-color: transparent;
+      color: #00bcd4;
+      box-shadow: none;
+    }
+    
+    paper-tabs.transparent-teal::shadow #selectionBar {
+      background-color: #00bcd4;
+    }
+    
+    paper-tabs.transparent-teal paper-tab::shadow #ink {
+      color: #00bcd4;
+    }
+*/
+        
+  paper-menu iron-icon {
+    margin-right: 33px;
+    opacity: 0.54;
+  }
+
+  .paper-menu > .iron-selected {
+    color: var(--default-primary-color);
+  }
+
+  paper-menu a {
+    text-decoration: none;
+    color: var(--menu-link-color);
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    font-family: 'Roboto', 'Noto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    min-height: 48px;
+    padding: 0 16px;
+  }
+
+  #mainToolbar .middle {
+    margin-left: 48px;
+  }
+
+  #mainToolbar.has-shadow .middle {
+    font-size: 20px;
+    padding-bottom: 0;
+    margin-left: 48px;
+  }
+
+  /* Height of the scroll area */
+  .content {
+    height: 900px;
+  }
+
+  /* Breakpoints */
+
+  /* Small */
+  @media (max-width: 600px) {
+
+    paper-material {
+      --menu-container-display: none;
+      width: calc(97.33% - 32px);
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+
+    .paper-font-display1 {
+      font-size: 12px;
+    }
+
+    .app-name {
+      font-size: 26px;
+    }
+
+    #drawer .paper-toolbar {
+      margin-left: 16px;
+    }
+
+    #overlay {
+      min-width: 360px;
+    }
+
+    .bg {
+      background: white;
+    }
+
+  }
+
+  /* Tablet+ */
+  @media (min-width: 601px) {
+
+    paper-material {
+      width: calc(98% - 46px);
+      margin-bottom: 32px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    #drawer.paper-drawer-panel > [drawer] {
+      border-right: 1px solid rgba(0, 0, 0, 0.14);
+    }
+
+    iron-pages {
+      padding: 48px 62px;
+    }
+
+  }
+
+  /* Material Design Adaptive Breakpoints */
+  /*
+    Below you'll find CSS media queries based on the breakpoint guidance
+    published by the Material Design team. You can choose to use, customise
+    or remove these breakpoints based on your needs.
+
+    http://www.google.com/design/spec/layout/adaptive-ui.html#adaptive-ui-breakpoints
+   */
+
+  /* mobile-small */
+  @media all and (min-width: 0) and (max-width: 360px) and (orientation: portrait) { }
+  /* mobile-large */
+  @media all and (min-width: 361px) and (orientation: portrait) { }
+  /* mobile-small-landscape */
+  @media all and (min-width: 0) and (max-width: 480px) and (orientation: landscape) { }
+  /* mobile-large-landscape */
+  @media all and (min-width: 481px) and (orientation: landscape) { }
+  /* tablet-small-landscape */
+  @media all and (min-width: 600px) and (max-width: 960px) and (orientation: landscape) { }
+  /* tablet-large-landscape */
+  @media all and (min-width: 961px) and (orientation: landscape) { }
+  /* tablet-small */
+  @media all and (min-width: 600px) and (orientation: portrait) { }
+  /* tablet-large */
+  @media all and (min-width: 601px) and (max-width: 840px) and (orientation : portrait) { }
+  /* desktop-x-small-landscape */
+  @media all and (min-width: 0) and (max-width: 480px) and (orientation: landscape) { }
+  /* desktop-x-small */
+  @media all and (min-width: 0) and (max-width: 480px) and (max-aspect-ratio: 4/3) { }
+  /* desktop-small-landscape */
+  @media all and (min-width: 481px) and (max-width: 840px) and (orientation: landscape) { }
+  /* desktop-small */
+  @media all and (min-width: 481px) and (max-width: 840px) and (max-aspect-ratio: 4/3) { }
+  /* desktop-medium-landscape */
+  @media all and (min-width: 841px) and (max-width: 1280px) and (orientation: landscape) { }
+  /* desktop-medium */
+  @media all and (min-width: 841px) and (max-width: 1280px) and (max-aspect-ratio: 4/3) { }
+  /* desktop-large */
+  @media all and (min-width: 1281px) and (max-width: 1600px) { }
+  /* desktop-xlarge */
+  @media all and (min-width: 1601px) and (max-width: 1920px) { }
+      
+      
+      
+  /* iOS, Android, JavaScript page styles */
+      
+      
+    #content-explanation-div {
+        float: left;
+        
+        height: 600px;
+        width: 35%;
+        min-width: 350px;
+        background-color: royalblue;
+        z-index: -1;
+    }
+      
+    .content-title {
+        position: relative;
+        top: 30px;
+        
+        color: #FFF;
+        font-size: 42px;
+        text-align: center;
+    }
+      
+    .content-subtitle {
+        
+        position: relative;
+        top: 12px;
+        
+        margin-bottom: 46px;
+        
+        color: #FFF;
+        font-size: 22px;
+        text-align: center;
+    }
+      
+    .content-highlight {
+        margin: auto;
+        margin-top: 30px;
+        
+        width: 85%;
+        min-width: 250px;
+        height: 100px;
+        
+        
+/*        background-color: orange;*/
+    }
+      
+    .content-highlight-icon {
+        position: relative;
+        top: 20px;
+        
+        float:left;
+        
+        height: 60px;
+        width: 60x;
+        
+        object-fit: scale-down;
+    }
+      
+    .content-highlight-text {
+        position: relative;
+        top: 0px;
+        left: 10px;
+/*        float: left;*/
+        margin-left: 80px;
+        
+        min-width: 200px;
+        max-height: inherit;
+        
+        color: #BEDFFF;
+        overflow: hidden;
+    }
+      
+    #content-animation-div {
+        float: right;
+        
+        height: 600px;
+        width: 65%;
+        min-width: 450px;
+        background-color: lightskyblue;
+        z-index: -1;
+    }
+      
+      
+</style>
