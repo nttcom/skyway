@@ -54,92 +54,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <!-- will be replaced with elements/elements.vulcanized.html -->
   <link rel="import" href="elements/elements.html">
   <!-- endreplace-->
-    <link rel="import" href="../paper-button.html">
     
-    
-    
-    <style is="custom-style">
-        .horizontal-section {
-          min-width: 130px;
-        }
-
-        paper-button {
-          display: block;
-          margin-bottom: 24px;
-        }
-
-        paper-button.colorful {
-          color: #4285f4;
-        }
-        
-        paper-button.colorful-red {
-          background: #FC3931;
-          color: #fff;
-        }
-
-        paper-button[raised].colorful {
-          background: #4285f4;
-          color: #fff;
-        }
-
-        paper-button[toggles] {
-          transition: background-color 0.3s;
-        }
-
-        paper-button[toggles][active] {
-          background-color: rgba(0, 0, 0, 0.25);
-        }
-
-        paper-button[toggles][active].colorful {
-          background-color: rgba(66, 133, 244, 0.25);
-        }
-
-        paper-button[toggles][active][raised].colorful {
-          background-color: rgba(66, 133, 244, 0.75);
-        }
-
-        paper-button.blue {
-          color: var(--paper-light-blue-500);
-          --paper-button-flat-focus-color: var(--paper-light-blue-50);
-        }
-        paper-button.blue:hover {
-          background: var(--paper-light-blue-50);
-        }
-        paper-button.red {
-          color: var(--paper-red-500);
-          --paper-button-flat-focus-color: var(--paper-red-50);
-        }
-        paper-button.red:hover {
-          background: var(--paper-red-50);
-        }
-        paper-button.green {
-          color: var(--paper-green-500);
-          --paper-button-flat-focus-color: var(--paper-green-50);
-        }
-        paper-button.green:hover {
-          background: var(--paper-green-50);
-        }
-        paper-button.orange {
-          color: var(--paper-orange-500);
-          --paper-button-flat-focus-color: var(--paper-orange-50);
-        }
-        paper-button.orange:hover {
-          background: var(--paper-orange-50);
-        }
-
-        paper-button.hover:hover {
-          background: #eee;
-        }
-
-        paper-button.ripple::shadow paper-ripple {
-          color: var(--paper-pink-a200);
-        }
-
-        paper-button.ripple paper-ripple {
-          color: var(--paper-pink-a200);
-        }
-
-    </style>
 </head>
 
 <body unresolved class="fullbleed layout vertical">
@@ -152,7 +67,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         <paper-toolbar id="custom-toolbar">
             <div id="toolbar-inner">
                 <div id="logo-div">
-                    <img id="logo" src="images/logo-full.png"></img>
+                    <img id="logo" src="images/logo-full.png" onclick="location.href='/index.html';"></img>
                 </div>
 
                 <div id="button-div">
@@ -161,25 +76,25 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 </div>
             
                 <div id="tabBar-div">
-                    <paper-tabs flex alignBottom>
-
-                        <paper-tab>iOS</paper-tab>
-                        <paper-tab>Android</paper-tab>
-                        <paper-tab>JavaScript</paper-tab>
-                        <paper-tab>Docs</paper-tab>
+                    <paper-tabs flex alignBottom selected="1">
+                        <paper-tab onclick="location.href='/ios.html';">iOS</paper-tab>
+                        <paper-tab onclick="location.href='/android.html';">Android</paper-tab>
+                        <paper-tab onclick="location.href='/javascript.html';">JavaScript</paper-tab>
+                        <paper-tab onclick="location.href='/documentation.html';">Docs</paper-tab>
                         <paper-tab>Support</paper-tab>
                         <paper-tab>Features</paper-tab>
-
                     </paper-tabs>
                 </div>
             </div>
         </paper-toolbar>
+      
+        <paper-fab icon="favorite" id="share-button"></paper-fab>
               
         <div>
-            <paper-material id="content-div" elevation="2">
+            <div id="content-div" elevation="2">
                 <div id="content-explanation-div">
-                    <h2 class="content-title">SkyWay for iOS.</h2>
-                    <h3 class="content-subtitle">Who would've thought it?</h2>
+                    <h2 class="content-title-side">SkyWay for Android.</h2>
+                    <h3 class="content-subtitle-side">Clever tagline goes here.</h2>
                     
                     <div class="content-highlight">
                         <img class="content-highlight-icon" src="images/outline_star_white.png">
@@ -193,9 +108,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                         <img class="content-highlight-icon" src="images/outline_star_white.png">
                         <div class="content-highlight-text">This is a SkyWay Feature.</div>
                     </div>
+                    <paper-button id="documentationButton" raised class="white" onclick="location.href='/documentation.html';">Documentation</paper-button>
                 </div>
-                <div id="content-animation-div"></div>
-            </paper-material>
+                <div id="content-animation-div">
+                    <paper-button id="content-signupButton-side" raised class="white">Sign Up</paper-button>
+                </div>
+            </div>
               
             <paper-material id="highlights-div" elevation="2">
                 <h2 class="material-header">A Simple and Flexible WebRTC Platform.</h2>
@@ -222,10 +140,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                     </div>
                 </div>
             </paper-material>
-              
+
             <div id="signup-div">
-                <h2 class="background-header">Like what you see? SkyWay is free to try.</h2>
-                <paper-button id="signupButton">Sign Up</paper-button>
+                <h2 id="signup-header">Like what you see? SkyWay is free to try.</h2>
+                <paper-button id="signupButton" raised class="white">Sign Up</paper-button>
             </div>
               
             <paper-material id="news-div" elevation="1">
@@ -247,10 +165,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 </div>
             </paper-material>
 
-            <paper-material id="footer" elevation="1" >
+            <div id="footer">
                 
 
-            </paper-material>
+            </div>
         </div>
           
        

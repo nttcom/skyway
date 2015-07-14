@@ -50,12 +50,111 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
    --paper-input-container-focus-color: rgba(255, 255, 255, 1);
    --paper-input-container-input-color: #fff;
         
-        background: #5588FE;
+        background: #2548BE;
+/*        #5588FE*/
   }
         
   * {
       font-family: 'Open Sans', sans-serif;
   }
+    
+        /* Paper button styles */
+    
+        .horizontal-section {
+          min-width: 130px;
+        }
+
+        paper-button {
+          display: block;
+          margin-bottom: 24px;
+        }
+
+        paper-button.colorful {
+          color: #4285f4;
+        }
+        
+        paper-button.colorful-red {
+          background: #FC3931;
+          color: #fff;
+        }
+        
+        paper-button.white {
+          background: #fff;
+          color: #4285f4;
+        }
+
+        paper-button[raised].colorful {
+          background: #4285f4;
+          color: #fff;
+        }
+        
+        paper-button[raised].red {
+          background: #FC3931;
+          color: #fff;
+        }
+        
+        paper-button[raised].white {
+          background: #fff;
+          color: #4285f4;
+        }
+
+        paper-button[toggles] {
+          transition: background-color 0.3s;
+        }
+
+        paper-button[toggles][active] {
+          background-color: rgba(0, 0, 0, 0.25);
+        }
+
+        paper-button[toggles][active].colorful {
+          background-color: rgba(66, 133, 244, 0.25);
+        }
+
+        paper-button[toggles][active][raised].colorful {
+          background-color: rgba(66, 133, 244, 0.75);
+        }
+
+        paper-button.blue {
+          color: var(--paper-light-blue-500);
+          --paper-button-flat-focus-color: var(--paper-light-blue-50);
+        }
+        paper-button.blue:hover {
+          background: var(--paper-light-blue-50);
+        }
+        paper-button.red {
+          color: var(--paper-red-500);
+          --paper-button-flat-focus-color: var(--paper-red-50);
+        }
+        paper-button.red:hover {
+          background: var(--paper-red-50);
+        }
+        paper-button.green {
+          color: var(--paper-green-500);
+          --paper-button-flat-focus-color: var(--paper-green-50);
+        }
+        paper-button.green:hover {
+          background: var(--paper-green-50);
+        }
+        paper-button.orange {
+          color: var(--paper-orange-500);
+          --paper-button-flat-focus-color: var(--paper-orange-50);
+        }
+        paper-button.orange:hover {
+          background: var(--paper-orange-50);
+        }
+
+        paper-button.hover:hover {
+          background: #eee;
+        }
+
+        paper-button.ripple::shadow paper-ripple {
+          color: var(--paper-pink-a200);
+        }
+
+        paper-button.ripple paper-ripple {
+          color: var(--paper-pink-a200);
+        }    
+    
         
   /* General styles */
 
@@ -74,12 +173,24 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     margin: 16px auto;
     background: white;
   }
+            
+#share-button {
+    position: fixed;
+    
+    right: 5%;
+    bottom: 5%;
+    
+    z-index: 10;
+    
+    --paper-fab-background: var(--paper-red-500);
+     --paper-fab-keyboard-focus-background: var(--paper-red-900);
+}
         
     paper-tabs, core-toolbar {
 /*        position: fixed;*/
         margin: auto;
       background-color: #fff;
-      color: #2196F3;
+      color: #5285FF;
 /*      box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.2);*/
         height: 72px;
         font-size: 16px;
@@ -90,22 +201,15 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     }
     
       paper-tab.iron-selected {
-        color: #2196F3;
+        color: #5285FF;
         
       }
     paper-tabs /deep/ #ink {
-        color: #2196F3;
+        color: #5285FF;
+        opacity: 0.5;
     }
     paper-tabs /deep/ #bar {
-        color: #2196F3;
-    }
-        
-    .background-header {  
-        text-align: center;
-        font-family: 'Open Sans', sans-serif;
-        
-        color: #FFFFFF;
-        
+        color: #5285FF;
     }
         
     .material-header {  
@@ -157,10 +261,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     }
         
     #logo-div img {
+        position: relative;
         margin-top: 11px;
         height: 42px;
     }
-        
+    
     #tabBar-div {
         display: inline;
         top: 0px;
@@ -179,7 +284,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         
         max-width: 600px;
         height: inherit;
-        --paper-tabs-selection-bar-color: #5588FE;
+        --paper-tabs-selection-bar-color: #5285FF;
         align-bottom: TRUE;
         font-size: 18px;
 /*                background-color: orange;  */
@@ -205,53 +310,172 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         float: right;
         
         right: 30px;
-        top: 11px;
+        top: 10px;
         
-        width: 80px;
-        height: 41px;
+        width: 86px;
         
 /*        padding-top: -10px;*/
         
-        color: #5588FE;
+/*        color: #5588FE;*/
         
+/*
         border: 5px solid #5588FE;
         border-radius: 0.3em;
+*/
     }
         
+
+/*
     #langButton ::content * {
         margin-top: -7px;
     }
         
+*/
     #loginButton {
         float: right;
         
         right: 20px;
-        top: 11px;
+        top: 10px;
         
-        width: 80px;  
+        width: 86px;  
     }
         
     #signupButton {
-        display: inline;
+/*        display: inline;*/
+        margin: auto;
         width: 120px;  
     }
         
-        
-        
     #content-div {
-/*        position: relative;*/
         min-width: 800px;
-        height: 600px;
-        background-color: #5500FE;
+        height: 680px;
+        background-color: #5588FE;
         
-        border-radius: 5px;
+/*        border-radius: 5px;*/
         z-index: -1;
+    }
+        
+    .content-title {
+        position: relative;
+        top: 50px;
+        
+        margin: 0;
+        
+        color: #FFF;
+        font-size: 52px;
+        text-align: center;
+    }
+      
+    .content-subtitle {
+        position: relative;
+        top: 64px;
+        
+        margin: 0;
+        margin-bottom: 46px;
+        
+        color: #FFF;
+        opacity: 0.6;
+        font-size: 26px;
+        text-align: center;
+    }
+    
+    #content-animation {
+        position: absolute;
+        top: 190px;
+        
+        left: 0;
+        right: 0;
+        margin: auto;
+        
+        width: 1050px;
+        height: 380px;
+        
+/*        background-color: red;*/
+    }
+    
+    .animation-section {
+        float: left;
+        
+        width: 350px;
+        height: 380px;
+        
+/*        background-color: green;*/
+    }
+    
+    .animation-image-div {
+        
+        position: relative;
+
+        margin: auto;
+        
+        width: 350px;
+        height: 320px;
+        
+/*        background-color: blue;*/
+    }
+    
+    .animation-image {
+        
+        position: absolute;
+        top: 40px;
+        left:0;
+        right:0;
+        
+
+        margin: auto;
+        
+        width: 250px;
+        height: 250px;
+        object-fit: scale-down;
+        
+/*        background-color: blue;*/
+    }
+    
+    .animation-title {
+        position: relative;
+        top: 00px;
+        
+        margin: auto;
+        
+        color: #FFF;
+        opacity: 0.8;
+        font-size: 26px;
+        text-align: center;
+        
+/*        background-color: orange;*/
+    }
+    
+/*
+    #content-div-signup {
+        position: absolute;
+        top: 0px;
+        background: red;
+    }
+*/
+        
+    #content-signupButton {
+        position: absolute;
+        
+        top: 600px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        
+        width: 160px;
+    }
+            
+    #content-signupButton-side {
+        margin: auto;
+        width: 160px;
+        top: 592px;
     }
         
     #highlights-div {
         position: relative;
         
-        width: 75%;
+        margin-top: 40px;
+        
+        width: 70%;
         min-width: 884px;
         height: 280px;
         
@@ -337,18 +561,45 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     #signup-div {
         position: relative;
         
-        width: auto;
-        height: 150px;
+        width: 100%;
+        height: 200px;
         
         border-radius: 5px;
+    }
+        
+    #signup-header {
+        position: absolute;
+        
+        top: 30px;
+        left:0;
+        right:0;
+        margin:auto;
+        
+        text-align: center;
+        
+        font-family: 'Open Sans', sans-serif;
+        
+        color: #FFFFFF;
+    }
+            
+    #signupButton {
+        position: absolute;
+        
+        bottom: 50px;
+        left:0;
+        right:0;
+        margin:auto;
+        
+        display: inline;
+        width: 160px;
     }
         
     #news-div {
         position: relative;
         
-        width: 75%;
+        width: 70%;
         min-width: 860px;
-        height: 360px;
+        height: 440px;
         
         border-radius: 5px;
         font-family: 'Open Sans', sans-serif;
@@ -358,16 +609,22 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         position: relative;
         
         margin: 0 auto;
+        margin-top: 40px;
         
         max-width: 800px;
         height: 262px;
         
 /*        background-color: green;*/
     }
+    
+    #newsButton {
+        width: 160px;
+        margin: auto;
+    }
         
     .news-headline {
         
-        margin-bottom: 32px;
+        margin-bottom: 28px;
         
         width: 800px;
         height: 66px;
@@ -406,12 +663,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     #footer {
         position: relative;
         
-        width: 92%;
-        height: 200px;
+        width: 100%;
+        height: 240px;
         
-        border-radius: 5px;
+/*        border-radius: 5px;*/
         
-        background: #3f3f3f;
+        background: #222222;
     }
         
     
@@ -581,41 +838,45 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     #content-explanation-div {
         float: left;
         
-        height: 600px;
+        height: 680px;
         width: 35%;
         min-width: 350px;
         background-color: royalblue;
         z-index: -1;
     }
       
-    .content-title {
+    .content-title-side {
         position: relative;
-        top: 30px;
+        top: 50px;
+        
+        margin: 0px;
         
         color: #FFF;
-        font-size: 42px;
+        font-size: 48px;
         text-align: center;
     }
       
-    .content-subtitle {
+    .content-subtitle-side {
         
         position: relative;
-        top: 12px;
+        top: 56px;
         
-        margin-bottom: 46px;
+        margin: 0px;
+        margin-bottom: 120px;
         
         color: #FFF;
-        font-size: 22px;
+        opacity: 0.6;
+        font-size: 24px;
         text-align: center;
     }
       
     .content-highlight {
         margin: auto;
-        margin-top: 30px;
+        margin-top: 40px;
         
         width: 85%;
         min-width: 250px;
-        height: 100px;
+        height: 86px;
         
         
 /*        background-color: orange;*/
@@ -623,7 +884,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       
     .content-highlight-icon {
         position: relative;
-        top: 20px;
+        top: 13px;
         
         float:left;
         
@@ -647,15 +908,365 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         overflow: hidden;
     }
       
+    #documentationButton {
+        position: relative;
+        
+        top: 40px;
+        
+        width: 160px;
+        margin: auto;
+    }
+      
     #content-animation-div {
         float: right;
         
-        height: 600px;
+        height: 680px;
         width: 65%;
         min-width: 450px;
-        background-color: lightskyblue;
+        background-color: #5588FE;
         z-index: -1;
     }
+      
+      
+      
+      
+      
+      
+      
+      
+  /* Documenation Page styles */
+      
+      #documentation-topbar {
+          height: 300px;
+          
+          background-color: #5285FF;
+      }
+      
+      #documentation-title {
+          position: relative;
+          top: 60px;
+        
+          margin: 0px;
+          margin-left: 80px;
+
+          color: #FFF;
+          font-size: 42px;
+      }
+      
+      #documentation-subtitle {
+        
+          position: relative;
+          top: 76px;
+        
+          margin: 0px;
+          margin-left: 80px;
+        
+          color: #FFF;
+          opacity: 0.6;
+          font-size: 24px;
+      }
+      
+      #documentation-menu-div {
+          position: relative;
+          
+          top: 100px;
+          
+          width: 1020px;
+          height: 320px;
+          
+          margin: auto;
+          
+/*          background-color: red;*/
+      }
+      
+      .documentation-menu {
+          
+          width: 200px;
+          height: 300px;
+          float: left;
+          
+          margin-left: 40px;
+          margin-right: 40px;
+          
+          border-radius: 5px;
+      }
+      
+      .documentation-menu-inner {
+          background-color: #5285FF;
+          width: calc(100% - 10px);
+          height: calc(100% - 10px);
+          
+          
+          position: absolute;
+          top: 5px;
+          left: 5px;
+          
+          
+          border-radius: 5px;
+      }
+      
+      .documentation-menu-icon {
+          position: absolute;
+          height: 80px;
+          width: 80x;
+          
+          top: 16px;
+          
+          left: 0;
+          right: 0;
+          margin: auto;
+        
+          object-fit: scale-down;
+          
+      }
+      
+      .documentation-menu-title {
+          position: absolute;
+          top: 110px;
+        
+          margin: auto;
+          
+          width: 100%;
+          text-align: center;
+        
+          color: #FFF;
+          font-size: 24px;
+      }
+      
+      .documentation-menu-buttons {
+          position: absolute;
+          
+          bottom: 0px;
+          
+          width: 100%;
+          height: 172px;
+          
+/*          background-color: red;*/
+      }
+      
+      .documentation-menu-button {
+          
+          margin-top: 10px;
+          margin-bottom: 10px;
+          
+          margin-left: 10px;
+          margin-right: 10px;
+          
+          background: #fff;
+          color: #4285f4;
+      }
+      
+      
+      #documentation-lower {
+          
+          width: 100%;
+          height: 600px;
+          
+          background-color: #fff;
+      }
+      
+      #help-div {
+    
+          position: absolute;
+          
+          top: 640px;
+          left: 0;
+          right: 0;
+          margin: auto;
+          
+          width: 500px;
+/*          min-width: 800px;*/
+          height: 148px;
+          
+          background-color: #2548BE;
+          
+          border-radius: 5px;
+      }
+      
+      #help-div-header {
+          text-align: center;
+          color: #fff;
+      }
+      
+      #helpButton {
+          position: absolute;
+          
+          top: 100px;
+          
+          left: 0;
+          right: 0;
+          margin: auto;
+          
+          width: 160px;
+          
+      }
+      
+      
+      
+  /* Getting Started styles */
+      
+      #header-section {
+          height: 240px;
+          
+          background-color: #5285FF;
+      }
+      
+      #header-title {
+          position: relative;
+          top: 60px;
+        
+          margin: 0px;
+          margin-left: 80px;
+
+          color: #FFF;
+          font-size: 42px;
+      }
+      
+      #header-subtitle {
+        
+          position: relative;
+          top: 76px;
+        
+          margin: 0px;
+          margin-left: 80px;
+        
+          color: #FFF;
+          opacity: 0.6;
+          font-size: 24px;
+      }  
+      
+      #header-icon-div {
+          position: absolute;
+          
+          right: 60px;
+          top: 30px;
+          
+          width: 150px;
+          height: 150px;
+          
+          padding: 0;
+          
+          border-radius: 75px;
+      }
+      
+      #header-icon-inner {
+          position: absolute;
+          
+          top: 5px;
+          left: 5px;
+          
+          width: 140px;
+          height: 140px;
+          
+          border-radius: 70px;
+          
+          background-color: #5285FF;
+      }
+      
+      #header-icon-img {
+          position: absolute;
+          
+          top: 22px;
+
+          left: 0;
+          right: 0;
+          margin: auto;
+          
+          width: 86px;
+          height: 86px;
+          object-fit: scale-down;
+          
+/*          background-color: red;*/
+      }
+      
+      #main-section {
+          
+          width: 100%;
+          height: auto;
+          
+          background-color: #fff;
+      }
+      
+      #text-area {
+          position: relative;
+          
+          top: 40px;
+          
+          width: 70%;
+          height: auto;
+          
+          margin: auto;
+          
+          padding-bottom: 60px;
+          
+          font-size: 18px;
+          
+/*          background-color: red;*/
+      }
+      
+      #text-area h2 {
+          width: auto;
+          text-align: center;
+          
+          color: #5285FF;
+          font-size: 36px;
+      }
+      
+      #text-area h3 {
+          
+          margin-top: 40px;
+          
+          color: #5285FF;
+          font-size: 24px;
+      }
+      
+      .code-section {
+          
+          width: 90%;
+          height: auto;
+          
+          padding-top: 8px;
+          padding-bottom: 8px;
+          padding-left: 16px;
+          
+          margin-top: 16px;
+          margin-bottom: 16px;
+          
+          color: #fff;
+          background-color: #3f3f3f;
+          
+          border-radius: 5px;
+      }
+      
+      .code-section pre {
+          padding: 0;
+          margin: 0;
+          
+          font-family: 'Lucida Console', Monaco, monospace;
+          font-size: 13px;
+      }
+      
+      
+      
+      
+
+      
+      
+  /* API styles */
+      
+      #index-bar {
+          width: 250px;
+          height: 1200px;
+          
+          background-color: #2f2f2f;
+      }
+      
+      #details-panel {
+          width: 100%;
+          height: 1200px;
+          
+      }
+      
       
       
 </style>
