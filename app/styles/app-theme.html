@@ -51,12 +51,25 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
    --paper-input-container-input-color: #fff;
         
         background: #2548BE;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
 /*        #5588FE*/
   }
-        
-  * {
-      font-family: 'Open Sans', sans-serif;
-  }
+   
+    h1,h2,h3 {
+        font-weight: 400;
+    }
+    
+/*
+    h2 {
+        font-weight: 300;
+    }
+    
+    h3 {
+        font-weight: 300;
+    }
+*/
+    
     
         /* Paper button styles */
     
@@ -1107,6 +1120,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       
       #header-section {
           height: 240px;
+/*          position: fixed;*/
           
           background-color: #5285FF;
       }
@@ -1249,24 +1263,376 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       
       
       
+      
+      
+      
+      
+      
 
       
       
   /* API styles */
       
-      #index-bar {
-          width: 250px;
-          height: 1200px;
+      .body {
+          position: absolute;
+/*          height: 100%;*/
+      }
+
+      
+      #my-nav {
+/*          float: left;*/
+          position: fixed;
+          bottom: 0;
+          width: 25%;
+          height: 400px;
           
           background-color: #2f2f2f;
       }
       
-      #details-panel {
-          width: 100%;
-          height: 1200px;
+      #my-nav ul {
+          list-style-type: none;
+          padding-left: 20px;
+      }
+      
+      .nav li {
+          margin-top: 4px;
+      }
+      
+      .nav li a {
+/*          padding-left: 4px;*/
+          
+          width: auto;
+/*          background-color: rebeccapurple;*/
+          
+          text-decoration: none;
+          color: #fff;
+/*          padding-left: 7px;*/
+          margin: 3px;
+      }
+
+      .nav li a:hover{
+          color: #AA85FF;
+      }
+
+      .nav li.active a {
+          color: #5285FF;
+          
+          margin: 0px;
+          
+          border-style: solid;
+          border-width: 0px;
+          border-left-width: 3px;
+          border-color: rgba(82, 133, 255, 1);
           
       }
       
+      .nav li.active li {
+          
+          visibility:visible;
+          
+      }
+      
+/*
+      .nav-layer-3.active .nav-layer-4 {
+        visibility: visible;
+      }
+*/
+      
+      .nav-layer-1 {
+        /* Collapse */
+          padding-left: 4px;
+      }
+      
+      .nav-layer-2 {
+          padding-left: 16px;
+      }
+      
+      .nav-layer-3 {
+          padding-left: 28px;
+      }
+      
+      .nav-layer-4 {
+          padding-left: 40px;
+/*          visibility: collapse;*/
+      }
+      
+      #details-panel {
+/*          float: left;*/
+          
+          position: absolute;
+          left: 25%;
+          
+          width: 75%;
+          height: 100%;
+          
+          overflow: auto;
+          
+          background-color: #fff;
+          
+      }
+      
+      #details-panel-content {
+          
+          padding: 20px;
+          
+          height: 100%;
+/*          overflow: auto;*/
+          overflow-y:scroll;
+      }
+      
+      
+      .tag {
+          
+                    
+          position: relative;
+          
+          top: -3px;
+          
+          padding-left: 4px;
+          padding-right: 4px;
+          
+          margin-left: 6px;
+          
+          font-size: 12px;
+          
+          border-radius: 3px;
+          
+          color: #fff;
+          background-color: #000;
+      }
+      
+      .tag.type {
+          background-color: limegreen;
+      }
+      
+      .tag.constructor {
+          background-color: turquoise;
+      }
+      
+      .tag.class {
+          background-color: turquoise;
+      }
+      
+      .tag.utility {
+          background-color: turquoise;
+      }
+      
+      .tag.method {
+          background-color: orange;
+      }
+      
+      .tag.event {
+          background-color: dodgerblue;
+      }
+      
+      .tag.Error {
+          background-color: darkred;
+      }
+      
+      .tag.fatal {
+          background-color: lightslategrey;
+      }
+      
+      .tag.skyway {
+          background-color: #00af6a;
+      }
+      
+      .tag.beta_030 {
+          background-color: #f26050;
+      }
+      
+      
+      
+      .toplevel {
+          
+          margin-top: 10px;
+          margin-bottom: 30px;
+          margin-left: 10px;
+      
+          padding: 0px;
+          padding-left: 16px;
+          padding-bottom: 4px;
+          
+          border-style: solid;
+          border-width: 0px;
+          border-left-width: 4px;
+          border-color: #5285FF;
+          
+      }
+      
+      .name {
+          position: relative;
+      }     
+      
+      .toplevel > .name {
+
+          display: block;
+          
+          height: 48px;
+          line-height: 48px;
+          
+      }
+      
+      .toplevel > .name > a {
+          
+          margin-right: 6px;
+          
+          color: #5285FF;
+          font-size: 36px;
+          
+          text-decoration: none;
+          
+      }
+      
+      .toplevel > .description {
+          
+          margin-top: 8px;
+          
+      }
+      
+      .child {
+          
+          margin-top: 10px;
+          margin-left: 20px;
+          margin-right: 10px;
+          
+          padding-top: 4px;
+          padding-bottom: 6px;
+          padding-left: 10px;
+          
+          border-style: solid;
+          border-width: 0px;
+          border-left-width: 4px;
+          border-color: rgba(82, 133, 255, 0.5);
+          
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+          
+          background-color: rgba(82, 133, 255, 0.09);
+/*          background-color: rgba(170,170,170,0.20);*/
+      }
+      
+      .child > .name {
+          display: block;
+          
+/*          background-color: green;*/
+      }
+      
+      .child > .name > a {
+          
+          color: #5285FF;
+          font-size: 20px;
+          
+          text-decoration: none;
+          
+      }
+      
+      .child > .description {
+          margin-top: 4px;
+          margin-bottom: 0px;
+          
+          padding-right: 16px;
+      }
+      
+      .snippet {
+          
+          position: relative;
+          
+          top: -6px;
+          
+          margin-left: 10px;
+          
+          height: 20px;
+          line-height: 20px;
+          
+          padding: 4px;
+          padding-left: 8px;
+          padding-right: 8px;
+          
+          color: #bbb;
+          background-color: #4f4f4f;
+          
+          font-family: 'Lucida Console', Monaco, monospace;
+          font-size: 13px;
+          
+          border-radius: 4px;
+      }
+      
+      .snippet a {
+          
+          color: #fff;
+          font-family: 'Lucida Console', Monaco, monospace;
+          font-size: 13px;
+          
+          text-decoration: none;
+          font-weight:bold;
+      }
+      
+      .children .children .children .child {
+          position: relative;
+          height: 30px;
+          line-height: 30px;
+      }
+      
+      .children .children .children .child .name {
+          float: left;
+          
+      }
+      
+      .children .children .children .child .description {
+          float: left;
+          
+          margin: 0;
+          margin-left: 16px;
+
+      }
+      
+      .description a {
+          
+          text-decoration: none;
+          
+          font-family: 'Open Sans';
+          font-weight: 700;
+          
+          font-size: 15px;
+          color: #3f3faa;
+      }
+      
+      code {
+          
+          padding: 2px;
+          padding-left: 4px;
+          padding-right: 4px;
+          
+          border-radius: 3px;
+          
+          font-family: 'Lucida Console', Monaco, monospace;
+          font-size: 13px;
+          
+          color: #fff;
+          background-color: #7f7f7f;
+          
+      }
+/*
+      
+      #test-div {
+          
+          height: 2000px;
+          overflow-y:scroll; 
+          
+      }
+      
+      .test-section {
+          
+          margin: 20px;
+          
+          background-color: #cccccc;
+          height: 300px;   
+          
+          margin-bottom: 20px;
+          
+      }
+*/
       
       
 </style>
