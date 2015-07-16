@@ -50,6 +50,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <!-- build:js bower_components/webcomponentsjs/webcomponents-lite.min.js -->
   <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
   <!-- endbuild -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
   <!-- will be replaced with elements/elements.vulcanized.html -->
   <link rel="import" href="elements/elements.html">
@@ -63,23 +64,27 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         
       <paper-header-panel main>
           
-        <!-- Main Toolbar -->
+        <paper-fab icon="favorite" id="main-share-button" class="share-button"></paper-fab>
+        <paper-fab src="images/share-icons/facebook.png" id="share-button-fb" class="sub-share-button"></paper-fab>
+        <paper-fab src="images/share-icons/twitter.png" id="share-button-tw" class="sub-share-button"></paper-fab>
+        <paper-fab src="images/share-icons/github.png" id="share-button-git" class="sub-share-button"></paper-fab>
+
         <paper-toolbar id="custom-toolbar">
             <div id="toolbar-inner">
                 <div id="logo-div">
-                    <img id="logo" src="images/logo-full.png" onclick="location.href='/index.html';"></img>
+                    <img id="logo" src="images/logo-full.png" onclick="location.href='/index.html';"><paper-ripple initialOpacity="0.5"></paper-ripple></img>
                 </div>
 
                 <div id="button-div">
                     <paper-button id="loginButton" raised class="colorful">Login</paper-button>
-                    <paper-button id="langButton">日本語</paper-button>
+                    <paper-button id="langButton" class="red">English</paper-button>
                 </div>
             
                 <div id="tabBar-div">
-                    <paper-tabs flex alignBottom selected="0">
-                        <paper-tab onclick="location.href='/ios.html';">iOS</paper-tab>
-                        <paper-tab onclick="location.href='/android.html';">Android</paper-tab>
-                        <paper-tab onclick="location.href='/javascript.html';">JavaScript</paper-tab>
+                    <paper-tabs flex alignBottom>
+                        <paper-tab onclick="location.href='/info-ios.html';">iOS</paper-tab>
+                        <paper-tab onclick="location.href='/info-android.html';">Android</paper-tab>
+                        <paper-tab onclick="location.href='/info-js.html';">JavaScript</paper-tab>
                         <paper-tab onclick="location.href='/documentation.html';">Docs</paper-tab>
                         <paper-tab>Support</paper-tab>
                         <paper-tab>Features</paper-tab>
@@ -87,8 +92,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 </div>
             </div>
         </paper-toolbar>
-      
-        <paper-fab icon="favorite" id="share-button"></paper-fab>
               
         <div>
             <div id="content-div" elevation="2">
@@ -98,15 +101,21 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                     
                     <div class="content-highlight">
                         <img class="content-highlight-icon" src="images/outline_star_white.png">
-                        <div class="content-highlight-text">You can send and receive video and audio from any compatible camera or microphone connected.</div>
+                        <div class="content-highlight-text-container">
+                            <div class="content-highlight-text">You can send and receive video and audio from any compatible camera or microphone connected.</div>
+                        </div>
                     </div>
                     <div class="content-highlight">
                         <img class="content-highlight-icon" src="images/outline_star_white.png">
-                        <div class="content-highlight-text">This is a SkyWay Feature.</div>
+                        <div class="content-highlight-text-container">
+                            <div class="content-highlight-text">This is a SkyWay Feature.</div>
+                        </div>
                     </div>
                     <div class="content-highlight">
                         <img class="content-highlight-icon" src="images/outline_star_white.png">
-                        <div class="content-highlight-text">This is a SkyWay Feature.</div>
+                        <div class="content-highlight-text-container">
+                            <div class="content-highlight-text">This is a SkyWay Feature.</div>
+                        </div>
                     </div>
                     <paper-button id="documentationButton" raised class="white" onclick="location.href='/documentation.html';">Documentation</paper-button>
                 </div>

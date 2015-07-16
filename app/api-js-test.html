@@ -50,7 +50,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <!-- build:js bower_components/webcomponentsjs/webcomponents-lite.min.js -->
   <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
   <!-- endbuild -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
   <!-- will be replaced with elements/elements.vulcanized.html -->
   <link rel="import" href="elements/elements.html">
@@ -91,27 +90,38 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         
       <paper-header-panel main >
           
-        <paper-fab icon="favorite" id="main-share-button" class="share-button"></paper-fab>
-        <paper-fab src="images/share-icons/facebook.png" id="share-button-fb" class="sub-share-button"></paper-fab>
-        <paper-fab src="images/share-icons/twitter.png" id="share-button-tw" class="sub-share-button"></paper-fab>
-        <paper-fab src="images/share-icons/github.png" id="share-button-git" class="sub-share-button"></paper-fab>
+<!--
+        <paper-toolbar id="mainToolbar">
+            
+          <paper-icon-button id="paperToggle" icon="menu" paper-drawer-toggle></paper-icon-button>
+          <span class="flex"></span>
 
+          <paper-icon-button icon="refresh"></paper-icon-button>
+          <paper-icon-button icon="search"></paper-icon-button>
+
+          <div class="middle paper-font-display2 app-name">Skyway</div>
+
+          <div class="bottom title">This, is a test.</div>
+            
+        </paper-toolbar>
+-->
+        
         <paper-toolbar id="custom-toolbar">
             <div id="toolbar-inner">
                 <div id="logo-div">
-                    <img id="logo" src="images/logo-full.png" onclick="location.href='/index.html';"><paper-ripple initialOpacity="0.5"></paper-ripple></img>
+                    <img id="logo" src="images/logo-full.png" onclick="location.href='/index.html';"></img>
                 </div>
 
                 <div id="button-div">
                     <paper-button id="loginButton" raised class="colorful">Login</paper-button>
-                    <paper-button id="langButton" class="red">English</paper-button>
+                    <paper-button id="langButton">日本語</paper-button>
                 </div>
             
                 <div id="tabBar-div">
-                    <paper-tabs flex alignBottom>
-                        <paper-tab onclick="location.href='/info-ios.html';">iOS</paper-tab>
-                        <paper-tab onclick="location.href='/info-android.html';">Android</paper-tab>
-                        <paper-tab onclick="location.href='/info-js.html';">JavaScript</paper-tab>
+                    <paper-tabs flex alignBottom selected="3">
+                        <paper-tab onclick="location.href='/ios.html';">iOS</paper-tab>
+                        <paper-tab onclick="location.href='/android.html';">Android</paper-tab>
+                        <paper-tab onclick="location.href='/javascript.html';">JavaScript</paper-tab>
                         <paper-tab onclick="location.href='/documentation.html';">Docs</paper-tab>
                         <paper-tab>Support</paper-tab>
                         <paper-tab>Features</paper-tab>
@@ -119,6 +129,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 </div>
             </div>
         </paper-toolbar>
+      
+        <paper-fab icon="favorite" id="share-button"></paper-fab>
       
         <div id="header-section">
             <h1 id="header-title">JavaScript API.</h1>
@@ -133,7 +145,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       
       <div id="main-section">
           
-          
+          <div id="sticky-anchor"></div>
           <div id="my-nav">
               <ul class="nav nav-list">
 <!--
@@ -414,7 +426,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script language="JavaScript" type="text/javascript" src="scripts/api-scroll.js"></script>
+    <script type="text/javascript" src="scripts/api-scroll.js"></script>
   <!-- endbuild-->
 </body>
 

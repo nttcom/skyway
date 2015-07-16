@@ -45,6 +45,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <!-- build:css styles/main.css -->
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/jquery.ferro.ferroMenu.css">
+  <link rel="stylesheet" href="styles/font-awesome.css">
   <!-- endbuild-->
 
   <!-- build:js bower_components/webcomponentsjs/webcomponents-lite.min.js -->
@@ -54,6 +56,30 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <!-- will be replaced with elements/elements.vulcanized.html -->
   <link rel="import" href="elements/elements.html">
   <!-- endreplace-->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    
+<!--
+    <script type="text/javascript">
+                $(document).ready(function() {
+                    $('#menu_icon').WCircleMenu({
+                        width: '50px',
+                        height: '50px',
+                        angle_start : -Math.PI/2,
+                        delay: 50,
+                        distance: 150,
+                        angle_interval: Math.PI/6,
+                        easingFuncShow:"easeOutBack",
+                        easingFuncHide:"easeInBack",
+                        step:15,
+                        openCallback:false,
+                        closeCallback:false,
+                        itemRotation:360,
+                        iconRotation:180,
+                    });
+                });
+            </script>
+-->
+    
     
 </head>
 
@@ -91,6 +117,47 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <paper-header-panel main >
           
 <!--
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#main-share-button").click(function(){
+            $(".sub-share-button").addClass('animating');
+            $(".sub-share-button").fadeToggle();
+            
+            console.log('Hoi!');
+        });
+    });
+</script>
+-->
+                
+                
+<!--
+                <div id="menu_icon" class="">
+                    <paper-fab icon="favorite" class="wcircle-icon"></paper-fab>
+                    <div class="wcircle-menu" style="display:none;">
+                        <paper-material class="wcircle-menu-item share-icon" elevation="2">
+                            <img src="images/outline_star_white.png">
+                        </paper-material>
+                        <paper-material class="wcircle-menu-item share-icon" elevation="2">
+                            <img src="images/outline_star_white.png">
+                        </paper-material>
+                        <paper-material class="wcircle-menu-item share-icon" elevation="2">
+                            <img src="images/outline_star_white.png">
+                        </paper-material>
+                        
+                        <div class="wcircle-menu-item">A</div>
+                        <div class="wcircle-menu-item">B</div>
+                        <div class="wcircle-menu-item">C</div>
+                        <div class="wcircle-menu-item">D</div>
+                    </div>
+                </div>
+-->
+          
+          
+          
+          
+          
+          
+<!--
         <paper-toolbar id="mainToolbar">
             
           <paper-icon-button id="paperToggle" icon="menu" paper-drawer-toggle></paper-icon-button>
@@ -105,7 +172,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             
         </paper-toolbar>
 -->
-        
+          
+        <paper-fab icon="favorite" id="main-share-button" class="share-button"></paper-fab>
+        <paper-fab src="images/share-icons/facebook.png" id="share-button-fb" class="sub-share-button"></paper-fab>
+        <paper-fab src="images/share-icons/twitter.png" id="share-button-tw" class="sub-share-button"></paper-fab>
+        <paper-fab src="images/share-icons/github.png" id="share-button-git" class="sub-share-button"></paper-fab>
+
         <paper-toolbar id="custom-toolbar">
             <div id="toolbar-inner">
                 <div id="logo-div">
@@ -119,9 +191,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             
                 <div id="tabBar-div">
                     <paper-tabs flex alignBottom>
-                        <paper-tab onclick="location.href='/ios.html';">iOS</paper-tab>
-                        <paper-tab onclick="location.href='/android.html';">Android</paper-tab>
-                        <paper-tab onclick="location.href='/javascript.html';">JavaScript</paper-tab>
+                        <paper-tab onclick="location.href='/info-ios.html';">iOS</paper-tab>
+                        <paper-tab onclick="location.href='/info-android.html';">Android</paper-tab>
+                        <paper-tab onclick="location.href='/info-js.html';">JavaScript</paper-tab>
                         <paper-tab onclick="location.href='/documentation.html';">Docs</paper-tab>
                         <paper-tab>Support</paper-tab>
                         <paper-tab>Features</paper-tab>
@@ -130,25 +202,23 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             </div>
         </paper-toolbar>
       
-        <paper-fab icon="favorite" id="share-button"></paper-fab>
-      
         <div id="content-div">
             <h1 class="content-title">Your next app. Done right.</h1>
             <h2 class="content-subtitle">Simple WebRTC for Web, iOS and Android.</h2>
             <div id="content-animation">
-                <div class="animation-section" id="animation-web" onclick="location.href='/javascript.html';">
+                <div class="animation-section" id="animation-web" onclick="location.href='/info-js.html';">
                     <div class="animation-image-div">
                         <img src="images/devices/macbook.png" class="animation-image">
                     </div>
                     <h3 class="animation-title">Web</h3>
                 </div>
-                <div class="animation-section" id="animation-android" onclick="location.href='/android.html';">
+                <div class="animation-section" id="animation-android" onclick="location.href='/info-android.html';">
                     <div class="animation-image-div">
                         <img src="images/devices/nexus.png" class="animation-image">
                     </div>
                     <h3 class="animation-title">Android</h3>
                 </div>
-                <div class="animation-section" id="animation-ios" onclick="location.href='/ios.html';">
+                <div class="animation-section" id="animation-ios" onclick="location.href='/info-ios.html';">
                     <div class="animation-image-div">
                         <img src="images/devices/iphone.png" class="animation-image">
                     </div>
@@ -186,6 +256,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               
             <div id="signup-div">
                 <h2 id="signup-header">Like what you see? SkyWay is free to try.</h2>
+                <img src="images/divider_blue.png">
                 <paper-button id="signupButton" raised class="white">Sign Up</paper-button>
             </div>
               
@@ -194,22 +265,38 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 
                 <div id="news-headlines-div">
                     <div class="news-headline">
-                        <div class="news-headline-date">16.5.2015</div>
-                        <div class="news-headline-content">This is a news headline. Recently the SkyWay team has achieved some pretty awesome stuff and we want to share it with you. Also, how about you check out our new website? Click around and see if anything interests you.</div>
+                        <div class="news-headline-date">2015.07.15</div>
+                        <div class="news-headline-content">現在、開発者登録、TURNサーバ利用申し込み、管理機能の一部が利用できない状態となっています。<br>
+                            現在復旧作業中です。ご迷惑をお掛けし申し訳ありません。</div>
                     </div>
                     <div class="news-headline">
-                        <div class="news-headline-date">27.3.2015</div>
-                        <div class="news-headline-content">This is a news headline. Recently the SkyWay team has achieved some pretty awesome stuff and we want to share it with you. Also, how about you check out our new website? Click around and see if anything interests you.</div>
+                        <div class="news-headline-date">2015.06.05</div>
+                        <div class="news-headline-content">SkyWay iOS/Android SDKを提供開始しました。<br>
+                            詳しくはニュースリリースをご覧ください。<br>
+                            利用法についてはドキュメントをご覧ください。</div>
                     </div>
                     <div class="news-headline">
-                        <div class="news-headline-date">14.2.2015</div>
-                        <div class="news-headline-content">This is a news headline. Recently the SkyWay team has achieved some pretty awesome stuff and we want to share it with you. Also, how about you check out our new website? Click around and see if anything interests you.</div>
+                        <div class="news-headline-date">2015.01.27</div>
+                        <div class="news-headline-content">TURNサーバの無料トライアルを開始しました。<br>
+                            TURNサーバの利用を希望される方はこちらからお申込み下さい。</div>
+                    </div>
+                    <div class="news-headline">
+                        <div class="news-headline-date">2014.10.06</div>
+                        <div class="news-headline-content">APIキーの管理ができるダッシュボード機能をリリースしました。<br>
+                            JavaScriptライブラリを更新しました。<br>
+                            最新のライブラリは https://skyway.io/dist/0.3/peer.min.js からダウンロード可能です。</div>
                     </div>
                     <paper-button id="newsButton" raised class="colorful">ALl News</paper-button>
                 </div>
             </paper-material>
 
+<!--  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+<!--  <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>-->
+
+            
+
             <div id="footer">
+                
                 
 
             </div>
@@ -239,9 +326,25 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   </template>
 
-  <!-- build:js scripts/app.js -->
+<!--   build:js scripts/app.js -->
+<!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
   <script src="scripts/app.js"></script>
+
+
+
+
   <!-- endbuild-->
+
+
+
+
+<!--
+                <script type="text/javascript">
+                    $(document).ready(function() {
+                        $("#nav-test").ferroMenu();
+                    });
+                </script>
+-->
 </body>
 
 </html>

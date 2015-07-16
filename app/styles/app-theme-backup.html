@@ -53,7 +53,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         background: #2548BE;
         font-family: 'Open Sans', sans-serif;
         font-weight: 300;
-/*        #5285FF*/
+/*        #5588FE*/
   }
    
     h1,h2,h3 {
@@ -187,7 +187,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     background: white;
   }
             
-#main-share-button {
+#share-button {
     position: fixed;
     
     right: 5%;
@@ -197,50 +197,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     
     --paper-fab-background: var(--paper-red-500);
      --paper-fab-keyboard-focus-background: var(--paper-red-900);
-}
-        
-.sub-share-button {
-    position: fixed;
-    
-    width: 50px;
-    height: 50px;
-    
-    z-index: 10;
-    
-    display:none;
-}          
-        
-#share-button-fb {
-    right: calc(5% + 94px);
-    bottom: calc(5% + 3px);
-    
-    --iron-icon-height: 40px;
-    --iron-icon-width: 40px;
-    
-    --paper-fab-background: #4E5FAD;
-/*     --paper-fab-keyboard-focus-background: var(--paper-red-900);*/
-}
-        
-#share-button-tw {    
-    right: calc(5% + 68px);
-    bottom: calc(5% + 68px);
-    
-    --iron-icon-height: 30px;
-    --iron-icon-width: 30px;
-    
-    --paper-fab-background: #55ACEE;
-/*     --paper-fab-keyboard-focus-background: var(--paper-red-900);*/
-}
-    
-#share-button-git {
-    right: calc(5% + 3px);
-    bottom: calc(5% + 94px);
-    
-    --iron-icon-height: 36px;
-    --iron-icon-width: 36px;
-    
-    --paper-fab-background: #3f3f3f;;
-/*     --paper-fab-keyboard-focus-background: var(--paper-red-900);*/
 }
         
     paper-tabs, core-toolbar {
@@ -270,15 +226,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     }
         
     .material-header {  
-        text-align: center;
-        
-        color: #5f5f5f;
-    }
-    
-    .material-subheader {  
-        
-        margin-bottom: 28px;
-        
         text-align: center;
         
         color: #5f5f5f;
@@ -382,10 +329,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         
 /*        padding-top: -10px;*/
         
-/*        color: #5285FF;*/
+/*        color: #5588FE;*/
         
 /*
-        border: 5px solid #5285FF;
+        border: 5px solid #5588FE;
         border-radius: 0.3em;
 */
     }
@@ -415,7 +362,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     #content-div {
         min-width: 800px;
         height: 680px;
-        background-color: #5285FF;
+        background-color: #5588FE;
         
 /*        border-radius: 5px;*/
         z-index: -1;
@@ -665,7 +612,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         
         width: 70%;
         min-width: 860px;
-        height: 560px;
+        height: 440px;
         
         border-radius: 5px;
         font-family: 'Open Sans', sans-serif;
@@ -684,23 +631,16 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     }
     
     #newsButton {
-        position: relative;
-        
         width: 160px;
-        
-        left: 0;
-        right: 0;
-        
         margin: auto;
-        margin-top: 34px;
     }
         
     .news-headline {
         
-        margin-bottom: 32px;
+        margin-bottom: 28px;
         
         width: 800px;
-        height: 70px;
+        height: 66px;
         
 /*        background-color: yellow;*/
     }
@@ -719,7 +659,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         text-align: center;
         
         color: #FFF;
-        background-color: #5285FF;
+        background-color: #5588FE;
         
         border-radius: 6px;
     }
@@ -729,7 +669,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 /*        background-color: orange;*/
         
         width: 660px;
-        height: auto;
         max-height: 66px;
     }
         
@@ -914,7 +853,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         
         height: 680px;
         width: 35%;
-        min-width: 400px;
+        min-width: 350px;
         background-color: royalblue;
         z-index: -1;
     }
@@ -936,7 +875,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         top: 56px;
         
         margin: 0px;
-        margin-bottom: 80px;
+        margin-bottom: 120px;
         
         color: #FFF;
         opacity: 0.6;
@@ -945,63 +884,47 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     }
       
     .content-highlight {
-        position: relative;
         margin: auto;
-        margin-top: 20px;
+        margin-top: 40px;
         
         width: 85%;
         min-width: 250px;
         height: 86px;
         
+        
 /*        background-color: orange;*/
     }
       
     .content-highlight-icon {
+        position: relative;
+        top: 13px;
         
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        margin: auto;
+        float:left;
         
-/*        float: left;*/
-        
-/*        margin: 0;*/
-        
-        height: 50px;
-        width: 50px;
+        height: 60px;
+        width: 60x;
         
         object-fit: scale-down;
     }
       
-    .content-highlight-text-container {
-        display: table;
-        
-        position: relative;
-/*        top: 0px;*/
-        left: 68px;
-        
-        width: 83%;
-        
-        height: inherit;
-/*        background-color: green;*/
-
-    }
-      
     .content-highlight-text {
-        display: table-cell;
-        vertical-align: middle;
+        position: relative;
+        top: 0px;
+        left: 10px;
+/*        float: left;*/
+        margin-left: 80px;
         
+        min-width: 200px;
         max-height: inherit;
         
         color: #BEDFFF;
         overflow: hidden;
-/*        background-color: red;*/
     }
       
     #documentationButton {
         position: relative;
         
-        top: 20px;
+        top: 40px;
         
         width: 160px;
         margin: auto;
@@ -1013,107 +936,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         height: 680px;
         width: 65%;
         min-width: 450px;
-/*        background-color: #5285FF;*/
+        background-color: #5588FE;
         z-index: -1;
     }
-      
-      
-      
-      
-
-      
-      
-    .paper-div {
-        position: relative;
-        
-        margin-top: 40px;
-        
-        width: 70%;
-        min-width: 884px;
-        
-        border-radius: 5px;
-        font-family: 'Open Sans', sans-serif;
-    }
-        
-    .paper-div-internal {
-        position: relative;
-        margin: auto;
-        
-        width: 884px;
-        
-/*        background-color: orange;*/
-    }
-      
-    .howto-step {
-        position: relative;
-        
-        width: calc(100% - 20px);
-/*        height: calc(auto - 55px);*/
-        
-        margin-left: 10px;
-/*        margin-bottom: 20px;*/
-        
-        margin-bottom: -40px;
-    
-/*        background-color: red;*/
-
-    }
-      
-    .howto-step img {
-        position: relative;
-        
-        top: 5px;
-        left: 4px;
-        
-        height: 50px;
-        width: 50px;
-        
-        object-fit: scale-down;
-          
-    }
-      
-    .howto-step div {
-        position: relative;
-        
-        top: -55px;
-        left: 60px;
-        
-        height: auto;
-        width: calc(100% - 65px);
-        
-        padding: 4px;
-        margin-bottom: 20px;
-        
-/*        background-color: green;*/
-        
-        border-radius: 5px;
-        background-color: rgba(82, 133, 255, 0.2);
-        
-        
-    }
-      
-    .howto-step div p {
-        margin: 4px;
-
-    }
-
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
       
       
       
@@ -1369,9 +1194,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
       
       #main-section {
-          position: relative;
-          
-          padding-top: 20px;
           
           width: 100%;
           height: auto;
@@ -1451,41 +1273,23 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       
   /* API styles */
       
-/*
       .body {
           position: absolute;
-          height: 100%;
+/*          height: 100%;*/
       }
-*/
-      
-/*
-      #sticky-anchor {
-          position: relative;
-          top: 0px;
-      }
-*/
+
       
       #my-nav {
 /*          float: left;*/
-/*          position: relative;*/
-/*          top: 0px;*/
+          position: fixed;
+          bottom: 0;
           width: 25%;
-          min-width: 250px;
           height: 400px;
-          
-          padding-top: 4px;
           
           background-color: #2f2f2f;
       }
       
-      #my-nav.sticky {
-          position: fixed;
-          top: 0;
-          background-color: red;
-      }
-      
       #my-nav ul {
-          margin-top: 0px;
           list-style-type: none;
           padding-left: 20px;
       }
@@ -1830,242 +1634,5 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
 */
       
-      
-      
-      
-      
-      
-      
-      
-      
-/*   Demo page styles   */
-      
-      .demo-container {
-          position: relative;
-          
-          width: 800px;
-          height: 260px;
-          
-          margin-top: 30px;
-          margin-bottom: 50px;
-          
-          color: #fff;
-          background-color: #fff;
-          
-          border-width: 4px;
-          border-color: rgba(82, 133, 255, 1);
-          border-style: solid;
-          
-          border-radius: 5px;
-      }
-      
-      .demo-container h2 {
-          font-size: 38px;
-          margin: 0;
-        
-          color: #2f2f2f;
-      }
-      
-      .demo-container p {
-          
-          width: 440px;
-          height: 118px;
-          
-          margin-left: 10px;
-          
-          color: #5f5f5f;
-/*          background-color: #dfdfdf;*/
-          
-          border-radius: 3px;
-      }
-      
-      .demo-buttons {
-          position: relative;
-          
-          width: 390px;
-          height: 44px;
-          
-          margin-left: 20px;
-          
-          color: #5f5f5f;
-/*          background-color: #dfdfdf;*/
-          
-          border-radius: 3px;
-      }
-      
-      .demo-tryButton {
-          position: absolute;
-          
-/*          left: 10px;*/
-          width: 180px;
-          
-          margin: 0;
-          
-          color: #fff;
-          background-color: #00C98E;
-        
-      }
-      
-      .demo-infoButton {
-          position: absolute;
-          
-          right: 0px;
-          width: 180px;
-          
-          margin: 0;
-
-          color: #fff;
-          background-color: #1ED75F;
-      }
-      
-      .demo-img-div {
-          position: absolute;
-        
-          top: 0;
-          bottom: 0;
-          margin: auto;
-          
-          right: 22px;
-          
-          width: 322px;
-          height: 250px;
-          
-          background-color: rgba(82, 133, 255, 1);
-          
-          border-radius: 5px;
-      }
-      
-      .demo-img-div img {
-          position: absolute;
-          
-          left: 0;
-          right: 0;
-          top: 0;
-          bottom: 0;
-          margin:auto;
-          
-          height: 242px;
-          
-          object-fit: scale-down;
-          
-          border-radius: 5px;
-      }
-      
-/*
-            .demo-img {
-          position: absolute;
-        
-          top: 0;
-          bottom: 0;
-          margin: auto;
-          
-          right: 30px;
-          
-          width: 360px;
-          height: 240px;
-          
-          background-color: rgba(82, 133, 255, 1);
-          
-          border-radius: 3px;
-      }
-*/
-      
-      #nav-test {
-          right: 0px;
-      }
-      
-/*
-      
-      #nav-test li {
-          
-          width: 50px;
-          height: 50px;
-          
-          border-radius: 25px;
-          
-          background-color: red;
-      }
-      
-      
-*/
-      
-      
-      #menu-icon {
-          
-/*          top:-50px;*/
-          position: relative;
-          
-          width: 50px;
-          height: 50px; 
-          
-          margin:200px auto;
-          
-          background-color: #F00;
-          
-          border-radius: 50%;
-      }
-      
-      .wcircle-menu {
-          
-        position: relative;
-    
-      }
-      
-      .wcircle-icon {
-          
-          
-/*
-          position: fixed;
-          
-          top: 100px;
-          left: 100px;
-*/
-          
-          position: relative;
-    
-    z-index: 10;
-    
-    --paper-fab-background: var(--paper-red-500);
-     --paper-fab-keyboard-focus-background: var(--paper-red-900);
-          
-      }
-      
-      .wcircle-menu-item {
-          position: absolute;
-          
-          width:20px;
-          height:20px;
-          
-          padding:15px;
-          
-          background-color:orangered;
-          border-radius:50%;
-      }
-      
-      
-      .share-icon {
-          width:50px;
-          height:50px;
-          
-          padding:0;
-          
-          background-color:#1ED75F;
-          border-radius:50%;
-      }
-      
-      .share-icon img {
-          position: absolute;
-          
-          left: 0;
-          right: 0;
-          top: 0;
-          bottom: 0;
-          margin:auto;
-          
-          height: 30px;
-          
-          object-fit: scale-down;
-          
-      }
       
 </style>

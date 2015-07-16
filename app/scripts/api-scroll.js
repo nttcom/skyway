@@ -62,6 +62,95 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 //    $('#details-panel').scrollspy({ target: '#my-nav' });
 //});
 
+$(document).ready(function () {
+    // Cache selectors outside callback for performance. 
+//    var $window = $(window);
+//    var $stickyEl = $('#my-nav');
+//    var elTop = $stickyEl.offset().top;
+//    
+//    $window.scroll(function() {
+//        $stickyEl.toggleClass('sticky', $window.scrollTop() > elTop);
+//    });
+    
+    console.log( "Ready!" );
+    
+    $('div#main-section').scroll(function() {
+        didScroll = true;
+    });
+    
+//    function moveScroller() {
+//        var move = function() {
+//            var st = $(window).scrollTop();
+//            var ot = $("#sticky-anchor").offset().top;
+//            var s = $("#my-nav");
+//            if(st > ot) {
+//                s.css({
+//                    position: "fixed",
+//                    top: "0px"
+//                });
+//            } else {
+//                if(st <= ot) {
+//                    s.css({
+//                        position: "relative",
+//                        top: ""
+//                    });
+//                }
+//            }
+//        };
+//        $('div#main-section').scroll(move);
+//        move();
+//    }
+    
+    
+    var navTop = $('#my-nav').offset().top;
+    
+    var stickyNav = function () {
+        var scrollTop = $(window).scrollTop();
+        if (scrollTop > navTop) {
+            $('#my-nav').addClass('sticky');
+            // $('.content-nav').addClass('sticky');
+        } else {
+            $('#my-nav').removeClass('sticky');
+            // $('.content-nav').removeClass('sticky')
+        }
+        console.log( "Stuff is happening!" );
+    };
+    
+    stickyNav();
+    $('div#main-section').scroll(function () {
+        stickyNav();
+    });
+    
+    
+//    function sticky_relocate() {
+//        var window_top = $(window).scrollTop();
+//        
+//        var stickyDiv = $('#my-nav');
+//        if (stickyDiv.length) {
+//            var div_top = stickyDiv.offset().top;
+////            var div_top = $('my-div').offset().top;
+//            
+//            if (window_top > div_top) {
+//                stickyDiv.addClass('sticky');
+//            } else {
+//                stickyDiv.removeClass('sticky');
+//            }
+//        }   
+//        
+//    }
+//    
+//    $(function() {
+//        $(window).scroll(sticky_relocate());
+//        sticky_relocate();
+//    });
+
+});
+
 $(function() {
     $('#details-panel-content').scrollspy({ target: '#my-nav' });
 });
+
+
+
+
+

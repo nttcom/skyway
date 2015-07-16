@@ -38,4 +38,22 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     }
   };
 
+    
+    
+//  $("#nav-test").ferroMenu();
+    
+//    $.getScript("//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js", function(){
+//        console.log('Loaded //ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js');
+//    });
+    
+    $.getScript("scripts/share.js", function(){
+        console.log('Loaded scripts/share.js');
+    });
+
+    $.getScript("scripts/jQuery.WCircleMenu-cust.js", function(){
+        console.log('Loaded scripts/jQuery.WCircleMenu-cust.js');
+    });
+    
+    
+
 })(document);
