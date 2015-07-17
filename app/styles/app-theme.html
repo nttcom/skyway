@@ -926,7 +926,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         margin: 0px;
         
         color: #FFF;
-        font-size: 48px;
+        font-size: 42px;
         text-align: center;
     }
       
@@ -1087,17 +1087,32 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 /*        background-color: green;*/
         
         border-radius: 5px;
-        background-color: rgba(82, 133, 255, 0.2);
+        background-color: rgba(82, 133, 255, 0.12);
         
         
     }
       
     .howto-step div p {
         margin: 4px;
+        margin-left: 8px;
 
+    }
+      
+    .howto-step paper-button {
+        float: left;
+        
+        margin-left: 16px;
+        margin-top: 10px;
+        margin-bottom: 12px;
+
+        width: 200px;
+        
+        color: #fff;
+        background-color: #00C98E;
     }
 
       
+
       
       
       
@@ -1400,13 +1415,16 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           width: auto;
           text-align: center;
           
+          margin: 30px;
+          
+          
+          font-size: 42px;
           color: #5285FF;
-          font-size: 36px;
       }
       
       #text-area h3 {
           
-          margin-top: 40px;
+          margin-top: 30px;
           
           color: #5285FF;
           font-size: 24px;
@@ -1414,7 +1432,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       
       .code-section {
           
-          width: 90%;
+          width: 95%;
           height: auto;
           
           padding-top: 8px;
@@ -1430,14 +1448,89 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           border-radius: 5px;
       }
       
-      .code-section pre {
+      pre {
           padding: 0;
           margin: 0;
           
           font-family: 'Lucida Console', Monaco, monospace;
-          font-size: 13px;
+          font-size: 12px;
       }
       
+
+      .two-col {
+          
+/*          background-color: red;*/
+          
+          width: 100%;
+          min-width: 750px;
+          
+          content: "";
+          display: table;
+          clear: both;
+      }
+      
+      .col {
+/*          display: block;*/
+          
+          float: left;
+          
+          width: 40%;
+          margin: 5px;
+          
+/*          background-color: green;*/
+      }
+      
+      .col-header {
+          float: left;
+          
+          width: calc(50% - 10px);
+          margin: 5px;
+          margin-bottom: 0px;
+          
+          text-align: center;
+          color: #7f7f7f;
+      }
+      
+      .two-col paper-material {
+          float: left;
+          
+          top: -8px;
+          
+          width: calc(50% - 42px);
+          margin: 5px;
+          
+          padding: 16px;
+          padding-top: 8px;
+          padding-bottom: 8px;
+          
+          margin-top: 16px;
+          margin-bottom: 16px;
+          
+          color: #fff;
+          background-color: #3f3f9f;
+          
+          border-radius: 5px;
+      }
+ /*     
+      .col-header {
+          
+          float: left;
+          
+          width: 50%
+          
+          background-color: green;
+      }
+      
+      .col pre {
+          
+          float: left;
+          
+          width: 50%
+          
+          background-color: green;
+      }
+*/
+/*      .col pre*/
       
       
       
@@ -2067,5 +2160,19 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           object-fit: scale-down;
           
       }
+      
+      
+       /* Magic class to correct the height of divs containing floating elements */
+      a {
+          text-decoration: none;
+          color: #9050d0;
+          font-weight: 700;
+      }
+      
+    .float-group:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
       
 </style>

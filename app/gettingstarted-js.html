@@ -137,10 +137,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               PeerJS simplifies peer-to-peer data, video, and audio calls.
               This guide will show you the basic concepts of the PeerJS API. If you learn better from seeing a working app, see the examples at the bottom of the page.
               This document is for NTT Communication's cloud service "SkyWay", a customized version of PeerJS.
-              
-              <paper-material class="code-section" elevation="2">
-                  <pre></pre>
-              </paper-material>
 
               <h2>Setup</h2>
               <h3>1. Include the Javascript client</h3>
@@ -190,8 +186,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               <div class="two-col">
                 <div class="col col-header">Start connection</div>
                 <div class="col col-header">Receive connection</div>
-                <div class="col"><pre>var conn = peer.connect('dest-peer-id');</pre></div>
-                <div class="col"><pre>peer.on('connection', function(conn) { ... });</pre></div>
+                <paper-material class="col"><pre>var conn = peer.connect('dest-peer-id');</pre></paper-material>
+                <paper-material class="col"><pre>peer.on('connection', function(conn) { ... });</pre></paper-material>
                 <div class="clear"></div>
               </div>
               
@@ -223,15 +219,15 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <div class="two-col">
         <div class="col col-header">Start call</div>
         <div class="col col-header">Answer call</div>
-        <div class="col"><pre>// Call a peer, providing our mediaStream
+        <paper-material class="col"><pre>// Call a peer, providing our mediaStream
 var call = peer.call('dest-peer-id',
   mediaStream);
 
-</pre></div>
-        <div class="col"><pre>peer.on('call', function(call) {
+</pre></paper-material>
+        <paper-material class="col"><pre>peer.on('call', function(call) {
   // Answer the call, providing our mediaStream
   call.answer(mediaStream);
-});</pre></div>
+});</pre></paper-material>
           
           
         <div class="clear"></div>
