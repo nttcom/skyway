@@ -2,7 +2,7 @@
     <div id="toolbar-inner">
 
         <paper-button id="logoButton"  onclick="location.href='/index.html';">
-            <img src="{% if page.lang != 'ja' %}../{% endif %}images/logo-full.png" onclick="location.href='/index.html';"></img>
+            <img src="{{ site.homedir[page.lang] }}images/logo-full.png" onclick="location.href='/index.html';"></img>
         </paper-button>
 
         <div id="button-div">

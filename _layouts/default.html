@@ -23,7 +23,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <meta name="theme-color" content="#5487FF">
 
     <!-- Web Application Manifest -->
-    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="{{ site.homedir[page.lang] }}manifest.json">
 
     <!-- Tile color for Win8 -->
     <meta name="msapplication-TileColor" content="#5487FF">
@@ -31,30 +31,30 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="Polymer Starter Kit">
-    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+    <link rel="icon" sizes="192x192" href="{{ site.homedir[page.lang] }}images/touch/chrome-touch-icon-192x192.png">
 
     <!-- Add to homescreen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="Polymer Starter Kit">
-    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="{{ site.homedir[page.lang] }}images/touch/apple-touch-icon.png">
 
     <!-- Tile icon for Win8 (144x144) -->
-    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileImage" content="{{ site.homedir[page.lang] }}images/touch/ms-touch-icon-144x144-precomposed.png">
 
     <!-- build:css styles/main.css -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/jquery.ferro.ferroMenu.css">
-    <link rel="stylesheet" href="styles/font-awesome.css">
+    <link rel="stylesheet" href="{{ site.homedir[page.lang] }}styles/main.css">
+    <link rel="stylesheet" href="{{ site.homedir[page.lang] }}styles/jquery.ferro.ferroMenu.css">
+    <link rel="stylesheet" href="{{ site.homedir[page.lang] }}styles/font-awesome.css">
     <!-- endbuild-->
 
     <!-- build:js bower_components/webcomponentsjs/webcomponents-lite.min.js -->
-    <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+    <script src="{{ site.homedir[page.lang] }}bower_components/webcomponentsjs/webcomponents-lite.js"></script>
     <!-- endbuild -->
 
     <!-- will be replaced with elements/elements.vulcanized.html -->
-    <link rel="import" href="elements/elements.html">
+    <link rel="import" href="{{ site.homedir[page.lang] }}elements/elements.html">
     <!-- endreplace-->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
@@ -172,10 +172,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 </paper-toolbar>
         -->
 
+        {% include share.html %}
         <paper-fab icon="favorite" id="main-share-button" class="share-button"></paper-fab>
-        <paper-fab src="images/share-icons/facebook.png" id="share-button-fb" class="sub-share-button"></paper-fab>
-        <paper-fab src="images/share-icons/twitter.png" id="share-button-tw" class="sub-share-button"></paper-fab>
-        <paper-fab src="images/share-icons/github.png" id="share-button-git" class="sub-share-button"></paper-fab>
+        <paper-fab src="{{ site.homedir[page.lang] }}images/share-icons/facebook.png" id="share-button-fb" class="sub-share-button"></paper-fab>
+        <paper-fab src="{{ site.homedir[page.lang] }}images/share-icons/twitter.png" id="share-button-tw" class="sub-share-button"></paper-fab>
+        <paper-fab src="{{ site.homedir[page.lang] }}images/share-icons/github.png" id="share-button-git" class="sub-share-button"></paper-fab>
 
         {% include toolbar.html %}
 
@@ -204,7 +205,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 <!--   build:js scripts/app.js -->
 <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
-<script src="scripts/app.js"></script>
+<script src="{{ site.homedir[page.lang] }}scripts/app.js"></script>
 
 <!-- endbuild-->
 

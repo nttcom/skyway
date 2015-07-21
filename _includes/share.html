@@ -1,4 +1,4 @@
 <paper-fab icon="favorite" id="main-share-button" class="share-button"></paper-fab>
-<paper-fab src="{% if page.lang != 'ja' %}../{% endif %}images/share-icons/facebook.png" id="share-button-fb" class="sub-share-button"></paper-fab>
-<paper-fab src="{% if page.lang != 'ja' %}../{% endif %}images/share-icons/twitter.png" id="share-button-tw" class="sub-share-button"></paper-fab>
-<paper-fab src="{% if page.lang != 'ja' %}../{% endif %}images/share-icons/github.png" id="share-button-git" class="sub-share-button"></paper-fab>
+<paper-fab src="{{ site.homedir[page.lang] }}images/share-icons/facebook.png" id="share-button-fb" class="sub-share-button"></paper-fab>
+<paper-fab src="{{ site.homedir[page.lang] }}images/share-icons/twitter.png" id="share-button-tw" class="sub-share-button"></paper-fab>
+<paper-fab src="{{ site.homedir[page.lang] }}images/share-icons/github.png" id="share-button-git" class="sub-share-button"></paper-fab>
