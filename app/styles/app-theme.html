@@ -270,8 +270,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     
     paper-tab.iron-selected {
         color: #5285FF;
-        
-      }
+    }
+    
+/*
+    paper-tab .tab-content {
+        font-weight: 300;   
+    }
+*/
 
     paper-tab {
         --paper-tab-ink: rgba(82, 133, 255, 0.5);
@@ -357,7 +362,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         
         margin: 0 auto;
         
-        width: 650px;
+        width: 600px;
         height: inherit;
         
 
@@ -367,7 +372,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         
     #tabBar-div paper-tabs {
         
-        max-width: 650px;
+        max-width: 600px;
         height: inherit;
         --paper-tabs-selection-bar-color: #5285FF;
         font-size: 18px;
@@ -1229,7 +1234,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         width: 200px;
         
         color: #fff;
-        background-color: #00C98E;
+        background-color: #1EC75F;
     }
 
       
@@ -1264,30 +1269,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           height: 300px;
           
           background-color: #5285FF;
-      }
-      
-      #documentation-title {
-          position: relative;
-          top: 60px;
-        
-          margin: 0px;
-          margin-left: 80px;
-
-          color: #FFF;
-          font-size: 42px;
-      }
-      
-      #documentation-subtitle {
-        
-          position: relative;
-          top: 76px;
-        
-          margin: 0px;
-          margin-left: 80px;
-        
-          color: #FFF;
-          opacity: 0.6;
-          font-size: 24px;
       }
       
       #documentation-menu-div {
@@ -1427,7 +1408,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       
       
       
-  /* Getting Started styles */
+      
+      
+      
+/* General Styles */
       
       #header-section {
           height: 240px;
@@ -1438,26 +1422,26 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       
       #header-title {
           position: relative;
-          top: 60px;
+          top: 20%;
         
           margin: 0px;
           margin-left: 80px;
 
           color: #FFF;
-          font-size: 42px;
+          font-size: 3.5em;
       }
       
       #header-subtitle {
         
           position: relative;
-          top: 76px;
+          top: 25%;
         
           margin: 0px;
           margin-left: 80px;
         
           color: #FFF;
           opacity: 0.6;
-          font-size: 24px;
+          font-size: 2em;
       }  
       
       #header-icon-div {
@@ -1551,6 +1535,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           color: #5285FF;
           font-size: 24px;
       }
+      
+      
+      
+      /* Getting Started styles */
       
       .code-section {
           
@@ -2296,6 +2284,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           clear: both;
         }
       
+      
+      
+      
+      
     /* Support page styles */
       
       #support-options-div {
@@ -2399,7 +2391,303 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           left: auto;
           right: 0;
           width: 45%;
+      
       }
+          
+          
+          
+          
+          
+          
+/*  Features page CSS */
+
+      .features-header {
+          
+          width: 1050px;
+        
+          margin: 0;
+          margin-top: 30px;
+          margin-bottom: 20px;
+          padding: 0;
+          
+          font-size: 2em;
+          text-align: left;
+          
+          border-style: solid;
+          border-color: rgba(82, 133, 255, 1);
+          border-width: 0;
+          border-bottom-width: 2px;
+
+      }
+      
+      .main-features-container {
+          width: 1050px;
+          
+          left: 0;
+          right: 0;
+          margin: auto;
+          margin-bottom: 40px;
+/*          background-color: red;*/
+          
+      }
+      
+      #top-features-inner {
+                  
+          position: relative;
+          
+          width: 1050px;
+          height: 340px;
+          
+          left: 0;
+          right: 0;
+          margin: auto;
+          margin-bottom: 50px;
+/*          padding: 10px;*/
+          
+/*          background-color: #cfcfcf;*/
+          
+          border-radius: 5px;
+          
+      }
+      
+      .flex-box {
+          display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+          display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+          display: -ms-flexbox;      /* TWEENER - IE 10 */
+          display: -webkit-flex;     /* NEW - Chrome */
+          display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
+          justify-content: space-between;
+      }
+      
+      .feature-box-container {
+          float: left;
+          position: relative;
+          
+          display: block;
+          
+          width: auto;
+          height: 320px;
+          margin: 10px;
+          
+          -webkit-box-flex: 1;      /* OLD - iOS 6-, Safari 3.1-6 */
+          -moz-box-flex: 1;         /* OLD - Firefox 19- */
+          width: 33%;               /* For old syntax, otherwise collapses. */
+          -webkit-flex: 1;          /* Chrome */
+          -ms-flex: 1;              /* IE 10 */
+          flex: 1;                  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+          
+/*          background-color: green;*/
+      }
+      
+      .feature-box {
+          position: absolute;
+          
+          left: 0;
+          right: 0;
+          margin: auto;
+          
+          width: 320px;
+          height: inherit;
+          
+          padding: 0;
+
+          
+          border-radius: 5px;
+      }
+      
+      .feature-box img {
+          position: absolute;
+          
+          top: 20px;
+          
+          left: 0;
+          right: 0;
+          margin:auto;
+          
+          height: 80px;
+          
+          object-fit: scale-down;
+          
+      }
+      
+      .feature-box h3 {
+          position: absolute;
+          
+          top: 110px;
+          
+          left: 0;
+          right: 0;
+          margin:auto;
+          
+          text-align: center;
+          font-size: 2em;
+      }
+      
+      .feature-box p {
+          position: absolute;
+          
+          top: 160px;
+          
+          left: 0;
+          right: 0;
+          margin:auto;
+          
+          max-height: 100px;
+          overflow: hidden;
+          
+          text-align: center;
+          font-size: 1em;
+          
+          color: rgba(255, 255, 255, 0.6);
+/*          background-color: red;*/
+      }
+      
+      .feature-box paper-button {
+          position: absolute;
+          bottom: 0;
+          
+          margin: 0;
+          
+/*          height: 50px;*/
+          width: 100%;
+          
+          background-color: rgba(0, 0, 0, 0.15);
+          color: #fff;
+          
+/*
+          border-style: solid;
+          border-color: rgba(82, 133, 255, 0.5);
+          border-width: 0;
+          border-top-width: 1px;
+*/
+          
+          border-radius: 5px;
+          border-top-left-radius: 0px;
+          border-top-right-radius: 0px;
+      }
+          
+      
+      #all-features-div {
+                  
+          position: relative;
+          
+          width: 1050px;
+          height: 340px;
+          
+          left: 0;
+          right: 0;
+          margin: auto;
+          margin-bottom: 20px;
+          
+          border-radius: 5px;
+          
+      }
+      
+      .mini-feature-column {
+
+/*          background-color: green;*/
+          width: 320px;
+          
+          margin-left: 8px;
+          margin-right: 8px;
+          margin-top: 8px;
+          
+          
+          -webkit-box-flex: 1;      /* OLD - iOS 6-, Safari 3.1-6 */
+          -moz-box-flex: 1;         /* OLD - Firefox 19- */
+/*          width: 33%;                For old syntax, otherwise collapses. */
+          -webkit-flex: 1;          /* Chrome */
+          -ms-flex: 1;              /* IE 10 */
+          flex: 1;                  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
+      }
+      
+      .mini-feature-column h3 {
+          margin: 0;
+          margin-bottom: 16px;
+          padding: 0;
+          
+          color: #5050b0;
+          text-align: center;
+/*          position: absolute;*/
+          font-size: 1.5em;
+      }
+      
+      #mini-feature-button {
+          position: relative;
+          
+          height: 80px;
+          width: 320px;
+          
+          padding: 0;
+          
+          margin: 0;
+          margin-left: 6px;
+          margin-bottom: 8px;
+/*          background-color: red;*/
+          
+          border-style: solid;
+          border-color: #9f9f9f;
+          border-width: 1px;
+          
+          text-transform: none;
+          
+          border-radius: 5px;
+      }
+      
+      #mini-feature-button img {
+          position: absolute;
+          
+          top: 20px;
+          left: 20px;
+          
+          height: 40px;
+          
+          object-fit: scale-down;
+      }
+      
+      #mini-feature-button h2 {
+          position: absolute;
+          
+          top: 8px;
+          left: 76px;
+          
+          margin: 0;
+          padding: 0;
+          
+          font-size: 1.2em;
+          
+          color: #5285FF;
+      }
+      
+      #mini-feature-button p {
+          position: absolute;
+          
+          left: 76px;
+          top: 34px;
+          
+          width: 70%;
+          height: 40px;
+          
+          overflow: hidden;
+          
+          margin: 0;
+          padding: 0;
+          
+          text-align: left;
+          font-size: 1.0em;
+          
+          color: #9f9f9f;
+          
+/*          background-color: red;*/
+          
+      }
+      
+          
+          
+          
+          
 
       
 </style>
