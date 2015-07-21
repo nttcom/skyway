@@ -1,0 +1,23 @@
+<paper-toolbar id="custom-toolbar">
+    <div id="toolbar-inner">
+
+        <paper-button id="logoButton"  onclick="location.href='/index.html';">
+            <img src="images/logo-full.png" onclick="location.href='/index.html';"></img>
+        </paper-button>
+
+        <div id="button-div">
+            <paper-button id="loginButton" raised class="colorful">Login</paper-button>
+            <paper-button id="langButton" class="red">English</paper-button>
+        </div>
+
+        <div id="tabBar-div">
+            <paper-tabs >
+                <paper-tab onclick="location.href='/info-js.html';">JavaScript</paper-tab>
+                <paper-tab onclick="location.href='/info-mobile.html';">iOS/Android</paper-tab>
+                <paper-tab onclick="location.href='/documentation.html';">Docs</paper-tab>
+                <paper-tab onclick="location.href='/support.html';">Support</paper-tab>
+                <paper-tab onclick="location.href='/features.html';">Features</paper-tab>
+            </paper-tabs>
+        </div>
+    </div>
+</paper-toolbar>

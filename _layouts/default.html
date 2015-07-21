@@ -1,0 +1,220 @@
+<!--
+@license
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<!doctype html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Polymer Starter Kit" />
+    <title>{% if page.title %}{{ page.title }} ― {% endif %}{{ site.title }}</title>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- Chrome for Android theme color -->
+    <meta name="theme-color" content="#5487FF">
+
+    <!-- Web Application Manifest -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Tile color for Win8 -->
+    <meta name="msapplication-TileColor" content="#5487FF">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Polymer Starter Kit">
+    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Polymer Starter Kit">
+    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+
+    <!-- Tile icon for Win8 (144x144) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+
+    <!-- build:css styles/main.css -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/jquery.ferro.ferroMenu.css">
+    <link rel="stylesheet" href="styles/font-awesome.css">
+    <!-- endbuild-->
+
+    <!-- build:js bower_components/webcomponentsjs/webcomponents-lite.min.js -->
+    <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+    <!-- endbuild -->
+
+    <!-- will be replaced with elements/elements.vulcanized.html -->
+    <link rel="import" href="elements/elements.html">
+    <!-- endreplace-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!--
+        <script type="text/javascript">
+                    $(document).ready(function() {
+                        $('#menu_icon').WCircleMenu({
+                            width: '50px',
+                            height: '50px',
+                            angle_start : -Math.PI/2,
+                            delay: 50,
+                            distance: 150,
+                            angle_interval: Math.PI/6,
+                            easingFuncShow:"easeOutBack",
+                            easingFuncHide:"easeInBack",
+                            step:15,
+                            openCallback:false,
+                            closeCallback:false,
+                            itemRotation:360,
+                            iconRotation:180,
+                        });
+                    });
+                </script>
+    -->
+
+    <meta name="description" content="{{ page.description }}">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} ― {% endif %}{{ site.title }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:image" content="{{ site.ogImage }}">
+    <meta property="og:description" content="{{ page.ogDescription }}">
+</head>
+
+<body unresolved class="fullbleed layout vertical">
+<span id="browser-sync-binding"></span>
+<template is="dom-bind" id="app">
+
+    <!--    <paper-drawer-panel id="paperDrawerPanel">-->
+    <!--
+          <div drawer>
+
+            <paper-toolbar id="drawerToolbar">
+              <span class="paper-font-title">Menu</span>
+            </paper-toolbar>
+
+              <paper-menu class="list" attr-for-selected="data-route" selected="{{route}}" on-iron-select="onMenuSelect">
+                  <a data-route="home" href="/">
+                    <iron-icon icon="home"></iron-icon>
+                    <span>Home</span>
+                  </a>
+
+                  <a data-route="users" href="/users">
+                    <iron-icon icon="info"></iron-icon>
+                    <span>Users</span>
+                  </a>
+
+                  <a data-route="contact" href="/contact">
+                    <iron-icon icon="mail"></iron-icon>
+                    <span>Contact</span>
+                  </a>
+              </paper-menu>
+          </div>
+    -->
+
+    <paper-header-panel main >
+
+        <!--
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $("#main-share-button").click(function(){
+                    $(".sub-share-button").addClass('animating');
+                    $(".sub-share-button").fadeToggle();
+
+                    console.log('Hoi!');
+                });
+            });
+        </script>
+        -->
+
+        <!--
+                        <div id="menu_icon" class="">
+                            <paper-fab icon="favorite" class="wcircle-icon"></paper-fab>
+                            <div class="wcircle-menu" style="display:none;">
+                                <paper-material class="wcircle-menu-item share-icon" elevation="2">
+                                    <img src="images/outline_star_white.png">
+                                </paper-material>
+                                <paper-material class="wcircle-menu-item share-icon" elevation="2">
+                                    <img src="images/outline_star_white.png">
+                                </paper-material>
+                                <paper-material class="wcircle-menu-item share-icon" elevation="2">
+                                    <img src="images/outline_star_white.png">
+                                </paper-material>
+
+                                <div class="wcircle-menu-item">A</div>
+                                <div class="wcircle-menu-item">B</div>
+                                <div class="wcircle-menu-item">C</div>
+                                <div class="wcircle-menu-item">D</div>
+                            </div>
+                        </div>
+        -->
+
+        <!--
+                <paper-toolbar id="mainToolbar">
+
+                  <paper-icon-button id="paperToggle" icon="menu" paper-drawer-toggle></paper-icon-button>
+                  <span class="flex"></span>
+
+                  <paper-icon-button icon="refresh"></paper-icon-button>
+                  <paper-icon-button icon="search"></paper-icon-button>
+
+                  <div class="middle paper-font-display2 app-name">Skyway</div>
+
+                  <div class="bottom title">This, is a test.</div>
+
+                </paper-toolbar>
+        -->
+
+        <paper-fab icon="favorite" id="main-share-button" class="share-button"></paper-fab>
+        <paper-fab src="images/share-icons/facebook.png" id="share-button-fb" class="sub-share-button"></paper-fab>
+        <paper-fab src="images/share-icons/twitter.png" id="share-button-tw" class="sub-share-button"></paper-fab>
+        <paper-fab src="images/share-icons/github.png" id="share-button-git" class="sub-share-button"></paper-fab>
+
+        {% include toolbar.html %}
+
+        {{ content }}
+
+        {% include footer.html %}
+
+    </paper-header-panel>
+    <!--    </paper-drawer-panel>-->
+
+    <paper-toast id="caching-complete"
+                 duration="6000"
+                 text="Caching complete! This app will work offline.">
+    </paper-toast>
+
+    <platinum-sw-register auto-register
+                          clients-claim
+                          skip-waiting
+                          on-service-worker-installed="displayInstalledToast">
+        <platinum-sw-cache default-cache-strategy="networkFirst"
+                           precache-file="precache.json">
+        </platinum-sw-cache>
+    </platinum-sw-register>
+
+</template>
+
+<!--   build:js scripts/app.js -->
+<!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+<script src="scripts/app.js"></script>
+
+<!-- endbuild-->
+
+<!--
+                <script type="text/javascript">
+                    $(document).ready(function() {
+                        $("#nav-test").ferroMenu();
+                    });
+                </script>
+-->
+</body>
+
+</html>
