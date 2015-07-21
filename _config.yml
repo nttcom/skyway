@@ -1,5 +1,8 @@
 title:
-  'JP': 'SkyWay ― WebRTCを簡単＆柔軟に使えるプラットフォーム'
-  'EN': 'SkyWay - A Simple and Flexible WebRTC Platform'
+  jp: 'SkyWay ― WebRTCを簡単＆柔軟に使えるプラットフォーム'
+  en: 'SkyWay - A Simple and Flexible WebRTC Platform'
 ogImage: http://nttcom.github.io/skyway/images/ogp.jpg
 url: http://nttcom-webcore.github.io/skyway-renewal
+homepage:
+  jp: 'SkyWay ― WebRTCを簡単＆柔軟に使えるプラットフォーム'
+  en: 'SkyWay - A Simple and Flexible WebRTC Platform'
