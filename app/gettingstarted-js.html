@@ -43,7 +43,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
 
   <!-- build:css styles/main.css -->
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="styles/main.css">
   <!-- endbuild-->
 
@@ -98,9 +97,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
         <paper-toolbar id="custom-toolbar">
             <div id="toolbar-inner">
-                <div id="logo-div">
-                    <img id="logo" src="images/logo-full.png" onclick="location.href='/index.html';"><paper-ripple initialOpacity="0.5"></paper-ripple></img>
-                </div>
+
+                <paper-button id="logoButton"  onclick="location.href='/index.html';">
+                    <img src="images/logo-full.png" onclick="location.href='/index.html';"></img>
+                </paper-button>
 
                 <div id="button-div">
                     <paper-button id="loginButton" raised class="colorful">Login</paper-button>
@@ -113,8 +113,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                         <paper-tab onclick="location.href='/info-android.html';">Android</paper-tab>
                         <paper-tab onclick="location.href='/info-js.html';">JavaScript</paper-tab>
                         <paper-tab onclick="location.href='/documentation.html';">Docs</paper-tab>
-                        <paper-tab>Support</paper-tab>
-                        <paper-tab>Features</paper-tab>
+                        <paper-tab onclick="location.href='/support.html';">Support</paper-tab>
+                        <paper-tab onclick="location.href='/features.html';">Features</paper-tab>
                     </paper-tabs>
                 </div>
             </div>

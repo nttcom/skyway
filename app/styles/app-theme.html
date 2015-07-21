@@ -21,7 +21,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   /* Application theme */
 
-    :root {
+:root {
     --dark-primary-color:       #1976D2;
     --default-primary-color:    #2196F3;
     --light-primary-color:      #BBDEFB;
@@ -50,16 +50,27 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
    --paper-input-container-focus-color: rgba(255, 255, 255, 1);
    --paper-input-container-input-color: #fff;
         
-        background: #2548BE;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 300;
+    background: #2548BE;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
 /*        #5285FF*/
-  }
+}
    
     h1,h2,h3 {
-        font-weight: 400;
+        font-weight: 300;
     }
     
+    a {
+        text-decoration: none;
+        color: #9050d0;
+        font-weight: 600;
+    }
+    
+    a code {
+        color: #c080e0;
+        font-weight: 600;
+    }
+        
 /*
     h2 {
         font-weight: 300;
@@ -316,21 +327,28 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     }
 */
         
-    #logo-div {
+    #logoButton {
         float: left;
-        padding-left: 48px;
+        left: 48px;
         
-        width: 200px;
-        height: inherit;   
+        width: 212px;
+/*        height: inherit;   */
         
+        margin: 0;
+        
+        height: 64px;
 /*        background-color: red;*/
     }
         
-    #logo-div img {
+    #logoButton img {
         position: relative;
-        margin-top: 11px;
+        margin-top: 3px;
         height: 42px;
+        
+        z-index: -10;
     }
+    
+
     
     #tabBar-div {
         display: inline;
@@ -338,7 +356,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         
         margin: 0 auto;
         
-        width: 600px;
+        width: 650px;
         height: inherit;
         
 
@@ -348,14 +366,16 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         
     #tabBar-div paper-tabs {
         
-        max-width: 600px;
+        max-width: 650px;
         height: inherit;
         --paper-tabs-selection-bar-color: #5285FF;
-        align-bottom: TRUE;
         font-size: 18px;
 /*                background-color: orange;  */
     }
         
+    #tabBar-div paper-tab {
+        width: auto;
+    }
 /*
     #tabBar-div paper-tabsselectionBar.align-bottom {
       top: 0;
@@ -409,12 +429,22 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     #signupButton {
 /*        display: inline;*/
         margin: auto;
-        width: 120px;  
+        width: 120px; 
+        
+        z-index: 10;
+    }
+    
+    #anchor-div {
+        position: absolute;
+        top: 0px;
     }
         
     #content-div {
-        min-width: 800px;
+        position: relative;
+        min-width: 1150px;
         height: 680px;
+/*        height: calc(100vh - 64px);*/
+/*        min-height: 600px;*/
         background-color: #5285FF;
         
 /*        border-radius: 5px;*/
@@ -493,8 +523,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         width: 250px;
         height: 250px;
         object-fit: scale-down;
-        
-/*        background-color: blue;*/
     }
     
     .animation-title {
@@ -507,35 +535,41 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         opacity: 0.8;
         font-size: 26px;
         text-align: center;
-        
-/*        background-color: orange;*/
     }
+        
+/*  General button for page header sections  */
     
 /*
-    #content-div-signup {
-        position: absolute;
-        top: 0px;
-        background: red;
-    }
-*/
-        
-    #content-signupButton {
+    .topSectionButton {
         position: absolute;
         
-        top: 600px;
+        bottom: 50px;
         left: 0;
         right: 0;
         margin: auto;
         
         width: 160px;
-    }
-            
-    #content-signupButton-side {
-        margin: auto;
-        width: 160px;
-        top: 592px;
-    }
         
+        z-index: 10;
+        
+        color: #4285f4;
+        background: #fff;
+    }
+*/
+    
+    .topSectionButton {
+        position: absolute;
+        
+        bottom: 50px;
+        left:0;
+        right:0;
+        margin:auto;
+        
+        display: inline;
+        width: 160px;
+        
+    }
+             
     #highlights-div {
         position: relative;
         
@@ -552,7 +586,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     #highlights-internal-div {
         margin: auto;
         
-        width: 884px;
+        width: 928px;
         height: 200px;
 /*                background-color: orange;*/
     }
@@ -561,13 +595,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         position: relative;
         float: left;
         
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 18px;
+        margin-right: 18px;
         
-        width: 180px;
+        width: 196px;
         height: 190px;
         
         border-radius: 5px;
+/*        background-color: red;*/
     }
         
     .highlight-icon {
@@ -636,7 +671,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     #signup-header {
         position: absolute;
         
-        top: 30px;
+        top: 24px;
         left:0;
         right:0;
         margin:auto;
@@ -647,11 +682,21 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         
         color: #FFFFFF;
     }
+    
+    #signup-div img {
+        position: absolute;
+        
+        
+        top: 80px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
             
     #signupButton {
         position: absolute;
         
-        bottom: 50px;
+        bottom: 42px;
         left:0;
         right:0;
         margin:auto;
@@ -659,7 +704,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         display: inline;
         width: 160px;
     }
-        
+    
     #news-div {
         position: relative;
         
@@ -697,10 +742,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         
     .news-headline {
         
-        margin-bottom: 32px;
+        margin-bottom: 40px;
         
         width: 800px;
-        height: 70px;
+        
+        content: "";
+        display: table;
+        clear: both;
         
 /*        background-color: yellow;*/
     }
@@ -731,6 +779,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         width: 660px;
         height: auto;
         max-height: 66px;
+        
+        color: #7f7f7f;
     }
         
         
@@ -740,27 +790,18 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         width: 100%;
         height: 240px;
         
+        margin-top: 0;
+        
 /*        border-radius: 5px;*/
         
         background: #222222;
     }
         
     
-/*
-    paper-tabs.transparent-teal {
-      background-color: transparent;
-      color: #00bcd4;
-      box-shadow: none;
-    }
+
     
-    paper-tabs.transparent-teal::shadow #selectionBar {
-      background-color: #00bcd4;
-    }
     
-    paper-tabs.transparent-teal paper-tab::shadow #ink {
-      color: #00bcd4;
-    }
-*/
+    
         
   paper-menu iron-icon {
     margin-right: 33px;
@@ -910,8 +951,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       
       
     #content-explanation-div {
+        position: relative;
         float: left;
         
+/*        height: calc(100vh - 64px);*/
         height: 680px;
         width: 35%;
         min-width: 400px;
@@ -944,10 +987,23 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         text-align: center;
     }
       
+    #content-highlights {
+        position: absolute;
+        
+        top: 40px;
+        bottom: 0;
+        margin: auto;
+        
+/*        background-color: red;*/
+        height: 60%;
+        min-height: 260px;
+    }
+      
     .content-highlight {
         position: relative;
         margin: auto;
-        margin-top: 20px;
+        margin-top: 7%;
+        margin-bottom: 7%;
         
         width: 85%;
         min-width: 250px;
@@ -998,24 +1054,86 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 /*        background-color: red;*/
     }
       
-    #documentationButton {
-        position: relative;
-        
-        top: 20px;
-        
-        width: 160px;
-        margin: auto;
-    }
-      
     #content-animation-div {
+        position: relative;
         float: right;
         
         height: 680px;
+/*        min-height: 600px;*/
         width: 65%;
         min-width: 450px;
-/*        background-color: #5285FF;*/
+/*        background-color: green;*/
         z-index: -1;
     }
+      
+    #animation-container {
+        position: absolute;
+        
+        top:0;
+        bottom: 10%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        
+        width: 80%;
+        min-width: 650px;
+        height: 460px;
+        
+        background-color: rgba(255,255,255,0.2);
+    
+        border-radius: 5px;
+    }
+      
+      #backButton {
+          position: absolute;
+          
+          width: 45px;
+          height: 45px;
+          
+          left: 15px;
+          top: 0;
+          bottom: 0;
+          margin: auto; 
+      }
+      
+      #forwardButton {
+          position: absolute;
+          
+          width: 45px;
+          height: 45px;
+          
+          right: 15px;
+          top: 0;
+          bottom: 0;
+          margin: auto; 
+      }
+      
+      .mini-demo-container {
+          position: absolute;
+          
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          
+          width: 70%;
+          min-width: 440px;
+          height: 300px;
+          
+          color: #fff;
+          background-color: #fff;
+          
+/*
+          border-width: 4px;
+          border-color: rgba(82, 133, 255, 1);
+          border-style: solid;
+*/
+          
+          border-radius: 5px;
+      }
+      
+      
       
       
       
@@ -1248,7 +1366,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
       
       .documentation-menu-button {
-          
+/*          position: relative;*/
           margin-top: 10px;
           margin-bottom: 10px;
           
@@ -1387,10 +1505,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           position: relative;
           
           padding-top: 20px;
+          padding-bottom: 40px;
           
           width: 100%;
           height: auto;
-          
+        
           background-color: #fff;
       }
       
@@ -1432,7 +1551,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       
       .code-section {
           
-          width: 95%;
+          width: 90%;
           height: auto;
           
           padding-top: 8px;
@@ -1463,6 +1582,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           
           width: 100%;
           min-width: 750px;
+          
+          margin-top: 20px;
           
           content: "";
           display: table;
@@ -1559,12 +1680,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 */
       
       #my-nav {
-/*          float: left;*/
+          float: left;
 /*          position: relative;*/
 /*          top: 0px;*/
           width: 25%;
           min-width: 250px;
-          height: 400px;
+/*          height: 400px;*/
+          height: calc(100vh - 64px);
           
           padding-top: 4px;
           
@@ -1646,17 +1768,18 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
       
       #details-panel {
-/*          float: left;*/
+          float: left;
           
           position: absolute;
           left: 25%;
           
           width: 75%;
-          height: 100%;
+          height: calc(100vh - 64px);
           
           overflow: auto;
           
           background-color: #fff;
+/*        background-color: red;*/
           
       }
       
@@ -1899,7 +2022,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           font-size: 13px;
           
           color: #fff;
-          background-color: #7f7f7f;
+          background-color: #3f3f3f;
           
       }
 /*
@@ -2044,6 +2167,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           border-radius: 5px;
       }
       
+      
 /*
             .demo-img {
           position: absolute;
@@ -2163,16 +2287,116 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       
       
        /* Magic class to correct the height of divs containing floating elements */
-      a {
-          text-decoration: none;
-          color: #9050d0;
-          font-weight: 700;
+        .float-group:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+      
+    /* Support page styles */
+      
+      #support-options-div {
+          position: relative;
+          
+          width: 900px;
+          height: 264px;
+          
+          left: 0;
+          right: 0;
+          margin: auto;
+          margin-bottom: 20px;
+          
+/*          background-color: red;*/
+          
+          border-radius: 5px;
       }
       
-    .float-group:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
+      .support-box-container {
+          float: left;
+          position: relative;
+          
+          display: block;
+          
+          width: 450px;
+          height: 250px;
+          
+/*          background-color: green;*/
+      }
+      
+      .support-box {
+          width: 360px;
+          height: 200px;
+          
+/*          padding: 4px;*/
+/*          background-color: #afafaf;*/
+          
+          
+          border-style: solid;
+          border-color: #7f7f7f;
+          border-width: 1px;
+          
+          border-radius: 5px;
+      }
+      
+      .support-box img {
+          position: absolute;
+          
+          left: 0;
+          right: 0;
+/*
+          top: 0;
+          bottom: 0;
+*/
+          margin:auto;
+          
+          height: 80px;
+          
+          object-fit: scale-down;
+          
+      }
+      
+      .support-box h3 {
+          
+          margin: 0;
+          margin-top: 92px;
+          padding: 0;
+          
+          text-align: center;
+          font-size: 32px;
+      }
+      
+      .support-box paper-button {
+          position: absolute;
+          left: 0;
+          right: auto;
+        
+          bottom: 0px;
+          
+          margin: 14px;
+/*          margin-bottom: 10px;*/
+          
+          height: 50px;
+          width: calc(100% - 28px);
+          
+          color: #5285FF;
+          
+          border-style: solid;
+          border-color: #5285FF;
+          border-width: 2px;
+          
+          border-radius: 4px;
+          
+      }
+      
+      .support-box .leftButton {
+          width: 45%;
+      }
+
+      .support-box .rightButton {
+          left: auto;
+          right: 0;
+          width: 45%;
+      }
+
       
 </style>

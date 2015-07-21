@@ -180,9 +180,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
         <paper-toolbar id="custom-toolbar">
             <div id="toolbar-inner">
-                <div id="logo-div">
-                    <img id="logo" src="images/logo-full.png" onclick="location.href='/index.html';"><paper-ripple initialOpacity="0.5"></paper-ripple></img>
-                </div>
+
+                <paper-button id="logoButton"  onclick="location.href='/index.html';">
+                    <img src="images/logo-full.png" onclick="location.href='/index.html';"></img>
+                </paper-button>
 
                 <div id="button-div">
                     <paper-button id="loginButton" raised class="colorful">Login</paper-button>
@@ -191,12 +192,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             
                 <div id="tabBar-div">
                     <paper-tabs flex alignBottom>
-                        <paper-tab onclick="location.href='/info-ios.html';">iOS</paper-tab>
-                        <paper-tab onclick="location.href='/info-android.html';">Android</paper-tab>
                         <paper-tab onclick="location.href='/info-js.html';">JavaScript</paper-tab>
+                        <paper-tab onclick="location.href='/info-mobile.html';">iOS & Android</paper-tab>
                         <paper-tab onclick="location.href='/documentation.html';">Docs</paper-tab>
-                        <paper-tab>Support</paper-tab>
-                        <paper-tab>Features</paper-tab>
+                        <paper-tab onclick="location.href='/support.html';">Support</paper-tab>
+                        <paper-tab onclick="location.href='/features.html';">Features</paper-tab>
                     </paper-tabs>
                 </div>
             </div>
@@ -225,7 +225,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                     <h3 class="animation-title">iOS</h3>
                 </div>
             </div>
-            <paper-button id="content-signupButton" raised class="white">Sign Up</paper-button>
+            <paper-button class="topSectionButton white" raised>Sign Up</paper-button>
         </div>
               
             <paper-material id="highlights-div" elevation="2">
@@ -233,22 +233,22 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 <div id="highlights-internal-div">
                     <div id="highlight1" class="highlight">
                         <img src="images/logo.png" class="highlight-icon"></img>
-                        <h3 class="highlight-title">Title</h3>
+                        <h3 class="highlight-title">サーバサイドが不要</h3>
                         <div class="highlight-text">This is some placeholder text. But it should describe a neat feature.</div>
                     </div>
                     <div id="highlight2" class="highlight">
                         <img src="images/logo.png" class="highlight-icon"></img>
-                        <h3 class="highlight-title">Title</h3>
+                        <h3 class="highlight-title">セキュアな通信</h3>
                         <div class="highlight-text">This is some placeholder text. But it should describe a neat feature.</div>
                     </div>
                     <div id="highlight3" class="highlight">
                         <img src="images/logo.png" class="highlight-icon"></img>
-                        <h3 class="highlight-title">Title</h3>
+                        <h3 class="highlight-title">豊富なSDK、拡張機能</h3>
                         <div class="highlight-text">This is some placeholder text. But it should describe a neat feature.</div>
                     </div>
                     <div id="highlight4" class="highlight">
                         <img src="images/logo.png" class="highlight-icon"></img>
-                        <h3 class="highlight-title">Title</h3>
+                        <h3 class="highlight-title">あとなんだ…</h3>
                         <div class="highlight-text">This is some placeholder text. But it should describe a neat feature.</div>
                     </div>
                 </div>
