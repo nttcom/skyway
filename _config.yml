@@ -6,3 +6,6 @@ url: http://nttcom-webcore.github.io/skyway-renewal
 homepage:
   jp: 'SkyWay ― WebRTCを簡単＆柔軟に使えるプラットフォーム'
   en: 'SkyWay - A Simple and Flexible WebRTC Platform'
+homedir:
+  jp:
+  en: ../
