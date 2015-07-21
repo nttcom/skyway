@@ -1,6 +1,6 @@
 # SkyWay Renewal Project
 
-- [Staging Repository (This)](https://github.com/nttcom-webcore/skyway-renewal/tree/gh-pages)
+- [Staging Repository (This)](https://github.com/nttcom-webcore/skyway-renewal)
 - [Staging Site](http://nttcom-webcore.github.io/skyway-renewal/)
 
 ## How to run in localhost
