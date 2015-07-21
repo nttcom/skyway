@@ -10,3 +10,6 @@ _site
 # npm
 node_modules
 npm-debug.log
+
+# gem
+Gemfile.lock
