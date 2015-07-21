@@ -121,59 +121,77 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                     <paper-button class="topSectionButton white" raised onclick="location.href='/documentation.html';">Documentation</paper-button>
                 </div>
                 <div id="content-animation-div">
+                    <div id="animation-container">
+                        <paper-fab id="backButton" icon="arrow-back"></paper-fab>
+                        <paper-fab id="forwardButton" icon="arrow-forward"></paper-fab>
+                        <paper-material class="mini-demo-container"></paper-material>
+                    </div>
                     <paper-button class="topSectionButton white" raised>Sign Up</paper-button>
                 </div>
             </div>
               
-            <paper-material id="highlights-div" elevation="2">
-                <h2 class="material-header">A Simple and Flexible WebRTC Platform.</h2>
-                <div id="highlights-internal-div">
-                    <div id="highlight1" class="highlight">
-                        <img src="images/logo.png" class="highlight-icon"></img>
-                        <h3 class="highlight-title">Title</h3>
-                        <div class="highlight-text">This is some placeholder text. But it should describe a neat feature.</div>
+            <paper-material class="paper-div" elevation="2">
+                <div class="paper-div-internal">
+                    <h2 class="material-header">簡単なアプリを今すぐできます。</h2>
+                    <h3 class="material-subheader">It is easy to build a web application using SkyWay. Why not give it a try?</h3>
+
+
+                    <div class="howto-step">
+                        <img src="images/count/1.png">
+                        <div class="float-group">
+                            <p>SkyWayのWebAPIを利用するため、開発者登録を行いAPIキーを申し込みます。</p>
+                            <paper-button raised>Sign Up (Free)</paper-button>
+                        </div>
                     </div>
-                    <div id="highlight2" class="highlight">
-                        <img src="images/logo.png" class="highlight-icon"></img>
-                        <h3 class="highlight-title">Title</h3>
-                        <div class="highlight-text">This is some placeholder text. But it should describe a neat feature.</div>
+
+                    <div class="howto-step">
+                        <img src="images/count/2.png">
+                        <div class="float-group">
+                            <p>SkyWayを利用してアプリケーションを開発しましょう。<br><br>
+                                コードサンプルを参考にライブラリをインクルードし、JavaScriptコードを書きましょう。</p>
+                            
+                            <paper-material class="code-section" elevation="1">
+                                <pre>
+<span class="nt">&lt;script </span><span class="na">src=</span><span
+        class="s">"https://skyway.io/dist/0.3/peer.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script&gt;</span>
+<span class="kd">var</span> <span class="nx">peer</span> <span class="o">=</span> <span class="k">new</span> <span
+            class="nx">Peer</span><span class="p">(</span><span class="nx">myId</span><span class="p">,</span> <span
+            class="p">{</span><span class="nx">key</span><span class="o">:</span> <span
+            class="s1">'yourApiKey'</span><span class="p">});</span>
+<span class="nx">peer</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">'open'</span><span
+            class="p">,</span> <span class="kd">function</span><span class="p">(id)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">conn</span> <span class="o">=</span> <span class="nx">peer</span><span
+            class="p">.</span><span class="nx">connect</span><span class="p">(</span><span class="s1">'anotherId'</span><span
+            class="p">);</span>
+    <span class="nx">conn</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">'open'</span><span
+            class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nx">conn</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="s1">'hello world'</span><span class="p">);</span>
+    <span class="p">});</span>
+<span class="p">});</span>
+<span class="nt">&lt;/script&gt;</span>
+                                </pre>
+                            </paper-material>
+                        </div>
                     </div>
-                    <div id="highlight3" class="highlight">
-                        <img src="images/logo.png" class="highlight-icon"></img>
-                        <h3 class="highlight-title">Title</h3>
-                        <div class="highlight-text">This is some placeholder text. But it should describe a neat feature.</div>
+
+                    <div class="howto-step">
+                        <img src="images/count/3.png">
+                        <div class="float-group">
+                            <p>開発に必要な情報を収集しましょう。</p>
+                            <paper-button raised>Full Guide</paper-button>
+                            <paper-button raised>Need Help?</paper-button>
+                        </div>
                     </div>
-                    <div id="highlight4" class="highlight">
-                        <img src="images/logo.png" class="highlight-icon"></img>
-                        <h3 class="highlight-title">Title</h3>
-                        <div class="highlight-text">This is some placeholder text. But it should describe a neat feature.</div>
-                    </div>
+                    <h2 class="material-header">いいね！できたでしょう？</h2>
                 </div>
             </paper-material>
 
             <div id="signup-div">
                 <h2 id="signup-header">Like what you see? SkyWay is free to try.</h2>
+                <img src="images/divider_blue.png">
                 <paper-button id="signupButton" raised class="white">Sign Up</paper-button>
             </div>
-              
-            <paper-material id="news-div" elevation="1">
-                <h2 class="material-header">Our latest updates.</h2>
-                
-                <div id="news-headlines-div">
-                    <div class="news-headline">
-                        <div class="news-headline-date">16.5.2015</div>
-                        <div class="news-headline-content">This is a news headline. Recently the SkyWay team has achieved some pretty awesome stuff and we want to share it with you. Also, how about you check out our new website? Click around and see if anything interests you.</div>
-                    </div>
-                    <div class="news-headline">
-                        <div class="news-headline-date">27.3.2015</div>
-                        <div class="news-headline-content">This is a news headline. Recently the SkyWay team has achieved some pretty awesome stuff and we want to share it with you. Also, how about you check out our new website? Click around and see if anything interests you.</div>
-                    </div>
-                    <div class="news-headline">
-                        <div class="news-headline-date">14.2.2015</div>
-                        <div class="news-headline-content">This is a news headline. Recently the SkyWay team has achieved some pretty awesome stuff and we want to share it with you. Also, how about you check out our new website? Click around and see if anything interests you.</div>
-                    </div>
-                </div>
-            </paper-material>
 
             <div id="footer">
                 
