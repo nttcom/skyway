@@ -38,6 +38,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     }
   };
 
+$('#skyway-logo').click(function(){
+    $("html, body").animate({ scrollTop: 0 }, 600);
+    return false;
+ });
     
     
 //  $("#nav-test").ferroMenu();
