@@ -2369,10 +2369,16 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           border-width: 0px;
           border-bottom-width: 2px;
           
+          outline: none;
+          
           color: #5285FF;
           font-size: 1.1em;
 /*          letter-spacing: 1px;*/
-          background-color: rgba(82, 133, 255, 0.2);
+          background-color: rgba(82, 133, 255, 0.15);
+      }
+      
+      .formInValid {
+          border-color: #E63300;
       }
       
       .support-box-contact-form #messageBox {
@@ -2382,10 +2388,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           height: 120px;
           
           border-width: 2px;
+          
+          resize: none;
       }
       
       input:focus, textarea:focus {
-          border:1px solid #97d6eb;
+/*          border:1px solid #97d6eb;*/
+          background-color: rgba(82, 133, 255, 0.35);
       }
       
       .support-box-container-half {

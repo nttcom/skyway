@@ -21,15 +21,15 @@ description: WebRTCは、ブラウザや専用アプリ同士でリアルタイ�
 
         <div class="support-box-contact-form">
             <paper-material class="support-box" elevation="2">
-                <form method="post" action="index.php">
+                <form method="POST" action="//formspree.io/ewan.leaver@ntt.com">
                     <img src="{{ site.homedir[page.lang] }}images/logo.png">
                     <h3>Contact Us</h3>
                     <paper-button id="contact-button">Something wrong?</paper-button>
                     <paper-button id="submit-button" name="submit" type="submit" value="Submit">Send!</paper-button>
 
                     <div id="contact-form-contents">
-                        <input type="name" id="nameBox" class="formInValid" name="name" placeholder="Name" required>
-                        <input type="email" id="emailBox" class="formInValid" name="email" placeholder="Email address" required>
+                        <input type="name" id="nameBox" class="formInValid" name="name" placeholder="Name" required />
+                        <input type="email" id="emailBox" class="formInValid" name="_replyto" placeholder="Email address" required />
                         <textarea type="message" id="messageBox" class="formInValid" name="message" placeholder="Comment or query..." required></textarea>
 
                     </div>
