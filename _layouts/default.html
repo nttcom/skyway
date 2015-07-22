@@ -45,7 +45,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <!-- build:css styles/main.css -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="{{ site.homedir[page.lang] }}styles/main.css">
-    <link rel="stylesheet" href="{{ site.homedir[page.lang] }}styles/jquery.ferro.ferroMenu.css">
     <link rel="stylesheet" href="{{ site.homedir[page.lang] }}styles/font-awesome.css">
     <!-- endbuild-->
 
@@ -57,28 +56,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <link rel="import" href="{{ site.homedir[page.lang] }}elements/elements.html">
     <!-- endreplace-->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
-    <!--
-        <script type="text/javascript">
-                    $(document).ready(function() {
-                        $('#menu_icon').WCircleMenu({
-                            width: '50px',
-                            height: '50px',
-                            angle_start : -Math.PI/2,
-                            delay: 50,
-                            distance: 150,
-                            angle_interval: Math.PI/6,
-                            easingFuncShow:"easeOutBack",
-                            easingFuncHide:"easeInBack",
-                            step:15,
-                            openCallback:false,
-                            closeCallback:false,
-                            itemRotation:360,
-                            iconRotation:180,
-                        });
-                    });
-                </script>
-    -->
 
     <meta name="description" content="{{ page.description }}">
     <meta property="og:title" content="{% if page.title %}{{ page.title }} ― {% endif %}{{ site.title[page.lang] }}">
