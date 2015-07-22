@@ -1,0 +1,15 @@
+# Jekyll
+_site
+
+# Mac OS X
+.DS_Store
+
+# JetBrains
+.idea
+
+# npm
+node_modules
+npm-debug.log
+
+# gem
+Gemfile.lock

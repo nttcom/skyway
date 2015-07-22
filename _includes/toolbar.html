@@ -1,0 +1,39 @@
+<paper-toolbar id="custom-toolbar">
+    <div id="toolbar-inner">
+
+        <paper-button id="logoButton"  onclick="location.href='./';">
+            <img src="{{ site.homedir[page.lang] }}images/logo-full.png" onclick="location.href='./';"/>
+        </paper-button>
+
+        <div id="button-div">
+            <paper-button id="loginButton" raised class="colorful">Login</paper-button>
+            {% case page.lang %}
+            {% when 'jp' %}
+            <paper-button id="langButton" class="red" onclick="location.href='en/';">English</paper-button>
+            {% when 'en' %}
+            <paper-button id="langButton" class="red" onclick="location.href='../';">日本語</paper-button>
+            {% else %}
+            {% endcase %}
+        </div>
+
+        <div id="tabBar-div">
+            <paper-tabs >
+                {% case page.lang %}
+                {% when 'jp' %}
+                <paper-tab onclick="location.href='info-js.html';">JavaScript</paper-tab>
+                <paper-tab onclick="location.href='info-mobile.html';">iOS/Android</paper-tab>
+                <paper-tab onclick="location.href='documentation.html';">ドキュメント</paper-tab>
+                <paper-tab onclick="location.href='support.html';">サポート</paper-tab>
+                <paper-tab onclick="location.href='features.html';">すべての機能</paper-tab>
+                {% when 'en' %}
+                <paper-tab onclick="location.href='info-js.html';">JavaScript</paper-tab>
+                <paper-tab onclick="location.href='info-mobile.html';">iOS/Android</paper-tab>
+                <paper-tab onclick="location.href='documentation.html';">Docs</paper-tab>
+                <paper-tab onclick="location.href='support.html';">Support</paper-tab>
+                <paper-tab onclick="location.href='features.html';">Features</paper-tab>
+                {% else %}
+                {% endcase %}
+            </paper-tabs>
+        </div>
+    </div>
+</paper-toolbar>

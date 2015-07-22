@@ -1,0 +1,104 @@
+---
+layout: default
+lang: en
+title: iOS/Android SDK
+description: WebRTC is a revolutionary new technology that allows browsers to send video, audio and data to other browsers in real time. If you use SkyWay, you can easily create WebRTC apps without having to worry about the server.
+---
+<div id="content-div" elevation="2">
+    <div id="content-explanation-div">
+        <h2 class="content-title-side">SkyWay for iOS.</h2>
+        <h3 class="content-subtitle-side">Who would've thought it?</h3>
+            <div id="content-highlights">
+                <div class="content-highlight">
+                    <img class="content-highlight-icon" src="{{ site.homedir[page.lang] }}images/outline_star_white.png">
+                    <div class="content-highlight-text-container">
+                        <div class="content-highlight-text">libWebRTCやOSのアップデートはSkyWaySDKが随時追従</div>
+                    </div>
+                </div>
+                <div class="content-highlight">
+                    <img class="content-highlight-icon" src="{{ site.homedir[page.lang] }}images/outline_star_white.png">
+                    <div class="content-highlight-text-container">
+                        <div class="content-highlight-text">JS/Android/iOSで一部を除きAPIが互換、より多くのデバイスに対応可能</div>
+                    </div>
+                </div>
+                <div class="content-highlight">
+                    <img class="content-highlight-icon" src="{{ site.homedir[page.lang] }}images/outline_star_white.png">
+                    <div class="content-highlight-text-container">
+                        <div class="content-highlight-text">サーバサイドはSkyWayが提供</div>
+                    </div>
+                </div>
+            </div>
+            <paper-button class="topSectionButton white" raised onclick="location.href='documentation.html';">Documentation</paper-button>
+    </div>
+    <div id="content-animation-div">
+        <div id="animation-container">
+            <paper-fab id="backButton" icon="arrow-back"></paper-fab>
+            <paper-fab id="forwardButton" icon="arrow-forward"></paper-fab>
+            <paper-material class="mini-demo-container"></paper-material>
+        </div>
+        <paper-button class="topSectionButton white" raised>Sign Up</paper-button>
+    </div>
+</div>
+
+<paper-material class="paper-div" elevation="2">
+    <div class="paper-div-internal">
+        <h2 class="material-header">簡単なアプリを今すぐできます。</h2>
+        <h3 class="material-subheader">It is easy to build a web application using SkyWay. Why not give it a try?</h3>
+
+
+        <div class="howto-step">
+            <img src="{{ site.homedir[page.lang] }}images/count/1.png">
+            <div class="float-group">
+                <p>SkyWayのWebAPIを利用するため、開発者登録を行いAPIキーを申し込みます。</p>
+                <paper-button raised>Sign Up (Free)</paper-button>
+            </div>
+        </div>
+
+        <div class="howto-step">
+            <img src="{{ site.homedir[page.lang] }}images/count/2.png">
+            <div class="float-group">
+                <p>SkyWayを利用してアプリケーションを開発しましょう。<br><br>
+                    コードサンプルを参考にライブラリをインクルードし、JavaScriptコードを書きましょう。</p>
+
+                <paper-material class="code-section" elevation="1">
+                                <pre>
+<span class="nt">&lt;script </span><span class="na">src=</span><span
+                                        class="s">"https://skyway.io/dist/0.3/peer.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script&gt;</span>
+<span class="kd">var</span> <span class="nx">peer</span> <span class="o">=</span> <span class="k">new</span> <span
+                                        class="nx">Peer</span><span class="p">(</span><span class="nx">myId</span><span class="p">,</span> <span
+                                        class="p">{</span><span class="nx">key</span><span class="o">:</span> <span
+                                        class="s1">'yourApiKey'</span><span class="p">});</span>
+<span class="nx">peer</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">'open'</span><span
+                                        class="p">,</span> <span class="kd">function</span><span class="p">(id)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">conn</span> <span class="o">=</span> <span class="nx">peer</span><span
+                                        class="p">.</span><span class="nx">connect</span><span class="p">(</span><span class="s1">'anotherId'</span><span
+                                        class="p">);</span>
+    <span class="nx">conn</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">'open'</span><span
+                                        class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nx">conn</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="s1">'hello world'</span><span class="p">);</span>
+    <span class="p">});</span>
+<span class="p">});</span>
+<span class="nt">&lt;/script&gt;</span>
+                                </pre>
+                </paper-material>
+            </div>
+        </div>
+
+        <div class="howto-step">
+            <img src="{{ site.homedir[page.lang] }}images/count/3.png">
+            <div class="float-group">
+                <p>開発に必要な情報を収集しましょう。</p>
+                <paper-button raised>Full Guide</paper-button>
+                <paper-button raised>Need Help?</paper-button>
+            </div>
+        </div>
+        <h2 class="material-header">いいね！できたでしょう？</h2>
+    </div>
+</paper-material>
+
+<div id="signup-div">
+    <h2 id="signup-header">Like what you see? SkyWay is free to try.</h2>
+    <img src="{{ site.homedir[page.lang] }}images/divider_blue.png">
+    <paper-button id="signupButton" raised class="white">Sign Up</paper-button>
+</div>
