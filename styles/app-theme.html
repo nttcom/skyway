@@ -425,7 +425,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     }
         
     #content-div {
-        position: relative;
+        position: static;
         min-width: 1150px;
         height: 680px;
 /*        height: calc(100vh - 64px);*/
@@ -545,7 +545,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     .topSectionButton {
         position: absolute;
         
-        bottom: 50px;
+        top: 600px;
         left:0;
         right:0;
         margin:auto;
@@ -941,15 +941,15 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       
       
     #content-explanation-div {
-        position: relative;
-        float: left;
+        position: absolute;
+        top: 0;
+        left: 0;
         
 /*        height: calc(100vh - 64px);*/
         height: 680px;
         width: 35%;
         min-width: 400px;
         background-color: royalblue;
-        z-index: -1;
     }
       
     .content-title-side {
@@ -1045,15 +1045,16 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     }
       
     #content-animation-div {
-        position: relative;
-        float: right;
+        position: absolute;
+        top: 0;
+        left: 35%;
         
         height: 680px;
 /*        min-height: 600px;*/
         width: 65%;
-        min-width: 450px;
+        min-width: 750px;
 /*        background-color: green;*/
-        z-index: -1;
+/*        z-index: -1;*/
     }
       
     #animation-container {
@@ -1062,7 +1063,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         top:0;
         bottom: 10%;
         left: 0;
-        right: 0;
+        right: 0%;
         margin: auto;
         
         width: 80%;
