@@ -19,21 +19,30 @@ description: WebRTCは、ブラウザや専用アプリ同士でリアルタイ�
 
     <div id="support-options-div">
 
-        <div class="support-box-container">
+        <div class="support-box-container-full">
             <paper-material class="support-box" elevation="2">
                 <img src="{{ site.homedir[page.lang] }}images/logo.png">
-                <h3>Email</h3>
-                    <paper-button>Email Us</paper-button>
+                <h3>Contact Us</h3>
+                <paper-button>Something wrong?</paper-button>
             </paper-material>
         </div>
+        <div class="flex-box">
+            <div class="support-box-container-half flex-component">
+                <paper-material class="support-box" elevation="2">
+                    <img src="{{ site.homedir[page.lang] }}images/logo.png">
+                    <h3>Learn More</h3>
+                    <paper-button class="leftButton" onclick="">Documentation</paper-button>
+                    <paper-button class="rightButton">Demo Apps</paper-button>
+                </paper-material>
+            </div>
 
-        <div class="support-box-container">
-            <paper-material class="support-box" elevation="2">
-                <img src="{{ site.homedir[page.lang] }}images/logo.png">
-                <h3>Join the community</h3>
-                    <paper-button class="leftButton">Google Groups</paper-button>
-                    <paper-button class="rightButton">Gitter</paper-button>
-            </paper-material>
+            <div class="support-box-container-half flex-component">
+                <paper-material class="support-box" elevation="2">
+                    <img src="{{ site.homedir[page.lang] }}images/logo.png">
+                    <h3>Join the community</h3>
+                    <paper-button onclick="location.href='https://groups.google.com/forum/#!forum/skywayjs'">Google Groups</paper-button>
+                </paper-material>
+            </div>
         </div>
     </div>
 

@@ -2293,8 +2293,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       #support-options-div {
           position: relative;
           
-          width: 900px;
-          height: 264px;
+          width: 80%;
+          min-width: 700px;
+          height: 460px;
           
           left: 0;
           right: 0;
@@ -2306,21 +2307,53 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           border-radius: 5px;
       }
       
-      .support-box-container {
+      #support-options-div .flex-box {
+          position: absolute;
+          
+          top: 238px;
+          left: 0;
+          right: 0;
+          margin: auto;
+          
+          width: 750px;
+          
+/*          background-color: aquamarine;*/
+      }
+      
+      .support-box-container-full {
+/*          float: left;*/
+          position: absolute;
+          
+          left: 0;
+          right: 0;
+          margin: auto;
+          
+          width: 750px;
+          height: 200px;
+          
+/*          background-color: green;*/
+      }
+      
+      .support-box-container-half {
           float: left;
           position: relative;
           
           display: block;
           
-          width: 450px;
-          height: 250px;
+          width: 400px;
+          height: 200px;
           
 /*          background-color: green;*/
       }
       
       .support-box {
-          width: 360px;
-          height: 200px;
+          width: calc(100% - 40px);
+          
+          height: 180px;
+          padding: 0;
+          padding-top: 20px;
+          margin-top: 0;
+          margin-bottom: 0;
           
 /*          padding: 4px;*/
 /*          background-color: #afafaf;*/
@@ -2344,7 +2377,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 */
           margin:auto;
           
-          height: 80px;
+          height: 60px;
           
           object-fit: scale-down;
           
@@ -2353,45 +2386,54 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       .support-box h3 {
           
           margin: 0;
-          margin-top: 92px;
+          margin-top: 76px;
           padding: 0;
           
           text-align: center;
-          font-size: 32px;
+          font-size: 1.8em;
       }
       
       .support-box paper-button {
           position: absolute;
           left: 0;
-          right: auto;
+          margin: 0;
         
           bottom: 0px;
           
-          margin: 14px;
-/*          margin-bottom: 10px;*/
+/*          margin: 14px;*/
+/*          margin-bottom: 14px;*/
           
-          height: 50px;
-          width: calc(100% - 28px);
+/*          height: 50px;*/
+          width: 100%;
           
           color: #5285FF;
+          background-color: rgba(82, 133, 255, 0.2);
+          
           
           border-style: solid;
           border-color: #5285FF;
-          border-width: 2px;
+          border-width: 0px;
+          border-top-width: 2px;
           
-          border-radius: 4px;
-          
+          border-radius: 5px;
+          border-top-left-radius: 0px;
+          border-top-right-radius: 0px; 
       }
       
       .support-box .leftButton {
-          width: 45%;
+          width: 50%;
+          
+          border-right-width: 1px;
+          border-bottom-right-radius: 0px;
       }
 
       .support-box .rightButton {
           left: auto;
           right: 0;
-          width: 45%;
+          width: 50%;
       
+          border-left-width: 1px;
+          border-bottom-left-radius: 0px;
       }
           
           
@@ -2458,6 +2500,15 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
 
           justify-content: space-between;
+      }
+      
+      .flex-component {
+          -webkit-box-flex: 1;      /* OLD - iOS 6-, Safari 3.1-6 */
+          -moz-box-flex: 1;         /* OLD - Firefox 19- */
+/*          width: 33%;                For old syntax, otherwise collapses. */
+          -webkit-flex: 1;          /* Chrome */
+          -ms-flex: 1;              /* IE 10 */
+          flex: 1;                  /* NEW, Spec - Opera 12.1, Firefox 20+ */
       }
       
       .feature-box-container {
