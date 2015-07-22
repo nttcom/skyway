@@ -6,3 +6,4 @@ url: http://nttcom-webcore.github.io/skyway-renewal
 homedir:
   jp:
   en: ../
+exclude: [vendor]
