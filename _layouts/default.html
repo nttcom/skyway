@@ -92,85 +92,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <span id="browser-sync-binding"></span>
 <template is="dom-bind" id="app">
 
-    <!--    <paper-drawer-panel id="paperDrawerPanel">-->
-    <!--
-          <div drawer>
-
-            <paper-toolbar id="drawerToolbar">
-              <span class="paper-font-title">Menu</span>
-            </paper-toolbar>
-
-              <paper-menu class="list" attr-for-selected="data-route" selected="{{route}}" on-iron-select="onMenuSelect">
-                  <a data-route="home" href="/">
-                    <iron-icon icon="home"></iron-icon>
-                    <span>Home</span>
-                  </a>
-
-                  <a data-route="users" href="/users">
-                    <iron-icon icon="info"></iron-icon>
-                    <span>Users</span>
-                  </a>
-
-                  <a data-route="contact" href="/contact">
-                    <iron-icon icon="mail"></iron-icon>
-                    <span>Contact</span>
-                  </a>
-              </paper-menu>
-          </div>
-    -->
-
     <paper-header-panel main >
-
-        <!--
-        <script type="text/javascript">
-            $(document).ready(function() {
-                $("#main-share-button").click(function(){
-                    $(".sub-share-button").addClass('animating');
-                    $(".sub-share-button").fadeToggle();
-
-                    console.log('Hoi!');
-                });
-            });
-        </script>
-        -->
-
-        <!--
-                        <div id="menu_icon" class="">
-                            <paper-fab icon="favorite" class="wcircle-icon"></paper-fab>
-                            <div class="wcircle-menu" style="display:none;">
-                                <paper-material class="wcircle-menu-item share-icon" elevation="2">
-                                    <img src="images/outline_star_white.png">
-                                </paper-material>
-                                <paper-material class="wcircle-menu-item share-icon" elevation="2">
-                                    <img src="images/outline_star_white.png">
-                                </paper-material>
-                                <paper-material class="wcircle-menu-item share-icon" elevation="2">
-                                    <img src="images/outline_star_white.png">
-                                </paper-material>
-
-                                <div class="wcircle-menu-item">A</div>
-                                <div class="wcircle-menu-item">B</div>
-                                <div class="wcircle-menu-item">C</div>
-                                <div class="wcircle-menu-item">D</div>
-                            </div>
-                        </div>
-        -->
-
-        <!--
-                <paper-toolbar id="mainToolbar">
-
-                  <paper-icon-button id="paperToggle" icon="menu" paper-drawer-toggle></paper-icon-button>
-                  <span class="flex"></span>
-
-                  <paper-icon-button icon="refresh"></paper-icon-button>
-                  <paper-icon-button icon="search"></paper-icon-button>
-
-                  <div class="middle paper-font-display2 app-name">Skyway</div>
-
-                  <div class="bottom title">This, is a test.</div>
-
-                </paper-toolbar>
-        -->
 
         {% include share.html %}
         <paper-fab icon="favorite" id="main-share-button" class="share-button"></paper-fab>
@@ -209,13 +131,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 <!-- endbuild-->
 
-<!--
-                <script type="text/javascript">
-                    $(document).ready(function() {
-                        $("#nav-test").ferroMenu();
-                    });
-                </script>
--->
 </body>
 
 </html>
