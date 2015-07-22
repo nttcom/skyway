@@ -2320,7 +2320,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 /*          background-color: aquamarine;*/
       }
       
-      .support-box-container-full {
+      .support-box-contact-form {
 /*          float: left;*/
           position: absolute;
           
@@ -2332,6 +2332,60 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           height: 200px;
           
 /*          background-color: green;*/
+      }
+      
+      #contact-form-contents {
+          position: absolute;
+          
+          top: 160px;
+          left: 0;
+          right: 0;
+          margin: auto;
+          
+/*          background-color: red;*/
+          
+          width: 500px;
+          
+          display: none;
+      }
+      
+      .support-box-contact-form input,textarea {
+          position: relative;
+          margin-top: 20px;
+          
+          left: 0;
+          right: 0;
+          margin: auto;
+          margin-bottom: 24px;
+          padding-left: 10px;
+          padding-right: 10px;
+          
+          width: calc(100% - 20px);
+          
+          height: 40px;
+          
+          border-style: solid;
+          border-color: #5285FF;
+          border-width: 0px;
+          border-bottom-width: 2px;
+          
+          color: #5285FF;
+          font-size: 1.1em;
+/*          letter-spacing: 1px;*/
+          background-color: rgba(82, 133, 255, 0.2);
+      }
+      
+      .support-box-contact-form #messageBox {
+          padding-top: 6px;
+          margin-bottom: 0;
+          
+          height: 120px;
+          
+          border-width: 2px;
+      }
+      
+      input:focus, textarea:focus {
+          border:1px solid #97d6eb;
       }
       
       .support-box-container-half {
@@ -2349,7 +2403,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       .support-box {
           width: calc(100% - 40px);
           
-          height: 180px;
+          height: calc(100% - 20px);
           padding: 0;
           padding-top: 20px;
           margin-top: 0;
@@ -2369,6 +2423,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       .support-box img {
           position: absolute;
           
+          top: 24px;
           left: 0;
           right: 0;
 /*
@@ -2418,6 +2473,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           border-radius: 5px;
           border-top-left-radius: 0px;
           border-top-right-radius: 0px; 
+      }
+      
+      #submit-button {
+          color: #1ED75F;
+          background-color: rgba(30, 215, 95, 0.2);
+          border-color: #1ED75F;
+          display: none;
       }
       
       .support-box .leftButton {

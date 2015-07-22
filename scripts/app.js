@@ -49,6 +49,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     $.getScript("scripts/share.js", function(){
         console.log('Loaded scripts/share.js');
     });
+    
+    $.getScript("scripts/support.js", function(){
+        console.log('Loaded scripts/support.js');
+    });
 
     $.getScript("scripts/jQuery.WCircleMenu-cust.js", function(){
         console.log('Loaded scripts/jQuery.WCircleMenu-cust.js');
