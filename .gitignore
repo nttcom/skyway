@@ -13,3 +13,5 @@ npm-debug.log
 
 # gem
 Gemfile.lock
+vendor
+.bundle
