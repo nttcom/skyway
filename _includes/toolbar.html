@@ -2,11 +2,11 @@
     <div id="toolbar-inner">
 
         <paper-button id="logoButton"  onclick="location.href='./';">
-            <img src="{{ site.homedir[page.lang] }}images/logo-full.png" onclick="location.href='./';"/>
+            <img src="{{ site.homedir[page.lang] }}images/logo-full.png" onclick="location.href='https://skyway.io/ds/';"/>
         </paper-button>
 
         <div id="button-div">
-            <paper-button id="loginButton" raised class="colorful">Login</paper-button>
+            <paper-button id="loginButton" raised class="colorful" onclick="location.href='https://skyway.io/ds/';">Login</paper-button>
             {% case page.lang %}
             {% when 'jp' %}
             <paper-button id="langButton" class="red" onclick="location.href='en/';">English</paper-button>
