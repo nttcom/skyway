@@ -13,34 +13,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 <head>
     <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Polymer Starter Kit" />
     <title>{% if page.title %}{{ page.title }} ― {% endif %}{{ site.title[page.lang] }}</title>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-    <!-- Chrome for Android theme color -->
-    <meta name="theme-color" content="#5487FF">
-
     <!-- Web Application Manifest -->
     <link rel="manifest" href="{{ site.homedir[page.lang] }}manifest.json">
-
-    <!-- Tile color for Win8 -->
-    <meta name="msapplication-TileColor" content="#5487FF">
-
-    <!-- Add to homescreen for Chrome on Android -->
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="Polymer Starter Kit">
-    <link rel="icon" sizes="192x192" href="{{ site.homedir[page.lang] }}images/touch/chrome-touch-icon-192x192.png">
-
-    <!-- Add to homescreen for Safari on iOS -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Polymer Starter Kit">
-    <link rel="apple-touch-icon" href="{{ site.homedir[page.lang] }}images/touch/apple-touch-icon.png">
-
-    <!-- Tile icon for Win8 (144x144) -->
-    <meta name="msapplication-TileImage" content="{{ site.homedir[page.lang] }}images/touch/ms-touch-icon-144x144-precomposed.png">
 
     <!-- build:css styles/main.css -->
 
@@ -67,6 +45,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <meta property="og:url" content="{{ site.url }}{{ page.url | replace: 'index.html', '' }}">
     <meta property="og:image" content="{{ site.ogImage }}">
     <meta property="og:description" content="{{ page.description }}">
+
+    {% case page.lang %}
+    {% when 'jp' %}
+    <link rel="shortcut icon" href="favicon.ico?v2">
+    {% when 'en' %}
+    <link rel="shortcut icon" href="../favicon.ico?v2">
+    {% else %}
+    {% endcase %}
 </head>
 
 <body unresolved class="fullbleed layout vertical">

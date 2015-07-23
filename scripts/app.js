@@ -42,7 +42,13 @@ $('#skyway-logo').click(function(){
     $("html, body").animate({ scrollTop: 0 }, 600);
     return false;
  });
-    
+
+    // Change script path if on english version of page
+    var scriptPath = "";
+    if(/\/en\//.test(location.pathname)) {
+        scriptPath = "../";
+    }
+    scriptPath += "scripts/";
     
 //  $("#nav-test").ferroMenu();
     
@@ -50,15 +56,15 @@ $('#skyway-logo').click(function(){
 //        console.log('Loaded //ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js');
 //    });
     
-    $.getScript("scripts/share.js", function(){
+    $.getScript(scriptPath + "share.js", function(){
         console.log('Loaded scripts/share.js');
     });
     
-    $.getScript("scripts/support.js", function(){
+    $.getScript(scriptPath + "support.js", function(){
         console.log('Loaded scripts/support.js');
     });
 
-    $.getScript("scripts/jQuery.WCircleMenu-cust.js", function(){
+    $.getScript(scriptPath + "jQuery.WCircleMenu-cust.js", function(){
         console.log('Loaded scripts/jQuery.WCircleMenu-cust.js');
     });
     
