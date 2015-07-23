@@ -8,10 +8,19 @@
     <div class="divider"></div>
 
     <div id="links-div" class="flex-box">
+        {% case page.lang %}
+        {% when 'jp' %}
         <a href="http://www.ntt.com/aboutus/hp/disclaimer.html">免責事項・準拠法</a>
         <a href="http://www.ntt.com/copyright/">著作権について</a>
-        <a href="プライバシーポリシー ">プライバシーポリシー</a>
-        <a href="クッキーとウェブビーコンについて ">クッキーとウェブビーコンについて</a>
+        <a href="http://www.ntt.com/privacy/">プライバシーポリシー</a>
+        <a href="http://www.ntt.com/aboutus/hp/webbeacon.html">クッキーとウェブビーコンについて</a>
+        {% when 'en' %}
+        <a href="http://www.ntt.com/aboutus_e/hp/">Disclamer / Legal</a>
+        <a href="http://www.ntt.com/copyright_e/">Copyright</a>
+        <a href="http://www.ntt.com/privacy_e/">Privacy Policy</a>
+        <a href="http://www.ntt.com/aboutus_e/hp/webbeacon.html">Cookies and Web beacons</a>
+        {% else %}
+        {% endcase %}
     </div>
     
     <p>Copyright © 2015 NTT Communications</p>
