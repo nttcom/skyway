@@ -9,10 +9,10 @@ description: WebRTCは、ブラウザや専用アプリ同士でリアルタイ�
         <h2 class="content-title-side">iOS/Android SDK</h2>
         <h3 class="content-subtitle-side">クロスプラットフォームのビデオ通話とP2P通信</h3>
             <div id="content-highlights">
-                <div class="content-highlight">
+                                <div class="content-highlight">
                     <img class="content-highlight-icon" src="{{ site.homedir[page.lang] }}images/outline_star_white.png">
                     <div class="content-highlight-text-container">
-                        <div class="content-highlight-text">マルチデバイス対応を実現<br>JS/Android/iOSでAPI互換</div>
+                        <div class="content-highlight-text">JavaScript / Android / iOSでのAPI互換により、簡単にマルチデバイス対応が可能</div>
                     </div>
                 </div>
                 <div class="content-highlight">
@@ -24,7 +24,7 @@ description: WebRTCは、ブラウザや専用アプリ同士でリアルタイ�
                 <div class="content-highlight">
                     <img class="content-highlight-icon" src="{{ site.homedir[page.lang] }}images/outline_star_white.png">
                     <div class="content-highlight-text-container">
-                        <div class="content-highlight-text">アプリ開発に集中可能<br>サーバサイドはSkyWayが提供</div>
+                        <div class="content-highlight-text">サーバサイドを気にすることなく、アプリ開発へ集中可能</div>
                     </div>
                 </div>
             </div>
@@ -66,8 +66,7 @@ options.key = @"{APIKEY}";
 options.domain = @”{DOMAIN}”;
 SKWPeer* peer = [[SKWPeer alloc] initWithId:myId options:options];
 
-[peer on:SKW_PEER_EVENT_OPEN callback:^(NSObject* obj)
-{
+[peer on:SKW_PEER_EVENT_OPEN callback:^(NSObject* obj){
     SKWDataConnection* dataConnection = [peer connectWithId:'dest-peer-id'];
     [dataConnection on:SKW_DATACONNECTION_EVENT_OPEN callback:^(NSObject* obj){
         [dataConnection send:@"Hello SkyWay!"];
