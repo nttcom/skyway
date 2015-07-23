@@ -242,28 +242,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         height: 72px;
         font-size: 16px;
     }
-    
-    core-toolbar paper-tabs {
-      box-shadow: none;
-    }
-    
-    paper-tab.iron-selected {
-        color: #5285FF;
-    }
-    
-/*
-    paper-tab .tab-content {
-        font-weight: 300;   
-    }
-*/
-
-    paper-tab {
-        --paper-tab-ink: rgba(82, 133, 255, 0.5);
-    }
-    
-    paper-tabs /deep/ #bar {
-        color: #5285FF;
-    }
         
     .material-header {  
         text-align: center;
@@ -337,40 +315,56 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         z-index: -10;
     }
     
-
-    
     #tabBar-div {
-        display: inline;
+        position: absolute;
+/*        */
         top: 0px;
         
-        margin: 0 auto;
+        left: 0;
+        right: 0;
+        margin: auto;
         
         width: 600px;
         height: inherit;
         
-
+/*        background-color: green;*/
         font-family: 'Open Sans', sans-serif;
 
     }
         
-    #tabBar-div paper-tabs {
+    #tabBar-div button {
         
-        max-width: 600px;
         height: inherit;
-        --paper-tabs-selection-bar-color: #5285FF;
-        font-size: 18px;
-/*                background-color: orange;  */
+        
+        margin-left: 6px;
+        margin-right: 6px;
+        padding:10px;
+        
+        background-color: transparent;
+        border: none;
+        
+        color: rgba(82, 133, 255, 0.7);
+        
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1em;
+        font-weight: 400;
+        text-align: center;
+        
+        outline: none;
+        cursor:pointer;
+        
+/*        background-color: rgba(0,0,0,0.1);*/
     }
         
-    #tabBar-div paper-tab {
-        width: auto;
+    #tabBar-div button:hover {
+        
+/*        padding: 0px;*/
+        
+        color: #4265DF;
+        font-weight: 500;
     }
-/*
-    #tabBar-div paper-tabsselectionBar.align-bottom {
-      top: 0;
-      bottom: auto;
-    }
-*/
+        
+        
         
     #button-div {
         float: right;

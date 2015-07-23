@@ -12,19 +12,19 @@ description: WebRTCは、ブラウザや専用アプリ同士でリアルタイ�
                 <div class="content-highlight">
                     <img class="content-highlight-icon" src="{{ site.homedir[page.lang] }}images/outline_star_white.png">
                     <div class="content-highlight-text-container">
-                        <div class="content-highlight-text">libWebRTCやOSのアップデートはSkyWaySDKが随時追従</div>
+                        <div class="content-highlight-text">マルチデバイス対応を実現<br>JS/Android/iOSでAPI互換</div>
                     </div>
                 </div>
                 <div class="content-highlight">
                     <img class="content-highlight-icon" src="{{ site.homedir[page.lang] }}images/outline_star_white.png">
                     <div class="content-highlight-text-container">
-                        <div class="content-highlight-text">JS/Android/iOSで一部を除きAPIが互換、より多くのデバイスに対応可能</div>
+                        <div class="content-highlight-text">OSのアップデート等に伴う対応をサポート</div>
                     </div>
                 </div>
                 <div class="content-highlight">
                     <img class="content-highlight-icon" src="{{ site.homedir[page.lang] }}images/outline_star_white.png">
                     <div class="content-highlight-text-container">
-                        <div class="content-highlight-text">サーバサイドはSkyWayが提供</div>
+                        <div class="content-highlight-text">アプリ開発に集中可能<br>サーバサイドはSkyWayが提供</div>
                     </div>
                 </div>
             </div>
@@ -43,7 +43,7 @@ description: WebRTCは、ブラウザや専用アプリ同士でリアルタイ�
 <paper-material class="paper-div" elevation="2">
     <div class="paper-div-internal">
         <h2 class="material-header">簡単なアプリを今すぐできます。</h2>
-        <h3 class="material-subheader">It is easy to build a web application using SkyWay. Why not give it a try?</h3>
+        <h3 class="material-subheader">It is easy to build a iOS/Android  application using SkyWay. Why not give it a try?</h3>
 
 
         <div class="howto-step">
@@ -57,31 +57,45 @@ description: WebRTCは、ブラウザや専用アプリ同士でリアルタイ�
         <div class="howto-step">
             <img src="{{ site.homedir[page.lang] }}images/count/2.png">
             <div class="float-group">
-                <p>SkyWayを利用してアプリケーションを開発しましょう。<br><br>
-                    コードサンプルを参考にライブラリをインクルードし、JavaScriptコードを書きましょう。</p>
-
+                <p>SkyWayを利用してアプリケーションを開発しましょう。<br>
+                    コードサンプルを参考にライブラリをインクルードし、コードを書きましょう。</p>
+		<br>
+		<p>[iOS Objective-C]</p>
                 <paper-material class="code-section" elevation="1">
-                                <pre>
-<span class="nt">&lt;script </span><span class="na">src=</span><span
-                                        class="s">"https://skyway.io/dist/0.3/peer.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
-<span class="nt">&lt;script&gt;</span>
-<span class="kd">var</span> <span class="nx">peer</span> <span class="o">=</span> <span class="k">new</span> <span
-                                        class="nx">Peer</span><span class="p">(</span><span class="nx">myId</span><span class="p">,</span> <span
-                                        class="p">{</span><span class="nx">key</span><span class="o">:</span> <span
-                                        class="s1">'yourApiKey'</span><span class="p">});</span>
-<span class="nx">peer</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">'open'</span><span
-                                        class="p">,</span> <span class="kd">function</span><span class="p">(id)</span> <span class="p">{</span>
-    <span class="kd">var</span> <span class="nx">conn</span> <span class="o">=</span> <span class="nx">peer</span><span
-                                        class="p">.</span><span class="nx">connect</span><span class="p">(</span><span class="s1">'anotherId'</span><span
-                                        class="p">);</span>
-    <span class="nx">conn</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">'open'</span><span
-                                        class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-        <span class="nx">conn</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="s1">'hello world'</span><span class="p">);</span>
-    <span class="p">});</span>
-<span class="p">});</span>
-<span class="nt">&lt;/script&gt;</span>
-                                </pre>
+                                <pre>#import &lt;SkyWay/SKWPeer.h&gt;
+SKWPeerOption* options = [[SKWPeerOption alloc] init];
+options.key = @"{APIKEY}";
+options.domain = @”{DOMAIN}”;
+SKWPeer* peer = [[SKWPeer alloc] initWithId:myId options:options];
+
+[peer on:SKW_PEER_EVENT_OPEN callback:^(NSObject* obj)
+{
+    SKWDataConnection* dataConnection = [peer connectWithId:'dest-peer-id'];
+    [dataConnection on:SKW_DATACONNECTION_EVENT_OPEN callback:^(NSObject* obj){
+        [dataConnection send:@"Hello SkyWay!"];
+    }];
+}];</pre>
                 </paper-material>
+		<p>[Android Java]</p>
+                <paper-material class="code-section" elevation="1">
+                                <pre>#import &lt;io.skyway.Peer.*&gt;
+PeerOption options = new PeerOption();
+options.key = "{APIKEY}";
+options.domain = "{DOMAIN}";
+Peer peer = new Peer(getApplicationContext(),myId,options);
+
+peer.on(Peer.PeerEventEnum.OPEN, new OnCallback(){
+    public void onCallback(Object object){
+        DataConnection dataConnection = peer.connect('dest-peer-id');
+        dataConnection.on(DataEventEnum.DATA,new OnCallback(){
+            public void onCallback(Object object){
+                dataConnection.send("Hello SkyWay!");
+            }
+        });
+    }
+});</pre>
+                </paper-material>
+
             </div>
         </div>
 

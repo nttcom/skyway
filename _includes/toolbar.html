@@ -16,24 +16,22 @@
             {% endcase %}
         </div>
 
-        <div id="tabBar-div">
-            <paper-tabs >
-                {% case page.lang %}
-                {% when 'jp' %}
-                <paper-tab onclick="location.href='info-js.html';">JavaScript</paper-tab>
-                <paper-tab onclick="location.href='info-mobile.html';">iOS/Android</paper-tab>
-                <paper-tab onclick="location.href='documentation.html';">ドキュメント</paper-tab>
-                <paper-tab onclick="location.href='support.html';">サポート</paper-tab>
-                <paper-tab onclick="location.href='features.html';">すべての機能</paper-tab>
-                {% when 'en' %}
-                <paper-tab onclick="location.href='info-js.html';">JavaScript</paper-tab>
-                <paper-tab onclick="location.href='info-mobile.html';">iOS/Android</paper-tab>
-                <paper-tab onclick="location.href='documentation.html';">Docs</paper-tab>
-                <paper-tab onclick="location.href='support.html';">Support</paper-tab>
-                <paper-tab onclick="location.href='features.html';">Features</paper-tab>
-                {% else %}
-                {% endcase %}
-            </paper-tabs>
+        <div id="tabBar-div" class="flex-box">
+            {% case page.lang %}
+            {% when 'jp' %}
+            <button onclick="location.href='info-js.html';">JavaScript</button>
+            <button onclick="location.href='info-mobile.html';">iOS/Android</button>
+            <button onclick="location.href='documentation.html';">ドキュメント</button>
+            <button onclick="location.href='support.html';">サポート</button>
+            <button onclick="location.href='features.html';">すべての機能</button>
+            {% when 'en' %}
+            <button onclick="location.href='info-js.html';">JavaScript</button>
+            <button onclick="location.href='info-mobile.html';">iOS/Android</button>
+            <button onclick="location.href='documentation.html';">Documentation</button>
+            <button onclick="location.href='support.html';">Support</button>
+            <button onclick="location.href='features.html';">Features</button>
+            {% else %}
+            {% endcase %}
         </div>
     </div>
 </paper-toolbar>
