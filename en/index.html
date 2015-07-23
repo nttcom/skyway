@@ -5,29 +5,24 @@ title:
 description: WebRTC is a revolutionary new technology that allows browsers to send video, audio and data to other browsers in real time. If you use SkyWay, you can easily create WebRTC apps without having to worry about the server.
 ---
 <div id="content-div">
-<h1 class="content-title">Your next app. Done right.</h1>
-<h2 class="content-subtitle">Simple WebRTC for Web, iOS and Android.</h2>
-<div id="content-animation">
-    <div class="animation-section" id="animation-web" onclick="location.href='info-js.html';">
-        <div class="animation-image-div">
-            <img src="{{ site.homedir[page.lang] }}images/devices/macbook.png" class="animation-image">
+    <h1 class="content-title">ビデオ通話とP2P通信でイノベーティブなアプリを作ろう</h1>
+    <h2 class="content-subtitle">通信会社が提供する簡単で強力なWebRTCプラットフォーム</h2>
+    <div id="content-animation">
+        <div class="animation-section" id="animation-web" onclick="location.href='info-js.html';">
+            <div class="animation-image-div">
+                <img src="{{ site.homedir[page.lang] }}images/main_top_js.png" class="animation-image">
+            </div>
+            <h3 class="animation-title">JavaScript</h3>
         </div>
-        <h3 class="animation-title">Web</h3>
-    </div>
-    <div class="animation-section" id="animation-android" onclick="location.href='info-android.html';">
-        <div class="animation-image-div">
-            <img src="{{ site.homedir[page.lang] }}images/devices/nexus.png" class="animation-image">
+        <div class="animation-section" id="animation-android" onclick="location.href='info-mobile.html';">
+            <div class="animation-image-div">
+                <img src="{{ site.homedir[page.lang] }}images/main_top_mobile.png" class="animation-image">
+            </div>
+            <h3 class="animation-title">iOS/Android</h3>
         </div>
-        <h3 class="animation-title">Android</h3>
     </div>
-    <div class="animation-section" id="animation-ios" onclick="location.href='info-ios.html';">
-        <div class="animation-image-div">
-            <img src="{{ site.homedir[page.lang] }}images/devices/iphone.png" class="animation-image">
-        </div>
-        <h3 class="animation-title">iOS</h3>
-    </div>
-</div>
-<paper-button class="topSectionButton white" raised>Sign Up</paper-button>
+    <div></div>
+    <paper-button class="topSectionButton white" raised onclick="location.href='https://skyway.io/ds/registration/';">登録を行う</paper-button>
 </div>
 
 <paper-material id="highlights-div" elevation="2">
@@ -35,23 +30,24 @@ description: WebRTC is a revolutionary new technology that allows browsers to se
     <div id="highlights-internal-div">
         <div id="highlight1" class="highlight">
             <i class="fa fa-video-camera fa-4x"></i>
-            <h3 class="highlight-title">サーバサイドが不要</h3>
-            <div class="highlight-text">This is some placeholder text. But it should describe a neat feature.</div>
+            <h3 class="highlight-title">ビデオ通話とP2P通信</h3>
+            <div class="highlight-text">WebRTCの音声・映像・データ通信を利用可能</div>
         </div>
         <div id="highlight2" class="highlight">
+<!--            <img src="{{ site.homedir[page.lang] }}images/logo.png" class="highlight-icon"/>-->
             <i class="fa fa-paper-plane fa-4x"></i>
-            <h3 class="highlight-title">セキュアな通信</h3>
-            <div class="highlight-text">This is some placeholder text. But it should describe a neat feature.</div>
+            <h3 class="highlight-title">アプリ開発に集中</h3>
+            <div class="highlight-text">サーバサイド不要、JavaScript/iOS/AndroidのSDK提供</div>
         </div>
         <div id="highlight3" class="highlight">
             <i class="fa fa-lock fa-4x"></i>
-            <h3 class="highlight-title">豊富なSDK、拡張機能</h3>
-            <div class="highlight-text">This is some placeholder text. But it should describe a neat feature.</div>
+            <h3 class="highlight-title">セキュア</h3>
+            <div class="highlight-text">ビデオ通話、データ通信は全て暗号化</div>
         </div>
         <div id="highlight4" class="highlight">
             <i class="fa fa-cogs fa-4x"></i>
-            <h3 class="highlight-title">あとなんだ…</h3>
-            <div class="highlight-text">This is some placeholder text. But it should describe a neat feature.</div>
+            <h3 class="highlight-title">豊富な拡張機能</h3>
+            <div class="highlight-text">TURN、音声認識、マルチパーティ、スクリーン共有機能等を提供</div>
         </div>
     </div>
 </paper-material>
@@ -59,7 +55,7 @@ description: WebRTC is a revolutionary new technology that allows browsers to se
 <div id="signup-div">
     <h2 id="signup-header">Like what you see? SkyWay is free to try.</h2>
     <img src="{{ site.homedir[page.lang] }}images/divider_blue.png">
-    <paper-button id="signupButton" raised class="white">Sign Up</paper-button>
+    <paper-button id="signupButton" raised class="white" onclick="location.href='https://skyway.io/ds/registration/';">登録を行う</paper-button>
 </div>
 
 <paper-material id="news-div" elevation="1">
