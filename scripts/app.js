@@ -60,9 +60,9 @@ $('#skyway-logo').click(function(){
         console.log('Loaded scripts/share.js');
     });
     
-    $.getScript(scriptPath + "support.js", function(){
-        console.log('Loaded scripts/support.js');
-    });
+//    $.getScript(scriptPath + "support.js", function(){
+//        console.log('Loaded scripts/support.js');
+//    });
 
     $.getScript(scriptPath + "jQuery.WCircleMenu-cust.js", function(){
         console.log('Loaded scripts/jQuery.WCircleMenu-cust.js');
