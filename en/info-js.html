@@ -7,20 +7,20 @@ description: WebRTC is a revolutionary new technology that allows browsers to se
 <div id="anchor-div"></div>
 <div id="content-div" elevation="2">
     <div id="content-explanation-div">
-        <h2 class="content-title-side">SkyWay for Web.</h2>
-        <h3 class="content-subtitle-side">Take your website further.</h2>
+        <h2 class="content-title-side">JavaScript SDK</h2>
+        <h3 class="content-subtitle-side">Webブラウザだけでビデオ通話とP2P通信</h3>
 
             <div id="content-highlights">
                 <div class="content-highlight">
                     <img class="content-highlight-icon" src="{{ site.homedir[page.lang] }}images/outline_star_white.png">
                     <div class="content-highlight-text-container">
-                        <div class="content-highlight-text">WebRTCの複雑なAPIを簡単に利用して、魅力的なアプリケーションを開発できる</div>
+                        <div class="content-highlight-text">SDKによりWebRTCのAPIを<br>簡単に利用可能</div>
                     </div>
                 </div>
                 <div class="content-highlight">
                     <img class="content-highlight-icon" src="{{ site.homedir[page.lang] }}images/outline_star_white.png">
                     <div class="content-highlight-text-container">
-                        <div class="content-highlight-text">TLSに対応したセキュアなシグナリング</div>
+                        <div class="content-highlight-text">クライアントサイドの開発だけでOK、サーバサイドは準備不要</div>
                     </div>
                 </div>
                 <!--
@@ -34,7 +34,7 @@ description: WebRTC is a revolutionary new technology that allows browsers to se
                 <div class="content-highlight">
                     <img class="content-highlight-icon" src="{{ site.homedir[page.lang] }}images/outline_star_white.png">
                     <div class="content-highlight-text-container">
-                        <div class="content-highlight-text">豊富な拡張機能(TURNサーバ、音声認識、マルチパーティ、スクリーンシェア)を組込み可能</div>
+                        <div class="content-highlight-text">豊富な拡張機能(音声認識、マルチパーティ、スクリーン共有)を利用可能</div>
                     </div>
                 </div>
             </div>
@@ -42,17 +42,15 @@ description: WebRTC is a revolutionary new technology that allows browsers to se
     </div>
     <div id="content-animation-div">
         <div id="animation-container">
-            <paper-fab id="backButton" icon="arrow-back"></paper-fab>
-            <paper-fab id="forwardButton" icon="arrow-forward"></paper-fab>
-            <paper-material class="mini-demo-container"></paper-material>
+            <img id="animation-container-img" src="{{ site.homedir[page.lang] }}images/main_js.png">
         </div>
-        <paper-button class="topSectionButton white" raised>Sign Up</paper-button>
+        <paper-button class="topSectionButton white" raised onclick="location.href='https://skyway.io/ds/registration/';">Sign Up</paper-button>
     </div>
 </div>
 
 <paper-material class="paper-div" elevation="2">
     <div class="paper-div-internal">
-        <h2 class="material-header">簡単なアプリを今すぐできます。</h2>
+        <h2 class="material-header">使ってみよう！</h2>
         <h3 class="material-subheader">It is easy to build a web application using SkyWay. Why not give it a try?</h3>
 
 
@@ -60,7 +58,7 @@ description: WebRTC is a revolutionary new technology that allows browsers to se
             <img src="{{ site.homedir[page.lang] }}images/count/1.png">
             <div class="float-group">
                 <p>SkyWayのWebAPIを利用するため、開発者登録を行いAPIキーを申し込みます。</p>
-                <paper-button raised>Sign Up (Free)</paper-button>
+                <paper-button raised onclick="location.href='https://skyway.io/ds/registration/';">開発者登録を行う（無料）</paper-button>
             </div>
         </div>
 
@@ -99,8 +97,8 @@ description: WebRTC is a revolutionary new technology that allows browsers to se
             <img src="{{ site.homedir[page.lang] }}images/count/3.png">
             <div class="float-group">
                 <p>開発に必要な情報を収集しましょう。</p>
-                <paper-button raised>Full Guide</paper-button>
-                <paper-button raised>Need Help?</paper-button>
+                <paper-button raised onclick="location.href='http://nttcom.github.io/skyway/docs/#JS';">スタートガイドを見る</paper-button>
+                <paper-button raised onclick="location.href='support.html';">サポート</paper-button>
             </div>
         </div>
         <h2 class="material-header">いいね！できたでしょう？</h2>
