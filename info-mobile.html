@@ -7,7 +7,7 @@ description: WebRTCは、ブラウザや専用アプリ同士でリアルタイ�
 <div id="content-div" elevation="2">
     <div id="content-explanation-div">
         <h2 class="content-title-side">iOS/Android SDK</h2>
-        <h3 class="content-subtitle-side">クロスプラットフォームのビデオ通話とP2P通信</h3>
+        <h3 class="content-subtitle-side">クロスプラットフォームのマルチメディア通信</h3>
             <div id="content-highlights">
                                 <div class="content-highlight">
                     <img class="content-highlight-icon" src="{{ site.homedir[page.lang] }}images/outline_star_white.png">
@@ -40,14 +40,13 @@ description: WebRTCは、ブラウザや専用アプリ同士でリアルタイ�
 
 <paper-material class="paper-div" elevation="2">
     <div class="paper-div-internal">
-        <h2 class="material-header">簡単なアプリを今すぐできます。</h2>
-        <h3 class="material-subheader">It is easy to build a iOS/Android  application using SkyWay. Why not give it a try?</h3>
+        <h2 class="material-header">作ってみよう！</h2>
 
 
         <div class="howto-step">
             <img src="{{ site.homedir[page.lang] }}images/count/1.png">
             <div class="float-group">
-                <p>SkyWayのWebAPIを利用するため、開発者登録を行いAPIキーを申し込みます。</p>
+                <p>開発者登録を行い、APIキーを申し込みます。</p>
                 <paper-button raised onclick="location.href='https://skyway.io/ds/registration/';">開発者登録を行う（無料）</paper-button>
             </div>
         </div>
@@ -56,9 +55,9 @@ description: WebRTCは、ブラウザや専用アプリ同士でリアルタイ�
             <img src="{{ site.homedir[page.lang] }}images/count/2.png">
             <div class="float-group">
                 <p>SkyWayを利用してアプリケーションを開発しましょう。<br>
-                    コードサンプルを参考にライブラリをインクルードし、コードを書きましょう。</p>
-		<br>
-		<p>[iOS Objective-C]</p>
+                    サンプルを参考に、コードを書きましょう。</p>
+        <br>
+        <p>[iOS Objective-C]</p>
                 <paper-material class="code-section" elevation="1">
                                 <pre>#import &lt;SkyWay/SKWPeer.h&gt;
 SKWPeerOption* options = [[SKWPeerOption alloc] init];
@@ -73,7 +72,7 @@ SKWPeer* peer = [[SKWPeer alloc] initWithId:myId options:options];
     }];
 }];</pre>
                 </paper-material>
-		<p>[Android Java]</p>
+        <p>[Android Java]</p>
                 <paper-material class="code-section" elevation="1">
                                 <pre>#import &lt;io.skyway.Peer.*&gt;
 PeerOption options = new PeerOption();
@@ -104,12 +103,12 @@ peer.on(Peer.PeerEventEnum.OPEN, new OnCallback(){
                 <paper-button raised onclick="location.href='support.html';">サポート</paper-button>
             </div>
         </div>
-        <h2 class="material-header">いいね！できたでしょう？</h2>
+        <h2 class="material-header">　</h2>
     </div>
 </paper-material>
 
 <div id="signup-div">
-    <h2 id="signup-header">Like what you see? SkyWay is free to try.</h2>
+    <h2 id="signup-header">SkyWayは無料でご利用可能です！</h2>
     <img src="{{ site.homedir[page.lang] }}images/divider_blue.png">
     <paper-button id="signupButton" raised class="white" onclick="location.href='https://skyway.io/ds/registration/';">登録を行う</paper-button>
 </div>
