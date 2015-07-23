@@ -177,6 +177,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     background: white;
   }
             
+/*
 #main-share-button {
     position: fixed;
     
@@ -188,21 +189,48 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     --paper-fab-background: var(--paper-red-500);
      --paper-fab-keyboard-focus-background: var(--paper-red-900);
 }
+*/
         
-.sub-share-button {
+.share-button {
     position: fixed;
+    
+    right: 24px;
     
     width: 50px;
     height: 50px;
     
     z-index: 10;
     
-    display:none;
-}          
+/*    display:none;*/
+} 
+    
+.share-button:hover {
+    -webkit-transform: scale(1.1, 1.1);
+}
+    
+label {
+    position: fixed;
+    
+    right: 20px;
+    
+    height: 30px;
+    line-height: 30px;
+    
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    color: #777;
+    background-color: #eee;
+    opacity: 0;
+    border-radius: 5px;
+    
+    z-index: 1;
+}
         
 #share-button-fb {
-    right: calc(5% + 94px);
-    bottom: calc(5% + 3px);
+    
+    bottom: 24px;
     
     --iron-icon-height: 40px;
     --iron-icon-width: 40px;
@@ -210,10 +238,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     --paper-fab-background: #4E5FAD;
 /*     --paper-fab-keyboard-focus-background: var(--paper-red-900);*/
 }
+    
+#facebook-share-label {
+    bottom: 24px;
+}
         
 #share-button-tw {    
-    right: calc(5% + 68px);
-    bottom: calc(5% + 68px);
+    bottom: 90px;
     
     --iron-icon-height: 30px;
     --iron-icon-width: 30px;
@@ -222,15 +253,22 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 /*     --paper-fab-keyboard-focus-background: var(--paper-red-900);*/
 }
     
+#twitter-share-label {
+    bottom: 90px;
+}
+    
 #share-button-git {
-    right: calc(5% + 3px);
-    bottom: calc(5% + 94px);
+    bottom: 156px;
     
     --iron-icon-height: 36px;
     --iron-icon-width: 36px;
     
     --paper-fab-background: #3f3f3f;;
 /*     --paper-fab-keyboard-focus-background: var(--paper-red-900);*/
+}
+    
+#github-share-label {
+    bottom: 156px;
 }
         
     paper-tabs, core-toolbar {
