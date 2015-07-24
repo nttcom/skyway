@@ -54,7 +54,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <!-- will be replaced with elements/elements.vulcanized.html -->
   <link rel="import" href="elements/elements.html">
   <!-- endreplace-->
-    
+
 </head>
 
 <body unresolved class="fullbleed layout vertical">
@@ -87,9 +87,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           </paper-menu>
       </div>
 -->
-        
+
       <paper-header-panel main >
-          
+
         <paper-fab icon="favorite" id="main-share-button" class="share-button"></paper-fab>
         <paper-fab src="images/share-icons/facebook.png" id="share-button-fb" class="sub-share-button"></paper-fab>
         <paper-fab src="images/share-icons/twitter.png" id="share-button-tw" class="sub-share-button"></paper-fab>
@@ -98,41 +98,41 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         <paper-toolbar id="custom-toolbar">
             <div id="toolbar-inner">
 
-                <paper-button id="logoButton"  onclick="location.href='/index.html';">
-                    <img src="images/logo-full.png" onclick="location.href='/index.html';"></img>
+                <paper-button id="logoButton"  onclick="location.href='index.html';">
+                    <img src="images/logo-full.png" onclick="location.href='index.html';"></img>
                 </paper-button>
 
                 <div id="button-div">
                     <paper-button id="loginButton" raised class="colorful">Login</paper-button>
                     <paper-button id="langButton" class="red">English</paper-button>
                 </div>
-            
+
                 <div id="tabBar-div">
                     <paper-tabs >
-                        <paper-tab onclick="location.href='/info-js.html';">JavaScript</paper-tab>
-                        <paper-tab onclick="location.href='/info-mobile.html';">iOS/Android</paper-tab>
-                        <paper-tab onclick="location.href='/documentation.html';">Docs</paper-tab>
-                        <paper-tab onclick="location.href='/support.html';">Support</paper-tab>
-                        <paper-tab onclick="location.href='/features.html';">Features</paper-tab>
+                        <paper-tab onclick="location.href='info-js.html';">JavaScript</paper-tab>
+                        <paper-tab onclick="location.href='info-mobile.html';">iOS/Android</paper-tab>
+                        <paper-tab onclick="location.href='documentation.html';">Docs</paper-tab>
+                        <paper-tab onclick="location.href='support.html';">Support</paper-tab>
+                        <paper-tab onclick="location.href='features.html';">Features</paper-tab>
                     </paper-tabs>
                 </div>
             </div>
         </paper-toolbar>
-      
+
         <div id="header-section">
             <h1 id="header-title">Getting Started.</h1>
             <h2 id="header-subtitle">Learn how to make the most out of SkyWay.</h2>
-            
+
             <paper-material id="header-icon-div">
                 <div id="header-icon-inner">
                     <img src="images/JS.png" id="header-icon-img">
                 </div>
             </paper-material>
         </div>
-      
+
       <div id="main-section">
           <div id="text-area">
-          
+
               PeerJS simplifies peer-to-peer data, video, and audio calls.
               This guide will show you the basic concepts of the PeerJS API. If you learn better from seeing a working app, see the examples at the bottom of the page.
               This document is for NTT Communication's cloud service "SkyWay", a customized version of PeerJS.
@@ -140,17 +140,17 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               <h2>Setup</h2>
               <h3>1. Include the Javascript client</h3>
               <p>Add the PeerJS client library to your webpage.</p>
-              
-              
+
+
               <paper-material class="code-section" elevation="2">
                   <pre>&lt;script src="https://skyway.io/dist/0.3/peer.min.js"&gt;&lt;/script&gt;</pre>
               </paper-material>
-              
+
               <p>If you prefer, you can host it yourself: <a download href="https://skyway.io/dist/0.3/peer.js">peer.js</a>, <a download href="https://skyway.io/dist/0.3/peer.min.js">peer.min.js</a>, or <a href="https://github.com/nttcom/peerjs">fork us on Github</a>.</p>
-              
+
               <h3>2. Create the Peer object</h3>
               <p>The Peer object is where we create and receive connections.</p>
-              
+
               <paper-material class="code-section" elevation="2">
                   <pre>var peer = new Peer({key: 'APIKEY'});</pre>
               </paper-material>
@@ -165,8 +165,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                   <pre>peer.on('open', function(id) {
     console.log('My peer ID is: ' + id);
 });</pre>
-              </paper-material>             
-                  
+              </paper-material>
+
               <p>When we want to connect to another peer, we'll need to know their peer
               id. You're in charge of communicating the peer IDs between users of your
               site. Optionally, you can pass in your own IDs to the <a href="#peer"><code>Peer</code>
@@ -177,11 +177,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 href="#peeron-error">error handling</a>.</p>
 
               <h3>Data connections</h3>
-              
+
               <p>Start a data connection by calling <code>peer.connect</code> with the peer ID of the
               destination peer. Anytime another peer attempts to connect to your peer
               ID, you'll receive a <code>connection</code> event. </p>
-              
+
               <div class="two-col">
                 <div class="col col-header">Start connection</div>
                 <div class="col col-header">Receive connection</div>
@@ -189,11 +189,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 <paper-material class="col"><pre>peer.on('connection', function(conn) { ... });</pre></paper-material>
                 <div class="clear"></div>
               </div>
-              
+
               <p><code>peer.connect</code> and the callback of the
               <code>connection</code> event will both provide a
               <code>DataConnection</code> object. This object will allow you to send and receive data:</p>
-              
+
               <paper-material class="code-section" elevation="2">
                   <pre>conn.on('open', function() {
   // Receive messages
@@ -205,16 +205,16 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   conn.send('Hello!');
 });</pre>
               </paper-material>
-              
+
               <p>Read the <a href="#dataconnection">DataConnection API reference</a> for complete details on its methods and events.</p>
-      
+
               <h3>Video/audio calls</h3>
-              
+
               <p>Call another peer by calling <code>peer.call</code> with the peer ID of the destination
               peer. When a peer calls you, the <code>call</code> event is emitted.</p>
               <p>Unlike data connections, when receiving a <code>call</code> event, the call must be answered or no connection is established.</p>
-              
-              
+
+
       <div class="two-col">
         <div class="col col-header">Start call</div>
         <div class="col col-header">Answer call</div>
@@ -227,12 +227,12 @@ var call = peer.call('dest-peer-id',
   // Answer the call, providing our mediaStream
   call.answer(mediaStream);
 });</pre></paper-material>
-          
-          
+
+
         <div class="clear"></div>
       </div>
-              
-              
+
+
               <p>When calling or answering a call, a MediaStream should be provided. The
               MediaStream represents the local video (webcam) or audio stream and can be
               obtained with some (browser-specific) version of <a
@@ -240,24 +240,24 @@ var call = peer.call('dest-peer-id',
               call, the MediaStream is optional and if none is provided then a one-way
               call is established. Once the call is established, its <code>open</code> property is
               set to true.</p>
-              
+
               <p><code>peer.call</code> and the callback of the <code>call</code> event
               provide a MediaConnection object. The MediaConnection object itself emits
               a <code>stream</code> event whose callback includes the video/audio stream of the other peer.</p>
-              
+
               <paper-material class="code-section" elevation="2">
                   <pre>call.on('stream', function(stream) {
   // `stream` is the MediaStream of the remote peer.
   // Here you'd add it to an HTML video/canvas element.
 });</pre>
               </paper-material>
-              
+
               <p>Read the <a href="#mediaconnection">MediaConnection API reference</a> for complete details on its methods and events.</p>
 
               <h2>SkyWay Rest API</h2>
               <h3>listAllPeers()</h3>
               <p>Gets a list of active PeerID's connecting with the API key.</p>
-              
+
               <paper-material class="code-section" elevation="2">
                   <pre>peer.listAllPeers(function(list){
       // e.g. Add retrieved Peer ID list to userList array.
@@ -266,7 +266,7 @@ var call = peer.call('dest-peer-id',
     }
 });</pre>
               </paper-material>
-                  
+
                   <p>The SkyWay Rest API can only be accessed from the domain registered with the API key.</p>
 
                   <h2>Common questions</h2>
@@ -279,7 +279,7 @@ var call = peer.call('dest-peer-id',
                 well as binary Blobs and ArrayBuffers. Simply send arbitrary data and
                 you'll get it out the
                 other side:</p>
-                  
+
 <paper-material class="code-section" elevation="2"><pre>
 conn.send({
   strings: 'hi!',
@@ -288,7 +288,7 @@ conn.send({
   evenBinary: new Blob([1,2,3]),
   andMore: {bool: true}
 });</pre></paper-material>
-                  
+
 <p>Depending on the value of serialization, the data that can be sent between each of the platforms (JavaScript, iOS, and Android) changes. See <a href='https://github.com/nttcom/skyway-docs-en/blob/master/serialization.md' target="_blank">this chart</a> for details.</p>
 
         <h3>Are there any caveats?</h3>
@@ -340,42 +340,42 @@ var peer = new Peer({
       <p><a href="https://groups.google.com/forum/?fromgroups#!forum/peerjs">Discuss PeerJS on PeerJS Google Group.</a></p>
         <h3>Disclaimer</h3>
           <p>This document is based on <a href="http://peerjs.com/docs/">http://peerjs.com/docs/</a> and provides additional information necessary to use NTT Communication's SkyWay service. We cannot respond to inquiries regarding the original document.<br><br></p>
-          
+
           </div>
       </div>
-      
+
       <div id="footer">
-                
+
 
       </div>
 
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!--
             <paper-material id="footer" elevation="1" >
-                
+
 
             </paper-material>
 -->
 
         </div>
-          
-          
-          
-          
-       
+
+
+
+
+
       </paper-header-panel>
 <!--    </paper-drawer-panel>-->
 
