@@ -51,12 +51,6 @@ $('#skyway-logo').click(function(){
     }
     scriptPath += "scripts/";
 
-//  $("#nav-test").ferroMenu();
-
-//    $.getScript("//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js", function(){
-//        console.log('Loaded //ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js');
-//    });
-
     $.getScript(scriptPath + "share.js", function(){
         console.log('Loaded scripts/share.js');
     });
@@ -64,11 +58,5 @@ $('#skyway-logo').click(function(){
     $.getScript(scriptPath + "support.js", function(){
         console.log('Loaded scripts/support.js');
     });
-
-    $.getScript(scriptPath + "jQuery.WCircleMenu-cust.js", function(){
-        console.log('Loaded scripts/jQuery.WCircleMenu-cust.js');
-    });
-
-
 
 })(document);
