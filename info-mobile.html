@@ -33,7 +33,7 @@ description: WebRTCは、ブラウザや専用アプリ同士でリアルタイ�
         <div id="animation-container">
             <img id="animation-container-img" src="{{ site.homedir[page.lang] }}images/main_mobile.png">
         </div>
-        <a href='https://skyway.io/ds/registration/'><paper-button class="topSectionButton white" raised>登録を行う</paper-button></a>
+        <a target="_blank" href='https://skyway.io/ds/registration/'><paper-button class="topSectionButton white" raised>登録を行う</paper-button></a>
     </div>
 </div>
 
@@ -46,7 +46,7 @@ description: WebRTCは、ブラウザや専用アプリ同士でリアルタイ�
             <img src="{{ site.homedir[page.lang] }}images/count/1.png">
             <div class="float-group">
                 <p>開発者登録を行い、APIキーを申し込みます。</p>
-                <a href='https://skyway.io/ds/registration/'><paper-button raised>開発者登録を行う（無料）</paper-button></a>
+                <a target="_blank" href='https://skyway.io/ds/registration/'><paper-button raised>開発者登録を行う（無料）</paper-button></a>
             </div>
         </div>
 
@@ -58,7 +58,9 @@ description: WebRTCは、ブラウザや専用アプリ同士でリアルタイ�
         <br>
         <p>[iOS Objective-C]</p>
                 <paper-material class="code-section" elevation="1">
-                                <pre>#import &lt;SkyWay/SKWPeer.h&gt;
+                                <pre><code class="objectivec">
+#import &lt;SkyWay/SKWPeer.h&gt;
+
 SKWPeerOption* options = [[SKWPeerOption alloc] init];
 options.key = @"{APIKEY}";
 options.domain = @”{DOMAIN}”;
@@ -69,11 +71,13 @@ SKWPeer* peer = [[SKWPeer alloc] initWithId:myId options:options];
     [dataConnection on:SKW_DATACONNECTION_EVENT_OPEN callback:^(NSObject* obj){
         [dataConnection send:@"Hello SkyWay!"];
     }];
-}];</pre>
+}];</code></pre>
                 </paper-material>
         <p>[Android Java]</p>
                 <paper-material class="code-section" elevation="1">
-                                <pre>#import &lt;io.skyway.Peer.*&gt;
+                                <pre><code class="java">
+#import &lt;io.skyway.Peer.*&gt;
+
 PeerOption options = new PeerOption();
 options.key = "{APIKEY}";
 options.domain = "{DOMAIN}";
@@ -88,7 +92,8 @@ peer.on(Peer.PeerEventEnum.OPEN, new OnCallback(){
             }
         });
     }
-});</pre>
+});</code></pre>
+<script>hljs.initHighlighting();</script>
                 </paper-material>
 
             </div>
@@ -109,5 +114,5 @@ peer.on(Peer.PeerEventEnum.OPEN, new OnCallback(){
 <div id="signup-div">
     <h2 id="signup-header">SkyWayは無料でご利用可能です！</h2>
     <img src="{{ site.homedir[page.lang] }}images/divider_blue.png">
-    <a href='https://skyway.io/ds/registration/'><paper-button id="signupButton" raised class="white">登録を行う</paper-button></a>
+    <a target="_blank" href='https://skyway.io/ds/registration/'><paper-button id="signupButton" raised class="white">登録を行う</paper-button></a>
 </div>

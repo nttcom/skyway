@@ -6,12 +6,18 @@
         </a>
 
         <div id="button-div">
-            <paper-button id="loginButton" raised class="colorful"><a href='https://skyway.io/ds/'>Login</a></paper-button>
+            <a href='https://skyway.io/ds/' target="_blank">
+            <paper-button id="loginButton" raised class="colorful">Login</paper-button>
+            </a>
             {% case page.lang %}
             {% when 'jp' %}
-            <paper-button id="langButton" class="red"><a href='en/'>English</a></paper-button>
+            <a href='en/'>
+            <paper-button id="langButton" class="red">English</paper-button>
+            </a>
             {% when 'en' %}
-            <paper-button id="langButton" class="red" onclick="location.href='../';">日本語</paper-button>
+            <a href='../index.html'>
+            <paper-button id="langButton" class="red">日本語</paper-button>
+            </a>
             {% else %}
             {% endcase %}
         </div>
