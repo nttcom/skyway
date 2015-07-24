@@ -362,20 +362,50 @@ label {
         right: 0;
         margin: auto;
 
-        width: 600px;
+        width: 620px;
         height: inherit;
 
 /*        background-color: green;*/
         font-family: 'Open Sans', sans-serif;
 
     }
+    
+    @media screen and (max-width:1000px){
+       #tabBar-div {
+           
+           width: 540px;
+           font-size: 0.8em;
+           
+           left: auto;
+           right: 0;
+           margin: 0;
+           
+       }
+        
+        #button-div {
+            display: none;
+        }
+        
+        .share-button {
+            display: none;
+        }
+    }
+    
+    @media screen and (max-width:760px){
+       #tabBar-div {
+           
+           display: none;
+           
+       }
+        
+    }
 
     #tabBar-div button {
 
         height: inherit;
 
-        margin-left: 6px;
-        margin-right: 6px;
+        margin-left: 4px;
+        margin-right: 4px;
         padding:10px;
 
         background-color: transparent;
