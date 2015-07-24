@@ -1,15 +1,15 @@
 <paper-toolbar id="custom-toolbar">
     <div id="toolbar-inner">
 
-        <paper-button id="logoButton"  onclick="location.href='./';">
-            <img src="{{ site.homedir[page.lang] }}images/logos/logo-full.png" onclick="location.href='https://skyway.io/ds/';"/>
-        </paper-button>
+        <a id="logoButton"  href='./'>
+            <img src="{{ site.homedir[page.lang] }}images/logos/logo-full.png"/>
+        </a>
 
         <div id="button-div">
-            <paper-button id="loginButton" raised class="colorful" onclick="location.href='https://skyway.io/ds/';">Login</paper-button>
+            <paper-button id="loginButton" raised class="colorful"><a href='https://skyway.io/ds/'>Login</a></paper-button>
             {% case page.lang %}
             {% when 'jp' %}
-            <paper-button id="langButton" class="red" onclick="location.href='en/';">English</paper-button>
+            <paper-button id="langButton" class="red"><a href='en/'>English</a></paper-button>
             {% when 'en' %}
             <paper-button id="langButton" class="red" onclick="location.href='../';">日本語</paper-button>
             {% else %}
@@ -19,17 +19,20 @@
         <div id="tabBar-div" class="flex-box">
             {% case page.lang %}
             {% when 'jp' %}
+            <!--
             <button onclick="location.href='info-js.html';">JavaScript</button>
-            <button onclick="location.href='info-mobile.html';">iOS/Android</button>
-            <button onclick="location.href='features.html';">すべての機能</button>
-            <button onclick="location.href='documentation.html';">ドキュメント</button>
-            <button onclick="location.href='support.html';">サポート</button>
+            -->
+            <a href='info-js.html'>JavaScript</a>
+            <a href='info-mobile.html'>iOS/Android</a>
+            <a href='features.html'>すべての機能</a>
+            <a href='documentation.html'>ドキュメント</a>
+            <a href='support.html'>サポート</a>
             {% when 'en' %}
-            <button onclick="location.href='info-js.html';">JavaScript</button>
-            <button onclick="location.href='info-mobile.html';">iOS/Android</button>
-            <button onclick="location.href='features.html';">Features</button>
-            <button onclick="location.href='documentation.html';">Documentation</button>
-            <button onclick="location.href='support.html';">Support</button>
+            <a href='info-js.html'>JavaScript</a>
+            <a href='info-mobile.html'>iOS/Android</a>
+            <a href='features.html'>Features</a>
+            <a href='documentation.html'>Documentation</a>
+            <a href='support.html'>Support</a>
             {% else %}
             {% endcase %}
         </div>
