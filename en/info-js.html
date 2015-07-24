@@ -29,13 +29,17 @@ description: WebRTC is a revolutionary new technology that allows browsers to se
                     </div>
                 </div>
             </div>
-            <paper-button class="topSectionButton white" raised onclick="location.href='documentation.html';">Documentation</paper-button>
+            <a href='documentation.html'>
+              <paper-button class="topSectionButton white" raised>Documentation</paper-button>
+            </a>
     </div>
     <div id="content-animation-div">
         <div id="animation-container">
             <img id="animation-container-img" src="{{ site.homedir[page.lang] }}images/main_js.png">
         </div>
-        <paper-button class="topSectionButton white" raised onclick="location.href='https://skyway.io/ds/registration/';">Sign Up</paper-button>
+        <a href='https://skyway.io/ds/registration/' target="_blank">
+          <paper-button class="topSectionButton white" raised>Sign Up</paper-button>
+        </a>
     </div>
 </div>
 
@@ -49,7 +53,9 @@ description: WebRTC is a revolutionary new technology that allows browsers to se
             <img src="{{ site.homedir[page.lang] }}images/count/1.png">
             <div class="float-group">
                 <p>Register as a developer and create an API key.</p>
-                <paper-button raised onclick="location.href='https://skyway.io/ds/registration/';">Sign Up (Free)</paper-button>
+                <a href='https://skyway.io/ds/registration/' target="_blank">
+                  <paper-button raised>Sign Up (Free)</paper-button>
+                </a>
             </div>
         </div>
 
@@ -60,27 +66,22 @@ description: WebRTC is a revolutionary new technology that allows browsers to se
                     Refer to the sample code. Make sure to include the library!</p>
 
                 <paper-material class="code-section" elevation="1">
-                                <pre>
-<span class="nt">&lt;script </span><span class="na">src=</span><span
-                                        class="s">"https://skyway.io/dist/0.3/peer.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
-<span class="nt">&lt;script&gt;</span>
-<span class="kd">var</span> <span class="nx">peer</span> <span class="o">=</span> <span class="k">new</span> <span
-                                        class="nx">Peer</span><span class="p">(</span><span class="nx">myId</span><span class="p">,</span> <span
-                                        class="p">{</span><span class="nx">key</span><span class="o">:</span> <span
-                                        class="s1">'yourApiKey'</span><span class="p">});</span>
-<span class="nx">peer</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">'open'</span><span
-                                        class="p">,</span> <span class="kd">function</span><span class="p">(id)</span> <span class="p">{</span>
-    <span class="kd">var</span> <span class="nx">conn</span> <span class="o">=</span> <span class="nx">peer</span><span
-                                        class="p">.</span><span class="nx">connect</span><span class="p">(</span><span class="s1">'anotherId'</span><span
-                                        class="p">);</span>
-    <span class="nx">conn</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">'open'</span><span
-                                        class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-        <span class="nx">conn</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="s1">'hello world'</span><span class="p">);</span>
-    <span class="p">});</span>
-<span class="p">});</span>
-<span class="nt">&lt;/script&gt;</span>
-                                </pre>
-                </paper-material>
+                             <pre><code class="html">
+&lt;script src="https://skyway.io/dist/0.3/peer.min.js"&gt;&lt;/script&gt;
+
+&lt;script&gt;
+var peer = new Peer(myId, {key: 'yourApiKey'});
+
+peer.on('open', function(id) {
+  var conn = peer.connect('anotherId');
+  conn.on('open', function() {
+    conn.send('hello world');
+  });
+});
+&lt;/script&gt;
+</code></pre>
+<script>hljs.initHighlighting();$(".javascript").css("opacity", 0.95);</script>
+               </paper-material>
             </div>
         </div>
 
@@ -88,8 +89,12 @@ description: WebRTC is a revolutionary new technology that allows browsers to se
             <img src="{{ site.homedir[page.lang] }}images/count/3.png">
             <div class="float-group">
                 <p>Learn more from our development resources.</p>
-                <paper-button raised onclick="location.href='docs/#JS';">Full guide</paper-button>
-                <paper-button raised onclick="location.href='support.html';">Support</paper-button>
+                <a href='docs/#JS'>
+                  <paper-button raised>Full guide</paper-button>
+                </a>
+                <a href='support.html'>
+                  <paper-button raised>Support</paper-button>
+                </a>
             </div>
         </div>
         <h2 class="material-lower-header">　</h2>
@@ -99,5 +104,7 @@ description: WebRTC is a revolutionary new technology that allows browsers to se
 <div id="signup-div">
     <h2 id="signup-header">Like what you see? SkyWay is free to try.</h2>
     <img src="{{ site.homedir[page.lang] }}images/divider_blue.png">
-    <paper-button id="signupButton" raised class="white">Sign Up</paper-button>
+    <a href='https://skyway.io/ds/registration/' target="_blank">
+      <paper-button id="signupButton" raised class="white">Sign Up</paper-button>
+    </a>
 </div>
