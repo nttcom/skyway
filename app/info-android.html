@@ -55,15 +55,15 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <link rel="import" href="elements/elements.html">
   <!-- endreplace-->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    
+
 </head>
 
 <body unresolved class="fullbleed layout vertical">
   <span id="browser-sync-binding"></span>
   <template is="dom-bind" id="app">
-        
+
       <paper-header-panel main>
-          
+
         <paper-fab icon="favorite" id="main-share-button" class="share-button"></paper-fab>
         <paper-fab src="images/share-icons/facebook.png" id="share-button-fb" class="sub-share-button"></paper-fab>
         <paper-fab src="images/share-icons/twitter.png" id="share-button-tw" class="sub-share-button"></paper-fab>
@@ -72,34 +72,34 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         <paper-toolbar id="custom-toolbar">
             <div id="toolbar-inner">
 
-                <paper-button id="logoButton"  onclick="location.href='/index.html';">
-                    <img src="images/logo-full.png" onclick="location.href='/index.html';"></img>
+                <paper-button id="logoButton"  onclick="location.href='index.html';">
+                    <img src="images/logo-full.png" onclick="location.href='index.html';"></img>
                 </paper-button>
 
                 <div id="button-div">
                     <paper-button id="loginButton" raised class="colorful">Login</paper-button>
                     <paper-button id="langButton" class="red">English</paper-button>
                 </div>
-            
+
                 <div id="tabBar-div">
                     <paper-tabs flex alignBottom>
-                        <paper-tab onclick="location.href='/info-ios.html';">iOS</paper-tab>
-                        <paper-tab onclick="location.href='/info-android.html';">Android</paper-tab>
-                        <paper-tab onclick="location.href='/info-js.html';">JavaScript</paper-tab>
-                        <paper-tab onclick="location.href='/documentation.html';">Docs</paper-tab>
-                        <paper-tab onclick="location.href='/support.html';">Support</paper-tab>
-                        <paper-tab onclick="location.href='/features.html';">Features</paper-tab>
+                        <paper-tab onclick="location.href='info-ios.html';">iOS</paper-tab>
+                        <paper-tab onclick="location.href='info-android.html';">Android</paper-tab>
+                        <paper-tab onclick="location.href='info-js.html';">JavaScript</paper-tab>
+                        <paper-tab onclick="location.href='documentation.html';">Docs</paper-tab>
+                        <paper-tab onclick="location.href='support.html';">Support</paper-tab>
+                        <paper-tab onclick="location.href='features.html';">Features</paper-tab>
                     </paper-tabs>
                 </div>
             </div>
         </paper-toolbar>
-              
+
         <div>
             <div id="content-div" elevation="2">
                 <div id="content-explanation-div">
                     <h2 class="content-title-side">SkyWay for Android.</h2>
                     <h3 class="content-subtitle-side">Clever tagline goes here.</h2>
-                    
+
                     <div class="content-highlight">
                         <img class="content-highlight-icon" src="images/outline_star_white.png">
                         <div class="content-highlight-text-container">
@@ -118,13 +118,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                             <div class="content-highlight-text">This is a SkyWay Feature.</div>
                         </div>
                     </div>
-                    <paper-button class="topSectionButton white" raised onclick="location.href='/documentation.html';">Documentation</paper-button>
+                    <paper-button class="topSectionButton white" raised onclick="location.href='documentation.html';">Documentation</paper-button>
                 </div>
                 <div id="content-animation-div">
                     <paper-button class="topSectionButton white" raised>Sign Up</paper-button>
                 </div>
             </div>
-              
+
             <paper-material id="highlights-div" elevation="2">
                 <h2 class="material-header">A Simple and Flexible WebRTC Platform.</h2>
                 <div id="highlights-internal-div">
@@ -155,10 +155,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 <h2 id="signup-header">Like what you see? SkyWay is free to try.</h2>
                 <paper-button id="signupButton" raised class="white">Sign Up</paper-button>
             </div>
-              
+
             <paper-material id="news-div" elevation="1">
                 <h2 class="material-header">Our latest updates.</h2>
-                
+
                 <div id="news-headlines-div">
                     <div class="news-headline">
                         <div class="news-headline-date">16.5.2015</div>
@@ -176,12 +176,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             </paper-material>
 
             <div id="footer">
-                
+
 
             </div>
         </div>
-          
-       
+
+
       </paper-header-panel>
 
     <paper-toast id="caching-complete"
