@@ -6,21 +6,6 @@ $(document).ready(function() {
 //        console.log('Hoi!');
 //    });
     
-    $("#share-button-fb").mouseenter(function(){
-        $("#facebook-share-label").stop().animate({
-            right: '76px',
-            opacity: '0.8'
-        }, 150);
-            
-    });
-    
-    $("#share-button-fb").mouseleave(function(){
-        $("#facebook-share-label").stop().animate({
-            right: '20px',
-            opacity: '0.0'
-        }, 250);
-    });
-    
     $("#share-button-tw").mouseenter(function(){
         $("#twitter-share-label").stop().animate({
             right: '76px',
@@ -31,6 +16,21 @@ $(document).ready(function() {
     
     $("#share-button-tw").mouseleave(function(){
         $("#twitter-share-label").stop().animate({
+            right: '20px',
+            opacity: '0.0'
+        }, 250);
+    });
+    
+    $("#share-button-fb").mouseenter(function(){
+        $("#facebook-share-label").stop().animate({
+            right: '76px',
+            opacity: '0.8'
+        }, 150);
+            
+    });
+    
+    $("#share-button-fb").mouseleave(function(){
+        $("#facebook-share-label").stop().animate({
             right: '20px',
             opacity: '0.0'
         }, 250);
