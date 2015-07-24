@@ -11,4 +11,18 @@ body {
   background: #fafafa;
   font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #333;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+#unsupported-browser-banner {
+    background-color: #dddddd;
+    border-bottom: yellow;
+    width: 100%;
+    text-align: center;
+}
+
+#unsupported-browser-banner h1 {
+    font-size: 18px;
 }
