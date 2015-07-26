@@ -40,8 +40,20 @@ description: WebRTCは、ブラウザや専用アプリ同士でリアルタイ�
             <paper-button class="topSectionButton white" raised onclick="location.href='documentation.html';">ドキュメント</paper-button>
     </div>
     <div id="content-animation-div">
+        <link rel="stylesheet" href="{{ site.homedir[page.lang] }}styles/transmission-animation.css">
         <div id="animation-container">
-            <img id="animation-container-img" src="{{ site.homedir[page.lang] }}images/js_home.png">
+            <div class='js-transmission-animation'>
+                <div class='circle-container'>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <img src="{{ site.homedir[page.lang] }}images/top_images/js_top.png">
         </div>
         <paper-button class="topSectionButton white" raised onclick="location.href='https://skyway.io/ds/registration/';">登録を行う</paper-button>
     </div>

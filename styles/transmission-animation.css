@@ -6,7 +6,18 @@
     
     position:absolute;
     
-    top:-44px;
+    top:-48px;
+    
+    left:0;
+    right:0;
+    margin:auto;
+}
+
+.js-transmission-animation {
+    
+    position:absolute;
+    
+    top:-64px;
     
     left:0;
     right:0;
@@ -29,8 +40,8 @@
 	overflow: hidden;
 	position: absolute;
 	top: 50%; left: 50%;
-	width: 1.5em; height: 1.5em;
-	margin: -0.75em; /* 2em = 4em/2 */ /* half the width */
+	width: 1.8em; height: 1.8em;
+	margin: -0.9em; /* 2em = 4em/2 */ /* half the width */
     
     border-radius: 50%;
     
@@ -59,44 +70,92 @@
 	content: '';
 }
 
+/* Main Animation - webkit keyframes */
+
+/*
 @-webkit-keyframes pulsate1 {
     0% {-webkit-transform: rotate(246deg) translate(24em) scale(0.1, 0.1); opacity: 0.0;}
-    50% {opacity: 1.0;}
+    50% {opacity: 0.8;}
     100% {-webkit-transform: rotate(246deg) translate(24em) scale(1.2, 1.2); opacity: 0.0;}
 }
 
 @-webkit-keyframes pulsate2 {
     0% {-webkit-transform: rotate(256deg) translate(24em) scale(0.1, 0.1); opacity: 0.0;}
-    50% {opacity: 1.0;}
+    50% {opacity: 0.8;}
     100% {-webkit-transform: rotate(256deg) translate(24em) scale(1.2, 1.2); opacity: 0.0;}
 }
 
 @-webkit-keyframes pulsate3 {
     0% {-webkit-transform: rotate(266deg) translate(24em) scale(0.1, 0.1); opacity: 0.0;}
-    50% {opacity: 1.0;}
+    50% {opacity: 0.8;}
     100% {-webkit-transform: rotate(266deg) translate(24em) scale(1.2, 1.2); opacity: 0.0;}
 }
 
 @-webkit-keyframes pulsate4 {
     0% {-webkit-transform: rotate(276deg) translate(24em) scale(0.1, 0.1); opacity: 0.0;}
-    50% {opacity: 1.0;}
+    50% {opacity: 0.8;}
     100% {-webkit-transform: rotate(276deg) translate(24em) scale(1.2, 1.2); opacity: 0.0;}
 }
 
 @-webkit-keyframes pulsate5 {
     0% {-webkit-transform: rotate(286deg) translate(24em) scale(0.1, 0.1); opacity: 0.0;}
-    50% {opacity: 1.0;}
+    50% {opacity: 0.8;}
     100% {-webkit-transform: rotate(286deg) translate(24em) scale(1.2, 1.2); opacity: 0.0;}
 }
 
 @-webkit-keyframes pulsate6 {
     0% {-webkit-transform: rotate(296deg) translate(24em) scale(0.1, 0.1); opacity: 0.0;}
-    50% {opacity: 1.0;}
+    50% {opacity: 0.8;}
     100% {-webkit-transform: rotate(296deg) translate(24em) scale(1.2, 1.2); opacity: 0.0;}
 }
 
 @-webkit-keyframes pulsate7 {
     0% {-webkit-transform: rotate(306deg) translate(24em) scale(0.1, 0.1); opacity: 0.0;}
-    50% {opacity: 1.0;}
+    50% {opacity: 0.8;}
+    100% {-webkit-transform: rotate(306deg) translate(24em) scale(1.2, 1.2); opacity: 0.0;}
+}
+*/
+
+/* */
+
+@keyframes pulsate1 {
+    0% {-webkit-transform: rotate(246deg) translate(24em) scale(0.1, 0.1); opacity: 0.0;}
+    50% {opacity: 0.8;}
+    100% {-webkit-transform: rotate(246deg) translate(24em) scale(1.2, 1.2); opacity: 0.0;}
+}
+
+@keyframes pulsate2 {
+    0% {-webkit-transform: rotate(256deg) translate(24em) scale(0.1, 0.1); opacity: 0.0;}
+    50% {opacity: 0.8;}
+    100% {-webkit-transform: rotate(256deg) translate(24em) scale(1.2, 1.2); opacity: 0.0;}
+}
+
+@keyframes pulsate3 {
+    0% {-webkit-transform: rotate(266deg) translate(24em) scale(0.1, 0.1); opacity: 0.0;}
+    50% {opacity: 0.8;}
+    100% {-webkit-transform: rotate(266deg) translate(24em) scale(1.2, 1.2); opacity: 0.0;}
+}
+
+@keyframes pulsate4 {
+    0% {-webkit-transform: rotate(276deg) translate(24em) scale(0.1, 0.1); opacity: 0.0;}
+    50% {opacity: 0.8;}
+    100% {-webkit-transform: rotate(276deg) translate(24em) scale(1.2, 1.2); opacity: 0.0;}
+}
+
+@keyframes pulsate5 {
+    0% {-webkit-transform: rotate(286deg) translate(24em) scale(0.1, 0.1); opacity: 0.0;}
+    50% {opacity: 0.8;}
+    100% {-webkit-transform: rotate(286deg) translate(24em) scale(1.2, 1.2); opacity: 0.0;}
+}
+
+@keyframes pulsate6 {
+    0% {-webkit-transform: rotate(296deg) translate(24em) scale(0.1, 0.1); opacity: 0.0;}
+    50% {opacity: 0.8;}
+    100% {-webkit-transform: rotate(296deg) translate(24em) scale(1.2, 1.2); opacity: 0.0;}
+}
+
+@keyframes pulsate7 {
+    0% {-webkit-transform: rotate(306deg) translate(24em) scale(0.1, 0.1); opacity: 0.0;}
+    50% {opacity: 0.8;}
     100% {-webkit-transform: rotate(306deg) translate(24em) scale(1.2, 1.2); opacity: 0.0;}
 }
