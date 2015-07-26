@@ -25,10 +25,10 @@
     margin:auto;
 }
 
-#animated-logo {
+#animated-logo-mobile {
     
     position:absolute;
-    top: 30px;
+    top: 32px;
     
     left: 0;
     right: 40px;
@@ -36,11 +36,31 @@
     
     z-index: 10;
     
-    height: 50px;
+    height: 56px;
 
     object-fit: scale-down;
     
-    opacity: 0.3;
+    opacity: 0.1;
+    
+    -webkit-animation: pulsateLogo 2s 1s ease-out infinite; 
+}
+
+#animated-logo-js {
+    
+    position:absolute;
+    top: 78px;
+    
+    left: 0;
+    right: 0;
+    margin: auto;
+    
+    z-index: 10;
+    
+    height: 56px;
+
+    object-fit: scale-down;
+    
+    opacity: 0.1;
     
     -webkit-animation: pulsateLogo 2s 1s ease-out infinite; 
 }
@@ -140,9 +160,9 @@
 /* */
 
 @keyframes pulsateLogo {
-    0% {-webkit-transform: opacity: 0.3;}
+    0% {-webkit-transform: opacity: 0.25;}
     50% {opacity: 0.8;}
-    100% {-webkit-transform: opacity: 0.3;}
+    100% {-webkit-transform: opacity: 0.25;}
 }
 
 @keyframes pulsate1 {
