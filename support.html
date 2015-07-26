@@ -25,7 +25,9 @@ description: WebRTCは、ブラウザや専用アプリ同士でリアルタイ�
                 <paper-material class="support-box" elevation="2">
                     <i class="fa fa-paper-plane fa-4x"></i>
                     <h3>サポートに問い合わせ</h3>
-                    <paper-button id="contact-button" href="mailto:EMAIL_ADDRESS?subject=サポートリクエスト&body='" onclick="">メールを送る</paper-button>
+                    <a href='mailto:skyway@ntt.com?subject=サポートリクエスト&body=' target="_blank">
+                <paper-button id="contact-button">メールを送る</paper-button>
+                </a>
                 </paper-material>
             </div>
 
@@ -34,8 +36,10 @@ description: WebRTCは、ブラウザや専用アプリ同士でリアルタイ�
                 <paper-material class="support-box" elevation="2">
                     <i class="fa fa-comments fa-4x"></i>
                     <h3>他の開発者に質問</h3>
-                    <paper-button onclick="location.href='https://groups.google.com/forum/#!forum/skywayjs'">フォーラムに参加</paper-button>
-                </paper-material>
+                    <a href='https://groups.google.com/forum/#!forum/skywayjs' target="_blank">
+                    <paper-button>フォーラムに参加</paper-button>
+                    </a>
+
             </div>
         </div>
 
@@ -46,8 +50,14 @@ description: WebRTCは、ブラウザや専用アプリ同士でリアルタイ�
                 <paper-material class="support-box" elevation="2">
                     <i class="fa fa-book fa-4x"></i>
                     <h3>もっと知るには</h3>
-                    <paper-button class="leftButton" onclick="location.href='https://groups.google.com/forum/#!forum/skywayjs'">ドキュメントへ</paper-button>
-                    <paper-button class="rightButton" onclick="location.href='https://groups.google.com/forum/#!forum/skywayjs'">サンプルアプリへ</paper-button>
+                    <a href='documentation.html'>
+                    <paper-button class="leftButton">ドキュメントへ</paper-button>
+                    </a>
+
+                    <a href='demo-js.html'>
+                    <paper-button class="rightButton">サンプルアプリ</paper-button>
+                    </a>
+
                 </paper-material>
             </div>
         </div>

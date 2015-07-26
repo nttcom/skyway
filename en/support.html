@@ -23,7 +23,9 @@ description: WebRTC is a revolutionary new technology that allows browsers to se
             <paper-material class="support-box" elevation="2">
                 <i class="fa fa-paper-plane fa-4x"></i>
                 <h3>Something wrong?</h3>
-                <paper-button id="contact-button" href="mailto:EMAIL_ADDRESS?subject=Support Request&body='" onclick="">Contact us</paper-button>
+                <a href="mailto:EMAIL_ADDRESS?subject=Support Request&body=" target="_blank">
+                  <paper-button id="contact-button">Contact us</paper-button>
+                </a>
 <!--
                 <form method="POST" action="">
                     <i class="fa fa-paper-plane fa-4x"></i>
@@ -45,8 +47,12 @@ description: WebRTC is a revolutionary new technology that allows browsers to se
                 <paper-material class="support-box" elevation="2">
                     <i class="fa fa-book fa-4x"></i>
                     <h3>Learn More</h3>
-                    <paper-button class="leftButton" onclick="location.href='documentation.html';">Documentation</paper-button>
-                    <paper-button class="rightButton" onclick="location.href='demo-js.html';">Demo Apps</paper-button>
+                    <a href='documentation.html'>
+                      <paper-button class="leftButton">Documentation</paper-button>
+                    </a>
+                    <a href='demo-js.html'>
+                      <paper-button class="rightButton">Demo Apps</paper-button>
+                    </a>
 
                 </paper-material>
             </div>
@@ -55,7 +61,9 @@ description: WebRTC is a revolutionary new technology that allows browsers to se
                 <paper-material class="support-box" elevation="2">
                     <i class="fa fa-comments fa-4x"></i>
                     <h3>Google Groups</h3>
-                    <paper-button onclick="location.href='https://groups.google.com/forum/#!forum/skywayjs'">Join the community</paper-button>
+                    <a href='https://groups.google.com/forum/#!forum/skywayjs' target="_blank">
+                      <paper-button>Join the community</paper-button>
+                    </a>
                 </paper-material>
             </div>
         </div>
