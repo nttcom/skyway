@@ -37,13 +37,13 @@ description: WebRTCは、ブラウザや専用アプリ同士でリアルタイ�
                                     </div>
                 -->
             </div>
-            <paper-button class="topSectionButton white" raised onclick="location.href='documentation.html';">ドキュメント</paper-button>
+            <a href='documentation.html'><paper-button class="topSectionButton white" raised>ドキュメント</paper-button></a>
     </div>
     <div id="content-animation-div">
         <div id="animation-container">
             <img id="animation-container-img" src="{{ site.homedir[page.lang] }}images/main_js.png">
         </div>
-        <paper-button class="topSectionButton white" raised onclick="location.href='https://skyway.io/ds/registration/';">登録を行う</paper-button>
+        <a target="_blank" href='https://skyway.io/ds/registration/'><paper-button class="topSectionButton white" raised>登録を行う</paper-button></a>
     </div>
 </div>
 
@@ -56,7 +56,7 @@ description: WebRTCは、ブラウザや専用アプリ同士でリアルタイ�
             <img src="{{ site.homedir[page.lang] }}images/count/1.png">
             <div class="float-group">
                 <p>開発者登録を行い、APIキーを申し込みます。</p>
-                <paper-button raised onclick="location.href='https://skyway.io/ds/registration/';">開発者登録を行う（無料）</paper-button>
+                <a target="_blank" href='https://skyway.io/ds/registration/'><paper-button raised>開発者登録を行う（無料）</paper-button></a>
             </div>
         </div>
 
@@ -67,27 +67,23 @@ description: WebRTCは、ブラウザや専用アプリ同士でリアルタイ�
                     コードサンプルを参考にライブラリを使い、JavaScriptコードを書きましょう。</p>
 
                 <paper-material class="code-section" elevation="1">
-                                <pre>
-<span class="nt">&lt;script </span><span class="na">src=</span><span
-                                        class="s">"https://skyway.io/dist/0.3/peer.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
-<span class="nt">&lt;script&gt;</span>
-<span class="kd">var</span> <span class="nx">peer</span> <span class="o">=</span> <span class="k">new</span> <span
-                                        class="nx">Peer</span><span class="p">(</span><span class="nx">myId</span><span class="p">,</span> <span
-                                        class="p">{</span><span class="nx">key</span><span class="o">:</span> <span
-                                        class="s1">'yourApiKey'</span><span class="p">});</span>
-<span class="nx">peer</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">'open'</span><span
-                                        class="p">,</span> <span class="kd">function</span><span class="p">(id)</span> <span class="p">{</span>
-    <span class="kd">var</span> <span class="nx">conn</span> <span class="o">=</span> <span class="nx">peer</span><span
-                                        class="p">.</span><span class="nx">connect</span><span class="p">(</span><span class="s1">'anotherId'</span><span
-                                        class="p">);</span>
-    <span class="nx">conn</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">'open'</span><span
-                                        class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-        <span class="nx">conn</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="s1">'hello world'</span><span class="p">);</span>
-    <span class="p">});</span>
-<span class="p">});</span>
-<span class="nt">&lt;/script&gt;</span>
-                                </pre>
-                </paper-material>
+                             <pre><code class="html">
+&lt;script src="https://skyway.io/dist/0.3/peer.min.js"&gt;&lt;/script&gt;
+
+&lt;script&gt;
+var peer = new Peer(myId, {key: 'yourApiKey'});
+
+peer.on('open', function(id) {
+  var conn = peer.connect('anotherId');
+  conn.on('open', function() {
+    conn.send('hello world');
+  });
+});
+&lt;/script&gt;
+</code></pre>
+<script>hljs.initHighlighting();$(".javascript").css("opacity", 0.95);</script>
+
+               </paper-material>
             </div>
         </div>
 
@@ -95,8 +91,8 @@ description: WebRTCは、ブラウザや専用アプリ同士でリアルタイ�
             <img src="{{ site.homedir[page.lang] }}images/count/3.png">
             <div class="float-group">
                 <p>開発に必要な情報を収集しましょう。</p>
-                <paper-button raised onclick="location.href='docs/#JS';">スタートガイドを見る</paper-button>
-                <paper-button raised onclick="location.href='support.html';">サポート</paper-button>
+                <a href="docs/#JS"><paper-button raised>スタートガイドを見る</paper-button></a>
+                <a href='support.html'><paper-button raised>サポート</paper-button></a>
             </div>
         </div>
         <h2 class="material-header">　</h2>
@@ -106,5 +102,5 @@ description: WebRTCは、ブラウザや専用アプリ同士でリアルタイ�
 <div id="signup-div">
     <h2 id="signup-header">SkyWayは無料でご利用可能です！</h2>
     <img src="{{ site.homedir[page.lang] }}images/divider_blue.png">
-    <paper-button id="signupButton" raised class="white">登録を行う</paper-button>
+      <a target="_blank" href='https://skyway.io/ds/registration/'><paper-button id="signupButton" raised class="white">登録を行う</paper-button></a>
 </div>

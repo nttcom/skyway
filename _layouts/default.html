@@ -25,7 +25,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <link rel="stylesheet" href="{{ site.homedir[page.lang] }}styles/main.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <!-- endbuild-->
-    
+
     <!-- Open Sans Font -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700' rel='stylesheet' type='text/css'>
 
@@ -38,6 +38,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <!-- endreplace-->
 <!--    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
     <script src="../scripts/jquery-2.1.4.min.js"></script>
+
+    <!-- highlight.js -->
+    <link rel="stylesheet" href="/styles/highlights/tomorrow-night.css">
+    <script src="/scripts/highlight/highlight.pack.js"></script>
+    <!-- endhighlight -->
+
 
     <meta name="description" content="{{ page.description }}">
     <meta property="og:title" content="{% if page.title %}{{ page.title }} ― {% endif %}{{ site.title[page.lang] }}">
@@ -78,21 +84,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     </paper-header-panel>
     <!--    </paper-drawer-panel>-->
-
-    <paper-toast id="caching-complete"
-                 duration="6000"
-                 text="Caching complete! This app will work offline.">
-    </paper-toast>
-
-    <platinum-sw-register auto-register
-                          clients-claim
-                          skip-waiting
-                          on-service-worker-installed="displayInstalledToast">
-        <platinum-sw-cache default-cache-strategy="networkFirst"
-                           precache-file="precache.json">
-        </platinum-sw-cache>
-    </platinum-sw-register>
-
 </template>
 
 <!--   build:js scripts/app.js -->
