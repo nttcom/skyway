@@ -7,7 +7,7 @@
     
     position:absolute;
     
-    top:-44px;
+    top:66px;
     
     left:0;
     right:0;
@@ -18,11 +18,31 @@
     
     position:absolute;
     
-    top:-64px;
+    top:16px;
     
     left:0;
     right:40px;
     margin:auto;
+}
+
+#animated-logo {
+    
+    position:absolute;
+    top: 30px;
+    
+    left: 0;
+    right: 40px;
+    margin: auto;
+    
+    z-index: 10;
+    
+    height: 50px;
+
+    object-fit: scale-down;
+    
+    opacity: 0.3;
+    
+    -webkit-animation: pulsateLogo 2s 1s ease-out infinite; 
 }
 
 .circle-container {
@@ -118,6 +138,12 @@
 */
 
 /* */
+
+@keyframes pulsateLogo {
+    0% {-webkit-transform: opacity: 0.3;}
+    50% {opacity: 0.8;}
+    100% {-webkit-transform: opacity: 0.3;}
+}
 
 @keyframes pulsate1 {
     0% {-webkit-transform: rotate(234deg) translate(20em) scale(0.1, 0.1); opacity: 0.0;}
