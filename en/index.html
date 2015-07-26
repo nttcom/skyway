@@ -8,15 +8,27 @@ description: WebRTC is a revolutionary new technology that allows browsers to se
     <h1 class="content-title">Connect in real time</h1>
     <h2 class="content-subtitle">A powerful yet simple WebRTC platform.</h2>
     <div id="content-animation">
+        <link rel="stylesheet" href="{{ site.homedir[page.lang] }}styles/transmission-animation.css">
+        <div class='transmission-animation'>
+            <div class='circle-container'>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
         <div class="animation-section" id="animation-web" onclick="location.href='info-js.html';">
             <div class="animation-image-div">
-                <img src="{{ site.homedir[page.lang] }}images/main_top_js.png" class="animation-image">
+                <img src="{{ site.homedir[page.lang] }}images/top_js.png" class="animation-image">
             </div>
             <h3 class="animation-title">JavaScript</h3>
         </div>
         <div class="animation-section" id="animation-android" onclick="location.href='info-mobile.html';">
             <div class="animation-image-div">
-                <img src="{{ site.homedir[page.lang] }}images/main_top_mobile.png" class="animation-image">
+                <img src="{{ site.homedir[page.lang] }}images/top_mobile.png" class="animation-image">
             </div>
             <h3 class="animation-title">iOS/Android</h3>
         </div>
@@ -27,6 +39,7 @@ description: WebRTC is a revolutionary new technology that allows browsers to se
 
 <paper-material id="highlights-div" elevation="2">
     <h2 class="material-header">A Simple and Flexible WebRTC Platform.</h2>
+    <div class="divider"></div>
     <div id="highlights-internal-div">
         <div id="highlight1" class="highlight">
             <i class="fa fa-video-camera fa-4x"></i>
