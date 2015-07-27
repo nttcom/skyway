@@ -215,6 +215,7 @@ width: inherit;
 }
 
 .share-button:hover {
+    transform: scale(1.1, 1.1);
     -webkit-transform: scale(1.1, 1.1);
 }
 
@@ -241,8 +242,8 @@ label {
 #share-button-tw {
     bottom: 24px;
 
-    --iron-icon-height: 30px;
-    --iron-icon-width: 30px;
+    --iron-icon-height: 28px;
+    --iron-icon-width: 28px;
 
     --paper-fab-background: #55ACEE;
 /*     --paper-fab-keyboard-focus-background: var(--paper-red-900);*/
@@ -535,7 +536,7 @@ label {
     #content-div {
         position: static;
         min-width: 1150px;
-        height: 680px;
+        height: 600px;
 /*        height: calc(100vh - 64px);*/
 /*        min-height: 600px;*/
         background-color: #5285FF;
@@ -546,7 +547,7 @@ label {
 
     .content-title {
         position: relative;
-        top: 50px;
+        top: 36px;
 
         margin: 0;
 
@@ -557,7 +558,7 @@ label {
 
     .content-subtitle {
         position: relative;
-        top: 64px;
+        top: 46px;
 
         margin: 0;
         margin-bottom: 46px;
@@ -570,7 +571,7 @@ label {
 
     #content-animation {
         position: absolute;
-        top: 190px;
+        top: 150px;
 
         left: 0;
         right: 0;
@@ -596,9 +597,10 @@ label {
         position: relative;
 
         margin: auto;
+        top: 96px;
 
         width: 525px;
-        height: 320px;
+        height: 240px;
 
 /*        background-color: blue;*/
     }
@@ -606,19 +608,26 @@ label {
     .animation-image {
 
         position: absolute;
-        top: 40px;
+/*        top: 40px;*/
         left:0;
         right:0;
 
         margin: auto;
 
-        width: 90%;
+        height: 220px;
         object-fit: scale-down;
+        
+        cursor:pointer;
+    }
+    
+    .animation-image:hover {
+        transform: scale(1.02, 1.02);
+        -webkit-transform: scale(1.02, 1.02);
     }
 
     .animation-title {
         position: relative;
-        top: 00px;
+        top: 88px;
 
         margin: auto;
 
@@ -651,7 +660,7 @@ label {
     .topSectionButton {
         position: absolute;
 
-        top: 600px;
+        top: 520px;
         left:0;
         right:0;
         margin:auto;
@@ -1160,7 +1169,7 @@ label {
         left: 0;
 
 /*        height: calc(100vh - 64px);*/
-        height: 680px;
+        height: 600px;
         width: 35%;
         min-width: 400px;
         background-color: royalblue;
@@ -1180,10 +1189,10 @@ label {
     .content-subtitle-side {
 
         position: relative;
-        top: 56px;
+        top: 36px;
 
         margin: 0px;
-        margin-bottom: 80px;
+        margin-bottom: 60px;
 
         color: #FFF;
         opacity: 0.65;
@@ -1206,7 +1215,7 @@ label {
     .content-highlight {
         position: relative;
         margin: auto;
-        margin-top: 6%;
+        margin-top: 5%;
         margin-bottom: 7%;
 
         width: 80%;
@@ -1278,22 +1287,35 @@ label {
     #animation-container {
         position: absolute;
 
-        top:0;
-        bottom: 10%;
+        top: 36px;
         left: 0;
-        right: 0%;
+        right: 0;
         margin: auto;
 
-        width: 80%;
         min-width: 650px;
-        height: 460px;
+        height: 440px;
 
 /*        background-color: rgba(255,255,255,0.2); */
-
-        border-radius: 5px;
+/*        background-color: red;*/
     }
 
-      #animation-container-img {
+      #animation-container img {
+          
+        position: absolute;
+/*        top: 40px;*/
+        
+          bottom: 0;
+          left: 0;
+          right: 0;
+/*          margin-right: -50%;*/
+
+        margin: auto;
+
+        max-height: 260px;
+        max-width: 740px;
+        object-fit: scale-down;
+          
+/*
           width: 100%;
           position: absolute;
           top: 50%;
@@ -1304,6 +1326,7 @@ label {
           -webkit-transform: translate(-50%, -50%);
           -moz-transform: translate(-50%, -50%);
           -o-transform: translate(-50%, -50%);
+*/
       }
 
       #backButton {

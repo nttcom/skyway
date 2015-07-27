@@ -1,0 +1,208 @@
+/**
+ * Position icons into circle (SO)
+ * http://stackoverflow.com/q/12813573/1397351 
+ */
+
+.js-transmission-animation {
+    
+    position:absolute;
+    
+    top:66px;
+    
+    left:0;
+    right:0;
+    margin:auto;
+}
+
+.ios-transmission-animation {
+    
+    position:absolute;
+    
+    top:16px;
+    
+    left:0;
+    right:40px;
+    margin:auto;
+}
+
+#animated-logo-mobile {
+    
+    position:absolute;
+    top: 32px;
+    
+    left: 0;
+    right: 40px;
+    margin: auto;
+    
+    z-index: 10;
+    
+    height: 56px;
+
+    object-fit: scale-down;
+    
+    opacity: 0.1;
+    
+    -webkit-animation: pulsateLogo 3s 1s ease-out infinite; 
+}
+
+#animated-logo-js {
+    
+    position:absolute;
+    top: 78px;
+    
+    left: 0;
+    right: 0;
+    margin: auto;
+    
+    z-index: 10;
+    
+    height: 56px;
+
+    object-fit: scale-down;
+    
+    opacity: 0.1;
+    
+    -webkit-animation: pulsateLogo 3s 1s ease-out infinite; 
+}
+
+.circle-container {
+	position: relative;
+	width: 40em;
+	height: 40em;
+	padding: 2.8em; /*= 2em * 1.4 (2em = half the width of an img, 1.4 = sqrt(2))*/
+/*	border: dashed 1px;*/
+	border-radius: 50%;
+	margin: 1.75em auto 0;
+    
+/*    background-color: #5285FF;*/
+}
+.circle-container div {
+	display: block;
+	overflow: hidden;
+	position: absolute;
+	top: 50%; left: 50%;
+	width: 1.8em; height: 1.8em;
+	margin: -0.9em; /* 2em = 4em/2 */ /* half the width */
+    
+    border-radius: 50%;
+    
+    background-color:#fff;
+    opacity:0;
+   
+}
+
+.circle-container div:nth-of-type(1) { -webkit-animation: pulsate1 3s 0s ease-out infinite;  } /* 12em = half the width of the wrapper */
+.circle-container div:nth-of-type(2) { -webkit-animation: pulsate2 3s 0.25s ease-out infinite; }
+.circle-container div:nth-of-type(3) { -webkit-animation: pulsate3 3s 0.5s ease-out infinite; }
+.circle-container div:nth-of-type(4) { -webkit-animation: pulsate4 3s 0.75s ease-out infinite; }
+.circle-container div:nth-of-type(5) { -webkit-animation: pulsate5 3s 1s ease-out infinite; }
+.circle-container div:nth-of-type(6) { -webkit-animation: pulsate6 3s 1.25s ease-out infinite; }
+.circle-container div:nth-of-type(7) { -webkit-animation: pulsate7 3s 1.5s ease-out infinite; }
+
+/* this is for showing the circle on which the images are placed */
+.circle-container:after {
+	position: absolute;
+	top: 2.8em; left: 2.8em;
+	width: 40em; height: 40em;
+/*	border: dashed 1px darkblue;*/
+	border-radius: 50%;
+	opacity: .3;
+	pointer-events: none;
+	content: '';
+}
+
+/* Main Animation - webkit keyframes */
+
+/*
+@-webkit-keyframes pulsate1 {
+    0% {-webkit-transform: rotate(246deg) translate(20em) scale(0.1, 0.1); opacity: 0.0;}
+    33% {opacity: 0.8;}
+    66% {-webkit-transform: rotate(246deg) translate(20em) scale(1.2, 1.2); opacity: 0.0;}
+}
+
+@-webkit-keyframes pulsate2 {
+    0% {-webkit-transform: rotate(256deg) translate(20em) scale(0.1, 0.1); opacity: 0.0;}
+    33% {opacity: 0.8;}
+    66% {-webkit-transform: rotate(256deg) translate(20em) scale(1.2, 1.2); opacity: 0.0;}
+}
+
+@-webkit-keyframes pulsate3 {
+    0% {-webkit-transform: rotate(266deg) translate(20em) scale(0.1, 0.1); opacity: 0.0;}
+    33% {opacity: 0.8;}
+    66% {-webkit-transform: rotate(266deg) translate(20em) scale(1.2, 1.2); opacity: 0.0;}
+}
+
+@-webkit-keyframes pulsate4 {
+    0% {-webkit-transform: rotate(276deg) translate(20em) scale(0.1, 0.1); opacity: 0.0;}
+    33% {opacity: 0.8;}
+    66% {-webkit-transform: rotate(276deg) translate(20em) scale(1.2, 1.2); opacity: 0.0;}
+}
+
+@-webkit-keyframes pulsate5 {
+    0% {-webkit-transform: rotate(286deg) translate(20em) scale(0.1, 0.1); opacity: 0.0;}
+    33% {opacity: 0.8;}
+    66% {-webkit-transform: rotate(286deg) translate(20em) scale(1.2, 1.2); opacity: 0.0;}
+}
+
+@-webkit-keyframes pulsate6 {
+    0% {-webkit-transform: rotate(296deg) translate(20em) scale(0.1, 0.1); opacity: 0.0;}
+    33% {opacity: 0.8;}
+    66% {-webkit-transform: rotate(296deg) translate(20em) scale(1.2, 1.2); opacity: 0.0;}
+}
+
+@-webkit-keyframes pulsate7 {
+    0% {-webkit-transform: rotate(306deg) translate(20em) scale(0.1, 0.1); opacity: 0.0;}
+    33% {opacity: 0.8;}
+    66% {-webkit-transform: rotate(306deg) translate(20em) scale(1.2, 1.2); opacity: 0.0;}
+}
+*/
+
+/* */
+
+@keyframes pulsateLogo {
+    0% {-webkit-transform: opacity: 0.25;}
+    33% {opacity: 0.8;}
+    66% {-webkit-transform: opacity: 0.25;}
+}
+
+@keyframes pulsate1 {
+    0% {-webkit-transform: rotate(234deg) translate(20em) scale(0.1, 0.1); opacity: 0.0;}
+    33% {-webkit-transform: rotate(234deg) translate(20em) scale(0.75, 0.75); opacity: 0.8;}
+    66% {-webkit-transform: rotate(234deg) translate(20em) scale(0.1, 0.1); opacity: 0.0;}
+}
+
+@keyframes pulsate2 {
+    0% {-webkit-transform: rotate(246deg) translate(20em) scale(0.1, 0.1); opacity: 0.0;}
+    33% {-webkit-transform: rotate(246deg) translate(20em) scale(0.9, 0.9);opacity: 0.8;}
+    66% {-webkit-transform: rotate(246deg) translate(20em) scale(0.1, 0.1); opacity: 0.0;}
+}
+
+@keyframes pulsate3 {
+    0% {-webkit-transform: rotate(258deg) translate(20em) scale(0.1, 0.1); opacity: 0.0;}
+    33% {-webkit-transform: rotate(258deg) translate(20em) scale(1.05, 1.05); opacity: 0.8;}
+    66% {-webkit-transform: rotate(258deg) translate(20em) scale(0.1, 0.1); opacity: 0.0;}
+}
+
+@keyframes pulsate4 {
+    0% {-webkit-transform: rotate(270deg) translate(20em) scale(0.1, 0.1); opacity: 0.0;}
+    33% {-webkit-transform: rotate(270deg) translate(20em) scale(1.2, 1.2); opacity: 0.8;}
+    66% {-webkit-transform: rotate(270deg) translate(20em) scale(0.1, 0.1); opacity: 0.0;}
+}
+
+@keyframes pulsate5 {
+    0% {-webkit-transform: rotate(282deg) translate(20em) scale(0.1, 0.1); opacity: 0.0;}
+    33% {-webkit-transform: rotate(282deg) translate(20em) scale(1.05, 1.05); opacity: 0.8;}
+    66% {-webkit-transform: rotate(282deg) translate(20em) scale(0.1, 0.1); opacity: 0.0;}
+}
+
+@keyframes pulsate6 {
+    0% {-webkit-transform: rotate(294deg) translate(20em) scale(0.1, 0.1); opacity: 0.0;}
+    33% {-webkit-transform: rotate(294deg) translate(20em) scale(0.9, 0.9); opacity: 0.8;}
+    66% {-webkit-transform: rotate(294deg) translate(20em) scale(0.1, 0.1); opacity: 0.0;}
+}
+
+@keyframes pulsate7 {
+    0% {-webkit-transform: rotate(306deg) translate(20em) scale(0.1, 0.1); opacity: 0.0;}
+    33% {-webkit-transform: rotate(306deg) translate(20em) scale(0.75, 0.75); opacity: 0.8;}
+    66% {-webkit-transform: rotate(306deg) translate(20em) scale(0.1, 0.1); opacity: 0.0;}
+}

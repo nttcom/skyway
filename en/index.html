@@ -8,22 +8,34 @@ description: WebRTC is a revolutionary new technology that allows browsers to se
     <h1 class="content-title">Connect in real time</h1>
     <h2 class="content-subtitle">A powerful yet simple WebRTC platform.</h2>
     <div id="content-animation">
-      <a href='info-js.html'>
-        <div class="animation-section" id="animation-web">
-            <div class="animation-image-div">
-                <img src="{{ site.homedir[page.lang] }}images/main_top_js.png" class="animation-image">
+        <link rel="stylesheet" href="{{ site.homedir[page.lang] }}styles/transmission-animation.css">
+        <div class='transmission-animation'>
+            <div class='circle-container'>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
-            <h3 class="animation-title">JavaScript</h3>
         </div>
-      </a>
-      <a href='info-mobile.html';">
-        <div class="animation-section" id="animation-android">
-            <div class="animation-image-div">
-                <img src="{{ site.homedir[page.lang] }}images/main_top_mobile.png" class="animation-image">
+        <a href='info-js.html'>
+            <div class="animation-section" id="animation-web">
+                <div class="animation-image-div">
+                    <img src="{{ site.homedir[page.lang] }}images/top_images/index_js_top.png" class="animation-image">
+                </div>
+                <h3 class="animation-title">JavaScript</h3>
             </div>
-            <h3 class="animation-title">iOS/Android</h3>
-        </div>
-      </a>
+            </a>
+            <a href='info-mobile.html'>
+                <div class="animation-section" id="animation-android">
+                <div class="animation-image-div">
+                    <img src="{{ site.homedir[page.lang] }}images/top_images/index_mobile_top.png" class="animation-image">
+                </div>
+                <h3 class="animation-title">iOS/Android</h3>
+            </div>
+         </a>
     </div>
     <div></div>
     <a href='https://skyway.io/ds/registration/' target="_blank">
@@ -33,6 +45,7 @@ description: WebRTC is a revolutionary new technology that allows browsers to se
 
 <paper-material id="highlights-div" elevation="2">
     <h2 class="material-header">A Simple and Flexible WebRTC Platform.</h2>
+    <div class="divider"></div>
     <div id="highlights-internal-div">
         <div id="highlight1" class="highlight">
             <i class="fa fa-video-camera fa-4x"></i>
