@@ -94,7 +94,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         }
 
         paper-button.colorful {
-          color: #4285f4;
+          background-color: #5285FF;
+            color: #fff;
         }
 
         paper-button.colorful-red {
@@ -411,88 +412,15 @@ label {
         color: #4265DF;
         font-weight: 500;
     }
-
-    @media screen and (max-width:1000px){
-       #tabBar-div {
-
-           width: 440px;
-           font-size: 0.8em;
-
-           left: auto;
-           right: 0;
-           margin: 0;
-
-       }
-        
-        #tabBar-div a {
-            padding-left: 4px;
-            padding-right: 4px;
-        }
-
-        #button-div {
-            display: none;
-        }
-
-        .share-button {
-            display: none;
-        }
-        
-    }
-
-    @media screen and (max-width:640px){
-       #tabBar-div {
-/*           display: none;*/
-            width: 340px;
-            font-size:0.6em;
-       }
-        
-        #tabBar-div a {
-            padding-left: 0px;
-            padding-right: 0px;
-        }
-        
-
-    }
     
-    @media screen and (max-width:540px){
-       #tabBar-div {
-           display: none;
-       }
-
-    }
-
-/*
-    #tabBar-div button {
-
-        height: inherit;
-
-        margin-left: 4px;
-        margin-right: 4px;
-        padding:10px;
-
-        background-color: transparent;
-        border: none;
-
-        color: rgba(82, 133, 255, 0.7);
-
-        font-family: 'Open Sans', sans-serif;
-        font-size: 1em;
-        font-weight: 400;
-        text-align: center;
-
-        outline: none;
-        cursor:pointer;
-
-    }
-*/
-
-
     #button-div {
         float: right;
         padding-right: -8px;
 
         width: 240px;
         height: inherit;
+        
+        display: inline;
 
 /*        background-color: lightgreen;*/
     }
@@ -533,13 +461,141 @@ label {
         right: 0px;
         top: 10px;
 
-        width: 86px;
+/*        width: 86px;*/
     }
 
     #loginButton a {
       color: inherit;
       font-weight: inherit;
     }
+    
+    #button-div-small {
+        float: right;
+        padding-right: -8px;
+
+        width: 240px;
+        height: inherit;
+        
+        display: none;
+
+    }
+    
+    #button-div-small paper-button {
+        width: 50px;
+        min-width: 50px;
+        height: 44px;
+        
+        margin-right: 0;
+    }
+    
+    #button-div-small #langButton {    
+        border-color: rgba(252, 57, 49, 0.5);
+        border-width: 1px;
+        border-style: solid;
+    }
+    
+    #button-div-small ::content {
+        padding: 0;
+        margin: 0;
+        width: 50px;
+        height: 44px;
+    }
+    
+    #button-div-small #loginButton {        
+        background-color: #5285FF;
+        color: #fff;
+        
+    }
+    
+    #button-div-small i {
+        font-size: 1.5em;
+    }
+    
+    #button-div-small #loginButton ::content * {
+        margin-top: -0.5px;
+    }
+
+    @media screen and (max-width:1000px){
+        #logoButton img {
+            height: 38px;
+            margin-top: 13px;
+        }
+        
+       #tabBar-div {
+
+           width: 440px;
+           font-size: 0.8em;
+
+           left: 24px;
+           right: 0;
+           margin: auto;
+
+       }
+        
+        #tabBar-div a {
+            padding-left: 4px;
+            padding-right: 4px;
+        }
+
+        #button-div {
+            display: none;
+        }
+        
+        #button-div-small {
+            display: inline;
+        }
+
+        .share-button {
+            display: none;
+        }
+        
+    }
+
+    @media screen and (max-width:760px){
+        #logoButton img {
+            height: 32px;
+            margin-top: 16px;
+        }
+        
+       #tabBar-div {
+/*           display: none;*/
+            width: 340px;
+            font-size:0.6em;
+       }
+        
+        #tabBar-div a {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+        
+        #button-div-small paper-button {
+            width: 36px;
+            min-width: 36px;
+        }
+
+        #button-div-small paper-button {
+            margin-left: 8px;
+        }
+
+        #button-div-small ::content {
+            width: 36px;
+
+        }
+        
+        #button-div-small ::content * {
+            left: -2px;
+        }
+
+    }
+    
+    @media screen and (max-width:540px){
+       #tabBar-div {
+           display: none;
+       }
+
+    }
+
+    
     #signupButton {
 /*        display: inline;*/
         margin: auto;
@@ -3457,7 +3513,7 @@ label {
               height: 1000px;
           }
           
-          #main-section .flex-box {
+          .main-features-container .flex-box {
               display: inline;
 /*              flex:none;*/
           }

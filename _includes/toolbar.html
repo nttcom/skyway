@@ -21,6 +21,23 @@
             {% else %}
             {% endcase %}
         </div>
+        
+        <div id="button-div-small">
+            <a href='https://skyway.io/ds/' target="_blank">
+            <paper-button id="loginButton" class="colorful"><i class="fa fa-sign-in"></i></paper-button>
+            </a>
+            {% case page.lang %}
+            {% when 'jp' %}
+            <a href='en/'>
+            <paper-button id="langButton" class="red">EN</paper-button>
+            </a>
+            {% when 'en' %}
+            <a href='../index.html'>
+            <paper-button id="langButton" class="red">JP</paper-button>
+            </a>
+            {% else %}
+            {% endcase %}
+        </div>
 
         <div id="tabBar-div" class="flex-box">
             {% case page.lang %}
@@ -42,5 +59,7 @@
             {% else %}
             {% endcase %}
         </div>
+        
+        
     </div>
 </paper-toolbar>
