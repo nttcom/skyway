@@ -6,15 +6,18 @@
         </a>
 
         <div id="button-div">
-            <a href='https://skyway.io/ds/' target="_blank">
-            <paper-button id="loginButton" raised class="colorful">Login</paper-button>
-            </a>
             {% case page.lang %}
             {% when 'jp' %}
+            <a href='https://skyway.io/ds/' target="_blank">
+            <paper-button id="loginButton" raised class="colorful">ログイン</paper-button>
+            </a>
             <a href='en/'>
             <paper-button id="langButton" class="red">English</paper-button>
             </a>
             {% when 'en' %}
+            <a href='https://skyway.io/ds/' target="_blank">
+            <paper-button id="loginButton" raised class="colorful">Login</paper-button>
+            </a>
             <a href='../index.html'>
             <paper-button id="langButton" class="red">日本語</paper-button>
             </a>
