@@ -17,7 +17,9 @@ body {
 }
 
 #unsupported-browser-banner {
-    background-color: #dddddd;
+    margin-top: 10px;
+    background-color: #5285FF;
+    color: #fff;
     border-bottom: yellow;
     width: 100%;
     text-align: center;
