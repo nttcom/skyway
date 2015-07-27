@@ -66,8 +66,17 @@ description: WebRTCは、ブラウザや専用アプリ同士でリアルタイ�
         <div class="howto-step">
             <img src="{{ site.homedir[page.lang] }}images/count/2.png">
             <div class="float-group">
+                <p>SDKをダウンロードします。</p>
+                <a target="_blank" href='http://skyway-ios-sdk.str.cloudn-service.com/0.1.0/SkyWay-iOS-SDK-0.1.0.zip'><paper-button raised>iOS SDK (0.1.0)</paper-button></a>
+                <a target="_blank" href='http://skyway-ios-sdk.str.cloudn-service.com/0.1.0/SkyWay-Android-SDK-0.1.0.zip'><paper-button raised>Android SDK (0.1.0)</paper-button></a>
+            </div>
+        </div>
+
+        <div class="howto-step">
+            <img src="{{ site.homedir[page.lang] }}images/count/3.png">
+            <div class="float-group">
                 <p>SkyWayを利用してアプリケーションを開発しましょう。<br><br>
-                    サンプルを参考に、コードを書きましょう。</p>
+                    コードサンプルやサンプルアプリを参考に、コードを書きましょう。</p>
         <h3 class="code-type-header">iOS Objective-C</h3>
                 <paper-material class="code-section" elevation="1">
                                 <pre><code class="objectivec">
@@ -78,13 +87,15 @@ options.key = @"{APIKEY}";
 options.domain = @"{DOMAIN}";
 SKWPeer* peer = [[SKWPeer alloc] initWithId:myId options:options];
 
-[peer on:SKW_PEER_EVENT_OPEN callback:^(NSObject* obj){
-    SKWDataConnection* dataConnection = [peer connectWithId:@"dest-peer-id"];
-    [dataConnection on:SKW_DATACONNECTION_EVENT_OPEN callback:^(NSObject* obj){
-        [dataConnection send:@"Hello SkyWay!"];
+[peer on:SKW_PEER_EVENT_OPEN callback:^(NSObject* obj)
+{
+    SKWDataConnection* conn = [peer connectWithId:@"dest-peer-id"];
+    [conn on:SKW_DATACONNECTION_EVENT_OPEN callback:^(NSObject* obj)
+    {
+        [conn send:@"Hello SkyWay!"];
     }];
 }];</code></pre>
-                </paper-material>
+                </paper-material>　<a href="https://github.com/nttcom/SkyWay-iOS-Sample" target="_blank">サンプルアプリ(iOS)はこちら</a>
         <h3 class="code-type-header">Android Java</h3>
                 <paper-material class="code-section" elevation="1">
                                 <pre><code class="java">
@@ -95,24 +106,27 @@ options.key = "{APIKEY}";
 options.domain = "{DOMAIN}";
 Peer peer = new Peer(getApplicationContext(),myId,options);
 
-peer.on(Peer.PeerEventEnum.OPEN, new OnCallback(){
-    public void onCallback(Object object){
-        DataConnection dataConnection = peer.connect('dest-peer-id');
-        dataConnection.on(DataEventEnum.DATA,new OnCallback(){
+peer.on(Peer.PeerEventEnum.OPEN, new OnCallback()
+{
+    public void onCallback(Object object)
+    {
+        DataConnection conn = peer.connect('dest-peer-id');
+        conn.on(DataEventEnum.DATA,new OnCallback()
+        {
             public void onCallback(Object object){
-                dataConnection.send("Hello SkyWay!");
+                conn.send("Hello SkyWay!");
             }
         });
     }
 });</code></pre>
 <script>hljs.initHighlighting();</script>
-                </paper-material>
+                </paper-material>　<a href="https://github.com/nttcom/SkyWay-Android-Sample" target="_blank">サンプルアプリ(Android)はこちら</a>
 
             </div>
         </div>
 
         <div class="howto-step">
-            <img src="{{ site.homedir[page.lang] }}images/count/3.png">
+            <img src="{{ site.homedir[page.lang] }}images/count/4.png">
             <div class="float-group">
                 <p>開発に必要な情報を収集しましょう。</p>
                 <a href='docs/#iOS'><paper-button raised>スタートガイドを見る</paper-button></a>
