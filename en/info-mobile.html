@@ -83,11 +83,11 @@ description: WebRTC is a revolutionary new technology that allows browsers to se
 
 SKWPeerOption* options = [[SKWPeerOption alloc] init];
 options.key = @"{APIKEY}";
-options.domain = @”{DOMAIN}”;
+options.domain = @"{DOMAIN}";
 SKWPeer* peer = [[SKWPeer alloc] initWithId:myId options:options];
 
 [peer on:SKW_PEER_EVENT_OPEN callback:^(NSObject* obj){
-    SKWDataConnection* dataConnection = [peer connectWithId:'dest-peer-id'];
+    SKWDataConnection* dataConnection = [peer connectWithId:@"dest-peer-id"];
     [dataConnection on:SKW_DATACONNECTION_EVENT_OPEN callback:^(NSObject* obj){
         [dataConnection send:@"Hello SkyWay!"];
     }];
@@ -96,7 +96,7 @@ SKWPeer* peer = [[SKWPeer alloc] initWithId:myId options:options];
         <p>[Android Java]</p>
                 <paper-material class="code-section" elevation="1">
                                 <pre><code class="java">
-#import &lt;io.skyway.Peer.*&gt;
+import io.skyway.Peer.*;
 
 PeerOption options = new PeerOption();
 options.key = "{APIKEY}";
