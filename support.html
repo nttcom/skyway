@@ -12,61 +12,55 @@ description: WebRTCは、ブラウザや専用アプリ同士でリアルタイ�
 <div id="main-section">
     <div id="support-text-area">
 
-        <p>疑問点やご不明点などでお困りの場合は、下記のフォームからお問い合わせください。SkyWay担当者が返信をお送りします。</p>
+        <p>疑問点やご不明点などでお困りの場合は、下記からメールでお問い合わせください。</p>
         <p>『SkyWay Technical Forum』は、開発者間の議論や情報交換のためのフォーラムです。専門的な知識を共有したり、他の方から開発のアドバイスを受けたりするのにご利用ください。</p>
 
     </div>
 
     <div id="support-options-div">
 
-        <div class="support-box-contact-form">
-            <paper-material class="support-box" elevation="2">
-                <i class="fa fa-paper-plane fa-4x"></i>
-                <h3>Contact Us</h3>
-                <a href='mailto:skyway@ntt.com?subject=サポートリクエスト&body=' target="_blank">
-                <paper-button id="contact-button">Something wrong?</paper-button>
-                </a>
-<!--
-                <form method="POST" action="">
-                    <i class="fa fa-paper-plane fa-4x"></i>
-                    <h3>問い合わせをする</h3>
-                    <paper-button id="contact-button">何かお困りですか？</paper-button>
-                    <paper-button id="submit-button" name="submit" type="submit" value="Submit">Send!</paper-button>
+        <div class="flex-box support-box-top">
 
-                    <div id="contact-form-contents">
-                        <input type="name" id="nameBox" class="formInValid" name="name" placeholder="Name" required />
-                        <input type="email" id="emailBox" class="formInValid" name="_replyto" placeholder="Email address" required />
-                        <textarea type="message" id="messageBox" class="formInValid" name="message" placeholder="Comment or query..." required></textarea>
-                    </div>
-                </form>
--->
-            </paper-material>
-        </div>
-        <div class="flex-box">
             <div class="support-box-container-half flex-component">
                 <paper-material class="support-box" elevation="2">
-                    <i class="fa fa-book fa-4x"></i>
-                    <h3>仕様を知る</h3>
-                    <a href='documentation.html'>
-                    <paper-button class="leftButton">ドキュメント</paper-button>
-                    </a>
-                    <a href='demo-js.html'>
-                    <paper-button class="rightButton">サンプルアプリ</paper-button>
-                    </a>
+                    <i class="fa fa-paper-plane fa-4x"></i>
+                    <h3>サポートに問い合わせ</h3>
+                    <a href='mailto:skyway@ntt.com?subject=サポートリクエスト&body=' target="_blank">
+                <paper-button id="contact-button">メールを送る</paper-button>
+                </a>
                 </paper-material>
             </div>
+
 
             <div class="support-box-container-half flex-component">
                 <paper-material class="support-box" elevation="2">
                     <i class="fa fa-comments fa-4x"></i>
-                    <h3>コミュニティに参加</h3>
+                    <h3>他の開発者に質問</h3>
                     <a href='https://groups.google.com/forum/#!forum/skywayjs' target="_blank">
-                    <paper-button>SkyWay Technical Forum</paper-button>
+                    <paper-button>フォーラムに参加</paper-button>
                     </a>
                 </paper-material>
             </div>
         </div>
+
+        
+        <div class="flex-box support-box-middle">
+
+            <div class="support-box-container-half flex-component">
+                <paper-material class="support-box" elevation="2">
+                    <i class="fa fa-book fa-4x"></i>
+                    <h3>もっと知るには</h3>
+                    <a href='documentation.html'>
+                    <paper-button class="leftButton">ドキュメントへ</paper-button>
+                    </a>
+
+                    <a href='demo-js.html'>
+                    <paper-button class="rightButton">サンプルアプリ</paper-button>
+                    </a>
+
+                </paper-material>
+            </div>
+        </div>
+
     </div>
-
-
 </div>
