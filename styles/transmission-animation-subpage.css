@@ -167,42 +167,42 @@
 
 @keyframes pulsate1 {
     0% {-webkit-transform: rotate(234deg) translate(20em) scale(0.1, 0.1); opacity: 0.0;}
-    50% {opacity: 0.8;}
-    100% {-webkit-transform: rotate(234deg) translate(20em) scale(1.2, 1.2); opacity: 0.0;}
+    50% {-webkit-transform: rotate(234deg) translate(20em) scale(0.75, 0.75); opacity: 0.8;}
+    100% {-webkit-transform: rotate(234deg) translate(20em) scale(0.1, 0.1); opacity: 0.0;}
 }
 
 @keyframes pulsate2 {
     0% {-webkit-transform: rotate(246deg) translate(20em) scale(0.1, 0.1); opacity: 0.0;}
-    50% {opacity: 0.8;}
-    100% {-webkit-transform: rotate(246deg) translate(20em) scale(1.2, 1.2); opacity: 0.0;}
+    50% {-webkit-transform: rotate(246deg) translate(20em) scale(0.9, 0.9);opacity: 0.8;}
+    100% {-webkit-transform: rotate(246deg) translate(20em) scale(0.1, 0.1); opacity: 0.0;}
 }
 
 @keyframes pulsate3 {
     0% {-webkit-transform: rotate(258deg) translate(20em) scale(0.1, 0.1); opacity: 0.0;}
-    50% {opacity: 0.8;}
-    100% {-webkit-transform: rotate(258deg) translate(20em) scale(1.2, 1.2); opacity: 0.0;}
+    50% {-webkit-transform: rotate(258deg) translate(20em) scale(1.05, 1.05); opacity: 0.8;}
+    100% {-webkit-transform: rotate(258deg) translate(20em) scale(0.1, 0.1); opacity: 0.0;}
 }
 
 @keyframes pulsate4 {
     0% {-webkit-transform: rotate(270deg) translate(20em) scale(0.1, 0.1); opacity: 0.0;}
-    50% {opacity: 0.8;}
-    100% {-webkit-transform: rotate(270deg) translate(20em) scale(1.2, 1.2); opacity: 0.0;}
+    50% {-webkit-transform: rotate(270deg) translate(20em) scale(1.2, 1.2); opacity: 0.8;}
+    100% {-webkit-transform: rotate(270deg) translate(20em) scale(0.1, 0.1); opacity: 0.0;}
 }
 
 @keyframes pulsate5 {
     0% {-webkit-transform: rotate(282deg) translate(20em) scale(0.1, 0.1); opacity: 0.0;}
-    50% {opacity: 0.8;}
-    100% {-webkit-transform: rotate(282deg) translate(20em) scale(1.2, 1.2); opacity: 0.0;}
+    50% {-webkit-transform: rotate(282deg) translate(20em) scale(1.05, 1.05); opacity: 0.8;}
+    100% {-webkit-transform: rotate(282deg) translate(20em) scale(0.1, 0.1); opacity: 0.0;}
 }
 
 @keyframes pulsate6 {
     0% {-webkit-transform: rotate(294deg) translate(20em) scale(0.1, 0.1); opacity: 0.0;}
-    50% {opacity: 0.8;}
-    100% {-webkit-transform: rotate(294deg) translate(20em) scale(1.2, 1.2); opacity: 0.0;}
+    50% {-webkit-transform: rotate(294deg) translate(20em) scale(0.9, 0.9); opacity: 0.8;}
+    100% {-webkit-transform: rotate(294deg) translate(20em) scale(0.1, 0.1); opacity: 0.0;}
 }
 
 @keyframes pulsate7 {
     0% {-webkit-transform: rotate(306deg) translate(20em) scale(0.1, 0.1); opacity: 0.0;}
-    50% {opacity: 0.8;}
-    100% {-webkit-transform: rotate(306deg) translate(20em) scale(1.2, 1.2); opacity: 0.0;}
+    50% {-webkit-transform: rotate(306deg) translate(20em) scale(0.75, 0.75); opacity: 0.8;}
+    100% {-webkit-transform: rotate(306deg) translate(20em) scale(0.1, 0.1); opacity: 0.0;}
 }
