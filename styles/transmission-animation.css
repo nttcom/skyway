@@ -50,13 +50,54 @@
    
 }
 
-.circle-container div:nth-of-type(1) { -webkit-animation: pulsate1 3s 0s ease-out infinite;  } /* 12em = half the width of the wrapper */
-.circle-container div:nth-of-type(2) { -webkit-animation: pulsate2 3s 0.25s ease-out infinite; }
-.circle-container div:nth-of-type(3) { -webkit-animation: pulsate3 3s 0.5s ease-out infinite; }
-.circle-container div:nth-of-type(4) { -webkit-animation: pulsate4 3s 0.75s ease-out infinite; }
-.circle-container div:nth-of-type(5) { -webkit-animation: pulsate5 3s 1s ease-out infinite; }
-.circle-container div:nth-of-type(6) { -webkit-animation: pulsate6 3s 1.25s ease-out infinite; }
-.circle-container div:nth-of-type(7) { -webkit-animation: pulsate7 3s 1.5s ease-out infinite; }
+.circle-container div:nth-of-type(1) { 
+    -webkit-animation: pulsate1 3s 0s ease-out infinite;  
+       -moz-animation: pulsate1 3s 0s ease-out infinite;  
+         -o-animation: pulsate1 3s 0s ease-out infinite;  
+            animation: pulsate1 3s 0s ease-out infinite;  
+} 
+
+.circle-container div:nth-of-type(2) { 
+    -webkit-animation: pulsate2 3s 0.25s ease-out infinite; 
+       -moz-animation: pulsate2 3s 0.25s ease-out infinite; 
+         -o-animation: pulsate2 3s 0.25s ease-out infinite; 
+            animation: pulsate2 3s 0.25s ease-out infinite; 
+}
+
+.circle-container div:nth-of-type(3) { 
+    -webkit-animation: pulsate3 3s 0.5s ease-out infinite; 
+       -moz-animation: pulsate3 3s 0.5s ease-out infinite; 
+         -o-animation: pulsate3 3s 0.5s ease-out infinite; 
+            animation: pulsate3 3s 0.5s ease-out infinite; 
+}
+
+.circle-container div:nth-of-type(4) {
+    -webkit-animation: pulsate4 3s 0.75s ease-out infinite; 
+       -moz-animation: pulsate4 3s 0.75s ease-out infinite; 
+         -o-animation: pulsate4 3s 0.75s ease-out infinite; 
+            animation: pulsate4 3s 0.75s ease-out infinite; 
+}
+
+.circle-container div:nth-of-type(5) { 
+    -webkit-animation: pulsate5 3s 1s ease-out infinite; 
+       -moz-animation: pulsate5 3s 1s ease-out infinite; 
+         -o-animation: pulsate5 3s 1s ease-out infinite; 
+            animation: pulsate5 3s 1s ease-out infinite; 
+}
+
+.circle-container div:nth-of-type(6) { 
+    -webkit-animation: pulsate6 3s 1.25s ease-out infinite; 
+       -moz-animation: pulsate6 3s 1.25s ease-out infinite; 
+         -o-animation: pulsate6 3s 1.25s ease-out infinite; 
+            animation: pulsate6 3s 1.25s ease-out infinite; 
+}
+
+.circle-container div:nth-of-type(7) { 
+    -webkit-animation: pulsate7 3s 1.5s ease-out infinite; 
+       -moz-animation: pulsate7 3s 1.5s ease-out infinite; 
+         -o-animation: pulsate7 3s 1.5s ease-out infinite; 
+            animation: pulsate7 3s 1.5s ease-out infinite; 
+}
 
 /* this is for showing the circle on which the images are placed */
 .circle-container:after {
@@ -70,51 +111,6 @@
 	content: '';
 }
 
-
-
-/* */
-
-@keyframes pulsate1 {
-    0% {-webkit-transform: rotate(246deg) translate(24em) scale(0.1, 0.1); opacity: 0.0;}
-    33% {opacity: 0.8;}
-    66% {-webkit-transform: rotate(246deg) translate(24em) scale(1.2, 1.2); opacity: 0.0;}
-}
-
-@keyframes pulsate2 {
-    0% {-webkit-transform: rotate(256deg) translate(24em) scale(0.1, 0.1); opacity: 0.0;}
-    33% {opacity: 0.8;}
-    66% {-webkit-transform: rotate(256deg) translate(24em) scale(1.2, 1.2); opacity: 0.0;}
-}
-
-@keyframes pulsate3 {
-    0% {-webkit-transform: rotate(266deg) translate(24em) scale(0.1, 0.1); opacity: 0.0;}
-    33% {opacity: 0.8;}
-    66% {-webkit-transform: rotate(266deg) translate(24em) scale(1.2, 1.2); opacity: 0.0;}
-}
-
-@keyframes pulsate4 {
-    0% {-webkit-transform: rotate(276deg) translate(24em) scale(0.1, 0.1); opacity: 0.0;}
-    33% {opacity: 0.8;}
-    66% {-webkit-transform: rotate(276deg) translate(24em) scale(1.2, 1.2); opacity: 0.0;}
-}
-
-@keyframes pulsate5 {
-    0% {-webkit-transform: rotate(286deg) translate(24em) scale(0.1, 0.1); opacity: 0.0;}
-    33% {opacity: 0.8;}
-    66% {-webkit-transform: rotate(286deg) translate(24em) scale(1.2, 1.2); opacity: 0.0;}
-}
-
-@keyframes pulsate6 {
-    0% {-webkit-transform: rotate(296deg) translate(24em) scale(0.1, 0.1); opacity: 0.0;}
-    33% {opacity: 0.8;}
-    66% {-webkit-transform: rotate(296deg) translate(24em) scale(1.2, 1.2); opacity: 0.0;}
-}
-
-@keyframes pulsate7 {
-    0% {-webkit-transform: rotate(306deg) translate(24em) scale(0.1, 0.1); opacity: 0.0;}
-    33% {opacity: 0.8;}
-    66% {-webkit-transform: rotate(306deg) translate(24em) scale(1.2, 1.2); opacity: 0.0;}
-}
 
 /* Main Animation - webkit keyframes */
 
@@ -158,4 +154,94 @@
     0% {-webkit-transform: rotate(306deg) translate(24em) scale(0.1, 0.1); opacity: 0.0;}
     33% {opacity: 0.8;}
     66% {-webkit-transform: rotate(306deg) translate(24em) scale(1.2, 1.2); opacity: 0.0;}
+}
+
+/* Main animation - mox keyframes */
+
+/*
+@-moz-keyframes pulsate1 {
+    0% {-moz-transform: rotate(246deg) translate(24em) scale(0.1, 0.1); opacity: 0.0;}
+    33% {opacity: 0.8;}
+    66% {-moz-transform: rotate(246deg) translate(24em) scale(1.2, 1.2); opacity: 0.0;}
+}
+
+@-moz-keyframes pulsate2 {
+    0% {-moz-transform: rotate(256deg) translate(24em) scale(0.1, 0.1); opacity: 0.0;}
+    33% {opacity: 0.8;}
+    66% {-moz-transform: rotate(256deg) translate(24em) scale(1.2, 1.2); opacity: 0.0;}
+}
+
+@-moz-keyframes pulsate3 {
+    0% {-moz-transform: rotate(266deg) translate(24em) scale(0.1, 0.1); opacity: 0.0;}
+    33% {opacity: 0.8;}
+    66% {-moz-transform: rotate(266deg) translate(24em) scale(1.2, 1.2); opacity: 0.0;}
+}
+
+@-moz-keyframes pulsate4 {
+    0% {-moz-transform: rotate(276deg) translate(24em) scale(0.1, 0.1); opacity: 0.0;}
+    33% {opacity: 0.8;}
+    66% {-moz-transform: rotate(276deg) translate(24em) scale(1.2, 1.2); opacity: 0.0;}
+}
+
+@-moz-keyframes pulsate5 {
+    0% {-moz-transform: rotate(286deg) translate(24em) scale(0.1, 0.1); opacity: 0.0;}
+    33% {opacity: 0.8;}
+    66% {-moz-transform: rotate(286deg) translate(24em) scale(1.2, 1.2); opacity: 0.0;}
+}
+
+@-moz-keyframes pulsate6 {
+    0% {-moz-transform: rotate(296deg) translate(24em) scale(0.1, 0.1); opacity: 0.0;}
+    33% {opacity: 0.8;}
+    66% {-moz-transform: rotate(296deg) translate(24em) scale(1.2, 1.2); opacity: 0.0;}
+}
+
+@-moz-keyframes pulsate7 {
+    0% {-moz-transform: rotate(306deg) translate(24em) scale(0.1, 0.1); opacity: 0.0;}
+    33% {opacity: 0.8;}
+    66% {-moz-transform: rotate(306deg) translate(24em) scale(1.2, 1.2); opacity: 0.0;}
+}
+*/
+
+/* Main Animation - keyframes */
+
+@keyframes pulsate1 {
+    0% {transform: rotate(246deg) translate(24em) scale(0.1, 0.1); opacity: 0.0;}
+    33% {opacity: 0.8;}
+    66% {transform: rotate(246deg) translate(24em) scale(1.2, 1.2); opacity: 0.0;}
+}
+
+@keyframes pulsate2 {
+    0% {transform: rotate(256deg) translate(24em) scale(0.1, 0.1); opacity: 0.0;}
+    33% {opacity: 0.8;}
+    66% {transform: rotate(256deg) translate(24em) scale(1.2, 1.2); opacity: 0.0;}
+}
+
+@keyframes pulsate3 {
+    0% {transform: rotate(266deg) translate(24em) scale(0.1, 0.1); opacity: 0.0;}
+    33% {opacity: 0.8;}
+    66% {transform: rotate(266deg) translate(24em) scale(1.2, 1.2); opacity: 0.0;}
+}
+
+@keyframes pulsate4 {
+    0% {transform: rotate(276deg) translate(24em) scale(0.1, 0.1); opacity: 0.0;}
+    33% {opacity: 0.8;}
+    66% {transform: rotate(276deg) translate(24em) scale(1.2, 1.2); opacity: 0.0;}
+}
+
+@keyframes pulsate5 {
+    0% {transform: rotate(286deg) translate(24em) scale(0.1, 0.1); opacity: 0.0;}
+    33% {opacity: 0.8;}
+    66% {transform: rotate(286deg) translate(24em) scale(1.2, 1.2); opacity: 0.0;}
+}
+
+@keyframes pulsate6 {
+    0% {transform: rotate(296deg) translate(24em) scale(0.1, 0.1); opacity: 0.0;}
+    33% {opacity: 0.8;}
+    66% {transform: rotate(296deg) translate(24em) scale(1.2, 1.2); opacity: 0.0;}
+}
+
+@keyframes pulsate7 {
+    0% {transform: rotate(306deg) translate(24em) scale(0.1, 0.1); opacity: 0.0;}
+    33% {opacity: 0.8;}
+    66% {transform: rotate(306deg) translate(24em) scale(1.2, 1.2); opacity: 0.0;}
 }
