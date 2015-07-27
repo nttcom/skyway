@@ -54,10 +54,10 @@ description: WebRTC is a revolutionary new technology that allows browsers to se
     </div>
 </div>
 
-<paper-material class="paper-div" elevation="2">
+<paper-material id="mobile-howto-div" class="paper-div" elevation="2">
     <div class="paper-div-internal">
         <h2 class="material-header">Give it a try</h2>
-        <h3 class="material-subheader">It is easy to build a iOS/Android  application using SkyWay. Why not give it a try?</h3>
+<!--        <h3 class="material-subheader">It is easy to build a iOS/Android  application using SkyWay. Why not give it a try?</h3>-->
 
 
         <div class="howto-step">
@@ -73,30 +73,29 @@ description: WebRTC is a revolutionary new technology that allows browsers to se
         <div class="howto-step">
             <img src="{{ site.homedir[page.lang] }}images/count/2.png">
             <div class="float-group">
-                <p>Let's create a SkyWay app.<br>
+                <p>Let's create a SkyWay app.<br><br>
                     Refer to the sample code. Make sure to include the library!</p>
-    <br>
-    <p>[iOS Objective-C]</p>
+        <h3 class="code-type-header">iOS Objective-C</h3>
                 <paper-material class="code-section" elevation="1">
                                 <pre><code class="objectivec">
 #import &lt;SkyWay/SKWPeer.h&gt;
 
 SKWPeerOption* options = [[SKWPeerOption alloc] init];
 options.key = @"{APIKEY}";
-options.domain = @”{DOMAIN}”;
+options.domain = @"{DOMAIN}";
 SKWPeer* peer = [[SKWPeer alloc] initWithId:myId options:options];
 
 [peer on:SKW_PEER_EVENT_OPEN callback:^(NSObject* obj){
-    SKWDataConnection* dataConnection = [peer connectWithId:'dest-peer-id'];
+    SKWDataConnection* dataConnection = [peer connectWithId:@"dest-peer-id"];
     [dataConnection on:SKW_DATACONNECTION_EVENT_OPEN callback:^(NSObject* obj){
         [dataConnection send:@"Hello SkyWay!"];
     }];
 }];</code></pre>
                 </paper-material>
-        <p>[Android Java]</p>
+        <h3 class="code-type-header">Android Java</h3>
                 <paper-material class="code-section" elevation="1">
                                 <pre><code class="java">
-#import &lt;io.skyway.Peer.*&gt;
+import io.skyway.Peer.*;
 
 PeerOption options = new PeerOption();
 options.key = "{APIKEY}";
@@ -138,7 +137,7 @@ peer.on(Peer.PeerEventEnum.OPEN, new OnCallback(){
 
 <div id="signup-div">
     <h2 id="signup-header">Like what you see? SkyWay is free to try.</h2>
-    <img src="{{ site.homedir[page.lang] }}images/divider_blue.png">
+    <div class="divider-short"></div>
     <a href='https://skyway.io/ds/registration/' target="_blank">
       <paper-button id="signupButton" raised class="white">Sign Up</paper-button>
     </a>
