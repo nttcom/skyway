@@ -2,9 +2,9 @@
 layout: default
 lang: en
 title: iOS/Android SDK
-description: WebRTC is a revolutionary new technology that allows browsers to send video, audio and data to other browsers in real time. If you use SkyWay, you can easily create WebRTC apps without having to worry about the server.
+description: Here we offer our iOS and Android SDKs for SkyWay. If you use SkyWay, you can easily create WebRTC apps without having to worry about the server.
 ---
-<div id="content-div" elevation="2">
+<div id="subpage-content-div" elevation="2">
     <div id="content-explanation-div">
         <h2 class="content-title-side">iOS/Android SDK</h2>
             <div id="content-highlights">
@@ -28,7 +28,7 @@ description: WebRTC is a revolutionary new technology that allows browsers to se
                 </div>
             </div>
             <a href='documentation.html'>
-              <paper-button class="topSectionButton white" raised>Documentation</paper-button>
+              <paper-button class="subpage-topSectionButton white" raised>Documentation</paper-button>
             </a>
     </div>
     <div id="content-animation-div">
@@ -49,7 +49,7 @@ description: WebRTC is a revolutionary new technology that allows browsers to se
             <img src="{{ site.homedir[page.lang] }}images/top_images/mobile_top.png">
         </div>
         <a href='https://skyway.io/ds/registration/' target="_blank">
-          <paper-button class="topSectionButton white" raised>Sign Up</paper-button>
+          <paper-button class="subpage-topSectionButton white" raised>Sign Up</paper-button>
         </a>
     </div>
 </div>
@@ -65,7 +65,7 @@ description: WebRTC is a revolutionary new technology that allows browsers to se
             <div class="float-group">
               <p>Register as a developer and create an API key.</p>
               <a href='https://skyway.io/ds/registration/' target="_blank">
-                <paper-button raised>SIGN UP(FREE)</paper-button>
+                <paper-button raised>SIGN UP (FREE)</paper-button>
               </a>
             </div>
         </div>
@@ -73,7 +73,7 @@ description: WebRTC is a revolutionary new technology that allows browsers to se
         <div class="howto-step">
             <img src="{{ site.homedir[page.lang] }}images/count/2.png">
             <div class="float-group">
-                <p>Download SDK.</p>
+                <p>Download the relevent SDK.</p>
                 <a target="_blank" href='http://skyway-ios-sdk.str.cloudn-service.com/0.1.0/SkyWay-iOS-SDK-0.1.0.zip'><paper-button raised>iOS SDK (0.1.0)</paper-button></a>
                 <a target="_blank" href='http://skyway-ios-sdk.str.cloudn-service.com/0.1.0/SkyWay-Android-SDK-0.1.0.zip'><paper-button raised>Android SDK (0.1.0)</paper-button></a>
             </div>
@@ -102,7 +102,7 @@ SKWPeer* peer = [[SKWPeer alloc] initWithId:myId options:options];
         [conn send:@"Hello SkyWay!"];
     }];
 }];</code></pre>
-                </paper-material>　<a href="https://github.com/nttcom/SkyWay-iOS-Sample" target="_blank">Sample app(iOS) is here.</a>
+                </paper-material>　<a href="https://github.com/nttcom/SkyWay-iOS-Sample" target="_blank"  class="sample-app-link">Sample app (iOS)</a>
         <h3 class="code-type-header">Android Java</h3>
                 <paper-material class="code-section" elevation="1">
                                 <pre><code class="java">
@@ -128,7 +128,7 @@ peer.on(Peer.PeerEventEnum.OPEN, new OnCallback()
 });</code></pre>
 <script>hljs.initHighlighting();</script>
 
-               </paper-material>　<a href="https://github.com/nttcom/SkyWay-Android-Sample" target="_blank">Sample app(Android) is here.</a>
+               </paper-material>　<a href="https://github.com/nttcom/SkyWay-Android-Sample" target="_blank"  class="sample-app-link">Sample app (Android)</a>
 
             </div>
         </div>

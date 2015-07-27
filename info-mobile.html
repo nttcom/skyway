@@ -4,7 +4,7 @@ lang: jp
 title: iOS/Android SDK
 description: SkyWayのiOS/Android SDKを公開しています。SkyWayを使えば、サーバを準備することなく簡単に、WebRTCを使ったアプリが開発できます。
 ---
-<div id="content-div" elevation="2">
+<div id="subpage-content-div" elevation="2">
     <div id="content-explanation-div">
         <h2 class="content-title-side">iOS/Android SDK</h2>
             <div id="content-highlights">
@@ -27,7 +27,7 @@ description: SkyWayのiOS/Android SDKを公開しています。SkyWayを使え�
                     </div>
                 </div>
             </div>
-            <a href='documentation.html'><paper-button class="topSectionButton white" raised>ドキュメント</paper-button></a>
+            <a href='documentation.html'><paper-button class="subpage-topSectionButton white" raised>ドキュメント</paper-button></a>
     </div>
     <div id="content-animation-div">
         <link rel="stylesheet" href="{{ site.homedir[page.lang] }}styles/transmission-animation-subpage.css">
@@ -46,7 +46,7 @@ description: SkyWayのiOS/Android SDKを公開しています。SkyWayを使え�
             </div>
             <img src="{{ site.homedir[page.lang] }}images/top_images/mobile_top.png">
         </div>
-        <a target="_blank" href='https://skyway.io/ds/registration/'><paper-button class="topSectionButton white" raised>登録を行う</paper-button></a>
+        <a target="_blank" href='https://skyway.io/ds/registration/'><paper-button class="subpage-topSectionButton white" raised>登録を行う</paper-button></a>
     </div>
 </div>
 
@@ -95,7 +95,7 @@ SKWPeer* peer = [[SKWPeer alloc] initWithId:myId options:options];
         [conn send:@"Hello SkyWay!"];
     }];
 }];</code></pre>
-                </paper-material>　<a href="https://github.com/nttcom/SkyWay-iOS-Sample" target="_blank">サンプルアプリ(iOS)はこちら</a>
+                </paper-material>　<a href="https://github.com/nttcom/SkyWay-iOS-Sample" target="_blank" class="sample-app-link">サンプルアプリ(iOS)はこちら</a>
         <h3 class="code-type-header">Android Java</h3>
                 <paper-material class="code-section" elevation="1">
                                 <pre><code class="java">
@@ -120,7 +120,7 @@ peer.on(Peer.PeerEventEnum.OPEN, new OnCallback()
     }
 });</code></pre>
 <script>hljs.initHighlighting();</script>
-                </paper-material>　<a href="https://github.com/nttcom/SkyWay-Android-Sample" target="_blank">サンプルアプリ(Android)はこちら</a>
+                </paper-material>　<a href="https://github.com/nttcom/SkyWay-Android-Sample" target="_blank" class="sample-app-link">サンプルアプリ(Android)はこちら</a>
 
             </div>
         </div>
