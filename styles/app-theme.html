@@ -2893,9 +2893,20 @@ label {
 
 /*  Features page CSS */
 
+      .main-features-container {
+          width: 1050px;
+
+          left: 0;
+          right: 0;
+          margin: auto;
+          margin-bottom: 40px;
+/*          background-color: red;*/
+
+      }
+      
       .features-header {
 
-          width: 1050px;
+          width: inherit;
 
           margin: 0;
           margin-top: 30px;
@@ -2910,24 +2921,14 @@ label {
           border-width: 0;
           border-bottom-width: 2px;
 
-      }
-
-      .main-features-container {
-          width: 1050px;
-
-          left: 0;
-          right: 0;
-          margin: auto;
-          margin-bottom: 40px;
-/*          background-color: red;*/
-
+/*          background-color: blue;*/
       }
 
       #top-features-inner {
 
           position: relative;
 
-          width: 1050px;
+          width: inherit;
           height: 340px;
 
           left: 0;
@@ -2996,7 +2997,7 @@ label {
 
           border-radius: 5px;
       }
-
+      
       .feature-box img {
           position: absolute;
 
@@ -3011,7 +3012,7 @@ label {
           object-fit: scale-down;
 
       }
-
+      
       .feature-box h3 {
           position: absolute;
 
@@ -3190,6 +3191,77 @@ label {
 
       }
 
+      @media screen and (max-width:1050px){
+          .main-features-container {
+              width: 100%;
+          }
+          
+          .features-header {
+              width: calc(100% - 80px);
+              margin-left: 40px;
+/*              background-color: green;*/
+          }
+          
+          #top-features-inner {
+              height: 1000px;
+          }
+          
+          #main-section .flex-box {
+              display: inline;
+/*              flex:none;*/
+          }
+          
+          .feature-box-container {
+              float: none;
+              top: 0;
+              
+              height: 220px;
+              width: 80%;
+              margin-left: 10%;
+              display: block;
+              
+              flex: none;
+          }
+          
+          .feature-box {
+              width: 100%;
+          }
+          
+          .feature-box img {
+              top: 16px;
+              height: 60px;
+          }
+          
+          .feature-box h3 {
+              top: 86px;
+          }
+          
+          .feature-box p {
+              top: 134px;
+          }
+          
+          .feature-box br {
+              display: none;
+          }
+          
+          .mini-feature-column {
+/*              background: red;*/
+              width: 90%;
+              margin-left: 5%;
+              margin-bottom: 20px;
+          }
+          
+          #mini-feature-button {
+              width: calc(100% - 80px);
+              margin-left: 40px;
+          }
+      }
+      
+      @media screen and (max-width:510px){
+          .feature-box p {
+              font-size: 0.8em;
+          }
+      }
 
 
 
