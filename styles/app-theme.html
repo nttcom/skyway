@@ -94,7 +94,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         }
 
         paper-button.colorful {
-          color: #4285f4;
+          background-color: #5285FF;
+            color: #fff;
         }
 
         paper-button.colorful-red {
@@ -381,60 +382,7 @@ label {
         font-family: 'Open Sans', sans-serif;
 
     }
-
-    @media screen and (max-width:1000px){
-       #tabBar-div {
-
-           width: 540px;
-           font-size: 0.8em;
-
-           left: auto;
-           right: 0;
-           margin: 0;
-
-       }
-
-        #button-div {
-            display: none;
-        }
-
-        .share-button {
-            display: none;
-        }
-    }
-
-    @media screen and (max-width:760px){
-       #tabBar-div {
-
-           display: none;
-
-       }
-
-    }
-
-    #tabBar-div button {
-
-        height: inherit;
-
-        margin-left: 4px;
-        margin-right: 4px;
-        padding:10px;
-
-        background-color: transparent;
-        border: none;
-
-        color: rgba(82, 133, 255, 0.7);
-
-        font-family: 'Open Sans', sans-serif;
-        font-size: 1em;
-        font-weight: 400;
-        text-align: center;
-
-        outline: none;
-        cursor:pointer;
-
-/*        background-color: rgba(0,0,0,0.1);*/
-    }
+    
     #tabBar-div a {
         line-height: 64px;
 
@@ -464,15 +412,15 @@ label {
         color: #4265DF;
         font-weight: 500;
     }
-
-
-
+    
     #button-div {
         float: right;
         padding-right: -8px;
 
         width: 240px;
         height: inherit;
+        
+        display: inline;
 
 /*        background-color: lightgreen;*/
     }
@@ -513,13 +461,141 @@ label {
         right: 0px;
         top: 10px;
 
-        width: 86px;
+/*        width: 86px;*/
     }
 
     #loginButton a {
       color: inherit;
       font-weight: inherit;
     }
+    
+    #button-div-small {
+        float: right;
+        padding-right: -8px;
+
+        width: 240px;
+        height: inherit;
+        
+        display: none;
+
+    }
+    
+    #button-div-small paper-button {
+        width: 50px;
+        min-width: 50px;
+        height: 44px;
+        
+        margin-right: 0;
+    }
+    
+    #button-div-small #langButton {    
+        border-color: rgba(252, 57, 49, 0.5);
+        border-width: 1px;
+        border-style: solid;
+    }
+    
+    #button-div-small ::content {
+        padding: 0;
+        margin: 0;
+        width: 50px;
+        height: 44px;
+    }
+    
+    #button-div-small #loginButton {        
+        background-color: #5285FF;
+        color: #fff;
+        
+    }
+    
+    #button-div-small i {
+        font-size: 1.5em;
+    }
+    
+    #button-div-small #loginButton ::content * {
+        margin-top: -0.5px;
+    }
+
+    @media screen and (max-width:1000px){
+        #logoButton img {
+            height: 38px;
+            margin-top: 13px;
+        }
+        
+       #tabBar-div {
+
+           width: 440px;
+           font-size: 0.8em;
+
+           left: 24px;
+           right: 0;
+           margin: auto;
+
+       }
+        
+        #tabBar-div a {
+            padding-left: 4px;
+            padding-right: 4px;
+        }
+
+        #button-div {
+            display: none;
+        }
+        
+        #button-div-small {
+            display: inline;
+        }
+
+        .share-button {
+            display: none;
+        }
+        
+    }
+
+    @media screen and (max-width:760px){
+        #logoButton img {
+            height: 32px;
+            margin-top: 16px;
+        }
+        
+       #tabBar-div {
+/*           display: none;*/
+            width: 340px;
+            font-size:0.6em;
+       }
+        
+        #tabBar-div a {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+        
+        #button-div-small paper-button {
+            width: 36px;
+            min-width: 36px;
+        }
+
+        #button-div-small paper-button {
+            margin-left: 8px;
+        }
+
+        #button-div-small ::content {
+            width: 36px;
+
+        }
+        
+        #button-div-small ::content * {
+            left: -2px;
+        }
+
+    }
+    
+    @media screen and (max-width:540px){
+       #tabBar-div {
+           display: none;
+       }
+
+    }
+
+    
     #signupButton {
 /*        display: inline;*/
         margin: auto;
@@ -535,8 +611,9 @@ label {
 
     #content-div {
         position: static;
-        min-width: 1150px;
+/*        min-width: 1050px;*/
         height: 600px;
+        width: 100%;
 /*        height: calc(100vh - 64px);*/
 /*        min-height: 600px;*/
         background-color: #5285FF;
@@ -555,6 +632,8 @@ label {
         font-size: 32px;
         text-align: center;
     }
+    
+    
 
     .content-subtitle {
         position: relative;
@@ -586,8 +665,8 @@ label {
     .animation-section {
         float: left;
 
-        width: 525px;
-        height: 380px;
+        width: 50%;
+        height: 100%;
 
 /*        background-color: green;*/
     }
@@ -599,7 +678,7 @@ label {
         margin: auto;
         top: 96px;
 
-        width: 525px;
+        width: 100%;
         height: 240px;
 
 /*        background-color: blue;*/
@@ -611,10 +690,13 @@ label {
 /*        top: 40px;*/
         left:0;
         right:0;
+        bottom: 20px;
+        
+/*        background-color: aquamarine;*/
 
         margin: auto;
 
-        height: 220px;
+        height: calc(100% - 20px);
         object-fit: scale-down;
         
         cursor:pointer;
@@ -635,6 +717,19 @@ label {
         opacity: 0.8;
         font-size: 26px;
         text-align: center;
+    }
+    
+    .topSectionButton {
+        position: absolute;
+
+        top: 520px;
+        left:0;
+        right:0;
+        margin:auto;
+
+        display: inline;
+        width: 180px;
+
     }
 
 /*  General button for page header sections  */
@@ -657,19 +752,6 @@ label {
     }
 */
 
-    .topSectionButton {
-        position: absolute;
-
-        top: 520px;
-        left:0;
-        right:0;
-        margin:auto;
-
-        display: inline;
-        width: 180px;
-
-    }
-
     #highlights-div {
         position: relative;
 
@@ -684,6 +766,9 @@ label {
     }
 
     #highlights-internal-div {
+        
+        left: 0;
+        right: 0;
         margin: auto;
         margin-top: 38px;
 
@@ -737,6 +822,7 @@ label {
 
     .highlight-text {
         position: absolute;
+        
         top: 106px;
 
         padding-top: 10px;
@@ -747,7 +833,7 @@ label {
 
         color: #7f7f7f;
     }
-
+    
 /*
     #highlight1 {
         background-color: #F00;
@@ -817,6 +903,8 @@ label {
 
         width: 70%;
         min-width: 860px;
+        height: 558px;
+
         
         margin-bottom: 80px;
 
@@ -859,10 +947,12 @@ label {
     }
 
     #news-headlines-div {
-        position: relative;
+        position: absolute;
 
+        left: 0;
+        right: 0;
         margin: 0 auto;
-        margin-top: 40px;
+        margin-top: 20px;
 
         max-width: 800px;
 
@@ -885,6 +975,11 @@ label {
 
     .news-headline {
 
+                    left: 0;
+            right: 0;
+            margin: auto;
+            margin-bottom: 20px;
+        
         margin-bottom: 40px;
 
         width: 800px;
@@ -924,6 +1019,240 @@ label {
         max-height: 66px;
 
         color: #7f7f7f;
+    }
+    
+    @media screen and (max-width:1050px){
+        #content-div {
+            height: 540px;
+        }
+        
+        .topSectionButton {
+            top: 474px;
+        }
+        
+        #content-animation {
+            width: 800px;
+            height: 300px;
+        }
+        
+        .animation-image-div {
+            height: 66%;
+/*            height: 100%;*/
+        }
+        
+        .animation-title {
+            font-size: 20px;
+        }
+        
+        #highlights-div {
+            margin-top: 0;
+            width: calc(100% + 10px);
+            min-width: inherit;
+            left: -5px;
+            
+            padding-left: 0;
+            padding-right: 0;
+        }
+        
+        #highlights-internal-div {
+            width:800px;
+        }
+        
+        .highlight {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        
+         #news-div {
+             min-width: 300px;
+            width: calc(100% + 10px);
+             height: 430px;
+            left: -5px;
+             
+             padding-left: 0;
+             padding-right: 0;
+             
+             margin-bottom: 0;
+         }
+        
+        #news-headlines-div {
+            margin-top: 20px;
+/*            background-color: red;*/
+        }
+        
+        .news-headline {
+            left: 0;
+            right: 0;
+            margin: auto;
+            margin-bottom: 20px;
+            
+            width: 640px;
+/*            background-color: green;*/
+        }
+        
+        .news-headline-date {
+            
+            margin-top: 0px;
+            
+            height: 20px;
+            line-height: 20px;
+            width: 100px;
+            
+            font-size: 0.9em;
+        }
+        
+        .news-headline-content {
+            font-size: 0.8em;
+            width: 520px;
+        }
+    }
+    
+    @media screen and (max-width:800px){
+        .content-title {
+            font-size: 1.5em;
+        }
+        
+        .content-subtitle {
+            font-size: 1.2em;
+        }
+        
+        #content-div {
+            height: 400px;
+        }
+        
+        .topSectionButton {
+            top: 330px;
+        }
+        
+        #content-animation {
+            top: 110px;
+            
+            width: 80%;
+            height: 140px;
+        }
+        
+        .animation-image-div {
+            top: 40px;
+            height: 100%;
+        }
+        
+        .animation-image {
+/*            height: 100%;*/
+        }
+        
+        .transmission-animation {
+            display: none;
+        }
+        
+        .animation-title {
+            top: 30px;
+            font-size: 18px;
+        }
+        
+        .material-header {
+            font-size:  1.2em;
+        }
+        
+        .divider {
+            top: 80px;
+            
+        }
+        
+        #highlights-div {
+            margin-top: 0;
+            width: calc(100% + 10px);
+            min-width: inherit;
+            height: 590px;
+            left: -5px;
+            
+            padding-left: 0;
+            padding-right: 0;
+        }
+        
+        #highlights-internal-div {
+            width:80%;
+            height: inherit;
+/*            background-color: green;*/
+        }
+        
+        .highlight {
+            width: calc(100% - 20px);
+            height: 100px;
+/*            background-color: red;*/
+            margin-bottom: 30px;
+        }
+        
+        .highlight i {
+            font-size: 2.5em;
+        }
+        
+        .highlight-title {
+            top: 44px;
+            
+            font-size: 1em;
+        }
+        
+        .highlight-text {
+            top: 64px;
+            
+            left: 0;
+            right: 0;
+            margin: auto;
+            font-size: 0.9em;
+            
+            text-align: center;
+        }
+        
+        #news-div {
+            height: 380px;
+        }
+        
+        #news-headlines-div {
+            top: 110px;
+            max-width: none;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .news-headline {
+            max-width: none;
+            width: 80%;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        
+        .news-headline-date {
+            
+            margin-top: 0px;
+            
+            height: 16px;
+            line-height: 16px;
+            width: 70px;
+            
+            font-size: 0.7em;
+        }
+        
+        .news-headline-content {
+            font-size: 0.8em;
+            width: calc(100% - 80px);
+            
+            font-size: 0.6em;
+        }
+        
+        
+    }
+    
+    @media screen and (max-width:600px){
+        #news-div {
+            height: 440px;
+        }
+        
+        .news-headline {
+            width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
     }
 
 
@@ -1741,6 +2070,40 @@ label {
           opacity: 0.6;
           font-size: 1.5em;
           font-weight: 400;
+      }
+      
+      @media screen and (max-width:1204px){
+/*
+           #header-subtitle {
+               font-size: 1.2em;
+           }
+*/
+          
+          .h2-br {
+              display: none;
+          }
+      }
+      
+      @media screen and (max-width:840px){
+          
+          #header-section {
+              height: 180px;
+          }
+          
+           #header-title {
+/*               top:28%;*/
+               font-size: 2.4em;
+               margin-left: 40px;
+           }
+          
+           #header-subtitle {
+/*               top:33%;*/
+               margin-left: 40px;
+               margin-right: 40px;
+               font-size: 1.1em;
+           }
+          
+          
       }
 
       #header-icon-div {
@@ -2837,9 +3200,20 @@ label {
 
 /*  Features page CSS */
 
+      .main-features-container {
+          width: 1050px;
+
+          left: 0;
+          right: 0;
+          margin: auto;
+          margin-bottom: 40px;
+/*          background-color: red;*/
+
+      }
+      
       .features-header {
 
-          width: 1050px;
+          width: inherit;
 
           margin: 0;
           margin-top: 30px;
@@ -2854,24 +3228,14 @@ label {
           border-width: 0;
           border-bottom-width: 2px;
 
-      }
-
-      .main-features-container {
-          width: 1050px;
-
-          left: 0;
-          right: 0;
-          margin: auto;
-          margin-bottom: 40px;
-/*          background-color: red;*/
-
+/*          background-color: blue;*/
       }
 
       #top-features-inner {
 
           position: relative;
 
-          width: 1050px;
+          width: inherit;
           height: 340px;
 
           left: 0;
@@ -2940,7 +3304,7 @@ label {
 
           border-radius: 5px;
       }
-
+      
       .feature-box img {
           position: absolute;
 
@@ -2955,7 +3319,7 @@ label {
           object-fit: scale-down;
 
       }
-
+      
       .feature-box h3 {
           position: absolute;
 
@@ -3134,6 +3498,77 @@ label {
 
       }
 
+      @media screen and (max-width:1050px){
+          .main-features-container {
+              width: 100%;
+          }
+          
+          .features-header {
+              width: calc(100% - 80px);
+              margin-left: 40px;
+/*              background-color: green;*/
+          }
+          
+          #top-features-inner {
+              height: 1000px;
+          }
+          
+          .main-features-container .flex-box {
+              display: inline;
+/*              flex:none;*/
+          }
+          
+          .feature-box-container {
+              float: none;
+              top: 0;
+              
+              height: 220px;
+              width: 80%;
+              margin-left: 10%;
+              display: block;
+              
+              flex: none;
+          }
+          
+          .feature-box {
+              width: 100%;
+          }
+          
+          .feature-box img {
+              top: 16px;
+              height: 60px;
+          }
+          
+          .feature-box h3 {
+              top: 86px;
+          }
+          
+          .feature-box p {
+              top: 134px;
+          }
+          
+          .feature-box br {
+              display: none;
+          }
+          
+          .mini-feature-column {
+/*              background: red;*/
+              width: 90%;
+              margin-left: 5%;
+              margin-bottom: 20px;
+          }
+          
+          #mini-feature-button {
+              width: calc(100% - 80px);
+              margin-left: 40px;
+          }
+      }
+      
+      @media screen and (max-width:510px){
+          .feature-box p {
+              font-size: 0.8em;
+          }
+      }
 
 
 
