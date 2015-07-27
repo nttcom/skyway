@@ -16,17 +16,6 @@
     margin:auto;
 }
 
-.js-transmission-animation {
-    
-    position:absolute;
-    
-    top:-64px;
-    
-    left:0;
-    right:0;
-    margin:auto;
-}
-
 .circle-container {
 	position: relative;
 	width: 48em;
