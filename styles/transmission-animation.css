@@ -16,6 +16,14 @@
     margin:auto;
 }
 
+@media screen and (max-width:1050px){
+    .transmission-animation {
+        left: 0%;
+        right: 10%;
+        left:auto;
+    }
+}
+
 .circle-container {
 	position: relative;
 	width: 48em;
