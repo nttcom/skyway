@@ -611,14 +611,20 @@ label {
 
     #content-div {
         position: static;
-/*        min-width: 1050px;*/
         height: 600px;
         width: 100%;
-/*        height: calc(100vh - 64px);*/
-/*        min-height: 600px;*/
         background-color: #5285FF;
 
-/*        border-radius: 5px;*/
+        z-index: -1;
+    }
+    
+    #subpage-content-div {
+        position: static;
+        height: 600px;
+        width: 100%;
+        min-width: 1050px;
+        background-color: #5285FF;
+
         z-index: -1;
     }
 
@@ -729,7 +735,18 @@ label {
 
         display: inline;
         width: 180px;
+    }
+    
+    .subpage-topSectionButton {
+        position: absolute;
 
+        top: 520px;
+        left:0;
+        right:0;
+        margin:auto;
+
+        display: inline;
+        width: 180px;
     }
 
 /*  General button for page header sections  */
@@ -2068,6 +2085,7 @@ label {
 
       #header-section {
           height: 240px;
+          min-width: 1050px; 
 /*          position: fixed;*/
 
           background-color: #5285FF;
@@ -2144,6 +2162,12 @@ label {
           padding: 0;
 
           border-radius: 75px;
+      }
+      
+      @media screen and (max-width:970px){
+          #header-icon-div {
+              display: none;
+          }
       }
 
       #header-icon-inner {
