@@ -69,6 +69,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <h1>{{ site.unsupportedBrowser[page.lang] }}</h1>
 </div>
 <![endif]-->
+    
+    <!--[if lte IE 9]>
+<div id="unsupported-browser-banner">
+    <h1>{{ site.unsupportedBrowser[page.lang] }}</h1>
+</div>
+<![endif]-->
 
 <template is="dom-bind" id="app">
 
