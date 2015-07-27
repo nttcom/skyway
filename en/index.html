@@ -20,21 +20,27 @@ description: WebRTC is a revolutionary new technology that allows browsers to se
                 <div></div>
             </div>
         </div>
-        <div class="animation-section" id="animation-web" onclick="location.href='info-js.html';">
-            <div class="animation-image-div">
-                <img src="{{ site.homedir[page.lang] }}images/top_images/index_js_top.png" class="animation-image">
+        <a href='info-js.html'>
+            <div class="animation-section" id="animation-web">
+                <div class="animation-image-div">
+                    <img src="{{ site.homedir[page.lang] }}images/top_images/index_js_top.png" class="animation-image">
+                </div>
+                <h3 class="animation-title">JavaScript</h3>
             </div>
-            <h3 class="animation-title">JavaScript</h3>
-        </div>
-        <div class="animation-section" id="animation-android" onclick="location.href='info-mobile.html';">
-            <div class="animation-image-div">
-                <img src="{{ site.homedir[page.lang] }}images/top_images/index_mobile_top.png" class="animation-image">
+            </a>
+            <a href='info-mobile.html'>
+                <div class="animation-section" id="animation-android">
+                <div class="animation-image-div">
+                    <img src="{{ site.homedir[page.lang] }}images/top_images/index_mobile_top.png" class="animation-image">
+                </div>
+                <h3 class="animation-title">iOS/Android</h3>
             </div>
-            <h3 class="animation-title">iOS/Android</h3>
-        </div>
+         </a>
     </div>
     <div></div>
-    <paper-button class="topSectionButton white" raised onclick="location.href='https://skyway.io/ds/registration/';">Sign Up</paper-button>
+    <a href='https://skyway.io/ds/registration/' target="_blank">
+      <paper-button class="topSectionButton white" raised>Sign Up</paper-button>
+    </a>
 </div>
 
 <paper-material id="highlights-div" elevation="2">
@@ -68,7 +74,9 @@ description: WebRTC is a revolutionary new technology that allows browsers to se
 <div id="signup-div">
     <h2 id="signup-header">Like what you see? SkyWay is free to try.</h2>
     <img src="{{ site.homedir[page.lang] }}images/divider_blue.png">
-    <paper-button id="signupButton" raised class="white" onclick="location.href='https://skyway.io/ds/registration/';">Sign Up</paper-button>
+    <a href='https://skyway.io/ds/registration/' target="_blank">
+      <paper-button id="signupButton" raised class="white">Sign Up</paper-button>
+    </a>
 </div>
 
 <paper-material id="news-div" elevation="1">
@@ -84,21 +92,21 @@ description: WebRTC is a revolutionary new technology that allows browsers to se
         <div class="news-headline">
             <div class="news-headline-date">2015.06.05</div>
             <div class="news-headline-content">We have released a SkyWay iOS/Android SDK.<br>
-For more information, see the <a href="http://www.ntt.com/aboutus_e/news/data/20150605.html">News Release.</a><br>
-Please refer to our docs <a href="http://nttcom.github.io/skyway/en/docs/">here</a> if you are interested.<br>
+For more information, see the <a target="_blank" href="http://www.ntt.com/aboutus_e/news/data/20150605.html">News Release.</a><br>
+Please refer to our docs <a target="_blank" href="http://nttcom.github.io/skyway/en/docs/">here</a> if you are interested.<br>
             </div>
         </div>
         <div class="news-headline">
             <div class="news-headline-date">2015.01.27</div>
             <div class="news-headline-content">We have started a alpha version TURN Server as a free trial.<br>
-Apply <a href="https://skyway.io/ds/turnrequest">here</a> if you are interested.
+Apply <a target="_blank" href="https://skyway.io/ds/turnrequest">here</a> if you are interested.
             </div>
         </div>
         <div class="news-headline">
             <div class="news-headline-date">2014.10.06</div>
             <div class="news-headline-content">We have released a dashboard for managing API keys!<br>
 We have also updated the JavaScript library.<br>
-The latest version can be downloaded at <a href="https://skyway.io/dist/0.3/peer.min.js">https://skyway.io/dist/0.3/peer.min.js</a>
+The latest version can be downloaded at <a target="_blank" href="https://skyway.io/dist/0.3/peer.min.js">https://skyway.io/dist/0.3/peer.min.js</a>
             </div>
         </div>
         <paper-button id="newsButton" raised class="colorful">ALl News</paper-button>

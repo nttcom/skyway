@@ -158,6 +158,16 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           color: var(--paper-pink-a200);
         }
 
+  a paper-button { font-weight: 300; }
+/*
+  paper-button a {
+    color: inherit;
+    font-weight: inherit;
+height: inherit;
+width: inherit;
+  }
+  */
+
 
   /* General styles */
 
@@ -336,6 +346,7 @@ label {
         padding: 0;
 
         width: 170px;
+        line-height: 64px;
 /*        height: inherit;   */
 
         margin: 0;
@@ -348,7 +359,7 @@ label {
     #logoButton img {
         position: relative;
         left: -8px;
-        margin-top: 3px;
+        margin-top: 11px;
         height: 42px;
 
         z-index: -10;
@@ -370,35 +381,35 @@ label {
         font-family: 'Open Sans', sans-serif;
 
     }
-    
+
     @media screen and (max-width:1000px){
        #tabBar-div {
-           
+
            width: 540px;
            font-size: 0.8em;
-           
+
            left: auto;
            right: 0;
            margin: 0;
-           
+
        }
-        
+
         #button-div {
             display: none;
         }
-        
+
         .share-button {
             display: none;
         }
     }
-    
+
     @media screen and (max-width:760px){
        #tabBar-div {
-           
+
            display: none;
-           
+
        }
-        
+
     }
 
     #tabBar-div button {
@@ -424,8 +435,29 @@ label {
 
 /*        background-color: rgba(0,0,0,0.1);*/
     }
+    #tabBar-div a {
+        line-height: 64px;
 
-    #tabBar-div button:hover {
+        margin-left: 4px;
+        margin-right: 4px;
+        padding: 0 10px;
+
+        background-color: transparent;
+        border: none;
+
+        color: rgba(82, 133, 255, 0.7);
+
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1em;
+        font-weight: 400;
+        text-align: center;
+
+        outline: none;
+        white-space: nowrap;
+    }
+
+
+    #tabBar-div a:hover {
 
 /*        padding: 0px;*/
 
@@ -463,6 +495,11 @@ label {
 */
     }
 
+    #langButton a {
+      font-weight: inherit;
+      color: inherit;
+    }
+
 
 /*
     #langButton ::content * {
@@ -479,6 +516,10 @@ label {
         width: 86px;
     }
 
+    #loginButton a {
+      color: inherit;
+      font-weight: inherit;
+    }
     #signupButton {
 /*        display: inline;*/
         margin: auto;
@@ -1225,7 +1266,7 @@ label {
         opacity: 0.50;
 
         overflow: hidden;
-        
+
         font-size: 1.25em;
 /*        background-color: red;*/
     }
@@ -1435,7 +1476,7 @@ label {
         color: #fff;
         background-color: #1EC75F;
     }
-      
+
     .material-lower-header {
         font-size: 10;
         margin: 0;
