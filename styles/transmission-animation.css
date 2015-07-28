@@ -16,15 +16,12 @@
     margin:auto;
 }
 
-.js-transmission-animation {
-    
-    position:absolute;
-    
-    top:-64px;
-    
-    left:0;
-    right:0;
-    margin:auto;
+@media screen and (max-width:1050px){
+    .transmission-animation {
+        left: 0%;
+        right: 10%;
+        left:auto;
+    }
 }
 
 .circle-container {

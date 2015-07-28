@@ -82,92 +82,85 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 */
 
 
-        /* Paper button styles */
+    /* Paper button styles */
 
-        .horizontal-section {
-          min-width: 130px;
-        }
+    .horizontal-section {
+      min-width: 130px;
+    }
 
-        paper-button {
-          display: block;
-          margin-bottom: 24px;
-        }
+    paper-button {
+      display: block;
+      margin-bottom: 24px;
+    }
 
-        paper-button.colorful {
-          background-color: #5285FF;
-            color: #fff;
-        }
+    paper-button.colorful {
+      background-color: #5285FF;
+        color: #fff;
+    }
 
-        paper-button.colorful-red {
-          background: #FC3931;
-          color: #fff;
-        }
+    paper-button.colorful-red {
+      background: #FC3931;
+      color: #fff;
+    }
 
-        paper-button.white {
-          background: #fff;
-          color: #4285f4;
-        }
+    paper-button.white {
+      background: #fff;
+      color: #4285f4;
+    }
 
-        paper-button[raised].colorful {
-          background: #4285f4;
-          color: #fff;
-        }
+    paper-button[raised].colorful {
+      background: #4285f4;
+      color: #fff;
+    }
 
-        paper-button[raised].red {
-          background: #FC3931;
-          color: #fff;
-        }
+    paper-button[raised].red {
+      background: #FC3931;
+      color: #fff;
+    }
 
-        paper-button[raised].white {
-          background: #fff;
-          color: #4285f4;
-        }
+    paper-button[raised].white {
+      background: #fff;
+      color: #4285f4;
+    }
 
-        paper-button[toggles] {
-          transition: background-color 0.3s;
-        }
+    paper-button[toggles] {
+      transition: background-color 0.3s;
+    }
 
-        paper-button[toggles][active] {
-          background-color: rgba(0, 0, 0, 0.25);
-        }
+    paper-button[toggles][active] {
+      background-color: rgba(0, 0, 0, 0.25);
+    }
 
-        paper-button[toggles][active].colorful {
-          background-color: rgba(66, 133, 244, 0.25);
-        }
+    paper-button[toggles][active].colorful {
+      background-color: rgba(66, 133, 244, 0.25);
+    }
 
-        paper-button[toggles][active][raised].colorful {
-          background-color: rgba(66, 133, 244, 0.75);
-        }
+    paper-button[toggles][active][raised].colorful {
+      background-color: rgba(66, 133, 244, 0.75);
+    }
 
-        paper-button.red {
-          color: var(--paper-red-500);
-          --paper-button-flat-focus-color: var(--paper-red-50);
-        }
-        paper-button.red:hover {
-          background: var(--paper-red-50);
-        }
+    paper-button.red {
+      color: var(--paper-red-500);
+      --paper-button-flat-focus-color: var(--paper-red-50);
+    }
+    paper-button.red:hover {
+      background: var(--paper-red-50);
+    }
 
-        paper-button.hover:hover {
-          background: #eee;
-        }
+    paper-button.hover:hover {
+      background: #eee;
+    }
 
-        paper-button.ripple::shadow paper-ripple {
-          color: var(--paper-pink-a200);
-        }
+    paper-button.ripple::shadow paper-ripple {
+      color: var(--paper-pink-a200);
+    }
 
-        paper-button.ripple paper-ripple {
-          color: var(--paper-pink-a200);
-        }
+    paper-button.ripple paper-ripple {
+      color: var(--paper-pink-a200);
+    }
 
-  a paper-button { font-weight: 300; }
-/*
-  paper-button a {
-    color: inherit;
-    font-weight: inherit;
-height: inherit;
-width: inherit;
-  }
-  */
+    a paper-button { font-weight: 300; }
+
 
 
   /* General styles */
@@ -201,87 +194,89 @@ width: inherit;
      --paper-fab-keyboard-focus-background: var(--paper-red-900);
 }
 */
-
-.share-button {
-    position: fixed;
-
-    right: 24px;
-
-    width: 50px;
-    height: 50px;
-
-    z-index: 10;
-
-/*    display:none;*/
-}
-
-.share-button:hover {
-    transform: scale(1.1, 1.1);
-    -webkit-transform: scale(1.1, 1.1);
-}
-
-label {
-    position: fixed;
-
-    right: 20px;
-
-    height: 30px;
-    line-height: 30px;
-
-    margin: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-
-    color: #777;
-    background-color: #eee;
-    opacity: 0;
-    border-radius: 5px;
-
-    z-index: 1;
-}
-
-#share-button-tw {
-    bottom: 24px;
-
-    --iron-icon-height: 28px;
-    --iron-icon-width: 28px;
-
-    --paper-fab-background: #55ACEE;
-/*     --paper-fab-keyboard-focus-background: var(--paper-red-900);*/
-}
-
-#twitter-share-label {
-    bottom: 24px;
-}
     
-#share-button-fb {
+    /* Share button styles */
 
-    bottom: 90px;
+    .share-button {
+        position: fixed;
 
-    --iron-icon-height: 40px;
-    --iron-icon-width: 40px;
+        right: 24px;
 
-    --paper-fab-background: #4E5FAD;
-/*     --paper-fab-keyboard-focus-background: var(--paper-red-900);*/
-}
+        width: 50px;
+        height: 50px;
 
-#facebook-share-label {
-    bottom: 90px;
-}
+        z-index: 10;
 
-#share-button-git {
-    bottom: 156px;
+    /*    display:none;*/
+    }
 
-    --iron-icon-height: 36px;
-    --iron-icon-width: 36px;
+    .share-button:hover {
+        transform: scale(1.1, 1.1);
+        -webkit-transform: scale(1.1, 1.1);
+    }
 
-    --paper-fab-background: #3f3f3f;;
-/*     --paper-fab-keyboard-focus-background: var(--paper-red-900);*/
-}
+    label {
+        position: fixed;
 
-#github-share-label {
-    bottom: 156px;
-}
+        right: 20px;
+
+        height: 30px;
+        line-height: 30px;
+
+        margin: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        color: #777;
+        background-color: #eee;
+        opacity: 0;
+        border-radius: 5px;
+
+        z-index: 1;
+    }
+
+    #share-button-tw {
+        bottom: 24px;
+
+        --iron-icon-height: 28px;
+        --iron-icon-width: 28px;
+
+        --paper-fab-background: #55ACEE;
+    /*     --paper-fab-keyboard-focus-background: var(--paper-red-900);*/
+    }
+
+    #twitter-share-label {
+        bottom: 24px;
+    }
+
+    #share-button-fb {
+
+        bottom: 90px;
+
+        --iron-icon-height: 40px;
+        --iron-icon-width: 40px;
+
+        --paper-fab-background: #4E5FAD;
+    /*     --paper-fab-keyboard-focus-background: var(--paper-red-900);*/
+    }
+
+    #facebook-share-label {
+        bottom: 90px;
+    }
+
+    #share-button-git {
+        bottom: 156px;
+
+        --iron-icon-height: 36px;
+        --iron-icon-width: 36px;
+
+        --paper-fab-background: #3f3f3f;;
+    /*     --paper-fab-keyboard-focus-background: var(--paper-red-900);*/
+    }
+
+    #github-share-label {
+        bottom: 156px;
+    }
 
     paper-tabs, core-toolbar {
 /*        position: fixed;*/
@@ -1083,7 +1078,7 @@ label {
          #news-div {
              min-width: 300px;
             width: calc(100% + 10px);
-             height: 430px;
+             height: 480px;
             left: -5px;
              
              padding-left: 0;
@@ -1103,7 +1098,7 @@ label {
             margin: auto;
             margin-bottom: 20px;
             
-            width: 640px;
+            width: 710px;
 /*            background-color: green;*/
         }
         
@@ -1119,8 +1114,8 @@ label {
         }
         
         .news-headline-content {
-            font-size: 0.8em;
-            width: 520px;
+            font-size: 0.9em;
+            width: 590px;
         }
     }
     
@@ -1221,7 +1216,7 @@ label {
         }
         
         #news-div {
-            height: 380px;
+            height: 420px;
         }
         
         #news-headlines-div {
@@ -1234,7 +1229,7 @@ label {
         
         .news-headline {
             max-width: none;
-            width: 80%;
+            width: 90%;
             margin-left: 10%;
             margin-right: 10%;
         }
@@ -1251,10 +1246,9 @@ label {
         }
         
         .news-headline-content {
-            font-size: 0.8em;
+            font-size: 0.75em;
             width: calc(100% - 80px);
             
-            font-size: 0.6em;
         }
         
         
@@ -1331,14 +1325,17 @@ label {
 
         width: 700px;
         height: 20px;
+        
     }
 
     #footer a {
+        position: relative;
 
         font-size: 0.9em;
-
         color: #6f6f6f;
+        
     }
+    
 
     #footer a:hover {
 
@@ -1687,7 +1684,6 @@ label {
         max-height: 260px;
         max-width: 740px;
         object-fit: scale-down;
-          
 /*
           width: 100%;
           position: absolute;
@@ -1707,8 +1703,9 @@ label {
           #animation-container img {
                 max-height: 200px;
                 max-width: 570px;
-                bottom: 50px;
+                bottom: 40px;
           }
+        
       }
       
       
@@ -3293,6 +3290,7 @@ label {
           display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
 
           justify-content: space-between;
+          -webkit-justify-content: space-between;
       }
 
       .flex-component {
