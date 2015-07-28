@@ -283,6 +283,43 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     #github-share-label {
         bottom: 156px;
     }
+    
+    @media only screen and (max-device-width: 580px){
+        label {
+            display:none;
+        }
+        
+        .share-button {
+            width: 90px;
+            height: 90px;
+        }
+
+        #share-button-tw ::content #icon {
+            height: 54px;
+            width: 54px;
+            
+        }
+        
+        #share-button-fb {
+            bottom: 145px;
+        }
+        
+        #share-button-fb ::content #icon {
+            height: 72px;
+            width: 72px;
+        }
+        
+        #share-button-git {
+            bottom: 266px;
+        }
+        
+        #share-button-git ::content #icon {
+            height: 66px;
+            width: 66px;
+            margin-bottom: 1px;
+        }
+
+    }
 
     paper-tabs, core-toolbar {
 /*        position: fixed;*/
@@ -548,10 +585,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         
         #button-div-small {
             display: inline;
-        }
-
-        .share-button {
-            display: none;
         }
         
     }
