@@ -17,10 +17,9 @@ body {
 }
 
 #unsupported-browser-banner {
-    margin-top: 10px;
+    padding-top: 16px;
     background-color: #5285FF;
     color: #fff;
-    border-bottom: yellow;
     width: 100%;
     text-align: center;
 }

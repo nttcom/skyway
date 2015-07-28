@@ -180,6 +180,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     margin: 16px auto;
     background: white;
   }
+    
+/* Remove image border on IE10 */
+    
+    img {
+        border: 0px;
+    }
 
 /*
 #main-share-button {
@@ -3291,6 +3297,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
           justify-content: space-between;
           -webkit-justify-content: space-between;
+          -ms-flex-pack: space-between; /* OLD - for IE 10 */
       }
 
       .flex-component {
