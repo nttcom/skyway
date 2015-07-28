@@ -65,6 +65,30 @@
 
 }
 
+@media screen and (max-width:1200px){
+    .js-transmission-animation {
+        top: 80px;
+    }
+    
+    #animated-logo-js {
+        top: 92px;
+    }
+    
+    .ios-transmission-animation {
+        top:40px;
+        left:0;
+        right:0;
+        margin: auto;
+    }
+    
+    #animated-logo-mobile {
+        top: 50px;
+        left:0;
+        right:0;
+        margin: auto;
+    }
+}
+
 .circle-container {
 	position: relative;
 	width: 40em;
