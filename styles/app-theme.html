@@ -495,6 +495,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         border-style: solid;
     }
     
+    #button-div-small #langButton ::content * {
+        margin-top: -2px;
+    }
+    
     #button-div-small ::content {
         padding: 0;
         margin: 0;
@@ -509,11 +513,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     }
     
     #button-div-small i {
-        font-size: 1.5em;
+        font-size: 1.8em;
     }
     
     #button-div-small #loginButton ::content * {
-        margin-top: -0.5px;
+        margin-top: -1.8px;
     }
 
     @media screen and (max-width:1000px){
@@ -1302,6 +1306,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     }
 
     #footer img {
+        display:inline-block; /* For IE 10 */
         position: relative;
 
         margin: auto;
@@ -1335,6 +1340,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     }
 
     #footer a {
+        display:inline-block; /* For IE 10 */
         position: relative;
 
         font-size: 0.9em;
@@ -3295,6 +3301,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           display: -webkit-flex;     /* NEW - Chrome */
           display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
 
+          -webkit-box-pack: justify;
+          -moz-box-pack: justify;
           justify-content: space-between;
           -webkit-justify-content: space-between;
           -ms-flex-pack: space-between; /* OLD - for IE 10 */
