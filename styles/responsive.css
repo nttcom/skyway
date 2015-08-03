@@ -7,23 +7,4 @@ Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
 */
 
-body {
-  background: #fafafa;
-  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #333;
-  border: none;
-  margin: 0;
-  padding: 0;
-}
 
-#unsupported-browser-banner {
-    padding-top: 16px;
-    background-color: #5285FF;
-    color: #fff;
-    width: 100%;
-    text-align: center;
-}
-
-#unsupported-browser-banner h1 {
-    font-size: 18px;
-}
