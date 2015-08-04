@@ -455,13 +455,24 @@ label {
 .navbar {
     margin: 0;   
 }
-      
-.navbar-tabs-centered {
-/*    position:absolute;*/
-/*    left:25%;*/
-    margin-right: auto;
-    margin-left: auto;
-    /* TODO: Fix centering */
+@media (min-width: 768px){
+    .navbar-tabs-centered {
+/*        position: absolute;*/
+        left: 200px;
+        right: 200px;
+        margin: auto;
+        display: table;
+        table-layout: fixed;
+        float:none;
+
+/*        background-color: green;*/
+    }
+    
+    .navbar-buttons {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
 }
 
 .navbar-tabs a {
@@ -473,8 +484,9 @@ label {
 }
 
 #logoButton {
+    position: absolute;
     float: left;
-    left: 1%;
+    left: 10px;
 
     padding: 0;
 
@@ -491,6 +503,8 @@ label {
     margin-top: 0px;
     height: 42px;
 }
+      
+
 
 .dropdown-toggle {
     color: rgba(252, 57, 49, 0.8);
