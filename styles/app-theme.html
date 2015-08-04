@@ -53,24 +53,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 /*    background: #2548BE;*/
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-/*        #5285FF*/
 }
 
     h1,h2,h3 {
         font-weight: 300;
     }
-
-
-/*
-    h2 {
-        font-weight: 300;
-    }
-
-    h3 {
-        font-weight: 300;
-    }
-*/
-
 
     /* Paper button styles */
 
@@ -327,8 +314,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 /* Responsive Styles */
 
 .navbar-tabs-centered {
-    position:absolute;
-    left:25%;
+/*    position:absolute;*/
+/*    left:25%;*/
+    margin-right: auto;
+    margin-left: auto;
     /* TODO: Fix centering */
 }
 
@@ -382,6 +371,99 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     /* TODO: Click colour */
 }
 
+      
+/* Common Styles */
+      
+.background {
+    position: relative;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    background-color: #2548BE;
+}
+      
+.paper-style-div {
+    padding: 20px;
+    padding-top: 32px;
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+    background-color: #fff;
+    
+    /* See /bower_components/paper-styles/shadow.html */
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+          0 1px 5px 0 rgba(0, 0, 0, 0.12),
+          0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    
+    border-radius: 5px;
+}
+      
+.paper-style-div h2 {
+    margin: 0;
+    
+    text-align: center;
+    font-size: 2em;
+    color: #5f5f5f;
+}
+      
+.divider {
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 
+    width: 300px;
+    height: 0px;
+
+    border-style: solid;
+    border-width: 0;
+    border-top-width: 1px;
+    border-color: #5285FF;
+}
+
+.hd {
+    background-color: red;
+    border-color: orange;
+    border-width: 1px;
+    border-style: solid;
+    height: 100%;
+}
+      
+/* Front Page - Highlights */
+      
+.highlight {
+
+    pdding-left: 30px;
+    padding-right: 30px;
+    
+    height: 180px;
+    overflow-y: hidden;
+    
+    font-size: 1.1em;
+}
+      
+.highlight i {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    text-align: center;
+
+    color: #5285FF;
+}
+
+.highlight h3 {
+/*    position: absolute;*/
+    margin-top: 70px;
+    
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 400;
+}
 
 </style>
