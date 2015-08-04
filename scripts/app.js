@@ -30,19 +30,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     // imports are loaded and elements have been registered
   });
 
-  // Close drawer after menu item is selected if drawerPanel is narrow
-  app.onMenuSelect = function() {
-    var drawerPanel = document.querySelector('#paperDrawerPanel');
-    if (drawerPanel.narrow) {
-      drawerPanel.closeDrawer();
-    }
-  };
-
-$('#skyway-logo').click(function(){
-    $("html, body").animate({ scrollTop: 0 }, 600);
-    return false;
- });
-
     // Change script path if on english version of page
     var scriptPath = "";
     var isEng = /\/en\//.test(location.pathname)
@@ -55,8 +42,8 @@ $('#skyway-logo').click(function(){
         console.log('Loaded scripts/share.js');
     });
 
-    $.getScript(scriptPath + "support.js", function(){
-        console.log('Loaded scripts/support.js');
-    });
+//    $.getScript(scriptPath + "support.js", function(){
+//        console.log('Loaded scripts/support.js');
+//    });
 
 })(document);

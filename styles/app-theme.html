@@ -309,6 +309,143 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
       
       
+    
+      
+    
+/* Share button styles */
+
+.share-button {
+    position: fixed;
+
+    right: 24px;
+
+    width: 50px;
+    height: 50px;
+
+    z-index: 10;
+
+/*    display:none;*/
+}
+
+.share-button:hover {
+    transform: scale(1.1, 1.1);
+    -webkit-transform: scale(1.1, 1.1);
+}
+
+label {
+    position: fixed;
+
+    right: 20px;
+
+    height: 30px;
+    line-height: 30px;
+
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    color: #777;
+    background-color: #eee;
+    opacity: 0;
+    border-radius: 5px;
+
+    z-index: 1;
+}
+
+#share-button-tw {
+    bottom: 24px;
+
+    --iron-icon-height: 28px;
+    --iron-icon-width: 28px;
+
+    --paper-fab-background: #55ACEE;
+/*     --paper-fab-keyboard-focus-background: var(--paper-red-900);*/
+}
+
+#twitter-share-label {
+    bottom: 24px;
+}
+
+#share-button-fb {
+
+    bottom: 90px;
+
+    --iron-icon-height: 40px;
+    --iron-icon-width: 40px;
+
+    --paper-fab-background: #4E5FAD;
+/*     --paper-fab-keyboard-focus-background: var(--paper-red-900);*/
+}
+
+#facebook-share-label {
+    bottom: 90px;
+}
+
+#share-button-git {
+    bottom: 156px;
+
+    --iron-icon-height: 36px;
+    --iron-icon-width: 36px;
+
+    --paper-fab-background: #3f3f3f;;
+/*     --paper-fab-keyboard-focus-background: var(--paper-red-900);*/
+}
+
+#github-share-label {
+    bottom: 156px;
+}
+
+@media only screen and (max-device-width: 580px){
+    label {
+        display:none;
+    }
+
+    .share-button {
+        width: 90px;
+        height: 90px;
+    }
+
+    #share-button-tw ::content #icon {
+        height: 54px;
+        width: 54px;
+
+    }
+
+    #share-button-fb {
+        bottom: 145px;
+    }
+
+    #share-button-fb ::content #icon {
+        height: 72px;
+        width: 72px;
+    }
+
+    #share-button-git {
+        bottom: 266px;
+    }
+
+    #share-button-git ::content #icon {
+        height: 66px;
+        width: 66px;
+        margin-bottom: 1px;
+    }
+
+}   
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       
       
 /* Responsive Styles */
@@ -503,4 +640,38 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     font-weight: 400;
 }
 
+/* Front Page - News */ 
+      
+.headline {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+      
+.headline-date {
+    
+/* TODO: Responsive formatting */
+/*
+    left: 0;
+    right: 0;
+    margin: auto;
+*/
+    margin-bottom: 8px;
+    
+    max-width: 160px;
+    height: 28px;
+    line-height: 28px;
+    
+    text-align: center;
+    font-size: 1.5em;
+    color: #FFF;
+    background-color: #5285FF;
+    
+    border-radius: 5px;
+}
+      
+.headline-text {
+    font-size: 1.2em;
+    color: #7f7f7f;
+}
+      
 </style>
