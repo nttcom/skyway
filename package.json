@@ -1,0 +1,22 @@
+{
+    "dependencies": {
+        
+        "gulp": "*",
+        "gulp-load-plugins": "*",
+
+        "gulp-jekyll": "*",
+        "gulp-kramdown": "*",
+        
+        "gulp-compass": "*",
+        "gulp-minify-css": "*",
+
+        "gulp-jshint": "*",
+        "gulp-concat": "*",
+        "gulp-rename": "*",
+        "gulp-uglify": "*",
+
+        "gulp-htmlmin": "*",
+
+        "browser-sync": "*"
+    }
+}

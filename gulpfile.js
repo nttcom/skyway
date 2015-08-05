@@ -1,5 +1,8 @@
 var gulp = require('gulp'),
     path = require('path'),
+    
+    gulpLoadPlugins = require('gulp-load-plugins');
+    plugins = gulpLoadPlugins();
 
     // CSS
     compass = require('gulp-compass'),
@@ -29,7 +32,8 @@ var dist              = '_source/'
     , distJavascripts = distAssets + 'js/'
     , distImages      = distAssets + 'img/'
 
-    , deploy          = '_deploy/'
+//    , deploy          = '_deploy/'
+    , deploy          = '_site/'
 
     , src = ''
     , srcStylesheets = src + 'sass/'
@@ -106,7 +110,8 @@ gulp.task('js', function () {
 // -->
 // Default task
 // <--
-gulp.task('jekyll', ['js', 'compass'], function (gulpCallBack){
+//gulp.task('jekyll', ['js', 'compass'], function (gulpCallBack){
+gulp.task('jekyll', function (gulpCallBack){
     var spawn = require('child_process').spawn;
     // After build: cleanup HTML
     var jekyll = spawn('jekyll', ['build'], {stdio: 'inherit'});
