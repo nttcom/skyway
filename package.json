@@ -21,6 +21,5 @@
     "browser-sync": "*"
   },
   "devDependencies": {
-    "webpack": "^1.10.5"
   }
 }
