@@ -1,24 +1,26 @@
 {
-    "dependencies": {
-        
-        "gulp": "*",
-        "gulp-load-plugins": "*",
-        
-        "gulp-ignore": "*",
-
-        "gulp-jekyll": "*",
-        "gulp-kramdown": "*",
-        
-        "gulp-compass": "*",
-        "gulp-minify-css": "*",
-
-        "gulp-jshint": "*",
-        "gulp-concat": "*",
-        "gulp-rename": "*",
-        "gulp-uglify": "*",
-
-        "gulp-htmlmin": "*",
-
-        "browser-sync": "*"
-    }
+  "name": "SkyWay",
+  "author": "Ewan Leaver",
+  "version": "0.0.1",
+  "description": "SkyWay Website",
+  "private": true,
+  "scripts": {},
+  "dependencies": {
+    "gulp": "*",
+    "gulp-load-plugins": "*",
+    "gulp-ignore": "*",
+    "gulp-jekyll": "*",
+    "gulp-kramdown": "*",
+    "gulp-compass": "*",
+    "gulp-minify-css": "*",
+    "gulp-jshint": "*",
+    "gulp-concat": "*",
+    "gulp-rename": "*",
+    "gulp-uglify": "*",
+    "gulp-htmlmin": "*",
+    "browser-sync": "*"
+  },
+  "devDependencies": {
+    "webpack": "^1.10.5"
+  }
 }
