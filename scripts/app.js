@@ -21,14 +21,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   // Listen for template bound event to know when bindings
   // have resolved and content has been stamped to the page
-  app.addEventListener('dom-change', function() {
-    console.log('Our app is ready to rock!');
-  });
+//  app.addEventListener('dom-change', function() {
+//    console.log('Our app is ready to rock!');
+//  });
 
   // See https://github.com/Polymer/polymer/issues/1381
-  window.addEventListener('WebComponentsReady', function() {
-    // imports are loaded and elements have been registered
-  });
+//  window.addEventListener('WebComponentsReady', function() {
+//    // imports are loaded and elements have been registered
+//  });
 
     // Change script path if on english version of page
     var scriptPath = "";

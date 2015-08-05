@@ -45,9 +45,15 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     {% else %}
     {% endcase %}
     
+    
     <script src="{{ site.homedir[page.lang] }}scripts/jquery-2.1.4.min.js"></script>
     <script src="{{ site.homedir[page.lang] }}scripts/bootstrap.min.js"></script>
+    <script src="{{ site.homedir[page.lang] }}assets/js/main.min.js"></script>
+<!--
+
     <script src="{{ site.homedir[page.lang] }}scripts/responsive.js"></script>
+    <script src="{{ site.homedir[page.lang] }}scripts/app.js"></script>
+-->
     
     <!-- highlight.js -->
     <link rel="stylesheet" href="{{ site.homedir[page.lang] }}styles/highlights/tomorrow-night.css">
@@ -87,10 +93,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     </paper-header-panel>
     <!--    </paper-drawer-panel>-->
 </template>
-
-<!--   build:js scripts/app.js -->
-<!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
-<script src="{{ site.homedir[page.lang] }}scripts/app.js"></script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

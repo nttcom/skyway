@@ -12,8 +12,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 
     // calculating margin-left to align it to center;
-    var width = $('.navbar-tabs').width();
-    $('.navbar-tabs').css('margin-left', '-' + (width / 2)+'px');
+//    var width = $('.navbar-tabs').width();
+//    $('.navbar-tabs').css('margin-left', '-' + (width / 2)+'px');
     
 
 })(document);

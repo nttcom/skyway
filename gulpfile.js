@@ -5,6 +5,7 @@ var gulp = require('gulp'),
     plugins = gulpLoadPlugins();
 
     ignore = require('gulp-ignore');
+    cp = require('child_process');
 
     // CSS
     compass = require('gulp-compass'),
@@ -27,10 +28,9 @@ var gulp = require('gulp'),
 
 ;
 
-
-var dist              = '_source/'
-    , dirPublic       = '/'
-    , distAssets      = dist + dirPublic + 'assets/'
+//var dist              = '_source/'
+var dist              = './'
+    , distAssets      = dist + 'assets/'
     , distStylesheets = distAssets + 'css/'
     , distJavascripts = distAssets + 'js/'
     , distImages      = distAssets + 'img/'
@@ -41,7 +41,6 @@ var dist              = '_source/'
     , src = ''
     , srcStylesheets = src + 'sass/'
     , srcJavascripts = src + 'scripts/'
-//    , srcTemplates   = src + 'templates/'
 ;
 
 // -->
@@ -57,6 +56,7 @@ gulp.task('jshint', function() {
 
 gulp.task('js', ['jshint'], function () {
     gulp.src([srcJavascripts + '*.js'])
+        .pipe(ignore.exclude(/api-scroll\.js/))
         .pipe(concat('main.js'))
         .pipe(gulp.dest(distJavascripts))
         .pipe(rename('main.min.js'))
@@ -86,24 +86,40 @@ gulp.task('compass', function() {
 });
 
 // -->
+// Jekyll
+// <--
+
+var messages = {
+    jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
+};
+
+//gulp.task('jekyll', ['js', 'compass'], function (gulpCallBack){
+gulp.task('jekyll', function (done){
+     browserSync.notify(messages.jekyllBuild);
+     return cp.spawn('jekyll', ['build'], {stdio: 'inherit'})
+         .on('close', done);
+});
+
+// -->
 // HTML (runs AFTER jekyll task)
 // <--
-gulp.task('html', ['jekyll'], function() {
+gulp.task('html',  function() {
     // --> Minhtml
-    gulp.src([
-        path.join(deploy, '*.html'),
-        path.join(deploy, '*/*/*.html'),
-        path.join(deploy, '*/*/*/*.html')
-    ])
-        .pipe(htmlmin({collapseWhitespace: true}))
-        .pipe(gulp.dest(deploy))
-        .pipe(browserSync.reload({stream:true, once: true}));
+    // WARNING: The code below causes uncaught parse errors
+//    gulp.src([
+//        path.join(deploy, '*.html'),
+//        path.join(deploy, '*/*/*.html'),
+//        path.join(deploy, '*/*/*/*.html')
+//    ])
+//        .pipe(htmlmin({collapseWhitespace: true}))
+//        .pipe(gulp.dest(deploy))
+//        .pipe(browserSync.reload({stream:true, once: true}));
 });
 
 // -->
 // Browser Sync
 // <--
-gulp.task('browser-sync', function() {
+gulp.task('browser-sync', ['jekyll'], function() {
     browserSync.init(null, {
         server: {
             baseDir: "./" + deploy
@@ -115,29 +131,13 @@ gulp.task('bs-reload', function () {
     browserSync.reload();
 });
 
-
-
-// -->
-// Jekyll
-// <--
-//gulp.task('jekyll', ['js', 'compass'], function (gulpCallBack){
-gulp.task('jekyll', ['js'], function (gulpCallBack){
-    var spawn = require('child_process').spawn;
-    // After build: cleanup HTML
-    var jekyll = spawn('jekyll', ['build'], {stdio: 'inherit'});
-
-    jekyll.on('exit', function(code) {
-        gulpCallBack(code === 0 ? null : 'ERROR: Jekyll process exited with code: '+code);
-    });
-});
-
 // -->
 // Default task
 // <--
-gulp.task('default', ['jekyll', 'browser-sync'], function (event) {
+gulp.task('default', ['js', 'browser-sync'], function (event) {
     // --> CSS
     gulp.watch(srcStylesheets+"**", ['html']);
-    --> HTML
+    //--> HTML
     gulp.watch([
         path.join(dist, '*.html'),
         path.join(dist, '*/*.html'),
@@ -152,6 +152,7 @@ gulp.task('default', ['jekyll', 'browser-sync'], function (event) {
 
 // Handle the error
 function errorHandler (error) {
-  console.log(error.toString());
+//  console.log(error.toString());
+    console.log('There has been an error.');
   this.emit('end');
 }
