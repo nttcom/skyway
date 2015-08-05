@@ -45,21 +45,21 @@ var dist              = '_source/'
 // Compass & SASS
 // <--
 gulp.task('compass', function() {
-    gulp.src(srcStylesheets + '*.scss')
-        .pipe(compass({
-            css: distStylesheets,
-            sass: srcStylesheets,
-            image: distImages,
-            logging: true,
-            style: 'compressed'
-        }))
-            .on('error', function(err) {
-                // Would like to catch the error here
-                console.log('Compass error')
-                console.log(err);
-            })
-        .pipe(minifyCSS({keepBreaks: false, keepSpecialComments:true}))
-        .pipe(gulp.dest(distStylesheets));
+//    gulp.src(srcStylesheets + '*.scss')
+//        .pipe(compass({
+//            css: distStylesheets,
+//            sass: srcStylesheets,
+//            image: distImages,
+//            logging: true,
+//            style: 'compressed'
+//        }))
+//            .on('error', function(err) {
+//                // Would like to catch the error here
+//                console.log('Compass error')
+//                console.log(err);
+//            })
+//        .pipe(minifyCSS({keepBreaks: false, keepSpecialComments:true}))
+//        .pipe(gulp.dest(distStylesheets));
 });
 
 // -->
@@ -138,16 +138,4 @@ gulp.task('default', ['compass', 'js', 'html', 'browser-sync'], function (event)
     // --> JS
     gulp.watch(srcJavascripts+"*.js", ['html']);
 
-});
-
-
-
-
-//gulp.task('js', function () {
-//   return gulp.src('scripts/*.js')
-//      .pipe(jshint())
-//      .pipe(jshint.reporter('default'))
-//      .pipe(uglify())
-//      .pipe(concat('app.js'))
-//      .pipe(gulp.dest('build'));
-//});
+})
