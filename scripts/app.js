@@ -32,7 +32,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     // Change script path if on english version of page
     var scriptPath = "";
-    var isEng = /\/en\//.test(location.pathname)
+    var isEng = /\/en\//.test(location.pathname);
     if(isEng) {
         scriptPath = "../";
     }

@@ -4,11 +4,14 @@ var gulp = require('gulp'),
     gulpLoadPlugins = require('gulp-load-plugins');
     plugins = gulpLoadPlugins();
 
+    ignore = require('gulp-ignore');
+
     // CSS
     compass = require('gulp-compass'),
     minifyCSS = require('gulp-minify-css'),
 
     // JS BUILD
+    jshint = require('gulp-jshint'),
     concat = require('gulp-concat'),
     rename = require('gulp-rename'),
     uglify = require('gulp-uglify'),
@@ -37,9 +40,29 @@ var dist              = '_source/'
 
     , src = ''
     , srcStylesheets = src + 'sass/'
-    , srcJavascripts = src + 'js/'
-    , srcTemplates   = src + 'templates/'
+    , srcJavascripts = src + 'scripts/'
+//    , srcTemplates   = src + 'templates/'
 ;
+
+// -->
+// JS Build
+// <--
+gulp.task('jshint', function() {
+    gulp.src([srcJavascripts + '*.js'])
+        .pipe(ignore.exclude(/jquery-2\.1\.4\.min\.js/))
+        .pipe(ignore.exclude(/bootstrap\.min\.js/))
+        .pipe(jshint())
+        .pipe(jshint.reporter('default'));
+});
+
+gulp.task('js', ['jshint'], function () {
+    gulp.src([srcJavascripts + '*.js'])
+        .pipe(concat('main.js'))
+        .pipe(gulp.dest(distJavascripts))
+        .pipe(rename('main.min.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest(distJavascripts));
+});
 
 // -->
 // Compass & SASS
@@ -92,26 +115,13 @@ gulp.task('bs-reload', function () {
     browserSync.reload();
 });
 
-// -->
-// js
-// Concatenate & JS build
-// <--
-gulp.task('js', function () {
-    gulp.src([srcJavascripts + 'plugins.js', srcJavascripts + 'main.js'])
-//      .pipe(jshint())
-//      .pipe(jshint.reporter('default'))
-        .pipe(concat(pkg.name + '.js'))
-        .pipe(gulp.dest(distJavascripts))
-        .pipe(rename(pkg.name + '.min.js'))
-        .pipe(uglify())
-        .pipe(gulp.dest(distJavascripts));
-});
+
 
 // -->
-// Default task
+// Jekyll
 // <--
 //gulp.task('jekyll', ['js', 'compass'], function (gulpCallBack){
-gulp.task('jekyll', function (gulpCallBack){
+gulp.task('jekyll', ['js'], function (gulpCallBack){
     var spawn = require('child_process').spawn;
     // After build: cleanup HTML
     var jekyll = spawn('jekyll', ['build'], {stdio: 'inherit'});
@@ -124,7 +134,7 @@ gulp.task('jekyll', function (gulpCallBack){
 // -->
 // Default task
 // <--
-gulp.task('default', ['compass', 'js', 'html', 'browser-sync'], function (event) {
+gulp.task('default', ['jekyll', 'browser-sync'], function (event) {
     // --> CSS
     gulp.watch(srcStylesheets+"**", ['html']);
     --> HTML
@@ -139,3 +149,9 @@ gulp.task('default', ['compass', 'js', 'html', 'browser-sync'], function (event)
     gulp.watch(srcJavascripts+"*.js", ['html']);
 
 })
+
+// Handle the error
+function errorHandler (error) {
+  console.log(error.toString());
+  this.emit('end');
+}

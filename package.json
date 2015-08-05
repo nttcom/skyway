@@ -3,6 +3,8 @@
         
         "gulp": "*",
         "gulp-load-plugins": "*",
+        
+        "gulp-ignore": "*",
 
         "gulp-jekyll": "*",
         "gulp-kramdown": "*",
