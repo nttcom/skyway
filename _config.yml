@@ -4,7 +4,7 @@ title:
 ogImage: http://nttcom.github.io/skyway/images/ogp.jpg
 url: skyway.io
 homedir:
-  jp:
+  jp: 
   en: ../
 unsupportedBrowser:
   jp: '現在Internet Explorer 9 以下のブラウザに対応していません。<br>最新の<a href="http://windows.microsoft.com/ie" target="_blank">Internet Explorer</a>, または<a href="https://chrome.google.com/" target="_blank">Google Chrome</a>か<a href="https://mozilla.org/firefox/" target="_blank">Firefox</a>の利用を推奨します。'

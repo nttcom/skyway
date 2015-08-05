@@ -27,7 +27,7 @@
       ]
     }
   },
-  "dependencies": {
+  "devDependencies": {
     "browser-sync": "~2.2.2",
     "browserify": "^9.0.3",
     "browserify-shim": "^3.8.2",
@@ -71,7 +71,7 @@
     "gulp-concat": "*",
     "gulp-htmlmin": "*"
   },
-  "devDependencies": {
+  "dependencies": {
     "jquery": "~2.1.0"
   }
 }
