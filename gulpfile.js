@@ -46,17 +46,26 @@ var dist              = './'
 // -->
 // JS Build
 // <--
-gulp.task('jshint', function() {
-    gulp.src([srcJavascripts + '*.js'])
+//gulp.task('jshint', function() {
+//    gulp.src([srcJavascripts + '*.js'])
+//        .pipe(ignore.exclude(/jquery-2\.1\.4\.min\.js/))
+//        .pipe(ignore.exclude(/bootstrap\.min\.js/))
+//        .pipe(jshint())
+//        .pipe(jshint.reporter('default'));
+//});
+
+gulp.task('js', function () {
+    
+    gulp.src([
+        path.join(srcJavascripts, '*.js'),
+        path.join(srcJavascripts, '*/*.js')
+    ])
         .pipe(ignore.exclude(/jquery-2\.1\.4\.min\.js/))
         .pipe(ignore.exclude(/bootstrap\.min\.js/))
-        .pipe(jshint())
-        .pipe(jshint.reporter('default'));
-});
-
-gulp.task('js', ['jshint'], function () {
-    gulp.src([srcJavascripts + '*.js'])
         .pipe(ignore.exclude(/api-scroll\.js/))
+    
+        .pipe(jshint())
+        .pipe(jshint.reporter('default'))
         .pipe(concat('main.js'))
         .pipe(gulp.dest(distJavascripts))
         .pipe(rename('main.min.js'))
