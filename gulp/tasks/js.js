@@ -1,3 +1,5 @@
+// WARNING: This task should be replaced with Browserify
+
 var gulp = require('gulp'),
     path = require('path'),
     ignore = require('gulp-ignore'),
