@@ -6,7 +6,263 @@
 @import "compass";
 @import 'brightness';
 
-$my_color: #BADA55;
-h1 {
-    color: $my_color;
+.navbar {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .navbar-tabs-centered {
+    /*        position: absolute;*/
+    left: 200px;
+    right: 200px;
+    margin: auto;
+    display: table;
+    table-layout: fixed;
+    float: none;
+    /*        background-color: green;*/
+  }
+  .navbar-buttons {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.navbar-tabs a {
+  /* Tab Colours */
+  color: #5285FF;
+  font-weight: 400;
+  font-size: 1.1em;
+  /* TODO: Responsive resizing */
+}
+
+#logoButton {
+  position: absolute;
+  float: left;
+  left: 10px;
+  padding: 0;
+  width: 190px;
+  line-height: 64px;
+  margin: 0;
+  margin-left: 0;
+  img {
+    position: relative;
+    left: 10px;
+    margin-top: 0px;
+    height: 42px;
+  }
+}
+
+.dropdown-toggle {
+  color: rgba(252, 57, 49, 0.8);
+  &:hover {
+    color: rgba(252, 57, 49, 1);
+    background-color: rgba(252, 57, 49, 0.2);
+  }
+}
+
+.btn-link {
+  padding: 0;
+  .btn-login {
+    margin: 14px;
+    margin-left: 8px;
+    margin-right: 28px;
+    background-color: #5285FF;
+    /* TODO: Click colour */
+  }
+}
+
+/* Common Styles */
+
+.top-section {
+  height: 600px;
+  background-color: #5285FF;
+  h1 {
+    position: relative;
+    top: 36px;
+    margin: 0;
+    color: #FFF;
+    font-size: 32px;
+    text-align: center;
+  }
+  h2 {
+    position: relative;
+    top: 46px;
+    margin: 0;
+    margin-bottom: 46px;
+    color: #FFF;
+    opacity: 0.6;
+    font-size: 26px;
+    text-align: center;
+  }
+}
+
+.background {
+  position: relative;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+  background-color: #2548BE;
+}
+
+.paper-style-div {
+  padding: 20px;
+  padding-top: 32px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  /* See /bower_components/paper-styles/shadow.html */
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  h2 {
+    margin: 0;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 400;
+    color: #5f5f5f;
+  }
+}
+
+.divider {
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 300px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0;
+  border-top-width: 1px;
+  border-color: #5285FF;
+}
+
+.signup-div {
+  height: 200px;
+  padding: 20px;
+  h2 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 400;
+    color: #fff;
+  }
+  a {
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+}
+
+.divider-short {
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  width: 100px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0;
+  border-top-width: 3px;
+  border-color: #5285FF;
+}
+
+.hd {
+  background-color: red;
+  border-color: orange;
+  border-width: 1px;
+  border-style: solid;
+  height: 100%;
+}
+
+.btn-center {
+  display: table;
+  margin: auto;
+}
+
+/* Front Page - Animation */
+
+.row-top-images {
+  margin-top: 140px;
+}
+
+.animation-container {
+  img {
+    /*    position: absolute;*/
+    /*        top: 40px;*/
+    display: table;
+    margin: auto;
+    /*    bottom: 20px;*/
+    height: 220px;
+    object-fit: scale-down;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.02, 1.02);
+      -webkit-transform: scale(1.02, 1.02);
+    }
+  }
+  h3 {
+    color: #FFF;
+    opacity: 0.8;
+    font-size: 26px;
+    text-align: center;
+  }
+}
+
+/* Front Page - Highlights */
+
+.highlight {
+  pdding-left: 30px;
+  padding-right: 30px;
+  height: 180px;
+  overflow-y: hidden;
+  font-size: 1.1em;
+  i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    color: #5285FF;
+  }
+  h3 {
+    /*    position: absolute;*/
+    margin-top: 70px;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 400;
+  }
+}
+
+/* Front Page - News */
+
+.headline {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.headline-date {
+  /* TODO: Responsive formatting */
+  /*
+      left: 0;
+      right: 0;
+      margin: auto;
+  */
+  margin-bottom: 8px;
+  max-width: 160px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  font-size: 1.5em;
+  color: #FFF;
+  background-color: #5285FF;
+  border-radius: 5px;
+}
+
+.headline-text {
+  font-size: 1.2em;
+  color: #7f7f7f;
 }
