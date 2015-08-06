@@ -10,6 +10,7 @@
   "scripts": {},
   "browser": {
     "underscore": "backbone/node_modules/underscore",
+    "bootstrap": "./node_modules/bootstrap/dist/js/bootstrap.min.js",
     "plugin": "./src/javascript/vendor/jquery-plugin.js"
   },
   "browserify": {
@@ -20,6 +21,13 @@
     ]
   },
   "browserify-shim": {
+    "bootstrap": {
+      "exports": "bootstrap",
+      "depends": [
+        "jquery:jQuery"
+      ]
+    },
+
     "plugin": {
       "exports": "plugin",
       "depends": [
@@ -61,7 +69,6 @@
     "require-dir": "^0.1.0",
     "vinyl-source-stream": "~1.0.0",
     "watchify": "^2.4.0",
-      
     "gulp-load-plugins": "*",
     "gulp-ignore": "*",
     "gulp-jekyll": "*",
@@ -72,6 +79,7 @@
     "gulp-htmlmin": "*"
   },
   "dependencies": {
+    "bootstrap": "^3.3.5",
     "jquery": "~2.1.0"
   }
 }

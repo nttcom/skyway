@@ -1,3 +1,5 @@
+var $ = require('jquery');
+
 $(document).ready(function() {
 //    $("#main-share-button").click(function(){
 //        $(".sub-share-button").addClass('animating');

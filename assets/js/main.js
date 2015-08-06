@@ -48,6 +48,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 })(document);
 
+// Current entrypoint for Browserify
+// Packages all javascript files into one
+
+var share = require('./share_test');
 /*
 Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
 This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
@@ -122,6 +126,62 @@ $(document).ready(function() {
     });
     
 });
+var $ = require('jquery');
+
+module.exports = function() {
+//    $("#main-share-button").click(function(){
+//        $(".sub-share-button").addClass('animating');
+//        $(".sub-share-button").fadeToggle();
+//
+//        console.log('Hoi!');
+//    });
+    
+    $("#share-button-tw").mouseenter(function(){
+        $("#twitter-share-label").stop().animate({
+            right: '76px',
+            opacity: '0.8'
+        }, 150);
+            
+    });
+    
+    $("#share-button-tw").mouseleave(function(){
+        $("#twitter-share-label").stop().animate({
+            right: '20px',
+            opacity: '0.0'
+        }, 250);
+    });
+    
+    $("#share-button-fb").mouseenter(function(){
+        $("#facebook-share-label").stop().animate({
+            right: '76px',
+            opacity: '0.8'
+        }, 150);
+            
+    });
+    
+    $("#share-button-fb").mouseleave(function(){
+        $("#facebook-share-label").stop().animate({
+            right: '20px',
+            opacity: '0.0'
+        }, 250);
+    });
+    
+    $("#share-button-git").mouseenter(function(){
+        $("#github-share-label").stop().animate({
+            right: '76px',
+            opacity: '0.8'
+        }, 150);
+            
+    });
+    
+    $("#share-button-git").mouseleave(function(){
+        $("#github-share-label").stop().animate({
+            right: '20px',
+            opacity: '0.0'
+        }, 250);
+    });
+    
+};
 $(document).ready(function() {
   // Email obfuscator script 2.1 by Tim Williams, University of Arizona
   // Random encryption key feature by Andrew Moulden, Site Engineering Ltd
