@@ -3,13 +3,13 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 /* Navbar styles */
-/* line 5, ../sass/components/navbar.scss */
+/* line 5, ../sass/components/_navbar.scss */
 .navbar {
   margin: 0;
 }
 
 @media (min-width: 768px) {
-  /* line 10, ../sass/components/navbar.scss */
+  /* line 10, ../sass/components/_navbar.scss */
   .navbar-tabs-centered {
     /*        position: absolute;*/
     left: 200px;
@@ -21,14 +21,14 @@
     /*        background-color: green;*/
   }
 
-  /* line 20, ../sass/components/navbar.scss */
+  /* line 20, ../sass/components/_navbar.scss */
   .navbar-buttons {
     position: absolute;
     top: 0;
     right: 0;
   }
 }
-/* line 27, ../sass/components/navbar.scss */
+/* line 27, ../sass/components/_navbar.scss */
 .navbar-tabs a {
   /* Tab Colours */
   color: #5285FF;
@@ -37,7 +37,7 @@
   /* TODO: Responsive resizing */
 }
 
-/* line 35, ../sass/components/navbar.scss */
+/* line 35, ../sass/components/_navbar.scss */
 #logoButton {
   position: absolute;
   float: left;
@@ -48,7 +48,7 @@
   margin: 0;
   margin-left: 0;
 }
-/* line 44, ../sass/components/navbar.scss */
+/* line 44, ../sass/components/_navbar.scss */
 #logoButton img {
   position: relative;
   left: 10px;
@@ -56,21 +56,21 @@
   height: 42px;
 }
 
-/* line 52, ../sass/components/navbar.scss */
+/* line 52, ../sass/components/_navbar.scss */
 .dropdown-toggle {
   color: rgba(252, 57, 49, 0.8);
 }
-/* line 54, ../sass/components/navbar.scss */
+/* line 54, ../sass/components/_navbar.scss */
 .dropdown-toggle:hover {
   color: #fc3931;
   background-color: rgba(252, 57, 49, 0.2);
 }
 
-/* line 60, ../sass/components/navbar.scss */
+/* line 60, ../sass/components/_navbar.scss */
 .btn-link {
   padding: 0;
 }
-/* line 62, ../sass/components/navbar.scss */
+/* line 62, ../sass/components/_navbar.scss */
 .btn-link .btn-login {
   margin: 14px;
   margin-left: 8px;
@@ -80,7 +80,7 @@
 }
 
 /* Front Page - Animation */
-/* line 6, ../sass/components/index.scss */
+/* line 6, ../sass/components/_index.scss */
 .top-section h1 {
   position: relative;
   top: 36px;
@@ -89,7 +89,7 @@
   font-size: 32px;
   text-align: center;
 }
-/* line 14, ../sass/components/index.scss */
+/* line 14, ../sass/components/_index.scss */
 .top-section h2 {
   position: relative;
   top: 46px;
@@ -101,12 +101,12 @@
   text-align: center;
 }
 
-/* line 26, ../sass/components/index.scss */
+/* line 26, ../sass/components/_index.scss */
 .row-top-images {
   margin-top: 140px;
 }
 
-/* line 31, ../sass/components/index.scss */
+/* line 31, ../sass/components/_index.scss */
 .animation-container img {
   /*    position: absolute;*/
   /*        top: 40px;*/
@@ -117,12 +117,12 @@
   object-fit: scale-down;
   cursor: pointer;
 }
-/* line 40, ../sass/components/index.scss */
+/* line 40, ../sass/components/_index.scss */
 .animation-container img:hover {
   transform: scale(1.02, 1.02);
   -webkit-transform: scale(1.02, 1.02);
 }
-/* line 45, ../sass/components/index.scss */
+/* line 45, ../sass/components/_index.scss */
 .animation-container h3 {
   color: #FFF;
   opacity: 0.8;
@@ -131,7 +131,7 @@
 }
 
 /* Front Page - Highlights */
-/* line 55, ../sass/components/index.scss */
+/* line 55, ../sass/components/_index.scss */
 .highlight {
   pdding-left: 30px;
   padding-right: 30px;
@@ -139,7 +139,7 @@
   overflow-y: hidden;
   font-size: 1.1em;
 }
-/* line 61, ../sass/components/index.scss */
+/* line 61, ../sass/components/_index.scss */
 .highlight i {
   position: absolute;
   top: 0;
@@ -149,7 +149,7 @@
   text-align: center;
   color: #5285FF;
 }
-/* line 70, ../sass/components/index.scss */
+/* line 70, ../sass/components/_index.scss */
 .highlight h3 {
   /*    position: absolute;*/
   margin-top: 70px;
@@ -159,13 +159,13 @@
 }
 
 /* Front Page - News */
-/* line 81, ../sass/components/index.scss */
+/* line 81, ../sass/components/_index.scss */
 .headline {
   margin-top: 10px;
   margin-bottom: 20px;
 }
 
-/* line 86, ../sass/components/index.scss */
+/* line 86, ../sass/components/_index.scss */
 .headline-date {
   /* TODO: Responsive formatting */
   /*
@@ -184,13 +184,13 @@
   border-radius: 5px;
 }
 
-/* line 104, ../sass/components/index.scss */
+/* line 104, ../sass/components/_index.scss */
 .headline-text {
   font-size: 1.2em;
   color: #7f7f7f;
 }
 
-/* line 5, ../../../../../../.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -212,55 +212,55 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
-/* line 4, ../sass/components/info_page.scss */
+/* line 4, ../sass/components/_info-page.scss */
 .top-left-div {
   height: 600px;
   background-color: red;
 }
-/* line 8, ../sass/components/info_page.scss */
+/* line 8, ../sass/components/_info-page.scss */
 .top-left-div h3 {
   margin: 0;
   margin-top: 36px;
@@ -270,23 +270,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: 400;
   text-align: center;
 }
-/* line 19, ../sass/components/info_page.scss */
+/* line 19, ../sass/components/_info-page.scss */
 .top-left-div .row {
   margin-top: 30px;
   height: 100px;
 }
-/* line 23, ../sass/components/info_page.scss */
+/* line 23, ../sass/components/_info-page.scss */
 .top-left-div .row div {
   color: #fff;
   font-size: 20px;
 }
-/* line 28, ../sass/components/info_page.scss */
+/* line 28, ../sass/components/_info-page.scss */
 .top-left-div .row i {
   color: #fff;
   font-size: 50px;
 }
 
-/* line 35, ../sass/components/info_page.scss */
+/* line 35, ../sass/components/_info-page.scss */
 .top-right-div {
   height: 600px;
   background-color: blue;
