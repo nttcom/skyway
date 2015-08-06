@@ -47,4 +47,19 @@
 .top-right-div {
     height: $top-section-height;
     background-color: $skyway_blue;
+    
+    img {
+        
+        display: table;
+        margin: auto;
+        margin-top: 300px;
+        margin-bottom: 30px;
+        
+        bottom: 0;
+        
+        max-height: 260px;
+        max-width: 740px;
+        object-fit: scale-down;
+        
+    }
 }

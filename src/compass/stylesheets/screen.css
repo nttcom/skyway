@@ -2,6 +2,24 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 16, ../sass/utilities/_variables.scss */
+.h_r {
+  background-color: red;
+  border-color: orange;
+  border-width: 2px;
+  border-style: solid;
+  height: 100%;
+}
+
+/* line 24, ../sass/utilities/_variables.scss */
+.h_b {
+  background-color: blue;
+  border-color: green;
+  border-width: 2px;
+  border-style: solid;
+  height: 100%;
+}
+
 /* Navbar styles */
 /* line 5, ../sass/components/_navbar.scss */
 .navbar {
@@ -302,6 +320,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   height: 600px;
   background-color: #5285FF;
 }
+/* line 51, ../sass/components/_info-page.scss */
+.top-right-div img {
+  display: table;
+  margin: auto;
+  margin-top: 300px;
+  margin-bottom: 30px;
+  bottom: 0;
+  max-height: 260px;
+  max-width: 740px;
+  object-fit: scale-down;
+}
 
 /* Common Styles */
 /* line 26, ../sass/screen.scss */
@@ -391,15 +420,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 103, ../sass/screen.scss */
-.hd {
-  background-color: red;
-  border-color: orange;
-  border-width: 1px;
-  border-style: solid;
-  height: 100%;
-}
-
-/* line 111, ../sass/screen.scss */
 .btn-center {
   display: table;
   margin: auto;
