@@ -1,0 +1,38 @@
+@import "utilities/variables";
+@import "compass/reset";
+
+.top-left-div {
+    height: $top-section-height;
+    background-color: red;
+    
+    h3 {
+//        position: relative;
+        margin: 0;
+        margin-top: 36px;
+        margin-bottom: 20px;
+        color: #FFF;
+        font-size: 3em;
+        font-weight: 400;
+        text-align: center;
+    }
+    
+    .row {
+        margin-top: 30px;
+        height: 100px;
+        
+        div {
+            color: #fff;
+            font-size: 20px;
+        }
+        
+        i {
+            color: #fff;
+            font-size: 50px;
+        }
+    }
+}
+
+.top-right-div {
+    height: $top-section-height;
+    background-color: blue;
+}

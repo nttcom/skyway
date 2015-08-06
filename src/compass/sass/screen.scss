@@ -9,7 +9,7 @@
 @import "utilities/variables";
 @import "components/navbar";
 @import "components/index";
-
+@import "components/info_page";
 
 @mixin alpha-attribute($attribute, $color, $background) {
     $percent: alpha($color) * 100%;
@@ -26,24 +26,6 @@
 .top-section {
   height: 600px;
   background-color: $skyway_blue;
-  h1 {
-    position: relative;
-    top: 36px;
-    margin: 0;
-    color: #FFF;
-    font-size: 32px;
-    text-align: center;
-  }
-  h2 {
-    position: relative;
-    top: 46px;
-    margin: 0;
-    margin-bottom: 46px;
-    color: #FFF;
-    opacity: 0.6;
-    font-size: 26px;
-    text-align: center;
-  }
 }
 
 .background {

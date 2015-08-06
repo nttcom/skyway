@@ -1,0 +1,152 @@
+---
+layout: responsive
+lang: jp
+title: JavaScript SDK
+description: SkyWayのJavaScript SDKを公開しています。SkyWayを使えば、サーバを準備することなく簡単に、WebRTCを使ったアプリが開発できます。
+---
+
+<!-- Top Section -->
+
+<div class="top-section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-5 top-left-div">
+                <h3>JavaScript SDK</3>
+                
+                <div class="row">
+                    <div class="col-xs-2 col-xs-offset-1 hd"><i class="fa fa-star"></i></div>
+                    <div class="col-xs-8 highlight-text hd">SDKによりWebRTCのAPIを<br>簡単に利用可能</div>
+                </div>
+                
+                 <div class="row">
+                    <div class="col-xs-2 col-xs-offset-1 hd"><i class="fa fa-star"></i></div>
+                    <div class="col-xs-8 highlight-text hd">クライアントサイドの開発だけでOK、サーバサイドは準備不要</div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-xs-2 col-xs-offset-1 hd"><i class="fa fa-star"></i></div>
+                    <div class="col-xs-8 highlight-text hd">豊富な拡張機能(音声認識、多人数接続、画面共有など)を利用可能</div>
+                </div>
+                
+                <a href='documentation.html'><paper-button class="subpage-topSectionButton white" raised>ドキュメント</paper-button></a>
+                
+            </div>
+            <div class="col-sm-7 top-right-div">
+            </div>
+        </div>
+    </div>
+</div>
+    
+<div id="anchor-div"></div>
+<div id="subpage-content-div" elevation="2">
+    <div id="content-explanation-div">
+        <h2 class="content-title-side">Responsive JS</h2>
+
+            <div id="content-highlights">
+                <div class="content-highlight">
+                    <img class="content-highlight-icon" src="{{ site.homedir[page.lang] }}images/outline_star_white.png">
+                    <div class="content-highlight-text-container">
+                        <div class="content-highlight-text">SDKによりWebRTCのAPIを<br>簡単に利用可能</div>
+                    </div>
+                </div>
+                <div class="content-highlight">
+                    <img class="content-highlight-icon" src="{{ site.homedir[page.lang] }}images/outline_star_white.png">
+                    <div class="content-highlight-text-container">
+                        <div class="content-highlight-text">クライアントサイドの開発だけでOK、サーバサイドは準備不要</div>
+                    </div>
+                </div>
+                <div class="content-highlight">
+                    <img class="content-highlight-icon" src="{{ site.homedir[page.lang] }}images/outline_star_white.png">
+                    <div class="content-highlight-text-container">
+                        <div class="content-highlight-text">豊富な拡張機能(音声認識、多人数接続、画面共有など)を利用可能</div>
+                    </div>
+                </div>
+                <!--
+                                    <div class="content-highlight">
+                                        <img class="content-highlight-icon" src="images/outline_star_white.png">
+                                        <div class="content-highlight-text-container">
+                                            <div class="content-highlight-text">シグナリングのトランスポートにWebSocket/XMLHttpRequestの両方を利用することで接続確立を向上</div>
+                                        </div>
+                                    </div>
+                -->
+            </div>
+            <a href='documentation.html'><paper-button class="subpage-topSectionButton white" raised>ドキュメント</paper-button></a>
+    </div>
+    <div id="content-animation-div">
+        <link rel="stylesheet" href="{{ site.homedir[page.lang] }}styles/transmission-animation-subpage.css">
+        <img id="animated-logo-js" src="{{ site.homedir[page.lang] }}images/logos/logo-cloud_white.png">
+        <div id="animation-container">
+            <div class='js-transmission-animation'>
+                <div class='circle-container'>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <img src="{{ site.homedir[page.lang] }}images/top_images/js_top.png">
+        </div>
+        <a target="_blank" href='https://skyway.io/ds/registration/'><paper-button class="subpage-topSectionButton white" raised>登録を行う</paper-button></a>
+    </div>
+</div>
+
+<paper-material id="js-howto-div" class="paper-div" elevation="2">
+    <div class="paper-div-internal">
+        <h2 class="material-header">作ってみよう！</h2>
+
+
+        <div class="howto-step">
+            <img src="{{ site.homedir[page.lang] }}images/count/1.png">
+            <div class="float-group">
+                <p>開発者登録を行い、APIキーを申し込みます。</p>
+                <a target="_blank" href='https://skyway.io/ds/registration/'><paper-button raised>開発者登録を行う（無料）</paper-button></a>
+            </div>
+        </div>
+
+        <div class="howto-step">
+            <img src="{{ site.homedir[page.lang] }}images/count/2.png">
+            <div class="float-group">
+                <p>SkyWayを利用してアプリケーションを開発しましょう。<br><br>
+                    コードサンプルを参考にライブラリを使い、JavaScriptコードを書きましょう。</p>
+
+                <paper-material class="code-section" elevation="1">
+                             <pre><code class="html">
+&lt;script src="https://skyway.io/dist/0.3/peer.min.js"&gt;&lt;/script&gt;
+
+&lt;script&gt;
+var peer = new Peer(myId, {key: 'yourApiKey'});
+
+peer.on('open', function(id) {
+  var conn = peer.connect('anotherId');
+  conn.on('open', function() {
+    conn.send('hello world');
+  });
+});
+&lt;/script&gt;
+</code></pre>
+<script>hljs.initHighlighting();$(".javascript").css("opacity", 0.95);</script>
+
+               </paper-material>
+            </div>
+        </div>
+
+        <div class="howto-step">
+            <img src="{{ site.homedir[page.lang] }}images/count/3.png">
+            <div class="float-group">
+                <p>開発に必要な情報を収集しましょう。</p>
+                <a href="docs/#JS"><paper-button raised>スタートガイドを見る</paper-button></a>
+                <a href='support.html'><paper-button raised>サポート</paper-button></a>
+            </div>
+        </div>
+        <h2 class="material-header">　</h2>
+    </div>
+</paper-material>
+
+<div id="signup-div">
+    <h2 id="signup-header">SkyWayは無料で利用可能です！</h2>
+    <div class="divider-short"></div>
+      <a target="_blank" href='https://skyway.io/ds/registration/'><paper-button id="signupButton" raised class="white">登録を行う</paper-button></a>
+</div>

@@ -2,6 +2,27 @@
 
 /* Front Page - Animation */
 
+.top-section {
+  h1 {
+    position: relative;
+    top: 36px;
+    margin: 0;
+    color: #FFF;
+    font-size: 32px;
+    text-align: center;
+  }
+  h2 {
+    position: relative;
+    top: 46px;
+    margin: 0;
+    margin-bottom: 46px;
+    color: #FFF;
+    opacity: 0.6;
+    font-size: 26px;
+    text-align: center;
+  }
+}
+
 .row-top-images {
   margin-top: 140px;
 }
