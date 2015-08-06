@@ -1,0 +1,86 @@
+@import "utilities/variables";
+
+/* Front Page - Animation */
+
+.row-top-images {
+  margin-top: 140px;
+}
+
+.animation-container {
+  img {
+    /*    position: absolute;*/
+    /*        top: 40px;*/
+    display: table;
+    margin: auto;
+    /*    bottom: 20px;*/
+    height: 220px;
+    object-fit: scale-down;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.02, 1.02);
+      -webkit-transform: scale(1.02, 1.02);
+    }
+  }
+  h3 {
+    color: #FFF;
+    opacity: 0.8;
+    font-size: 26px;
+    text-align: center;
+  }
+}
+
+/* Front Page - Highlights */
+
+.highlight {
+  pdding-left: 30px;
+  padding-right: 30px;
+  height: 180px;
+  overflow-y: hidden;
+  font-size: 1.1em;
+  i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    color: $skyway_blue;
+  }
+  h3 {
+    /*    position: absolute;*/
+    margin-top: 70px;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 400;
+  }
+}
+
+/* Front Page - News */
+
+.headline {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.headline-date {
+  /* TODO: Responsive formatting */
+  /*
+      left: 0;
+      right: 0;
+      margin: auto;
+  */
+  margin-bottom: 8px;
+  max-width: 160px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  font-size: 1.5em;
+  color: #FFF;
+  background-color: $skyway_blue;
+  border-radius: 5px;
+}
+
+.headline-text {
+  font-size: 1.2em;
+  color: #7f7f7f;
+}
