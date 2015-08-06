@@ -9,7 +9,7 @@
 @import "utilities/variables";
 @import "components/navbar";
 @import "components/index";
-@import "components/info_page";
+@import "components/info-page";
 
 @mixin alpha-attribute($attribute, $color, $background) {
     $percent: alpha($color) * 100%;
