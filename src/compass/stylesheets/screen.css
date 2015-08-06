@@ -83,7 +83,7 @@
 /* line 6, ../sass/components/_index.scss */
 .top-section h1 {
   position: relative;
-  top: 36px;
+  top: 44px;
   margin: 0;
   color: #FFF;
   font-size: 32px;
@@ -92,7 +92,7 @@
 /* line 14, ../sass/components/_index.scss */
 .top-section h2 {
   position: relative;
-  top: 46px;
+  top: 68px;
   margin: 0;
   margin-bottom: 46px;
   color: #FFF;
@@ -106,7 +106,7 @@
   margin-top: 140px;
 }
 
-/* line 31, ../sass/components/_index.scss */
+/* line 32, ../sass/components/_index.scss */
 .animation-container img {
   /*    position: absolute;*/
   /*        top: 40px;*/
@@ -117,13 +117,14 @@
   object-fit: scale-down;
   cursor: pointer;
 }
-/* line 40, ../sass/components/_index.scss */
+/* line 42, ../sass/components/_index.scss */
 .animation-container img:hover {
   transform: scale(1.02, 1.02);
   -webkit-transform: scale(1.02, 1.02);
 }
-/* line 45, ../sass/components/_index.scss */
+/* line 47, ../sass/components/_index.scss */
 .animation-container h3 {
+  margin-top: 20px;
   color: #FFF;
   opacity: 0.8;
   font-size: 26px;
@@ -131,62 +132,66 @@
 }
 
 /* Front Page - Highlights */
-/* line 55, ../sass/components/_index.scss */
+/* line 58, ../sass/components/_index.scss */
 .highlight {
-  pdding-left: 30px;
+  padding-left: 30px;
   padding-right: 30px;
-  height: 180px;
+  height: 200px;
   overflow-y: hidden;
-  font-size: 1.1em;
+  color: #7f7f7f;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5em;
 }
-/* line 61, ../sass/components/_index.scss */
+/* line 69, ../sass/components/_index.scss */
 .highlight i {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  display: table;
   margin: auto;
+  margin-top: 2px;
+  font-size: 4.2em;
   text-align: center;
   color: #5285FF;
 }
-/* line 70, ../sass/components/_index.scss */
+/* line 78, ../sass/components/_index.scss */
 .highlight h3 {
   /*    position: absolute;*/
-  margin-top: 70px;
+  margin-top: 16px;
+  margin-bottom: 10px;
   text-align: center;
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-weight: 400;
 }
 
 /* Front Page - News */
-/* line 81, ../sass/components/_index.scss */
+/* line 90, ../sass/components/_index.scss */
 .headline {
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
-/* line 86, ../sass/components/_index.scss */
+/* line 95, ../sass/components/_index.scss */
 .headline-date {
   /* TODO: Responsive formatting */
   /*
-      left: 0;
-      right: 0;
-      margin: auto;
+    left: 0;
+    right: 0;
+    margin: auto;
   */
   margin-bottom: 8px;
   max-width: 160px;
   height: 28px;
   line-height: 28px;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.2em;
   color: #FFF;
   background-color: #5285FF;
   border-radius: 5px;
 }
 
-/* line 104, ../sass/components/_index.scss */
+/* line 113, ../sass/components/_index.scss */
 .headline-text {
-  font-size: 1.2em;
+  font-size: 1.1em;
+  line-height: 1.5em;
   color: #7f7f7f;
 }
 
@@ -258,38 +263,44 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 4, ../sass/components/_info-page.scss */
 .top-left-div {
   height: 600px;
-  background-color: red;
+  background-color: royalblue;
 }
 /* line 8, ../sass/components/_info-page.scss */
 .top-left-div h3 {
   margin: 0;
-  margin-top: 36px;
+  margin-top: 48px;
   margin-bottom: 20px;
   color: #FFF;
   font-size: 3em;
   font-weight: 400;
   text-align: center;
 }
-/* line 19, ../sass/components/_info-page.scss */
-.top-left-div .row {
-  margin-top: 30px;
+
+/* line 22, ../sass/components/_info-page.scss */
+.subpage-highlight {
+  margin-top: 35px;
+  margin-bottom: 35px;
   height: 100px;
 }
-/* line 23, ../sass/components/_info-page.scss */
-.top-left-div .row div {
+/* line 27, ../sass/components/_info-page.scss */
+.subpage-highlight i {
+  line-height: 100px;
+  text-align: center;
+  margin-left: -10px;
   color: #fff;
-  font-size: 20px;
+  font-size: 3em;
 }
-/* line 28, ../sass/components/_info-page.scss */
-.top-left-div .row i {
+/* line 36, ../sass/components/_info-page.scss */
+.subpage-highlight .highlight-text {
   color: #fff;
-  font-size: 50px;
+  font-size: 1.25em;
+  font-weight: 400;
 }
 
-/* line 35, ../sass/components/_info-page.scss */
+/* line 47, ../sass/components/_info-page.scss */
 .top-right-div {
   height: 600px;
-  background-color: blue;
+  background-color: #5285FF;
 }
 
 /* Common Styles */
@@ -312,7 +323,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 40, ../sass/screen.scss */
 .paper-style-div {
   padding: 20px;
-  padding-top: 32px;
+  padding-top: 42px;
   margin-top: 10px;
   margin-bottom: 10px;
   background-color: #fff;
@@ -324,7 +335,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .paper-style-div h2 {
   margin: 0;
   text-align: center;
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 400;
   color: #5f5f5f;
 }
@@ -347,7 +358,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 72, ../sass/screen.scss */
 .signup-div {
   height: 200px;
-  padding: 20px;
+  padding: 40px;
 }
 /* line 75, ../sass/screen.scss */
 .signup-div h2 {

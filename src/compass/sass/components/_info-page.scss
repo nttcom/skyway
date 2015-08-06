@@ -3,36 +3,48 @@
 
 .top-left-div {
     height: $top-section-height;
-    background-color: red;
+    background-color: $mid_blue;
     
     h3 {
-//        position: relative;
         margin: 0;
-        margin-top: 36px;
+        margin-top: 48px;
         margin-bottom: 20px;
         color: #FFF;
         font-size: 3em;
         font-weight: 400;
         text-align: center;
     }
-    
-    .row {
-        margin-top: 30px;
-        height: 100px;
-        
-        div {
-            color: #fff;
-            font-size: 20px;
-        }
-        
-        i {
-            color: #fff;
-            font-size: 50px;
-        }
-    }
+
 }
+    
+
+
+.subpage-highlight {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    height: 100px;
+
+    i { 
+        line-height: 100px;
+        text-align: center;
+        margin-left: -10px;
+
+        color: #fff;
+        font-size: 3em;
+    }
+    
+    .highlight-text {
+        color: #fff;
+        font-size: 1.25em;
+        font-weight: 400;
+    }
+
+}
+
+
+
 
 .top-right-div {
     height: $top-section-height;
-    background-color: blue;
+    background-color: $skyway_blue;
 }
