@@ -1,131 +1,119 @@
 ---
-layout: responsive_old
+layout: default
 lang: jp
-title:
-description: WebRTCは、ブラウザや専用アプリ同士でリアルタイムに映像、音声、データを送受信できる画期的な新技術です。SkyWayを使えば、サーバを準備することなく簡単に、WebRTCを使ったアプリが開発できます。
+title: JavaScript SDK
+description: SkyWayのJavaScript SDKを公開しています。SkyWayを使えば、サーバを準備することなく簡単に、WebRTCを使ったアプリが開発できます。
 ---
+<div id="anchor-div"></div>
+<div id="subpage-content-div" elevation="2">
+    <div id="content-explanation-div">
+        <h2 class="content-title-side">JavaScript SDK</h2>
 
-<!-- Top Section -->
-
-<div class="top-section">
-    <h1>リアルタイムにつながるアプリを作ろう</h1>
-    <h2>通信会社が提供する簡単で強力なWebRTCプラットフォーム</h2>
-    
-    <div class="container animation-container">
-        <div class="row">
-            <div class="col-sm-12">
-                <link rel="stylesheet" href="{{ site.homedir[page.lang] }}styles/transmission-animation.css">
-                <div class='transmission-animation'>
-                    <div class='circle-container'>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
+            <div id="content-highlights">
+                <div class="content-highlight">
+                    <img class="content-highlight-icon" src="{{ site.homedir[page.lang] }}images/outline_star_white.png">
+                    <div class="content-highlight-text-container">
+                        <div class="content-highlight-text">SDKによりWebRTCのAPIを<br>簡単に利用可能</div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="row row-top-images">
-            <div class="col-sm-6">
-                <a href="info-js.html">
-                    <img src="{{ site.homedir[page.lang] }}images/top_images/index_js_top.png" class="animation-image">
-                    <h3>JavaScript</h3>
-                </a>
-            </div>
-            <div class="col-sm-6">
-                <a href="info-mobile.html">
-                    <img src="{{ site.homedir[page.lang] }}images/top_images/index_mobile_top.png" class="animation-image">
-                     <h3>iOS/Android</h3>
-                </a>
-            </div>
-        </div>
-    </div>
-    
-    <a href='https://skyway.io/ds/registration/' target="_blank" class="btn-link btn-center">
-        <button type="submit" class="btn btn-default">登録を行う</button>
-    </a>
-    
-</div>
-
-<!-- Main Page Content -->
-
-<div class="background">
-
-    <div class="container">
-
-        <div class="row">
-            <div class="col-sm-12 paper-style-div">
-                <h2>SkyWayを使うメリット</h2>
-                <div class="divider"></div>
-
-                <div class="row">
-                    <div class="col-sm-10 col-sm-offset-1">
-                        <div class="row">
-                            <div class="col-sm-3 highlight">
-                                <i class="fa fa-video-camera fa-4x"></i>
-                                <h3>マルチメディア通信</h3>
-                                WebRTCの音声・映像・データ通信を利用可能
-                            </div>
-                            <div class="col-sm-3 highlight">
-                                <i class="fa fa-paper-plane fa-4x"></i>
-                                <h3>アプリ開発に集中</h3>
-                                サーバサイド不要、JavaScript/iOS/AndroidのSDK提供
-                            </div>
-                            <div class="col-sm-3 highlight">
-                                <i class="fa fa-lock fa-4x"></i>
-                                <h3>セキュア</h3>
-                                ビデオ通話、データ通信、シグナリングは全て暗号化
-                            </div>
-                            <div class="col-sm-3 highlight">
-                                <i class="fa fa-cogs fa-4x"></i>
-                                <h3>豊富な拡張機能</h3>
-                                TURN、音声認識、多人数接続、画面共有などの機能を提供
-                            </div>
-                        </div>
+                <div class="content-highlight">
+                    <img class="content-highlight-icon" src="{{ site.homedir[page.lang] }}images/outline_star_white.png">
+                    <div class="content-highlight-text-container">
+                        <div class="content-highlight-text">クライアントサイドの開発だけでOK、サーバサイドは準備不要</div>
                     </div>
                 </div>
-            
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-sm-12 signup-div">
-                <h2 id="signup-header">SkyWayは無料で利用可能です！</h2>
-                <div class="divider-short"></div>
-                <a href='https://skyway.io/ds/registration/' target="_blank" class="btn-link btn-center">
-                    <button type="submit" class="btn btn-default">登録を行う</button>
-                </a>
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-sm-12 paper-style-div">
-                <h2>最新情報</h2>
-                <div class="divider"></div>
-                <div class="row">
-                    <div class="col-sm-10 col-sm-offset-1">
-                        {% for post in site.posts limit:3 %}
-                            <div class="row headline">
-                                <div class="col-sm-2">
-                                    <div class="row">
-                                        <div class="col-sm-10 col-sm-offset-1 headline-date">
-                                            {{ post.date | date: "%Y.%d.%m " }}
+                <div class="content-highlight">
+                    <img class="content-highlight-icon" src="{{ site.homedir[page.lang] }}images/outline_star_white.png">
+                    <div class="content-highlight-text-container">
+                        <div class="content-highlight-text">豊富な拡張機能(音声認識、多人数接続、画面共有など)を利用可能</div>
+                    </div>
+                </div>
+                <!--
+                                    <div class="content-highlight">
+                                        <img class="content-highlight-icon" src="images/outline_star_white.png">
+                                        <div class="content-highlight-text-container">
+                                            <div class="content-highlight-text">シグナリングのトランスポートにWebSocket/XMLHttpRequestの両方を利用することで接続確立を向上</div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-sm-10 headline-text">{{ post.excerpt }}</div>
-                            </div>
-                        {% endfor %}
-                    </div>
+                -->
+            </div>
+            <a href='documentation.html'><paper-button class="subpage-topSectionButton white" raised>ドキュメント</paper-button></a>
+    </div>
+    <div id="content-animation-div">
+        <link rel="stylesheet" href="{{ site.homedir[page.lang] }}styles/transmission-animation-subpage.css">
+        <img id="animated-logo-js" src="{{ site.homedir[page.lang] }}images/logos/logo-cloud_white.png">
+        <div id="animation-container">
+            <div class='js-transmission-animation'>
+                <div class='circle-container'>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
                 </div>
-                <a href='#placeholder' target="_blank" class="btn-link btn-center">
-                    <button type="submit" class="btn btn-primary">All News</button>
-                </a>
+            </div>
+            <img src="{{ site.homedir[page.lang] }}images/top_images/js_top.png">
+        </div>
+        <a target="_blank" href='https://skyway.io/ds/registration/'><paper-button class="subpage-topSectionButton white" raised>登録を行う</paper-button></a>
+    </div>
+</div>
+
+<paper-material id="js-howto-div" class="paper-div" elevation="2">
+    <div class="paper-div-internal">
+        <h2 class="material-header">作ってみよう！</h2>
+
+
+        <div class="howto-step">
+            <img src="{{ site.homedir[page.lang] }}images/count/1.png">
+            <div class="float-group">
+                <p>開発者登録を行い、APIキーを申し込みます。</p>
+                <a target="_blank" href='https://skyway.io/ds/registration/'><paper-button raised>開発者登録を行う（無料）</paper-button></a>
             </div>
         </div>
-    
+
+        <div class="howto-step">
+            <img src="{{ site.homedir[page.lang] }}images/count/2.png">
+            <div class="float-group">
+                <p>SkyWayを利用してアプリケーションを開発しましょう。<br><br>
+                    コードサンプルを参考にライブラリを使い、JavaScriptコードを書きましょう。</p>
+
+                <paper-material class="code-section" elevation="1">
+                             <pre><code class="html">
+&lt;script src="https://skyway.io/dist/0.3/peer.min.js"&gt;&lt;/script&gt;
+
+&lt;script&gt;
+var peer = new Peer(myId, {key: 'yourApiKey'});
+
+peer.on('open', function(id) {
+  var conn = peer.connect('anotherId');
+  conn.on('open', function() {
+    conn.send('hello world');
+  });
+});
+&lt;/script&gt;
+</code></pre>
+<script>hljs.initHighlighting();$(".javascript").css("opacity", 0.95);</script>
+
+               </paper-material>
+            </div>
+        </div>
+
+        <div class="howto-step">
+            <img src="{{ site.homedir[page.lang] }}images/count/3.png">
+            <div class="float-group">
+                <p>開発に必要な情報を収集しましょう。</p>
+                <a href="docs/#JS"><paper-button raised>スタートガイドを見る</paper-button></a>
+                <a href='support.html'><paper-button raised>サポート</paper-button></a>
+            </div>
+        </div>
+        <h2 class="material-header">　</h2>
     </div>
+</paper-material>
+
+<div id="signup-div">
+    <h2 id="signup-header">SkyWayは無料で利用可能です！</h2>
+    <div class="divider-short"></div>
+      <a target="_blank" href='https://skyway.io/ds/registration/'><paper-button id="signupButton" raised class="white">登録を行う</paper-button></a>
 </div>
