@@ -14,7 +14,7 @@
 /* line 24, ../sass/utilities/_variables.scss */
 .h_b {
   background-color: blue;
-  border-color: green;
+  border-color: limegreen;
   border-width: 2px;
   border-style: solid;
   height: 100%;
@@ -300,7 +300,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-bottom: 35px;
   height: 100px;
 }
-/* line 27, ../sass/components/_info-page.scss */
+/* line 29, ../sass/components/_info-page.scss */
 .subpage-highlight i {
   line-height: 100px;
   text-align: center;
@@ -308,19 +308,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   color: #fff;
   font-size: 3em;
 }
-/* line 36, ../sass/components/_info-page.scss */
+/* line 38, ../sass/components/_info-page.scss */
 .subpage-highlight .highlight-text {
+  display: inline-block;
+  vertical-align: middle;
   color: #fff;
   font-size: 1.25em;
   font-weight: 400;
 }
 
-/* line 47, ../sass/components/_info-page.scss */
+/* line 51, ../sass/components/_info-page.scss */
 .top-right-div {
   height: 600px;
   background-color: #5285FF;
 }
-/* line 51, ../sass/components/_info-page.scss */
+/* line 55, ../sass/components/_info-page.scss */
 .top-right-div img {
   display: table;
   margin: auto;

@@ -20,9 +20,11 @@
 
 
 .subpage-highlight {
+//    display: table;
     margin-top: 35px;
     margin-bottom: 35px;
     height: 100px;
+    
 
     i { 
         line-height: 100px;
@@ -34,6 +36,8 @@
     }
     
     .highlight-text {
+        display: inline-block;
+        vertical-align: middle;
         color: #fff;
         font-size: 1.25em;
         font-weight: 400;
