@@ -34,17 +34,18 @@
 
 #logoButton {
   position: absolute;
-  float: left;
+//  float: left;
   left: 10px;
   padding: 0;
   width: 190px;
   line-height: 64px;
   margin: 0;
   margin-left: 0;
+    
   img {
     position: relative;
     left: 10px;
-    margin-top: 0px;
+    margin-top: 11px;
     height: 42px;
   }
 }

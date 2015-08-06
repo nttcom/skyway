@@ -52,11 +52,15 @@
     height: $top-section-height;
     background-color: $skyway_blue;
     
-    img {
+    #animated-logo-js {
+        top: 90px;
+    }
+    
+    .device-image {
         
         display: table;
         margin: auto;
-        margin-top: 300px;
+        margin-top: 280px;
         margin-bottom: 30px;
         
         bottom: 0;
@@ -66,4 +70,35 @@
         object-fit: scale-down;
         
     }
+}
+
+.howto-step {
+    
+    margin-bottom: 10px;
+    
+    img {
+//        @extend .h_b;
+        
+        float: right;
+        margin-right: -10px;
+        top: 5px;
+        
+        height: 50px;
+        width: 50px;
+
+        object-fit: scale-down;
+    }
+    
+    .howto-step-content {
+        padding: 12px;
+        margin-bottom: 20px;
+        
+        border-radius: 5px;
+        background-color: rgba(82, 133, 255, 0.12);
+        
+        p {
+            padding-bottom: 20px;
+        }
+    }
+    
 }

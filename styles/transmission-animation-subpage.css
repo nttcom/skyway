@@ -7,7 +7,7 @@
     
     position:absolute;
     
-    top:66px;
+    top:160px;
     
     left:0;
     right:0;
@@ -27,6 +27,13 @@
 
 #animated-logo-mobile,#animated-logo-js {
     /* Common code - positioning happens individually */
+    
+    position:absolute;
+    top: 0px;
+  
+    left: 0;
+    right: 0;
+    margin: auto;
     
     z-index: 10;
     
@@ -52,17 +59,6 @@
     margin: auto;
     
     
-}
-
-#animated-logo-js {
-    
-    position:absolute;
-    top: 78px;
-    
-    left: 0;
-    right: 0;
-    margin: auto;
-
 }
 
 @media screen and (max-width:1200px){
