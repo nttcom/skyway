@@ -1,0 +1,69 @@
+@import "utilities/variables";
+
+/* Navbar styles */
+
+.navbar {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .navbar-tabs-centered {
+    /*        position: absolute;*/
+    left: 200px;
+    right: 200px;
+    margin: auto;
+    display: table;
+    table-layout: fixed;
+    float: none;
+    /*        background-color: green;*/
+  }
+  .navbar-buttons {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.navbar-tabs a {
+  /* Tab Colours */
+  color: $skyway_blue;
+  font-weight: 400;
+  font-size: 1.1em;
+  /* TODO: Responsive resizing */
+}
+
+#logoButton {
+  position: absolute;
+  float: left;
+  left: 10px;
+  padding: 0;
+  width: 190px;
+  line-height: 64px;
+  margin: 0;
+  margin-left: 0;
+  img {
+    position: relative;
+    left: 10px;
+    margin-top: 0px;
+    height: 42px;
+  }
+}
+
+.dropdown-toggle {
+  color: rgba(252, 57, 49, 0.8);
+  &:hover {
+    color: rgba(252, 57, 49, 1);
+    background-color: rgba(252, 57, 49, 0.2);
+  }
+}
+
+.btn-link {
+  padding: 0;
+  .btn-login {
+    margin: 14px;
+    margin-left: 8px;
+    margin-right: 28px;
+    background-color: $skyway_blue;
+    /* TODO: Click colour */
+  }
+}
