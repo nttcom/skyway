@@ -11,7 +11,7 @@ module.exports = {
         }
     },
     sass: {
-        src: src + "/src/sass/**/*.{sass,scss}",
+        src: src + "/src/compass/sass/**/*.{sass,scss}",
         dest: dest,
         settings: {
             indentedSyntax: true, // Enable .sass syntax!

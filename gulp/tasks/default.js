@@ -4,5 +4,5 @@ var gulp = require('gulp');
 
 gulp.task('default', function() {
     //gulp.start('sass', 'images', 'markup', 'watch');
-    gulp.start('sass', 'images', 'watch');
+    gulp.start('images', 'watch');
 });

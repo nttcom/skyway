@@ -27,7 +27,6 @@
         "jquery:jQuery"
       ]
     },
-
     "plugin": {
       "exports": "plugin",
       "depends": [
@@ -43,9 +42,17 @@
     "gulp": "^3.8.11",
     "gulp-autoprefixer": "^2.1.0",
     "gulp-changed": "^1.1.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-concat": "*",
     "gulp-filesize": "0.0.6",
+    "gulp-htmlmin": "*",
     "gulp-iconfont": "^1.0.0",
+    "gulp-ignore": "*",
     "gulp-imagemin": "^2.2.1",
+    "gulp-jekyll": "*",
+    "gulp-jshint": "*",
+    "gulp-kramdown": "*",
+    "gulp-load-plugins": "*",
     "gulp-minify-css": "~0.5.1",
     "gulp-notify": "^2.2.0",
     "gulp-rename": "^1.2.0",
@@ -68,15 +75,7 @@
     "pretty-hrtime": "~1.0.0",
     "require-dir": "^0.1.0",
     "vinyl-source-stream": "~1.0.0",
-    "watchify": "^2.4.0",
-    "gulp-load-plugins": "*",
-    "gulp-ignore": "*",
-    "gulp-jekyll": "*",
-    "gulp-kramdown": "*",
-    "gulp-compass": "*",
-    "gulp-jshint": "*",
-    "gulp-concat": "*",
-    "gulp-htmlmin": "*"
+    "watchify": "^2.4.0"
   },
   "dependencies": {
     "bootstrap": "^3.3.5",

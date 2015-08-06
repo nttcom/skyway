@@ -15,3 +15,6 @@ npm-debug.log
 Gemfile.lock
 vendor
 .bundle
+
+#sass cache
+src/compass/.sass-cache
