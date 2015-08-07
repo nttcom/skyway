@@ -9340,13 +9340,13 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
 }
 
 /* Navbar styles */
-/* line 5, ../sass/components/_navbar.scss */
+/* line 6, ../sass/components/_navbar.scss */
 .navbar {
   margin: 0;
 }
 
 @media (min-width: 768px) {
-  /* line 10, ../sass/components/_navbar.scss */
+  /* line 11, ../sass/components/_navbar.scss */
   .navbar-tabs-centered {
     /*        position: absolute;*/
     left: 200px;
@@ -9358,14 +9358,14 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
     /*        background-color: green;*/
   }
 
-  /* line 20, ../sass/components/_navbar.scss */
+  /* line 21, ../sass/components/_navbar.scss */
   .navbar-buttons {
     position: absolute;
     top: 0;
     right: 0;
   }
 }
-/* line 27, ../sass/components/_navbar.scss */
+/* line 28, ../sass/components/_navbar.scss */
 .navbar-tabs a {
   /* Tab Colours */
   color: #5285FF !important;
@@ -9374,39 +9374,44 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   /* TODO: Responsive resizing */
 }
 
-/* line 35, ../sass/components/_navbar.scss */
+/* line 36, ../sass/components/_navbar.scss */
 #logoButton {
   position: absolute;
   left: 10px;
   padding: 0;
+  top: 0;
   width: 190px;
-  line-height: 64px;
+  height: 100%;
+  line-height: 100%;
   margin: 0;
   margin-left: 0;
 }
-/* line 45, ../sass/components/_navbar.scss */
+/* line 50, ../sass/components/_navbar.scss */
 #logoButton img {
   position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   left: 10px;
-  margin-top: 11px;
   height: 42px;
 }
 
-/* line 53, ../sass/components/_navbar.scss */
+/* line 58, ../sass/components/_navbar.scss */
 .dropdown-toggle {
   color: rgba(252, 57, 49, 0.8) !important;
 }
-/* line 55, ../sass/components/_navbar.scss */
+/* line 60, ../sass/components/_navbar.scss */
 .dropdown-toggle:hover {
   color: #fc3931 !important;
   background-color: rgba(252, 57, 49, 0.2) !important;
 }
 
-/* line 61, ../sass/components/_navbar.scss */
+/* line 66, ../sass/components/_navbar.scss */
 .btn-link {
   padding: 0 !important;
 }
-/* line 64, ../sass/components/_navbar.scss */
+/* line 69, ../sass/components/_navbar.scss */
 .btn-link .btn-login {
   margin: 14px;
   margin-left: 8px;
@@ -9706,15 +9711,18 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   color: #fff;
   background-color: #3f3f3f;
 }
-/* line 127, ../sass/components/_info-page.scss */
-.howto-step .code-section pre {
+/* line 130, ../sass/components/_info-page.scss */
+.howto-step pre {
   color: inherit;
   background-color: inherit;
+  border-style: none;
+  margin: 0;
+  padding: 0;
   font-family: 'Lucida Console', Monaco, monospace;
   font-size: 13px;
   line-height: 16px;
 }
-/* line 137, ../sass/components/_info-page.scss */
+/* line 143, ../sass/components/_info-page.scss */
 .howto-step paper-button {
   float: left;
   margin-top: -8px !important;
