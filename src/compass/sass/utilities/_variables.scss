@@ -11,6 +11,19 @@ $light_font: #7f7f7f;
 $top-section-height: 600px;
 
 
+.paper-style {
+    
+    padding: 8px;
+    
+    background-color: #fff;
+    /* See /bower_components/paper-styles/shadow.html */
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+                0 1px 5px 0 rgba(0, 0, 0, 0.12),
+                0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    
+    border-radius: 5px;
+}
+
 // For debugging purposes:
 
 .h_r {

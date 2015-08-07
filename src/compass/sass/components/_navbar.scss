@@ -26,7 +26,7 @@
 
 .navbar-tabs a {
   /* Tab Colours */
-  color: $skyway_blue;
+  color: $skyway_blue !important;
   font-weight: 400;
   font-size: 1.1em;
   /* TODO: Responsive resizing */
@@ -51,15 +51,16 @@
 }
 
 .dropdown-toggle {
-  color: rgba(252, 57, 49, 0.8);
+  color: rgba(252, 57, 49, 0.8) !important;
   &:hover {
-    color: rgba(252, 57, 49, 1);
-    background-color: rgba(252, 57, 49, 0.2);
+    color: rgba(252, 57, 49, 1) !important;
+    background-color: rgba(252, 57, 49, 0.2) !important;
   }
 }
 
 .btn-link {
-  padding: 0;
+  padding: 0 !important;
+    
   .btn-login {
     margin: 14px;
     margin-left: 8px;

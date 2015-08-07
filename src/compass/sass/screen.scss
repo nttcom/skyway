@@ -6,22 +6,23 @@
 @import "compass";
 @import "brightness";
 
+@import "CSS:../bootstrap.min_paper";
+
 @import "utilities/variables";
 @import "components/navbar";
 @import "components/index";
 @import "components/info-page";
 
-@mixin alpha-attribute($attribute, $color, $background) {
-    $percent: alpha($color) * 100%;
-    $opaque: opacify($color, 1);
-    $solid-color: mix($opaque, $background, $percent);
-    #{$attribute}: $solid-color;
-    #{$attribute}: $color;
-}
+
+
 
 
 
 /* Common Styles */
+
+* {
+    line-height: 1.7em;
+}
 
 .top-section {
   height: 600px;
@@ -38,21 +39,21 @@
 }
 
 .paper-style-div {
-  padding: 20px;
-  padding-top: 42px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  background-color: #fff;
-  /* See /bower_components/paper-styles/shadow.html */
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-  h2 {
-    margin: 0;
-    text-align: center;
-    font-size: 1.5em;
-    font-weight: 400;
-    color: #5f5f5f;
-  }
+
+    @extend .paper-style;
+
+    padding: 20px;
+    padding-top: 42px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    h2 {
+        margin: 0;
+        text-align: center;
+        font-size: 1.5em;
+        font-weight: 400;
+        color: #5f5f5f;
+    }
 }
 
 .divider {

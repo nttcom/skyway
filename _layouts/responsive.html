@@ -32,14 +32,14 @@
 
     <!-- will be replaced with elements/elements.vulcanized.html -->
     <link rel="import" href="{{ site.homedir[page.lang] }}elements/elements.html">
-    <link rel="stylesheet" href="{{ site.homedir[page.lang] }}styles/bootstrap.min_paper.css">      
+<!--    <link rel="stylesheet" href="{{ site.homedir[page.lang] }}styles/bootstrap.min_paper.css">      -->
     <link rel="stylesheet" href="{{ site.homedir[page.lang] }}src/compass/stylesheets/screen.css">
     <!-- endreplace-->
     
 
     <!-- highlight.js -->
     <link rel="stylesheet" href="{{ site.homedir[page.lang] }}styles/highlights/tomorrow-night.css">
-    <!--    <script src="{{ site.homedir[page.lang] }}scripts/highlight/highlight.pack.js"></script>-->
+        <script src="{{ site.homedir[page.lang] }}src/javascript/highlight/highlight.pack.js"></script>
     <!-- endhighlight -->
     
     <!-- The following script contains ALL JS code: -->
@@ -77,7 +77,7 @@
 
         {{ content }}
 
-        <!-- {% include footer.html %} -->
+        {% include footer.html %} 
 
     </paper-header-panel>
     
