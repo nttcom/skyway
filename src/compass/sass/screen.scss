@@ -15,9 +15,7 @@
 
 @import "components/index";
 @import "components/info-page";
-
-
-
+@import "components/features";
 
 
 
@@ -68,6 +66,12 @@
     padding: 0;
     padding-top: 30px; 
     padding-bottom: 30px;
+    background-color: #fff;
+}
+
+.background-blue {
+    @extend .background;
+     
     background-color: $dark_blue;
 }
 

@@ -1,0 +1,119 @@
+@import "utilities/variables";
+
+.features-header {
+
+    width: inherit;
+
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 0;
+
+    font-size: 3em;
+    line-height: 1.5em;
+    
+    text-align: left;
+
+    border-style: solid;
+    border-color: rgba(82, 133, 255, 1);
+    border-width: 0;
+    border-bottom-width: 2px;
+
+    /*          background-color: blue;*/
+}
+
+.feature-box {
+    @extend .paper-style;
+    
+    padding: 0;
+    height: 320px;
+
+    img {
+          position: absolute;
+
+          top: 28px;
+
+          left: 0;
+          right: 0;
+          margin:auto;
+
+          height: 80px;
+
+          object-fit: scale-down;
+    }
+    
+    h3 {
+        position: absolute;
+
+        top: 124px;
+
+        left: 0;
+        right: 0;
+        margin:auto;
+
+        text-align: center;
+        font-size: 2.4em;
+        
+        color: #fff;
+    }
+
+    p {
+        position: absolute;
+
+        top: 190px;
+        padding-left: 18px;
+        padding-right: 18px;
+
+        left: 0;
+        right: 0;
+        margin:auto;
+
+        max-height: 100px;
+        overflow: hidden;
+
+        text-align: center;
+        font-size: 1.3em;
+        font-weight: 400;
+
+        color: rgba(255, 255, 255, 0.6);
+        /*          background-color: red;*/
+    }
+    
+    paper-button {
+        position: absolute;
+        bottom: 0;
+
+        margin: 0 !important;
+
+        /*          height: 50px;*/
+        width: 100%;
+
+        background-color: rgba(0, 0, 0, 0.15);
+        color: #fff;
+        
+        font-size: 1.3em;
+
+        border-radius: 5px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+
+}
+
+.top-features-container [class^="col"]:nth-of-type(1) {
+    .feature-box {
+        background-color:#4E5FAD;
+    }
+}
+
+.top-features-container [class^="col"]:nth-of-type(2) {
+    .feature-box {
+        background-color:#E63300;
+    }
+}
+
+.top-features-container [class^="col"]:nth-of-type(3) {
+    .feature-box {
+        background-color:#1CC05A;
+    }
+}

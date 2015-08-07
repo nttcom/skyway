@@ -9315,7 +9315,8 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
 }
 
 /* line 14, ../sass/utilities/_variables.scss */
-.paper-style, .howto-step .code-section, .paper-style-div {
+.paper-style, .howto-step .code-section, .feature-box, .paper-style-div {
+  position: relative;
   padding: 8px;
   background-color: #fff;
   /* See /bower_components/paper-styles/shadow.html */
@@ -9323,7 +9324,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   border-radius: 5px;
 }
 
-/* line 29, ../sass/utilities/_variables.scss */
+/* line 30, ../sass/utilities/_variables.scss */
 .h_r {
   background-color: red;
   border-color: orange;
@@ -9331,7 +9332,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   border-style: solid;
 }
 
-/* line 37, ../sass/utilities/_variables.scss */
+/* line 38, ../sass/utilities/_variables.scss */
 .h_b {
   background-color: blue;
   border-color: limegreen;
@@ -9735,25 +9736,115 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   text-transform: none;
 }
 
+/* line 3, ../sass/components/_features.scss */
+.features-header {
+  width: inherit;
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding: 0;
+  font-size: 3em;
+  line-height: 1.5em;
+  text-align: left;
+  border-style: solid;
+  border-color: #5285ff;
+  border-width: 0;
+  border-bottom-width: 2px;
+  /*          background-color: blue;*/
+}
+
+/* line 25, ../sass/components/_features.scss */
+.feature-box {
+  padding: 0;
+  height: 320px;
+}
+/* line 31, ../sass/components/_features.scss */
+.feature-box img {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 80px;
+  object-fit: scale-down;
+}
+/* line 45, ../sass/components/_features.scss */
+.feature-box h3 {
+  position: absolute;
+  top: 124px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  font-size: 2.4em;
+  color: #fff;
+}
+/* line 60, ../sass/components/_features.scss */
+.feature-box p {
+  position: absolute;
+  top: 190px;
+  padding-left: 18px;
+  padding-right: 18px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-height: 100px;
+  overflow: hidden;
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+  /*          background-color: red;*/
+}
+/* line 82, ../sass/components/_features.scss */
+.feature-box paper-button {
+  position: absolute;
+  bottom: 0;
+  margin: 0 !important;
+  /*          height: 50px;*/
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.15);
+  color: #fff;
+  font-size: 1.3em;
+  border-radius: 5px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+/* line 104, ../sass/components/_features.scss */
+.top-features-container [class^="col"]:nth-of-type(1) .feature-box {
+  background-color: #4E5FAD;
+}
+
+/* line 110, ../sass/components/_features.scss */
+.top-features-container [class^="col"]:nth-of-type(2) .feature-box {
+  background-color: #E63300;
+}
+
+/* line 116, ../sass/components/_features.scss */
+.top-features-container [class^="col"]:nth-of-type(3) .feature-box {
+  background-color: #1CC05A;
+}
+
 /* Common Styles */
-/* line 26, ../sass/screen.scss */
+/* line 24, ../sass/screen.scss */
 * {
   line-height: 1.7em;
   font-weight: 400 !important;
 }
 
-/* line 31, ../sass/screen.scss */
+/* line 29, ../sass/screen.scss */
 .top-section {
   height: 600px;
   background-color: #5285FF;
 }
 
-/* line 36, ../sass/screen.scss */
+/* line 34, ../sass/screen.scss */
 .top-section-short {
   height: 240px;
   background-color: #5285FF;
 }
-/* line 40, ../sass/screen.scss */
+/* line 38, ../sass/screen.scss */
 .top-section-short h1 {
   position: relative;
   top: 22%;
@@ -9762,7 +9853,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   color: #FFF;
   font-size: 4em;
 }
-/* line 53, ../sass/screen.scss */
+/* line 51, ../sass/screen.scss */
 .top-section-short h2 {
   position: relative;
   top: 25%;
@@ -9772,25 +9863,30 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   font-size: 2em;
 }
 
-/* line 64, ../sass/screen.scss */
-.background {
+/* line 62, ../sass/screen.scss */
+.background, .background-blue {
   position: relative;
   top: 0;
   margin: 0;
   padding: 0;
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: #fff;
+}
+
+/* line 72, ../sass/screen.scss */
+.background-blue {
   background-color: #2548BE;
 }
 
-/* line 74, ../sass/screen.scss */
+/* line 78, ../sass/screen.scss */
 .paper-style-div {
   padding: 20px;
   padding-top: 42px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 83, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
 .paper-style-div h2 {
   margin: 0;
   text-align: center;
@@ -9799,7 +9895,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   color: #5f5f5f;
 }
 
-/* line 92, ../sass/screen.scss */
+/* line 96, ../sass/screen.scss */
 .divider {
   left: 0;
   right: 0;
@@ -9814,19 +9910,19 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   border-color: #5285FF;
 }
 
-/* line 106, ../sass/screen.scss */
+/* line 110, ../sass/screen.scss */
 .signup-div {
   height: 200px;
   padding: 40px;
 }
-/* line 109, ../sass/screen.scss */
+/* line 113, ../sass/screen.scss */
 .signup-div h2 {
   text-align: center;
   font-size: 2em;
   font-weight: 400;
   color: #fff;
 }
-/* line 115, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 .signup-div a {
   left: 0;
   right: 0;
@@ -9834,7 +9930,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   margin-bottom: 10px;
 }
 
-/* line 123, ../sass/screen.scss */
+/* line 127, ../sass/screen.scss */
 .divider-short {
   left: 0;
   right: 0;
@@ -9849,7 +9945,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   border-color: #5285FF;
 }
 
-/* line 137, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 .btn-center {
   display: table;
   margin: auto;
