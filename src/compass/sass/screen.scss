@@ -25,11 +25,40 @@
 
 * {
     line-height: 1.7em;
+    font-weight: 400 !important;
 }
 
 .top-section {
-  height: 600px;
-  background-color: $skyway_blue;
+    height: 600px;
+    background-color: $skyway_blue;
+}
+
+.top-section-short {
+    height: 240px;
+    background-color: $skyway_blue;
+
+    h1 {
+        position: relative;
+        
+          top: 22%;
+
+          margin: 0px;
+          margin-left: 80px;
+
+          color: #FFF;
+          font-size: 4em;
+
+    }
+    
+    h2 {
+        position: relative;
+        top: 25%;
+        margin: 0 80px;
+        
+        color: #FFF;
+        opacity: 0.6;
+        font-size: 2em;
+    }
 }
 
 .background {
