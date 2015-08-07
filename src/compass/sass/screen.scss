@@ -9,7 +9,10 @@
 @import "CSS:../bootstrap.min_paper";
 
 @import "utilities/variables";
+
 @import "components/navbar";
+@import "components/footer";
+
 @import "components/index";
 @import "components/info-page";
 
@@ -30,12 +33,13 @@
 }
 
 .background {
-  position: relative;
-  top: 0;
-  margin: 0;
-  padding: 0;
-  padding-top: 30px;
-  background-color: $dark_blue;
+    position: relative;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    padding-top: 30px; 
+    padding-bottom: 30px;
+    background-color: $dark_blue;
 }
 
 .paper-style-div {
@@ -57,17 +61,17 @@
 }
 
 .divider {
-  left: 0;
-  right: 0;
-  margin: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  width: 300px;
-  height: 0px;
-  border-style: solid;
-  border-width: 0;
-  border-top-width: 1px;
-  border-color: $skyway_blue;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0;
+    border-top-width: 1px;
+    border-color: $skyway_blue;
 }
 
 .signup-div {

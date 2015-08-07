@@ -9329,7 +9329,6 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   border-color: orange;
   border-width: 2px;
   border-style: solid;
-  height: 100%;
 }
 
 /* line 37, ../sass/utilities/_variables.scss */
@@ -9338,7 +9337,6 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   border-color: limegreen;
   border-width: 2px;
   border-style: solid;
-  height: 100%;
 }
 
 /* Navbar styles */
@@ -9415,6 +9413,84 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   margin-right: 28px;
   background-color: #5285FF;
   /* TODO: Click colour */
+}
+
+/* line 4, ../sass/components/_footer.scss */
+#footer {
+  position: relative;
+  height: 240px;
+  margin-top: 0px;
+  color: #fff;
+  background-color: #3f3f3f;
+}
+/* line 14, ../sass/components/_footer.scss */
+#footer .divider {
+  width: 350px;
+  margin-top: 34px;
+  border-color: #555555;
+}
+/* line 23, ../sass/components/_footer.scss */
+#footer p {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 24px;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+/* line 37, ../sass/components/_footer.scss */
+.logos-div {
+  margin-top: 32px;
+  height: 44px;
+}
+/* line 41, ../sass/components/_footer.scss */
+.logos-div [class^="col"] {
+  height: 100%;
+}
+/* line 45, ../sass/components/_footer.scss */
+.logos-div img {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 32px;
+  object-fit: scale-down;
+  cursor: pointer;
+}
+/* line 58, ../sass/components/_footer.scss */
+.logos-div #ntt-logo {
+  height: 36px;
+}
+/* line 62, ../sass/components/_footer.scss */
+.logos-div #skyway-logo {
+  height: 44px;
+}
+
+/* line 69, ../sass/components/_footer.scss */
+.links-div {
+  margin-top: 26px;
+}
+
+/* line 83, ../sass/components/_footer.scss */
+.links-div a {
+  display: inline-block;
+  /* For IE 10 */
+  -ms-flex: 1;
+  position: relative;
+  font-size: 0.9em;
+  color: #6f6f6f;
+}
+
+/* line 95, ../sass/components/_footer.scss */
+.links-div a:hover {
+  color: #bfbfbf;
 }
 
 /* Front Page - Animation */
@@ -9533,77 +9609,12 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   color: #7f7f7f;
 }
 
-/* line 5, ../../../../../../.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-
-/* line 22, ../../../../../../.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-html {
-  line-height: 1;
-}
-
-/* line 24, ../../../../../../.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-ol, ul {
-  list-style: none;
-}
-
-/* line 26, ../../../../../../.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* line 28, ../../../../../../.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-/* line 30, ../../../../../../.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-q, blockquote {
-  quotes: none;
-}
-/* line 103, ../../../../../../.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-/* line 32, ../../../../../../.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-a img {
-  border: none;
-}
-
-/* line 116, ../../../../../../.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-  display: block;
-}
-
-/* line 5, ../sass/components/_info-page.scss */
+/* line 4, ../sass/components/_info-page.scss */
 .top-left-div {
   height: 600px;
   background-color: royalblue;
 }
-/* line 9, ../sass/components/_info-page.scss */
+/* line 8, ../sass/components/_info-page.scss */
 .top-left-div h3 {
   margin: 0;
   margin-top: 64px;
@@ -9614,13 +9625,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   text-align: center;
 }
 
-/* line 23, ../sass/components/_info-page.scss */
+/* line 22, ../sass/components/_info-page.scss */
 .subpage-highlight {
   margin-top: 30px;
   margin-bottom: 30px;
   height: 100px;
 }
-/* line 30, ../sass/components/_info-page.scss */
+/* line 29, ../sass/components/_info-page.scss */
 .subpage-highlight i {
   line-height: 100px;
   text-align: center;
@@ -9628,7 +9639,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   color: #fff;
   font-size: 3.2em;
 }
-/* line 39, ../sass/components/_info-page.scss */
+/* line 38, ../sass/components/_info-page.scss */
 .subpage-highlight .highlight-text {
   position: relative;
   top: 50%;
@@ -9642,16 +9653,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   height: auto;
 }
 
-/* line 55, ../sass/components/_info-page.scss */
+/* line 54, ../sass/components/_info-page.scss */
 .top-right-div {
   height: 600px;
   background-color: #5285FF;
 }
-/* line 59, ../sass/components/_info-page.scss */
+/* line 58, ../sass/components/_info-page.scss */
 .top-right-div #animated-logo-js {
   top: 90px;
 }
-/* line 63, ../sass/components/_info-page.scss */
+/* line 62, ../sass/components/_info-page.scss */
 .top-right-div .device-image {
   display: table;
   margin: auto;
@@ -9663,11 +9674,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   object-fit: scale-down;
 }
 
-/* line 79, ../sass/components/_info-page.scss */
+/* line 78, ../sass/components/_info-page.scss */
 .howto-step {
   margin-bottom: 10px;
 }
-/* line 83, ../sass/components/_info-page.scss */
+/* line 82, ../sass/components/_info-page.scss */
 .howto-step img {
   float: right;
   margin-right: -10px;
@@ -9676,18 +9687,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 50px;
   object-fit: scale-down;
 }
-/* line 96, ../sass/components/_info-page.scss */
+/* line 95, ../sass/components/_info-page.scss */
 .howto-step .howto-step-content {
   padding: 12px;
   margin-bottom: 20px;
   border-radius: 5px;
   background-color: rgba(82, 133, 255, 0.12);
 }
-/* line 103, ../sass/components/_info-page.scss */
+/* line 102, ../sass/components/_info-page.scss */
 .howto-step .howto-step-content p {
   padding-bottom: 20px;
 }
-/* line 108, ../sass/components/_info-page.scss */
+/* line 107, ../sass/components/_info-page.scss */
 .howto-step .code-section {
   padding: 16px;
   margin: 8px;
@@ -9695,7 +9706,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   color: #fff;
   background-color: #3f3f3f;
 }
-/* line 128, ../sass/components/_info-page.scss */
+/* line 127, ../sass/components/_info-page.scss */
 .howto-step .code-section pre {
   color: inherit;
   background-color: inherit;
@@ -9703,7 +9714,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-size: 13px;
   line-height: 16px;
 }
-/* line 138, ../sass/components/_info-page.scss */
+/* line 137, ../sass/components/_info-page.scss */
 .howto-step paper-button {
   float: left;
   margin-top: -8px !important;
@@ -9717,35 +9728,36 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* Common Styles */
-/* line 23, ../sass/screen.scss */
+/* line 26, ../sass/screen.scss */
 * {
   line-height: 1.7em;
 }
 
-/* line 27, ../sass/screen.scss */
+/* line 30, ../sass/screen.scss */
 .top-section {
   height: 600px;
   background-color: #5285FF;
 }
 
-/* line 32, ../sass/screen.scss */
+/* line 35, ../sass/screen.scss */
 .background {
   position: relative;
   top: 0;
   margin: 0;
   padding: 0;
   padding-top: 30px;
+  padding-bottom: 30px;
   background-color: #2548BE;
 }
 
-/* line 41, ../sass/screen.scss */
+/* line 45, ../sass/screen.scss */
 .paper-style-div {
   padding: 20px;
   padding-top: 42px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 50, ../sass/screen.scss */
+/* line 54, ../sass/screen.scss */
 .paper-style-div h2 {
   margin: 0;
   text-align: center;
@@ -9754,7 +9766,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   color: #5f5f5f;
 }
 
-/* line 59, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 .divider {
   left: 0;
   right: 0;
@@ -9769,19 +9781,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-color: #5285FF;
 }
 
-/* line 73, ../sass/screen.scss */
+/* line 77, ../sass/screen.scss */
 .signup-div {
   height: 200px;
   padding: 40px;
 }
-/* line 76, ../sass/screen.scss */
+/* line 80, ../sass/screen.scss */
 .signup-div h2 {
   text-align: center;
   font-size: 2em;
   font-weight: 400;
   color: #fff;
 }
-/* line 82, ../sass/screen.scss */
+/* line 86, ../sass/screen.scss */
 .signup-div a {
   left: 0;
   right: 0;
@@ -9789,7 +9801,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-bottom: 10px;
 }
 
-/* line 90, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 .divider-short {
   left: 0;
   right: 0;
@@ -9804,7 +9816,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-color: #5285FF;
 }
 
-/* line 104, ../sass/screen.scss */
+/* line 108, ../sass/screen.scss */
 .btn-center {
   display: table;
   margin: auto;

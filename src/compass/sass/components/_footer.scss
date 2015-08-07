@@ -1,0 +1,98 @@
+@import "utilities/variables";
+@import "utilities/mixins";
+
+#footer {
+    position: relative;
+    height: 240px;
+
+    margin-top: 0px;
+
+    color: #fff;
+    background-color: #3f3f3f;
+    
+    
+    .divider {
+//        top: 110px;
+        width: 350px;
+        margin-top: 34px;
+        
+        border-color: #555555;
+    }
+    
+    
+    p {
+        position: absolute;
+
+        left: 0;
+        right: 0;
+        margin: auto;
+        bottom: 24px;
+
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+}
+
+.logos-div {
+    margin-top: 32px;
+    height: 44px;
+    
+    [class^="col"] {
+        height: 100%;
+    }
+    
+    img {
+        @include vertical-align;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 32px;
+
+        object-fit: scale-down;
+
+        cursor:pointer;
+    }
+    
+    #ntt-logo {
+        height: 36px;
+    }
+
+    #skyway-logo {
+        height: 44px;
+    }
+}
+
+
+
+.links-div {
+    margin-top: 26px;
+//    position: absolute;
+
+//        top: 142px;
+//        left: 0;
+//        right: 0;
+//        margin: auto;
+
+//        width: 700px;
+//        height: 20px;
+
+}
+
+.links-div a {
+    display:inline-block; /* For IE 10 */
+    -ms-flex: 1;
+
+    position: relative;
+
+    font-size: 0.9em;
+    color: #6f6f6f;
+
+}
+    
+
+.links-div a:hover {
+
+    color: #bfbfbf;
+}
