@@ -48,7 +48,8 @@
     margin-left: 0;
     
     img {
-        @include vertical-align;
+        position: relative;
+        top: 11px;
         left: 10px;
 
         height: 42px;

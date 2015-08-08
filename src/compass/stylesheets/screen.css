@@ -9390,29 +9390,26 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
 /* line 50, ../sass/components/_navbar.scss */
 #logoButton img {
   position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  top: 11px;
   left: 10px;
   height: 42px;
 }
 
-/* line 58, ../sass/components/_navbar.scss */
+/* line 59, ../sass/components/_navbar.scss */
 .dropdown-toggle {
   color: rgba(252, 57, 49, 0.8) !important;
 }
-/* line 60, ../sass/components/_navbar.scss */
+/* line 61, ../sass/components/_navbar.scss */
 .dropdown-toggle:hover {
   color: #fc3931 !important;
   background-color: rgba(252, 57, 49, 0.2) !important;
 }
 
-/* line 66, ../sass/components/_navbar.scss */
+/* line 67, ../sass/components/_navbar.scss */
 .btn-link {
   padding: 0 !important;
 }
-/* line 69, ../sass/components/_navbar.scss */
+/* line 70, ../sass/components/_navbar.scss */
 .btn-link .btn-login {
   margin: 14px;
   margin-left: 8px;
