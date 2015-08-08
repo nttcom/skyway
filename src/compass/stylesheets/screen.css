@@ -9325,7 +9325,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
 }
 
 /* line 30, ../sass/utilities/_variables.scss */
-.h_r, .mini-feature-column {
+.h_r {
   background-color: red;
   border-color: orange;
   border-width: 2px;
@@ -9741,7 +9741,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   width: inherit;
   margin: 0;
   margin-top: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   padding: 0;
   font-size: 3em;
   line-height: 1.5em;
@@ -9755,7 +9755,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
 
 /* line 26, ../sass/components/_features.scss */
 .top-features-container {
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 /* line 32, ../sass/components/_features.scss */
@@ -9775,12 +9775,13 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
 
 /* line 49, ../sass/components/_features.scss */
 .feature-box {
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   padding: 0;
   height: 320px;
   font-weight: 400;
 }
-/* line 59, ../sass/components/_features.scss */
+/* line 60, ../sass/components/_features.scss */
 .feature-box img {
   position: absolute;
   top: 28px;
@@ -9790,7 +9791,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   height: 80px;
   object-fit: scale-down;
 }
-/* line 73, ../sass/components/_features.scss */
+/* line 74, ../sass/components/_features.scss */
 .feature-box h3 {
   position: absolute;
   top: 124px;
@@ -9802,7 +9803,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   font-weight: 300 !important;
   color: #fff;
 }
-/* line 89, ../sass/components/_features.scss */
+/* line 90, ../sass/components/_features.scss */
 .feature-box p {
   position: absolute;
   top: 190px;
@@ -9819,7 +9820,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   color: rgba(255, 255, 255, 0.6);
   /*          background-color: red;*/
 }
-/* line 111, ../sass/components/_features.scss */
+/* line 112, ../sass/components/_features.scss */
 .feature-box paper-button {
   position: absolute;
   bottom: 0;
@@ -9834,7 +9835,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   border-top-right-radius: 0px;
 }
 
-/* line 137, ../sass/components/_features.scss */
+/* line 138, ../sass/components/_features.scss */
 .mini-feature-column h3 {
   margin: 0;
   margin-bottom: 16px;
@@ -9845,23 +9846,18 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   /*          position: absolute;*/
   font-size: 1.5em;
 }
-/* line 150, ../sass/components/_features.scss */
+/* line 151, ../sass/components/_features.scss */
 .mini-feature-column paper-button {
-  position: relative;
   height: 80px;
-  width: 320px;
+  margin: 8px !important;
   padding: 0;
-  margin: 0;
-  margin-left: 6px;
-  margin-bottom: 8px;
-  /*          background-color: red;*/
   border-style: solid;
   border-color: #9f9f9f;
   border-width: 1px;
   text-transform: none;
   border-radius: 5px;
 }
-/* line 172, ../sass/components/_features.scss */
+/* line 167, ../sass/components/_features.scss */
 .mini-feature-column paper-button img {
   position: absolute;
   top: 19px;
@@ -9870,30 +9866,30 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   height: 42px;
   object-fit: scale-down;
 }
-/* line 184, ../sass/components/_features.scss */
+/* line 179, ../sass/components/_features.scss */
 .mini-feature-column paper-button h2 {
   position: absolute;
-  top: 7px;
+  top: 10px;
   left: 75px;
   margin: 0;
   padding: 0;
-  font-size: 1.1em;
+  font-size: 1.4em;
   color: #5285FF;
 }
-/* line 198, ../sass/components/_features.scss */
+/* line 193, ../sass/components/_features.scss */
 .mini-feature-column paper-button p {
   position: absolute;
   left: 75px;
   top: 33px;
-  width: 70%;
-  height: 40px;
+  height: 36px;
   overflow: hidden;
   margin: 0;
+  margin-right: 12px;
   padding: 0;
   text-align: left;
-  font-size: 0.8em;
+  font-size: 1.1em;
+  line-height: 18px;
   color: #9f9f9f;
-  /*          background-color: red;*/
 }
 
 /* Common Styles */

@@ -7,7 +7,7 @@
 
     margin: 0;
     margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     padding: 0;
 
     font-size: 3em;
@@ -25,7 +25,7 @@
 
 .top-features-container {
     
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 
 .top-features-container [class^="col"]:nth-of-type(1) {
@@ -49,7 +49,8 @@
 .feature-box {
     @extend .paper-style;
     
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     
     padding: 0;
     height: 320px;
@@ -132,7 +133,7 @@
 
 
 .mini-feature-column {
-    @extend .h_r;
+//    @extend .h_r;
     
     h3 {
         margin: 0;
@@ -148,17 +149,11 @@
     }
 
     paper-button {
-        position: relative;
 
         height: 80px;
-        width: 320px;
 
+        margin: 8px !important;
         padding: 0;
-
-        margin: 0;
-        margin-left: 6px;
-        margin-bottom: 8px;
-        /*          background-color: red;*/
 
         border-style: solid;
         border-color: #9f9f9f;
@@ -184,13 +179,13 @@
         h2 {
             position: absolute;
 
-            top: 7px;
+            top: 10px;
             left: 75px;
 
             margin: 0;
             padding: 0;
 
-            font-size: 1.1em;
+            font-size: 1.4em;
 
             color: #5285FF;
         }
@@ -201,20 +196,21 @@
             left: 75px;
             top: 33px;
 
-            width: 70%;
-            height: 40px;
+//            width: 70%;
+            height: 36px;
 
             overflow: hidden;
 
             margin: 0;
+            margin-right: 12px;
             padding: 0;
 
             text-align: left;
-            font-size: 0.8em;
+            
+            font-size: 1.1em;
+            line-height: 18px;
 
             color: #9f9f9f;
-
-            /*          background-color: red;*/
         }     
     }
     
