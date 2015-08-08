@@ -9805,7 +9805,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
 /* line 88, ../sass/components/_features.scss */
 .feature-box p {
   position: absolute;
-  top: 190px;
+  top: 180px;
   padding-left: 18px;
   padding-right: 18px;
   left: 0;
