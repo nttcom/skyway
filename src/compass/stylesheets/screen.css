@@ -9750,30 +9750,29 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   border-color: #5285ff;
   border-width: 0;
   border-bottom-width: 2px;
-  /*          background-color: blue;*/
 }
 
-/* line 26, ../sass/components/_features.scss */
-.top-features-container {
-  margin-bottom: 50px;
+/* line 25, ../sass/components/_features.scss */
+[class$="features-container"] {
+  margin-bottom: 60px;
 }
 
-/* line 32, ../sass/components/_features.scss */
+/* line 30, ../sass/components/_features.scss */
 .top-features-container [class^="col"]:nth-of-type(1) .feature-box {
   background-color: #4E5FAD;
 }
 
-/* line 38, ../sass/components/_features.scss */
+/* line 36, ../sass/components/_features.scss */
 .top-features-container [class^="col"]:nth-of-type(2) .feature-box {
   background-color: #E63300;
 }
 
-/* line 44, ../sass/components/_features.scss */
+/* line 42, ../sass/components/_features.scss */
 .top-features-container [class^="col"]:nth-of-type(3) .feature-box {
   background-color: #1CC05A;
 }
 
-/* line 49, ../sass/components/_features.scss */
+/* line 47, ../sass/components/_features.scss */
 .feature-box {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -9781,7 +9780,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   height: 320px;
   font-weight: 400;
 }
-/* line 60, ../sass/components/_features.scss */
+/* line 58, ../sass/components/_features.scss */
 .feature-box img {
   position: absolute;
   top: 28px;
@@ -9791,7 +9790,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   height: 80px;
   object-fit: scale-down;
 }
-/* line 74, ../sass/components/_features.scss */
+/* line 72, ../sass/components/_features.scss */
 .feature-box h3 {
   position: absolute;
   top: 124px;
@@ -9803,7 +9802,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   font-weight: 300 !important;
   color: #fff;
 }
-/* line 90, ../sass/components/_features.scss */
+/* line 88, ../sass/components/_features.scss */
 .feature-box p {
   position: absolute;
   top: 190px;
@@ -9820,7 +9819,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   color: rgba(255, 255, 255, 0.6);
   /*          background-color: red;*/
 }
-/* line 112, ../sass/components/_features.scss */
+/* line 110, ../sass/components/_features.scss */
 .feature-box paper-button {
   position: absolute;
   bottom: 0;
@@ -9835,18 +9834,18 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   border-top-right-radius: 0px;
 }
 
-/* line 138, ../sass/components/_features.scss */
+/* line 136, ../sass/components/_features.scss */
 .mini-feature-column h3 {
   margin: 0;
+  margin-top: 10px;
   margin-bottom: 16px;
   padding: 0;
   line-height: 36px;
   color: #5050b0;
   text-align: center;
-  /*          position: absolute;*/
-  font-size: 1.5em;
+  font-size: 2em;
 }
-/* line 151, ../sass/components/_features.scss */
+/* line 149, ../sass/components/_features.scss */
 .mini-feature-column paper-button {
   height: 80px;
   margin: 8px !important;
@@ -9857,7 +9856,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   text-transform: none;
   border-radius: 5px;
 }
-/* line 167, ../sass/components/_features.scss */
+/* line 165, ../sass/components/_features.scss */
 .mini-feature-column paper-button img {
   position: absolute;
   top: 19px;
@@ -9866,7 +9865,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   height: 42px;
   object-fit: scale-down;
 }
-/* line 179, ../sass/components/_features.scss */
+/* line 177, ../sass/components/_features.scss */
 .mini-feature-column paper-button h2 {
   position: absolute;
   top: 10px;
@@ -9876,7 +9875,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   font-size: 1.4em;
   color: #5285FF;
 }
-/* line 193, ../sass/components/_features.scss */
+/* line 191, ../sass/components/_features.scss */
 .mini-feature-column paper-button p {
   position: absolute;
   left: 75px;
