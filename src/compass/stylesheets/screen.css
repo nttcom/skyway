@@ -9836,7 +9836,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
 /* line 138, ../sass/components/_features.scss */
 .mini-feature-column h3 {
   margin: 0;
-  margin-top: 10px;
+  margin-top: 16px;
   margin-bottom: 16px;
   padding: 0;
   line-height: 36px;
