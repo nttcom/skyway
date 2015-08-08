@@ -9776,11 +9776,13 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
 .feature-box {
   margin-top: 10px;
   margin-bottom: 10px;
+  margin-left: 6px;
+  margin-right: 6px;
   padding: 0;
   height: 320px;
   font-weight: 400;
 }
-/* line 58, ../sass/components/_features.scss */
+/* line 60, ../sass/components/_features.scss */
 .feature-box img {
   position: absolute;
   top: 28px;
@@ -9790,7 +9792,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   height: 80px;
   object-fit: scale-down;
 }
-/* line 72, ../sass/components/_features.scss */
+/* line 74, ../sass/components/_features.scss */
 .feature-box h3 {
   position: absolute;
   top: 124px;
@@ -9802,7 +9804,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   font-weight: 300 !important;
   color: #fff;
 }
-/* line 88, ../sass/components/_features.scss */
+/* line 90, ../sass/components/_features.scss */
 .feature-box p {
   position: absolute;
   top: 180px;
@@ -9819,7 +9821,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   color: rgba(255, 255, 255, 0.6);
   /*          background-color: red;*/
 }
-/* line 110, ../sass/components/_features.scss */
+/* line 112, ../sass/components/_features.scss */
 .feature-box paper-button {
   position: absolute;
   bottom: 0;
@@ -9834,7 +9836,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   border-top-right-radius: 0px;
 }
 
-/* line 136, ../sass/components/_features.scss */
+/* line 138, ../sass/components/_features.scss */
 .mini-feature-column h3 {
   margin: 0;
   margin-top: 10px;
@@ -9845,7 +9847,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   text-align: center;
   font-size: 2em;
 }
-/* line 149, ../sass/components/_features.scss */
+/* line 151, ../sass/components/_features.scss */
 .mini-feature-column paper-button {
   height: 80px;
   margin: 8px !important;
@@ -9856,7 +9858,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   text-transform: none;
   border-radius: 5px;
 }
-/* line 165, ../sass/components/_features.scss */
+/* line 167, ../sass/components/_features.scss */
 .mini-feature-column paper-button img {
   position: absolute;
   top: 19px;
@@ -9865,7 +9867,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   height: 42px;
   object-fit: scale-down;
 }
-/* line 177, ../sass/components/_features.scss */
+/* line 179, ../sass/components/_features.scss */
 .mini-feature-column paper-button h2 {
   position: absolute;
   top: 10px;
@@ -9875,7 +9877,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   font-size: 1.4em;
   color: #5285FF;
 }
-/* line 191, ../sass/components/_features.scss */
+/* line 193, ../sass/components/_features.scss */
 .mini-feature-column paper-button p {
   position: absolute;
   left: 75px;
