@@ -89,14 +89,14 @@
     @extend .paper-style;
 
     padding: 20px;
-    padding-top: 42px;
+    padding-top: 40px;
     margin-top: 10px;
     margin-bottom: 10px;
 
     h2 {
         margin: 0;
         text-align: center;
-        font-size: 1.5em;
+        font-size: 1.85em;
         font-weight: 400;
         color: #5f5f5f;
     }
@@ -117,38 +117,38 @@
 }
 
 .signup-div {
-  height: 200px;
-  padding: 40px;
-  h2 {
-    text-align: center;
-    font-size: 2em;
-    font-weight: 400;
-    color: #fff;
-  }
-  a {
-    left: 0;
-    right: 0;
-    margin: auto;
-    margin-bottom: 10px;
-  }
+    height: 220px;
+    padding: 60px;
+    h2 {
+        margin: 0;
+        text-align: center;
+        font-size: 2em;
+        font-weight: 400;
+        color: #fff;
+    }
+    a {
+        left: 0;
+        right: 0;
+        margin: auto;
+        margin-bottom: 10px;
+    }
 }
 
 .divider-short {
-  left: 0;
-  right: 0;
-  margin: auto;
-  margin-top: 24px;
-  margin-bottom: 24px;
-  width: 100px;
-  height: 0px;
-  border-style: solid;
-  border-width: 0;
-  border-top-width: 3px;
-  border-color: $skyway_blue;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    width: 100px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0;
+    border-top-width: 3px;
+    border-color: $skyway_blue;
 }
 
 .btn-center {
-  display: table;
-  margin: auto;
-
+    display: table;
+    margin: auto;
 }

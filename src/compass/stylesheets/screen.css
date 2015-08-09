@@ -9500,7 +9500,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
 /* line 6, ../sass/components/_index.scss */
 .top-section h1 {
   position: relative;
-  top: 44px;
+  top: 42px;
   margin: 0;
   color: #FFF;
   font-size: 32px;
@@ -9509,7 +9509,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
 /* line 14, ../sass/components/_index.scss */
 .top-section h2 {
   position: relative;
-  top: 68px;
+  top: 64px;
   margin: 0;
   margin-bottom: 46px;
   color: #FFF;
@@ -9553,10 +9553,10 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
 .highlight {
   padding-left: 30px;
   padding-right: 30px;
-  height: 200px;
+  height: 210px;
   overflow-y: hidden;
   color: #7f7f7f;
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: 400;
   line-height: 1.5em;
 }
@@ -9565,17 +9565,17 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   display: table;
   margin: auto;
   margin-top: 2px;
-  font-size: 4.2em;
+  font-size: 4.1em;
   text-align: center;
   color: #5285FF;
 }
 /* line 78, ../sass/components/_index.scss */
 .highlight h3 {
   /*    position: absolute;*/
-  margin-top: 16px;
+  margin-top: 18px;
   margin-bottom: 10px;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1.3em;
   font-weight: 400;
 }
 
@@ -9583,7 +9583,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
 /* line 90, ../sass/components/_index.scss */
 .headline {
   margin-top: 10px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 /* line 95, ../sass/components/_index.scss */
@@ -9607,7 +9607,8 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
 
 /* line 113, ../sass/components/_index.scss */
 .headline-text {
-  font-size: 1.1em;
+  margin-left: -10px;
+  font-size: 1.3em;
   line-height: 1.5em;
   color: #7f7f7f;
 }
@@ -9753,22 +9754,22 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   margin-bottom: 60px;
 }
 
-/* line 34, ../sass/components/_features.scss */
+/* line 33, ../sass/components/_features.scss */
 .top-features-container [class^="col"]:nth-of-type(3n+1) .feature-box {
   background-color: #4E5FAD;
 }
 
-/* line 34, ../sass/components/_features.scss */
+/* line 33, ../sass/components/_features.scss */
 .top-features-container [class^="col"]:nth-of-type(3n+2) .feature-box {
   background-color: #E63300;
 }
 
-/* line 34, ../sass/components/_features.scss */
+/* line 33, ../sass/components/_features.scss */
 .top-features-container [class^="col"]:nth-of-type(3n+3) .feature-box {
   background-color: #1CC05A;
 }
 
-/* line 58, ../sass/components/_features.scss */
+/* line 57, ../sass/components/_features.scss */
 .feature-box {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -9778,7 +9779,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   height: 320px;
   font-weight: 400;
 }
-/* line 71, ../sass/components/_features.scss */
+/* line 70, ../sass/components/_features.scss */
 .feature-box img {
   position: absolute;
   top: 28px;
@@ -9788,7 +9789,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   height: 80px;
   object-fit: scale-down;
 }
-/* line 85, ../sass/components/_features.scss */
+/* line 84, ../sass/components/_features.scss */
 .feature-box h3 {
   position: absolute;
   top: 124px;
@@ -9800,7 +9801,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   font-weight: 300 !important;
   color: #fff;
 }
-/* line 101, ../sass/components/_features.scss */
+/* line 100, ../sass/components/_features.scss */
 .feature-box p {
   position: absolute;
   top: 180px;
@@ -9817,7 +9818,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   color: rgba(255, 255, 255, 0.6);
   /*          background-color: red;*/
 }
-/* line 123, ../sass/components/_features.scss */
+/* line 122, ../sass/components/_features.scss */
 .feature-box paper-button {
   position: absolute;
   bottom: 0;
@@ -9832,7 +9833,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   border-top-right-radius: 0px;
 }
 
-/* line 149, ../sass/components/_features.scss */
+/* line 148, ../sass/components/_features.scss */
 .mini-feature-column h3 {
   margin: 0;
   margin-top: 16px;
@@ -9843,7 +9844,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   text-align: center;
   font-size: 2em;
 }
-/* line 162, ../sass/components/_features.scss */
+/* line 161, ../sass/components/_features.scss */
 .mini-feature-column paper-button {
   height: 80px;
   margin: 8px !important;
@@ -9854,7 +9855,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   text-transform: none;
   border-radius: 5px;
 }
-/* line 178, ../sass/components/_features.scss */
+/* line 177, ../sass/components/_features.scss */
 .mini-feature-column paper-button img {
   position: absolute;
   top: 19px;
@@ -9863,7 +9864,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   height: 42px;
   object-fit: scale-down;
 }
-/* line 190, ../sass/components/_features.scss */
+/* line 189, ../sass/components/_features.scss */
 .mini-feature-column paper-button h2 {
   position: absolute;
   top: 10px;
@@ -9873,7 +9874,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   font-size: 1.4em;
   color: #5285FF;
 }
-/* line 204, ../sass/components/_features.scss */
+/* line 203, ../sass/components/_features.scss */
 .mini-feature-column paper-button p {
   position: absolute;
   left: 75px;
@@ -9947,7 +9948,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
 /* line 87, ../sass/screen.scss */
 .paper-style-div {
   padding: 20px;
-  padding-top: 42px;
+  padding-top: 40px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -9955,7 +9956,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
 .paper-style-div h2 {
   margin: 0;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.85em;
   font-weight: 400;
   color: #5f5f5f;
 }
@@ -9977,17 +9978,18 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
 
 /* line 119, ../sass/screen.scss */
 .signup-div {
-  height: 200px;
-  padding: 40px;
+  height: 220px;
+  padding: 60px;
 }
 /* line 122, ../sass/screen.scss */
 .signup-div h2 {
+  margin: 0;
   text-align: center;
   font-size: 2em;
   font-weight: 400;
   color: #fff;
 }
-/* line 128, ../sass/screen.scss */
+/* line 129, ../sass/screen.scss */
 .signup-div a {
   left: 0;
   right: 0;
@@ -9995,7 +9997,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   margin-bottom: 10px;
 }
 
-/* line 136, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 .divider-short {
   left: 0;
   right: 0;
@@ -10010,7 +10012,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   border-color: #5285FF;
 }
 
-/* line 150, ../sass/screen.scss */
+/* line 151, ../sass/screen.scss */
 .btn-center {
   display: table;
   margin: auto;

@@ -5,7 +5,7 @@
 .top-section {
     h1 {
         position: relative;
-        top: 44px;
+        top: 42px;
         margin: 0;
         color: #FFF;
         font-size: 32px;
@@ -13,7 +13,7 @@
     }
     h2 {
         position: relative;
-        top: 68px;
+        top: 64px;
         margin: 0;
         margin-bottom: 46px;
         color: #FFF;
@@ -58,11 +58,11 @@
 .highlight {
     padding-left: 30px;
     padding-right: 30px;
-    height: 200px;
+    height: 210px;
     overflow-y: hidden;
 
     color: $light_font;
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: 400;
     line-height: 1.5em;
 
@@ -70,17 +70,17 @@
         display: table;
         margin: auto;
         margin-top: 2px;
-        font-size: 4.2em;
+        font-size: 4.1em;
         text-align: center;
         color: $skyway_blue;
     }
 
     h3 {
         /*    position: absolute;*/
-        margin-top: 16px;
+        margin-top: 18px;
         margin-bottom: 10px;
         text-align: center;
-        font-size: 1.2em;
+        font-size: 1.3em;
         font-weight: 400;
     }
 }
@@ -89,7 +89,7 @@
 
 .headline {
     margin-top: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .headline-date {
@@ -111,7 +111,8 @@
 }
 
 .headline-text {
-    font-size: 1.1em;
+    margin-left: -10px;
+    font-size: 1.3em;
     line-height: 1.5em;
     color: $light_font;
 }

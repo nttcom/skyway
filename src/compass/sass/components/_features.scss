@@ -28,7 +28,6 @@
 
 $colours: #4E5FAD, #E63300, #1CC05A;
 
-
 @for $i from 1 through length($colours) {
     .top-features-container [class^="col"]:nth-of-type(#{length($colours)}n+#{$i}) {
         .feature-box {
