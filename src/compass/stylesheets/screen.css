@@ -9839,23 +9839,12 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   .top-btn-mobile {
     display: inherit;
   }
-
-  /* line 165, ../sass/pages/_info-page.scss */
-  .background-blue {
-    padding-top: 0 !important;
-  }
-
-  /* line 169, ../sass/pages/_info-page.scss */
-  .paper-style-div {
-    margin: 0 !important;
-    border-radius: 0;
-  }
 }
-/* line 179, ../sass/pages/_info-page.scss */
+/* line 170, ../sass/pages/_info-page.scss */
 .howto-step {
   margin-bottom: 10px;
 }
-/* line 183, ../sass/pages/_info-page.scss */
+/* line 174, ../sass/pages/_info-page.scss */
 .howto-step img {
   float: right;
   margin-right: -10px;
@@ -9864,20 +9853,20 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   width: 50px;
   object-fit: scale-down;
 }
-/* line 196, ../sass/pages/_info-page.scss */
+/* line 187, ../sass/pages/_info-page.scss */
 .howto-step .howto-step-content {
   padding: 12px;
   margin-bottom: 20px;
   border-radius: 5px;
   background-color: rgba(82, 133, 255, 0.12);
 }
-/* line 204, ../sass/pages/_info-page.scss */
+/* line 195, ../sass/pages/_info-page.scss */
 .howto-step .howto-step-content p {
   margin: 0;
   padding: 0;
   font-size: 1.2em;
 }
-/* line 212, ../sass/pages/_info-page.scss */
+/* line 203, ../sass/pages/_info-page.scss */
 .howto-step .code-section {
   padding: 16px;
   margin: 8px;
@@ -9885,7 +9874,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   color: #fff;
   background-color: #3f3f3f;
 }
-/* line 235, ../sass/pages/_info-page.scss */
+/* line 226, ../sass/pages/_info-page.scss */
 .howto-step pre {
   color: inherit;
   background-color: inherit;
@@ -9897,7 +9886,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   line-height: 16px;
 }
 
-/* line 250, ../sass/pages/_info-page.scss */
+/* line 241, ../sass/pages/_info-page.scss */
 .howto-step-count {
   margin-left: 20px;
 }
@@ -10179,4 +10168,18 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   border-width: 0;
   border-top-width: 3px;
   border-color: #5285FF;
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 767px) {
+  /* line 156, ../sass/screen.scss */
+  .background-blue {
+    padding: 0 !important;
+  }
+
+  /* line 160, ../sass/screen.scss */
+  .paper-style-div {
+    margin: 0 !important;
+    border-radius: 0;
+  }
 }

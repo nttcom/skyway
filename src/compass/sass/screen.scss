@@ -148,3 +148,17 @@
     border-top-width: 3px;
     border-color: $skyway_blue;
 }
+
+
+
+/* Portrait phones and smaller */
+@media (max-width: 767px) {
+    .background-blue {
+        padding: 0 !important;
+    }
+    
+    .paper-style-div {
+        margin: 0 !important;
+        border-radius: 0;
+    }
+}
