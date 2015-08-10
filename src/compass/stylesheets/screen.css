@@ -9588,6 +9588,111 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   background-color: #1EC75F;
 }
 
+/* Share button styles */
+/* line 3, ../sass/components/_share.scss */
+.share-button {
+  position: fixed;
+  right: 24px;
+  width: 50px;
+  height: 50px;
+  z-index: 10;
+  /*    display:none;*/
+}
+
+/* line 16, ../sass/components/_share.scss */
+.share-button:hover {
+  transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.1);
+}
+
+/* line 21, ../sass/components/_share.scss */
+label {
+  position: fixed;
+  right: 20px;
+  height: 30px;
+  line-height: 30px;
+  margin: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #777;
+  background-color: #eee;
+  opacity: 0;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+/* line 41, ../sass/components/_share.scss */
+#share-button-tw {
+  bottom: 24px;
+  background: #55ACEE;
+}
+
+/* line 51, ../sass/components/_share.scss */
+#share-button-tw ::content * {
+  height: 28px;
+  width: 28px;
+}
+
+/* line 56, ../sass/components/_share.scss */
+#twitter-share-label {
+  bottom: 24px;
+}
+
+/* line 60, ../sass/components/_share.scss */
+#share-button-fb {
+  bottom: 90px;
+  background: #4E5FAD;
+  --iron-icon-height: 40px;
+  --iron-icon-width: 40px;
+  --paper-fab-background: #4E5FAD;
+}
+
+/* line 73, ../sass/components/_share.scss */
+#share-button-fb::icon {
+  height: 40px;
+  width: 40px;
+}
+
+/* line 78, ../sass/components/_share.scss */
+#facebook-share-label {
+  bottom: 90px;
+}
+
+/* line 82, ../sass/components/_share.scss */
+#share-button-git {
+  bottom: 156px;
+  background: #3f3f3f;
+  --iron-icon-height: 36px;
+  --iron-icon-width: 36px;
+}
+
+/* line 92, ../sass/components/_share.scss */
+#github-share-label {
+  bottom: 156px;
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 767px) {
+  /* line 98, ../sass/components/_share.scss */
+  .share-button {
+    right: 8px;
+  }
+
+  /* line 102, ../sass/components/_share.scss */
+  #share-button-tw {
+    bottom: 8px;
+  }
+
+  /* line 106, ../sass/components/_share.scss */
+  #share-button-fb {
+    bottom: 74px;
+  }
+
+  /* line 110, ../sass/components/_share.scss */
+  #share-button-git {
+    bottom: 140px;
+  }
+}
 /* Front Page - Animation */
 /* line 6, ../sass/pages/_index.scss */
 .top-section h1 {
@@ -10049,7 +10154,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
 }
 
 /* Common Styles */
-/* line 25, ../sass/screen.scss */
+/* line 26, ../sass/screen.scss */
 * {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -10057,18 +10162,18 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   font-weight: 400 !important;
 }
 
-/* line 39, ../sass/screen.scss */
+/* line 40, ../sass/screen.scss */
 .top-section {
   height: 600px;
   background-color: #5285FF;
 }
 
-/* line 44, ../sass/screen.scss */
+/* line 45, ../sass/screen.scss */
 .top-section-short {
   height: 240px;
   background-color: #5285FF;
 }
-/* line 48, ../sass/screen.scss */
+/* line 49, ../sass/screen.scss */
 .top-section-short h1 {
   position: relative;
   top: 22%;
@@ -10077,7 +10182,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   color: #FFF;
   font-size: 4em;
 }
-/* line 61, ../sass/screen.scss */
+/* line 62, ../sass/screen.scss */
 .top-section-short h2 {
   position: relative;
   top: 25%;
@@ -10087,7 +10192,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   font-size: 2em;
 }
 
-/* line 72, ../sass/screen.scss */
+/* line 73, ../sass/screen.scss */
 .background, .background-blue {
   position: relative;
   top: 0;
@@ -10098,19 +10203,19 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   background-color: #fff;
 }
 
-/* line 82, ../sass/screen.scss */
+/* line 83, ../sass/screen.scss */
 .background-blue {
   background-color: #2548BE;
 }
 
-/* line 88, ../sass/screen.scss */
+/* line 89, ../sass/screen.scss */
 .paper-style-div {
   padding: 20px;
   padding-top: 40px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 97, ../sass/screen.scss */
+/* line 98, ../sass/screen.scss */
 .paper-style-div h2 {
   margin: 0;
   text-align: center;
@@ -10119,7 +10224,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   color: #5f5f5f;
 }
 
-/* line 106, ../sass/screen.scss */
+/* line 107, ../sass/screen.scss */
 .divider {
   left: 0;
   right: 0;
@@ -10134,12 +10239,12 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   border-color: #5285FF;
 }
 
-/* line 120, ../sass/screen.scss */
+/* line 121, ../sass/screen.scss */
 .signup-div {
   height: 220px;
   padding: 60px;
 }
-/* line 123, ../sass/screen.scss */
+/* line 124, ../sass/screen.scss */
 .signup-div h2 {
   margin: 0;
   text-align: center;
@@ -10147,7 +10252,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   font-weight: 400;
   color: #fff;
 }
-/* line 130, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 .signup-div a {
   left: 0;
   right: 0;
@@ -10155,7 +10260,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   margin-bottom: 10px;
 }
 
-/* line 138, ../sass/screen.scss */
+/* line 139, ../sass/screen.scss */
 .divider-short {
   left: 0;
   right: 0;
@@ -10172,12 +10277,12 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
 
 /* Portrait phones and smaller */
 @media (max-width: 767px) {
-  /* line 156, ../sass/screen.scss */
+  /* line 157, ../sass/screen.scss */
   .background-blue {
     padding: 0 !important;
   }
 
-  /* line 160, ../sass/screen.scss */
+  /* line 161, ../sass/screen.scss */
   .paper-style-div {
     margin: 0 !important;
     border-radius: 0;
