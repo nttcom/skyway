@@ -9780,7 +9780,7 @@ label {
 /* line 90, ../sass/pages/_index.scss */
 .headline {
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 /* line 95, ../sass/pages/_index.scss */
@@ -9810,6 +9810,30 @@ label {
   color: #7f7f7f;
 }
 
+/* Portrait phones and smaller */
+@media (max-width: 767px) {
+  /* line 122, ../sass/pages/_index.scss */
+  .highlight {
+    text-align: center;
+    height: 170px;
+  }
+  /* line 126, ../sass/pages/_index.scss */
+  .highlight i {
+    font-size: 3em;
+  }
+
+  /* line 131, ../sass/pages/_index.scss */
+  .headline-date {
+    display: table;
+    margin: auto;
+    margin-bottom: 8px;
+  }
+
+  /* line 137, ../sass/pages/_index.scss */
+  .headline-text {
+    text-align: center;
+  }
+}
 /* line 4, ../sass/pages/_info-page.scss */
 .top-container-left {
   height: 600px;

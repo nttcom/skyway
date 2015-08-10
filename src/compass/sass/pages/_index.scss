@@ -89,7 +89,7 @@
 
 .headline {
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .headline-date {
@@ -115,4 +115,26 @@
     font-size: 1.3em;
     line-height: 1.5em;
     color: $light_font;
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 767px) {
+    .highlight {
+        text-align: center;   
+        height: 170px;
+
+        i {
+            font-size: 3em;
+        }
+    }
+    
+    .headline-date {
+        display: table;
+        margin: auto;
+        margin-bottom: 8px;
+    }
+    
+    .headline-text {
+        text-align: center;
+    }
 }
