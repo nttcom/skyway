@@ -66,6 +66,14 @@ $btn-colour: $skyway-blue;
     margin: auto;
 }
 
+.btn-inverted {
+    margin-top: -10px;
+    margin-bottom: 10px;
+    
+    color: #fff;
+    background-color: $skyway-blue;
+}
+
 .btn-top-section {
     position: absolute;
     
