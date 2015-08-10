@@ -9614,14 +9614,15 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
 }
 
 /* line 4, ../sass/components/_info-page.scss */
-.top-left-div {
+.top-container-left {
   height: 600px;
   background-color: royalblue;
+  overflow: hidden;
 }
-/* line 8, ../sass/components/_info-page.scss */
-.top-left-div h3 {
+/* line 10, ../sass/components/_info-page.scss */
+.top-container-left .subpage-title {
+  padding-top: 54px;
   margin: 0;
-  margin-top: 64px;
   margin-bottom: 40px;
   color: #FFF;
   font-size: 3em;
@@ -9629,60 +9630,119 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   text-align: center;
 }
 
-/* line 22, ../sass/components/_info-page.scss */
+/* line 27, ../sass/components/_info-page.scss */
 .subpage-highlight {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   height: 100px;
 }
-/* line 29, ../sass/components/_info-page.scss */
+/* line 34, ../sass/components/_info-page.scss */
 .subpage-highlight i {
   line-height: 100px;
   text-align: center;
   margin-left: -10px;
   color: #fff;
-  font-size: 3.2em;
+  font-size: 3.8em;
 }
-/* line 38, ../sass/components/_info-page.scss */
+/* line 43, ../sass/components/_info-page.scss */
 .subpage-highlight .highlight-text {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  margin-left: 10px;
   color: #fff;
   opacity: 0.5;
-  font-size: 1.25em;
+  font-size: 1.5em;
   font-weight: 400;
   height: auto;
 }
 
-/* line 54, ../sass/components/_info-page.scss */
-.top-right-div {
+/* line 61, ../sass/components/_info-page.scss */
+.top-container-right {
   height: 600px;
   background-color: #5285FF;
+  overflow: hidden;
 }
-/* line 58, ../sass/components/_info-page.scss */
-.top-right-div #animated-logo-js {
+/* line 69, ../sass/components/_info-page.scss */
+.top-container-right .subpage-title-mobile {
+  padding-top: 54px;
+  margin: 0;
+  margin-bottom: 40px;
+  color: #FFF;
+  font-size: 3em;
+  font-weight: 400;
+  text-align: center;
+  display: none;
+}
+
+/* line 86, ../sass/components/_info-page.scss */
+.top-image-container {
+  position: relative;
+  height: calc(600px - 80px);
+}
+/* line 93, ../sass/components/_info-page.scss */
+.top-image-container #animated-logo-js {
   top: 90px;
 }
-/* line 62, ../sass/components/_info-page.scss */
-.top-right-div .device-image {
-  display: table;
+/* line 97, ../sass/components/_info-page.scss */
+.top-image-container .device-image {
+  position: absolute;
+  left: 0;
+  right: 0;
   margin: auto;
-  margin-top: 280px;
-  margin-bottom: 30px;
-  bottom: 0;
+  bottom: 40px;
   max-height: 260px;
+  width: 100%;
   max-width: 740px;
   object-fit: scale-down;
 }
 
-/* line 78, ../sass/components/_info-page.scss */
+/* Portrait phones and smaller */
+@media (max-width: 767px) {
+  /* line 122, ../sass/components/_info-page.scss */
+  .subpage-title {
+    display: none;
+  }
+
+  /* line 126, ../sass/components/_info-page.scss */
+  .subpage-title-mobile {
+    display: inherit;
+    color: red;
+  }
+
+  /* line 131, ../sass/components/_info-page.scss */
+  .top-container-right {
+    height: 450px;
+  }
+
+  /* line 135, ../sass/components/_info-page.scss */
+  .top-image-container {
+    height: 450px;
+  }
+
+  /* line 140, ../sass/components/_info-page.scss */
+  .top-container-left {
+    height: 450px;
+  }
+
+  /* line 144, ../sass/components/_info-page.scss */
+  .background-blue {
+    padding-top: 0 !important;
+  }
+
+  /* line 148, ../sass/components/_info-page.scss */
+  .paper-style-div {
+    margin: 0 !important;
+    border-radius: 0;
+  }
+}
+/* line 158, ../sass/components/_info-page.scss */
 .howto-step {
   margin-bottom: 10px;
 }
-/* line 82, ../sass/components/_info-page.scss */
+/* line 162, ../sass/components/_info-page.scss */
 .howto-step img {
   float: right;
   margin-right: -10px;
@@ -9691,18 +9751,18 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   width: 50px;
   object-fit: scale-down;
 }
-/* line 95, ../sass/components/_info-page.scss */
+/* line 175, ../sass/components/_info-page.scss */
 .howto-step .howto-step-content {
   padding: 12px;
   margin-bottom: 20px;
   border-radius: 5px;
   background-color: rgba(82, 133, 255, 0.12);
 }
-/* line 102, ../sass/components/_info-page.scss */
+/* line 182, ../sass/components/_info-page.scss */
 .howto-step .howto-step-content p {
   padding-bottom: 20px;
 }
-/* line 107, ../sass/components/_info-page.scss */
+/* line 187, ../sass/components/_info-page.scss */
 .howto-step .code-section {
   padding: 16px;
   margin: 8px;
@@ -9710,7 +9770,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   color: #fff;
   background-color: #3f3f3f;
 }
-/* line 130, ../sass/components/_info-page.scss */
+/* line 210, ../sass/components/_info-page.scss */
 .howto-step pre {
   color: inherit;
   background-color: inherit;
@@ -9721,7 +9781,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   font-size: 13px;
   line-height: 16px;
 }
-/* line 143, ../sass/components/_info-page.scss */
+/* line 223, ../sass/components/_info-page.scss */
 .howto-step paper-button {
   float: left;
   margin-top: -8px !important;
