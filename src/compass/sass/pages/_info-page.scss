@@ -26,8 +26,7 @@
 
 .subpage-highlight {
 //    display: table;    
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin: 25px 0px;
     height: 100px;
     
 
@@ -105,11 +104,7 @@
         left: 0;
         right: 0;
         margin: auto;
-        bottom: 40px;
-//        margin-top: 280px;
-//        margin-bottom: 30px;
-        
-        
+        bottom: 40px;        
         
         max-height: 260px;
         width: 100%;
@@ -120,29 +115,51 @@
     
 }
 
+.top-btn-mobile {
+    position: absolute;
+    bottom: 0;
+    
+    width: 100%;
+    margin-left: -15px;
+    margin-bottom: 10px;
+    
+    display: none;
+    
+}
+
 /* Portrait phones and smaller */
 @media (max-width: 767px) {
-
-    .subpage-title {
-        display: none;
-    }
-    
-    .subpage-title-mobile {
-        display: inherit !important;
-        color: red;
-    }
     
     .top-container-right {
         height: 450px;
     }
     
     .top-image-container {
-        height: 450px;
-        
+        height: 450px;    
     }
     
     .top-container-left {
-        height: 450px;
+        height: 470px;
+    }
+    
+    .subpage-title {
+        display: none;
+    }
+    
+    .subpage-title-mobile {
+        display: inherit !important;
+    }
+    
+    .top-btn-desktop {
+        display: none;
+    }
+    
+    .top-btn-mobile {
+        display: inherit;
+    }
+    
+    .subpage-highlight { 
+        
     }
     
     .background-blue {
@@ -178,6 +195,7 @@
     
     .howto-step-content {
         padding: 12px;
+        
         margin-bottom: 20px;
         
         border-radius: 5px;
@@ -185,7 +203,7 @@
         
         p {
             margin: 0;
-            padding-bottom: 20px;
+            padding: 0;
             
             font-size: 1.2em;
         }
@@ -206,7 +224,7 @@
         
         padding: 16px;
         margin: 8px;
-        margin-top: 0px;
+        margin-top: 10px;
         
         color: #fff;
         background-color: #3f3f3f;
@@ -225,25 +243,6 @@
         font-family: 'Lucida Console', Monaco, monospace;
         font-size: 13px;
         line-height: 16px;
-    }
-    
-    paper-button {
-        float: left;
-
-        margin-top: -8px !important;
-        margin-left: 6px !important;
-        margin-right: 10px !important;
-        margin-bottom: 4px !important;
-
-        width: 210px;
-        height: 48px;
-
-        color: #fff;
-        background-color: #1EC75F;
-        
-        font-size: 1.2em;
-        font-weight: 400;
-        text-transform: none;
     }
     
 }

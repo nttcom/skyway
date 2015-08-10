@@ -9314,7 +9314,17 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   color: inherit;
 }
 
-/* line 14, ../sass/utilities/_variables.scss */
+/* line 13, ../sass/utilities/_variables.scss */
+.paper-style-layer-1, .btn-ink {
+  position: relative;
+  padding: 8px;
+  background-color: #fff;
+  /* See /bower_components/paper-styles/shadow.html */
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+/* line 27, ../sass/utilities/_variables.scss */
 .paper-style, .howto-step .code-section, .feature-box, .paper-style-div {
   position: relative;
   padding: 8px;
@@ -9324,7 +9334,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   border-radius: 5px;
 }
 
-/* line 30, ../sass/utilities/_variables.scss */
+/* line 43, ../sass/utilities/_variables.scss */
 .h_r {
   background-color: red;
   border-color: orange;
@@ -9332,7 +9342,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   border-style: solid;
 }
 
-/* line 38, ../sass/utilities/_variables.scss */
+/* line 51, ../sass/utilities/_variables.scss */
 .h_b {
   background-color: blue;
   border-color: limegreen;
@@ -9496,31 +9506,33 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   color: #bfbfbf;
 }
 
-/* line 3, ../sass/components/_button.scss */
-.ink-btn {
+/* line 7, ../sass/components/_button.scss */
+.btn-ink {
   position: relative;
   display: block;
-  width: 13em;
-  height: 3em;
-  margin: 2em;
+  width: 160px;
+  height: 40px;
+  padding: 0 !important;
   border: none;
   outline: none;
-  letter-spacing: .2em;
+  font-size: 16px;
   font-weight: bold;
-  background: #dfdfdf;
+  color: #5285FF;
+  background: #fff;
   cursor: pointer;
   overflow: hidden;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
-/* line 23, ../sass/components/_button.scss */
+/* line 33, ../sass/components/_button.scss */
 .ripple {
   position: absolute;
-  background: rgba(0, 0, 0, 0.25);
+  background: #5285FF;
+  opacity: 0.3;
   border-radius: 100%;
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
@@ -9528,7 +9540,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   pointer-events: none;
 }
 
-/* line 32, ../sass/components/_button.scss */
+/* line 44, ../sass/components/_button.scss */
 .ripple.show {
   -webkit-animation: ripple .5s ease-out;
   animation: ripple .5s ease-out;
@@ -9548,6 +9560,34 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
     opacity: 0;
   }
 }
+/* line 64, ../sass/components/_button.scss */
+.btn-center {
+  display: table;
+  margin: auto;
+}
+
+/* line 69, ../sass/components/_button.scss */
+.btn-top-section {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+/* line 79, ../sass/components/_button.scss */
+.btn-howto {
+  float: left;
+  margin: 0;
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-top: 8px;
+  margin-bottom: 4px;
+  width: 220px;
+  color: #fff;
+  background-color: #1EC75F;
+}
+
 /* Front Page - Animation */
 /* line 6, ../sass/pages/_index.scss */
 .top-section h1 {
@@ -9684,11 +9724,10 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
 
 /* line 27, ../sass/pages/_info-page.scss */
 .subpage-highlight {
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin: 25px 0px;
   height: 100px;
 }
-/* line 34, ../sass/pages/_info-page.scss */
+/* line 33, ../sass/pages/_info-page.scss */
 .subpage-highlight i {
   line-height: 100px;
   text-align: center;
@@ -9696,7 +9735,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   color: #fff;
   font-size: 3.8em;
 }
-/* line 43, ../sass/pages/_info-page.scss */
+/* line 42, ../sass/pages/_info-page.scss */
 .subpage-highlight .highlight-text {
   position: relative;
   top: 50%;
@@ -9711,13 +9750,13 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   height: auto;
 }
 
-/* line 61, ../sass/pages/_info-page.scss */
+/* line 60, ../sass/pages/_info-page.scss */
 .top-container-right {
   height: 600px;
   background-color: #5285FF;
   overflow: hidden;
 }
-/* line 69, ../sass/pages/_info-page.scss */
+/* line 68, ../sass/pages/_info-page.scss */
 .top-container-right .subpage-title-mobile {
   position: absolute;
   margin: 0;
@@ -9732,16 +9771,16 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   display: none;
 }
 
-/* line 90, ../sass/pages/_info-page.scss */
+/* line 89, ../sass/pages/_info-page.scss */
 .top-image-container {
   position: relative;
   height: calc(600px - 80px);
 }
-/* line 97, ../sass/pages/_info-page.scss */
+/* line 96, ../sass/pages/_info-page.scss */
 .top-image-container #animated-logo-js {
   top: 90px;
 }
-/* line 101, ../sass/pages/_info-page.scss */
+/* line 100, ../sass/pages/_info-page.scss */
 .top-image-container .device-image {
   position: absolute;
   left: 0;
@@ -9754,50 +9793,69 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   object-fit: scale-down;
 }
 
+/* line 118, ../sass/pages/_info-page.scss */
+.top-btn-mobile {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-left: -15px;
+  margin-bottom: 10px;
+  display: none;
+}
+
 /* Portrait phones and smaller */
 @media (max-width: 767px) {
-  /* line 126, ../sass/pages/_info-page.scss */
-  .subpage-title {
-    display: none;
-  }
-
-  /* line 130, ../sass/pages/_info-page.scss */
-  .subpage-title-mobile {
-    display: inherit !important;
-    color: red;
-  }
-
-  /* line 135, ../sass/pages/_info-page.scss */
+  /* line 133, ../sass/pages/_info-page.scss */
   .top-container-right {
     height: 450px;
   }
 
-  /* line 139, ../sass/pages/_info-page.scss */
+  /* line 137, ../sass/pages/_info-page.scss */
   .top-image-container {
     height: 450px;
   }
 
-  /* line 144, ../sass/pages/_info-page.scss */
+  /* line 141, ../sass/pages/_info-page.scss */
   .top-container-left {
-    height: 450px;
+    height: 470px;
   }
 
-  /* line 148, ../sass/pages/_info-page.scss */
+  /* line 145, ../sass/pages/_info-page.scss */
+  .subpage-title {
+    display: none;
+  }
+
+  /* line 149, ../sass/pages/_info-page.scss */
+  .subpage-title-mobile {
+    display: inherit !important;
+  }
+
+  /* line 153, ../sass/pages/_info-page.scss */
+  .top-btn-desktop {
+    display: none;
+  }
+
+  /* line 157, ../sass/pages/_info-page.scss */
+  .top-btn-mobile {
+    display: inherit;
+  }
+
+  /* line 165, ../sass/pages/_info-page.scss */
   .background-blue {
     padding-top: 0 !important;
   }
 
-  /* line 152, ../sass/pages/_info-page.scss */
+  /* line 169, ../sass/pages/_info-page.scss */
   .paper-style-div {
     margin: 0 !important;
     border-radius: 0;
   }
 }
-/* line 162, ../sass/pages/_info-page.scss */
+/* line 179, ../sass/pages/_info-page.scss */
 .howto-step {
   margin-bottom: 10px;
 }
-/* line 166, ../sass/pages/_info-page.scss */
+/* line 183, ../sass/pages/_info-page.scss */
 .howto-step img {
   float: right;
   margin-right: -10px;
@@ -9806,28 +9864,28 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   width: 50px;
   object-fit: scale-down;
 }
-/* line 179, ../sass/pages/_info-page.scss */
+/* line 196, ../sass/pages/_info-page.scss */
 .howto-step .howto-step-content {
   padding: 12px;
   margin-bottom: 20px;
   border-radius: 5px;
   background-color: rgba(82, 133, 255, 0.12);
 }
-/* line 186, ../sass/pages/_info-page.scss */
+/* line 204, ../sass/pages/_info-page.scss */
 .howto-step .howto-step-content p {
   margin: 0;
-  padding-bottom: 20px;
+  padding: 0;
   font-size: 1.2em;
 }
-/* line 194, ../sass/pages/_info-page.scss */
+/* line 212, ../sass/pages/_info-page.scss */
 .howto-step .code-section {
   padding: 16px;
   margin: 8px;
-  margin-top: 0px;
+  margin-top: 10px;
   color: #fff;
   background-color: #3f3f3f;
 }
-/* line 217, ../sass/pages/_info-page.scss */
+/* line 235, ../sass/pages/_info-page.scss */
 .howto-step pre {
   color: inherit;
   background-color: inherit;
@@ -9838,23 +9896,8 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   font-size: 13px;
   line-height: 16px;
 }
-/* line 230, ../sass/pages/_info-page.scss */
-.howto-step paper-button {
-  float: left;
-  margin-top: -8px !important;
-  margin-left: 6px !important;
-  margin-right: 10px !important;
-  margin-bottom: 4px !important;
-  width: 210px;
-  height: 48px;
-  color: #fff;
-  background-color: #1EC75F;
-  font-size: 1.2em;
-  font-weight: 400;
-  text-transform: none;
-}
 
-/* line 251, ../sass/pages/_info-page.scss */
+/* line 250, ../sass/pages/_info-page.scss */
 .howto-step-count {
   margin-left: 20px;
 }
@@ -10136,10 +10179,4 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   border-width: 0;
   border-top-width: 3px;
   border-color: #5285FF;
-}
-
-/* line 152, ../sass/screen.scss */
-.btn-center {
-  display: table;
-  margin: auto;
 }

@@ -35,13 +35,15 @@ description: SkyWayのJavaScript SDKを公開しています。SkyWayを使え�
                             <img class="device-image" src="{{ site.homedir[page.lang] }}images/top_images/js_top.png">
 
                         </div>
-<!--                        <script src="{{ site.homedir[page.lang] }}src/javascript/button.js"></script>-->
-                        <button class="ink-btn">Button</button>
                         
-                            <a target="_blank" href='https://skyway.io/ds/registration/'><paper-button class="subpage-topSectionButton white" raised>登録を行う</paper-button></a>
                     </div>
                 </div>
             </div>
+
+            <a class="top-btn-desktop" target="_blank" href='https://skyway.io/ds/registration/'>
+                <button class="btn-ink btn-top-section">登録を行う</button>
+            </a>        
+
         </div>
         
         <!-- Highlight Side (Right/Bottom on Mobile, PULLED Left on Desktop) -->
@@ -63,8 +65,23 @@ description: SkyWayのJavaScript SDKを公開しています。SkyWayを使え�
                 <div class="col-xs-1 col-xs-offset-1"><i class="fa fa-star"></i></div>
                 <div class="col-xs-9 highlight-text">豊富な拡張機能(音声認識、多人数接続、画面共有など)を利用可能</div>
             </div>
-
-            <a href='documentation.html'><paper-button class="subpage-topSectionButton white" raised>ドキュメント</paper-button></a>
+    
+            <a class="top-btn-desktop" href='documentation.html'>
+                <button class="btn-ink btn-top-section">ドキュメント</button>
+            </a>
+            
+            <div class="top-btn-mobile">
+                <div class="col-xs-5 col-xs-offset-1">
+                    <a target="_blank" href='https://skyway.io/ds/registration/'>
+                        <button class="btn-ink btn-top-section">登録を行う</button>
+                    </a> 
+                </div>
+                <div class="col-xs-5">
+                    <a href='documentation.html'>
+                        <button class="btn-ink btn-top-section">ドキュメント</button>
+                    </a>
+                </div>
+            </div>
 
         </div>
         
@@ -90,9 +107,11 @@ description: SkyWayのJavaScript SDKを公開しています。SkyWayを使え�
                     </div>
                     <div class="col-md-8 col-xs-10 howto-step-content">
                         <p>開発者登録を行い、APIキーを申し込みます。</p>
+                        
                         <a target="_blank" href='https://skyway.io/ds/registration/'>
-                            <paper-button raised>開発者登録を行う（無料）</paper-button>
-                        </a>
+                            <button class="btn-ink btn-howto">開発者登録を行う（無料）</button>
+                        </a> 
+                        
                     </div>
                 </div>
 
@@ -130,8 +149,14 @@ peer.on('open', function(id) {
                     </div>
                     <div class="col-md-8 col-xs-10 howto-step-content">
                         <p>開発に必要な情報を収集しましょう。</p>
-                        <a href="docs/#JS"><paper-button raised>スタートガイドを見る</paper-button></a>
-                        <a href='support.html'><paper-button raised>サポート</paper-button></a>
+                        
+                        <a href="docs/#JS">
+                            <button class="btn-ink btn-howto">スタートガイドを見る</button>
+                        </a>
+                        <a href="support.html">
+                            <button class="btn-ink btn-howto">サポート</button>
+                        </a> 
+
                     </div>
                 </div>
                 
@@ -143,9 +168,11 @@ peer.on('open', function(id) {
         <div class="col-sm-12 signup-div">
             <h2 id="signup-header">SkyWayは無料で利用可能です！</h2>
             <div class="divider-short"></div>
-            <a href='https://skyway.io/ds/registration/' target="_blank" class="btn-link btn-center">
-                <button type="submit" class="btn btn-default">登録を行う</button>
-            </a>
+            
+            <a href='https://skyway.io/ds/registration/' target="_blank">
+                <button class="btn-ink btn-center">登録を行う</button>
+            </a>  
+        
         </div>
     </div>
     
