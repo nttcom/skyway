@@ -15,4 +15,30 @@ description: WebRTCは、ブラウザやアプリ間でリアルタイムに映�
 <!-- Main Page Content -->
 
 <div class="background">
+    
+    <div class="container">
+    
+        {% for post in site.posts %}
+            <div class="row news-headline">
+                <div class="col-sm-2">
+                    <div class="row">
+                        <div class="col-sm-10 col-sm-offset-1 news-headline-date">
+                            {{ post.date | date: "%Y.%d.%m " }}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-10 news-headline-text">{{ post.excerpt }}</div>
+            </div>
+            <div class="divider"></div>
+        {% endfor %}
+        
+<!--
+        
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1">
+                    
+                </div>
+            </div>
+-->
+    
 </div>

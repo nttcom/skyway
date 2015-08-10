@@ -9786,19 +9786,13 @@ label {
 
 /* Front Page - News */
 /* line 90, ../sass/pages/_index.scss */
-.headline {
+.mini-headline {
   margin-top: 10px;
   margin-bottom: 15px;
 }
 
 /* line 95, ../sass/pages/_index.scss */
-.headline-date {
-  /* TODO: Responsive formatting */
-  /*
-    left: 0;
-    right: 0;
-    margin: auto;
-  */
+.mini-headline-date {
   margin-bottom: 8px;
   max-width: 160px;
   height: 28px;
@@ -9810,8 +9804,8 @@ label {
   border-radius: 5px;
 }
 
-/* line 113, ../sass/pages/_index.scss */
-.headline-text {
+/* line 107, ../sass/pages/_index.scss */
+.mini-headline-text {
   margin-left: -10px;
   font-size: 1.3em;
   line-height: 1.5em;
@@ -9820,28 +9814,53 @@ label {
 
 /* Portrait phones and smaller */
 @media (max-width: 767px) {
-  /* line 122, ../sass/pages/_index.scss */
+  /* line 116, ../sass/pages/_index.scss */
   .highlight {
     text-align: center;
     height: 170px;
   }
-  /* line 126, ../sass/pages/_index.scss */
+  /* line 120, ../sass/pages/_index.scss */
   .highlight i {
     font-size: 3em;
   }
 
-  /* line 131, ../sass/pages/_index.scss */
-  .headline-date {
+  /* line 125, ../sass/pages/_index.scss */
+  .mini-headline-date {
     display: table;
     margin: auto;
     margin-bottom: 8px;
   }
 
-  /* line 137, ../sass/pages/_index.scss */
-  .headline-text {
+  /* line 131, ../sass/pages/_index.scss */
+  .mini-headline-text {
     text-align: center;
   }
 }
+/* line 3, ../sass/pages/_news.scss */
+.news-headline {
+  padding: 16px 8px;
+  font-size: 1.4em;
+}
+/* line 13, ../sass/pages/_news.scss */
+.news-headline .news-headline-date {
+  margin-bottom: 8px;
+  max-width: 160px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  color: #FFF;
+  background-color: #5285FF;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+/* line 26, ../sass/pages/_news.scss */
+.news-headline .news-headline-text {
+  padding: 8px 12px;
+  background-color: #5285FF;
+  border-radius: 5px;
+  background-color: rgba(82, 133, 255, 0.12);
+}
+
 /* line 4, ../sass/pages/_info-page.scss */
 .top-container-left {
   height: 600px;
@@ -10186,7 +10205,7 @@ label {
 }
 
 /* Common Styles */
-/* line 26, ../sass/screen.scss */
+/* line 27, ../sass/screen.scss */
 * {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -10194,18 +10213,18 @@ label {
   font-weight: 400 !important;
 }
 
-/* line 40, ../sass/screen.scss */
+/* line 41, ../sass/screen.scss */
 .top-section {
   height: 600px;
   background-color: #5285FF;
 }
 
-/* line 45, ../sass/screen.scss */
+/* line 46, ../sass/screen.scss */
 .top-section-short {
   height: 240px;
   background-color: #5285FF;
 }
-/* line 49, ../sass/screen.scss */
+/* line 50, ../sass/screen.scss */
 .top-section-short h1 {
   position: relative;
   top: 22%;
@@ -10214,7 +10233,7 @@ label {
   color: #FFF;
   font-size: 4em;
 }
-/* line 62, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 .top-section-short h2 {
   position: relative;
   top: 25%;
@@ -10224,7 +10243,7 @@ label {
   font-size: 2em;
 }
 
-/* line 73, ../sass/screen.scss */
+/* line 74, ../sass/screen.scss */
 .background, .background-blue {
   position: relative;
   top: 0;
@@ -10235,19 +10254,19 @@ label {
   background-color: #fff;
 }
 
-/* line 83, ../sass/screen.scss */
+/* line 84, ../sass/screen.scss */
 .background-blue {
   background-color: #2548BE;
 }
 
-/* line 89, ../sass/screen.scss */
+/* line 90, ../sass/screen.scss */
 .paper-style-div {
   padding: 20px;
   padding-top: 40px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 98, ../sass/screen.scss */
+/* line 99, ../sass/screen.scss */
 .paper-style-div h2 {
   margin: 0;
   text-align: center;
@@ -10256,7 +10275,7 @@ label {
   color: #5f5f5f;
 }
 
-/* line 107, ../sass/screen.scss */
+/* line 108, ../sass/screen.scss */
 .divider {
   left: 0;
   right: 0;
@@ -10271,12 +10290,12 @@ label {
   border-color: #5285FF;
 }
 
-/* line 121, ../sass/screen.scss */
+/* line 122, ../sass/screen.scss */
 .signup-div {
   height: 220px;
   padding: 60px;
 }
-/* line 124, ../sass/screen.scss */
+/* line 125, ../sass/screen.scss */
 .signup-div h2 {
   margin: 0;
   text-align: center;
@@ -10284,7 +10303,7 @@ label {
   font-weight: 400;
   color: #fff;
 }
-/* line 131, ../sass/screen.scss */
+/* line 132, ../sass/screen.scss */
 .signup-div a {
   left: 0;
   right: 0;
@@ -10292,7 +10311,7 @@ label {
   margin-bottom: 10px;
 }
 
-/* line 139, ../sass/screen.scss */
+/* line 140, ../sass/screen.scss */
 .divider-short {
   left: 0;
   right: 0;
@@ -10309,12 +10328,12 @@ label {
 
 /* Portrait phones and smaller */
 @media (max-width: 767px) {
-  /* line 157, ../sass/screen.scss */
+  /* line 158, ../sass/screen.scss */
   .background-blue {
     padding: 0 !important;
   }
 
-  /* line 161, ../sass/screen.scss */
+  /* line 162, ../sass/screen.scss */
   .paper-style-div {
     margin: 0 !important;
     border-radius: 0;
