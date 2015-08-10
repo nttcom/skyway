@@ -1,86 +1,155 @@
 ---
-layout: default
+layout: responsive
 lang: jp
 title: iOS/Android SDK
 description: SkyWayのiOS/Android SDKを公開しています。SkyWayを使えば、サーバを準備することなく簡単に、WebRTCを使ったアプリが開発できます。
 ---
-<div id="subpage-content-div" elevation="2">
-    <div id="content-explanation-div">
-        <h2 class="content-title-side">iOS/Android SDK</h2>
-            <div id="content-highlights">
-                                <div class="content-highlight">
-                    <img class="content-highlight-icon" src="{{ site.homedir[page.lang] }}images/outline_star_white.png">
-                    <div class="content-highlight-text-container">
-                        <div class="content-highlight-text">JavaScript / Android / iOSでのAPI互換により、簡単にマルチデバイス対応が可能</div>
-                    </div>
-                </div>
-                <div class="content-highlight">
-                    <img class="content-highlight-icon" src="{{ site.homedir[page.lang] }}images/outline_star_white.png">
-                    <div class="content-highlight-text-container">
-                        <div class="content-highlight-text">クライアントサイドの開発だけでOK、サーバサイドは準備不要</div>
-                    </div>
-                </div>
-                <div class="content-highlight">
-                    <img class="content-highlight-icon" src="{{ site.homedir[page.lang] }}images/outline_star_white.png">
-                    <div class="content-highlight-text-container">
-                        <div class="content-highlight-text">OSのアップデート等に伴う対応をサポート</div>
+
+<!-- Top Section -->
+
+<div class="container-fluid">
+    <div class="row">
+        
+        <!-- Animation Side (Left/Top on Mobile, PUSHED Right on Desktop) -->
+        
+        <div class="col-sm-7 col-sm-push-5 top-container-right">
+            <h3 class="subpage-title-mobile">iOS/Android SDK</h3>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="top-image-container">
+                            <link rel="stylesheet" href="{{ site.homedir[page.lang] }}styles/transmission-animation-subpage.css">
+                            <img id="animated-logo-js" src="{{ site.homedir[page.lang] }}images/logos/logo-cloud_white.png">
+                            <div class='ios-transmission-animation'>
+                                <div class='circle-container'>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+
+                            <img class="device-image" src="{{ site.homedir[page.lang] }}images/top_images/mobile_top.png">
+
+                        </div>
+                        
                     </div>
                 </div>
             </div>
-            <a href='documentation.html'><paper-button class="subpage-topSectionButton white" raised>ドキュメント</paper-button></a>
-    </div>
-    <div id="content-animation-div">
-        <link rel="stylesheet" href="{{ site.homedir[page.lang] }}styles/transmission-animation-subpage.css">
-        <img id="animated-logo-mobile" src="{{ site.homedir[page.lang] }}images/logos/logo-cloud_white.png">
-        <div id="animation-container">
-            <div class='ios-transmission-animation'>
-                <div class='circle-container'>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-            </div>
-            <img src="{{ site.homedir[page.lang] }}images/top_images/mobile_top.png">
+
+            <a class="top-btn-desktop" target="_blank" href='https://skyway.io/ds/registration/'>
+                <button class="btn-ink btn-top-section">登録を行う</button>
+            </a>        
+
         </div>
-        <a target="_blank" href='https://skyway.io/ds/registration/'><paper-button class="subpage-topSectionButton white" raised>登録を行う</paper-button></a>
+        
+        <!-- Highlight Side (Right/Bottom on Mobile, PULLED Left on Desktop) -->
+        
+        <div class="col-sm-5 col-sm-pull-7 top-container-left">
+            <h3 class="subpage-title">iOS/Android SDK</h3>
+
+            <div class="row subpage-highlight">
+                <div class="col-xs-1 col-xs-offset-1"><i class="fa fa-star"></i></div>
+                <div class="col-xs-9 highlight-text">JavaScript / Android / iOSでのAPI互換により、簡単にマルチデバイス対応が可能</div>
+            </div>
+
+             <div class="row subpage-highlight">
+                <div class="col-xs-1 col-xs-offset-1"><i class="fa fa-star"></i></div>
+                <div class="col-xs-9 highlight-text">クライアントサイドの開発だけでOK、サーバサイドは準備不要</div>
+            </div>
+
+            <div class="row subpage-highlight">
+                <div class="col-xs-1 col-xs-offset-1"><i class="fa fa-star"></i></div>
+                <div class="col-xs-9 highlight-text">OSのアップデート等に伴う対応をサポート</div>
+            </div>
+    
+            <a class="top-btn-desktop" href='documentation.html'>
+                <button class="btn-ink btn-top-section">ドキュメント</button>
+            </a>
+            
+            <div class="top-btn-mobile">
+                <div class="col-xs-5 col-xs-offset-1">
+                    <a target="_blank" href='https://skyway.io/ds/registration/'>
+                        <button class="btn-ink btn-top-section">登録を行う</button>
+                    </a> 
+                </div>
+                <div class="col-xs-5">
+                    <a href='documentation.html'>
+                        <button class="btn-ink btn-top-section">ドキュメント</button>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        
     </div>
 </div>
 
-<paper-material id="mobile-howto-div" class="paper-div" elevation="2">
-    <div class="paper-div-internal">
-        <h2 class="material-header">作ってみよう！</h2>
 
 
-        <div class="howto-step">
-            <img src="{{ site.homedir[page.lang] }}images/count/1.png">
-            <div class="float-group">
-                <p>開発者登録を行い、APIキーを申し込みます。</p>
-                <a target="_blank" href='https://skyway.io/ds/registration/'><paper-button raised>開発者登録を行う（無料）</paper-button></a>
-            </div>
-        </div>
+<!-- Main Page Content -->
 
-        <div class="howto-step">
-            <img src="{{ site.homedir[page.lang] }}images/count/2.png">
-            <div class="float-group">
-                <p>SDKをダウンロードします。</p>
-                <a target="_blank" href='http://skyway-ios-sdk.str.cloudn-service.com/0.1.0/SkyWay-iOS-SDK-0.1.0.zip'><paper-button raised>iOS SDK (0.1.0)</paper-button></a>
-                <a target="_blank" href='http://skyway-android-sdk.str.cloudn-service.com/0.1.1/SkyWay-Android-SDK-0.1.1.zip'><paper-button raised>Android SDK (0.1.1)</paper-button></a>
-            </div>
-        </div>
+<div class="background-blue">
+    
+    <div class="container">
 
-        <div class="howto-step">
-            <img src="{{ site.homedir[page.lang] }}images/count/3.png">
-            <div class="float-group">
-                <p>SkyWayを利用してアプリケーションを開発しましょう。<br><br>
-                    コードサンプルやサンプルアプリを参考に、コードを書きましょう。</p>
-        <h3 class="code-type-header">iOS Objective-C</h3>
-                <paper-material class="code-section" elevation="1">
-                                <pre><code class="objectivec">
-#import &lt;SkyWay/SKWPeer.h&gt;
+        <div class="row main-content-row">
+            <div class="col-sm-12 paper-style-div">
+                <h2>作ってみよう！</h2>
+                <div class="divider"></div>
+                
+                <!-- Howto Step 1 -->
+                
+                <div class="row howto-step">
+                    <div class="col-md-2 col-xs-1 howto-step-count">
+                        <img src="{{ site.homedir[page.lang] }}images/count/1.png">
+                    </div>
+                    <div class="col-md-8 col-xs-10 howto-step-content">
+                        <p>開発者登録を行い、APIキーを申し込みます。</p>
+                        
+                        <a target="_blank" href='https://skyway.io/ds/registration/'>
+                            <button class="btn-ink btn-howto">開発者登録を行う（無料）</button>
+                        </a> 
+                        
+                    </div>
+                </div>
+                
+                <!-- Howto Step 2 -->
+                
+                <div class="row howto-step">
+                    <div class="col-md-2 col-xs-1 howto-step-count">
+                        <img src="{{ site.homedir[page.lang] }}images/count/2.png">
+                    </div>
+                    <div class="col-md-8 col-xs-10 howto-step-content">
+                        <p>SDKをダウンロードします。</p>
+                        
+                        <a target="_blank" href='http://skyway-ios-sdk.str.cloudn-service.com/0.1.0/SkyWay-iOS-SDK-0.1.0.zip'>
+                            <button class="btn-ink btn-howto">iOS SDK (0.1.0)</button>
+                        </a>
+                        <a target="_blank" href='http://skyway-android-sdk.str.cloudn-service.com/0.1.1/SkyWay-Android-SDK-0.1.1.zip'>
+                            <button class="btn-ink btn-howto">Android SDK (0.1.1)</button>
+                        </a> 
+                        
+                    </div>
+                </div>
+                
+                <!-- Howto Step 3 -->
+
+                <div class="row howto-step">
+                    <div class="col-md-2 col-xs-1 howto-step-count">
+                        <img src="{{ site.homedir[page.lang] }}images/count/3.png">
+                    </div>
+                    <div class="col-md-8 col-xs-10 howto-step-content">
+                        <p>SkyWayを利用してアプリケーションを開発しましょう。<br>
+                        コードサンプルやサンプルアプリを参考に、コードを書きましょう。</p>
+                        
+                        
+                        <h3 class="code-type-header">iOS Objective-C</h3>
+                        <div class="code-section">
+<pre><code class="objectivec">#import &lt;SkyWay/SKWPeer.h&gt;
 
 SKWPeerOption* options = [[SKWPeerOption alloc] init];
 options.key = @"{APIKEY}";
@@ -95,11 +164,15 @@ SKWPeer* peer = [[SKWPeer alloc] initWithId:myId options:options];
         [conn send:@"Hello SkyWay!"];
     }];
 }];</code></pre>
-                </paper-material>　<a href="https://github.com/nttcom/SkyWay-iOS-Sample" target="_blank" class="sample-app-link">サンプルアプリ(iOS)はこちら</a>
-        <h3 class="code-type-header">Android Java</h3>
-                <paper-material class="code-section" elevation="1">
-                                <pre><code class="java">
-import io.skyway.Peer.*;
+                        </div>
+<!--<script>hljs.initHighlighting();$(".javascript").css("opacity", 0.95);</script>-->                        
+                        
+                        <a href="https://github.com/nttcom/SkyWay-iOS-Sample" target="_blank" class="sample-app-link">サンプルアプリ(iOS)はこちら</a>
+                        
+                        
+                        <h3 class="code-type-header">Android Java</h3>
+                        <div class="code-section">
+<pre><code class="java">import io.skyway.Peer.*;
 
 PeerOption options = new PeerOption();
 options.key = "{APIKEY}";
@@ -119,26 +192,46 @@ peer.on(Peer.PeerEventEnum.OPEN, new OnCallback()
         });
     }
 });</code></pre>
-<script>hljs.initHighlighting();</script>
-                </paper-material>　<a href="https://github.com/nttcom/SkyWay-Android-Sample" target="_blank" class="sample-app-link">サンプルアプリ(Android)はこちら</a>
+                        <script>hljs.initHighlighting();</script>
+                        </div>
+                        <a href="https://github.com/nttcom/SkyWay-Android-Sample" target="_blank" class="sample-app-link">サンプルアプリ(Android)はこちら</a>
+                        
+                    </div>
+                </div>
+                
+                <!-- Howto Step 4 -->
 
+                <div class="row howto-step">
+                    <div class="col-md-2 col-xs-1 howto-step-count">
+                        <img src="{{ site.homedir[page.lang] }}images/count/4.png">
+                    </div>
+                    <div class="col-md-8 col-xs-10 howto-step-content">
+                        <p>開発に必要な情報を収集しましょう。</p>
+                        
+                        <a href="docs/#iOS">
+                            <button class="btn-ink btn-howto">スタートガイドを見る</button>
+                        </a>
+                        <a href="support.html">
+                            <button class="btn-ink btn-howto">サポート</button>
+                        </a> 
+
+                    </div>
+                </div>
+                
             </div>
         </div>
-
-        <div class="howto-step">
-            <img src="{{ site.homedir[page.lang] }}images/count/4.png">
-            <div class="float-group">
-                <p>開発に必要な情報を収集しましょう。</p>
-                <a href='docs/#iOS'><paper-button raised>スタートガイドを見る</paper-button></a>
-                <a href='support.html'><paper-button raised>サポート</paper-button></a>
-            </div>
-        </div>
-        <h2 class="material-header">　</h2>
     </div>
-</paper-material>
-
-<div id="signup-div">
-    <h2 id="signup-header">SkyWayは無料で利用可能です！</h2>
-    <div class="divider-short"></div>
-    <a target="_blank" href='https://skyway.io/ds/registration/'><paper-button id="signupButton" raised class="white">登録を行う</paper-button></a>
+    
+    <div class="row main-content-row">
+        <div class="col-sm-12 signup-div">
+            <h2 id="signup-header">SkyWayは無料で利用可能です！</h2>
+            <div class="divider-short"></div>
+            
+            <a href='https://skyway.io/ds/registration/' target="_blank">
+                <button class="btn-ink btn-center">登録を行う</button>
+            </a>  
+        
+        </div>
+    </div>
+    
 </div>
