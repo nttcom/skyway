@@ -9780,7 +9780,7 @@ label {
   margin-top: 18px;
   margin-bottom: 10px;
   text-align: center;
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-weight: 400;
 }
 
@@ -9812,26 +9812,33 @@ label {
   color: #7f7f7f;
 }
 
+/* Medium Devices, Desktops */
+@media (max-width: 992px) {
+  /* line 117, ../sass/pages/_index.scss */
+  .highlight br {
+    display: none;
+  }
+}
 /* Portrait phones and smaller */
-@media (max-width: 767px) {
-  /* line 116, ../sass/pages/_index.scss */
+@media (max-width: 768px) {
+  /* line 125, ../sass/pages/_index.scss */
   .highlight {
     text-align: center;
     height: 170px;
   }
-  /* line 120, ../sass/pages/_index.scss */
+  /* line 129, ../sass/pages/_index.scss */
   .highlight i {
     font-size: 3em;
   }
 
-  /* line 125, ../sass/pages/_index.scss */
+  /* line 134, ../sass/pages/_index.scss */
   .mini-headline-date {
     display: table;
     margin: auto;
     margin-bottom: 8px;
   }
 
-  /* line 131, ../sass/pages/_index.scss */
+  /* line 140, ../sass/pages/_index.scss */
   .mini-headline-text {
     text-align: center;
   }

@@ -18,6 +18,6 @@ var addRippleEffect = function (e) {
     return false;
 }
 
-document.addEventListener('click', addRippleEffect, false);
+document.addEventListener('mousedown', addRippleEffect, false);
 
 console.log('button.js ready');
