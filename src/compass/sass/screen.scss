@@ -12,10 +12,11 @@
 
 @import "components/navbar";
 @import "components/footer";
+@import "components/button";
 
-@import "components/index";
-@import "components/info-page";
-@import "components/features";
+@import "pages/index";
+@import "pages/info-page";
+@import "pages/features";
 
 
 
@@ -152,3 +153,4 @@
     display: table;
     margin: auto;
 }
+

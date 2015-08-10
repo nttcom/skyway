@@ -4,7 +4,9 @@
 $           = require 'jquery'
 bootstrap   = require 'bootstrap'
 test        = require './test'
+button      = require './button'
 share       = require './share'
+
 #support     = require './support'
 #highlight   = require './highlight/highlight.pack.js'
 

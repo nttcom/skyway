@@ -67,11 +67,15 @@
     
     
     .subpage-title-mobile {
-        padding-top: 54px;
-
+        position: absolute;
+        
         margin: 0;
-
-        margin-bottom: 40px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        
+        top: 42px;
+        
         color: #FFF;
         font-size: 3em;
         font-weight: 400;
@@ -124,7 +128,7 @@
     }
     
     .subpage-title-mobile {
-        display: inherit;
+        display: inherit !important;
         color: red;
     }
     
@@ -180,7 +184,10 @@
         background-color: rgba(82, 133, 255, 0.12);
         
         p {
+            margin: 0;
             padding-bottom: 20px;
+            
+            font-size: 1.2em;
         }
     }
     
@@ -228,11 +235,14 @@
         margin-right: 10px !important;
         margin-bottom: 4px !important;
 
-        width: 220px;
+        width: 210px;
+        height: 48px;
 
         color: #fff;
         background-color: #1EC75F;
         
+        font-size: 1.2em;
+        font-weight: 400;
         text-transform: none;
     }
     

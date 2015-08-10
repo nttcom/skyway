@@ -7,7 +7,13 @@
     
     position:absolute;
     
-    top:160px;
+    top:180px;
+    
+/*    background-color: red;*/
+    
+    height: 100px;
+    width: 100%;
+    object-fit: scale-down;
     
     left:0;
     right:0;
@@ -19,6 +25,9 @@
     position:absolute;
     
     top:16px;
+    
+    height: 100px;
+    background-color: red;
     
     left:0;
     right:40px;
@@ -61,6 +70,7 @@
     
 }
 
+/*
 @media screen and (max-width:1200px){
     .js-transmission-animation {
         top: 80px;
@@ -84,6 +94,7 @@
         margin: auto;
     }
 }
+*/
 
 .circle-container {
 	position: relative;
