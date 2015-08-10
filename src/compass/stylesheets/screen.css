@@ -9794,6 +9794,12 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   text-transform: none;
 }
 
+/* line 241, ../sass/components/_info-page.scss */
+.howto-step-count {
+  margin-left: 20px;
+}
+
+/* Portrait phones and smaller */
 /* line 4, ../sass/components/_features.scss */
 .features-header {
   width: inherit;
