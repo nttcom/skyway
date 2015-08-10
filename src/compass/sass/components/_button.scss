@@ -33,8 +33,8 @@ $btn-colour: $skyway-blue;
 .ripple {
     position: absolute;
 //    background: rgba(0,0,0,.25);
-    background: $btn-colour;
-    opacity: 0.3;
+    background: #fff;
+    opacity: 0.4;
     border-radius: 100%;
     -webkit-transform: scale(0);
     -ms-transform: scale(0);

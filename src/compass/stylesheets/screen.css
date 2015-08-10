@@ -9531,8 +9531,8 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
 /* line 33, ../sass/components/_button.scss */
 .ripple {
   position: absolute;
-  background: #5285FF;
-  opacity: 0.3;
+  background: #fff;
+  opacity: 0.4;
   border-radius: 100%;
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
@@ -9735,16 +9735,17 @@ label {
   display: table;
   margin: auto;
   /*    bottom: 20px;*/
-  height: 220px;
+  max-height: 220px;
+  width: 100%;
   object-fit: scale-down;
   cursor: pointer;
 }
-/* line 42, ../sass/pages/_index.scss */
+/* line 43, ../sass/pages/_index.scss */
 .animation-container img:hover {
   transform: scale(1.02, 1.02);
   -webkit-transform: scale(1.02, 1.02);
 }
-/* line 47, ../sass/pages/_index.scss */
+/* line 48, ../sass/pages/_index.scss */
 .animation-container h3 {
   margin-top: 20px;
   color: #FFF;
@@ -9754,7 +9755,7 @@ label {
 }
 
 /* Front Page - Highlights */
-/* line 58, ../sass/pages/_index.scss */
+/* line 59, ../sass/pages/_index.scss */
 .highlight {
   padding-left: 30px;
   padding-right: 30px;
@@ -9765,7 +9766,7 @@ label {
   font-weight: 400;
   line-height: 1.5em;
 }
-/* line 69, ../sass/pages/_index.scss */
+/* line 70, ../sass/pages/_index.scss */
 .highlight i {
   display: table;
   margin: auto;
@@ -9774,7 +9775,7 @@ label {
   text-align: center;
   color: #5285FF;
 }
-/* line 78, ../sass/pages/_index.scss */
+/* line 79, ../sass/pages/_index.scss */
 .highlight h3 {
   /*    position: absolute;*/
   margin-top: 18px;
@@ -9785,13 +9786,13 @@ label {
 }
 
 /* Front Page - News */
-/* line 90, ../sass/pages/_index.scss */
+/* line 91, ../sass/pages/_index.scss */
 .mini-headline {
   margin-top: 10px;
   margin-bottom: 15px;
 }
 
-/* line 95, ../sass/pages/_index.scss */
+/* line 96, ../sass/pages/_index.scss */
 .mini-headline-date {
   margin-bottom: 8px;
   max-width: 160px;
@@ -9804,7 +9805,7 @@ label {
   border-radius: 5px;
 }
 
-/* line 107, ../sass/pages/_index.scss */
+/* line 108, ../sass/pages/_index.scss */
 .mini-headline-text {
   margin-left: -10px;
   font-size: 1.3em;
@@ -9814,31 +9815,31 @@ label {
 
 /* Medium Devices, Desktops */
 @media (max-width: 992px) {
-  /* line 117, ../sass/pages/_index.scss */
+  /* line 118, ../sass/pages/_index.scss */
   .highlight br {
     display: none;
   }
 }
 /* Portrait phones and smaller */
 @media (max-width: 768px) {
-  /* line 125, ../sass/pages/_index.scss */
+  /* line 126, ../sass/pages/_index.scss */
   .highlight {
     text-align: center;
     height: 170px;
   }
-  /* line 129, ../sass/pages/_index.scss */
+  /* line 130, ../sass/pages/_index.scss */
   .highlight i {
     font-size: 3em;
   }
 
-  /* line 134, ../sass/pages/_index.scss */
+  /* line 135, ../sass/pages/_index.scss */
   .mini-headline-date {
     display: table;
     margin: auto;
     margin-bottom: 8px;
   }
 
-  /* line 140, ../sass/pages/_index.scss */
+  /* line 141, ../sass/pages/_index.scss */
   .mini-headline-text {
     text-align: center;
   }
@@ -10222,16 +10223,17 @@ label {
 
 /* line 41, ../sass/screen.scss */
 .top-section {
+  position: relative;
   height: 600px;
   background-color: #5285FF;
 }
 
-/* line 46, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 .top-section-short {
   height: 240px;
   background-color: #5285FF;
 }
-/* line 50, ../sass/screen.scss */
+/* line 52, ../sass/screen.scss */
 .top-section-short h1 {
   position: relative;
   top: 22%;
@@ -10240,7 +10242,7 @@ label {
   color: #FFF;
   font-size: 4em;
 }
-/* line 63, ../sass/screen.scss */
+/* line 65, ../sass/screen.scss */
 .top-section-short h2 {
   position: relative;
   top: 25%;
@@ -10250,7 +10252,7 @@ label {
   font-size: 2em;
 }
 
-/* line 74, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 .background, .background-blue {
   position: relative;
   top: 0;
@@ -10261,19 +10263,19 @@ label {
   background-color: #fff;
 }
 
-/* line 84, ../sass/screen.scss */
+/* line 86, ../sass/screen.scss */
 .background-blue {
   background-color: #2548BE;
 }
 
-/* line 90, ../sass/screen.scss */
+/* line 92, ../sass/screen.scss */
 .paper-style-div {
   padding: 20px;
   padding-top: 40px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 99, ../sass/screen.scss */
+/* line 101, ../sass/screen.scss */
 .paper-style-div h2 {
   margin: 0;
   text-align: center;
@@ -10282,7 +10284,7 @@ label {
   color: #5f5f5f;
 }
 
-/* line 108, ../sass/screen.scss */
+/* line 110, ../sass/screen.scss */
 .divider {
   left: 0;
   right: 0;
@@ -10297,12 +10299,12 @@ label {
   border-color: #5285FF;
 }
 
-/* line 122, ../sass/screen.scss */
+/* line 124, ../sass/screen.scss */
 .signup-div {
   height: 220px;
   padding: 60px;
 }
-/* line 125, ../sass/screen.scss */
+/* line 127, ../sass/screen.scss */
 .signup-div h2 {
   margin: 0;
   text-align: center;
@@ -10310,7 +10312,7 @@ label {
   font-weight: 400;
   color: #fff;
 }
-/* line 132, ../sass/screen.scss */
+/* line 134, ../sass/screen.scss */
 .signup-div a {
   left: 0;
   right: 0;
@@ -10318,7 +10320,7 @@ label {
   margin-bottom: 10px;
 }
 
-/* line 140, ../sass/screen.scss */
+/* line 142, ../sass/screen.scss */
 .divider-short {
   left: 0;
   right: 0;
@@ -10335,12 +10337,12 @@ label {
 
 /* Portrait phones and smaller */
 @media (max-width: 767px) {
-  /* line 158, ../sass/screen.scss */
+  /* line 160, ../sass/screen.scss */
   .background-blue {
     padding: 0 !important;
   }
 
-  /* line 162, ../sass/screen.scss */
+  /* line 164, ../sass/screen.scss */
   .paper-style-div {
     margin: 0 !important;
     border-radius: 0;
