@@ -9757,16 +9757,13 @@ label {
 /* Front Page - Highlights */
 /* line 59, ../sass/pages/_index.scss */
 .highlight {
-  padding-left: 30px;
-  padding-right: 30px;
-  height: 210px;
-  overflow-y: hidden;
+  padding: 0 30px;
   color: #7f7f7f;
   font-size: 1.2em;
   font-weight: 400;
   line-height: 1.5em;
 }
-/* line 70, ../sass/pages/_index.scss */
+/* line 67, ../sass/pages/_index.scss */
 .highlight i {
   display: table;
   margin: auto;
@@ -9775,7 +9772,7 @@ label {
   text-align: center;
   color: #5285FF;
 }
-/* line 79, ../sass/pages/_index.scss */
+/* line 76, ../sass/pages/_index.scss */
 .highlight h3 {
   /*    position: absolute;*/
   margin-top: 18px;
@@ -9786,13 +9783,13 @@ label {
 }
 
 /* Front Page - News */
-/* line 91, ../sass/pages/_index.scss */
+/* line 88, ../sass/pages/_index.scss */
 .mini-headline {
   margin-top: 10px;
   margin-bottom: 15px;
 }
 
-/* line 96, ../sass/pages/_index.scss */
+/* line 93, ../sass/pages/_index.scss */
 .mini-headline-date {
   margin-bottom: 8px;
   max-width: 160px;
@@ -9805,7 +9802,7 @@ label {
   border-radius: 5px;
 }
 
-/* line 108, ../sass/pages/_index.scss */
+/* line 105, ../sass/pages/_index.scss */
 .mini-headline-text {
   margin-left: -10px;
   font-size: 1.3em;
@@ -9815,31 +9812,31 @@ label {
 
 /* Medium Devices, Desktops */
 @media (max-width: 992px) {
-  /* line 118, ../sass/pages/_index.scss */
+  /* line 115, ../sass/pages/_index.scss */
   .highlight br {
     display: none;
   }
 }
 /* Portrait phones and smaller */
 @media (max-width: 768px) {
-  /* line 126, ../sass/pages/_index.scss */
+  /* line 123, ../sass/pages/_index.scss */
   .highlight {
     text-align: center;
     height: 170px;
   }
-  /* line 130, ../sass/pages/_index.scss */
+  /* line 127, ../sass/pages/_index.scss */
   .highlight i {
     font-size: 3em;
   }
 
-  /* line 135, ../sass/pages/_index.scss */
+  /* line 132, ../sass/pages/_index.scss */
   .mini-headline-date {
     display: table;
     margin: auto;
     margin-bottom: 8px;
   }
 
-  /* line 141, ../sass/pages/_index.scss */
+  /* line 138, ../sass/pages/_index.scss */
   .mini-headline-text {
     text-align: center;
   }

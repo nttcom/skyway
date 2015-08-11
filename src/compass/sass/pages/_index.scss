@@ -57,11 +57,8 @@
 /* Front Page - Highlights */
 
 .highlight {
-    padding-left: 30px;
-    padding-right: 30px;
-    height: 210px;
-    overflow-y: hidden;
-
+    padding: 0 30px;
+    
     color: $light_font;
     font-size: 1.2em;
     font-weight: 400;
