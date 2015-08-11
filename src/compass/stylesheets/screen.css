@@ -9315,7 +9315,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
 }
 
 /* line 13, ../sass/utilities/_variables.scss */
-.paper-style-layer-1, .btn-ink {
+.paper-style-layer-1, .btn-ink, .support-box {
   position: relative;
   padding: 8px;
   background-color: #fff;
@@ -9325,7 +9325,7 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
 }
 
 /* line 27, ../sass/utilities/_variables.scss */
-.paper-style, .howto-step .code-section, .feature-box, .paper-style-div {
+.paper-style, .feature-box, .howto-step .code-section, .paper-style-div {
   position: relative;
   padding: 8px;
   background-color: #fff;
@@ -9596,6 +9596,38 @@ input[type="checkbox"]:disabled:checked:after, .checkbox input[type="checkbox"]:
   background-color: #1EC75F;
 }
 
+/* line 102, ../sass/components/_button.scss */
+.btn-support, .btn-support-left, .btn-support-right {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: 0px;
+  color: #5285FF;
+  background-color: rgba(82, 133, 255, 0.2);
+  border-style: solid;
+  border-color: #5285FF;
+  border-width: 0px;
+  border-top-width: 2px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+/* line 122, ../sass/components/_button.scss */
+.btn-support-left {
+  left: 0;
+  width: 50%;
+  border-bottom-right-radius: 0px;
+  border-right-width: 1px;
+}
+
+/* line 133, ../sass/components/_button.scss */
+.btn-support-right {
+  right: 0;
+  width: 50%;
+  border-bottom-left-radius: 0px;
+  border-left-width: 1px;
+}
+
 /* Share button styles */
 /* line 3, ../sass/components/_share.scss */
 .share-button {
@@ -9701,6 +9733,162 @@ label {
     bottom: 140px;
   }
 }
+/* line 4, ../sass/pages/_features.scss */
+.features-header {
+  width: inherit;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0;
+  font-size: 3em;
+  line-height: 1.5em;
+  text-align: left;
+  border-style: solid;
+  border-color: #5285ff;
+  border-width: 0;
+  border-bottom-width: 2px;
+}
+
+/* line 25, ../sass/pages/_features.scss */
+[class$="features-container"] {
+  margin-bottom: 60px;
+}
+
+/* line 33, ../sass/pages/_features.scss */
+.top-features-container [class^="col"]:nth-of-type(3n+1) .feature-box {
+  background-color: #4E5FAD;
+}
+
+/* line 33, ../sass/pages/_features.scss */
+.top-features-container [class^="col"]:nth-of-type(3n+2) .feature-box {
+  background-color: #E63300;
+}
+
+/* line 33, ../sass/pages/_features.scss */
+.top-features-container [class^="col"]:nth-of-type(3n+3) .feature-box {
+  background-color: #1CC05A;
+}
+
+/* line 57, ../sass/pages/_features.scss */
+.feature-box {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 6px;
+  margin-right: 6px;
+  padding: 0;
+  height: 320px;
+  font-weight: 400;
+}
+/* line 70, ../sass/pages/_features.scss */
+.feature-box img {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 80px;
+  object-fit: scale-down;
+}
+/* line 84, ../sass/pages/_features.scss */
+.feature-box h3 {
+  position: absolute;
+  top: 124px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  font-size: 2.4em;
+  font-weight: 300 !important;
+  color: #fff;
+}
+/* line 100, ../sass/pages/_features.scss */
+.feature-box p {
+  position: absolute;
+  top: 180px;
+  padding-left: 18px;
+  padding-right: 18px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-height: 100px;
+  overflow: hidden;
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+  /*          background-color: red;*/
+}
+/* line 122, ../sass/pages/_features.scss */
+.feature-box paper-button {
+  position: absolute;
+  bottom: 0;
+  margin: 0 !important;
+  height: 50px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.15);
+  color: #fff;
+  font-size: 1.3em;
+  border-radius: 5px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+/* line 148, ../sass/pages/_features.scss */
+.mini-feature-column h3 {
+  margin: 0;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding: 0;
+  line-height: 36px;
+  color: #5050b0;
+  text-align: center;
+  font-size: 2em;
+}
+/* line 161, ../sass/pages/_features.scss */
+.mini-feature-column paper-button {
+  height: 80px;
+  margin: 8px !important;
+  padding: 0;
+  border-style: solid;
+  border-color: #9f9f9f;
+  border-width: 1px;
+  text-transform: none;
+  border-radius: 5px;
+}
+/* line 177, ../sass/pages/_features.scss */
+.mini-feature-column paper-button img {
+  position: absolute;
+  top: 19px;
+  left: 15px;
+  width: 46px;
+  height: 42px;
+  object-fit: scale-down;
+}
+/* line 189, ../sass/pages/_features.scss */
+.mini-feature-column paper-button h2 {
+  position: absolute;
+  top: 10px;
+  left: 75px;
+  margin: 0;
+  padding: 0;
+  font-size: 1.4em;
+  color: #5285FF;
+}
+/* line 203, ../sass/pages/_features.scss */
+.mini-feature-column paper-button p {
+  position: absolute;
+  left: 75px;
+  top: 33px;
+  height: 36px;
+  overflow: hidden;
+  margin: 0;
+  margin-right: 12px;
+  padding: 0;
+  text-align: left;
+  font-size: 1.1em;
+  line-height: 18px;
+  color: #9f9f9f;
+}
+
 /* Front Page - Animation */
 /* line 6, ../sass/pages/_index.scss */
 .top-section h1 {
@@ -9841,31 +10029,6 @@ label {
     text-align: center;
   }
 }
-/* line 3, ../sass/pages/_news.scss */
-.news-headline {
-  padding: 16px 8px;
-  font-size: 1.4em;
-}
-/* line 13, ../sass/pages/_news.scss */
-.news-headline .news-headline-date {
-  margin-bottom: 8px;
-  max-width: 160px;
-  height: 28px;
-  line-height: 28px;
-  text-align: center;
-  color: #FFF;
-  background-color: #5285FF;
-  border-radius: 5px;
-  margin-top: 10px;
-}
-/* line 26, ../sass/pages/_news.scss */
-.news-headline .news-headline-text {
-  padding: 8px 12px;
-  background-color: #5285FF;
-  border-radius: 5px;
-  background-color: rgba(82, 133, 255, 0.12);
-}
-
 /* line 4, ../sass/pages/_info-page.scss */
 .top-container-left {
   height: 600px;
@@ -10053,164 +10216,56 @@ label {
 }
 
 /* Portrait phones and smaller */
-/* line 4, ../sass/pages/_features.scss */
-.features-header {
-  width: inherit;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 0;
-  font-size: 3em;
-  line-height: 1.5em;
-  text-align: left;
-  border-style: solid;
-  border-color: #5285ff;
-  border-width: 0;
-  border-bottom-width: 2px;
+/* line 3, ../sass/pages/_news.scss */
+.news-headline {
+  padding: 16px 8px;
+  font-size: 1.4em;
 }
-
-/* line 25, ../sass/pages/_features.scss */
-[class$="features-container"] {
-  margin-bottom: 60px;
-}
-
-/* line 33, ../sass/pages/_features.scss */
-.top-features-container [class^="col"]:nth-of-type(3n+1) .feature-box {
-  background-color: #4E5FAD;
-}
-
-/* line 33, ../sass/pages/_features.scss */
-.top-features-container [class^="col"]:nth-of-type(3n+2) .feature-box {
-  background-color: #E63300;
-}
-
-/* line 33, ../sass/pages/_features.scss */
-.top-features-container [class^="col"]:nth-of-type(3n+3) .feature-box {
-  background-color: #1CC05A;
-}
-
-/* line 57, ../sass/pages/_features.scss */
-.feature-box {
+/* line 13, ../sass/pages/_news.scss */
+.news-headline .news-headline-date {
+  margin-bottom: 8px;
+  max-width: 160px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  color: #FFF;
+  background-color: #5285FF;
+  border-radius: 5px;
   margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 6px;
-  margin-right: 6px;
-  padding: 0;
-  height: 320px;
-  font-weight: 400;
 }
-/* line 70, ../sass/pages/_features.scss */
-.feature-box img {
-  position: absolute;
-  top: 28px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  height: 80px;
-  object-fit: scale-down;
-}
-/* line 84, ../sass/pages/_features.scss */
-.feature-box h3 {
-  position: absolute;
-  top: 124px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  text-align: center;
-  font-size: 2.4em;
-  font-weight: 300 !important;
-  color: #fff;
-}
-/* line 100, ../sass/pages/_features.scss */
-.feature-box p {
-  position: absolute;
-  top: 180px;
-  padding-left: 18px;
-  padding-right: 18px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  max-height: 100px;
-  overflow: hidden;
-  text-align: center;
-  font-size: 1.4em;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.6);
-  /*          background-color: red;*/
-}
-/* line 122, ../sass/pages/_features.scss */
-.feature-box paper-button {
-  position: absolute;
-  bottom: 0;
-  margin: 0 !important;
-  height: 50px;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.15);
-  color: #fff;
-  font-size: 1.3em;
+/* line 26, ../sass/pages/_news.scss */
+.news-headline .news-headline-text {
+  padding: 8px 12px;
+  background-color: #5285FF;
   border-radius: 5px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
+  background-color: rgba(82, 133, 255, 0.12);
 }
 
-/* line 148, ../sass/pages/_features.scss */
-.mini-feature-column h3 {
-  margin: 0;
-  margin-top: 16px;
-  margin-bottom: 16px;
-  padding: 0;
-  line-height: 36px;
-  color: #5050b0;
-  text-align: center;
-  font-size: 2em;
-}
-/* line 161, ../sass/pages/_features.scss */
-.mini-feature-column paper-button {
-  height: 80px;
-  margin: 8px !important;
-  padding: 0;
+/* line 3, ../sass/pages/_support.scss */
+.support-box {
+  padding: 12px 0px 0px 0px;
+  margin-bottom: 30px;
+  height: 160px;
   border-style: solid;
-  border-color: #9f9f9f;
+  border-color: #7f7f7f;
   border-width: 1px;
-  text-transform: none;
-  border-radius: 5px;
 }
-/* line 177, ../sass/pages/_features.scss */
-.mini-feature-column paper-button img {
-  position: absolute;
-  top: 19px;
-  left: 15px;
-  width: 46px;
-  height: 42px;
-  object-fit: scale-down;
-}
-/* line 189, ../sass/pages/_features.scss */
-.mini-feature-column paper-button h2 {
-  position: absolute;
-  top: 10px;
-  left: 75px;
-  margin: 0;
-  padding: 0;
-  font-size: 1.4em;
+/* line 15, ../sass/pages/_support.scss */
+.support-box i {
+  display: table;
+  margin: auto;
+  margin-bottom: 8px;
   color: #5285FF;
 }
-/* line 203, ../sass/pages/_features.scss */
-.mini-feature-column paper-button p {
-  position: absolute;
-  left: 75px;
-  top: 33px;
-  height: 36px;
-  overflow: hidden;
-  margin: 0;
-  margin-right: 12px;
-  padding: 0;
-  text-align: left;
-  font-size: 1.1em;
-  line-height: 18px;
-  color: #9f9f9f;
+/* line 23, ../sass/pages/_support.scss */
+.support-box h3 {
+  display: table;
+  margin: auto;
+  font-size: 2em;
 }
 
 /* Common Styles */
-/* line 27, ../sass/screen.scss */
+/* line 29, ../sass/screen.scss */
 * {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -10218,19 +10273,19 @@ label {
   font-weight: 400 !important;
 }
 
-/* line 41, ../sass/screen.scss */
+/* line 43, ../sass/screen.scss */
 .top-section {
   position: relative;
   height: 600px;
   background-color: #5285FF;
 }
 
-/* line 48, ../sass/screen.scss */
+/* line 50, ../sass/screen.scss */
 .top-section-short {
   height: 240px;
   background-color: #5285FF;
 }
-/* line 52, ../sass/screen.scss */
+/* line 54, ../sass/screen.scss */
 .top-section-short h1 {
   position: relative;
   top: 22%;
@@ -10239,7 +10294,7 @@ label {
   color: #FFF;
   font-size: 4em;
 }
-/* line 65, ../sass/screen.scss */
+/* line 67, ../sass/screen.scss */
 .top-section-short h2 {
   position: relative;
   top: 25%;
@@ -10249,7 +10304,7 @@ label {
   font-size: 2em;
 }
 
-/* line 76, ../sass/screen.scss */
+/* line 78, ../sass/screen.scss */
 .background, .background-blue {
   position: relative;
   top: 0;
@@ -10260,17 +10315,17 @@ label {
   background-color: #fff;
 }
 
-/* line 86, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
 .background-blue {
   background-color: #2548BE;
 }
 
-/* line 92, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 .paper-style-div {
   padding: 40px 20px;
   margin: 10px 0px;
 }
-/* line 99, ../sass/screen.scss */
+/* line 101, ../sass/screen.scss */
 .paper-style-div h2 {
   margin: 0;
   text-align: center;
@@ -10279,7 +10334,7 @@ label {
   color: #5f5f5f;
 }
 
-/* line 108, ../sass/screen.scss */
+/* line 110, ../sass/screen.scss */
 .divider {
   left: 0;
   right: 0;
@@ -10295,11 +10350,11 @@ label {
 }
 
 /* Signup div styles */
-/* line 124, ../sass/screen.scss */
+/* line 126, ../sass/screen.scss */
 .signup-div {
   padding: 60px;
 }
-/* line 127, ../sass/screen.scss */
+/* line 129, ../sass/screen.scss */
 .signup-div h2 {
   margin: 0;
   text-align: center;
@@ -10307,7 +10362,7 @@ label {
   font-weight: 400;
   color: #fff;
 }
-/* line 134, ../sass/screen.scss */
+/* line 136, ../sass/screen.scss */
 .signup-div a {
   left: 0;
   right: 0;
@@ -10315,7 +10370,7 @@ label {
   margin-bottom: 10px;
 }
 
-/* line 142, ../sass/screen.scss */
+/* line 144, ../sass/screen.scss */
 .divider-short {
   left: 0;
   right: 0;
@@ -10333,12 +10388,12 @@ label {
 /* Responsive code */
 /* Portrait phones and smaller */
 @media (max-width: 767px) {
-  /* line 160, ../sass/screen.scss */
+  /* line 162, ../sass/screen.scss */
   .background-blue {
     padding: 0 !important;
   }
 
-  /* line 164, ../sass/screen.scss */
+  /* line 166, ../sass/screen.scss */
   .paper-style-div {
     margin: 0 !important;
     border-radius: 0;

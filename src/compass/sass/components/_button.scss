@@ -98,3 +98,45 @@ $btn-colour: $skyway-blue;
     color: #fff;
     background-color: #1EC75F;
 }
+
+.btn-support {
+    position: absolute;
+    
+    bottom: 0;
+    
+    width: 100%;
+    margin: 0px;
+    
+    color: #5285FF;
+    background-color: rgba(82, 133, 255, 0.2);
+
+    border-style: solid;
+    border-color: #5285FF;
+    border-width: 0px;
+    border-top-width: 2px;
+    
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.btn-support-left {
+    @extend .btn-support;
+    
+    left: 0;
+    
+    width: 50%;
+    border-bottom-right-radius: 0px;
+    
+    border-right-width: 1px;
+}
+
+.btn-support-right {
+    @extend .btn-support;
+    
+    right: 0;
+    
+    width: 50%;
+    border-bottom-left-radius: 0px;
+    
+    border-left-width: 1px;
+}

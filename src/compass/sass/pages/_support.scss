@@ -1,0 +1,29 @@
+@import "utilities/variables";
+
+.support-box {
+    @extend .paper-style-layer-1;
+    
+    padding: 12px 0px 0px 0px;
+    margin-bottom: 30px;
+    
+    height: 160px;
+    
+    border-style: solid;
+    border-color: #7f7f7f;
+    border-width: 1px;
+    
+    i {
+        display: table;
+        margin: auto;
+        margin-bottom: 8px;
+        
+        color: $skyway-blue;
+    }
+    
+    h3 {
+        display: table;
+        margin: auto;
+        
+        font-size: 2em;
+    }
+}
