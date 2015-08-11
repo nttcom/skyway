@@ -10289,29 +10289,30 @@ label {
 
 /* line 50, ../sass/screen.scss */
 .top-section-short {
-  height: 240px;
+  height: 160px;
   background-color: #5285FF;
 }
 /* line 54, ../sass/screen.scss */
 .top-section-short h1 {
   position: relative;
-  top: 22%;
+  top: 38px;
   margin: 0px;
-  margin-left: 80px;
+  margin-left: 12px;
   color: #FFF;
-  font-size: 4em;
+  font-size: 3.2em;
 }
 /* line 67, ../sass/screen.scss */
 .top-section-short h2 {
   position: relative;
-  top: 25%;
-  margin: 0 80px;
+  top: 48px;
+  margin: 0;
+  margin-left: 12px;
   color: #FFF;
   opacity: 0.6;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
-/* line 78, ../sass/screen.scss */
+/* line 79, ../sass/screen.scss */
 .background, .background-blue {
   position: relative;
   top: 0;
@@ -10322,17 +10323,17 @@ label {
   background-color: #fff;
 }
 
-/* line 88, ../sass/screen.scss */
+/* line 89, ../sass/screen.scss */
 .background-blue {
   background-color: #2548BE;
 }
 
-/* line 94, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 .paper-style-div {
   padding: 40px 20px;
   margin: 10px 0px;
 }
-/* line 101, ../sass/screen.scss */
+/* line 102, ../sass/screen.scss */
 .paper-style-div h2 {
   margin: 0;
   text-align: center;
@@ -10341,7 +10342,7 @@ label {
   color: #5f5f5f;
 }
 
-/* line 110, ../sass/screen.scss */
+/* line 111, ../sass/screen.scss */
 .divider {
   left: 0;
   right: 0;
@@ -10357,11 +10358,11 @@ label {
 }
 
 /* Signup div styles */
-/* line 126, ../sass/screen.scss */
+/* line 127, ../sass/screen.scss */
 .signup-div {
   padding: 60px;
 }
-/* line 129, ../sass/screen.scss */
+/* line 130, ../sass/screen.scss */
 .signup-div h2 {
   margin: 0;
   text-align: center;
@@ -10369,7 +10370,7 @@ label {
   font-weight: 400;
   color: #fff;
 }
-/* line 136, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 .signup-div a {
   left: 0;
   right: 0;
@@ -10377,7 +10378,7 @@ label {
   margin-bottom: 10px;
 }
 
-/* line 144, ../sass/screen.scss */
+/* line 145, ../sass/screen.scss */
 .divider-short {
   left: 0;
   right: 0;
@@ -10393,14 +10394,30 @@ label {
 }
 
 /* Responsive code */
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  /* line 164, ../sass/screen.scss */
+  .top-section-short br {
+    display: none;
+  }
+}
 /* Portrait phones and smaller */
 @media (max-width: 767px) {
-  /* line 162, ../sass/screen.scss */
+  /* line 174, ../sass/screen.scss */
+  .top-section-short h1 {
+    font-size: 2.5em;
+  }
+  /* line 177, ../sass/screen.scss */
+  .top-section-short .h2-long {
+    font-size: 1.2em;
+  }
+
+  /* line 181, ../sass/screen.scss */
   .background-blue {
     padding: 0 !important;
   }
 
-  /* line 166, ../sass/screen.scss */
+  /* line 185, ../sass/screen.scss */
   .paper-style-div {
     margin: 0 !important;
     border-radius: 0;

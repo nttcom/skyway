@@ -48,30 +48,31 @@
 }
 
 .top-section-short {
-    height: 240px;
+    height: 160px;
     background-color: $skyway_blue;
 
     h1 {
         position: relative;
         
-          top: 22%;
+          top: 38px;
 
           margin: 0px;
-          margin-left: 80px;
+          margin-left: 12px;
 
           color: #FFF;
-          font-size: 4em;
+          font-size: 3.2em;
 
     }
     
     h2 {
         position: relative;
-        top: 25%;
-        margin: 0 80px;
+        top: 48px;
+        margin: 0;
+        margin-left: 12px;
         
         color: #FFF;
         opacity: 0.6;
-        font-size: 2em;
+        font-size: 1.5em;
     }
 }
 
@@ -157,8 +158,26 @@
 
 /* Responsive code */
 
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .top-section-short {
+        br {
+            display: none;   
+        }
+    }
+}
+
 /* Portrait phones and smaller */
 @media (max-width: 767px) {
+    
+    .top-section-short {
+        h1 {
+            font-size: 2.5em;
+        }
+        .h2-long {
+            font-size: 1.2em;
+        }
+    }
     .background-blue {
         padding: 0 !important;
     }
