@@ -1,13 +1,15 @@
 @import "utilities/variables";
 @import "utilities/mixins";
 
+@import "bootstrap/bootstrap-variables";
+
 /* Navbar styles */
 
 .navbar {
   margin: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $grid-float-breakpoint) {
   .navbar-tabs-centered {
     /*        position: absolute;*/
     left: 200px;
