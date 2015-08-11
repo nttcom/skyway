@@ -1,21 +1,28 @@
 @import "utilities/variables";
 
+.preamble {
+    padding: 20px 0px;
+    font-size: 1.2em;
+}
+
 .support-box {
     @extend .paper-style-layer-1;
     
-    padding: 12px 0px 0px 0px;
+    padding: 12px 0px 56px 0px;
     margin-bottom: 30px;
     
-    height: 160px;
+//    height: 160px;
     
     border-style: solid;
     border-color: #7f7f7f;
     border-width: 1px;
     
+    text-align: center;
+    
     i {
         display: table;
         margin: auto;
-        margin-bottom: 8px;
+        margin-bottom: 10px;
         
         color: $skyway-blue;
     }
@@ -23,6 +30,7 @@
     h3 {
         display: table;
         margin: auto;
+        margin-bottom: 8px;
         
         font-size: 2em;
     }

@@ -10242,25 +10242,32 @@ label {
 }
 
 /* line 3, ../sass/pages/_support.scss */
+.preamble {
+  padding: 20px 0px;
+  font-size: 1.2em;
+}
+
+/* line 8, ../sass/pages/_support.scss */
 .support-box {
-  padding: 12px 0px 0px 0px;
+  padding: 12px 0px 56px 0px;
   margin-bottom: 30px;
-  height: 160px;
   border-style: solid;
   border-color: #7f7f7f;
   border-width: 1px;
+  text-align: center;
 }
-/* line 15, ../sass/pages/_support.scss */
+/* line 22, ../sass/pages/_support.scss */
 .support-box i {
   display: table;
   margin: auto;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   color: #5285FF;
 }
-/* line 23, ../sass/pages/_support.scss */
+/* line 30, ../sass/pages/_support.scss */
 .support-box h3 {
   display: table;
   margin: auto;
+  margin-bottom: 8px;
   font-size: 2em;
 }
 
