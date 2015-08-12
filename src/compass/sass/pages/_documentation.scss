@@ -1,0 +1,35 @@
+.documentation-menu {
+    @extend .paper-style;
+    
+    background-color: $skyway-blue;
+    
+    img {
+        display: table;
+        margin: auto;
+        
+        margin-top: 16px;
+        
+        height: 80px;
+        width: 80x;
+        
+        object-fit: scale-down;
+        
+    }
+    
+    h2 {
+        margin-top: 16px;
+
+        text-align: center;
+
+        color: #FFF;
+        font-size: 24px;
+    }
+    
+    .documentation-menu-buttons {
+        margin-top: 16px;
+    }
+}
+
+.support-div {
+    @extend .paper-style;
+}

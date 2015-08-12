@@ -8780,7 +8780,7 @@ button.close {
 }
 
 /* line 27, ../sass/utilities/_variables.scss */
-.paper-style, .feature-box, .howto-step .code-section, .paper-style-div {
+.paper-style, .documentation-menu, .support-div, .feature-box, .howto-step .code-section, .paper-style-div {
   position: relative;
   padding: 8px;
   background-color: #fff;
@@ -8803,162 +8803,6 @@ button.close {
   border-color: limegreen;
   border-width: 2px;
   border-style: solid;
-}
-
-/* Navbar styles */
-/* line 8, ../sass/components/_navbar.scss */
-.navbar {
-  margin: 0;
-}
-
-@media (min-width: 992px) {
-  /* line 13, ../sass/components/_navbar.scss */
-  .navbar-tabs-centered {
-    /*        position: absolute;*/
-    left: 200px;
-    right: 200px;
-    margin: auto;
-    display: table;
-    table-layout: fixed;
-    float: none;
-    /*        background-color: green;*/
-  }
-
-  /* line 23, ../sass/components/_navbar.scss */
-  .navbar-buttons {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-}
-/* line 30, ../sass/components/_navbar.scss */
-.navbar-tabs a {
-  /* Tab Colours */
-  color: #5285FF !important;
-  font-weight: 400;
-  font-size: 1.1em;
-  /* TODO: Responsive resizing */
-}
-
-/* line 38, ../sass/components/_navbar.scss */
-#logoButton {
-  position: absolute;
-  left: 10px;
-  padding: 0;
-  top: 0;
-  width: 190px;
-  height: 100%;
-  line-height: 100%;
-  margin: 0;
-  margin-left: 0;
-}
-/* line 52, ../sass/components/_navbar.scss */
-#logoButton img {
-  position: relative;
-  top: 7px;
-  left: 10px;
-  height: 42px;
-}
-
-/* line 61, ../sass/components/_navbar.scss */
-.dropdown-toggle {
-  color: rgba(252, 57, 49, 0.8) !important;
-}
-/* line 63, ../sass/components/_navbar.scss */
-.dropdown-toggle:hover {
-  color: #fc3931 !important;
-  background-color: rgba(252, 57, 49, 0.2) !important;
-}
-
-/* line 69, ../sass/components/_navbar.scss */
-.btn-link {
-  padding: 0 !important;
-}
-/* line 72, ../sass/components/_navbar.scss */
-.btn-link .btn-login {
-  margin: 14px;
-  margin-left: 8px;
-  margin-right: 28px;
-  background-color: #5285FF;
-  /* TODO: Click colour */
-}
-
-/* line 4, ../sass/components/_footer.scss */
-#footer {
-  position: relative;
-  height: 240px;
-  margin-top: 0px;
-  color: #fff;
-  background-color: #3f3f3f;
-}
-/* line 14, ../sass/components/_footer.scss */
-#footer .divider {
-  width: 350px;
-  margin-top: 34px;
-  border-color: #555555;
-}
-/* line 23, ../sass/components/_footer.scss */
-#footer p {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  bottom: 24px;
-  font-size: 1.2em;
-  text-align: center;
-}
-
-/* line 37, ../sass/components/_footer.scss */
-.logos-div {
-  margin-top: 32px;
-  height: 44px;
-}
-/* line 41, ../sass/components/_footer.scss */
-.logos-div [class^="col"] {
-  height: 100%;
-}
-/* line 45, ../sass/components/_footer.scss */
-.logos-div img {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  height: 32px;
-  object-fit: scale-down;
-  cursor: pointer;
-}
-/* line 58, ../sass/components/_footer.scss */
-.logos-div #ntt-logo {
-  height: 36px;
-}
-/* line 62, ../sass/components/_footer.scss */
-.logos-div #skyway-logo {
-  height: 44px;
-}
-
-/* line 69, ../sass/components/_footer.scss */
-.links-div {
-  margin-top: 26px;
-}
-
-/* line 83, ../sass/components/_footer.scss */
-.links-div a {
-  display: inline-block;
-  /* For IE 10 */
-  -ms-flex: 1;
-  position: relative;
-  font-size: 0.9em;
-  color: #6f6f6f;
-}
-
-/* line 95, ../sass/components/_footer.scss */
-.links-div a:hover {
-  color: #bfbfbf;
 }
 
 /* line 7, ../sass/components/_button.scss */
@@ -9039,6 +8883,12 @@ button.close {
 }
 
 /* line 87, ../sass/components/_button.scss */
+.btn-documentation {
+  width: 100%;
+  margin-top: 8px;
+}
+
+/* line 92, ../sass/components/_button.scss */
 .btn-howto {
   float: left;
   margin: 0;
@@ -9051,7 +8901,7 @@ button.close {
   background-color: #1EC75F;
 }
 
-/* line 102, ../sass/components/_button.scss */
+/* line 107, ../sass/components/_button.scss */
 .btn-support, .btn-support-left, .btn-support-right {
   position: absolute;
   bottom: 0;
@@ -9067,7 +8917,7 @@ button.close {
   border-top-right-radius: 0px;
 }
 
-/* line 122, ../sass/components/_button.scss */
+/* line 127, ../sass/components/_button.scss */
 .btn-support-left {
   left: 0;
   width: 50%;
@@ -9075,12 +8925,168 @@ button.close {
   border-right-width: 1px;
 }
 
-/* line 133, ../sass/components/_button.scss */
+/* line 138, ../sass/components/_button.scss */
 .btn-support-right {
   right: 0;
   width: 50%;
   border-bottom-left-radius: 0px;
   border-left-width: 1px;
+}
+
+/* line 4, ../sass/components/_footer.scss */
+#footer {
+  position: relative;
+  height: 240px;
+  margin-top: 0px;
+  color: #fff;
+  background-color: #3f3f3f;
+}
+/* line 14, ../sass/components/_footer.scss */
+#footer .divider {
+  width: 350px;
+  margin-top: 34px;
+  border-color: #555555;
+}
+/* line 23, ../sass/components/_footer.scss */
+#footer p {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 24px;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+/* line 37, ../sass/components/_footer.scss */
+.logos-div {
+  margin-top: 32px;
+  height: 44px;
+}
+/* line 41, ../sass/components/_footer.scss */
+.logos-div [class^="col"] {
+  height: 100%;
+}
+/* line 45, ../sass/components/_footer.scss */
+.logos-div img {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 32px;
+  object-fit: scale-down;
+  cursor: pointer;
+}
+/* line 58, ../sass/components/_footer.scss */
+.logos-div #ntt-logo {
+  height: 36px;
+}
+/* line 62, ../sass/components/_footer.scss */
+.logos-div #skyway-logo {
+  height: 44px;
+}
+
+/* line 69, ../sass/components/_footer.scss */
+.links-div {
+  margin-top: 26px;
+}
+
+/* line 83, ../sass/components/_footer.scss */
+.links-div a {
+  display: inline-block;
+  /* For IE 10 */
+  -ms-flex: 1;
+  position: relative;
+  font-size: 0.9em;
+  color: #6f6f6f;
+}
+
+/* line 95, ../sass/components/_footer.scss */
+.links-div a:hover {
+  color: #bfbfbf;
+}
+
+/* Navbar styles */
+/* line 8, ../sass/components/_navbar.scss */
+.navbar {
+  margin: 0;
+}
+
+@media (min-width: 992px) {
+  /* line 13, ../sass/components/_navbar.scss */
+  .navbar-tabs-centered {
+    /*        position: absolute;*/
+    left: 200px;
+    right: 200px;
+    margin: auto;
+    display: table;
+    table-layout: fixed;
+    float: none;
+    /*        background-color: green;*/
+  }
+
+  /* line 23, ../sass/components/_navbar.scss */
+  .navbar-buttons {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+/* line 30, ../sass/components/_navbar.scss */
+.navbar-tabs a {
+  /* Tab Colours */
+  color: #5285FF !important;
+  font-weight: 400;
+  font-size: 1.1em;
+  /* TODO: Responsive resizing */
+}
+
+/* line 38, ../sass/components/_navbar.scss */
+#logoButton {
+  position: absolute;
+  left: 10px;
+  padding: 0;
+  top: 0;
+  width: 190px;
+  height: 100%;
+  line-height: 100%;
+  margin: 0;
+  margin-left: 0;
+}
+/* line 52, ../sass/components/_navbar.scss */
+#logoButton img {
+  position: relative;
+  top: 7px;
+  left: 10px;
+  height: 42px;
+}
+
+/* line 61, ../sass/components/_navbar.scss */
+.dropdown-toggle {
+  color: rgba(252, 57, 49, 0.8) !important;
+}
+/* line 63, ../sass/components/_navbar.scss */
+.dropdown-toggle:hover {
+  color: #fc3931 !important;
+  background-color: rgba(252, 57, 49, 0.2) !important;
+}
+
+/* line 69, ../sass/components/_navbar.scss */
+.btn-link {
+  padding: 0 !important;
+}
+/* line 72, ../sass/components/_navbar.scss */
+.btn-link .btn-login {
+  margin: 14px;
+  margin-left: 8px;
+  margin-right: 28px;
+  background-color: #5285FF;
+  /* TODO: Click colour */
 }
 
 /* Share button styles */
@@ -9188,6 +9194,31 @@ label {
     bottom: 140px;
   }
 }
+/* line 1, ../sass/pages/_documentation.scss */
+.documentation-menu {
+  background-color: #5285FF;
+}
+/* line 6, ../sass/pages/_documentation.scss */
+.documentation-menu img {
+  display: table;
+  margin: auto;
+  margin-top: 16px;
+  height: 80px;
+  width: 80x;
+  object-fit: scale-down;
+}
+/* line 19, ../sass/pages/_documentation.scss */
+.documentation-menu h2 {
+  margin-top: 16px;
+  text-align: center;
+  color: #FFF;
+  font-size: 24px;
+}
+/* line 28, ../sass/pages/_documentation.scss */
+.documentation-menu .documentation-menu-buttons {
+  margin-top: 16px;
+}
+
 /* line 4, ../sass/pages/_features.scss */
 .features-header {
   width: inherit;
@@ -9727,7 +9758,7 @@ label {
 }
 
 /* Common Styles */
-/* line 32, ../sass/styles.scss */
+/* line 33, ../sass/styles.scss */
 * {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -9735,19 +9766,19 @@ label {
   font-weight: 400 !important;
 }
 
-/* line 46, ../sass/styles.scss */
+/* line 47, ../sass/styles.scss */
 .top-section {
   position: relative;
   height: 600px;
   background-color: #5285FF;
 }
 
-/* line 53, ../sass/styles.scss */
+/* line 54, ../sass/styles.scss */
 .top-section-short {
   height: 160px;
   background-color: #5285FF;
 }
-/* line 57, ../sass/styles.scss */
+/* line 58, ../sass/styles.scss */
 .top-section-short h1 {
   position: relative;
   top: 38px;
@@ -9756,7 +9787,7 @@ label {
   color: #FFF;
   font-size: 3.2em;
 }
-/* line 70, ../sass/styles.scss */
+/* line 71, ../sass/styles.scss */
 .top-section-short h2 {
   position: relative;
   top: 48px;
@@ -9767,7 +9798,7 @@ label {
   font-size: 1.5em;
 }
 
-/* line 82, ../sass/styles.scss */
+/* line 83, ../sass/styles.scss */
 .background, .background-blue {
   position: relative;
   top: 0;
@@ -9778,17 +9809,17 @@ label {
   background-color: #fff;
 }
 
-/* line 92, ../sass/styles.scss */
+/* line 93, ../sass/styles.scss */
 .background-blue {
   background-color: #2548BE;
 }
 
-/* line 98, ../sass/styles.scss */
+/* line 99, ../sass/styles.scss */
 .paper-style-div {
   padding: 40px 20px;
   margin: 10px 0px;
 }
-/* line 105, ../sass/styles.scss */
+/* line 106, ../sass/styles.scss */
 .paper-style-div h2 {
   margin: 0;
   text-align: center;
@@ -9797,7 +9828,7 @@ label {
   color: #5f5f5f;
 }
 
-/* line 114, ../sass/styles.scss */
+/* line 115, ../sass/styles.scss */
 .divider {
   left: 0;
   right: 0;
@@ -9813,11 +9844,11 @@ label {
 }
 
 /* Signup div styles */
-/* line 130, ../sass/styles.scss */
+/* line 131, ../sass/styles.scss */
 .signup-div {
   padding: 60px;
 }
-/* line 133, ../sass/styles.scss */
+/* line 134, ../sass/styles.scss */
 .signup-div h2 {
   margin: 0;
   text-align: center;
@@ -9825,7 +9856,7 @@ label {
   font-weight: 400;
   color: #fff;
 }
-/* line 140, ../sass/styles.scss */
+/* line 141, ../sass/styles.scss */
 .signup-div a {
   left: 0;
   right: 0;
@@ -9833,7 +9864,7 @@ label {
   margin-bottom: 10px;
 }
 
-/* line 148, ../sass/styles.scss */
+/* line 149, ../sass/styles.scss */
 .divider-short {
   left: 0;
   right: 0;
@@ -9851,28 +9882,28 @@ label {
 /* Responsive code */
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
-  /* line 167, ../sass/styles.scss */
+  /* line 168, ../sass/styles.scss */
   .top-section-short br {
     display: none;
   }
 }
 /* Portrait phones and smaller */
 @media (max-width: 767px) {
-  /* line 177, ../sass/styles.scss */
+  /* line 178, ../sass/styles.scss */
   .top-section-short h1 {
     font-size: 2.5em;
   }
-  /* line 180, ../sass/styles.scss */
+  /* line 181, ../sass/styles.scss */
   .top-section-short .h2-long {
     font-size: 1.2em;
   }
 
-  /* line 184, ../sass/styles.scss */
+  /* line 185, ../sass/styles.scss */
   .background-blue {
     padding: 0 !important;
   }
 
-  /* line 188, ../sass/styles.scss */
+  /* line 189, ../sass/styles.scss */
   .paper-style-div {
     margin: 0 !important;
     border-radius: 0;

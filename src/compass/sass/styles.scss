@@ -13,11 +13,12 @@
 
 @import "utilities/variables";
 
-@import "components/navbar";
-@import "components/footer";
 @import "components/button";
+@import "components/footer";
+@import "components/navbar";
 @import "components/share";
 
+@import "pages/documentation";
 @import "pages/features";
 @import "pages/index";
 @import "pages/info-page";
