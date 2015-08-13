@@ -86,33 +86,40 @@
 }
 
 
-.top-image-container {
+.animation-container-right {
+    @extend .h_r;
     
     position: relative;
-
+    
     height: calc(#{$top-section-height} - 80px);
     
-    
-    #animated-logo-js {
-        top: 90px;
-    }
-    
-    .device-image {
+    .animation-content {
+        @extend .h_b;
         
+        // Content pushes downwards (for responsive reasons)
         position: absolute;
-        
+        bottom: 0;
         left: 0;
         right: 0;
         margin: auto;
-        bottom: 40px;        
-        
-        max-height: 260px;
-        width: 100%;
-        max-width: 740px;
-        object-fit: scale-down;
+
+        #animated-logo-js {
+            top: 90px;
+        }
+
+        .device-image {
+            display: table;
+            margin: auto;
+            margin-top: 8px;
+
+            max-height: 260px;
+            width: 100%;
+            max-width: 740px;
+            object-fit: scale-down;
+        }
         
     }
-    
+
 }
 
 .top-btn-mobile {

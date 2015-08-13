@@ -367,8 +367,8 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?1439277925);
-  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?&1439277925#iefix) format("embedded-opentype"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff2?1439277925) format("woff2"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff?1439277925) format("woff"), url(/fonts/bootstrap/glyphicons-halflings-regular.ttf?1439277925) format("truetype"), url(/fonts/bootstrap/glyphicons-halflings-regular.svg?1439277925#glyphicons_halflingsregular) format("svg");
+  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?1439425663);
+  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?&1439425663#iefix) format("embedded-opentype"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff2?1439425663) format("woff2"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff?1439425663) format("woff"), url(/fonts/bootstrap/glyphicons-halflings-regular.ttf?1439425663) format("truetype"), url(/fonts/bootstrap/glyphicons-halflings-regular.svg?1439425663#glyphicons_halflingsregular) format("svg");
 }
 /* line 24, ../../../../../../.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_glyphicons.scss */
 .glyphicon {
@@ -8790,7 +8790,7 @@ button.close {
 }
 
 /* line 43, ../sass/utilities/_variables.scss */
-.h_r {
+.h_r, .animation-container-right {
   background-color: red;
   border-color: orange;
   border-width: 2px;
@@ -8798,13 +8798,433 @@ button.close {
 }
 
 /* line 51, ../sass/utilities/_variables.scss */
-.h_b {
+.h_b, .animation-container-right .animation-content {
   background-color: blue;
   border-color: limegreen;
   border-width: 2px;
   border-style: solid;
 }
 
+/**
+ * Position icons into circle (SO)
+ * http://stackoverflow.com/q/12813573/1397351 
+ */
+/* line 25, ../sass/components/_animation.scss */
+.animated-logo {
+  /* Common code - positioning happens individually */
+  position: relative;
+  display: table;
+  margin: auto;
+  margin-bottom: 24px;
+  height: 56px;
+  object-fit: scale-down;
+  opacity: 0.1;
+  -webkit-animation: pulsateLogo 3s 1s ease-out infinite;
+  -moz-animation: pulsateLogo 3s 1s ease-out infinite;
+  -o-animation: pulsateLogo 3s 1s ease-out infinite;
+  animation: pulsateLogo 3s 1s ease-out infinite;
+}
+
+/* line 45, ../sass/components/_animation.scss */
+.animated-transmission {
+  position: relative;
+  display: table;
+  margin: auto;
+  width: 100px;
+  height: 70px;
+  background-color: red;
+}
+
+/*
+@media screen and (max-width:1200px){
+    .js-transmission-animation {
+        top: 80px;
+    }
+    
+    #animated-logo-js {
+        top: 92px;
+    }
+    
+    .ios-transmission-animation {
+        top:40px;
+        left:0;
+        right:0;
+        margin: auto;
+    }
+    
+    #animated-logo-mobile {
+        top: 50px;
+        left:0;
+        right:0;
+        margin: auto;
+    }
+}
+*/
+/* line 112, ../sass/components/_animation.scss */
+.circle-container {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+  width: 40em;
+  height: 40em;
+  padding: 2.8em;
+  /*= 2em * 1.4 (2em = half the width of an img, 1.4 = sqrt(2))*/
+  border: dashed 1px;
+  border-radius: 50%;
+}
+
+/* line 132, ../sass/components/_animation.scss */
+.circle-container div {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1.8em;
+  height: 1.8em;
+  margin: -0.9em;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0;
+}
+
+/* line 148, ../sass/components/_animation.scss */
+.circle-container div:nth-of-type(1) {
+  -webkit-animation: pulsate1 3s 0s ease-out infinite;
+  -moz-animation: pulsate1 3s 0s ease-out infinite;
+  -o-animation: pulsate1 3s 0s ease-out infinite;
+  animation: pulsate1 3s 0s ease-out infinite;
+}
+
+/* line 155, ../sass/components/_animation.scss */
+.circle-container div:nth-of-type(2) {
+  -webkit-animation: pulsate2 3s 0.25s ease-out infinite;
+  -moz-animation: pulsate2 3s 0.25s ease-out infinite;
+  -o-animation: pulsate2 3s 0.25s ease-out infinite;
+  animation: pulsate2 3s 0.25s ease-out infinite;
+}
+
+/* line 162, ../sass/components/_animation.scss */
+.circle-container div:nth-of-type(3) {
+  -webkit-animation: pulsate3 3s 0.5s ease-out infinite;
+  -moz-animation: pulsate3 3s 0.5s ease-out infinite;
+  -o-animation: pulsate3 3s 0.5s ease-out infinite;
+  animation: pulsate3 3s 0.5s ease-out infinite;
+}
+
+/* line 169, ../sass/components/_animation.scss */
+.circle-container div:nth-of-type(4) {
+  -webkit-animation: pulsate4 3s 0.75s ease-out infinite;
+  -moz-animation: pulsate4 3s 0.75s ease-out infinite;
+  -o-animation: pulsate4 3s 0.75s ease-out infinite;
+  animation: pulsate4 3s 0.75s ease-out infinite;
+}
+
+/* line 176, ../sass/components/_animation.scss */
+.circle-container div:nth-of-type(5) {
+  -webkit-animation: pulsate5 3s 1s ease-out infinite;
+  -moz-animation: pulsate5 3s 1s ease-out infinite;
+  -o-animation: pulsate5 3s 1s ease-out infinite;
+  animation: pulsate5 3s 1s ease-out infinite;
+}
+
+/* line 183, ../sass/components/_animation.scss */
+.circle-container div:nth-of-type(6) {
+  -webkit-animation: pulsate6 3s 1.25s ease-out infinite;
+  -moz-animation: pulsate6 3s 1.25s ease-out infinite;
+  -o-animation: pulsate6 3s 1.25s ease-out infinite;
+  animation: pulsate6 3s 1.25s ease-out infinite;
+}
+
+/* line 190, ../sass/components/_animation.scss */
+.circle-container div:nth-of-type(7) {
+  -webkit-animation: pulsate7 3s 1.5s ease-out infinite;
+  -moz-animation: pulsate7 3s 1.5s ease-out infinite;
+  -o-animation: pulsate7 3s 1.5s ease-out infinite;
+  animation: pulsate7 3s 1.5s ease-out infinite;
+}
+
+/* this is for showing the circle on which the images are placed */
+/* line 198, ../sass/components/_animation.scss */
+.circle-container:after {
+  position: absolute;
+  top: 2.8em;
+  left: 2.8em;
+  width: 40em;
+  height: 40em;
+  /*	border: dashed 1px darkblue;*/
+  border-radius: 50%;
+  opacity: .3;
+  pointer-events: none;
+  content: '';
+}
+
+/*
+@-webkit-keyframes pulsate1 {
+    0% {-webkit-transform: rotate(246deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
+    33% {opacity: 0.8;}
+    66% {-webkit-transform: rotate(246deg) translate($circle-radius) scale(1.2, 1.2); opacity: 0.0;}
+}
+
+@-webkit-keyframes pulsate2 {
+    0% {-webkit-transform: rotate(256deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
+    33% {opacity: 0.8;}
+    66% {-webkit-transform: rotate(256deg) translate($circle-radius) scale(1.2, 1.2); opacity: 0.0;}
+}
+
+@-webkit-keyframes pulsate3 {
+    0% {-webkit-transform: rotate(266deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
+    33% {opacity: 0.8;}
+    66% {-webkit-transform: rotate(266deg) translate($circle-radius) scale(1.2, 1.2); opacity: 0.0;}
+}
+
+@-webkit-keyframes pulsate4 {
+    0% {-webkit-transform: rotate(276deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
+    33% {opacity: 0.8;}
+    66% {-webkit-transform: rotate(276deg) translate($circle-radius) scale(1.2, 1.2); opacity: 0.0;}
+}
+
+@-webkit-keyframes pulsate5 {
+    0% {-webkit-transform: rotate(286deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
+    33% {opacity: 0.8;}
+    66% {-webkit-transform: rotate(286deg) translate($circle-radius) scale(1.2, 1.2); opacity: 0.0;}
+}
+
+@-webkit-keyframes pulsate6 {
+    0% {-webkit-transform: rotate(296deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
+    33% {opacity: 0.8;}
+    66% {-webkit-transform: rotate(296deg) translate($circle-radius) scale(1.2, 1.2); opacity: 0.0;}
+}
+
+@-webkit-keyframes pulsate7 {
+    0% {-webkit-transform: rotate(306deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
+    33% {opacity: 0.8;}
+    66% {-webkit-transform: rotate(306deg) translate($circle-radius) scale(1.2, 1.2); opacity: 0.0;}
+}
+*/
+/* Main Animation - webkit keyframes */
+@-webkit-keyframes pulsateLogo {
+  0% {
+    opacity: 0.25;
+  }
+  33% {
+    opacity: 0.8;
+  }
+  66% {
+    opacity: 0.25;
+  }
+}
+@-webkit-keyframes pulsate1 {
+  0% {
+    -webkit-transform: rotate(234deg) translate(20em) scale(0.1, 0.1);
+    opacity: 0.0;
+  }
+  33% {
+    -webkit-transform: rotate(234deg) translate(20em) scale(0.75, 0.75);
+    opacity: 0.8;
+  }
+  66% {
+    -webkit-transform: rotate(234deg) translate(20em) scale(0.1, 0.1);
+    opacity: 0.0;
+  }
+}
+@-webkit-keyframes pulsate2 {
+  0% {
+    -webkit-transform: rotate(246deg) translate(20em) scale(0.1, 0.1);
+    opacity: 0.0;
+  }
+  33% {
+    -webkit-transform: rotate(246deg) translate(20em) scale(0.9, 0.9);
+    opacity: 0.8;
+  }
+  66% {
+    -webkit-transform: rotate(246deg) translate(20em) scale(0.1, 0.1);
+    opacity: 0.0;
+  }
+}
+@-webkit-keyframes pulsate3 {
+  0% {
+    -webkit-transform: rotate(258deg) translate(20em) scale(0.1, 0.1);
+    opacity: 0.0;
+  }
+  33% {
+    -webkit-transform: rotate(258deg) translate(20em) scale(1.05, 1.05);
+    opacity: 0.8;
+  }
+  66% {
+    -webkit-transform: rotate(258deg) translate(20em) scale(0.1, 0.1);
+    opacity: 0.0;
+  }
+}
+@-webkit-keyframes pulsate4 {
+  0% {
+    -webkit-transform: rotate(270deg) translate(20em) scale(0.1, 0.1);
+    opacity: 0.0;
+  }
+  33% {
+    -webkit-transform: rotate(270deg) translate(20em) scale(1.2, 1.2);
+    opacity: 0.8;
+  }
+  66% {
+    -webkit-transform: rotate(270deg) translate(20em) scale(0.1, 0.1);
+    opacity: 0.0;
+  }
+}
+@-webkit-keyframes pulsate5 {
+  0% {
+    -webkit-transform: rotate(282deg) translate(20em) scale(0.1, 0.1);
+    opacity: 0.0;
+  }
+  33% {
+    -webkit-transform: rotate(282deg) translate(20em) scale(1.05, 1.05);
+    opacity: 0.8;
+  }
+  66% {
+    -webkit-transform: rotate(282deg) translate(20em) scale(0.1, 0.1);
+    opacity: 0.0;
+  }
+}
+@-webkit-keyframes pulsate6 {
+  0% {
+    -webkit-transform: rotate(294deg) translate(20em) scale(0.1, 0.1);
+    opacity: 0.0;
+  }
+  33% {
+    -webkit-transform: rotate(294deg) translate(20em) scale(0.9, 0.9);
+    opacity: 0.8;
+  }
+  66% {
+    -webkit-transform: rotate(294deg) translate(20em) scale(0.1, 0.1);
+    opacity: 0.0;
+  }
+}
+@-webkit-keyframes pulsate7 {
+  0% {
+    -webkit-transform: rotate(306deg) translate(20em) scale(0.1, 0.1);
+    opacity: 0.0;
+  }
+  33% {
+    -webkit-transform: rotate(306deg) translate(20em) scale(0.75, 0.75);
+    opacity: 0.8;
+  }
+  66% {
+    -webkit-transform: rotate(306deg) translate(20em) scale(0.1, 0.1);
+    opacity: 0.0;
+  }
+}
+/* Main Animation - keyframes */
+@keyframes pulsateLogo {
+  0% {
+    opacity: 0.25;
+  }
+  33% {
+    opacity: 0.8;
+  }
+  66% {
+    opacity: 0.25;
+  }
+}
+@keyframes pulsate1 {
+  0% {
+    transform: rotate(234deg) translate(20em) scale(0.1, 0.1);
+    opacity: 0.0;
+  }
+  33% {
+    transform: rotate(234deg) translate(20em) scale(0.75, 0.75);
+    opacity: 0.8;
+  }
+  66% {
+    transform: rotate(234deg) translate(20em) scale(0.1, 0.1);
+    opacity: 0.0;
+  }
+}
+@keyframes pulsate2 {
+  0% {
+    transform: rotate(246deg) translate(20em) scale(0.1, 0.1);
+    opacity: 0.0;
+  }
+  33% {
+    transform: rotate(246deg) translate(20em) scale(0.9, 0.9);
+    opacity: 0.8;
+  }
+  66% {
+    transform: rotate(246deg) translate(20em) scale(0.1, 0.1);
+    opacity: 0.0;
+  }
+}
+@keyframes pulsate3 {
+  0% {
+    transform: rotate(258deg) translate(20em) scale(0.1, 0.1);
+    opacity: 0.0;
+  }
+  33% {
+    transform: rotate(258deg) translate(20em) scale(1.05, 1.05);
+    opacity: 0.8;
+  }
+  66% {
+    transform: rotate(258deg) translate(20em) scale(0.1, 0.1);
+    opacity: 0.0;
+  }
+}
+@keyframes pulsate4 {
+  0% {
+    transform: rotate(270deg) translate(20em) scale(0.1, 0.1);
+    opacity: 0.0;
+  }
+  33% {
+    transform: rotate(270deg) translate(20em) scale(1.2, 1.2);
+    opacity: 0.8;
+  }
+  66% {
+    transform: rotate(270deg) translate(20em) scale(0.1, 0.1);
+    opacity: 0.0;
+  }
+}
+@keyframes pulsate5 {
+  0% {
+    transform: rotate(282deg) translate(20em) scale(0.1, 0.1);
+    opacity: 0.0;
+  }
+  33% {
+    transform: rotate(282deg) translate(20em) scale(1.05, 1.05);
+    opacity: 0.8;
+  }
+  66% {
+    transform: rotate(282deg) translate(20em) scale(0.1, 0.1);
+    opacity: 0.0;
+  }
+}
+@keyframes pulsate6 {
+  0% {
+    transform: rotate(294deg) translate(20em) scale(0.1, 0.1);
+    opacity: 0.0;
+  }
+  33% {
+    transform: rotate(294deg) translate(20em) scale(0.9, 0.9);
+    opacity: 0.8;
+  }
+  66% {
+    transform: rotate(294deg) translate(20em) scale(0.1, 0.1);
+    opacity: 0.0;
+  }
+}
+@keyframes pulsate7 {
+  0% {
+    transform: rotate(306deg) translate(20em) scale(0.1, 0.1);
+    opacity: 0.0;
+  }
+  33% {
+    transform: rotate(306deg) translate(20em) scale(0.75, 0.75);
+    opacity: 0.8;
+  }
+  66% {
+    transform: rotate(306deg) translate(20em) scale(0.1, 0.1);
+    opacity: 0.0;
+  }
+}
 /* line 7, ../sass/components/_button.scss */
 .btn-ink {
   position: relative;
@@ -9582,28 +10002,34 @@ label {
 }
 
 /* line 89, ../sass/pages/_info-page.scss */
-.top-image-container {
+.animation-container-right {
   position: relative;
   height: calc(600px - 80px);
 }
 /* line 96, ../sass/pages/_info-page.scss */
-.top-image-container #animated-logo-js {
-  top: 90px;
-}
-/* line 100, ../sass/pages/_info-page.scss */
-.top-image-container .device-image {
+.animation-container-right .animation-content {
   position: absolute;
+  bottom: 0;
   left: 0;
   right: 0;
   margin: auto;
-  bottom: 40px;
+}
+/* line 106, ../sass/pages/_info-page.scss */
+.animation-container-right .animation-content #animated-logo-js {
+  top: 90px;
+}
+/* line 110, ../sass/pages/_info-page.scss */
+.animation-container-right .animation-content .device-image {
+  display: table;
+  margin: auto;
+  margin-top: 8px;
   max-height: 260px;
   width: 100%;
   max-width: 740px;
   object-fit: scale-down;
 }
 
-/* line 118, ../sass/pages/_info-page.scss */
+/* line 125, ../sass/pages/_info-page.scss */
 .top-btn-mobile {
   position: absolute;
   bottom: 0;
@@ -9615,46 +10041,46 @@ label {
 
 /* Portrait phones and smaller */
 @media (max-width: 767px) {
-  /* line 133, ../sass/pages/_info-page.scss */
+  /* line 140, ../sass/pages/_info-page.scss */
   .top-container-right {
     height: 450px;
   }
 
-  /* line 137, ../sass/pages/_info-page.scss */
+  /* line 144, ../sass/pages/_info-page.scss */
   .top-image-container {
     height: 450px;
   }
 
-  /* line 141, ../sass/pages/_info-page.scss */
+  /* line 148, ../sass/pages/_info-page.scss */
   .top-container-left {
     height: 470px;
   }
 
-  /* line 145, ../sass/pages/_info-page.scss */
+  /* line 152, ../sass/pages/_info-page.scss */
   .subpage-title {
     display: none;
   }
 
-  /* line 149, ../sass/pages/_info-page.scss */
+  /* line 156, ../sass/pages/_info-page.scss */
   .subpage-title-mobile {
     display: inherit !important;
   }
 
-  /* line 153, ../sass/pages/_info-page.scss */
+  /* line 160, ../sass/pages/_info-page.scss */
   .top-btn-desktop {
     display: none;
   }
 
-  /* line 157, ../sass/pages/_info-page.scss */
+  /* line 164, ../sass/pages/_info-page.scss */
   .top-btn-mobile {
     display: inherit;
   }
 }
-/* line 170, ../sass/pages/_info-page.scss */
+/* line 177, ../sass/pages/_info-page.scss */
 .howto-step {
   margin-bottom: 10px;
 }
-/* line 174, ../sass/pages/_info-page.scss */
+/* line 181, ../sass/pages/_info-page.scss */
 .howto-step img {
   float: right;
   margin-right: -10px;
@@ -9663,20 +10089,20 @@ label {
   width: 50px;
   object-fit: scale-down;
 }
-/* line 187, ../sass/pages/_info-page.scss */
+/* line 194, ../sass/pages/_info-page.scss */
 .howto-step .howto-step-content {
   padding: 12px;
   margin-bottom: 20px;
   border-radius: 5px;
   background-color: rgba(82, 133, 255, 0.12);
 }
-/* line 195, ../sass/pages/_info-page.scss */
+/* line 202, ../sass/pages/_info-page.scss */
 .howto-step .howto-step-content p {
   margin: 0;
   padding: 0;
   font-size: 1.2em;
 }
-/* line 203, ../sass/pages/_info-page.scss */
+/* line 210, ../sass/pages/_info-page.scss */
 .howto-step .code-section {
   padding: 16px;
   margin: 8px;
@@ -9684,7 +10110,7 @@ label {
   color: #fff;
   background-color: #3f3f3f;
 }
-/* line 226, ../sass/pages/_info-page.scss */
+/* line 233, ../sass/pages/_info-page.scss */
 .howto-step pre {
   color: inherit;
   background-color: inherit;
@@ -9696,7 +10122,7 @@ label {
   line-height: 16px;
 }
 
-/* line 241, ../sass/pages/_info-page.scss */
+/* line 248, ../sass/pages/_info-page.scss */
 .howto-step-count {
   margin-left: 20px;
 }
@@ -9758,7 +10184,7 @@ label {
 }
 
 /* Common Styles */
-/* line 33, ../sass/styles.scss */
+/* line 34, ../sass/styles.scss */
 * {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -9766,19 +10192,19 @@ label {
   font-weight: 400 !important;
 }
 
-/* line 47, ../sass/styles.scss */
+/* line 48, ../sass/styles.scss */
 .top-section {
   position: relative;
   height: 600px;
   background-color: #5285FF;
 }
 
-/* line 54, ../sass/styles.scss */
+/* line 55, ../sass/styles.scss */
 .top-section-short {
   height: 160px;
   background-color: #5285FF;
 }
-/* line 58, ../sass/styles.scss */
+/* line 59, ../sass/styles.scss */
 .top-section-short h1 {
   position: relative;
   top: 38px;
@@ -9787,7 +10213,7 @@ label {
   color: #FFF;
   font-size: 3.2em;
 }
-/* line 71, ../sass/styles.scss */
+/* line 72, ../sass/styles.scss */
 .top-section-short h2 {
   position: relative;
   top: 48px;
@@ -9798,7 +10224,7 @@ label {
   font-size: 1.5em;
 }
 
-/* line 83, ../sass/styles.scss */
+/* line 84, ../sass/styles.scss */
 .background, .background-blue {
   position: relative;
   top: 0;
@@ -9809,17 +10235,17 @@ label {
   background-color: #fff;
 }
 
-/* line 93, ../sass/styles.scss */
+/* line 94, ../sass/styles.scss */
 .background-blue {
   background-color: #2548BE;
 }
 
-/* line 99, ../sass/styles.scss */
+/* line 100, ../sass/styles.scss */
 .paper-style-div {
   padding: 40px 20px;
   margin: 10px 0px;
 }
-/* line 106, ../sass/styles.scss */
+/* line 107, ../sass/styles.scss */
 .paper-style-div h2 {
   margin: 0;
   text-align: center;
@@ -9828,7 +10254,7 @@ label {
   color: #5f5f5f;
 }
 
-/* line 115, ../sass/styles.scss */
+/* line 116, ../sass/styles.scss */
 .divider {
   left: 0;
   right: 0;
@@ -9844,11 +10270,11 @@ label {
 }
 
 /* Signup div styles */
-/* line 131, ../sass/styles.scss */
+/* line 132, ../sass/styles.scss */
 .signup-div {
   padding: 60px;
 }
-/* line 134, ../sass/styles.scss */
+/* line 135, ../sass/styles.scss */
 .signup-div h2 {
   margin: 0;
   text-align: center;
@@ -9856,7 +10282,7 @@ label {
   font-weight: 400;
   color: #fff;
 }
-/* line 141, ../sass/styles.scss */
+/* line 142, ../sass/styles.scss */
 .signup-div a {
   left: 0;
   right: 0;
@@ -9864,7 +10290,7 @@ label {
   margin-bottom: 10px;
 }
 
-/* line 149, ../sass/styles.scss */
+/* line 150, ../sass/styles.scss */
 .divider-short {
   left: 0;
   right: 0;
@@ -9882,28 +10308,28 @@ label {
 /* Responsive code */
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
-  /* line 168, ../sass/styles.scss */
+  /* line 169, ../sass/styles.scss */
   .top-section-short br {
     display: none;
   }
 }
 /* Portrait phones and smaller */
 @media (max-width: 767px) {
-  /* line 178, ../sass/styles.scss */
+  /* line 179, ../sass/styles.scss */
   .top-section-short h1 {
     font-size: 2.5em;
   }
-  /* line 181, ../sass/styles.scss */
+  /* line 182, ../sass/styles.scss */
   .top-section-short .h2-long {
     font-size: 1.2em;
   }
 
-  /* line 185, ../sass/styles.scss */
+  /* line 186, ../sass/styles.scss */
   .background-blue {
     padding: 0 !important;
   }
 
-  /* line 189, ../sass/styles.scss */
+  /* line 190, ../sass/styles.scss */
   .paper-style-div {
     margin: 0 !important;
     border-radius: 0;
