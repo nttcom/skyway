@@ -48,7 +48,7 @@
         color: #fff;
         opacity: 0.5;
         font-size: 1.5em;
-        font-weight: 400;
+        font-weight: 300 !important;
         height: auto;
     }
 
@@ -240,18 +240,4 @@
 
 .howto-step-count {
     margin-left: 20px;
-}
-
-/* Portrait phones and smaller */
-@media (max-width: 767px) {
-    
-
-    
-//    .howto-step {
-//        img {
-//            float: left;
-//            margin-top: 10px;
-//            margin-left: -10px;
-//        }
-//    }
 }

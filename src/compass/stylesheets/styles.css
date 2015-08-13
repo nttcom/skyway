@@ -10184,7 +10184,7 @@ label {
   color: #fff;
   opacity: 0.5;
   font-size: 1.5em;
-  font-weight: 400;
+  font-weight: 300 !important;
   height: auto;
 }
 
@@ -10341,7 +10341,6 @@ label {
   margin-left: 20px;
 }
 
-/* Portrait phones and smaller */
 /* line 3, ../sass/pages/_news.scss */
 .news-headline {
   padding: 16px 8px;
@@ -10397,28 +10396,65 @@ label {
   font-size: 2em;
 }
 
-/* Common Styles */
-/* line 34, ../sass/styles.scss */
-* {
-  font-family: 'Open Sans', sans-serif;
+/* Define and import fonts */
+@font-face {
+  font-family: 'Noto Sans Japanese';
+  font-style: normal;
+  font-weight: 100;
+  src: url("../fonts/NotoSansCJKjp-Thin.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/NotoSansCJKjp-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/NotoSansCJKjp-Thin.woff") format("woff"), url("../fonts/NotoSansCJKjp-Thin.ttf") format("truetype");
+  /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: 'Noto Sans Japanese';
+  font-style: normal;
+  font-weight: 200;
+  src: url("../fonts/NotoSansCJKjp-Light.eot");
+  src: url("../fonts/NotoSansCJKjp-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/NotoSansCJKjp-Light.woff") format("woff"), url("../fonts/NotoSansCJKjp-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Noto Sans Japanese';
+  font-style: normal;
   font-weight: 300;
+  src: url("../fonts/NotoSansCJKjp-DemiLight.eot");
+  src: url("../fonts/NotoSansCJKjp-DemiLight.eot?#iefix") format("embedded-opentype"), url("../fonts/NotoSansCJKjp-DemiLight.woff") format("woff"), url("../fonts/NotoSansCJKjp-DemiLight.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Noto Sans Japanese';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/NotoSansCJKjp-Regular.eot");
+  src: url("../fonts/NotoSansCJKjp-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/NotoSansCJKjp-Regular.woff") format("woff"), url("../fonts/NotoSansCJKjp-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Noto Sans Japanese';
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/NotoSansCJKjp-Medium.eot");
+  src: url("../fonts/NotoSansCJKjp-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/NotoSansCJKjp-Medium.woff") format("woff"), url("../fonts/NotoSansCJKjp-Medium.ttf") format("truetype");
+}
+/* Common Styles */
+/* line 81, ../sass/styles.scss */
+* {
+  font-family: "Noto Sans Japanese", sans-serif;
+  font-weight: 200;
   line-height: 1.7em;
-  font-weight: 400 !important;
 }
 
-/* line 48, ../sass/styles.scss */
+/* line 106, ../sass/styles.scss */
 .top-section {
   position: relative;
   height: 600px;
   background-color: #5285FF;
 }
 
-/* line 55, ../sass/styles.scss */
+/* line 113, ../sass/styles.scss */
 .top-section-short {
   height: 160px;
   background-color: #5285FF;
 }
-/* line 59, ../sass/styles.scss */
+/* line 117, ../sass/styles.scss */
 .top-section-short h1 {
   position: relative;
   top: 38px;
@@ -10427,7 +10463,7 @@ label {
   color: #FFF;
   font-size: 3.2em;
 }
-/* line 72, ../sass/styles.scss */
+/* line 130, ../sass/styles.scss */
 .top-section-short h2 {
   position: relative;
   top: 48px;
@@ -10438,7 +10474,7 @@ label {
   font-size: 1.5em;
 }
 
-/* line 84, ../sass/styles.scss */
+/* line 142, ../sass/styles.scss */
 .background, .background-blue {
   position: relative;
   top: 0;
@@ -10449,17 +10485,17 @@ label {
   background-color: #fff;
 }
 
-/* line 94, ../sass/styles.scss */
+/* line 152, ../sass/styles.scss */
 .background-blue {
   background-color: #2548BE;
 }
 
-/* line 100, ../sass/styles.scss */
+/* line 158, ../sass/styles.scss */
 .paper-style-div {
   padding: 40px 20px;
   margin: 10px 0px;
 }
-/* line 107, ../sass/styles.scss */
+/* line 165, ../sass/styles.scss */
 .paper-style-div h2 {
   margin: 0;
   text-align: center;
@@ -10468,7 +10504,7 @@ label {
   color: #5f5f5f;
 }
 
-/* line 116, ../sass/styles.scss */
+/* line 174, ../sass/styles.scss */
 .divider {
   left: 0;
   right: 0;
@@ -10484,11 +10520,11 @@ label {
 }
 
 /* Signup div styles */
-/* line 132, ../sass/styles.scss */
+/* line 190, ../sass/styles.scss */
 .signup-div {
   padding: 60px;
 }
-/* line 135, ../sass/styles.scss */
+/* line 193, ../sass/styles.scss */
 .signup-div h2 {
   margin: 0;
   text-align: center;
@@ -10496,7 +10532,7 @@ label {
   font-weight: 400;
   color: #fff;
 }
-/* line 142, ../sass/styles.scss */
+/* line 200, ../sass/styles.scss */
 .signup-div a {
   left: 0;
   right: 0;
@@ -10504,7 +10540,7 @@ label {
   margin-bottom: 10px;
 }
 
-/* line 150, ../sass/styles.scss */
+/* line 208, ../sass/styles.scss */
 .divider-short {
   left: 0;
   right: 0;
@@ -10522,28 +10558,28 @@ label {
 /* Responsive code */
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
-  /* line 169, ../sass/styles.scss */
+  /* line 227, ../sass/styles.scss */
   .top-section-short br {
     display: none;
   }
 }
 /* Portrait phones and smaller */
 @media (max-width: 767px) {
-  /* line 179, ../sass/styles.scss */
+  /* line 237, ../sass/styles.scss */
   .top-section-short h1 {
     font-size: 2.5em;
   }
-  /* line 182, ../sass/styles.scss */
+  /* line 240, ../sass/styles.scss */
   .top-section-short .h2-long {
     font-size: 1.2em;
   }
 
-  /* line 186, ../sass/styles.scss */
+  /* line 244, ../sass/styles.scss */
   .background-blue {
     padding: 0 !important;
   }
 
-  /* line 190, ../sass/styles.scss */
+  /* line 248, ../sass/styles.scss */
   .paper-style-div {
     margin: 0 !important;
     border-radius: 0;
