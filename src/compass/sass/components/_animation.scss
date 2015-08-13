@@ -20,7 +20,7 @@
 //    margin:auto;
 //}
 
-
+@import "utilities/mixins";
 
 .animated-logo {
     /* Common code - positioning happens individually */
@@ -28,7 +28,7 @@
     position: relative;
     display: table;
     margin: auto;
-    margin-bottom: 24px;
+    margin-bottom: 32px;
     
     height: 56px;
 
@@ -52,7 +52,7 @@
     width: 100px; 
     height: 70px;
     
-    background-color: red;
+//    background-color: red;
 }
 
 $animation-mobile-offset: 0%;
@@ -61,6 +61,21 @@ $animation-mobile-offset: 0%;
 //    margin-left: 50% + $animation-mobile-offset;
 //    margin-right: 50% - $animation-mobile-offset;
 }
+
+//@media (max-width: $screen-md) {
+//    
+//    $circle-diameter: 20em;
+//    
+//    .animated-transmission {
+//        background-color: green;
+//    }
+//    
+//    .circle-container {
+//        width: $circle-diameter;
+//        height: $circle-diameter;
+//    }
+//    
+//}
 
 //#animated-logo-mobile {
 //    
@@ -123,11 +138,12 @@ $orb-opacity:       0; // Starting opacity
 	width: $circle-diameter;
     height: $circle-diameter;
 	padding: 2.8em; /*= 2em * 1.4 (2em = half the width of an img, 1.4 = sqrt(2))*/
-    border: dashed 1px;
+//    border: dashed 1px;
 	border-radius: 50%;
 //	margin: 1.75em auto 0;
     
 //    background-color: red;
+    
 }
 .circle-container div {
 	display: block;
@@ -260,47 +276,47 @@ $orb-opacity:       0; // Starting opacity
     66% {opacity: 0.25;}
 }
 
-@-webkit-keyframes pulsate1 {
-    0% {-webkit-transform: rotate(234deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
-    33% {-webkit-transform: rotate(234deg) translate($circle-radius) scale(0.75, 0.75); opacity: 0.8;}
-    66% {-webkit-transform: rotate(234deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
-}
-
-@-webkit-keyframes pulsate2 {
-    0% {-webkit-transform: rotate(246deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
-    33% {-webkit-transform: rotate(246deg) translate($circle-radius) scale(0.9, 0.9);opacity: 0.8;}
-    66% {-webkit-transform: rotate(246deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
-}
-
-@-webkit-keyframes pulsate3 {
-    0% {-webkit-transform: rotate(258deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
-    33% {-webkit-transform: rotate(258deg) translate($circle-radius) scale(1.05, 1.05); opacity: 0.8;}
-    66% {-webkit-transform: rotate(258deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
-}
-
-@-webkit-keyframes pulsate4 {
-    0% {-webkit-transform: rotate(270deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
-    33% {-webkit-transform: rotate(270deg) translate($circle-radius) scale(1.2, 1.2); opacity: 0.8;}
-    66% {-webkit-transform: rotate(270deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
-}
-
-@-webkit-keyframes pulsate5 {
-    0% {-webkit-transform: rotate(282deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
-    33% {-webkit-transform: rotate(282deg) translate($circle-radius) scale(1.05, 1.05); opacity: 0.8;}
-    66% {-webkit-transform: rotate(282deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
-}
-
-@-webkit-keyframes pulsate6 {
-    0% {-webkit-transform: rotate(294deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
-    33% {-webkit-transform: rotate(294deg) translate($circle-radius) scale(0.9, 0.9); opacity: 0.8;}
-    66% {-webkit-transform: rotate(294deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
-}
-
-@-webkit-keyframes pulsate7 {
-    0% {-webkit-transform: rotate(306deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
-    33% {-webkit-transform: rotate(306deg) translate($circle-radius) scale(0.75, 0.75); opacity: 0.8;}
-    66% {-webkit-transform: rotate(306deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
-}
+//@-webkit-keyframes pulsate1 {
+//    0% {-webkit-transform: rotate(234deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
+//    33% {-webkit-transform: rotate(234deg) translate($circle-radius) scale(0.75, 0.75); opacity: 0.8;}
+//    66% {-webkit-transform: rotate(234deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
+//}
+//
+//@-webkit-keyframes pulsate2 {
+//    0% {-webkit-transform: rotate(246deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
+//    33% {-webkit-transform: rotate(246deg) translate($circle-radius) scale(0.9, 0.9);opacity: 0.8;}
+//    66% {-webkit-transform: rotate(246deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
+//}
+//
+//@-webkit-keyframes pulsate3 {
+//    0% {-webkit-transform: rotate(258deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
+//    33% {-webkit-transform: rotate(258deg) translate($circle-radius) scale(1.05, 1.05); opacity: 0.8;}
+//    66% {-webkit-transform: rotate(258deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
+//}
+//
+//@-webkit-keyframes pulsate4 {
+//    0% {-webkit-transform: rotate(270deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
+//    33% {-webkit-transform: rotate(270deg) translate($circle-radius) scale(1.2, 1.2); opacity: 0.8;}
+//    66% {-webkit-transform: rotate(270deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
+//}
+//
+//@-webkit-keyframes pulsate5 {
+//    0% {-webkit-transform: rotate(282deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
+//    33% {-webkit-transform: rotate(282deg) translate($circle-radius) scale(1.05, 1.05); opacity: 0.8;}
+//    66% {-webkit-transform: rotate(282deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
+//}
+//
+//@-webkit-keyframes pulsate6 {
+//    0% {-webkit-transform: rotate(294deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
+//    33% {-webkit-transform: rotate(294deg) translate($circle-radius) scale(0.9, 0.9); opacity: 0.8;}
+//    66% {-webkit-transform: rotate(294deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
+//}
+//
+//@-webkit-keyframes pulsate7 {
+//    0% {-webkit-transform: rotate(306deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
+//    33% {-webkit-transform: rotate(306deg) translate($circle-radius) scale(0.75, 0.75); opacity: 0.8;}
+//    66% {-webkit-transform: rotate(306deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
+//}
 
 
 
@@ -313,44 +329,132 @@ $orb-opacity:       0; // Starting opacity
     66% {opacity: 0.25;}
 }
 
-@keyframes pulsate1 {
-    0% {transform: rotate(234deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
-    33% {transform: rotate(234deg) translate($circle-radius) scale(0.75, 0.75); opacity: 0.8;}
-    66% {transform: rotate(234deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
+//@keyframes pulsate1 {
+//    0% {transform: rotate(234deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
+//    33% {transform: rotate(234deg) translate($circle-radius) scale(0.75, 0.75); opacity: 0.8;}
+//    66% {transform: rotate(234deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
+//}
+//
+//@keyframes pulsate2 {
+//    0% {transform: rotate(246deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
+//    33% {transform: rotate(246deg) translate($circle-radius) scale(0.9, 0.9);opacity: 0.8;}
+//    66% {transform: rotate(246deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
+//}
+//
+//@keyframes pulsate3 {
+//    0% {transform: rotate(258deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
+//    33% {transform: rotate(258deg) translate($circle-radius) scale(1.05, 1.05); opacity: 0.8;}
+//    66% {transform: rotate(258deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
+//}
+//
+//@keyframes pulsate4 {
+//    0% {transform: rotate(270deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
+//    33% {transform: rotate(270deg) translate($circle-radius) scale(1.2, 1.2); opacity: 0.8;}
+//    66% {transform: rotate(270deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
+//}
+//
+//@keyframes pulsate5 {
+//    0% {transform: rotate(282deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
+//    33% {transform: rotate(282deg) translate($circle-radius) scale(1.05, 1.05); opacity: 0.8;}
+//    66% {transform: rotate(282deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
+//}
+//
+//@keyframes pulsate6 {
+//    0% {transform: rotate(294deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
+//    33% {transform: rotate(294deg) translate($circle-radius) scale(0.9, 0.9); opacity: 0.8;}
+//    66% {transform: rotate(294deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
+//}
+//
+//@keyframes pulsate7 {
+//    0% {transform: rotate(306deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
+//    33% {transform: rotate(306deg) translate($circle-radius) scale(0.75, 0.75); opacity: 0.8;}
+//    66% {transform: rotate(306deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
+//}
+
+
+// Test
+
+$keyframe-names: ();
+$keyframe-scales: ();
+$keyframe-rotations: ();
+
+$number-points: 7;      // 7 pulsating orbs (animation points)
+$middle-point: ceil($number-points/2);
+
+$opacity-min: 0.0;
+$opacity-max: 0.8;
+
+$scale-min: 0.1;
+
+$scale-center: 1.2;
+$scale-step: 0.15;
+$scale-start: ($scale-center - ($scale-step * ($middle-point - 1)));
+
+$rotation-center: 270;  // Animation midpoint rotation (degrees)
+$rotation-step: 12;     // Rotation difference between 
+
+$rotation-start: ($rotation-center - ($rotation-step * ($middle-point - 1)));
+
+@for $i from 1 through $number-points {
+    $keyframe-names: append($keyframe-names, pulsate + $i);
+    
+    $keyframe-rotations: append($keyframe-rotations, #{$rotation-start + ($rotation-step * ($i - 1))}deg);
+
+    @if $i < $middle-point {
+        $keyframe-scales: append($keyframe-scales, #{$scale-start + ($scale-step * ($i - 1))});
+    } @else {
+        $keyframe-scales: append($keyframe-scales, #{$scale-center - ($scale-step * ($i - $middle-point))});
+    }
 }
 
-@keyframes pulsate2 {
-    0% {transform: rotate(246deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
-    33% {transform: rotate(246deg) translate($circle-radius) scale(0.9, 0.9);opacity: 0.8;}
-    66% {transform: rotate(246deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
+@for $i from 1 through length($keyframe-names) {
+    @-webkit-keyframes #{nth($keyframe-names, $i)} {
+        0% {-webkit-transform: rotate(nth($keyframe-rotations, $i)) translate($circle-radius) scale($scale-min, $scale-min); opacity: $opacity-min;}
+        33% {-webkit-transform: rotate(nth($keyframe-rotations, $i)) translate($circle-radius) scale(nth($keyframe-scales, $i), nth($keyframe-scales, $i)); opacity: $opacity-max;}
+        66% {-webkit-transform: rotate(nth($keyframe-rotations, $i)) translate($circle-radius) scale($scale-min, $scale-min); opacity: $opacity-min;}
+    }
+    
+    @keyframes #{nth($keyframe-names, $i)} {
+        0% {transform: rotate(nth($keyframe-rotations, $i)) translate($circle-radius) scale($scale-min, $scale-min); opacity: $opacity-min;}
+        33% {transform: rotate(nth($keyframe-rotations, $i)) translate($circle-radius) scale(nth($keyframe-scales, $i), nth($keyframe-scales, $i)); opacity: $opacity-max;}
+        66% {transform: rotate(nth($keyframe-rotations, $i)) translate($circle-radius) scale($scale-min, $scale-min); opacity: $opacity-min;}
+    }
 }
 
-@keyframes pulsate3 {
-    0% {transform: rotate(258deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
-    33% {transform: rotate(258deg) translate($circle-radius) scale(1.05, 1.05); opacity: 0.8;}
-    66% {transform: rotate(258deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
+
+
+
+
+
+
+@include bp(sm) {
+    $circle-diameter:   35em;
+    $circle-radius:     $circle-diameter * 0.5;
+    
+    .circle-container {
+        width: $circle-diameter;
+        height: $circle-diameter;
+    }
+    
+    @for $i from 1 through length($keyframe-names) {
+        @-webkit-keyframes #{nth($keyframe-names, $i)} {
+            0% {-webkit-transform: rotate(nth($keyframe-rotations, $i)) translate($circle-radius) scale($scale-min, $scale-min); opacity: $opacity-min;}
+            33% {-webkit-transform: rotate(nth($keyframe-rotations, $i)) translate($circle-radius) scale(nth($keyframe-scales, $i), nth($keyframe-scales, $i)); opacity: $opacity-max;}
+            66% {-webkit-transform: rotate(nth($keyframe-rotations, $i)) translate($circle-radius) scale($scale-min, $scale-min); opacity: $opacity-min;}
+        }
+
+        @keyframes #{nth($keyframe-names, $i)} {
+            0% {transform: rotate(nth($keyframe-rotations, $i)) translate($circle-radius) scale($scale-min, $scale-min); opacity: $opacity-min;}
+            33% {transform: rotate(nth($keyframe-rotations, $i)) translate($circle-radius) scale(nth($keyframe-scales, $i), nth($keyframe-scales, $i)); opacity: $opacity-max;}
+            66% {transform: rotate(nth($keyframe-rotations, $i)) translate($circle-radius) scale($scale-min, $scale-min); opacity: $opacity-min;}
+        }
+    }
 }
 
-@keyframes pulsate4 {
-    0% {transform: rotate(270deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
-    33% {transform: rotate(270deg) translate($circle-radius) scale(1.2, 1.2); opacity: 0.8;}
-    66% {transform: rotate(270deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
-}
-
-@keyframes pulsate5 {
-    0% {transform: rotate(282deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
-    33% {transform: rotate(282deg) translate($circle-radius) scale(1.05, 1.05); opacity: 0.8;}
-    66% {transform: rotate(282deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
-}
-
-@keyframes pulsate6 {
-    0% {transform: rotate(294deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
-    33% {transform: rotate(294deg) translate($circle-radius) scale(0.9, 0.9); opacity: 0.8;}
-    66% {transform: rotate(294deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
-}
-
-@keyframes pulsate7 {
-    0% {transform: rotate(306deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
-    33% {transform: rotate(306deg) translate($circle-radius) scale(0.75, 0.75); opacity: 0.8;}
-    66% {transform: rotate(306deg) translate($circle-radius) scale(0.1, 0.1); opacity: 0.0;}
+@include bp(xs) {
+    
+    [class^="animated"] {
+        display: none;   
+    }
+    
 }

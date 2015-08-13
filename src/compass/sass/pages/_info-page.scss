@@ -87,11 +87,15 @@
 
 
 .animation-container-right {
-    @extend .h_r;
+//    @extend .h_r;
     
     position: relative;
     
     height: calc(#{$top-section-height} - 80px);
+
+    @include bp(xs) { 
+        height: calc(#{$top-section-height} - 200px);
+    }
     
     .animation-content {
         @extend .h_b;
@@ -116,10 +120,8 @@
             width: 100%;
             max-width: 740px;
             object-fit: scale-down;
-        }
-        
+        }       
     }
-
 }
 
 .top-btn-mobile {
@@ -209,16 +211,7 @@
     
     .code-section {
         
-        @extend .paper-style;
-
-//          padding-top: 0px;
-//          padding-bottom: 12px;
-//          padding-left: 16px;
-
-//          margin-top: 16px;
-//          margin-bottom: 16px;
-
-        
+        @extend .paper-style;        
         
         padding: 16px;
         margin: 8px;

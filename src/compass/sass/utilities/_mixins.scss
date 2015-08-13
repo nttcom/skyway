@@ -1,3 +1,5 @@
+@import "bootstrap/bootstrap-variables";
+
 @mixin alpha-attribute($attribute, $color, $background) {
     $percent: alpha($color) * 100%;
     $opaque: opacify($color, 1);
@@ -13,4 +15,17 @@
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+}
+
+// Easy media queries based on Bootstrap breakpoints
+@mixin bp($point) {
+  @if $point == xs {
+    @media (max-width: $screen-xs-max) { @content; }
+  }
+  @else if $point == sm {
+    @media (max-width: $screen-sm-max) { @content; }
+  }
+  @else if $point == md {
+    @media (max-width: $screen-md-max)  { @content; }
+  }
 }
