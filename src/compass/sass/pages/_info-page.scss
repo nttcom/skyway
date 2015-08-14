@@ -16,10 +16,12 @@
         margin-bottom: 40px;
         color: #FFF;
         font-size: 3em;
-        font-weight: 400;
         text-align: center;
         
-//        display: block;
+        @include bp(sm) {
+            font-size: 2.5em;
+        }
+        
     }
 }
 
@@ -33,23 +35,40 @@
     i {         
         line-height: 100px;
         text-align: center;
-        margin-left: -10px;
+        margin-right: -15px;
 
         color: #fff;
         font-size: 3.8em;
+        
+        position: relative;
+        float: right;
+        
     }
     
     .highlight-text {
-//        @extend .h_r;
         
         @include vertical-align;
         
+        padding: 0;
         margin-left: 10px;
+        
         color: #fff;
         opacity: 0.5;
         font-size: 1.5em;
-        font-weight: 300 !important;
         height: auto;
+    }
+    
+    @include bp(sm) {
+        i {
+            font-size: 3em;
+        }
+        
+        .highlight-text {
+            margin-left: 0px;
+            padding-left: 10px;
+            
+            font-size: 1.25em;
+        }
     }
 
 }
@@ -73,11 +92,10 @@
         right: 0;
         margin: auto;
         
-        top: 42px;
+        top: 32px;
         
         color: #FFF;
         font-size: 3em;
-        font-weight: 400;
         text-align: center;
         
         display: none;
@@ -165,12 +183,7 @@
     
     .top-btn-mobile {
         display: inherit;
-    }
-    
-    .subpage-highlight { 
-        
-    }
-    
+    }    
 }
 
 

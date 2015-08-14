@@ -10155,71 +10155,89 @@ label {
   margin-bottom: 40px;
   color: #FFF;
   font-size: 3em;
-  font-weight: 400;
   text-align: center;
 }
+@media (max-width: 991px) {
+  /* line 10, ../sass/pages/_info-page.scss */
+  .top-container-left .subpage-title {
+    font-size: 2.5em;
+  }
+}
 
-/* line 27, ../sass/pages/_info-page.scss */
+/* line 29, ../sass/pages/_info-page.scss */
 .subpage-highlight {
   margin: 25px 0px;
   height: 100px;
 }
-/* line 33, ../sass/pages/_info-page.scss */
+/* line 35, ../sass/pages/_info-page.scss */
 .subpage-highlight i {
   line-height: 100px;
   text-align: center;
-  margin-left: -10px;
+  margin-right: -15px;
   color: #fff;
   font-size: 3.8em;
+  position: relative;
+  float: right;
 }
-/* line 42, ../sass/pages/_info-page.scss */
+/* line 48, ../sass/pages/_info-page.scss */
 .subpage-highlight .highlight-text {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  padding: 0;
   margin-left: 10px;
   color: #fff;
   opacity: 0.5;
   font-size: 1.5em;
-  font-weight: 300 !important;
   height: auto;
 }
+@media (max-width: 991px) {
+  /* line 62, ../sass/pages/_info-page.scss */
+  .subpage-highlight i {
+    font-size: 3em;
+  }
+  /* line 66, ../sass/pages/_info-page.scss */
+  .subpage-highlight .highlight-text {
+    margin-left: 0px;
+    padding-left: 10px;
+    font-size: 1.25em;
+  }
+}
 
-/* line 60, ../sass/pages/_info-page.scss */
+/* line 79, ../sass/pages/_info-page.scss */
 .top-container-right {
   height: 600px;
   background-color: #5285FF;
   overflow: hidden;
 }
-/* line 68, ../sass/pages/_info-page.scss */
+/* line 87, ../sass/pages/_info-page.scss */
 .top-container-right .subpage-title-mobile {
   position: absolute;
   margin: 0;
   left: 0;
   right: 0;
   margin: auto;
-  top: 42px;
+  top: 32px;
   color: #FFF;
   font-size: 3em;
-  font-weight: 400;
   text-align: center;
   display: none;
 }
 
-/* line 89, ../sass/pages/_info-page.scss */
+/* line 107, ../sass/pages/_info-page.scss */
 .animation-container-right {
   position: relative;
   height: calc(600px - 80px);
 }
 @media (max-width: 767px) {
-  /* line 89, ../sass/pages/_info-page.scss */
+  /* line 107, ../sass/pages/_info-page.scss */
   .animation-container-right {
     height: calc(600px - 200px);
   }
 }
-/* line 100, ../sass/pages/_info-page.scss */
+/* line 118, ../sass/pages/_info-page.scss */
 .animation-container-right .animation-content {
   position: absolute;
   bottom: 0;
@@ -10227,11 +10245,11 @@ label {
   right: 0;
   margin: auto;
 }
-/* line 110, ../sass/pages/_info-page.scss */
+/* line 128, ../sass/pages/_info-page.scss */
 .animation-container-right .animation-content #animated-logo-js {
   top: 90px;
 }
-/* line 114, ../sass/pages/_info-page.scss */
+/* line 132, ../sass/pages/_info-page.scss */
 .animation-container-right .animation-content .device-image {
   display: table;
   margin: auto;
@@ -10242,7 +10260,7 @@ label {
   object-fit: scale-down;
 }
 
-/* line 127, ../sass/pages/_info-page.scss */
+/* line 145, ../sass/pages/_info-page.scss */
 .top-btn-mobile {
   position: absolute;
   bottom: 0;
@@ -10254,46 +10272,46 @@ label {
 
 /* Portrait phones and smaller */
 @media (max-width: 767px) {
-  /* line 142, ../sass/pages/_info-page.scss */
+  /* line 160, ../sass/pages/_info-page.scss */
   .top-container-right {
     height: 450px;
   }
 
-  /* line 146, ../sass/pages/_info-page.scss */
+  /* line 164, ../sass/pages/_info-page.scss */
   .top-image-container {
     height: 450px;
   }
 
-  /* line 150, ../sass/pages/_info-page.scss */
+  /* line 168, ../sass/pages/_info-page.scss */
   .top-container-left {
     height: 470px;
   }
 
-  /* line 154, ../sass/pages/_info-page.scss */
+  /* line 172, ../sass/pages/_info-page.scss */
   .subpage-title {
     display: none;
   }
 
-  /* line 158, ../sass/pages/_info-page.scss */
+  /* line 176, ../sass/pages/_info-page.scss */
   .subpage-title-mobile {
     display: inherit !important;
   }
 
-  /* line 162, ../sass/pages/_info-page.scss */
+  /* line 180, ../sass/pages/_info-page.scss */
   .top-btn-desktop {
     display: none;
   }
 
-  /* line 166, ../sass/pages/_info-page.scss */
+  /* line 184, ../sass/pages/_info-page.scss */
   .top-btn-mobile {
     display: inherit;
   }
 }
-/* line 179, ../sass/pages/_info-page.scss */
+/* line 192, ../sass/pages/_info-page.scss */
 .howto-step {
   margin-bottom: 10px;
 }
-/* line 183, ../sass/pages/_info-page.scss */
+/* line 196, ../sass/pages/_info-page.scss */
 .howto-step img {
   float: right;
   margin-right: -10px;
@@ -10302,20 +10320,20 @@ label {
   width: 50px;
   object-fit: scale-down;
 }
-/* line 196, ../sass/pages/_info-page.scss */
+/* line 209, ../sass/pages/_info-page.scss */
 .howto-step .howto-step-content {
   padding: 12px;
   margin-bottom: 20px;
   border-radius: 5px;
   background-color: rgba(82, 133, 255, 0.12);
 }
-/* line 204, ../sass/pages/_info-page.scss */
+/* line 217, ../sass/pages/_info-page.scss */
 .howto-step .howto-step-content p {
   margin: 0;
   padding: 0;
   font-size: 1.2em;
 }
-/* line 212, ../sass/pages/_info-page.scss */
+/* line 225, ../sass/pages/_info-page.scss */
 .howto-step .code-section {
   padding: 16px;
   margin: 8px;
@@ -10323,7 +10341,7 @@ label {
   color: #fff;
   background-color: #3f3f3f;
 }
-/* line 226, ../sass/pages/_info-page.scss */
+/* line 239, ../sass/pages/_info-page.scss */
 .howto-step pre {
   color: inherit;
   background-color: inherit;
@@ -10335,7 +10353,7 @@ label {
   line-height: 16px;
 }
 
-/* line 241, ../sass/pages/_info-page.scss */
+/* line 254, ../sass/pages/_info-page.scss */
 .howto-step-count {
   margin-left: 20px;
 }
