@@ -8769,7 +8769,7 @@ button.close {
     display: none !important;
   }
 }
-/* line 13, ../sass/utilities/_variables.scss */
+/* line 14, ../sass/utilities/_variables.scss */
 .paper-style-layer-1, .btn-ink, .support-box {
   position: relative;
   padding: 8px;
@@ -8779,7 +8779,7 @@ button.close {
   border-radius: 5px;
 }
 
-/* line 27, ../sass/utilities/_variables.scss */
+/* line 28, ../sass/utilities/_variables.scss */
 .paper-style, .documentation-menu, .support-div, .feature-box, .howto-step .code-section, .paper-style-div {
   position: relative;
   padding: 8px;
@@ -8789,7 +8789,7 @@ button.close {
   border-radius: 5px;
 }
 
-/* line 43, ../sass/utilities/_variables.scss */
+/* line 44, ../sass/utilities/_variables.scss */
 .h_r {
   background-color: red;
   border-color: orange;
@@ -8797,7 +8797,7 @@ button.close {
   border-style: solid;
 }
 
-/* line 51, ../sass/utilities/_variables.scss */
+/* line 52, ../sass/utilities/_variables.scss */
 .h_b, .animation-container-right .animation-content {
   background-color: blue;
   border-color: limegreen;
@@ -10117,6 +10117,7 @@ label {
   text-align: center;
   font-size: 1.2em;
   font-weight: 200;
+  color: #5f5f5f;
 }
 @media (max-width: 1199px) {
   /* line 75, ../sass/pages/_index.scss */
@@ -10125,7 +10126,7 @@ label {
     font-size: 1.0em;
   }
 }
-@media (max-width: 1199px) {
+@media (max-width: 767px) {
   /* line 75, ../sass/pages/_index.scss */
   .highlight {
     font-size: 1.2em;
@@ -10133,13 +10134,13 @@ label {
 }
 
 /* Front Page - News */
-/* line 114, ../sass/pages/_index.scss */
+/* line 116, ../sass/pages/_index.scss */
 .mini-headline {
   margin-top: 15px;
   margin-bottom: 35px;
 }
 
-/* line 120, ../sass/pages/_index.scss */
+/* line 122, ../sass/pages/_index.scss */
 .mini-headline-date {
   margin-bottom: 8px;
   max-width: 160px;
@@ -10152,7 +10153,7 @@ label {
   border-radius: 5px;
 }
 
-/* line 132, ../sass/pages/_index.scss */
+/* line 134, ../sass/pages/_index.scss */
 .mini-headline-text {
   margin-left: -10px;
   font-size: 1.3em;
@@ -10162,31 +10163,31 @@ label {
 
 /* Medium Devices, Desktops */
 @media (max-width: 992px) {
-  /* line 144, ../sass/pages/_index.scss */
+  /* line 146, ../sass/pages/_index.scss */
   .highlight br {
     display: none;
   }
 }
 /* Portrait phones and smaller */
 @media (max-width: 768px) {
-  /* line 152, ../sass/pages/_index.scss */
+  /* line 154, ../sass/pages/_index.scss */
   .highlight {
     text-align: center;
     height: 170px;
   }
-  /* line 156, ../sass/pages/_index.scss */
+  /* line 158, ../sass/pages/_index.scss */
   .highlight i {
     font-size: 3em;
   }
 
-  /* line 161, ../sass/pages/_index.scss */
+  /* line 163, ../sass/pages/_index.scss */
   .mini-headline-date {
     display: table;
     margin: auto;
     margin-bottom: 8px;
   }
 
-  /* line 167, ../sass/pages/_index.scss */
+  /* line 169, ../sass/pages/_index.scss */
   .mini-headline-text {
     text-align: center;
   }
