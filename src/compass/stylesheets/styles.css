@@ -10100,7 +10100,7 @@ label {
   font-size: 1.2em;
   font-weight: 100;
 }
-/* line 83, ../sass/pages/_index.scss */
+/* line 84, ../sass/pages/_index.scss */
 .highlight i {
   display: table;
   margin: auto;
@@ -10109,7 +10109,7 @@ label {
   text-align: center;
   color: #5285FF;
 }
-/* line 92, ../sass/pages/_index.scss */
+/* line 93, ../sass/pages/_index.scss */
 .highlight h3 {
   /*    position: absolute;*/
   margin-top: 18px;
@@ -10118,15 +10118,28 @@ label {
   font-size: 1.2em;
   font-weight: 200;
 }
+@media (max-width: 1199px) {
+  /* line 75, ../sass/pages/_index.scss */
+  .highlight {
+    padding: 0 16px;
+    font-size: 1.0em;
+  }
+}
+@media (max-width: 1199px) {
+  /* line 75, ../sass/pages/_index.scss */
+  .highlight {
+    font-size: 1.2em;
+  }
+}
 
 /* Front Page - News */
-/* line 104, ../sass/pages/_index.scss */
+/* line 114, ../sass/pages/_index.scss */
 .mini-headline {
   margin-top: 15px;
   margin-bottom: 35px;
 }
 
-/* line 110, ../sass/pages/_index.scss */
+/* line 120, ../sass/pages/_index.scss */
 .mini-headline-date {
   margin-bottom: 8px;
   max-width: 160px;
@@ -10139,7 +10152,7 @@ label {
   border-radius: 5px;
 }
 
-/* line 122, ../sass/pages/_index.scss */
+/* line 132, ../sass/pages/_index.scss */
 .mini-headline-text {
   margin-left: -10px;
   font-size: 1.3em;
@@ -10149,31 +10162,31 @@ label {
 
 /* Medium Devices, Desktops */
 @media (max-width: 992px) {
-  /* line 134, ../sass/pages/_index.scss */
+  /* line 144, ../sass/pages/_index.scss */
   .highlight br {
     display: none;
   }
 }
 /* Portrait phones and smaller */
 @media (max-width: 768px) {
-  /* line 142, ../sass/pages/_index.scss */
+  /* line 152, ../sass/pages/_index.scss */
   .highlight {
     text-align: center;
     height: 170px;
   }
-  /* line 146, ../sass/pages/_index.scss */
+  /* line 156, ../sass/pages/_index.scss */
   .highlight i {
     font-size: 3em;
   }
 
-  /* line 151, ../sass/pages/_index.scss */
+  /* line 161, ../sass/pages/_index.scss */
   .mini-headline-date {
     display: table;
     margin: auto;
     margin-bottom: 8px;
   }
 
-  /* line 157, ../sass/pages/_index.scss */
+  /* line 167, ../sass/pages/_index.scss */
   .mini-headline-text {
     text-align: center;
   }

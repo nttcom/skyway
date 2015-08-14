@@ -73,6 +73,7 @@
 /* Front Page - Highlights */
 
 .highlight {
+//    @extend .h_r;
     padding: 0 30px;
     
     color: $light_font;
@@ -96,6 +97,15 @@
         text-align: center;
         font-size: 1.2em;
         font-weight: 200;
+    }
+    
+    @include bp(md) {
+        padding: 0 16px;
+        font-size: 1.0em;
+    }
+    
+    @include bp(md) {
+        font-size: 1.2em;
     }
 }
 
