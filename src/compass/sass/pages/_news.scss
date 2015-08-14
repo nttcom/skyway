@@ -32,7 +32,7 @@
         background-color: $skyway_blue;
         border-radius: 5px;
         
-        margin-top: 10px;
+        margin-top: 8px;
     }
     
     .news-headline-text {
@@ -43,6 +43,10 @@
         
         border-radius: 5px;
         background-color: rgba(82, 133, 255, 0.12);
+        
+        p {
+            margin: 0;
+        }
     }
     
     @include bp(sm) {
