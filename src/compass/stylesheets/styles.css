@@ -10013,14 +10013,14 @@ label {
 .mini-feature-column paper-button p {
   position: absolute;
   left: 75px;
-  top: 33px;
+  top: 34px;
   height: 36px;
   overflow: hidden;
   margin: 0;
   margin-right: 12px;
   padding: 0;
   text-align: left;
-  font-size: 1.1em;
+  font-size: 1em;
   line-height: 18px;
   color: #9f9f9f;
 }
