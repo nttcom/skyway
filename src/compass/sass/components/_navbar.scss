@@ -67,13 +67,20 @@
 }
 
 .btn-link {
-  padding: 0 !important;
-    
-  .btn-login {
-    margin: 14px;
-    margin-left: 8px;
-    margin-right: 28px;
-    background-color: $skyway_blue;
-    /* TODO: Click colour */
-  }
+    padding: 0 !important;
+
+    .btn-login {
+        
+        width: 86px;
+        
+        margin: 5px;
+        margin-left: 15px;
+        margin-right: 15px;
+
+        color: #fff;
+        background-color: $skyway_blue;
+        
+        font-weight: 100;
+        /* TODO: Click colour */
+    }
 }
