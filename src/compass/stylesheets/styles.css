@@ -10125,24 +10125,27 @@ label {
   font-size: 1.85em;
   text-align: center;
 }
-
 @media (max-width: 767px) {
-  /* line 33, ../sass/pages/_index.scss */
+  /* line 30, ../sass/pages/_index.scss */
+  .top-section .transmission-animation {
+    display: none;
+  }
+  /* line 34, ../sass/pages/_index.scss */
   .top-section h1 {
     font-size: 1.85 !important;
   }
-
-  /* line 37, ../sass/pages/_index.scss */
+  /* line 38, ../sass/pages/_index.scss */
   .top-section h2 {
     font-size: 1.5 !important;
   }
 }
-/* line 42, ../sass/pages/_index.scss */
+
+/* line 45, ../sass/pages/_index.scss */
 .row-top-images {
   margin-top: 140px;
 }
 
-/* line 48, ../sass/pages/_index.scss */
+/* line 51, ../sass/pages/_index.scss */
 .animation-container img {
   /*    position: absolute;*/
   /*        top: 40px;*/
@@ -10154,12 +10157,12 @@ label {
   object-fit: scale-down;
   cursor: pointer;
 }
-/* line 59, ../sass/pages/_index.scss */
+/* line 62, ../sass/pages/_index.scss */
 .animation-container img:hover {
   transform: scale(1.02, 1.02);
   -webkit-transform: scale(1.02, 1.02);
 }
-/* line 64, ../sass/pages/_index.scss */
+/* line 67, ../sass/pages/_index.scss */
 .animation-container h3 {
   margin-top: 20px;
   color: #FFF;
@@ -10169,14 +10172,14 @@ label {
 }
 
 /* Front Page - Highlights */
-/* line 75, ../sass/pages/_index.scss */
+/* line 78, ../sass/pages/_index.scss */
 .highlight {
   padding: 0 30px;
   color: #7f7f7f;
   font-size: 1.2em;
   font-weight: 100;
 }
-/* line 84, ../sass/pages/_index.scss */
+/* line 87, ../sass/pages/_index.scss */
 .highlight i {
   display: table;
   margin: auto;
@@ -10185,7 +10188,7 @@ label {
   text-align: center;
   color: #5285FF;
 }
-/* line 93, ../sass/pages/_index.scss */
+/* line 96, ../sass/pages/_index.scss */
 .highlight h3 {
   /*    position: absolute;*/
   margin-top: 18px;
@@ -10196,27 +10199,27 @@ label {
   color: #5f5f5f;
 }
 @media (max-width: 1199px) {
-  /* line 75, ../sass/pages/_index.scss */
+  /* line 78, ../sass/pages/_index.scss */
   .highlight {
     padding: 0 16px;
     font-size: 1.0em;
   }
 }
 @media (max-width: 767px) {
-  /* line 75, ../sass/pages/_index.scss */
+  /* line 78, ../sass/pages/_index.scss */
   .highlight {
     font-size: 1.2em;
   }
 }
 
 /* Front Page - News */
-/* line 116, ../sass/pages/_index.scss */
+/* line 119, ../sass/pages/_index.scss */
 .mini-headline {
   margin-top: 15px;
   margin-bottom: 35px;
 }
 
-/* line 122, ../sass/pages/_index.scss */
+/* line 125, ../sass/pages/_index.scss */
 .mini-headline-date {
   margin-bottom: 8px;
   max-width: 160px;
@@ -10229,7 +10232,7 @@ label {
   border-radius: 5px;
 }
 
-/* line 134, ../sass/pages/_index.scss */
+/* line 137, ../sass/pages/_index.scss */
 .mini-headline-text {
   margin-left: -10px;
   font-size: 1.3em;
@@ -10239,31 +10242,31 @@ label {
 
 /* Medium Devices, Desktops */
 @media (max-width: 992px) {
-  /* line 146, ../sass/pages/_index.scss */
+  /* line 149, ../sass/pages/_index.scss */
   .highlight br {
     display: none;
   }
 }
 /* Portrait phones and smaller */
 @media (max-width: 768px) {
-  /* line 154, ../sass/pages/_index.scss */
+  /* line 157, ../sass/pages/_index.scss */
   .highlight {
     text-align: center;
     height: 170px;
   }
-  /* line 158, ../sass/pages/_index.scss */
+  /* line 161, ../sass/pages/_index.scss */
   .highlight i {
     font-size: 3em;
   }
 
-  /* line 163, ../sass/pages/_index.scss */
+  /* line 166, ../sass/pages/_index.scss */
   .mini-headline-date {
     display: table;
     margin: auto;
     margin-bottom: 8px;
   }
 
-  /* line 169, ../sass/pages/_index.scss */
+  /* line 172, ../sass/pages/_index.scss */
   .mini-headline-text {
     text-align: center;
   }

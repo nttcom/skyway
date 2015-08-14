@@ -23,20 +23,23 @@
         text-align: center;
     }
     
-
-}
-
-@include bp(xs) {
-    
-    // TODO: Why is this not working?
-    
-    .top-section h1 {
-        font-size: 1.85 !important;
+    @include bp(xs) {
+        
+//        height: 520px !important;
+        
+        .transmission-animation{
+            display: none;
+        }
+        
+        h1 {
+            font-size: 1.85 !important;
+        }
+            
+        h2 {
+            font-size: 1.5 !important;
+        }
     }
 
-    .top-section h2 {
-        font-size: 1.5 !important;
-    }
 }
 
 .row-top-images {
