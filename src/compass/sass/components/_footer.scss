@@ -21,12 +21,10 @@
     
     
     p {
-        position: absolute;
-
-        left: 0;
-        right: 0;
+        display: table;
         margin: auto;
-        bottom: 24px;
+
+        margin-top: 24px;
 
         font-size: 1.2em;
         text-align: center;
@@ -68,31 +66,62 @@
 
 .links-div {
     margin-top: 26px;
-//    position: absolute;
 
-//        top: 142px;
-//        left: 0;
-//        right: 0;
-//        margin: auto;
+    a {
+        display:inline-block; /* For IE 10 */
+        -ms-flex: 1;
 
-//        width: 700px;
-//        height: 20px;
+        position: relative;
 
-}
-
-.links-div a {
-    display:inline-block; /* For IE 10 */
-    -ms-flex: 1;
-
-    position: relative;
-
-    font-size: 0.9em;
-    color: #6f6f6f;
+        color: #6f6f6f;
+    }
+    
+    a:hover {
+        color: #bfbfbf;
+    }
 
 }
     
 
-.links-div a:hover {
+@include bp(xs) {
 
-    color: #bfbfbf;
+    #footer {
+        height: 180px;
+        
+        .divider {
+            margin-top: 16px;
+        }
+        
+        p {
+            font-size: 1.0em;
+            margin-top: 10px;
+        }  
+        
+    }
+    
+    .logos-div {
+        margin-top: 16px;
+        
+        #ntt-logo {
+            height: 25.2px !important;
+        }
+
+        #skyway-logo {
+            height: 30.8px !important;
+        }
+
+        #html5-logo {
+            height: 22.4px !important;
+        }
+    }
+    
+    .links-div {
+        margin-top: 16px;
+        
+        a {
+            font-size: 0.75em;
+        }
+    }
+    
+
 }

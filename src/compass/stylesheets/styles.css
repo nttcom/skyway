@@ -9577,25 +9577,23 @@ button.close {
 }
 /* line 23, ../sass/components/_footer.scss */
 #footer p {
-  position: absolute;
-  left: 0;
-  right: 0;
+  display: table;
   margin: auto;
-  bottom: 24px;
+  margin-top: 24px;
   font-size: 1.2em;
   text-align: center;
 }
 
-/* line 37, ../sass/components/_footer.scss */
+/* line 35, ../sass/components/_footer.scss */
 .logos-div {
   margin-top: 32px;
   height: 44px;
 }
-/* line 41, ../sass/components/_footer.scss */
+/* line 39, ../sass/components/_footer.scss */
 .logos-div [class^="col"] {
   height: 100%;
 }
-/* line 45, ../sass/components/_footer.scss */
+/* line 43, ../sass/components/_footer.scss */
 .logos-div img {
   position: relative;
   top: 50%;
@@ -9610,35 +9608,73 @@ button.close {
   object-fit: scale-down;
   cursor: pointer;
 }
-/* line 58, ../sass/components/_footer.scss */
+/* line 56, ../sass/components/_footer.scss */
 .logos-div #ntt-logo {
   height: 36px;
 }
-/* line 62, ../sass/components/_footer.scss */
+/* line 60, ../sass/components/_footer.scss */
 .logos-div #skyway-logo {
   height: 44px;
 }
 
-/* line 69, ../sass/components/_footer.scss */
+/* line 67, ../sass/components/_footer.scss */
 .links-div {
   margin-top: 26px;
 }
-
-/* line 83, ../sass/components/_footer.scss */
+/* line 70, ../sass/components/_footer.scss */
 .links-div a {
   display: inline-block;
   /* For IE 10 */
   -ms-flex: 1;
   position: relative;
-  font-size: 0.9em;
   color: #6f6f6f;
 }
-
-/* line 95, ../sass/components/_footer.scss */
+/* line 79, ../sass/components/_footer.scss */
 .links-div a:hover {
   color: #bfbfbf;
 }
 
+@media (max-width: 767px) {
+  /* line 88, ../sass/components/_footer.scss */
+  #footer {
+    height: 180px;
+  }
+  /* line 91, ../sass/components/_footer.scss */
+  #footer .divider {
+    margin-top: 16px;
+  }
+  /* line 95, ../sass/components/_footer.scss */
+  #footer p {
+    font-size: 1.0em;
+    margin-top: 10px;
+  }
+
+  /* line 102, ../sass/components/_footer.scss */
+  .logos-div {
+    margin-top: 16px;
+  }
+  /* line 105, ../sass/components/_footer.scss */
+  .logos-div #ntt-logo {
+    height: 25.2px !important;
+  }
+  /* line 109, ../sass/components/_footer.scss */
+  .logos-div #skyway-logo {
+    height: 30.8px !important;
+  }
+  /* line 113, ../sass/components/_footer.scss */
+  .logos-div #html5-logo {
+    height: 22.4px !important;
+  }
+
+  /* line 118, ../sass/components/_footer.scss */
+  .links-div {
+    margin-top: 16px;
+  }
+  /* line 121, ../sass/components/_footer.scss */
+  .links-div a {
+    font-size: 0.75em;
+  }
+}
 /* Navbar styles */
 /* line 8, ../sass/components/_navbar.scss */
 .navbar {
@@ -10646,31 +10682,51 @@ h1, h2, h3 {
   border-color: #5285FF;
 }
 
+/* line 220, ../sass/styles.scss */
+.flex-box {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: space-between;
+  /* OLD - for IE 10 */
+}
+
 /* Responsive code */
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
-  /* line 228, ../sass/styles.scss */
+  /* line 254, ../sass/styles.scss */
   .top-section-short br {
     display: none;
   }
 }
 /* Portrait phones and smaller */
 @media (max-width: 767px) {
-  /* line 238, ../sass/styles.scss */
+  /* line 264, ../sass/styles.scss */
   .top-section-short h1 {
     font-size: 2.5em;
   }
-  /* line 241, ../sass/styles.scss */
+  /* line 267, ../sass/styles.scss */
   .top-section-short .h2-long {
     font-size: 1.2em;
   }
 
-  /* line 245, ../sass/styles.scss */
+  /* line 271, ../sass/styles.scss */
   .background-blue {
     padding: 0 !important;
   }
 
-  /* line 249, ../sass/styles.scss */
+  /* line 275, ../sass/styles.scss */
   .paper-style-div {
     margin: 0 !important;
     border-radius: 0;
