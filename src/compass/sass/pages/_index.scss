@@ -1,4 +1,5 @@
 @import "utilities/variables";
+@import "utilities/mixins";
 
 /* Front Page - Animation */
 
@@ -8,7 +9,7 @@
         top: 42px;
         margin: 0;
         color: #FFF;
-        font-size: 32px;
+        font-size: 2.2em;
         text-align: center;
     }
     h2 {
@@ -18,8 +19,23 @@
         margin-bottom: 46px;
         color: #FFF;
         opacity: 0.6;
-        font-size: 26px;
+        font-size: 1.85em;
         text-align: center;
+    }
+    
+
+}
+
+@include bp(xs) {
+    
+    // TODO: Why is this not working?
+    
+    .top-section h1 {
+        font-size: 1.85 !important;
+    }
+
+    .top-section h2 {
+        font-size: 1.5 !important;
     }
 }
 
