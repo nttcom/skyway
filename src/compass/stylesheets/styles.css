@@ -9711,12 +9711,18 @@ button.close {
 .navbar-tabs a {
   /* Tab Colours */
   color: #5285FF !important;
+  opacity: 0.7;
   font-weight: 400;
   font-size: 1.1em;
   /* TODO: Responsive resizing */
 }
+/* line 41, ../sass/components/_navbar.scss */
+.navbar-tabs a:hover {
+  color: #4265DF !important;
+  opacity: 1.0;
+}
 
-/* line 38, ../sass/components/_navbar.scss */
+/* line 47, ../sass/components/_navbar.scss */
 #logoButton {
   position: absolute;
   left: 10px;
@@ -9728,7 +9734,7 @@ button.close {
   margin: 0;
   margin-left: 0;
 }
-/* line 52, ../sass/components/_navbar.scss */
+/* line 61, ../sass/components/_navbar.scss */
 #logoButton img {
   position: relative;
   top: 7px;
@@ -9736,21 +9742,21 @@ button.close {
   height: 42px;
 }
 
-/* line 61, ../sass/components/_navbar.scss */
+/* line 70, ../sass/components/_navbar.scss */
 .dropdown-toggle {
   color: rgba(252, 57, 49, 0.8) !important;
 }
-/* line 63, ../sass/components/_navbar.scss */
+/* line 72, ../sass/components/_navbar.scss */
 .dropdown-toggle:hover {
   color: #fc3931 !important;
   background-color: rgba(252, 57, 49, 0.2) !important;
 }
 
-/* line 69, ../sass/components/_navbar.scss */
+/* line 78, ../sass/components/_navbar.scss */
 .btn-link {
   padding: 0 !important;
 }
-/* line 72, ../sass/components/_navbar.scss */
+/* line 81, ../sass/components/_navbar.scss */
 .btn-link .btn-login {
   width: 86px;
   margin: 5px;

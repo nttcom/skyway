@@ -28,11 +28,20 @@
 }
 
 .navbar-tabs a {
-  /* Tab Colours */
-  color: $skyway_blue !important;
-  font-weight: 400;
-  font-size: 1.1em;
-  /* TODO: Responsive resizing */
+    /* Tab Colours */
+    color: $skyway_blue !important;
+    opacity: 0.7;
+
+    font-weight: 400;
+    font-size: 1.1em;
+    /* TODO: Responsive resizing */
+
+    
+    
+    &:hover {
+        color: #4265DF !important;
+        opacity: 1.0;
+    }
 }
 
 #logoButton {
