@@ -61,8 +61,8 @@
     
     color: $light_font;
     font-size: 1.2em;
-    font-weight: 400;
-    line-height: 1.5em;
+    font-weight: 100;
+//    line-height: 1.5em;
 
     i {
         display: table;
@@ -79,15 +79,16 @@
         margin-bottom: 10px;
         text-align: center;
         font-size: 1.2em;
-        font-weight: 400;
+        font-weight: 200;
     }
 }
 
 /* Front Page - News */
 
 .mini-headline {
-    margin-top: 10px;
-    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    
 }
 
 .mini-headline-date {
@@ -104,8 +105,10 @@
 
 .mini-headline-text {
     margin-left: -10px;
+    
     font-size: 1.3em;
-    line-height: 1.5em;
+    font-weight: 100;
+    
     color: $light_font;
 }
 

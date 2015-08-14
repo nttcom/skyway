@@ -9443,7 +9443,7 @@ button.close {
   border: none;
   outline: none;
   font-size: 16px;
-  font-weight: bold;
+  padding-top: -16px !important;
   color: #5285FF;
   background: #fff;
   cursor: pointer;
@@ -9455,7 +9455,7 @@ button.close {
   border-radius: 3px;
 }
 
-/* line 33, ../sass/components/_button.scss */
+/* line 35, ../sass/components/_button.scss */
 .ripple {
   position: absolute;
   background: #fff;
@@ -9467,7 +9467,7 @@ button.close {
   pointer-events: none;
 }
 
-/* line 44, ../sass/components/_button.scss */
+/* line 46, ../sass/components/_button.scss */
 .ripple.show {
   -webkit-animation: ripple .5s ease-out;
   animation: ripple .5s ease-out;
@@ -9487,13 +9487,13 @@ button.close {
     opacity: 0;
   }
 }
-/* line 64, ../sass/components/_button.scss */
+/* line 66, ../sass/components/_button.scss */
 .btn-center {
   display: table;
   margin: auto;
 }
 
-/* line 69, ../sass/components/_button.scss */
+/* line 71, ../sass/components/_button.scss */
 .btn-inverted {
   margin-top: -10px;
   margin-bottom: 10px;
@@ -9501,7 +9501,7 @@ button.close {
   background-color: #5285FF;
 }
 
-/* line 77, ../sass/components/_button.scss */
+/* line 79, ../sass/components/_button.scss */
 .btn-top-section {
   position: absolute;
   bottom: 30px;
@@ -9510,13 +9510,13 @@ button.close {
   margin: auto;
 }
 
-/* line 87, ../sass/components/_button.scss */
+/* line 89, ../sass/components/_button.scss */
 .btn-documentation {
   width: 100%;
   margin-top: 8px;
 }
 
-/* line 92, ../sass/components/_button.scss */
+/* line 94, ../sass/components/_button.scss */
 .btn-howto {
   float: left;
   margin: 0;
@@ -9529,7 +9529,7 @@ button.close {
   background-color: #1EC75F;
 }
 
-/* line 107, ../sass/components/_button.scss */
+/* line 109, ../sass/components/_button.scss */
 .btn-support, .btn-support-left, .btn-support-right {
   position: absolute;
   bottom: 0;
@@ -9545,7 +9545,7 @@ button.close {
   border-top-right-radius: 0px;
 }
 
-/* line 127, ../sass/components/_button.scss */
+/* line 129, ../sass/components/_button.scss */
 .btn-support-left {
   left: 0;
   width: 50%;
@@ -9553,7 +9553,7 @@ button.close {
   border-right-width: 1px;
 }
 
-/* line 138, ../sass/components/_button.scss */
+/* line 140, ../sass/components/_button.scss */
 .btn-support-right {
   right: 0;
   width: 50%;
@@ -10062,8 +10062,7 @@ label {
   padding: 0 30px;
   color: #7f7f7f;
   font-size: 1.2em;
-  font-weight: 400;
-  line-height: 1.5em;
+  font-weight: 100;
 }
 /* line 67, ../sass/pages/_index.scss */
 .highlight i {
@@ -10081,17 +10080,17 @@ label {
   margin-bottom: 10px;
   text-align: center;
   font-size: 1.2em;
-  font-weight: 400;
+  font-weight: 200;
 }
 
 /* Front Page - News */
 /* line 88, ../sass/pages/_index.scss */
 .mini-headline {
-  margin-top: 10px;
-  margin-bottom: 15px;
+  margin-top: 15px;
+  margin-bottom: 35px;
 }
 
-/* line 93, ../sass/pages/_index.scss */
+/* line 94, ../sass/pages/_index.scss */
 .mini-headline-date {
   margin-bottom: 8px;
   max-width: 160px;
@@ -10104,41 +10103,41 @@ label {
   border-radius: 5px;
 }
 
-/* line 105, ../sass/pages/_index.scss */
+/* line 106, ../sass/pages/_index.scss */
 .mini-headline-text {
   margin-left: -10px;
   font-size: 1.3em;
-  line-height: 1.5em;
+  font-weight: 100;
   color: #7f7f7f;
 }
 
 /* Medium Devices, Desktops */
 @media (max-width: 992px) {
-  /* line 115, ../sass/pages/_index.scss */
+  /* line 118, ../sass/pages/_index.scss */
   .highlight br {
     display: none;
   }
 }
 /* Portrait phones and smaller */
 @media (max-width: 768px) {
-  /* line 123, ../sass/pages/_index.scss */
+  /* line 126, ../sass/pages/_index.scss */
   .highlight {
     text-align: center;
     height: 170px;
   }
-  /* line 127, ../sass/pages/_index.scss */
+  /* line 130, ../sass/pages/_index.scss */
   .highlight i {
     font-size: 3em;
   }
 
-  /* line 132, ../sass/pages/_index.scss */
+  /* line 135, ../sass/pages/_index.scss */
   .mini-headline-date {
     display: table;
     margin: auto;
     margin-bottom: 8px;
   }
 
-  /* line 138, ../sass/pages/_index.scss */
+  /* line 141, ../sass/pages/_index.scss */
   .mini-headline-text {
     text-align: center;
   }
@@ -10439,22 +10438,27 @@ label {
 * {
   font-family: "Noto Sans Japanese", sans-serif;
   font-weight: 200;
-  line-height: 1.7em;
+  line-height: 26px;
 }
 
-/* line 106, ../sass/styles.scss */
+/* line 95, ../sass/styles.scss */
+h1, h2, h3 {
+  font-weight: 200;
+}
+
+/* line 105, ../sass/styles.scss */
 .top-section {
   position: relative;
   height: 600px;
   background-color: #5285FF;
 }
 
-/* line 113, ../sass/styles.scss */
+/* line 112, ../sass/styles.scss */
 .top-section-short {
   height: 160px;
   background-color: #5285FF;
 }
-/* line 117, ../sass/styles.scss */
+/* line 116, ../sass/styles.scss */
 .top-section-short h1 {
   position: relative;
   top: 38px;
@@ -10463,7 +10467,7 @@ label {
   color: #FFF;
   font-size: 3.2em;
 }
-/* line 130, ../sass/styles.scss */
+/* line 129, ../sass/styles.scss */
 .top-section-short h2 {
   position: relative;
   top: 48px;
@@ -10474,7 +10478,7 @@ label {
   font-size: 1.5em;
 }
 
-/* line 142, ../sass/styles.scss */
+/* line 141, ../sass/styles.scss */
 .background, .background-blue {
   position: relative;
   top: 0;
@@ -10485,26 +10489,25 @@ label {
   background-color: #fff;
 }
 
-/* line 152, ../sass/styles.scss */
+/* line 151, ../sass/styles.scss */
 .background-blue {
   background-color: #2548BE;
 }
 
-/* line 158, ../sass/styles.scss */
+/* line 157, ../sass/styles.scss */
 .paper-style-div {
   padding: 40px 20px;
   margin: 10px 0px;
 }
-/* line 165, ../sass/styles.scss */
+/* line 164, ../sass/styles.scss */
 .paper-style-div h2 {
   margin: 0;
   text-align: center;
   font-size: 1.85em;
-  font-weight: 400;
   color: #5f5f5f;
 }
 
-/* line 174, ../sass/styles.scss */
+/* line 172, ../sass/styles.scss */
 .divider {
   left: 0;
   right: 0;
@@ -10520,19 +10523,18 @@ label {
 }
 
 /* Signup div styles */
-/* line 190, ../sass/styles.scss */
+/* line 188, ../sass/styles.scss */
 .signup-div {
   padding: 60px;
 }
-/* line 193, ../sass/styles.scss */
+/* line 192, ../sass/styles.scss */
 .signup-div h2 {
   margin: 0;
   text-align: center;
   font-size: 2em;
-  font-weight: 400;
   color: #fff;
 }
-/* line 200, ../sass/styles.scss */
+/* line 198, ../sass/styles.scss */
 .signup-div a {
   left: 0;
   right: 0;
@@ -10540,7 +10542,7 @@ label {
   margin-bottom: 10px;
 }
 
-/* line 208, ../sass/styles.scss */
+/* line 206, ../sass/styles.scss */
 .divider-short {
   left: 0;
   right: 0;
@@ -10558,28 +10560,28 @@ label {
 /* Responsive code */
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
-  /* line 227, ../sass/styles.scss */
+  /* line 228, ../sass/styles.scss */
   .top-section-short br {
     display: none;
   }
 }
 /* Portrait phones and smaller */
 @media (max-width: 767px) {
-  /* line 237, ../sass/styles.scss */
+  /* line 238, ../sass/styles.scss */
   .top-section-short h1 {
     font-size: 2.5em;
   }
-  /* line 240, ../sass/styles.scss */
+  /* line 241, ../sass/styles.scss */
   .top-section-short .h2-long {
     font-size: 1.2em;
   }
 
-  /* line 244, ../sass/styles.scss */
+  /* line 245, ../sass/styles.scss */
   .background-blue {
     padding: 0 !important;
   }
 
-  /* line 248, ../sass/styles.scss */
+  /* line 249, ../sass/styles.scss */
   .paper-style-div {
     margin: 0 !important;
     border-radius: 0;
