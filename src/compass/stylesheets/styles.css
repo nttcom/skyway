@@ -9853,7 +9853,7 @@ label {
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 0;
-  font-size: 3em;
+  font-size: 2.8em;
   line-height: 1.5em;
   text-align: left;
   border-style: solid;
@@ -9890,7 +9890,6 @@ label {
   margin-right: 6px;
   padding: 0;
   height: 320px;
-  font-weight: 400;
 }
 /* line 70, ../sass/pages/_features.scss */
 .feature-box img {
@@ -9910,11 +9909,10 @@ label {
   right: 0;
   margin: auto;
   text-align: center;
-  font-size: 2.4em;
-  font-weight: 300 !important;
+  font-size: 2.2em;
   color: #fff;
 }
-/* line 100, ../sass/pages/_features.scss */
+/* line 99, ../sass/pages/_features.scss */
 .feature-box p {
   position: absolute;
   top: 180px;
@@ -9927,11 +9925,9 @@ label {
   overflow: hidden;
   text-align: center;
   font-size: 1.4em;
-  font-weight: 400;
   color: rgba(255, 255, 255, 0.6);
-  /*          background-color: red;*/
 }
-/* line 122, ../sass/pages/_features.scss */
+/* line 119, ../sass/pages/_features.scss */
 .feature-box paper-button {
   position: absolute;
   bottom: 0;
@@ -9945,8 +9941,34 @@ label {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
 }
+@media (max-width: 1199px) {
+  /* line 139, ../sass/pages/_features.scss */
+  .feature-box br {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  /* line 57, ../sass/pages/_features.scss */
+  .feature-box {
+    height: 240px;
+    margin-bottom: 16px;
+  }
+  /* line 148, ../sass/pages/_features.scss */
+  .feature-box img {
+    top: 18px;
+    height: 64px;
+  }
+  /* line 153, ../sass/pages/_features.scss */
+  .feature-box h3 {
+    top: 90px;
+  }
+  /* line 157, ../sass/pages/_features.scss */
+  .feature-box p {
+    top: 142px;
+  }
+}
 
-/* line 148, ../sass/pages/_features.scss */
+/* line 169, ../sass/pages/_features.scss */
 .mini-feature-column h3 {
   margin: 0;
   margin-top: 16px;
@@ -9957,7 +9979,7 @@ label {
   text-align: center;
   font-size: 2em;
 }
-/* line 161, ../sass/pages/_features.scss */
+/* line 182, ../sass/pages/_features.scss */
 .mini-feature-column paper-button {
   height: 80px;
   margin: 8px !important;
@@ -9968,7 +9990,7 @@ label {
   text-transform: none;
   border-radius: 5px;
 }
-/* line 177, ../sass/pages/_features.scss */
+/* line 198, ../sass/pages/_features.scss */
 .mini-feature-column paper-button img {
   position: absolute;
   top: 19px;
@@ -9977,7 +9999,7 @@ label {
   height: 42px;
   object-fit: scale-down;
 }
-/* line 189, ../sass/pages/_features.scss */
+/* line 210, ../sass/pages/_features.scss */
 .mini-feature-column paper-button h2 {
   position: absolute;
   top: 10px;
@@ -9987,7 +10009,7 @@ label {
   font-size: 1.4em;
   color: #5285FF;
 }
-/* line 203, ../sass/pages/_features.scss */
+/* line 224, ../sass/pages/_features.scss */
 .mini-feature-column paper-button p {
   position: absolute;
   left: 75px;
