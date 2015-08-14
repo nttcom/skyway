@@ -8,37 +8,34 @@ description: WebRTCは、ブラウザやアプリ間でリアルタイムに映�
 <!-- Top Section -->
 
 <div class="top-section-short">
-    <h1 id="header-title">すべてのニュース</h1>
-    <h2 id="header-subtitle">ニュースやっぷり</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1 id="header-title">すべてのニュース</h1>
+                <h2 id="header-subtitle">ニュースたっぷり</h2>
+            </div>
+        </div>
+    </div>
 </div>
 
 <!-- Main Page Content -->
 
 <div class="background">
     
-    <div class="container">
+    <div class="container news-container">
     
         {% for post in site.posts %}
             <div class="row news-headline">
-                <div class="col-sm-2">
+                <div class="col-sm-2 col-md-2 col-md-offset-1">
                     <div class="row">
-                        <div class="col-sm-10 col-sm-offset-1 news-headline-date">
+                        <div class="col-sm-11 col-md-10 col-md-offset-1 news-headline-date">
                             {{ post.date | date: "%Y.%d.%m " }}
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-10 news-headline-text">{{ post.excerpt }}</div>
+                <div class="col-sm-10 col-md-8 news-headline-text">{{ post.excerpt }}</div>
             </div>
             <div class="divider"></div>
         {% endfor %}
-        
-<!--
-        
-            <div class="row">
-                <div class="col-sm-10 col-sm-offset-1">
-                    
-                </div>
-            </div>
--->
     
 </div>
