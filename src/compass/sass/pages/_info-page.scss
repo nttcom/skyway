@@ -58,6 +58,12 @@
         height: auto;
     }
     
+    @include bp(md) {
+        br {
+            display: none;
+        }
+    }
+    
     @include bp(sm) {
         i {
             font-size: 3em;
