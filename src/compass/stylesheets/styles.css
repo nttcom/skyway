@@ -10607,13 +10607,13 @@ h1, h2, h3 {
 /* Signup div styles */
 /* line 188, ../sass/styles.scss */
 .signup-div {
-  padding: 60px;
+  padding: 60px 0px;
 }
 /* line 192, ../sass/styles.scss */
 .signup-div h2 {
   margin: 0;
   text-align: center;
-  font-size: 2em;
+  font-size: 1.85em;
   color: #fff;
 }
 /* line 198, ../sass/styles.scss */
