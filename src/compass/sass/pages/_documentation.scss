@@ -2,6 +2,7 @@
     @extend .paper-style;
     
     background-color: $skyway-blue;
+    margin-bottom: 24px;
     
     img {
         display: table;
@@ -32,4 +33,37 @@
 
 .support-div {
     @extend .paper-style;
+
+    margin: 40px 0px;
+    
+    text-align: center;
+    
+    color: #fff;
+    background-color: $dark-blue;
+    
+    h2 {
+        font-size: 1.85em;
+    }
+
+}
+
+@include bp(xs) {
+    
+    .documentation-menu {
+        
+        img {
+            margin-top: 8px;
+            height: 60px;
+        }
+        
+        h2 {
+            margin-top: 8px;
+        }
+        
+        .btn-documentation {
+            height: 36px;   
+        }
+        
+    }
+    
 }
