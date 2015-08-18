@@ -103,8 +103,6 @@
         color: #FFF;
         font-size: 3em;
         text-align: center;
-        
-        display: none;
     }
     
 }
@@ -153,11 +151,7 @@
     bottom: 0;
     
     width: 100%;
-    margin-left: -15px;
-    margin-bottom: 10px;
-    
-    display: none;
-    
+    margin-bottom: 0;
 }
 
 /* Portrait phones and smaller */
@@ -181,24 +175,14 @@
     }
     
     .top-container-left {
-        height: 470px;
+        height: auto;
+        
+        padding: 16px 0 80px 0;
+        
+        .subpage-highlight {
+            margin: 0;
+        }
     }
-    
-    .subpage-title {
-        display: none;
-    }
-    
-    .subpage-title-mobile {
-        display: inherit !important;
-    }
-    
-    .top-btn-desktop {
-        display: none;
-    }
-    
-    .top-btn-mobile {
-        display: inherit;
-    }    
 }
 
 
