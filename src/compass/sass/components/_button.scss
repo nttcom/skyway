@@ -4,22 +4,19 @@
 
 $btn-colour: $skyway-blue;
 
-.btn-ink {
-    @extend .paper-style-layer-1;
+.btn-paper-flat {
+    
     position: relative;
     display: block;
     width: 160px;
     height: 40px;
 //    margin: 1em;
-    padding: 0 !important;
+    padding: 0;
     border: none;
     outline: none;
 //    letter-spacing: .2em;
 
     font-size: 16px;
-    
-    padding-top: -16px !important;
-//    font-weight: 300;
     
     color: $btn-colour;
     background: #fff;
@@ -30,34 +27,48 @@ $btn-colour: $skyway-blue;
     -ms-user-select: none;
     user-select: none;
     border-radius: 3px;
+    
+    &:hover {
+        background: lighten($skyway-blue, 30%);
+    }
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.btn-paper {
+    @extend .btn-paper-flat;
+    @extend .paper-style-layer-1;
 }
 
 .ripple {
     position: absolute;
 //    background: rgba(0,0,0,.25);
-    background: #fff;
-    opacity: 0.4;
+    background: $skyway-blue;
+    opacity: 0.5;
     border-radius: 100%;
     -webkit-transform: scale(0);
     -ms-transform: scale(0);
     transform: scale(0);
     pointer-events: none;
 }
+
 .ripple.show {
-    -webkit-animation: ripple .5s ease-out;
-    animation: ripple .5s ease-out;
+    -webkit-animation: ripple .6s ease-out;
+    animation: ripple .6s ease-out;
 }
 @-webkit-keyframes 
     ripple { to {
-        -webkit-transform: scale(1.5);
-        transform: scale(1.5);
+        -webkit-transform: scale(2);
+        transform: scale(2);
         opacity: 0;
     }
 }
 @keyframes 
     ripple { to {
-        -webkit-transform: scale(1.5);
-        transform: scale(1.5);
+        -webkit-transform: scale(2);
+        transform: scale(2);
         opacity: 0;
     }
 }
@@ -74,6 +85,10 @@ $btn-colour: $skyway-blue;
     
     color: #fff;
     background-color: $skyway-blue;
+    
+    &:hover {
+        background: lighten($skyway-blue, 5%);
+    }
 }
 
 .btn-top-section {
@@ -89,6 +104,37 @@ $btn-colour: $skyway-blue;
 .btn-documentation {
     width: 100%;
     margin-top: 8px;
+    
+    border-width: 1px;
+//    border-style: solid;
+    border-color: rgba(255,255,255,0.8);
+    
+    color: $skyway-blue;
+    background-color: #d0e0ff;
+    
+    &:hover {
+        background: lighten(#d0e0ff, 5%);
+    }
+}
+
+.btn-documentation:last-child {
+//    margin-bottom: 16px;
+}
+
+.btn-div-bottom {    
+    margin: 8px -8px -8px -8px;
+    
+    width: calc(100% + 16px);
+    
+    color: #fff;
+    background: rgba(0,0,0,0.3);
+    
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    
+    &:hover {
+        background: rgba(0,0,0,0.2);
+    }
 }
 
 .btn-documentation-support {
@@ -109,7 +155,11 @@ $btn-colour: $skyway-blue;
     width: 220px;
 
     color: #fff;
-    background-color: #1EC75F;
+    background: #1EC75F;
+    
+    &:hover {
+        background: darken(#1EC75F, 5%);
+    }
 }
 
 .btn-support {
@@ -121,7 +171,7 @@ $btn-colour: $skyway-blue;
     margin: 0px;
     
     color: #5285FF;
-    background-color: rgba(82, 133, 255, 0.2);
+    background: rgba(82, 133, 255, 0.2);
 
     border-style: solid;
     border-color: #5285FF;
@@ -130,6 +180,10 @@ $btn-colour: $skyway-blue;
     
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
+    
+    &:hover {
+        background: rgba(82, 133, 255, 0.3);
+    }    
 }
 
 .btn-support-left {

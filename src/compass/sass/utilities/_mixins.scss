@@ -19,7 +19,10 @@
 
 // Easy media queries based on Bootstrap breakpoints
 @mixin bp($point) {
-  @if $point == xs {
+  @if $point == xxs {
+    @media (max-width: ($screen-xs-min - 1)) { @content; }
+  }
+  @else if $point == xs {
     @media (max-width: $screen-xs-max) { @content; }
   }
   @else if $point == sm {

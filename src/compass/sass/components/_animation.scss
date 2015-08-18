@@ -40,6 +40,8 @@
        -moz-animation: pulsateLogo 3s 1s ease-out infinite; 
          -o-animation: pulsateLogo 3s 1s ease-out infinite; 
             animation: pulsateLogo 3s 1s ease-out infinite; 
+    
+//    background-color: green;
 }
 
 .animated-transmission {
@@ -52,7 +54,7 @@
     width: 100px; 
     height: 70px;
     
-//    background-color: red;
+//    background-color: green;
 }
 
 $animation-mobile-offset: 0%;
@@ -427,6 +429,10 @@ $rotation-start: ($rotation-center - ($rotation-step * ($middle-point - 1)));
 
 
 
+
+
+
+
 @include bp(sm) {
     $circle-diameter:   35em;
     $circle-radius:     $circle-diameter * 0.5;
@@ -434,6 +440,12 @@ $rotation-start: ($rotation-center - ($rotation-step * ($middle-point - 1)));
     .circle-container {
         width: $circle-diameter;
         height: $circle-diameter;
+    }
+    
+    .circle-container div {
+        width: $orb-diameter;
+        height: $orb-diameter;
+        margin: $orb-margin;
     }
     
     @for $i from 1 through length($keyframe-names) {
@@ -451,10 +463,46 @@ $rotation-start: ($rotation-center - ($rotation-step * ($middle-point - 1)));
     }
 }
 
-@include bp(xs) {
+@include bp(xxs) {
     
-    [class^="animated"] {
-        display: none;   
+    $circle-diameter:   25em;
+    $circle-radius:     $circle-diameter * 0.5;
+    
+    $orb-diameter:      $circle-diameter * 0.045;
+    $orb-margin:        ($orb-diameter * -0.5);
+    
+    .circle-container {
+        width: $circle-diameter;
+        height: $circle-diameter;
+    }
+    
+    .circle-container div {
+        width: $orb-diameter;
+        height: $orb-diameter;
+        margin: $orb-margin;
+    }
+    
+    .animated-logo {
+        height: 46px;   
+        margin-bottom: 20px;
+    }
+    
+    .animated-transmission {
+        height: 40px;   
+    }
+    
+    @for $i from 1 through length($keyframe-names) {
+        @-webkit-keyframes #{nth($keyframe-names, $i)} {
+            0% {-webkit-transform: rotate(nth($keyframe-rotations, $i)) translate($circle-radius) scale($scale-min, $scale-min); opacity: $opacity-min;}
+            33% {-webkit-transform: rotate(nth($keyframe-rotations, $i)) translate($circle-radius) scale(nth($keyframe-scales, $i), nth($keyframe-scales, $i)); opacity: $opacity-max;}
+            66% {-webkit-transform: rotate(nth($keyframe-rotations, $i)) translate($circle-radius) scale($scale-min, $scale-min); opacity: $opacity-min;}
+        }
+
+        @keyframes #{nth($keyframe-names, $i)} {
+            0% {transform: rotate(nth($keyframe-rotations, $i)) translate($circle-radius) scale($scale-min, $scale-min); opacity: $opacity-min;}
+            33% {transform: rotate(nth($keyframe-rotations, $i)) translate($circle-radius) scale(nth($keyframe-scales, $i), nth($keyframe-scales, $i)); opacity: $opacity-max;}
+            66% {transform: rotate(nth($keyframe-rotations, $i)) translate($circle-radius) scale($scale-min, $scale-min); opacity: $opacity-min;}
+        }
     }
     
 }

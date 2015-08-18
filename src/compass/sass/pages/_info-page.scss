@@ -112,9 +112,11 @@
 
 .animation-container-right {
     
+//    @extend .h_r;
+    
     position: relative;
     
-    height: calc(#{$top-section-height} - 80px);
+    height: calc(#{$top-section-height} - 120px);
 
     @include bp(xs) { 
         height: calc(#{$top-section-height} - 200px);
@@ -136,7 +138,7 @@
         .device-image {
             display: table;
             margin: auto;
-            margin-top: 8px;
+            margin-top: 16px;
 
             max-height: 260px;
             width: 100%;
