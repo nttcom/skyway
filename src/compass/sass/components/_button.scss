@@ -163,13 +163,13 @@ a {
     width: calc(100% + 16px);
     
     color: #fff;
-    background: rgba(0,0,0,0.3);
+    background: rgba(0,0,0,0.25);
     
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     
     &:hover {
-        background: rgba(0,0,0,0.2);
+        background: rgba(0,0,0,0.15);
     }
 }
 

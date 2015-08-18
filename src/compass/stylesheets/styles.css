@@ -8769,7 +8769,7 @@ button.close {
     display: none !important;
   }
 }
-/* line 14, ../sass/utilities/_variables.scss */
+/* line 15, ../sass/utilities/_variables.scss */
 .paper-style-layer-1, .btn-paper, .documentation-other-menu, .support-box {
   position: relative;
   padding: 8px;
@@ -8779,7 +8779,7 @@ button.close {
   border-radius: 5px;
 }
 
-/* line 28, ../sass/utilities/_variables.scss */
+/* line 29, ../sass/utilities/_variables.scss */
 .paper-style, .documentation-menu, .support-div, .feature-box, .howto-step .code-section, .paper-style-div {
   position: relative;
   padding: 8px;
@@ -8789,7 +8789,7 @@ button.close {
   border-radius: 5px;
 }
 
-/* line 44, ../sass/utilities/_variables.scss */
+/* line 45, ../sass/utilities/_variables.scss */
 .h_r {
   background-color: red;
   border-color: orange;
@@ -8797,7 +8797,7 @@ button.close {
   border-style: solid;
 }
 
-/* line 52, ../sass/utilities/_variables.scss */
+/* line 53, ../sass/utilities/_variables.scss */
 .h_b {
   background-color: blue;
   border-color: limegreen;
@@ -9796,13 +9796,13 @@ a {
   margin: 8px -8px -8px -8px;
   width: calc(100% + 16px);
   color: #fff;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.25);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
 }
 /* line 171, ../sass/components/_button.scss */
 .btn-div-bottom:hover {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.15);
 }
 
 /* line 182, ../sass/components/_button.scss */
@@ -10166,7 +10166,7 @@ label {
 }
 /* line 1, ../sass/pages/_documentation.scss */
 .documentation-menu {
-  background-color: #5285FF;
+  background-color: royalblue;
   margin-bottom: 24px;
   padding: 8px;
 }
@@ -10183,7 +10183,7 @@ label {
 .documentation-menu h2 {
   margin-top: 16px;
   text-align: center;
-  color: #FFF;
+  color: #fff;
   font-size: 24px;
 }
 /* line 31, ../sass/pages/_documentation.scss */
