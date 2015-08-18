@@ -9808,7 +9808,6 @@ a {
 /* line 182, ../sass/components/_button.scss */
 .btn-howto {
   float: left;
-  margin: 0;
   margin-left: 4px;
   margin-right: 4px;
   margin-top: 8px;
@@ -9817,12 +9816,12 @@ a {
   color: #fff;
   background: #1EC75F;
 }
-/* line 196, ../sass/components/_button.scss */
+/* line 195, ../sass/components/_button.scss */
 .btn-howto:hover {
   background: #1bb154;
 }
 
-/* line 201, ../sass/components/_button.scss */
+/* line 200, ../sass/components/_button.scss */
 .btn-support, .btn-support-left, .btn-support-right {
   position: absolute;
   bottom: 0;
@@ -9837,12 +9836,12 @@ a {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
 }
-/* line 220, ../sass/components/_button.scss */
+/* line 219, ../sass/components/_button.scss */
 .btn-support:hover, .btn-support-left:hover, .btn-support-right:hover {
   background: rgba(82, 133, 255, 0.3);
 }
 
-/* line 225, ../sass/components/_button.scss */
+/* line 224, ../sass/components/_button.scss */
 .btn-support-left {
   left: 0;
   width: 50%;
@@ -9850,7 +9849,7 @@ a {
   border-right-width: 1px;
 }
 
-/* line 236, ../sass/components/_button.scss */
+/* line 235, ../sass/components/_button.scss */
 .btn-support-right {
   right: 0;
   width: 50%;
@@ -10748,8 +10747,12 @@ label {
 .howto-step {
   margin-bottom: 10px;
 }
-/* line 195, ../sass/pages/_info-page.scss */
-.howto-step img {
+/* line 196, ../sass/pages/_info-page.scss */
+.howto-step .howto-step-count {
+  margin-left: 20px;
+}
+/* line 199, ../sass/pages/_info-page.scss */
+.howto-step .howto-step-count img {
   float: right;
   margin-right: -10px;
   top: 5px;
@@ -10757,20 +10760,21 @@ label {
   width: 50px;
   object-fit: scale-down;
 }
-/* line 208, ../sass/pages/_info-page.scss */
+/* line 211, ../sass/pages/_info-page.scss */
 .howto-step .howto-step-content {
   padding: 12px;
   margin-bottom: 20px;
   border-radius: 5px;
   background-color: rgba(82, 133, 255, 0.12);
+  overflow: hidden;
 }
-/* line 216, ../sass/pages/_info-page.scss */
+/* line 221, ../sass/pages/_info-page.scss */
 .howto-step .howto-step-content p {
   margin: 0;
   padding: 0;
   font-size: 1.2em;
 }
-/* line 224, ../sass/pages/_info-page.scss */
+/* line 229, ../sass/pages/_info-page.scss */
 .howto-step .code-section {
   padding: 16px;
   margin: 8px;
@@ -10778,7 +10782,7 @@ label {
   color: #fff;
   background-color: #3f3f3f;
 }
-/* line 238, ../sass/pages/_info-page.scss */
+/* line 243, ../sass/pages/_info-page.scss */
 .howto-step pre {
   color: inherit;
   background-color: inherit;
@@ -10790,11 +10794,26 @@ label {
   line-height: 16px;
 }
 
-/* line 253, ../sass/pages/_info-page.scss */
-.howto-step-count {
-  margin-left: 20px;
-}
+@media (max-width: 767px) {
+  /* line 262, ../sass/pages/_info-page.scss */
+  .howto-step-count {
+    margin: 0;
+  }
+  /* line 265, ../sass/pages/_info-page.scss */
+  .howto-step-count img {
+    position: relative;
+    display: table;
+    float: none !important;
+    margin: auto !important;
+    height: 40px !important;
+    width: 40px !important;
+  }
 
+  /* line 276, ../sass/pages/_info-page.scss */
+  .howto-step-content {
+    margin: 16px 8px;
+  }
+}
 /* line 4, ../sass/pages/_news.scss */
 .news-container {
   padding-top: 20px;
