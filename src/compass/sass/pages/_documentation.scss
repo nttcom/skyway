@@ -33,20 +33,45 @@
     }
 }
 
+.documentation-other-menu {
+    @extend .paper-style-layer-1;
+    
+    margin-top: 20px;
+    padding: 0 16px 16px 16px;
+    
+    border-style: solid;
+    border-color: #afafaf;
+    border-width: 1px;
+        
+    h2 {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+}
+
 .support-div {
     @extend .paper-style;
 
     margin: 40px 0px;
     
-    text-align: center;
+    border-style: solid;
+    border-color: #afafaf;
+    border-width: 1px;
     
-    color: #fff;
-    background-color: $dark-blue;
+    
+//    color: #fff;
+//    background-color: $dark-blue;
     
     h2 {
         font-size: 1.85em;
+        text-align: center;
     }
-
+    
+    button {
+        color: #fff;
+        margin: 24px auto;
+    }
 }
 
 @include bp(xs) {

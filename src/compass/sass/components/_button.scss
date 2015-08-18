@@ -105,11 +105,7 @@ a {
     width: 100%;
     margin-top: 8px;
     
-    border-width: 1px;
-//    border-style: solid;
-    border-color: rgba(255,255,255,0.8);
-    
-    color: $skyway-blue;
+    color: darken($skyway-blue, 5%);
     background-color: #d0e0ff;
     
     &:hover {
@@ -117,9 +113,49 @@ a {
     }
 }
 
-.btn-documentation:last-child {
-//    margin-bottom: 16px;
+.btn-documentation-other {
+    display: table;
+    margin: auto;
+    height: auto;
+    width: 100%;
+    margin-top: 8px;
+    
+    padding-left: 8px;
+    
+    border-width: 1px;
+    border-style: solid;
+    border-color: lighten($skyway-blue, 10%);
+    
+    text-align: left;
+    
+    z-index: 10;
+
+    i {
+        float: left;
+        margin: 8px 10px 0 4px;
+        
+        font-size: 2.6em;
+    }
+    
+    h3 {
+        margin: 10px 0 0 0;
+        
+        font-size: 1em;
+        font-weight: 300 !important;
+        
+        color: $dark-font;
+    }
+    
+    p {
+        margin-bottom: 6px;
+        
+        font-size: 0.8em;
+        
+        color: $light-font;
+    }
 }
+
+
 
 .btn-div-bottom {    
     margin: 8px -8px -8px -8px;
@@ -137,11 +173,11 @@ a {
     }
 }
 
-.btn-documentation-support {
-    display: table;    
-    margin: 32px auto;
-    
-}
+//.btn-documentation-support {
+//    display: table;    
+//    margin: 32px auto;
+//    
+//}
 
 .btn-howto {
     float: left;
