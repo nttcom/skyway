@@ -19,6 +19,7 @@
 @import "components/navbar";
 @import "components/share";
 
+@import "pages/demo";
 @import "pages/documentation";
 @import "pages/features";
 @import "pages/index";
@@ -110,6 +111,8 @@ h1,h2,h3 {
 }
 
 .top-section-short {
+    position: relative;
+    
     height: 160px;
     background-color: $skyway_blue;
 

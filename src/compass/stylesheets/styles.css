@@ -8770,7 +8770,7 @@ button.close {
   }
 }
 /* line 15, ../sass/utilities/_variables.scss */
-.paper-style-layer-1, .btn-paper, .documentation-other-menu, .support-box {
+.paper-style-layer-1, .btn-paper, .platform-logo, .documentation-other-menu, .support-box {
   position: relative;
   padding: 8px;
   background-color: #fff;
@@ -10163,6 +10163,38 @@ label {
     bottom: 140px;
   }
 }
+/* line 2, ../sass/pages/_demo.scss */
+.platform-logo {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 24px;
+  padding: 4px;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+}
+/* line 19, ../sass/pages/_demo.scss */
+.platform-logo .platform-logo-inner {
+  position: relative;
+  background: #5285FF;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+/* line 28, ../sass/pages/_demo.scss */
+.platform-logo .platform-logo-inner img {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 80px;
+  height: 80px;
+  object-fit: scale-down;
+}
+
 /* line 1, ../sass/pages/_documentation.scss */
 .documentation-menu {
   background-color: royalblue;
@@ -10923,31 +10955,32 @@ label {
   src: url("../fonts/NotoSansCJKjp-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/NotoSansCJKjp-Medium.woff") format("woff"), url("../fonts/NotoSansCJKjp-Medium.ttf") format("truetype");
 }
 /* Common Styles */
-/* line 81, ../sass/styles.scss */
+/* line 82, ../sass/styles.scss */
 * {
   font-family: "Noto Sans Japanese", sans-serif;
   font-weight: 200;
   line-height: 26px;
 }
 
-/* line 95, ../sass/styles.scss */
+/* line 96, ../sass/styles.scss */
 h1, h2, h3 {
   font-weight: 200;
 }
 
-/* line 105, ../sass/styles.scss */
+/* line 106, ../sass/styles.scss */
 .top-section {
   position: relative;
   height: 600px;
   background-color: #5285FF;
 }
 
-/* line 112, ../sass/styles.scss */
+/* line 113, ../sass/styles.scss */
 .top-section-short {
+  position: relative;
   height: 160px;
   background-color: #5285FF;
 }
-/* line 116, ../sass/styles.scss */
+/* line 119, ../sass/styles.scss */
 .top-section-short h1 {
   position: relative;
   top: 38px;
@@ -10956,7 +10989,7 @@ h1, h2, h3 {
   color: #FFF;
   font-size: 3.2em;
 }
-/* line 129, ../sass/styles.scss */
+/* line 132, ../sass/styles.scss */
 .top-section-short h2 {
   position: relative;
   top: 48px;
@@ -10967,7 +11000,7 @@ h1, h2, h3 {
   font-size: 1.5em;
 }
 
-/* line 141, ../sass/styles.scss */
+/* line 144, ../sass/styles.scss */
 .background, .background-blue {
   position: relative;
   top: 0;
@@ -10978,17 +11011,17 @@ h1, h2, h3 {
   background-color: #fff;
 }
 
-/* line 151, ../sass/styles.scss */
+/* line 154, ../sass/styles.scss */
 .background-blue {
   background-color: #2548BE;
 }
 
-/* line 157, ../sass/styles.scss */
+/* line 160, ../sass/styles.scss */
 .paper-style-div {
   padding: 40px 20px;
   margin: 10px 0px;
 }
-/* line 164, ../sass/styles.scss */
+/* line 167, ../sass/styles.scss */
 .paper-style-div h2 {
   margin: 0;
   text-align: center;
@@ -10996,7 +11029,7 @@ h1, h2, h3 {
   color: #5a5a5a;
 }
 
-/* line 172, ../sass/styles.scss */
+/* line 175, ../sass/styles.scss */
 .divider {
   left: 0;
   right: 0;
@@ -11012,18 +11045,18 @@ h1, h2, h3 {
 }
 
 /* Signup div styles */
-/* line 188, ../sass/styles.scss */
+/* line 191, ../sass/styles.scss */
 .signup-div {
   padding: 60px 0px;
 }
-/* line 192, ../sass/styles.scss */
+/* line 195, ../sass/styles.scss */
 .signup-div h2 {
   margin: 0;
   text-align: center;
   font-size: 1.85em;
   color: #fff;
 }
-/* line 198, ../sass/styles.scss */
+/* line 201, ../sass/styles.scss */
 .signup-div a {
   left: 0;
   right: 0;
@@ -11031,7 +11064,7 @@ h1, h2, h3 {
   margin-bottom: 10px;
 }
 
-/* line 206, ../sass/styles.scss */
+/* line 209, ../sass/styles.scss */
 .divider-short {
   left: 0;
   right: 0;
@@ -11046,7 +11079,7 @@ h1, h2, h3 {
   border-color: #5285FF;
 }
 
-/* line 220, ../sass/styles.scss */
+/* line 223, ../sass/styles.scss */
 .flex-box {
   display: -webkit-box;
   /* OLD - iOS 6-, Safari 3.1-6 */
@@ -11069,28 +11102,28 @@ h1, h2, h3 {
 /* Responsive code */
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
-  /* line 254, ../sass/styles.scss */
+  /* line 257, ../sass/styles.scss */
   .top-section-short br {
     display: none;
   }
 }
 /* Portrait phones and smaller */
 @media (max-width: 767px) {
-  /* line 264, ../sass/styles.scss */
+  /* line 267, ../sass/styles.scss */
   .top-section-short h1 {
     font-size: 2.5em;
   }
-  /* line 267, ../sass/styles.scss */
+  /* line 270, ../sass/styles.scss */
   .top-section-short .h2-long {
     font-size: 1.2em;
   }
 
-  /* line 271, ../sass/styles.scss */
+  /* line 274, ../sass/styles.scss */
   .background-blue {
     padding: 0 !important;
   }
 
-  /* line 275, ../sass/styles.scss */
+  /* line 278, ../sass/styles.scss */
   .paper-style-div {
     margin: 0 !important;
     border-radius: 0;
