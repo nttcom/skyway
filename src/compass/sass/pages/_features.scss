@@ -47,30 +47,24 @@ $colours: #4E5FAD, #E63300, #1CC05A;
     padding: 0;
     height: 320px;
     
-//    font-weight: 400;
+    overflow: hidden;
 
     img {
-          position: absolute;
+        display: table;
+        margin:auto;
+        
+        margin-top: 28px;
 
-          top: 28px;
+        height: 80px;
 
-          left: 0;
-          right: 0;
-          margin:auto;
-
-          height: 80px;
-
-          object-fit: scale-down;
+        object-fit: scale-down;
     }
     
     h3 {
-        position: absolute;
-
-        top: 124px;
-
-        left: 0;
-        right: 0;
+        display: table;
         margin:auto;
+
+        margin-top: 24px;
 
         text-align: center;
         font-size: 2.2em;
@@ -79,15 +73,11 @@ $colours: #4E5FAD, #E63300, #1CC05A;
     }
 
     p {
-        position: absolute;
-
-        top: 180px;
+        display: table;
+        margin: 32px auto;
+        
         padding-left: 18px;
         padding-right: 18px;
-
-        left: 0;
-        right: 0;
-        margin:auto;
 
         max-height: 100px;
         overflow: hidden;
@@ -96,25 +86,6 @@ $colours: #4E5FAD, #E63300, #1CC05A;
         font-size: 1.4em;
 
         color: rgba(255, 255, 255, 0.6);
-    }
-    
-    paper-button {
-        position: absolute;
-        bottom: 0;
-
-        margin: 0 !important;
-
-        height: 50px;
-        width: 100%;
-
-        background-color: rgba(0, 0, 0, 0.15);
-        color: #fff;
-        
-        font-size: 1.3em;
-
-        border-radius: 5px;
-        border-top-left-radius: 0px;
-        border-top-right-radius: 0px;
     }
     
     @include bp(md) {
@@ -128,16 +99,16 @@ $colours: #4E5FAD, #E63300, #1CC05A;
         margin-bottom: 16px;
         
         img {
-            top: 18px;
+            margin-top: 18px;
             height: 64px;
         }
         
         h3 {
-            top: 90px;
+            margin-top: 12px;
         }
         
         p {
-            top: 142px;
+            margin: 20px auto;
         }
     }
 }

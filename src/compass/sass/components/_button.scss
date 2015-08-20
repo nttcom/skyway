@@ -179,6 +179,23 @@ a {
 //    
 //}
 
+.btn-feature-bottom {    
+    position: absolute;
+    bottom: 0;
+    
+    width: calc(100% + 16px);
+    
+    color: #fff;
+    background: rgba(0,0,0,0.25);
+    
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    
+    &:hover {
+        background: rgba(0,0,0,0.15);
+    }
+}
+
 .btn-feature {
 
     height: 78px;

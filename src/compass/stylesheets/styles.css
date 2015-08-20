@@ -9806,6 +9806,21 @@ a {
 }
 
 /* line 182, ../sass/components/_button.scss */
+.btn-feature-bottom {
+  position: absolute;
+  bottom: 0;
+  width: calc(100% + 16px);
+  color: #fff;
+  background: rgba(0, 0, 0, 0.25);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+/* line 194, ../sass/components/_button.scss */
+.btn-feature-bottom:hover {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+/* line 199, ../sass/components/_button.scss */
 .btn-feature {
   height: 78px;
   width: calc(100% - 16px);
@@ -9816,7 +9831,7 @@ a {
   border-width: 1px;
   border-radius: 5px;
 }
-/* line 196, ../sass/components/_button.scss */
+/* line 213, ../sass/components/_button.scss */
 .btn-feature img {
   position: absolute;
   top: 19px;
@@ -9825,7 +9840,7 @@ a {
   height: 42px;
   object-fit: scale-down;
 }
-/* line 208, ../sass/components/_button.scss */
+/* line 225, ../sass/components/_button.scss */
 .btn-feature h2 {
   position: absolute;
   top: 8px;
@@ -9835,7 +9850,7 @@ a {
   font-size: 1.25em;
   color: #5285FF;
 }
-/* line 222, ../sass/components/_button.scss */
+/* line 239, ../sass/components/_button.scss */
 .btn-feature p {
   position: absolute;
   left: 75px;
@@ -9851,7 +9866,7 @@ a {
   color: #9f9f9f;
 }
 
-/* line 248, ../sass/components/_button.scss */
+/* line 265, ../sass/components/_button.scss */
 .btn-howto {
   float: left;
   margin-left: 4px;
@@ -9862,12 +9877,12 @@ a {
   color: #fff;
   background: #1EC75F;
 }
-/* line 261, ../sass/components/_button.scss */
+/* line 278, ../sass/components/_button.scss */
 .btn-howto:hover {
   background: #1bb154;
 }
 
-/* line 266, ../sass/components/_button.scss */
+/* line 283, ../sass/components/_button.scss */
 .btn-support, .btn-support-left, .btn-support-right {
   position: absolute;
   bottom: 0;
@@ -9882,12 +9897,12 @@ a {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
 }
-/* line 285, ../sass/components/_button.scss */
+/* line 302, ../sass/components/_button.scss */
 .btn-support:hover, .btn-support-left:hover, .btn-support-right:hover {
   background: rgba(82, 133, 255, 0.3);
 }
 
-/* line 290, ../sass/components/_button.scss */
+/* line 307, ../sass/components/_button.scss */
 .btn-support-left {
   left: 0;
   width: 50%;
@@ -9895,7 +9910,7 @@ a {
   border-right-width: 1px;
 }
 
-/* line 301, ../sass/components/_button.scss */
+/* line 318, ../sass/components/_button.scss */
 .btn-support-right {
   right: 0;
   width: 50%;
@@ -10358,59 +10373,39 @@ label {
   margin-right: 6px;
   padding: 0;
   height: 320px;
+  overflow: hidden;
 }
 /* line 52, ../sass/pages/_features.scss */
 .feature-box img {
-  position: absolute;
-  top: 28px;
-  left: 0;
-  right: 0;
+  display: table;
   margin: auto;
+  margin-top: 28px;
   height: 80px;
   object-fit: scale-down;
 }
-/* line 66, ../sass/pages/_features.scss */
+/* line 63, ../sass/pages/_features.scss */
 .feature-box h3 {
-  position: absolute;
-  top: 124px;
-  left: 0;
-  right: 0;
+  display: table;
   margin: auto;
+  margin-top: 24px;
   text-align: center;
   font-size: 2.2em;
   color: #fff;
 }
-/* line 81, ../sass/pages/_features.scss */
+/* line 75, ../sass/pages/_features.scss */
 .feature-box p {
-  position: absolute;
-  top: 180px;
+  display: table;
+  margin: 32px auto;
   padding-left: 18px;
   padding-right: 18px;
-  left: 0;
-  right: 0;
-  margin: auto;
   max-height: 100px;
   overflow: hidden;
   text-align: center;
   font-size: 1.4em;
   color: rgba(255, 255, 255, 0.6);
 }
-/* line 101, ../sass/pages/_features.scss */
-.feature-box paper-button {
-  position: absolute;
-  bottom: 0;
-  margin: 0 !important;
-  height: 50px;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.15);
-  color: #fff;
-  font-size: 1.3em;
-  border-radius: 5px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-}
 @media (max-width: 1199px) {
-  /* line 121, ../sass/pages/_features.scss */
+  /* line 92, ../sass/pages/_features.scss */
   .feature-box br {
     display: none;
   }
@@ -10421,22 +10416,22 @@ label {
     height: 240px;
     margin-bottom: 16px;
   }
-  /* line 130, ../sass/pages/_features.scss */
+  /* line 101, ../sass/pages/_features.scss */
   .feature-box img {
-    top: 18px;
+    margin-top: 18px;
     height: 64px;
   }
-  /* line 135, ../sass/pages/_features.scss */
+  /* line 106, ../sass/pages/_features.scss */
   .feature-box h3 {
-    top: 90px;
+    margin-top: 12px;
   }
-  /* line 139, ../sass/pages/_features.scss */
+  /* line 110, ../sass/pages/_features.scss */
   .feature-box p {
-    top: 142px;
+    margin: 20px auto;
   }
 }
 
-/* line 151, ../sass/pages/_features.scss */
+/* line 122, ../sass/pages/_features.scss */
 .mini-feature-column h3 {
   margin: 0;
   margin-top: 16px;
@@ -10447,7 +10442,7 @@ label {
   text-align: center;
   font-size: 2em;
 }
-/* line 164, ../sass/pages/_features.scss */
+/* line 135, ../sass/pages/_features.scss */
 .mini-feature-column paper-button {
   height: 80px;
   margin: 8px !important;
@@ -10458,7 +10453,7 @@ label {
   text-transform: none;
   border-radius: 5px;
 }
-/* line 180, ../sass/pages/_features.scss */
+/* line 151, ../sass/pages/_features.scss */
 .mini-feature-column paper-button img {
   position: absolute;
   top: 19px;
@@ -10467,7 +10462,7 @@ label {
   height: 42px;
   object-fit: scale-down;
 }
-/* line 192, ../sass/pages/_features.scss */
+/* line 163, ../sass/pages/_features.scss */
 .mini-feature-column paper-button h2 {
   position: absolute;
   top: 10px;
@@ -10477,7 +10472,7 @@ label {
   font-size: 1.4em;
   color: #5285FF;
 }
-/* line 206, ../sass/pages/_features.scss */
+/* line 177, ../sass/pages/_features.scss */
 .mini-feature-column paper-button p {
   position: absolute;
   left: 75px;
