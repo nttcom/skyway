@@ -367,8 +367,8 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?1439425663);
-  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?&1439425663#iefix) format("embedded-opentype"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff2?1439425663) format("woff2"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff?1439425663) format("woff"), url(/fonts/bootstrap/glyphicons-halflings-regular.ttf?1439425663) format("truetype"), url(/fonts/bootstrap/glyphicons-halflings-regular.svg?1439425663#glyphicons_halflingsregular) format("svg");
+  src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot");
+  src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
 }
 /* line 24, ../../../../../../.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_glyphicons.scss */
 .glyphicon {
@@ -10955,32 +10955,32 @@ label {
   src: url("../fonts/NotoSansCJKjp-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/NotoSansCJKjp-Medium.woff") format("woff"), url("../fonts/NotoSansCJKjp-Medium.ttf") format("truetype");
 }
 /* Common Styles */
-/* line 82, ../sass/styles.scss */
+/* line 83, ../sass/styles.scss */
 * {
   font-family: "Noto Sans Japanese", sans-serif;
   font-weight: 200;
   line-height: 26px;
 }
 
-/* line 96, ../sass/styles.scss */
+/* line 97, ../sass/styles.scss */
 h1, h2, h3 {
   font-weight: 200;
 }
 
-/* line 106, ../sass/styles.scss */
+/* line 107, ../sass/styles.scss */
 .top-section {
   position: relative;
   height: 600px;
   background-color: #5285FF;
 }
 
-/* line 113, ../sass/styles.scss */
+/* line 114, ../sass/styles.scss */
 .top-section-short {
   position: relative;
   height: 160px;
   background-color: #5285FF;
 }
-/* line 119, ../sass/styles.scss */
+/* line 120, ../sass/styles.scss */
 .top-section-short h1 {
   position: relative;
   top: 38px;
@@ -10989,7 +10989,7 @@ h1, h2, h3 {
   color: #FFF;
   font-size: 3.2em;
 }
-/* line 132, ../sass/styles.scss */
+/* line 133, ../sass/styles.scss */
 .top-section-short h2 {
   position: relative;
   top: 48px;
@@ -11000,7 +11000,7 @@ h1, h2, h3 {
   font-size: 1.5em;
 }
 
-/* line 144, ../sass/styles.scss */
+/* line 145, ../sass/styles.scss */
 .background, .background-blue {
   position: relative;
   top: 0;
@@ -11011,17 +11011,17 @@ h1, h2, h3 {
   background-color: #fff;
 }
 
-/* line 154, ../sass/styles.scss */
+/* line 155, ../sass/styles.scss */
 .background-blue {
   background-color: #2548BE;
 }
 
-/* line 160, ../sass/styles.scss */
+/* line 161, ../sass/styles.scss */
 .paper-style-div {
   padding: 40px 20px;
   margin: 10px 0px;
 }
-/* line 167, ../sass/styles.scss */
+/* line 168, ../sass/styles.scss */
 .paper-style-div h2 {
   margin: 0;
   text-align: center;
@@ -11029,7 +11029,7 @@ h1, h2, h3 {
   color: #5a5a5a;
 }
 
-/* line 175, ../sass/styles.scss */
+/* line 176, ../sass/styles.scss */
 .divider {
   left: 0;
   right: 0;
@@ -11045,18 +11045,18 @@ h1, h2, h3 {
 }
 
 /* Signup div styles */
-/* line 191, ../sass/styles.scss */
+/* line 192, ../sass/styles.scss */
 .signup-div {
   padding: 60px 0px;
 }
-/* line 195, ../sass/styles.scss */
+/* line 196, ../sass/styles.scss */
 .signup-div h2 {
   margin: 0;
   text-align: center;
   font-size: 1.85em;
   color: #fff;
 }
-/* line 201, ../sass/styles.scss */
+/* line 202, ../sass/styles.scss */
 .signup-div a {
   left: 0;
   right: 0;
@@ -11064,7 +11064,7 @@ h1, h2, h3 {
   margin-bottom: 10px;
 }
 
-/* line 209, ../sass/styles.scss */
+/* line 210, ../sass/styles.scss */
 .divider-short {
   left: 0;
   right: 0;
@@ -11079,7 +11079,7 @@ h1, h2, h3 {
   border-color: #5285FF;
 }
 
-/* line 223, ../sass/styles.scss */
+/* line 224, ../sass/styles.scss */
 .flex-box {
   display: -webkit-box;
   /* OLD - iOS 6-, Safari 3.1-6 */
@@ -11102,28 +11102,28 @@ h1, h2, h3 {
 /* Responsive code */
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
-  /* line 257, ../sass/styles.scss */
+  /* line 258, ../sass/styles.scss */
   .top-section-short br {
     display: none;
   }
 }
 /* Portrait phones and smaller */
 @media (max-width: 767px) {
-  /* line 267, ../sass/styles.scss */
+  /* line 268, ../sass/styles.scss */
   .top-section-short h1 {
     font-size: 2.5em;
   }
-  /* line 270, ../sass/styles.scss */
+  /* line 271, ../sass/styles.scss */
   .top-section-short .h2-long {
     font-size: 1.2em;
   }
 
-  /* line 274, ../sass/styles.scss */
+  /* line 275, ../sass/styles.scss */
   .background-blue {
     padding: 0 !important;
   }
 
-  /* line 278, ../sass/styles.scss */
+  /* line 279, ../sass/styles.scss */
   .paper-style-div {
     margin: 0 !important;
     border-radius: 0;

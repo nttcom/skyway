@@ -1,5 +1,5 @@
 // Import Bootstrap Compass integration
-@import "bootstrap-compass";
+//@import "bootstrap-compass";
 
 // Import custom Bootstrap variables
 @import "bootstrap/bootstrap-variables";
@@ -11,6 +11,7 @@
 //@import "bootstrap/bootswatch-variables";
 //@import "bootstrap/bootswatch";
 
+@import "utilities/mixins";
 @import "utilities/variables";
 
 @import "components/animation";

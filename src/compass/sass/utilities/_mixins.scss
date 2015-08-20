@@ -1,4 +1,4 @@
-@import "bootstrap/bootstrap-variables";
+@import "../bootstrap/bootstrap-variables";
 
 @mixin alpha-attribute($attribute, $color, $background) {
     $percent: alpha($color) * 100%;
