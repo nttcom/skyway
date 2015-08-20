@@ -10,13 +10,17 @@ module.exports = {
             baseDir: "./" + deploy
         }
     },
-    sass: {
-        src: src + "/src/compass/sass/**/*.{sass,scss}",
-        dest: dest,
-        settings: {
-            indentedSyntax: true, // Enable .sass syntax!
-            imagePath: 'images' // Used by the image-url helper
-        }
+//    sass: {
+//        src: src + "/src/compass/sass/**/*.{sass,scss}",
+//        dest: dest,
+//        settings: {
+//            indentedSyntax: true, // Enable .sass syntax!
+//            imagePath: 'images' // Used by the image-url helper
+//        }
+//    },
+    compass: {
+        sass: src + "/src/compass/sass/",
+        css: dest,
     },
     images: {
         src: src + "/images/**",
