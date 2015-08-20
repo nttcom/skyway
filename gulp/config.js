@@ -18,9 +18,9 @@ module.exports = {
 //            imagePath: 'images' // Used by the image-url helper
 //        }
 //    },
-    compass: {
-        sass: src + "/src/compass/sass/",
-        css: dest,
+    sass: {
+        src_sass: src + "/src/compass/sass/",
+        dest_css: dest + "/css"
     },
     images: {
         src: src + "/images/**",
