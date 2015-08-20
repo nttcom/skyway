@@ -17,4 +17,5 @@ vendor
 .bundle
 
 #sass cache
+.sass-cache
 src/compass/.sass-cache
