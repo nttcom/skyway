@@ -9806,6 +9806,52 @@ a {
 }
 
 /* line 182, ../sass/components/_button.scss */
+.btn-feature {
+  height: 78px;
+  width: calc(100% - 16px);
+  margin: 8px !important;
+  padding: 0;
+  border-style: solid;
+  border-color: #9f9f9f;
+  border-width: 1px;
+  border-radius: 5px;
+}
+/* line 196, ../sass/components/_button.scss */
+.btn-feature img {
+  position: absolute;
+  top: 19px;
+  left: 15px;
+  width: 46px;
+  height: 42px;
+  object-fit: scale-down;
+}
+/* line 208, ../sass/components/_button.scss */
+.btn-feature h2 {
+  position: absolute;
+  top: 8px;
+  left: 75px;
+  margin: 0;
+  padding: 0;
+  font-size: 1.25em;
+  color: #5285FF;
+}
+/* line 222, ../sass/components/_button.scss */
+.btn-feature p {
+  position: absolute;
+  left: 75px;
+  top: 35px;
+  height: 36px;
+  overflow: hidden;
+  margin: 0;
+  margin-right: 12px;
+  padding: 0;
+  text-align: left;
+  font-size: 0.88em;
+  line-height: 18px;
+  color: #9f9f9f;
+}
+
+/* line 248, ../sass/components/_button.scss */
 .btn-howto {
   float: left;
   margin-left: 4px;
@@ -9816,12 +9862,12 @@ a {
   color: #fff;
   background: #1EC75F;
 }
-/* line 195, ../sass/components/_button.scss */
+/* line 261, ../sass/components/_button.scss */
 .btn-howto:hover {
   background: #1bb154;
 }
 
-/* line 200, ../sass/components/_button.scss */
+/* line 266, ../sass/components/_button.scss */
 .btn-support, .btn-support-left, .btn-support-right {
   position: absolute;
   bottom: 0;
@@ -9836,12 +9882,12 @@ a {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
 }
-/* line 219, ../sass/components/_button.scss */
+/* line 285, ../sass/components/_button.scss */
 .btn-support:hover, .btn-support-left:hover, .btn-support-right:hover {
   background: rgba(82, 133, 255, 0.3);
 }
 
-/* line 224, ../sass/components/_button.scss */
+/* line 290, ../sass/components/_button.scss */
 .btn-support-left {
   left: 0;
   width: 50%;
@@ -9849,7 +9895,7 @@ a {
   border-right-width: 1px;
 }
 
-/* line 235, ../sass/components/_button.scss */
+/* line 301, ../sass/components/_button.scss */
 .btn-support-right {
   right: 0;
   width: 50%;
@@ -10304,7 +10350,7 @@ label {
   background-color: #1CC05A;
 }
 
-/* line 57, ../sass/pages/_features.scss */
+/* line 39, ../sass/pages/_features.scss */
 .feature-box {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -10313,7 +10359,7 @@ label {
   padding: 0;
   height: 320px;
 }
-/* line 70, ../sass/pages/_features.scss */
+/* line 52, ../sass/pages/_features.scss */
 .feature-box img {
   position: absolute;
   top: 28px;
@@ -10323,7 +10369,7 @@ label {
   height: 80px;
   object-fit: scale-down;
 }
-/* line 84, ../sass/pages/_features.scss */
+/* line 66, ../sass/pages/_features.scss */
 .feature-box h3 {
   position: absolute;
   top: 124px;
@@ -10334,7 +10380,7 @@ label {
   font-size: 2.2em;
   color: #fff;
 }
-/* line 99, ../sass/pages/_features.scss */
+/* line 81, ../sass/pages/_features.scss */
 .feature-box p {
   position: absolute;
   top: 180px;
@@ -10349,7 +10395,7 @@ label {
   font-size: 1.4em;
   color: rgba(255, 255, 255, 0.6);
 }
-/* line 119, ../sass/pages/_features.scss */
+/* line 101, ../sass/pages/_features.scss */
 .feature-box paper-button {
   position: absolute;
   bottom: 0;
@@ -10364,33 +10410,33 @@ label {
   border-top-right-radius: 0px;
 }
 @media (max-width: 1199px) {
-  /* line 139, ../sass/pages/_features.scss */
+  /* line 121, ../sass/pages/_features.scss */
   .feature-box br {
     display: none;
   }
 }
 @media (max-width: 991px) {
-  /* line 57, ../sass/pages/_features.scss */
+  /* line 39, ../sass/pages/_features.scss */
   .feature-box {
     height: 240px;
     margin-bottom: 16px;
   }
-  /* line 148, ../sass/pages/_features.scss */
+  /* line 130, ../sass/pages/_features.scss */
   .feature-box img {
     top: 18px;
     height: 64px;
   }
-  /* line 153, ../sass/pages/_features.scss */
+  /* line 135, ../sass/pages/_features.scss */
   .feature-box h3 {
     top: 90px;
   }
-  /* line 157, ../sass/pages/_features.scss */
+  /* line 139, ../sass/pages/_features.scss */
   .feature-box p {
     top: 142px;
   }
 }
 
-/* line 169, ../sass/pages/_features.scss */
+/* line 151, ../sass/pages/_features.scss */
 .mini-feature-column h3 {
   margin: 0;
   margin-top: 16px;
@@ -10401,7 +10447,7 @@ label {
   text-align: center;
   font-size: 2em;
 }
-/* line 182, ../sass/pages/_features.scss */
+/* line 164, ../sass/pages/_features.scss */
 .mini-feature-column paper-button {
   height: 80px;
   margin: 8px !important;
@@ -10412,7 +10458,7 @@ label {
   text-transform: none;
   border-radius: 5px;
 }
-/* line 198, ../sass/pages/_features.scss */
+/* line 180, ../sass/pages/_features.scss */
 .mini-feature-column paper-button img {
   position: absolute;
   top: 19px;
@@ -10421,7 +10467,7 @@ label {
   height: 42px;
   object-fit: scale-down;
 }
-/* line 210, ../sass/pages/_features.scss */
+/* line 192, ../sass/pages/_features.scss */
 .mini-feature-column paper-button h2 {
   position: absolute;
   top: 10px;
@@ -10431,7 +10477,7 @@ label {
   font-size: 1.4em;
   color: #5285FF;
 }
-/* line 224, ../sass/pages/_features.scss */
+/* line 206, ../sass/pages/_features.scss */
 .mini-feature-column paper-button p {
   position: absolute;
   left: 75px;
