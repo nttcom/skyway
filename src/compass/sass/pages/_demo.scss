@@ -44,6 +44,58 @@
 .demo-container {
     @extend .paper-style-layer-1;
     
-    background-color: $skyway-blue;
+    position: relative;
+    
+    height: 300px;
+
+    margin-top: 30px;
+    margin-bottom: 50px;
+    
+    padding: 16px 30px;
+    
+    border-width: 4px;
+    border-color: rgba(82, 133, 255, 1);
+    border-style: solid;
+    
+    h2 {
+        font-size: 38px;
+        margin: 0;
+        
+        color: $dark_font;
+    }
+    
+    p {
+
+        width: 440px;
+        height: 118px;
+
+        margin-top: 16px;
+        margin-bottom: 16px;
+        margin-left: 10px;
+
+        color: #5f5f5f;
+        background-color: #dfdfdf;
+
+        border-radius: 3px;
+    }
+
+    img {
+        position: absolute;
+
+        right: 22px;
+        top: 0;
+        bottom: 0;
+        margin:auto;
+
+        height: 242px;
+
+        object-fit: scale-down;
+
+        border-style: solid;
+        border-color: $mid_blue;
+        border-width: 4px;
+        border-radius: 5px;
+    }
+    
 }
 
