@@ -41,3 +41,9 @@
     }
 }
 
+.demo-container {
+    @extend .paper-style-layer-1;
+    
+    background-color: $skyway-blue;
+}
+

@@ -8770,7 +8770,7 @@ button.close {
   }
 }
 /* line 15, ../sass/utilities/_variables.scss */
-.paper-style-layer-1, .btn-paper, .platform-logo, .documentation-other-menu, .support-box {
+.paper-style-layer-1, .btn-paper, .platform-logo, .demo-container, .documentation-other-menu, .support-box {
   position: relative;
   padding: 8px;
   background-color: #fff;
@@ -10263,6 +10263,11 @@ label {
   width: 80px;
   height: 80px;
   object-fit: scale-down;
+}
+
+/* line 44, ../sass/pages/_demo.scss */
+.demo-container {
+  background-color: #5285FF;
 }
 
 /* line 1, ../sass/pages/_documentation.scss */
