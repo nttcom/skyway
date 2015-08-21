@@ -179,6 +179,31 @@ a {
 //    
 //}
 
+.btn-demo-left {
+    @extend .btn-paper-flat;
+    
+    position: absolute;
+
+    width: 180px;
+    height: 100%;
+    
+    color: #fff;
+    background-color: #00C98E;
+}
+
+.btn-demo-right {
+    @extend .btn-paper-flat;
+    
+    position: absolute;
+
+    right: 0px;
+    width: 180px;
+    height: 100%;
+    
+    color: #fff;
+    background-color: #1ED75F;
+}
+
 .btn-feature-bottom {    
     position: absolute;
     bottom: 0;
