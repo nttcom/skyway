@@ -68,10 +68,10 @@
 }
 
 .dropdown-toggle {
-  color: rgba(252, 57, 49, 0.8) !important;
+  @include alpha-attribute('color', rgba(252, 57, 49, 0.8), #fff);
   &:hover {
-    color: rgba(252, 57, 49, 1) !important;
-    background-color: rgba(252, 57, 49, 0.2) !important;
+    @include alpha-attribute('color', rgba(252, 57, 49, 1), #fff);
+    @include alpha-attribute('background-color', rgba(252, 57, 49, 0.2), #fff);
   }
 }
 

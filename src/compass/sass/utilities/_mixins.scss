@@ -4,8 +4,8 @@
     $percent: alpha($color) * 100%;
     $opaque: opacify($color, 1);
     $solid-color: mix($opaque, $background, $percent);
-    #{$attribute}: $solid-color;
-    #{$attribute}: $color;
+    #{$attribute}: $solid-color !important;
+    #{$attribute}: $color !important;
 }
 
 // Align ANYTHING!!!

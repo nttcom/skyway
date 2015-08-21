@@ -39,17 +39,11 @@
         
         padding: 8px 12px;
         
-        background-color: $skyway_blue;
-        
         border-radius: 5px;
-        background-color: rgba(82, 133, 255, 0.12);
+        @include alpha-attribute('background-color', rgba($skyway-blue, 0.12), #fff);
         
         p {
             margin: 0;
         }
-    }
-    
-    @include bp(sm) {
-        
     }
 }

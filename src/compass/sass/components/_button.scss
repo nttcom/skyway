@@ -163,13 +163,13 @@ a {
     width: calc(100% + 16px);
     
     color: #fff;
-    background: rgba(0,0,0,0.25);
+    @include alpha-attribute('background-color', rgba(#000, 0.25), $mid_blue);
     
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     
     &:hover {
-        background: rgba(0,0,0,0.15);
+        @include alpha-attribute('background-color', rgba(#000, 0.15), $mid_blue);
     }
 }
 
@@ -186,13 +186,13 @@ a {
     width: calc(100% + 16px);
     
     color: #fff;
-    background: rgba(0,0,0,0.25);
+    @include alpha-attribute('background-color', rgba(#000, 0.25), #fff);
     
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     
     &:hover {
-        background: rgba(0,0,0,0.15);
+        @include alpha-attribute('background-color', rgba(#000, 0.15), #fff);
     }
 }
 
@@ -289,7 +289,7 @@ a {
     margin: 0px;
     
     color: #5285FF;
-    background: rgba(82, 133, 255, 0.2);
+    @include alpha-attribute('background-color', rgba($skyway-blue, 0.2), #fff);
 
     border-style: solid;
     border-color: #5285FF;
@@ -300,7 +300,7 @@ a {
     border-top-right-radius: 0px;
     
     &:hover {
-        background: rgba(82, 133, 255, 0.3);
+        @include alpha-attribute('background-color', rgba($skyway-blue, 0.3), #fff);
     }    
 }
 

@@ -16,7 +16,7 @@
     text-align: left;
 
     border-style: solid;
-    border-color: rgba(82, 133, 255, 1);
+    border-color: $skyway-blue;
     border-width: 0;
     border-bottom-width: 2px;
 
@@ -32,6 +32,10 @@ $colours: #4E5FAD, #E63300, #1CC05A;
     .top-features-container [class^="col"]:nth-of-type(#{length($colours)}n+#{$i}) {
         .feature-box {
             background-color: nth($colours, $i);
+            
+            p {
+                @include alpha-attribute('color', rgba(#fff, 0.6), nth($colours, $i));
+            }
         }
     }
 }
@@ -85,7 +89,8 @@ $colours: #4E5FAD, #E63300, #1CC05A;
         text-align: center;
         font-size: 1.4em;
 
-        color: rgba(255, 255, 255, 0.6);
+//        color: #fff; // For IE 8 etc. (Transparencies are ignored)
+//        color: rgba(255, 255, 255, 0.6);
     }
     
     @include bp(md) {
