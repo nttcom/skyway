@@ -25,18 +25,28 @@
     
     @include bp(xs) {
         
-//        height: 520px !important;
-        
         .transmission-animation{
-            display: none;
+//            display: none;
         }
         
         h1 {
-            font-size: 1.85 !important;
+            font-size: 1.82em;
+            margin: 0 8px;
         }
             
         h2 {
-            font-size: 1.5 !important;
+            font-size: 1.2em;
+            margin: 0 8px;
+        }
+    }
+    
+    @include bp(xxs) {
+        h1 {
+            font-size: 1.4em;
+        }
+            
+        h2 {
+            font-size: 1em;
         }
     }
 
