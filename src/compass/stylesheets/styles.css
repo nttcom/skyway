@@ -10008,51 +10008,51 @@ a {
   display: inline-block;
   /* For IE 10 */
   -ms-flex: 1;
-  position: relative;
+  font-size: 1.0;
   color: #6f6f6f;
 }
-/* line 79, ../sass/components/_footer.scss */
+/* line 80, ../sass/components/_footer.scss */
 .links-div a:hover {
   color: #bfbfbf;
 }
 
 @media (max-width: 767px) {
-  /* line 88, ../sass/components/_footer.scss */
+  /* line 89, ../sass/components/_footer.scss */
   #footer {
     height: 180px;
   }
-  /* line 91, ../sass/components/_footer.scss */
+  /* line 92, ../sass/components/_footer.scss */
   #footer .divider {
     margin-top: 16px;
   }
-  /* line 95, ../sass/components/_footer.scss */
+  /* line 96, ../sass/components/_footer.scss */
   #footer p {
     font-size: 1.0em;
     margin-top: 10px;
   }
 
-  /* line 102, ../sass/components/_footer.scss */
+  /* line 103, ../sass/components/_footer.scss */
   .logos-div {
     margin-top: 16px;
   }
-  /* line 105, ../sass/components/_footer.scss */
+  /* line 106, ../sass/components/_footer.scss */
   .logos-div #ntt-logo {
     height: 25.2px !important;
   }
-  /* line 109, ../sass/components/_footer.scss */
+  /* line 110, ../sass/components/_footer.scss */
   .logos-div #skyway-logo {
     height: 30.8px !important;
   }
-  /* line 113, ../sass/components/_footer.scss */
+  /* line 114, ../sass/components/_footer.scss */
   .logos-div #html5-logo {
     height: 22.4px !important;
   }
 
-  /* line 118, ../sass/components/_footer.scss */
+  /* line 119, ../sass/components/_footer.scss */
   .links-div {
     margin-top: 16px;
   }
-  /* line 121, ../sass/components/_footer.scss */
+  /* line 122, ../sass/components/_footer.scss */
   .links-div a {
     font-size: 0.75em;
   }
