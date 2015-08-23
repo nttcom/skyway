@@ -25,6 +25,16 @@
     
     @include bp(xs) {
         
+        height: auto !important;
+        padding-bottom: 80px;
+
+        .animation-container {
+            
+            h3 {
+                font-size: 1.2em;
+            }
+        }
+        
         .transmission-animation{
 //            display: none;
         }
@@ -78,7 +88,7 @@
         margin-top: 20px;
         color: #FFF;
         opacity: 0.8;
-        font-size: 26px;
+        font-size: 1.8em;
         text-align: center;
     }
 }
