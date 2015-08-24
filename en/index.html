@@ -1,0 +1,128 @@
+---
+layout: responsive
+lang: en
+title:
+description: WebRTC is a revolutionary new technology that allows browsers and applications to send video, audio and data to other browsers in real time. If you use SkyWay, you can easily create WebRTC apps without having to worry about the server.
+---
+
+<!-- Top Section -->
+
+<div class="top-section">
+    <h1>Connect in real time</h1>
+    <h2>A powerful yet simple WebRTC platform.</h2>
+    
+    <div class="container animation-container">
+        <div class="animation-content">
+            
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class='animated-transmission'>
+                        <div class='circle-container'>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-top-images">
+                <div class="col-xs-6">
+                    <a href="info-js.html">
+                        <img src="{{ site.homedir[page.lang] }}images/top_images/index_js_top.png" class="animation-image">
+                        <h3>JavaScript</h3>
+                    </a>
+                </div>
+                <div class="col-xs-6">
+                    <a href="info-mobile.html">
+                        <img src="{{ site.homedir[page.lang] }}images/top_images/index_mobile_top.png" class="animation-image">
+                         <h3>iOS/Android</h3>
+                    </a>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+    
+    <a class="top-btn-desktop" target="_blank" href='https://skyway.io/ds/registration/'>
+        <button class="btn-paper btn-top-section">Sign Up</button>
+    </a>     
+    
+</div>
+
+<!-- Main Page Content -->
+
+<div class="background-blue">
+
+    <div class="container">
+
+        <div class="row main-content-row">
+            <div class="col-sm-12 paper-style-div">
+                <h2>A Simple and Flexible WebRTC Platform.</h2>
+                <div class="divider"></div>
+
+                <div class="row">
+                    <div class="col-xs-12 col-md-10 col-md-offset-1">
+                        <div class="row">
+                            <div class="col-sm-3 highlight">
+                                <i class="fa fa-video-camera"></i>
+                                <h3>Multimedia</h3>
+                                WebRTC voice, video and data communication are all supported
+                            </div>
+                            <div class="col-sm-3 highlight">
+                                <i class="fa fa-paper-plane"></i>
+                                <h3>Stress-free coding</h3>
+                                With no server-side code needed, you can concentrate on client-side code
+                            </div>
+                            <div class="col-sm-3 highlight">
+                                <i class="fa fa-lock"></i>
+                                <h3>Secure</h3>
+                                All video and data communication is securely encrypted
+                            </div>
+                            <div class="col-sm-3 highlight">
+                                <i class="fa fa-cogs"></i>
+                                <h3>Extra Functionality</h3>
+                                Take your app further with TURN, multi-party, and screen sharing functionality
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        
+        {% include signup-div.html %} 
+        
+        <div class="row main-content-row">
+            <div class="col-sm-12 paper-style-div">
+                <h2>Our latest updates.</h2>
+                <div class="divider"></div>
+                <div class="row">
+                    <div class="col-sm-10 col-sm-offset-1">
+                        {% for post in site.posts limit:3 %}
+                            <div class="row mini-headline">
+                                <div class="col-sm-2">
+                                    <div class="row">
+                                        <div class="col-sm-10 col-sm-offset-1 mini-headline-date">
+                                            {{ post.date | date: "%Y.%d.%m " }}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-10 mini-headline-text">{{ post.excerpt }}</div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            
+                <a href='news.html'>
+                    <button class="btn-paper btn-inverted btn-center">All News</button>
+                </a>  
+            </div>
+        </div>
+    
+    </div>
+</div>
