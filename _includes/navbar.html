@@ -12,11 +12,21 @@
 
     <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-tabs navbar-tabs-centered">
+            {% case page.lang %}
+            {% when 'jp' %}
             <li><a href='info-js.html'>JavaScript</a></li>
             <li><a href='info-mobile.html'>iOS/Android</a></li>
             <li><a href='features.html'>すべての機能</a></li>
             <li><a href='documentation.html'>ドキュメント</a></li>
             <li><a href='support.html'>サポート</a></li>
+            {% when 'en' %}
+            <li><a href='info-js.html'>JavaScript</a></li>
+            <li><a href='info-mobile.html'>iOS/Android</a></li>
+            <li><a href='features.html'>Features</a></li>
+            <li><a href='documentation.html'>Documentation</a></li>
+            <li><a href='support.html'>Support</a></li>
+            {% else %}
+            {% endcase %}
         </ul>
         <ul class="nav navbar-nav  navbar-buttons">
             <li class="dropdown">
@@ -35,7 +45,13 @@
             </li>
             <li>
                 <a href='https://skyway.io/ds/' target="_blank" class="btn-link">
+                    {% case page.lang %}
+                    {% when 'jp' %}
                     <button class="btn-paper btn-login">ログイン</button>
+                    {% when 'en' %}
+                    <button class="btn-paper btn-login">Login</button>
+                    {% else %}
+                    {% endcase %}
                 </a>
             </li>
         </ul>
