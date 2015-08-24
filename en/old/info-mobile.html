@@ -1,0 +1,158 @@
+---
+layout: default
+lang: en
+title: iOS/Android SDK
+description: Here we offer our iOS and Android SDKs for SkyWay. If you use SkyWay, you can easily create WebRTC apps without having to worry about the server.
+---
+<div id="subpage-content-div" elevation="2">
+    <div id="content-explanation-div">
+        <h2 class="content-title-side">iOS/Android SDK</h2>
+            <div id="content-highlights">
+                                <div class="content-highlight">
+                    <img class="content-highlight-icon" src="{{ site.homedir[page.lang] }}images/outline_star_white.png">
+                    <div class="content-highlight-text-container">
+                        <div class="content-highlight-text">Cross-compatibile API makes multidevice development easy</div>
+                    </div>
+                </div>
+                <div class="content-highlight">
+                    <img class="content-highlight-icon" src="{{ site.homedir[page.lang] }}images/outline_star_white.png">
+                    <div class="content-highlight-text-container">
+                        <div class="content-highlight-text">Support for the latest OS's</div>
+                    </div>
+                </div>
+                <div class="content-highlight">
+                    <img class="content-highlight-icon" src="{{ site.homedir[page.lang] }}images/outline_star_white.png">
+                    <div class="content-highlight-text-container">
+                        <div class="content-highlight-text">Concentrate on the app, we'll take care of the server side</div>
+                    </div>
+                </div>
+            </div>
+            <a href='documentation.html'>
+              <paper-button class="subpage-topSectionButton white" raised>Documentation</paper-button>
+            </a>
+    </div>
+    <div id="content-animation-div">
+        <link rel="stylesheet" href="{{ site.homedir[page.lang] }}styles/transmission-animation-subpage.css">
+        <img id="animated-logo-mobile" src="{{ site.homedir[page.lang] }}images/logos/logo-cloud_white.png">
+        <div id="animation-container">
+            <div class='ios-transmission-animation'>
+                <div class='circle-container'>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <img src="{{ site.homedir[page.lang] }}images/top_images/mobile_top.png">
+        </div>
+        <a href='https://skyway.io/ds/registration/' target="_blank">
+          <paper-button class="subpage-topSectionButton white" raised>Sign Up</paper-button>
+        </a>
+    </div>
+</div>
+
+<paper-material id="mobile-howto-div" class="paper-div" elevation="2">
+    <div class="paper-div-internal">
+        <h2 class="material-header">Give it a try</h2>
+<!--        <h3 class="material-subheader">It is easy to build a iOS/Android  application using SkyWay. Why not give it a try?</h3>-->
+
+
+        <div class="howto-step">
+            <img src="{{ site.homedir[page.lang] }}images/count/1.png">
+            <div class="float-group">
+              <p>Register as a developer and create an API key.</p>
+              <a href='https://skyway.io/ds/registration/' target="_blank">
+                <paper-button raised>Sign Up (Free)</paper-button>
+              </a>
+            </div>
+        </div>
+
+        <div class="howto-step">
+            <img src="{{ site.homedir[page.lang] }}images/count/2.png">
+            <div class="float-group">
+                <p>Download the relevent SDK.</p>
+                <a target="_blank" href='http://skyway-ios-sdk.str.cloudn-service.com/0.1.0/SkyWay-iOS-SDK-0.1.0.zip'><paper-button raised>iOS SDK (0.1.0)</paper-button></a>
+                <a target="_blank" href='http://skyway-android-sdk.str.cloudn-service.com/0.1.1/SkyWay-Android-SDK-0.1.1.zip'><paper-button raised>Android SDK (0.1.1)</paper-button></a>
+            </div>
+        </div>
+
+        <div class="howto-step">
+            <img src="{{ site.homedir[page.lang] }}images/count/3.png">
+            <div class="float-group">
+                <p>Let's create a SkyWay app.<br><br>
+                    Refer to the sample code and sample app. Make sure to include the library!</p>
+        <h3 class="code-type-header">iOS Objective-C</h3>
+                <paper-material class="code-section" elevation="1">
+                                <pre><code class="objectivec">
+#import &lt;SkyWay/SKWPeer.h&gt;
+
+SKWPeerOption* options = [[SKWPeerOption alloc] init];
+options.key = @"{APIKEY}";
+options.domain = @"{DOMAIN}";
+SKWPeer* peer = [[SKWPeer alloc] initWithId:myId options:options];
+
+[peer on:SKW_PEER_EVENT_OPEN callback:^(NSObject* obj)
+{
+    SKWDataConnection* conn = [peer connectWithId:@"dest-peer-id"];
+    [conn on:SKW_DATACONNECTION_EVENT_OPEN callback:^(NSObject* obj)
+    {
+        [conn send:@"Hello SkyWay!"];
+    }];
+}];</code></pre>
+                </paper-material>　<a href="https://github.com/nttcom/SkyWay-iOS-Sample" target="_blank"  class="sample-app-link">Sample app (iOS)</a>
+        <h3 class="code-type-header">Android Java</h3>
+                <paper-material class="code-section" elevation="1">
+                                <pre><code class="java">
+import io.skyway.Peer.*;
+
+PeerOption options = new PeerOption();
+options.key = "{APIKEY}";
+options.domain = "{DOMAIN}";
+Peer peer = new Peer(getApplicationContext(),myId,options);
+
+peer.on(Peer.PeerEventEnum.OPEN, new OnCallback()
+{
+    public void onCallback(Object object)
+    {
+        DataConnection conn = peer.connect('dest-peer-id');
+        conn.on(DataEventEnum.DATA,new OnCallback()
+        {
+            public void onCallback(Object object){
+                conn.send("Hello SkyWay!");
+            }
+        });
+    }
+});</code></pre>
+<script>hljs.initHighlighting();</script>
+
+               </paper-material>　<a href="https://github.com/nttcom/SkyWay-Android-Sample" target="_blank"  class="sample-app-link">Sample app (Android)</a>
+
+            </div>
+        </div>
+
+        <div class="howto-step">
+            <img src="{{ site.homedir[page.lang] }}images/count/4.png">
+            <div class="float-group">
+                <p>Learn more from our development resources.</p>
+                <a href='docs/#iOS'>
+                  <paper-button raised>Full Guide</paper-button>
+                </a>
+                <a href='support.html'>
+                  <paper-button raised>Support</paper-button>
+                </a>
+            </div>
+        </div>
+        <h2 class="material-header">　</h2>
+    </div>
+</paper-material>
+
+<div id="signup-div">
+    <h2 id="signup-header">Like what you see? SkyWay is free to try.</h2>
+    <div class="divider-short"></div>
+    <a href='https://skyway.io/ds/registration/' target="_blank">
+      <paper-button id="signupButton" raised class="white">Sign Up</paper-button>
+    </a>
+</div>
