@@ -10601,35 +10601,40 @@ label {
 /* line 23, ../sass/pages/_index.scss */
 .top-section .animation-container {
   position: relative;
+  height: 380px;
   height: calc(600px - 220px);
 }
-/* line 29, ../sass/pages/_index.scss */
+/* line 30, ../sass/pages/_index.scss */
 .top-section .animation-container .animation-content {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   margin: auto;
+  text-align: center;
 }
-/* line 38, ../sass/pages/_index.scss */
+/* line 41, ../sass/pages/_index.scss */
 .top-section .animation-container .animation-content .row-top-images {
   margin-top: 10px;
 }
-/* line 42, ../sass/pages/_index.scss */
+/* line 45, ../sass/pages/_index.scss */
 .top-section .animation-container .animation-content img {
-  display: table;
+  display: inline;
   margin: auto;
+  width: auto;
+  max-width: 100%;
+  height: auto;
   max-height: 220px;
-  width: 100%;
-  object-fit: scale-down;
+  object-fit: contain;
+  -ms-interpolation-mode: bicubic;
   cursor: pointer;
 }
-/* line 51, ../sass/pages/_index.scss */
+/* line 57, ../sass/pages/_index.scss */
 .top-section .animation-container .animation-content img:hover {
   transform: scale(1.02, 1.02);
   -webkit-transform: scale(1.02, 1.02);
 }
-/* line 56, ../sass/pages/_index.scss */
+/* line 62, ../sass/pages/_index.scss */
 .top-section .animation-container .animation-content h3 {
   margin-top: 20px;
   color: #FFF;
@@ -10643,50 +10648,50 @@ label {
     height: auto !important;
     padding-bottom: 80px;
   }
-  /* line 71, ../sass/pages/_index.scss */
+  /* line 77, ../sass/pages/_index.scss */
   .top-section h1 {
     font-size: 1.82em;
   }
-  /* line 75, ../sass/pages/_index.scss */
+  /* line 81, ../sass/pages/_index.scss */
   .top-section h2 {
     font-size: 1.2em;
   }
-  /* line 79, ../sass/pages/_index.scss */
+  /* line 85, ../sass/pages/_index.scss */
   .top-section .animation-container {
     padding-top: 24px;
     height: auto;
   }
-  /* line 84, ../sass/pages/_index.scss */
+  /* line 90, ../sass/pages/_index.scss */
   .top-section .animation-container .animation-content {
     position: relative;
     top: 0;
     bottom: auto;
   }
-  /* line 89, ../sass/pages/_index.scss */
+  /* line 95, ../sass/pages/_index.scss */
   .top-section .animation-container .animation-content h3 {
     font-size: 1.2em;
   }
 }
 @media (max-width: 479px) {
-  /* line 97, ../sass/pages/_index.scss */
+  /* line 103, ../sass/pages/_index.scss */
   .top-section h1 {
     font-size: 1.4em;
   }
-  /* line 101, ../sass/pages/_index.scss */
+  /* line 107, ../sass/pages/_index.scss */
   .top-section h2 {
     font-size: 1em;
   }
 }
 
 /* Front Page - Highlights */
-/* line 110, ../sass/pages/_index.scss */
+/* line 116, ../sass/pages/_index.scss */
 .highlight {
   padding: 0 30px;
   color: #8f8f8f;
   font-size: 1.2em;
   font-weight: 100;
 }
-/* line 119, ../sass/pages/_index.scss */
+/* line 125, ../sass/pages/_index.scss */
 .highlight i {
   display: table;
   margin: auto;
@@ -10695,7 +10700,7 @@ label {
   text-align: center;
   color: #5285FF;
 }
-/* line 128, ../sass/pages/_index.scss */
+/* line 134, ../sass/pages/_index.scss */
 .highlight h3 {
   /*    position: absolute;*/
   margin-top: 18px;
@@ -10706,27 +10711,27 @@ label {
   color: #5a5a5a;
 }
 @media (max-width: 1199px) {
-  /* line 110, ../sass/pages/_index.scss */
+  /* line 116, ../sass/pages/_index.scss */
   .highlight {
     padding: 0 16px;
     font-size: 1.0em;
   }
 }
 @media (max-width: 767px) {
-  /* line 110, ../sass/pages/_index.scss */
+  /* line 116, ../sass/pages/_index.scss */
   .highlight {
     font-size: 1.2em;
   }
 }
 
 /* Front Page - News */
-/* line 151, ../sass/pages/_index.scss */
+/* line 157, ../sass/pages/_index.scss */
 .mini-headline {
   margin-top: 15px;
   margin-bottom: 35px;
 }
 
-/* line 157, ../sass/pages/_index.scss */
+/* line 163, ../sass/pages/_index.scss */
 .mini-headline-date {
   margin-bottom: 8px;
   padding: 0;
@@ -10740,7 +10745,7 @@ label {
   border-radius: 5px;
 }
 
-/* line 170, ../sass/pages/_index.scss */
+/* line 176, ../sass/pages/_index.scss */
 .mini-headline-text {
   margin-left: -10px;
   font-size: 1.3em;
@@ -10750,30 +10755,30 @@ label {
 
 /* Medium Devices, Desktops */
 @media (max-width: 992px) {
-  /* line 182, ../sass/pages/_index.scss */
+  /* line 188, ../sass/pages/_index.scss */
   .highlight br {
     display: none;
   }
 }
 /* Portrait phones and smaller */
 @media (max-width: 768px) {
-  /* line 190, ../sass/pages/_index.scss */
+  /* line 196, ../sass/pages/_index.scss */
   .highlight {
     text-align: center;
     height: 170px;
   }
-  /* line 194, ../sass/pages/_index.scss */
+  /* line 200, ../sass/pages/_index.scss */
   .highlight i {
     font-size: 3em;
   }
 
-  /* line 199, ../sass/pages/_index.scss */
+  /* line 205, ../sass/pages/_index.scss */
   .mini-headline-date {
     margin-left: 15px;
     width: 100px;
   }
 
-  /* line 206, ../sass/pages/_index.scss */
+  /* line 212, ../sass/pages/_index.scss */
   .mini-headline-text {
     margin: 0;
   }
@@ -10870,32 +10875,36 @@ label {
 /* line 111, ../sass/pages/_info-page.scss */
 .animation-container-right {
   position: relative;
+  background-color: red;
+  height: 480px;
   height: calc(600px - 120px);
 }
-/* line 119, ../sass/pages/_info-page.scss */
+/* line 122, ../sass/pages/_info-page.scss */
 .animation-container-right .animation-content {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   margin: auto;
+  text-align: center;
 }
-/* line 128, ../sass/pages/_info-page.scss */
+/* line 133, ../sass/pages/_info-page.scss */
 .animation-container-right .animation-content #animated-logo-js {
   top: 90px;
 }
-/* line 132, ../sass/pages/_info-page.scss */
+/* line 137, ../sass/pages/_info-page.scss */
 .animation-container-right .animation-content .device-image {
-  display: table;
+  display: inline;
   margin: auto;
   margin-top: 16px;
-  max-height: 260px;
   width: 100%;
   max-width: 740px;
+  height: auto;
+  max-height: 260px;
   object-fit: scale-down;
 }
 
-/* line 145, ../sass/pages/_info-page.scss */
+/* line 156, ../sass/pages/_info-page.scss */
 .top-btn-mobile {
   position: absolute;
   bottom: 0;
@@ -10905,43 +10914,43 @@ label {
 
 /* Portrait phones and smaller */
 @media (max-width: 767px) {
-  /* line 156, ../sass/pages/_info-page.scss */
+  /* line 167, ../sass/pages/_info-page.scss */
   .top-container-right {
     height: auto;
   }
 
-  /* line 160, ../sass/pages/_info-page.scss */
+  /* line 171, ../sass/pages/_info-page.scss */
   .animation-container-right {
     margin-top: 120px;
     margin-bottom: 32px;
     height: auto;
   }
-  /* line 166, ../sass/pages/_info-page.scss */
+  /* line 177, ../sass/pages/_info-page.scss */
   .animation-container-right .animation-content {
     position: relative;
     top: 0;
     bottom: auto;
   }
 
-  /* line 173, ../sass/pages/_info-page.scss */
+  /* line 184, ../sass/pages/_info-page.scss */
   .top-container-left {
     height: auto;
     padding: 16px 0 80px 0;
   }
-  /* line 178, ../sass/pages/_info-page.scss */
+  /* line 189, ../sass/pages/_info-page.scss */
   .top-container-left .subpage-highlight {
     margin: 0;
   }
 }
-/* line 187, ../sass/pages/_info-page.scss */
+/* line 198, ../sass/pages/_info-page.scss */
 .howto-step {
   margin-bottom: 10px;
 }
-/* line 192, ../sass/pages/_info-page.scss */
+/* line 203, ../sass/pages/_info-page.scss */
 .howto-step .howto-step-count {
   margin-left: 20px;
 }
-/* line 195, ../sass/pages/_info-page.scss */
+/* line 206, ../sass/pages/_info-page.scss */
 .howto-step .howto-step-count img {
   float: right;
   margin-right: -10px;
@@ -10950,7 +10959,7 @@ label {
   width: 50px;
   object-fit: scale-down;
 }
-/* line 207, ../sass/pages/_info-page.scss */
+/* line 218, ../sass/pages/_info-page.scss */
 .howto-step .howto-step-content {
   padding: 12px;
   margin-bottom: 20px;
@@ -10959,13 +10968,13 @@ label {
   background-color: rgba(82, 133, 255, 0.12) !important;
   overflow: hidden;
 }
-/* line 217, ../sass/pages/_info-page.scss */
+/* line 228, ../sass/pages/_info-page.scss */
 .howto-step .howto-step-content p {
   margin: 0;
   padding: 0;
   font-size: 1.2em;
 }
-/* line 225, ../sass/pages/_info-page.scss */
+/* line 236, ../sass/pages/_info-page.scss */
 .howto-step .code-section {
   padding: 16px;
   margin: 8px;
@@ -10973,7 +10982,7 @@ label {
   color: #fff;
   background-color: #3f3f3f;
 }
-/* line 239, ../sass/pages/_info-page.scss */
+/* line 250, ../sass/pages/_info-page.scss */
 .howto-step pre {
   color: inherit;
   background-color: inherit;
@@ -10986,11 +10995,11 @@ label {
 }
 
 @media (max-width: 767px) {
-  /* line 258, ../sass/pages/_info-page.scss */
+  /* line 269, ../sass/pages/_info-page.scss */
   .howto-step-count {
     margin: 0;
   }
-  /* line 261, ../sass/pages/_info-page.scss */
+  /* line 272, ../sass/pages/_info-page.scss */
   .howto-step-count img {
     position: relative;
     display: table;
@@ -11000,7 +11009,7 @@ label {
     width: 40px !important;
   }
 
-  /* line 272, ../sass/pages/_info-page.scss */
+  /* line 283, ../sass/pages/_info-page.scss */
   .howto-step-content {
     margin: 16px 8px;
   }

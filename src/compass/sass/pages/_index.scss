@@ -23,9 +23,10 @@
     .animation-container {
         
         position: relative;
-        
+
+        height: 380px; // For IE 8. Bah.
         height: calc(#{$top-section-height} - 220px);
-        
+    
         .animation-content {
 
             // Content pushes downwards (for responsive reasons)
@@ -35,17 +36,22 @@
             right: 0;
             margin: auto;
             
+            text-align: center;     // For IE 8. Bah.
+            
             .row-top-images {
                 margin-top: 10px;
             }
             
             img {
-                display: table;
+                display: inline;    // For IE 8. Bah.
                 margin: auto;
 
+                width:      auto;         // For IE 8. Bah.
+                max-width:  100%;     
+                height:     auto;        // For IE 8. Bah.
                 max-height: 220px;
-                width: 100%;
-                object-fit: scale-down;
+                object-fit: contain;
+                -ms-interpolation-mode: bicubic;
                 cursor: pointer;
 
                 &:hover {
