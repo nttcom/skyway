@@ -6,21 +6,61 @@
 .top-section {
     h1 {
         position: relative;
-        top: 42px;
-        margin: 0;
+        margin: 42px 0 0 0;
         color: #FFF;
         font-size: 2.2em;
         text-align: center;
     }
     h2 {
         position: relative;
-        top: 64px;
-        margin: 0;
-        margin-bottom: 46px;
+        margin: 14px 0 16px 0;
         color: #FFF;
         opacity: 0.6;
         font-size: 1.85em;
         text-align: center;
+    }
+    
+    .animation-container {
+        
+        position: relative;
+        
+        height: calc(#{$top-section-height} - 220px);
+        
+        .animation-content {
+
+            // Content pushes downwards (for responsive reasons)
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            
+            .row-top-images {
+                margin-top: 10px;
+            }
+            
+            img {
+                display: table;
+                margin: auto;
+
+                max-height: 220px;
+                width: 100%;
+                object-fit: scale-down;
+                cursor: pointer;
+
+                &:hover {
+                    transform: scale(1.02, 1.02);
+                    -webkit-transform: scale(1.02, 1.02);
+                }
+            }
+            h3 {
+                margin-top: 20px;
+                color: #FFF;
+                opacity: 0.8;
+                font-size: 1.8em;
+                text-align: center;
+            }
+        }
     }
     
     @include bp(xs) {
@@ -28,25 +68,28 @@
         height: auto !important;
         padding-bottom: 80px;
 
-        .animation-container {
-            
-            h3 {
-                font-size: 1.2em;
-            }
-        }
-        
-        .transmission-animation{
-//            display: none;
-        }
-        
         h1 {
             font-size: 1.82em;
-            margin: 0 8px;
         }
             
         h2 {
             font-size: 1.2em;
-            margin: 0 8px;
+        }
+        
+        .animation-container {
+            
+            padding-top: 24px;
+            height: auto;
+            
+            .animation-content {
+                position: relative;
+                top: 0;
+                bottom: auto;
+                
+                h3 {
+                    font-size: 1.2em;
+                }
+            }
         }
     }
     
@@ -60,37 +103,6 @@
         }
     }
 
-}
-
-.row-top-images {
-      margin-top: 140px;
-}
-
-.animation-container {
-    
-    img {
-        /*    position: absolute;*/
-        /*        top: 40px;*/
-        display: table;
-        margin: auto;
-        /*    bottom: 20px;*/
-        max-height: 220px;
-        width: 100%;
-        object-fit: scale-down;
-        cursor: pointer;
-        
-        &:hover {
-            transform: scale(1.02, 1.02);
-            -webkit-transform: scale(1.02, 1.02);
-        }
-    }
-    h3 {
-        margin-top: 20px;
-        color: #FFF;
-        opacity: 0.8;
-        font-size: 1.8em;
-        text-align: center;
-    }
 }
 
 /* Front Page - Highlights */

@@ -115,10 +115,6 @@
     position: relative;
     
     height: calc(#{$top-section-height} - 120px);
-
-    @include bp(xs) { 
-        height: calc(#{$top-section-height} - 200px);
-    }
     
     .animation-content {
         
