@@ -10875,11 +10875,10 @@ label {
 /* line 111, ../sass/pages/_info-page.scss */
 .animation-container-right {
   position: relative;
-  background-color: red;
   height: 480px;
-  height: calc(600px - 120px);
+  height: calc(600px - 100px);
 }
-/* line 122, ../sass/pages/_info-page.scss */
+/* line 120, ../sass/pages/_info-page.scss */
 .animation-container-right .animation-content {
   position: absolute;
   bottom: 0;
@@ -10893,18 +10892,22 @@ label {
   top: 90px;
 }
 /* line 137, ../sass/pages/_info-page.scss */
-.animation-container-right .animation-content .device-image {
-  display: inline;
+.animation-container-right .animation-content .img-trap {
+  position: relative;
   margin: auto;
-  margin-top: 16px;
-  width: 100%;
+  width: auto;
   max-width: 740px;
   height: auto;
   max-height: 260px;
-  object-fit: scale-down;
+}
+/* line 148, ../sass/pages/_info-page.scss */
+.animation-container-right .animation-content .device-image {
+  margin: auto;
+  margin-top: 16px;
+  max-height: 260px;
 }
 
-/* line 156, ../sass/pages/_info-page.scss */
+/* line 164, ../sass/pages/_info-page.scss */
 .top-btn-mobile {
   position: absolute;
   bottom: 0;
@@ -10914,43 +10917,43 @@ label {
 
 /* Portrait phones and smaller */
 @media (max-width: 767px) {
-  /* line 167, ../sass/pages/_info-page.scss */
+  /* line 175, ../sass/pages/_info-page.scss */
   .top-container-right {
     height: auto;
   }
 
-  /* line 171, ../sass/pages/_info-page.scss */
+  /* line 179, ../sass/pages/_info-page.scss */
   .animation-container-right {
     margin-top: 120px;
     margin-bottom: 32px;
     height: auto;
   }
-  /* line 177, ../sass/pages/_info-page.scss */
+  /* line 185, ../sass/pages/_info-page.scss */
   .animation-container-right .animation-content {
     position: relative;
     top: 0;
     bottom: auto;
   }
 
-  /* line 184, ../sass/pages/_info-page.scss */
+  /* line 192, ../sass/pages/_info-page.scss */
   .top-container-left {
     height: auto;
     padding: 16px 0 80px 0;
   }
-  /* line 189, ../sass/pages/_info-page.scss */
+  /* line 197, ../sass/pages/_info-page.scss */
   .top-container-left .subpage-highlight {
     margin: 0;
   }
 }
-/* line 198, ../sass/pages/_info-page.scss */
+/* line 206, ../sass/pages/_info-page.scss */
 .howto-step {
   margin-bottom: 10px;
 }
-/* line 203, ../sass/pages/_info-page.scss */
+/* line 211, ../sass/pages/_info-page.scss */
 .howto-step .howto-step-count {
   margin-left: 20px;
 }
-/* line 206, ../sass/pages/_info-page.scss */
+/* line 214, ../sass/pages/_info-page.scss */
 .howto-step .howto-step-count img {
   float: right;
   margin-right: -10px;
@@ -10959,7 +10962,7 @@ label {
   width: 50px;
   object-fit: scale-down;
 }
-/* line 218, ../sass/pages/_info-page.scss */
+/* line 226, ../sass/pages/_info-page.scss */
 .howto-step .howto-step-content {
   padding: 12px;
   margin-bottom: 20px;
@@ -10968,13 +10971,13 @@ label {
   background-color: rgba(82, 133, 255, 0.12) !important;
   overflow: hidden;
 }
-/* line 228, ../sass/pages/_info-page.scss */
+/* line 236, ../sass/pages/_info-page.scss */
 .howto-step .howto-step-content p {
   margin: 0;
   padding: 0;
   font-size: 1.2em;
 }
-/* line 236, ../sass/pages/_info-page.scss */
+/* line 244, ../sass/pages/_info-page.scss */
 .howto-step .code-section {
   padding: 16px;
   margin: 8px;
@@ -10982,7 +10985,7 @@ label {
   color: #fff;
   background-color: #3f3f3f;
 }
-/* line 250, ../sass/pages/_info-page.scss */
+/* line 258, ../sass/pages/_info-page.scss */
 .howto-step pre {
   color: inherit;
   background-color: inherit;
@@ -10995,11 +10998,11 @@ label {
 }
 
 @media (max-width: 767px) {
-  /* line 269, ../sass/pages/_info-page.scss */
+  /* line 277, ../sass/pages/_info-page.scss */
   .howto-step-count {
     margin: 0;
   }
-  /* line 272, ../sass/pages/_info-page.scss */
+  /* line 280, ../sass/pages/_info-page.scss */
   .howto-step-count img {
     position: relative;
     display: table;
@@ -11009,7 +11012,7 @@ label {
     width: 40px !important;
   }
 
-  /* line 283, ../sass/pages/_info-page.scss */
+  /* line 291, ../sass/pages/_info-page.scss */
   .howto-step-content {
     margin: 16px 8px;
   }

@@ -114,10 +114,8 @@
     
     position: relative;
     
-    background-color: red;
-    
     height: 480px; // For IE 8. Bah.
-    height: calc(#{$top-section-height} - 120px);
+    height: calc(#{$top-section-height} - 100px);
     
     .animation-content {
         
@@ -128,27 +126,37 @@
         right: 0;
         margin: auto;
         
+        
+        
         text-align: center;     // For IE 8. Bah.
 
         #animated-logo-js {
             top: 90px;
         }
 
+        .img-trap {
+            position: relative;
+            
+//            display: inline;    // For IE 8. Bah.
+            margin: auto;
+            width: auto;
+            max-width: 740px;
+            height: auto;
+            max-height: 260px;
+        }
+        
         .device-image {
-            display: inline;    // For IE 8. Bah.
+//            display: inline;    // For IE 8. Bah.
             margin: auto;
             margin-top: 16px;
 
-            width:      100%;   // For NORMAL browsers
-            max-width:  740px;  
-////            width:      auto \0/; // IE 8 Hack. Bah.
-//            max-width:  100%\0/; 
-            
-            height:     auto;   // For IE 8. Bah.
+////            width:      100%;   // For NORMAL browsers
+//            max-width:  740px;              
+////            height:     auto;   // For IE 8. Bah.
             max-height: 260px;
-//            width: 100%;
-            
-            object-fit: scale-down;
+////            width: 100%;
+//            
+//            object-fit: scale-down;
         }       
     }
 }
