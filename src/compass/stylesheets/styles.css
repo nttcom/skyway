@@ -10140,12 +10140,9 @@ a {
 }
 
 /* line 78, ../sass/components/_navbar.scss */
-.btn-link {
-  padding: 0 !important;
-}
-/* line 81, ../sass/components/_navbar.scss */
-.btn-link .btn-login {
+.btn-login {
   width: 86px;
+  height: 32px;
   margin: 5px;
   margin-left: 15px;
   margin-right: 15px;
