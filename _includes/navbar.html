@@ -39,8 +39,8 @@
                 {% endcase %}
                 
                 <ul class="dropdown-menu">
-                    <li><a href="../">日本語</a></li>
-                    <li><a href="en/">English</a></li>
+                    <li><a href="..{{page.url | remove_first: 'en/'}}">日本語</a></li>
+                    <li><a href="/en{{page.url | remove_first: 'en/'}}">English</a></li>
                 </ul>
             </li>
             <li>
