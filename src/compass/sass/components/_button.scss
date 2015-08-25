@@ -222,9 +222,12 @@ a {
 }
 
 .btn-feature {
-
+    @extend .thumbnail; // Remove if necessary
+    
     height: 78px;
-    width: calc(100% - 16px);
+    width: 100%;
+    max-width: 344px;           // For IE 8...
+    width: calc(100% - 16px);   // For normal browsers
 
     margin: 8px !important;
     padding: 0;

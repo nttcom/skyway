@@ -126,8 +126,6 @@
         right: 0;
         margin: auto;
         
-        
-        
         text-align: center;     // For IE 8. Bah.
 
         #animated-logo-js {
@@ -136,27 +134,17 @@
 
         .img-trap {
             position: relative;
-            
-//            display: inline;    // For IE 8. Bah.
+
             margin: auto;
             width: auto;
             max-width: 740px;
-            height: auto;
-            max-height: 260px;
         }
         
         .device-image {
-//            display: inline;    // For IE 8. Bah.
             margin: auto;
             margin-top: 16px;
 
-////            width:      100%;   // For NORMAL browsers
-//            max-width:  740px;              
-////            height:     auto;   // For IE 8. Bah.
             max-height: 260px;
-////            width: 100%;
-//            
-//            object-fit: scale-down;
         }       
     }
 }

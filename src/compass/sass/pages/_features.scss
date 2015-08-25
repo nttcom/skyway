@@ -118,9 +118,6 @@ $colours: #4E5FAD, #E63300, #1CC05A;
     }
 }
 
-
-
-
 .mini-feature-column {
 //    @extend .h_r;
     
@@ -136,76 +133,4 @@ $colours: #4E5FAD, #E63300, #1CC05A;
         text-align: center;
         font-size: 2em;
     }
-
-    paper-button {
-
-        height: 80px;
-
-        margin: 8px !important;
-        padding: 0;
-
-        border-style: solid;
-        border-color: #9f9f9f;
-        border-width: 1px;
-
-        text-transform: none;
-
-        border-radius: 5px;
-          
-          
-        img {
-            position: absolute;
-
-            top: 19px;
-            left: 15px;
-
-            width: 46px;
-            height: 42px;
-
-            object-fit: scale-down;
-        }
-
-        h2 {
-            position: absolute;
-
-            top: 10px;
-            left: 75px;
-
-            margin: 0;
-            padding: 0;
-
-            font-size: 1.4em;
-
-            color: #5285FF;
-        }
-
-        p {
-            position: absolute;
-
-            left: 75px;
-            top: 34px;
-
-//            width: 70%;
-            height: 36px;
-
-            overflow: hidden;
-
-            margin: 0;
-            margin-right: 12px;
-            padding: 0;
-
-            text-align: left;
-            
-            font-size: 1em;
-            line-height: 18px;
-
-//            background-color: red;
-            
-            color: #9f9f9f;
-        }     
-    }
-    
 }
-
-
-
