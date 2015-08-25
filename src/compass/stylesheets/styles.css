@@ -10142,14 +10142,14 @@ a {
 /* line 78, ../sass/components/_navbar.scss */
 .btn-login {
   width: 86px;
-  height: 32px;
-  margin: 5px;
+  height: 36px;
+  line-height: 36px !important;
+  margin: 7px;
   margin-left: 15px;
   margin-right: 15px;
-  color: #fff;
+  padding: 0 !important;
+  color: #fff !important;
   background-color: #5285FF;
-  font-weight: 100;
-  /* TODO: Click colour */
 }
 
 /* Share button styles */
