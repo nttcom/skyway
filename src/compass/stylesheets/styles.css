@@ -9679,18 +9679,19 @@ button.close {
   -ms-user-select: none;
   user-select: none;
   border-radius: 3px;
+  text-align: center;
 }
-/* line 32, ../sass/components/_button.scss */
+/* line 34, ../sass/components/_button.scss */
 .btn-paper-flat:hover, .btn-paper:hover, .btn-demo-left:hover, .btn-demo-right:hover {
   background: #ebf1ff;
 }
 
-/* line 37, ../sass/components/_button.scss */
+/* line 39, ../sass/components/_button.scss */
 a {
   text-decoration: none !important;
 }
 
-/* line 46, ../sass/components/_button.scss */
+/* line 48, ../sass/components/_button.scss */
 .ripple {
   position: absolute;
   background: #5285FF;
@@ -9702,7 +9703,7 @@ a {
   pointer-events: none;
 }
 
-/* line 58, ../sass/components/_button.scss */
+/* line 60, ../sass/components/_button.scss */
 .ripple.show {
   -webkit-animation: ripple .6s ease-out;
   animation: ripple .6s ease-out;
@@ -9722,25 +9723,25 @@ a {
     opacity: 0;
   }
 }
-/* line 78, ../sass/components/_button.scss */
+/* line 80, ../sass/components/_button.scss */
 .btn-center {
   display: table;
   margin: auto;
 }
 
-/* line 83, ../sass/components/_button.scss */
+/* line 85, ../sass/components/_button.scss */
 .btn-inverted {
   margin-top: -10px;
   margin-bottom: 10px;
   color: #fff;
   background-color: #5285FF;
 }
-/* line 90, ../sass/components/_button.scss */
+/* line 92, ../sass/components/_button.scss */
 .btn-inverted:hover {
   background: #6c97ff;
 }
 
-/* line 95, ../sass/components/_button.scss */
+/* line 97, ../sass/components/_button.scss */
 .btn-top-section {
   position: absolute;
   bottom: 30px;
@@ -9749,19 +9750,19 @@ a {
   margin: auto;
 }
 
-/* line 105, ../sass/components/_button.scss */
+/* line 107, ../sass/components/_button.scss */
 .btn-documentation {
   width: 100%;
   margin-top: 8px;
   color: #3973ff;
   background-color: #d0e0ff;
 }
-/* line 112, ../sass/components/_button.scss */
+/* line 114, ../sass/components/_button.scss */
 .btn-documentation:hover {
   background: #eaf1ff;
 }
 
-/* line 117, ../sass/components/_button.scss */
+/* line 119, ../sass/components/_button.scss */
 .btn-documentation-other {
   display: table;
   margin: auto;
@@ -9775,27 +9776,27 @@ a {
   text-align: left;
   z-index: 10;
 }
-/* line 134, ../sass/components/_button.scss */
+/* line 136, ../sass/components/_button.scss */
 .btn-documentation-other i {
   float: left;
   margin: 8px 10px 0 4px;
   font-size: 2.6em;
 }
-/* line 141, ../sass/components/_button.scss */
+/* line 143, ../sass/components/_button.scss */
 .btn-documentation-other h3 {
   margin: 10px 0 0 0;
   font-size: 1em;
   font-weight: 300 !important;
   color: #5a5a5a;
 }
-/* line 150, ../sass/components/_button.scss */
+/* line 152, ../sass/components/_button.scss */
 .btn-documentation-other p {
   margin-bottom: 6px;
   font-size: 0.8em;
   color: #8f8f8f;
 }
 
-/* line 161, ../sass/components/_button.scss */
+/* line 163, ../sass/components/_button.scss */
 .btn-div-bottom {
   margin: 8px -8px -8px -8px;
   width: calc(100% + 16px);
@@ -9805,13 +9806,13 @@ a {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
 }
-/* line 172, ../sass/components/_button.scss */
+/* line 174, ../sass/components/_button.scss */
 .btn-div-bottom:hover {
   background-color: #3759bf !important;
   background-color: rgba(0, 0, 0, 0.15) !important;
 }
 
-/* line 183, ../sass/components/_button.scss */
+/* line 185, ../sass/components/_button.scss */
 .btn-demo-left {
   position: absolute;
   width: 180px;
@@ -9820,7 +9821,7 @@ a {
   background-color: #00C98E;
 }
 
-/* line 195, ../sass/components/_button.scss */
+/* line 197, ../sass/components/_button.scss */
 .btn-demo-right {
   position: absolute;
   right: 0px;
@@ -9830,7 +9831,7 @@ a {
   background-color: #1ED75F;
 }
 
-/* line 208, ../sass/components/_button.scss */
+/* line 210, ../sass/components/_button.scss */
 .btn-feature-bottom {
   position: absolute;
   bottom: 0;
@@ -9841,13 +9842,13 @@ a {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
 }
-/* line 220, ../sass/components/_button.scss */
+/* line 222, ../sass/components/_button.scss */
 .btn-feature-bottom:hover {
   background-color: #d9d9d9 !important;
   background-color: rgba(0, 0, 0, 0.15) !important;
 }
 
-/* line 225, ../sass/components/_button.scss */
+/* line 227, ../sass/components/_button.scss */
 .btn-feature {
   height: 78px;
   width: 100%;
@@ -9860,7 +9861,7 @@ a {
   border-width: 1px;
   border-radius: 5px;
 }
-/* line 242, ../sass/components/_button.scss */
+/* line 244, ../sass/components/_button.scss */
 .btn-feature img {
   position: absolute;
   top: 19px;
@@ -9869,7 +9870,7 @@ a {
   height: 42px;
   object-fit: scale-down;
 }
-/* line 254, ../sass/components/_button.scss */
+/* line 256, ../sass/components/_button.scss */
 .btn-feature h2 {
   position: absolute;
   top: 8px;
@@ -9879,7 +9880,7 @@ a {
   font-size: 1.25em;
   color: #5285FF;
 }
-/* line 268, ../sass/components/_button.scss */
+/* line 270, ../sass/components/_button.scss */
 .btn-feature p {
   position: absolute;
   left: 75px;
@@ -9895,7 +9896,7 @@ a {
   color: #9f9f9f;
 }
 
-/* line 294, ../sass/components/_button.scss */
+/* line 296, ../sass/components/_button.scss */
 .btn-howto {
   float: left;
   margin-left: 4px;
@@ -9906,12 +9907,12 @@ a {
   color: #fff;
   background: #1EC75F;
 }
-/* line 307, ../sass/components/_button.scss */
+/* line 309, ../sass/components/_button.scss */
 .btn-howto:hover {
   background: #1bb154;
 }
 
-/* line 312, ../sass/components/_button.scss */
+/* line 314, ../sass/components/_button.scss */
 .btn-support, .btn-support-left, .btn-support-right {
   position: absolute;
   bottom: 0;
@@ -9927,13 +9928,13 @@ a {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
 }
-/* line 331, ../sass/components/_button.scss */
+/* line 333, ../sass/components/_button.scss */
 .btn-support:hover, .btn-support-left:hover, .btn-support-right:hover {
   background-color: #cbdaff !important;
   background-color: rgba(82, 133, 255, 0.3) !important;
 }
 
-/* line 336, ../sass/components/_button.scss */
+/* line 338, ../sass/components/_button.scss */
 .btn-support-left {
   left: 0;
   width: 50%;
@@ -9941,7 +9942,7 @@ a {
   border-right-width: 1px;
 }
 
-/* line 347, ../sass/components/_button.scss */
+/* line 349, ../sass/components/_button.scss */
 .btn-support-right {
   right: 0;
   width: 50%;
@@ -10344,9 +10345,8 @@ label {
 .documentation-menu {
   background-color: royalblue;
   margin-bottom: 24px;
-  padding: 8px;
 }
-/* line 9, ../sass/pages/_documentation.scss */
+/* line 7, ../sass/pages/_documentation.scss */
 .documentation-menu img {
   display: table;
   margin: auto;
@@ -10355,19 +10355,19 @@ label {
   width: 80x;
   object-fit: scale-down;
 }
-/* line 22, ../sass/pages/_documentation.scss */
+/* line 20, ../sass/pages/_documentation.scss */
 .documentation-menu h2 {
   margin-top: 16px;
   text-align: center;
   color: #fff;
   font-size: 24px;
 }
-/* line 31, ../sass/pages/_documentation.scss */
+/* line 29, ../sass/pages/_documentation.scss */
 .documentation-menu .documentation-menu-buttons {
   margin-top: 16px;
 }
 
-/* line 36, ../sass/pages/_documentation.scss */
+/* line 34, ../sass/pages/_documentation.scss */
 .documentation-other-menu {
   margin-top: 20px;
   padding: 0 16px 16px 16px;
@@ -10375,41 +10375,41 @@ label {
   border-color: #afafaf;
   border-width: 1px;
 }
-/* line 46, ../sass/pages/_documentation.scss */
+/* line 44, ../sass/pages/_documentation.scss */
 .documentation-other-menu h2 {
   margin-bottom: 20px;
   text-align: center;
 }
 
-/* line 53, ../sass/pages/_documentation.scss */
+/* line 51, ../sass/pages/_documentation.scss */
 .support-div {
   margin: 40px 0px;
   border-style: solid;
   border-color: #afafaf;
   border-width: 1px;
 }
-/* line 66, ../sass/pages/_documentation.scss */
+/* line 64, ../sass/pages/_documentation.scss */
 .support-div h2 {
   font-size: 1.85em;
   text-align: center;
 }
-/* line 71, ../sass/pages/_documentation.scss */
+/* line 69, ../sass/pages/_documentation.scss */
 .support-div button {
   color: #fff;
   margin: 24px auto;
 }
 
 @media (max-width: 767px) {
-  /* line 81, ../sass/pages/_documentation.scss */
+  /* line 79, ../sass/pages/_documentation.scss */
   .documentation-menu img {
     margin-top: 8px;
     height: 60px;
   }
-  /* line 86, ../sass/pages/_documentation.scss */
+  /* line 84, ../sass/pages/_documentation.scss */
   .documentation-menu h2 {
     margin-top: 8px;
   }
-  /* line 90, ../sass/pages/_documentation.scss */
+  /* line 88, ../sass/pages/_documentation.scss */
   .documentation-menu .btn-documentation {
     height: 36px;
   }

@@ -29,6 +29,8 @@ $btn-colour: $skyway-blue;
     user-select: none;
     border-radius: 3px;
     
+    text-align: center;
+    
     &:hover {
         background: lighten($skyway-blue, 30%);
     }
