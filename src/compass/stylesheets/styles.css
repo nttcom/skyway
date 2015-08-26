@@ -9799,6 +9799,8 @@ a {
 /* line 163, ../sass/components/_button.scss */
 .btn-div-bottom {
   margin: 8px -8px -8px -8px;
+  width: 108%;
+  max-width: 295px;
   width: calc(100% + 16px);
   color: #fff;
   background-color: #314fa9 !important;
@@ -9806,13 +9808,13 @@ a {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
 }
-/* line 174, ../sass/components/_button.scss */
+/* line 176, ../sass/components/_button.scss */
 .btn-div-bottom:hover {
   background-color: #3759bf !important;
   background-color: rgba(0, 0, 0, 0.15) !important;
 }
 
-/* line 185, ../sass/components/_button.scss */
+/* line 187, ../sass/components/_button.scss */
 .btn-demo-left {
   position: absolute;
   width: 180px;
@@ -9821,7 +9823,7 @@ a {
   background-color: #00C98E;
 }
 
-/* line 197, ../sass/components/_button.scss */
+/* line 199, ../sass/components/_button.scss */
 .btn-demo-right {
   position: absolute;
   right: 0px;
@@ -9831,7 +9833,7 @@ a {
   background-color: #1ED75F;
 }
 
-/* line 210, ../sass/components/_button.scss */
+/* line 212, ../sass/components/_button.scss */
 .btn-feature-bottom {
   position: absolute;
   bottom: 0;
@@ -9842,13 +9844,13 @@ a {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
 }
-/* line 222, ../sass/components/_button.scss */
+/* line 224, ../sass/components/_button.scss */
 .btn-feature-bottom:hover {
   background-color: #d9d9d9 !important;
   background-color: rgba(0, 0, 0, 0.15) !important;
 }
 
-/* line 227, ../sass/components/_button.scss */
+/* line 229, ../sass/components/_button.scss */
 .btn-feature {
   height: 78px;
   width: 100%;
@@ -9861,7 +9863,7 @@ a {
   border-width: 1px;
   border-radius: 5px;
 }
-/* line 244, ../sass/components/_button.scss */
+/* line 246, ../sass/components/_button.scss */
 .btn-feature img {
   position: absolute;
   top: 19px;
@@ -9870,7 +9872,7 @@ a {
   height: 42px;
   object-fit: scale-down;
 }
-/* line 256, ../sass/components/_button.scss */
+/* line 258, ../sass/components/_button.scss */
 .btn-feature h2 {
   position: absolute;
   top: 8px;
@@ -9880,7 +9882,7 @@ a {
   font-size: 1.25em;
   color: #5285FF;
 }
-/* line 270, ../sass/components/_button.scss */
+/* line 272, ../sass/components/_button.scss */
 .btn-feature p {
   position: absolute;
   left: 75px;
@@ -9896,7 +9898,7 @@ a {
   color: #9f9f9f;
 }
 
-/* line 296, ../sass/components/_button.scss */
+/* line 298, ../sass/components/_button.scss */
 .btn-howto {
   float: left;
   margin-left: 4px;
@@ -9907,12 +9909,12 @@ a {
   color: #fff;
   background: #1EC75F;
 }
-/* line 309, ../sass/components/_button.scss */
+/* line 311, ../sass/components/_button.scss */
 .btn-howto:hover {
   background: #1bb154;
 }
 
-/* line 314, ../sass/components/_button.scss */
+/* line 316, ../sass/components/_button.scss */
 .btn-support, .btn-support-left, .btn-support-right {
   position: absolute;
   bottom: 0;
@@ -9929,13 +9931,13 @@ a {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
 }
-/* line 334, ../sass/components/_button.scss */
+/* line 336, ../sass/components/_button.scss */
 .btn-support:hover, .btn-support-left:hover, .btn-support-right:hover {
   background-color: #cbdaff !important;
   background-color: rgba(82, 133, 255, 0.3) !important;
 }
 
-/* line 339, ../sass/components/_button.scss */
+/* line 341, ../sass/components/_button.scss */
 .btn-support-left {
   left: 0;
   width: 50%;
@@ -9943,7 +9945,7 @@ a {
   border-right-width: 1px;
 }
 
-/* line 350, ../sass/components/_button.scss */
+/* line 352, ../sass/components/_button.scss */
 .btn-support-right {
   right: 0;
   width: 50%;
