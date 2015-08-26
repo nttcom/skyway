@@ -42,8 +42,8 @@ description: Here we offer our Javascript SDK for SkyWay. If you use SkyWay, you
                 </div>
             </div>
 
-            <a class="top-btn-desktop hidden-xs" target="_blank" href='https://skyway.io/ds/registration/'>
-                <button class="btn-paper btn-top-section">Sign Up</button>
+            <a class="hidden-xs top-btn-desktop btn-paper btn-top-section" target="_blank" href='https://skyway.io/ds/registration/'>
+                Sign Up
             </a>        
 
         </div>
@@ -68,19 +68,19 @@ description: Here we offer our Javascript SDK for SkyWay. If you use SkyWay, you
                 <div class="col-xs-9 highlight-text">Use our many extra features (Multiparty, Screen Share etc)</div>
             </div>
     
-            <a class="top-btn-desktop hidden-xs" href='documentation.html'>
-                <button class="btn-paper btn-top-section">Documentation</button>
+            <a class="hidden-xs top-btn-desktop btn-paper btn-top-section" href='documentation.html'>
+                Documentation
             </a>
             
             <div class="top-btn-mobile visible-xs">
                 <div class="col-xs-5 col-xs-offset-1">
-                    <a target="_blank" href='https://skyway.io/ds/registration/'>
-                        <button class="btn-paper btn-top-section">Sign Up</button>
+                    <a class="btn-paper btn-top-section" target="_blank" href='https://skyway.io/ds/registration/'>
+                        Sign Up
                     </a> 
                 </div>
                 <div class="col-xs-5">
-                    <a href='documentation.html'>
-                        <button class="btn-paper btn-top-section">Documentation</button>
+                    <a class="btn-paper btn-top-section" href='documentation.html'>
+                        Documentation
                     </a>
                 </div>
             </div>
@@ -112,8 +112,8 @@ description: Here we offer our Javascript SDK for SkyWay. If you use SkyWay, you
                     <div class="col-sm-10 col-md-8 howto-step-content">
                         <p>Register as a developer and create an API key.</p>
                         
-                        <a target="_blank" href='https://skyway.io/ds/registration/'>
-                            <button class="btn-paper btn-howto">Sign Up (Free)</button>
+                        <a class="btn-paper btn-howto" target="_blank" href='https://skyway.io/ds/registration/'>
+                            Sign Up (Free)
                         </a> 
                         
                     </div>
@@ -130,20 +130,11 @@ description: Here we offer our Javascript SDK for SkyWay. If you use SkyWay, you
                         Refer to the sample code. Make sure to include the library!</p>
 
                         <div class="code-section">
-                             <pre><code>&lt;script src="https://skyway.io/dist/0.3/peer.min.js"&gt;&lt;/script&gt;
-
-&lt;script&gt;
-var peer = new Peer(myId, {key: 'yourApiKey'});
-
-peer.on('open', function(id) {
-  var conn = peer.connect('anotherId');
-  conn.on('open', function() {
-    conn.send('hello world');
-  });
-});
-&lt;/script&gt;
-</code></pre>
-<!--<script>hljs.initHighlighting();$(".javascript").css("opacity", 0.95);</script>-->
+                            
+                            <!-- Sample Code -->
+                            <pre><code>{% include code/code_js.html %}</code></pre>
+                            
+                            <!--<script>hljs.initHighlighting();$(".javascript").css("opacity", 0.95);</script>-->
 
                        </div>
                     </div>
@@ -158,11 +149,11 @@ peer.on('open', function(id) {
                     <div class="col-sm-10 col-md-8 howto-step-content">
                         <p>Learn more from our development resources.</p>
                         
-                        <a href="docs/#JS">
-                            <button class="btn-paper btn-howto">Full guide</button>
+                        <a class="btn-paper btn-howto" href="docs/#JS">
+                            Full guide
                         </a>
-                        <a href="support.html">
-                            <button class="btn-paper btn-howto">Support</button>
+                        <a class="btn-paper btn-howto" href="support.html">
+                            Support
                         </a> 
 
                     </div>
