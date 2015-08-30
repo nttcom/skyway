@@ -45,8 +45,8 @@ description: Here we offer our iOS and Android SDKs for SkyWay. If you use SkyWa
                 </div>
             </div>
 
-            <a class="top-btn-desktop hidden-xs" target="_blank" href='https://skyway.io/ds/registration/'>
-                <button class="btn-paper btn-top-section">Sign Up</button>
+            <a class="hidden-xs top-btn-desktop btn-paper btn-top-section" target="_blank" href='https://skyway.io/ds/registration/'>
+                Sign Up
             </a>        
 
         </div>
@@ -71,19 +71,19 @@ description: Here we offer our iOS and Android SDKs for SkyWay. If you use SkyWa
                 <div class="col-xs-9 highlight-text">Concentrate on the app, we'll take care of the server side</div>
             </div>
     
-            <a class="top-btn-desktop hidden-xs" href='documentation.html'>
-                <button class="btn-paper btn-top-section">Documentation</button>
+            <a class="hidden-xs top-btn-desktop btn-paper btn-top-section" href='documentation.html'>
+                Documentation
             </a>
             
             <div class="top-btn-mobile visible-xs">
                 <div class="col-xs-5 col-xs-offset-1">
-                    <a target="_blank" href='https://skyway.io/ds/registration/'>
-                        <button class="btn-paper btn-top-section">Sign Up</button>
+                    <a class="btn-paper btn-top-section" target="_blank" href='https://skyway.io/ds/registration/'>
+                        Sign Up
                     </a> 
                 </div>
                 <div class="col-xs-5">
-                    <a href='documentation.html'>
-                        <button class="btn-paper btn-top-section">Documentation</button>
+                    <a class="btn-paper btn-top-section" href='documentation.html'>
+                        Documentation
                     </a>
                 </div>
             </div>
@@ -115,8 +115,8 @@ description: Here we offer our iOS and Android SDKs for SkyWay. If you use SkyWa
                     <div class="col-sm-10 col-md-8 howto-step-content">
                         <p>Register as a developer and create an API key.</p>
                         
-                        <a target="_blank" href='https://skyway.io/ds/registration/'>
-                            <button class="btn-paper btn-howto">Sign Up (Free)</button>
+                        <a class="btn-paper btn-howto" target="_blank" href='https://skyway.io/ds/registration/'>
+                            Sign Up (Free)
                         </a> 
                         
                     </div>
@@ -131,11 +131,11 @@ description: Here we offer our iOS and Android SDKs for SkyWay. If you use SkyWa
                     <div class="col-sm-10 col-md-8 howto-step-content">
                         <p>Download the relevent SDK.</p>
                         
-                        <a target="_blank" href='http://skyway-ios-sdk.str.cloudn-service.com/0.1.0/SkyWay-iOS-SDK-0.1.0.zip'>
-                            <button class="btn-paper btn-howto">iOS SDK (0.1.0)</button>
+                        <a class="btn-paper btn-howto" target="_blank" href='http://skyway-ios-sdk.str.cloudn-service.com/0.1.0/SkyWay-iOS-SDK-0.1.0.zip'>
+                            iOS SDK (0.1.0)
                         </a>
-                        <a target="_blank" href='http://skyway-android-sdk.str.cloudn-service.com/0.1.1/SkyWay-Android-SDK-0.1.1.zip'>
-                            <button class="btn-paper btn-howto">Android SDK (0.1.1)</button>
+                        <a class="btn-paper btn-howto" target="_blank" href='http://skyway-android-sdk.str.cloudn-service.com/0.1.1/SkyWay-Android-SDK-0.1.1.zip'>
+                            Android SDK (0.1.1)
                         </a> 
                         
                     </div>
@@ -154,51 +154,26 @@ description: Here we offer our iOS and Android SDKs for SkyWay. If you use SkyWa
                         
                         <h3 class="code-type-header">iOS Objective-C</h3>
                         <div class="code-section">
-<pre><code class="objectivec">#import &lt;SkyWay/SKWPeer.h&gt;
-
-SKWPeerOption* options = [[SKWPeerOption alloc] init];
-options.key = @"{APIKEY}";
-options.domain = @"{DOMAIN}";
-SKWPeer* peer = [[SKWPeer alloc] initWithId:myId options:options];
-
-[peer on:SKW_PEER_EVENT_OPEN callback:^(NSObject* obj)
-{
-    SKWDataConnection* conn = [peer connectWithId:@"dest-peer-id"];
-    [conn on:SKW_DATACONNECTION_EVENT_OPEN callback:^(NSObject* obj)
-    {
-        [conn send:@"Hello SkyWay!"];
-    }];
-}];</code></pre>
-                        </div>
-<!--<script>hljs.initHighlighting();$(".javascript").css("opacity", 0.95);</script>-->                        
+                            
+                            <!-- Sample Code -->
+                            <pre><code class="objectivec">{% include code/howto_ios.html %}</code></pre>
+                            
+                        </div>                      
                         
                         <a href="https://github.com/nttcom/SkyWay-iOS-Sample" target="_blank" class="sample-app-link">Sample App (iOS)</a>
                         
                         
                         <h3 class="code-type-header">Android Java</h3>
                         <div class="code-section">
-<pre><code class="java">import io.skyway.Peer.*;
-
-PeerOption options = new PeerOption();
-options.key = "{APIKEY}";
-options.domain = "{DOMAIN}";
-Peer peer = new Peer(getApplicationContext(),myId,options);
-
-peer.on(Peer.PeerEventEnum.OPEN, new OnCallback()
-{
-    public void onCallback(Object object)
-    {
-        DataConnection conn = peer.connect('dest-peer-id');
-        conn.on(DataEventEnum.DATA,new OnCallback()
-        {
-            public void onCallback(Object object){
-                conn.send("Hello SkyWay!");
-            }
-        });
-    }
-});</code></pre>
-                        <script>hljs.initHighlighting();</script>
+                            
+                            <!-- Sample Code -->
+                            <pre><code class="java">{% include code/howto_android.html %}</code></pre>
+                            
                         </div>
+                        
+                        <!-- Used to highlight the howto code sections -->
+                        <script>hljs.initHighlighting();</script>
+                        
                         <a href="https://github.com/nttcom/SkyWay-Android-Sample" target="_blank" class="sample-app-link">Sample App (Android)</a>
                         
                     </div>
@@ -213,11 +188,11 @@ peer.on(Peer.PeerEventEnum.OPEN, new OnCallback()
                     <div class="col-sm-10 col-md-8 howto-step-content">
                         <p>Learn more from our development resources.</p>
                         
-                        <a href="docs/#iOS">
-                            <button class="btn-paper btn-howto">Full Guide</button>
+                        <a class="btn-paper btn-howto" href="docs/#iOS">
+                            Full Guide
                         </a>
-                        <a href="support.html">
-                            <button class="btn-paper btn-howto">Support</button>
+                        <a class="btn-paper btn-howto" href="support.html">
+                            Support
                         </a> 
 
                     </div>
