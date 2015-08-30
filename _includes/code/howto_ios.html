@@ -1,0 +1,15 @@
+#import &lt;SkyWay/SKWPeer.h&gt;
+
+SKWPeerOption* options = [[SKWPeerOption alloc] init];
+options.key = @"{APIKEY}";
+options.domain = @"{DOMAIN}";
+SKWPeer* peer = [[SKWPeer alloc] initWithId:myId options:options];
+
+[peer on:SKW_PEER_EVENT_OPEN callback:^(NSObject* obj)
+{
+    SKWDataConnection* conn = [peer connectWithId:@"dest-peer-id"];
+    [conn on:SKW_DATACONNECTION_EVENT_OPEN callback:^(NSObject* obj)
+    {
+        [conn send:@"Hello SkyWay!"];
+    }];
+}];
