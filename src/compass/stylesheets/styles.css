@@ -10339,17 +10339,9 @@ label {
   margin-bottom: 16px;
   margin-left: 10px;
   color: #8f8f8f;
-  background-color: #fafafa;
   border-radius: 3px;
 }
 /* line 82, ../sass/pages/_demo.scss */
-.demo-container div {
-  position: relative;
-  width: 390px;
-  height: 44px;
-  margin-left: 20px;
-}
-/* line 91, ../sass/pages/_demo.scss */
 .demo-container img {
   position: absolute;
   right: 22px;
@@ -10362,6 +10354,51 @@ label {
   border-color: rgba(82, 133, 255, 0.6);
   border-width: 4px;
   border-radius: 5px;
+}
+/* line 101, ../sass/pages/_demo.scss */
+.demo-container div {
+  position: relative;
+  width: 390px;
+  height: 44px;
+  margin-left: 20px;
+}
+@media (max-width: 991px) {
+  /* line 44, ../sass/pages/_demo.scss */
+  .demo-container {
+    height: auto;
+  }
+  /* line 114, ../sass/pages/_demo.scss */
+  .demo-container h2 {
+    text-align: center;
+  }
+  /* line 118, ../sass/pages/_demo.scss */
+  .demo-container p {
+    height: auto;
+    width: auto;
+    text-align: center;
+  }
+  /* line 125, ../sass/pages/_demo.scss */
+  .demo-container img {
+    position: relative;
+    display: table;
+    right: auto;
+    margin: auto;
+  }
+  /* line 133, ../sass/pages/_demo.scss */
+  .demo-container div {
+    margin: auto;
+    margin-top: 16px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 140, ../sass/pages/_demo.scss */
+  .demo-container h2 {
+    font-size: 28px;
+  }
+  /* line 143, ../sass/pages/_demo.scss */
+  .demo-container br {
+    display: none;
+  }
 }
 
 /* line 1, ../sass/pages/_documentation.scss */
