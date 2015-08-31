@@ -88,5 +88,9 @@
 
     color: #fff !important;
     background-color: $skyway_blue;
+    
+    &:hover {
+        background: lighten($skyway-blue, 5%) !important;
+    }
 
 }
