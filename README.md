@@ -18,7 +18,7 @@ $ sudo gem install bundler
 ```
 2. install “github-pages” with Bundler.
 ```sh
-$ bundle install
+$ bundle install --path vendor/bundle
 ```
 3. Install npm, and then install all necessary packages:
 ```sh
