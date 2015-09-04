@@ -1,76 +1,130 @@
 ---
-layout: default
+layout: responsive
 lang: en
 title: Docs
 description: Here we offer documentation and sample applications in order to provide a reference for programmers new to SkyWay. Please use the API refernce for detailed information on functionality and syntax. 
 ---
-<div id="documentation-topbar">
-    <h1 id="header-title">Documentation.</h1>
-    <h2 id="header-subtitle">Which path will you choose?</h2>
-    <div id="documentation-menu-div">
-        <paper-material class="documentation-menu" id="JS-menu" elevation="2">
-            <div class="documentation-menu-inner">
-                <img src="{{ site.homedir[page.lang] }}images/JS.png" class="documentation-menu-icon">
-                <h2 class="documentation-menu-title">JavaScript</h2>
-                <div class="documentation-menu-buttons">
-                    <a href='docs/#JS'>
-                      <paper-button raised class="documentation-menu-button">Getting Started</paper-button>
-                    </a>
-                    <a href='docs/#JS'>
-                      <paper-button raised class="documentation-menu-button">API</paper-button>
-                    </a>
-                    <a href='demo-js.html'>
-                      <paper-button raised class="documentation-menu-button">Demo Applications</paper-button>
-                    </a>
-                </div>
+
+<!-- Top Section -->
+
+<div class="top-section-short">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>Documentation.</h1>
+                <h2>Which path will you choose?</h2>
             </div>
-        </paper-material>
-        <paper-material class="documentation-menu" id="iOS-menu" elevation="2">
-            <div class="documentation-menu-inner">
-                <img src="{{ site.homedir[page.lang] }}images/apple.png" class="documentation-menu-icon">
-                <h2 class="documentation-menu-title">iOS</h2>
-                <div class="documentation-menu-buttons">
-                    <a href='docs/#iOS'>
-                      <paper-button raised class="documentation-menu-button">Getting Started</paper-button>
-                    </a>
-                    <a href='docs/#iOS'>
-                      <paper-button raised class="documentation-menu-button">API</paper-button>
-                    </a>
-                    <a href="https://github.com/nttcom/SkyWay-iOS-Sample" target="_blank">
-                      <paper-button raised class="documentation-menu-button">Demo Applications</paper-button>
-                    </a>
-                </div>
-            </div>
-        </paper-material>
-        <paper-material class="documentation-menu" id="Android-menu" elevation="2">
-            <div class="documentation-menu-inner">
-                <img src="{{ site.homedir[page.lang] }}images/android.png" class="documentation-menu-icon">
-                <h2 class="documentation-menu-title">Android</h2>
-                <div class="documentation-menu-buttons">
-                    <a href='docs/#Android'>
-                      <paper-button raised class="documentation-menu-button">Getting Started</paper-button>
-                    </a>
-                    <a href='docs/#Android'>
-                      <paper-button raised class="documentation-menu-button">API</paper-button>
-                    </a>
-		    <a href="https://github.com/nttcom/SkyWay-Android-Sample" target="_blank">
-                      <paper-button raised class="documentation-menu-button">Demo Applications</paper-button>
-                    </a>
-                </div>
-            </div>
-        </paper-material>
+        </div>
     </div>
 </div>
 
-<div id="documentation-lower">
+<!-- Main Page Content -->
 
+<div class="background">
 
-    <paper-material id="help-div" elevation="2">
-        <h2 id="help-div-header">Can't find what you're looking for?</h2>
-        <a href='support.html'>
-          <paper-button id="helpButton" raised class="white">Contact Us</paper-button>
-        </a>
-    </paper-material>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-10 col-md-offset-1">
+                
+                <!-- Documentation Menus -->
+                
+                <div class="row">
+                
+                    <!-- Javascript -->
+                    
+                    <div class="col-xs-12 col-sm-4 col-sm-offset-0">
+                        <div class="documentation-menu">
+                            <img src="{{ site.homedir[page.lang] }}images/JS.png">
+                            <h2>JavaScript</h2>
+                            <div class="documentation-menu-buttons">
+                                <a class="btn-paper-flat btn-documentation" href='docs/#JS'>
+                                    Getting Started
+                                </a>
+                                <a class="btn-paper-flat btn-documentation" href='docs/#JS'>
+                                    API
+                                </a>
+                                <a class="btn-paper-flat btn-documentation" href='demo-js.html'>
+                                    Demo Applications
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 
+                    <!-- iOS -->
+                    
+                    <div class="col-xs-12 col-sm-4 col-sm-offset-0">
+                        <div class="documentation-menu">
+                            <img src="{{ site.homedir[page.lang] }}images/apple.png">
+                            <h2>iOS</h2>
+                            <div class="documentation-menu-buttons">
+                                <a class="btn-paper-flat btn-documentation" href='docs/#iOS'>
+                                    Getting Started
+                                </a>
+                                <a class="btn-paper-flat btn-documentation" href='docs/#iOS'>
+                                    API
+                                </a>
+                                <a class="btn-paper-flat btn-documentation" href="https://github.com/nttcom/SkyWay-iOS-Sample" target="_blank">
+                                    Demo Application
+                                </a>
+                                <a class="hidden-xs btn-paper btn-div-bottom" href="http://skyway-ios-sdk.str.cloudn-service.com/0.1.0/SkyWay-iOS-SDK-0.1.0.zip" target="_blank">
+                                    Download SDK
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Android -->
 
+                    <div class="col-xs-12 col-sm-4 col-sm-offset-0">
+                        <div class="documentation-menu">
+                            <img src="{{ site.homedir[page.lang] }}images/android.png">
+                            <h2>Android</h2>
+                            <div class="documentation-menu-buttons">
+                                <a class="btn-paper-flat btn-documentation" href='docs/#Android'>
+                                    Getting Started
+                                </a>
+                                <a class="btn-paper-flat btn-documentation" href='docs/#Android'>
+                                    API
+                                </a>
+                                <a class="btn-paper-flat btn-documentation" href="https://github.com/nttcom/SkyWay-Android-Sample" target="_blank">
+                                    Demo Application
+                                </a>
+                                <a class="hidden-xs btn-paper btn-div-bottom" href="http://skyway-android-sdk.str.cloudn-service.com/0.1.1/SkyWay-Android-SDK-0.1.1.zip" target="_blank">
+                                    Download SDK
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+                
+                <!-- Other docs -->
+                <div class="row">
+                    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+                        <div class="documentation-other-menu">
+                            <h2>Other Documents</h2>
+                            <a class="btn-paper-flat btn-documentation-other" href="http://webrtc-security.github.io/index.html" target="_blank">
+                                <i class="fa fa-book hidden-xs"></i>
+                                <h3>WebRTC Security Report</h3>
+                                <p>An open-source discussion of WebRTC's security.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Support div -->
+                
+                <div class="row">
+                    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+                        <div class="support-div">
+                            <h2>Can't find what you're looking for?</h2>
+                            <a class="btn-paper btn-inverted btn-center" href='support.html'>
+                                Contact Us
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
 </div>

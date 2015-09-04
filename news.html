@@ -1,0 +1,41 @@
+---
+layout: responsive
+lang: jp
+title: すべてのニュース
+description: WebRTCは、ブラウザやアプリ間でリアルタイムに映像、音声、データを送受信できる画期的な新技術です。SkyWayを使えば、サーバを準備することなく簡単に、WebRTCを使ったアプリが開発できます。
+---
+
+<!-- Top Section -->
+
+<div class="top-section-short">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1 id="header-title">すべてのニュース</h1>
+                <h2 id="header-subtitle">ニュースたっぷり</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Main Page Content -->
+
+<div class="background">
+    
+    <div class="container news-container">
+    
+        {% for post in site.categories.news_jp %}
+            <div class="row news-headline">
+                <div class="col-sm-2 col-md-2 col-md-offset-1">
+                    <div class="row">
+                        <div class="col-sm-11 col-md-10 col-md-offset-1 news-headline-date">
+                            {{ post.date | date: "%Y.%d.%m " }}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-10 col-md-8 news-headline-text">{{ post.excerpt }}</div>
+            </div>
+            <div class="divider"></div>
+        {% endfor %}
+    
+</div>

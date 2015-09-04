@@ -1,0 +1,34 @@
+@import "../bootstrap/bootstrap-variables";
+
+@mixin alpha-attribute($attribute, $color, $background) {
+    $percent: alpha($color) * 100%;
+    $opaque: opacify($color, 1);
+    $solid-color: mix($opaque, $background, $percent);
+    #{$attribute}: $solid-color !important;
+    #{$attribute}: $color !important;
+}
+
+// Align ANYTHING!!!
+@mixin vertical-align {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+// Easy media queries based on Bootstrap breakpoints
+@mixin bp($point) {
+  @if $point == xxs {
+    @media (max-width: ($screen-xs-min - 1)) { @content; }
+  }
+  @else if $point == xs {
+    @media (max-width: $screen-xs-max) { @content; }
+  }
+  @else if $point == sm {
+    @media (max-width: $screen-sm-max) { @content; }
+  }
+  @else if $point == md {
+    @media (max-width: $screen-md-max)  { @content; }
+  }
+}

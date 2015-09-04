@@ -1,66 +1,80 @@
 ---
-layout: default
+layout: responsive
 lang: en
 title: Support
 description: Do you have any issues with SkyWay? Here you can request support from the SkyWay team, or participate in our Google Group.
 ---
-<div id="header-section">
-    <h1 id="header-title">Support.</h1>
-    <h2 id="header-subtitle">What can we do for you today?</h2>
+
+<!-- Top Section -->
+
+<div class="top-section-short">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>Support.</h1>
+                <h2>What can we do for you today?</h2>
+            </div>
+        </div>
+    </div>
 </div>
 
-<div id="main-section">
-    <div id="support-text-area">
+<!-- Main Page Content -->
 
-        <p>We understand. Sometimes, as hard as you try something doesn't work as you want it to.</p>
-        <p>The good news is that we are here to help you. Send us a direct query, or participate in active discussions on Google Groups. This page has everything you need to help you get the job done.</p>
+<div class="background">
 
-    </div>
+    <div class="container">
+    
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2">
+                
+                <div class="preamble">
+                    <p>We understand. Sometimes, as hard as you try something doesn't work as you want it to.</p>
+                    <p>The good news is that we are here to help you. Send us a direct query, or participate in active discussions on Google Groups. This page has everything you need to help you get the job done.</p>
+                </div>
 
-    <div id="support-options-div">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="support-box">
+                            <i class="fa fa-paper-plane fa-4x"></i>
+                            <h3>Something wrong?</h3>
 
-        <div class="flex-box support-box-top">
+                            <a class="btn-paper btn-support" href='mailto:skyway@ntt.com?subject=サポートリクエスト&body=' target="_blank">
+                                Contact us
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="support-box">
+                            <i class="fa fa-comments fa-4x"></i>
+                            <h3>Google Groups</h3>
+                            <a class="btn-paper btn-support" href='https://groups.google.com/forum/#!forum/skywayjs' target="_blank">
+                                Join the community
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="support-box-container-half flex-component">
-                <paper-material class="support-box" elevation="2">
-                    <i class="fa fa-paper-plane fa-4x"></i>
-                    <h3>Something wrong?</h3>
-                    <a href='mailto:skyway@ntt.com?subject=Support Request&body=' target="_blank">
-                <paper-button id="contact-button">Contact us</paper-button>
-                </a>
-                </paper-material>
-            </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="support-box">
+                            <i class="fa fa-book fa-4x"></i>
+                            <h3>Learn More</h3>
+                            <a class="btn-paper btn-support-left" href='documentation.html'>
+                                Documentation
+                            </a>
 
-
-            <div class="support-box-container-half flex-component">
-                <paper-material class="support-box" elevation="2">
-                    <i class="fa fa-comments fa-4x"></i>
-                    <h3>Google Groups</h3>
-                    <a href='https://groups.google.com/forum/#!forum/skywayjs' target="_blank">
-                    <paper-button>Join the community</paper-button>
-                    </a>
-                </paper-material>
+                            <a class="btn-paper btn-support-right" href='demo-js.html'>
+                                Demo Apps
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
-
         
-        <div class="flex-box support-box-middle">
 
-            <div class="support-box-container-half flex-component">
-                <paper-material class="support-box" elevation="2">
-                    <i class="fa fa-book fa-4x"></i>
-                    <h3>Learn More</h3>
-                    <a href='documentation.html'>
-                    <paper-button class="leftButton">Documentation</paper-button>
-                    </a>
-
-                    <a href='demo-js.html'>
-                    <paper-button class="rightButton">Demo Apps</paper-button>
-                    </a>
-
-                </paper-material>
-            </div>
-        </div>
-
+    
     </div>
+
 </div>

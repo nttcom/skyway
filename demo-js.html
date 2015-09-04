@@ -1,99 +1,121 @@
 ---
-layout: default
+layout: responsive
 lang: jp
 title: デモ ― JavaScript SDK
 description: WebRTCとSkyWayを使用したサンプルアプリを公開しています。多くのサンプルがコードを公開しているので、アプリケーション開発の参考にしていただけます。
 ---
-<div id="header-section">
-    <h1 id="header-title">サンプル・アプリケーション</h1>
-    <h2 id="header-subtitle">SkyWayを使用したサンプルアプリを公開しています。</h2>
 
-    <paper-material id="header-icon-div">
-        <div id="header-icon-inner">
-            <img src="{{ site.homedir[page.lang] }}images/JS.png" id="header-icon-img">
+<!-- Top Section -->
+
+<div class="top-section-short">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1 id="header-title">サンプル・アプリケーション</h1>
+                <h2 id="header-subtitle">SkyWayを使用したサンプルアプリを公開しています。</h2>
+            </div>
+            
+            <div class="platform-logo hidden-xs">
+                <div class="platform-logo-inner">
+                    <img src="{{ site.homedir[page.lang] }}images/JS.png">
+                </div>
+            </div>
         </div>
-    </paper-material>
+    </div>
 </div>
 
-<div id="main-section">
+<!-- Main Page Content -->
 
-    <paper-material class="demo-container" elevation="2">
-        <h2>シンプルなビデオチャット</h2>
-        <p>相手のIDを入れると繋がる、シンプルなビデオチャットサービス。<br>(PeerJS提供)</p>
-        <div class="demo-buttons">
-          <a href="https://skyway.io/examples/videochat/" target="_blank">
-            <paper-button class="demo-tryButton">デモを見る</paper-button>
-          </a>
-          <a href="https://github.com/nttcom/peerjs/tree/master/examples" target="_blank">
-            <paper-button class="demo-infoButton">コードを見る</paper-button>
-          </a>
-        </div>
-        <div class="demo-img-div">
-            <img src="{{ site.homedir[page.lang] }}images/demo-apps/videochat.png">
-        </div>
-    </paper-material>
+<div class="background">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-xs-12 col-lg-10 col-lg-offset-1">
+                <div class="row">
+                    
+                    <div class="col-xs-12">
+                        <div class="demo-container">
+                            <h2>シンプルなビデオチャット</h2>
+                            <p>相手のIDを入れると繋がる、シンプルなビデオチャットサービス。<br>(PeerJS提供)</p>
+                            <img src="{{ site.homedir[page.lang] }}images/demo-apps/videochat.png">
+                            <div>
+                                <a class="btn-demo-left" href="https://skyway.io/examples/videochat/" target="_blank">
+                                    デモを見る
+                                </a>
+                                <a class="btn-demo-right" href="https://github.com/nttcom/peerjs/tree/master/examples" target="_blank">
+                                    コードを見る
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 
-    <paper-material class="demo-container" elevation="2">
-        <h2>HTML5 JUMBOTRON</h2>
-        <p>イベントや会議に使える、参加者を1枚のスクリーンにまとめて表示できるサービス。</p>
-        <div class="demo-buttons">
-          <a href="https://jt.skyway.io/" target="_blank">
-            <paper-button class="demo-tryButton">利用する</paper-button>
-          </a>
-          <a href="https://github.com/nttcom/jumbotron" target="_blank">
-            <paper-button class="demo-infoButton">コードを見る</paper-button>
-          </a>
+                    <div class="col-xs-12">
+                        <div class="demo-container">
+                            <h2>HTML5 JUMBOTRON</h2>
+                            <p>イベントや会議に使える、参加者を1枚のスクリーンにまとめて表示できるサービス。</p>
+                            <img src="{{ site.homedir[page.lang] }}images/demo-apps/html5jumbotron.png">
+                            <div>
+                                <a class="btn-demo-left" href="https://jt.skyway.io/" target="_blank">
+                                    利用する
+                                </a>
+                                <a class="btn-demo-right" href="https://github.com/nttcom/jumbotron" target="_blank">
+                                    コードを見る
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-xs-12">
+                        <div class="demo-container">
+                            <h2>WebRTC Chat on SkyWay</h2>
+                            <p>登録不要で誰でも使えるビデオチャットサービス。</p>
+                            <img src="{{ site.homedir[page.lang] }}images/demo-apps/webrtcchat.png">
+                            <div>
+                                <a class="btn-demo-left" href="https://chat.skyway.io/" target="_blank">
+                                    利用する
+                                </a>
+                                <a class="btn-demo-right" href="https://chat-blog.skyway.io/" target="_blank">
+                                    開発者ブログ
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-xs-12">
+                        <div class="demo-container">
+                            <h2>字幕付きボイスチャット</h2>
+                            <p>自動で音声認識を行い、文章を表示するボイスチャットサービス。</p>
+                            <img src="{{ site.homedir[page.lang] }}images/demo-apps/caption_phone_chat.png">
+                            <div>
+                                <a class="btn-demo-left" href="https://skyway.io/examples/caption-phone" target="_blank">
+                                    デモを見る
+                                </a>
+                                <a class="btn-demo-right" href="https://chat-blog.skyway.io/" target="_blank">
+                                    コードを見る
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-xs-12">
+                        <div class="demo-container">
+                            <h2>ファイル転送付きチャット</h2>
+                            <p>ファイルを送ることができるチャットサービス。<br>(PeerJS提供) </p>
+                            <img src="{{ site.homedir[page.lang] }}images/demo-apps/chat.png">
+                            <div>
+                                <a class="btn-demo-left" href="https://skyway.io/examples/chat.html" target="_blank">
+                                    デモを見る
+                                </a>
+                                <a class="btn-demo-right" href="https://github.com/nttcom/peerjs/tree/master/examples" target="_blank">
+                                    コードを見る
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
         </div>
-        <div class="demo-img-div">
-            <img src="{{ site.homedir[page.lang] }}images/demo-apps/html5jumbotron.png">
-        </div>
-    </paper-material>
-
-    <paper-material class="demo-container" elevation="2">
-        <h2>WebRTC Chat on SkyWay</h2>
-        <p>登録不要で誰でも使えるビデオチャットサービス。</p>
-        <div class="demo-buttons">
-          <a href="https://chat.skyway.io/" target="_blank">
-            <paper-button class="demo-tryButton">利用する</paper-button>
-          </a>
-          <a href="https://chat-blog.skyway.io/" target="_blank">
-            <paper-button class="demo-infoButton">開発者ブログ</paper-button>
-          </a>
-        </div>
-        <div class="demo-img-div">
-            <img src="{{ site.homedir[page.lang] }}images/demo-apps/webrtcchat.png">
-        </div>
-    </paper-material>
-
-    <paper-material class="demo-container" elevation="2">
-        <h2>字幕付きボイスチャット</h2>
-        <p>自動で音声認識を行い、文章を表示するボイスチャットサービス。</p>
-        <div class="demo-buttons">
-          <a href="https://skyway.io/examples/caption-phone" target="_blank">
-            <paper-button class="demo-tryButton">デモを見る</paper-button>
-          </a>
-          <a href="https://github.com/nttcom/peerjs/tree/master/skyway_examples/caption-phone" target="_blank">
-            <paper-button class="demo-infoButton">コードを見る</paper-button>
-          </a>
-        </div>
-        <div class="demo-img-div">
-            <img src="{{ site.homedir[page.lang] }}images/demo-apps/caption_phone_chat.png">
-        </div>
-    </paper-material>
-
-    <paper-material class="demo-container" elevation="2">
-        <h2>ファイル転送付きチャット</h2>
-        <p>ファイルを送ることができるチャットサービス。<br>(PeerJS提供) </p>
-        <div class="demo-buttons">
-          <a href="https://skyway.io/examples/chat.html" target="_blank">
-            <paper-button class="demo-tryButton">デモを見る</paper-button>
-          </a>
-          <a href="https://github.com/nttcom/peerjs/tree/master/examples" target="_blank">
-            <paper-button class="demo-infoButton">コードを見る</paper-button>
-          </a>
-        </div>
-        <div class="demo-img-div">
-            <img src="{{ site.homedir[page.lang] }}images/demo-apps/chat.png">
-        </div>
-    </paper-material>
+    </div>
 </div>

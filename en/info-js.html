@@ -1,123 +1,168 @@
 ---
-layout: default
+layout: responsive
 lang: en
 title: JavaScript SDK
 description: Here we offer our Javascript SDK for SkyWay. If you use SkyWay, you can easily create WebRTC apps without having to worry about the server.
 ---
-<div id="anchor-div"></div>
-<div id="subpage-content-div" elevation="2">
-    <div id="content-explanation-div">
-        <h2 class="content-title-side">JavaScript SDK</h2>
 
-            <div id="content-highlights">
-                <div class="content-highlight">
-                    <img class="content-highlight-icon" src="{{ site.homedir[page.lang] }}images/outline_star_white.png">
-                    <div class="content-highlight-text-container">
-                        <div class="content-highlight-text">Our API makes using WebRTC easy</div>
-                    </div>
-                </div>
-                <div class="content-highlight">
-                    <img class="content-highlight-icon" src="{{ site.homedir[page.lang] }}images/outline_star_white.png">
-                    <div class="content-highlight-text-container">
-                        <div class="content-highlight-text">Only client side development needed, no need to prepare a server</div>
-                    </div>
-                </div>
-                <div class="content-highlight">
-                    <img class="content-highlight-icon" src="{{ site.homedir[page.lang] }}images/outline_star_white.png">
-                    <div class="content-highlight-text-container">
-                        <div class="content-highlight-text">Use our many extra features (Multiparty, Screen Share etc)</div>
+<!-- Top Section -->
+
+<div class="container-fluid">
+    <div class="row">
+        
+        <!-- Animation Side (Left/Top on Mobile, PUSHED Right on Desktop) -->
+        
+        <div class="col-sm-7 col-sm-push-5 top-container-right">
+            <h3 class="subpage-title-mobile visible-xs">JavaScript SDK</h3>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="animation-container-right">
+                            <div class="animation-content">
+
+                                <img class="animated-logo animation-js" src="{{ site.homedir[page.lang] }}images/logos/logo-cloud_white.png">
+                                <div class="animated-transmission animation-js">
+                                    <div class='circle-container'>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </div>
+
+                                <div class="img-trap">
+                                    <img class="img-responsive device-image" src="{{ site.homedir[page.lang] }}images/top_images/js_top.png">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <a href='documentation.html'>
-              <paper-button class="subpage-topSectionButton white" raised>Documentation</paper-button>
-            </a>
-    </div>
-    <div id="content-animation-div">
-        <link rel="stylesheet" href="{{ site.homedir[page.lang] }}styles/transmission-animation-subpage.css">
-        <img id="animated-logo-js" src="{{ site.homedir[page.lang] }}images/logos/logo-cloud_white.png">
-        <div id="animation-container">
-            <div class='js-transmission-animation'>
-                <div class='circle-container'>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-            </div>
-            <img src="{{ site.homedir[page.lang] }}images/top_images/js_top.png">
+
+            <a class="hidden-xs top-btn-desktop btn-paper btn-top-section" target="_blank" href='https://skyway.io/ds/registration/'>
+                Sign Up
+            </a>        
+
         </div>
-        <a href='https://skyway.io/ds/registration/' target="_blank">
-          <paper-button class="subpage-topSectionButton white" raised>Sign Up</paper-button>
-        </a>
+        
+        <!-- Highlight Side (Right/Bottom on Mobile, PULLED Left on Desktop) -->
+        
+        <div class="col-sm-5 col-sm-pull-7 top-container-left">
+            <h3 class="subpage-title hidden-xs">JavaScript SDK</h3>
+
+            <div class="row subpage-highlight">
+                <div class="col-xs-1 col-xs-offset-1"><i class="fa fa-star"></i></div>
+                <div class="col-xs-9 highlight-text">Our API makes using WebRTC easy</div>
+            </div>
+
+             <div class="row subpage-highlight">
+                <div class="col-xs-1 col-xs-offset-1"><i class="fa fa-star"></i></div>
+                <div class="col-xs-9 highlight-text">Only client side development needed, no need to prepare a server</div>
+            </div>
+
+            <div class="row subpage-highlight">
+                <div class="col-xs-1 col-xs-offset-1"><i class="fa fa-star"></i></div>
+                <div class="col-xs-9 highlight-text">Use our many extra features (Multiparty, Screen Share etc)</div>
+            </div>
+    
+            <a class="hidden-xs top-btn-desktop btn-paper btn-top-section" href='documentation.html'>
+                Documentation
+            </a>
+            
+            <div class="top-btn-mobile visible-xs">
+                <div class="col-xs-5 col-xs-offset-1">
+                    <a class="btn-paper btn-top-section" target="_blank" href='https://skyway.io/ds/registration/'>
+                        Sign Up
+                    </a> 
+                </div>
+                <div class="col-xs-5">
+                    <a class="btn-paper btn-top-section" href='documentation.html'>
+                        Documentation
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        
     </div>
 </div>
-
-<paper-material id="js-howto-div" class="paper-div" elevation="2">
-    <div class="paper-div-internal">
-        <h2 class="material-header">Give it a try!</h2>
-<!--        <h3 class="material-subheader">It is easy to build a web application using SkyWay. Why not give it a try?</h3>-->
+    
 
 
-        <div class="howto-step">
-            <img src="{{ site.homedir[page.lang] }}images/count/1.png">
-            <div class="float-group">
-                <p>Register as a developer and create an API key.</p>
-                <a href='https://skyway.io/ds/registration/' target="_blank">
-                  <paper-button raised>Sign Up (Free)</paper-button>
-                </a>
+<!-- Main Page Content -->
+
+<div class="background-blue">
+    
+    <div class="container">
+
+        <div class="row main-content-row">
+            <div class="col-sm-12 paper-style-div">
+                <h2>Give it a try!</h2>
+                <div class="divider"></div>
+                
+                <!-- Howto Step 1 -->
+                
+                <div class="row howto-step">
+                    <div class="col-sm-1 col-md-2 howto-step-count">
+                        <img src="{{ site.homedir[page.lang] }}images/count/1.png">
+                    </div>
+                    <div class="col-sm-10 col-md-8 howto-step-content">
+                        <p>Register as a developer and create an API key.</p>
+                        
+                        <a class="btn-paper btn-howto" target="_blank" href='https://skyway.io/ds/registration/'>
+                            Sign Up (Free)
+                        </a> 
+                        
+                    </div>
+                </div>
+                
+                <!-- Howto Step 2 -->
+
+                <div class="row howto-step">
+                    <div class="col-sm-1 col-md-2 howto-step-count">
+                        <img src="{{ site.homedir[page.lang] }}images/count/2.png">
+                    </div>
+                    <div class="col-sm-10 col-md-8 howto-step-content">
+                        <p>Let's create a SkyWay app.<br>
+                        Refer to the sample code. Make sure to include the library!</p>
+
+                        <div class="code-section">
+                            
+                            <!-- Sample Code -->
+                            <pre><code>{% include code/howto_js.html %}</code></pre>
+                            
+                            <!--<script>hljs.initHighlighting();$(".javascript").css("opacity", 0.95);</script>-->
+
+                       </div>
+                    </div>
+                </div>
+                
+                <!-- Howto Step 3 -->
+
+                <div class="row howto-step">
+                    <div class="col-sm-1 col-md-2 howto-step-count">
+                        <img src="{{ site.homedir[page.lang] }}images/count/3.png">
+                    </div>
+                    <div class="col-sm-10 col-md-8 howto-step-content">
+                        <p>Learn more from our development resources.</p>
+                        
+                        <a class="btn-paper btn-howto" href="docs/#JS">
+                            Full guide
+                        </a>
+                        <a class="btn-paper btn-howto" href="support.html">
+                            Support
+                        </a> 
+
+                    </div>
+                </div>
+                
             </div>
         </div>
-
-        <div class="howto-step">
-            <img src="{{ site.homedir[page.lang] }}images/count/2.png">
-            <div class="float-group">
-                <p>Let's create a SkyWay app.<br><br>
-                    Refer to the sample code. Make sure to include the library!</p>
-
-                <paper-material class="code-section" elevation="1">
-                             <pre><code class="html">
-&lt;script src="https://skyway.io/dist/0.3/peer.min.js"&gt;&lt;/script&gt;
-
-&lt;script&gt;
-var peer = new Peer(myId, {key: 'yourApiKey'});
-
-peer.on('open', function(id) {
-  var conn = peer.connect('anotherId');
-  conn.on('open', function() {
-    conn.send('hello world');
-  });
-});
-&lt;/script&gt;
-</code></pre>
-<script>hljs.initHighlighting();$(".javascript").css("opacity", 0.95);</script>
-               </paper-material>
-            </div>
-        </div>
-
-        <div class="howto-step">
-            <img src="{{ site.homedir[page.lang] }}images/count/3.png">
-            <div class="float-group">
-                <p>Learn more from our development resources.</p>
-                <a href='docs/#JS'>
-                  <paper-button raised>Full guide</paper-button>
-                </a>
-                <a href='support.html'>
-                  <paper-button raised>Support</paper-button>
-                </a>
-            </div>
-        </div>
-        <h2 class="material-lower-header">　</h2>
     </div>
-</paper-material>
-
-<div id="signup-div">
-    <h2 id="signup-header">Like what you see? SkyWay is free to try.</h2>
-        <div class="divider-short"></div>
-    <a href='https://skyway.io/ds/registration/' target="_blank">
-      <paper-button id="signupButton" raised class="white">Sign Up</paper-button>
-    </a>
+    
+    {% include signup-div.html %} 
+    
 </div>

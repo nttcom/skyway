@@ -1,0 +1,215 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+
+/* Front Page - Animation */
+
+.top-section {
+    h1 {
+        position: relative;
+        margin: 42px 0 0 0;
+        color: #FFF;
+        font-size: 2.2em;
+        text-align: center;
+    }
+    h2 {
+        position: relative;
+        margin: 14px 0 16px 0;
+        color: #FFF;
+        opacity: 0.6;
+        font-size: 1.85em;
+        text-align: center;
+    }
+    
+    .animation-container {
+        
+        position: relative;
+
+        height: 380px; // For IE 8. Bah.
+        height: calc(#{$top-section-height} - 220px);
+    
+        .animation-content {
+
+            // Content pushes downwards (for responsive reasons)
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            
+            text-align: center;     // For IE 8. Bah.
+            
+            .row-top-images {
+                margin-top: 10px;
+            }
+            
+            img {
+                display: inline;    // For IE 8. Bah.
+                margin: auto;
+
+                width:      auto;         // For IE 8. Bah.
+                max-width:  100%;     
+                height:     auto;        // For IE 8. Bah.
+                max-height: 220px;
+                object-fit: contain;
+                -ms-interpolation-mode: bicubic;
+                cursor: pointer;
+
+                &:hover {
+                    transform: scale(1.02, 1.02);
+                    -webkit-transform: scale(1.02, 1.02);
+                }
+            }
+            h3 {
+                margin-top: 20px;
+                color: #FFF;
+                opacity: 0.8;
+                font-size: 1.8em;
+                text-align: center;
+            }
+        }
+    }
+    
+    @include bp(xs) {
+        
+        height: auto !important;
+        padding-bottom: 80px;
+
+        h1 {
+            font-size: 1.82em;
+        }
+            
+        h2 {
+            font-size: 1.2em;
+        }
+        
+        .animation-container {
+            
+            padding-top: 24px;
+            height: auto;
+            
+            .animation-content {
+                position: relative;
+                top: 0;
+                bottom: auto;
+                
+                h3 {
+                    font-size: 1.2em;
+                }
+            }
+        }
+    }
+    
+    @include bp(xxs) {
+        h1 {
+            font-size: 1.4em;
+        }
+            
+        h2 {
+            font-size: 1em;
+        }
+    }
+
+}
+
+/* Front Page - Highlights */
+
+.highlight {
+//    @extend .h_r;
+    padding: 0 30px;
+    
+    color: $light_font;
+    font-size: 1.2em;
+    font-weight: 100;
+//    line-height: 1.5em;
+
+    i {
+        display: table;
+        margin: auto;
+        margin-top: 2px;
+        font-size: 4.1em;
+        text-align: center;
+        color: $skyway_blue;
+    }
+
+    h3 {
+        /*    position: absolute;*/
+        margin-top: 18px;
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 1.2em;
+        font-weight: 200;
+        
+        color: $dark-font;
+    }
+    
+    @include bp(md) {
+        padding: 0 16px;
+        font-size: 1.0em;
+    }
+    
+    @include bp(xs) {
+        font-size: 1.2em;
+    }
+}
+
+/* Front Page - News */
+
+.mini-headline {
+    margin-top: 15px;
+    margin-bottom: 35px;
+    
+}
+
+.mini-headline-date {
+    margin-bottom: 8px;
+    padding: 0;
+    max-width: 160px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    font-size: 1.2em;
+    color: #FFF;
+    background-color: $skyway_blue;
+    border-radius: 5px;
+}
+
+.mini-headline-text {
+    margin-left: -10px;
+    
+    font-size: 1.3em;
+    font-weight: 100;
+    
+    color: $light_font;
+}
+
+/* Medium Devices, Desktops */
+@media (max-width : 992px) {
+    .highlight {
+        br {
+            display: none;
+        }
+    }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 768px) {
+    .highlight {
+        text-align: center;   
+        height: 170px;
+
+        i {
+            font-size: 3em;
+        }
+    }
+    
+    .mini-headline-date {
+//        display: table;
+//        margin: auto;
+        margin-left: 15px;
+        width: 100px;
+    }
+    
+    .mini-headline-text {
+        margin: 0;
+    }
+}

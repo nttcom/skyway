@@ -1,0 +1,379 @@
+@import "../utilities/variables";
+
+// Custom ink-ripple button
+
+$btn-colour: $skyway-blue;
+
+.btn-paper-flat {
+    
+    position: relative;
+    display: block;
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+//    margin: 1em;
+    padding: 0;
+    border: none;
+    outline: none;
+//    letter-spacing: .2em;
+
+    font-size: 16px;
+    
+    color: $btn-colour;
+    background: #fff;
+    cursor: pointer;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-radius: 3px;
+    
+    text-align: center;
+    
+    &:hover {
+        background: lighten($skyway-blue, 30%);
+        color: $btn-colour;
+    }
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.btn-paper {
+    @extend .btn-paper-flat;
+    @extend .paper-style-layer-1;
+    
+    &:hover {
+        color: $skyway-blue;
+    }  
+}
+
+.ripple {
+    position: absolute;
+//    background: rgba(0,0,0,.25);
+    background: $skyway-blue;
+    opacity: 0.5;
+    border-radius: 100%;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    pointer-events: none;
+}
+
+.ripple.show {
+    -webkit-animation: ripple .6s ease-out;
+    animation: ripple .6s ease-out;
+}
+@-webkit-keyframes 
+    ripple { to {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+@keyframes 
+    ripple { to {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+
+.btn-center {
+    display: table;
+    margin: auto;
+}
+
+.btn-inverted {
+    margin: 20px auto 16px auto;
+    
+    color: #fff;
+    background-color: $skyway-blue;
+    
+    &:hover {
+        background: lighten($skyway-blue, 5%);
+        color: #fff;
+    }
+}
+
+.btn-top-section {
+    position: absolute;
+    
+    bottom: 30px;
+    
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.btn-documentation {
+    width: 100%;
+    margin-top: 8px;
+    
+    color: darken($skyway-blue, 5%);
+    background-color: #d0e0ff;
+    
+    &:hover {
+        color: darken($skyway-blue, 5%);
+        background: lighten(#d0e0ff, 5%);
+    }
+}
+
+.btn-documentation-other {
+    display: table;
+    margin: auto;
+    height: auto;
+    width: 100%;
+    margin-top: 8px;
+    
+    padding-left: 8px;
+    
+    border-width: 1px;
+    border-style: solid;
+    border-color: lighten($skyway-blue, 10%);
+    
+    text-align: left;
+    
+    z-index: 10;
+
+    i {
+        float: left;
+        margin: 8px 10px 0 4px;
+        
+        font-size: 2.6em;
+    }
+    
+    h3 {
+        margin: 10px 0 0 0;
+        
+        font-size: 1em;
+        font-weight: 300 !important;
+        
+        color: $dark-font;
+    }
+    
+    p {
+        margin-bottom: 6px;
+        
+        font-size: 0.8em;
+        
+        color: $light-font;
+    }
+}
+
+
+
+.btn-div-bottom {    
+    margin: 8px -8px -8px -8px;
+    
+    width: 108%;
+    max-width: 295px;
+    width: calc(100% + 16px);
+    
+    color: #fff;
+    @include alpha-attribute('background-color', rgba(#000, 0.25), $mid_blue);
+    
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    
+    &:hover {
+        color: #fff;
+        @include alpha-attribute('background-color', rgba(#000, 0.15), $mid_blue);
+    }
+}
+
+//.btn-documentation-support {
+//    display: table;    
+//    margin: 32px auto;
+//    
+//}
+
+.btn-demo-left {
+    @extend .btn-paper-flat;
+    
+    position: absolute;
+
+    width: 180px;
+    height: 100%;
+    
+    color: #fff;
+    background-color: #00C98E;
+    
+    &:hover {
+        color: #fff;
+    }
+}
+
+.btn-demo-right {
+    @extend .btn-paper-flat;
+    
+    position: absolute;
+
+    right: 0px;
+    width: 180px;
+    height: 100%;
+    
+    color: #fff;
+    background-color: #1ED75F;
+    
+    &:hover {
+        color: #fff;
+    }
+}
+
+.btn-feature-bottom {    
+    position: absolute;
+    bottom: 0;
+    
+    width: calc(100% + 16px);
+    
+    color: #fff;
+    @include alpha-attribute('background-color', rgba(#000, 0.25), #fff);
+    
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    
+    &:hover {
+        color: #fff;
+        @include alpha-attribute('background-color', rgba(#000, 0.15), #fff);
+    }
+}
+
+.btn-feature {
+    @extend .thumbnail; // Remove if necessary
+    
+    height: 78px;
+    width: 100%;
+    max-width: 344px;           // For IE 8...
+    width: calc(100% - 16px);   // For normal browsers
+
+    margin: 8px !important;
+    padding: 0;
+
+    border-style: solid;
+    border-color: #9f9f9f;
+    border-width: 1px;
+
+    border-radius: 5px;  
+    
+    img {
+        position: absolute;
+
+        top: 19px;
+        left: 15px;
+
+        width: 46px;
+        height: 42px;
+
+        object-fit: scale-down;
+    }
+
+    h2 {
+        position: absolute;
+
+        top: 8px;
+        left: 75px;
+
+        margin: 0;
+        padding: 0;
+
+        font-size: 1.25em;
+
+        color: #5285FF;
+    }
+
+    p {
+        position: absolute;
+
+        left: 75px;
+        top: 35px;
+
+//            width: 70%;
+        height: 36px;
+
+        overflow: hidden;
+
+        margin: 0;
+        margin-right: 12px;
+        padding: 0;
+
+        text-align: left;
+
+        font-size: 0.88em;
+        line-height: 18px;
+
+//            background-color: red;
+
+        color: #9f9f9f;
+    }   
+}
+
+.btn-howto {
+    float: left;
+    
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top: 8px;
+    margin-bottom: 4px;
+
+    width: 220px;
+
+    color: #fff;
+    background: #1EC75F;
+    
+    &:hover {
+        color: #fff;
+        background: darken(#1EC75F, 5%);
+    }
+}
+
+.btn-support {
+    position: absolute;
+    
+    bottom: 0;
+    
+    width: 100%;
+    line-height: 38px;  // Due to 2px border
+    margin: 0px;
+    
+    color: $skyway-blue;
+    @include alpha-attribute('background-color', rgba($skyway-blue, 0.2), #fff);
+
+    border-style: solid;
+    border-color: $skyway-blue;
+    border-width: 0px;
+    border-top-width: 2px;
+    
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    
+    &:hover {
+        color: $skyway-blue;
+        @include alpha-attribute('background-color', rgba($skyway-blue, 0.3), #fff);
+    }    
+}
+
+.btn-support-left {
+    @extend .btn-support;
+    
+    left: 0;
+    
+    width: 50%;
+    border-bottom-right-radius: 0px;
+    
+    border-right-width: 1px;
+}
+
+.btn-support-right {
+    @extend .btn-support;
+    
+    right: 0;
+    
+    width: 50%;
+    border-bottom-left-radius: 0px;
+    
+    border-left-width: 1px;
+}

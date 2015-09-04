@@ -1,0 +1,59 @@
+
+// Colours
+
+$skyway_blue: #5285FF;
+$light_blue: #FCFCFF;
+$mid_blue: royalblue;
+$dark_blue: #2548BE;
+//$skyway_blue: red;
+
+$dark_font: #5a5a5a;
+$light_font: #8f8f8f;
+
+$top-section-height: 600px;
+
+.paper-style-layer-1 {
+    position: relative;
+
+    padding: 8px;
+
+    background-color: #fff;
+    /* See /bower_components/paper-styles/shadow.html */
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+                0 1px 5px 0 rgba(0, 0, 0, 0.12),
+                0 3px 1px -2px rgba(0, 0, 0, 0.2);
+
+    border-radius: 5px;
+}
+
+.paper-style {
+    position: relative;
+
+    padding: 8px;
+
+    background-color: #fff;
+    /* See /bower_components/paper-styles/shadow.html */
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14),
+                0 1px 8px 0 rgba(0, 0, 0, 0.12),
+                0 3px 3px -2px rgba(0, 0, 0, 0.4);
+
+    border-radius: 5px;
+}
+
+// For debugging purposes:
+
+.h_r {
+    background-color: red;
+    border-color: orange;
+    border-width: 2px;
+    border-style: solid;
+//    height: 100%;
+}
+
+.h_b {
+    background-color: blue;
+    border-color: limegreen;
+    border-width: 2px;
+    border-style: solid;
+//    height: 100%;
+}

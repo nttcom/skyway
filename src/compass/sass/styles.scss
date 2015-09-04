@@ -1,0 +1,284 @@
+// Import Bootstrap Compass integration
+//@import "bootstrap-compass";
+
+// Import custom Bootstrap variables
+@import "bootstrap/bootstrap-variables";
+
+// Import Bootstrap for Sass
+@import "bootstrap";
+
+// Import Bootswatch paper theme
+//@import "bootstrap/bootswatch-variables";
+//@import "bootstrap/bootswatch";
+
+@import "utilities/mixins";
+@import "utilities/variables";
+
+@import "components/animation";
+@import "components/button";
+@import "components/footer";
+@import "components/navbar";
+@import "components/share";
+
+@import "pages/demo";
+@import "pages/documentation";
+@import "pages/features";
+@import "pages/index";
+@import "pages/info-page";
+@import "pages/news";
+@import "pages/support";
+
+/* Define and import fonts */
+
+@font-face {
+    font-family: 'Noto Sans Japanese';
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/NotoSansCJKjp-Thin.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/NotoSansCJKjp-Thin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/NotoSansCJKjp-Thin.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/NotoSansCJKjp-Thin.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'Noto Sans Japanese';
+    font-style: normal;
+    font-weight: 200;
+    src: url('../fonts/NotoSansCJKjp-Light.eot');
+    src: url('../fonts/NotoSansCJKjp-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/NotoSansCJKjp-Light.woff') format('woff'),
+    url('../fonts/NotoSansCJKjp-Light.ttf')  format('truetype');
+}
+@font-face {
+    font-family: 'Noto Sans Japanese';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/NotoSansCJKjp-DemiLight.eot');
+    src: url('../fonts/NotoSansCJKjp-DemiLight.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/NotoSansCJKjp-DemiLight.woff') format('woff'),
+    url('../fonts/NotoSansCJKjp-DemiLight.ttf')  format('truetype');
+}
+@font-face {
+    font-family: 'Noto Sans Japanese';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/NotoSansCJKjp-Regular.eot');
+    src: url('../fonts/NotoSansCJKjp-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/NotoSansCJKjp-Regular.woff') format('woff'),
+    url('../fonts/NotoSansCJKjp-Regular.ttf')  format('truetype');
+}
+@font-face {
+    font-family: 'Noto Sans Japanese';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/NotoSansCJKjp-Medium.eot');
+    src: url('../fonts/NotoSansCJKjp-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/NotoSansCJKjp-Medium.woff') format('woff'),
+    url('../fonts/NotoSansCJKjp-Medium.ttf')  format('truetype');
+}
+
+
+/* Common Styles */
+
+* {
+    
+//    font-family: 'Open Sans', sans-serif;
+//    @import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+//    font-family: "Noto Sans", "Noto Sans Japanese", "Open Sans", sans-serif;
+    
+    
+    font-family: "Noto Sans Japanese", sans-serif;
+    font-weight: 200;
+    
+    line-height: 26px;
+    
+}
+
+h1,h2,h3 {
+    font-weight: 200;
+}
+
+
+
+
+
+
+
+.top-section {
+    position: relative;
+    overflow: hidden;
+    
+    height: 600px;
+    background-color: $skyway_blue;
+}
+
+.top-section-short {
+    position: relative;
+    
+    height: 160px;
+    background-color: $skyway_blue;
+
+    h1 {
+        position: relative;
+        
+          top: 38px;
+
+          margin: 0px;
+          margin-left: 12px;
+
+          color: #FFF;
+          font-size: 3.2em;
+
+    }
+    
+    h2 {
+        position: relative;
+        top: 48px;
+        margin: 0;
+        margin-left: 12px;
+        
+        color: #FFF;
+        opacity: 0.6;
+        font-size: 1.5em;
+    }
+}
+
+.background {
+    position: relative;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    padding-top: 30px; 
+    padding-bottom: 30px;
+    background-color: #fff;
+}
+
+.background-blue {
+    @extend .background;
+     
+    background-color: $dark_blue;
+}
+
+.paper-style-div {
+
+    @extend .paper-style;
+
+    padding: 40px 20px;
+    margin: 10px 0px;
+
+    h2 {
+        margin: 0;
+        text-align: center;
+        font-size: 1.85em;
+        color: $dark-font;
+    }
+}
+
+.divider {
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0;
+    border-top-width: 1px;
+    border-color: $skyway_blue;
+}
+
+/* Signup div styles */
+
+.signup-div {
+    
+    padding: 60px 0px;
+    
+    h2 {
+        margin: 0;
+        text-align: center;
+        font-size: 1.85em;
+        color: #fff;
+    }
+    a {
+        left: 0;
+        right: 0;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+}
+
+.divider-short {
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    width: 100px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0;
+    border-top-width: 3px;
+    border-color: $skyway_blue;
+}
+
+.flex-box {
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: space-between; /* OLD - for IE 10 */
+}
+
+//  .flex-component {
+//      -webkit-box-flex: 1;      /* OLD - iOS 6-, Safari 3.1-6 */
+//      -moz-box-flex: 1;         /* OLD - Firefox 19- */
+///*          width: 33%;                For old syntax, otherwise collapses. */
+//      -webkit-flex: 1;          /* Chrome */
+//      -ms-flex: 1;              /* IE 10 */
+//      flex: 1;                  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+//  }
+
+
+
+
+
+
+
+/* Responsive code */
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .top-section-short {
+        br {
+            display: none;   
+        }
+    }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 767px) {
+    
+    .top-section-short {
+        h1 {
+            font-size: 2.5em;
+        }
+        .h2-long {
+            font-size: 1.2em;
+        }
+    }
+    .background-blue {
+        padding: 0 !important;
+    }
+    
+    .paper-style-div {
+        margin: 0 !important;
+        border-radius: 0;
+    }
+}

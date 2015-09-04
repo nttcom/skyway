@@ -15,3 +15,10 @@ npm-debug.log
 Gemfile.lock
 vendor
 .bundle
+
+# sass cache
+.sass-cache
+src/compass/.sass-cache
+
+# Gulp build files
+build

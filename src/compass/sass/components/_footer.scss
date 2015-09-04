@@ -1,0 +1,128 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+
+#footer {
+    position: relative;
+    height: 240px;
+
+    margin-top: 0px;
+
+    color: #fff;
+    background-color: #3f3f3f;
+    
+    
+    .divider {
+//        top: 110px;
+        width: 350px;
+        margin-top: 34px;
+        
+        border-color: #555555;
+    }
+    
+    
+    p {
+        display: table;
+        margin: auto;
+
+        margin-top: 24px;
+
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+}
+
+.logos-div {
+    margin-top: 32px;
+    height: 44px;
+    
+    [class^="col"] {
+        height: 100%;
+    }
+    
+    img {
+        @include vertical-align;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 32px;
+
+        object-fit: scale-down;
+
+        cursor:pointer;
+    }
+    
+    #ntt-logo {
+        height: 36px;
+    }
+
+    #skyway-logo {
+        height: 44px;
+    }
+}
+
+
+
+.links-div {
+    margin-top: 26px;
+
+    a {
+        display:inline-block; /* For IE 10 */
+        -ms-flex: 1;
+
+//        position: relative;
+        font-size: 1.0;
+
+        color: #6f6f6f;
+    }
+    
+    a:hover {
+        color: #bfbfbf;
+    }
+
+}
+    
+
+@include bp(xs) {
+
+    #footer {
+        height: 180px;
+        
+        .divider {
+            margin-top: 16px;
+        }
+        
+        p {
+            font-size: 1.0em;
+            margin-top: 10px;
+        }  
+        
+    }
+    
+    .logos-div {
+        margin-top: 16px;
+        
+        #ntt-logo {
+            height: 25.2px !important;
+        }
+
+        #skyway-logo {
+            height: 30.8px !important;
+        }
+
+        #html5-logo {
+            height: 22.4px !important;
+        }
+    }
+    
+    .links-div {
+        margin-top: 16px;
+        
+        a {
+            font-size: 0.75em;
+        }
+    }
+    
+
+}

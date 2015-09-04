@@ -20,31 +20,47 @@ $ sudo gem install bundler
 ```sh
 $ bundle install
 ```
+3. Install npm, and then install all necessary packages:
+```sh
+$ sudo npm install
+```
+
+Make sure node and npm 
+
 
 #### Run
 
-1. run Jekyll.
+1. run gulp (Individual gulp tasks are kept in gulp/tasks/)
 ```
-$ bundle exec jekyll serve
+$ gulp
 ```
-2. access [http://localhost:4000/](http://localhost:4000/).
+2. access [http://localhost:3000/](http://localhost:3000/).
 
 ## File and Folder Structures
 
+**THIS IS OUT OF DATE**
+
 | file / directory  | content                                                       |
 |:------------------|:--------------------------------------------------------------|
-| .tmp/styles/      | _unknown_                                                     |
 | _includes/        | include files                                                 |
 | _layouts/         | template files                                                |
 | _sites/           | built files for local Web server. aren't pushed to GitHub.    |
-| app/              | HTML files which haven't been optimized to Jekyll             |
+| assets/           |                                                               |
 | bower_components/ |                                                               |
-| dist/styles/      | _unknown_                                                     |
-| elements/         |                                                               |
+| build/            | output files from gulp                                        |
+| dist/styles/      |                                                               |
+| docs/             | documentation files                                           |
+| elements/         | from Polymer (to be deleted)                                  |
 | en/               | __HTML files in English__                                     |
+| gulp/             | gulp scripts                                                  |
 | images/           | __images__                                                    |
-| scripts/          | __scripts__                                                   |
-| styles/           | __css files__                                                 |
+| news/             | contains news posts                                           |
+| node_modules/     |                                                               |
+| src/compass/      | __sass and css files__                                        |
+| src/javascript/   | __scripts__                                                   |
+| styles/           | __css files__   **OLD**                                       |
+| unused/           | HTML files which haven't been optimized for Jekyll            |
+|-------------------|---------------------------------------------------------------|
 | .gitignore        |                                                               |
 | Gemfile           |                                                               |
 | LICENSE.md        |                                                               |
@@ -53,8 +69,8 @@ $ bundle exec jekyll serve
 | bower.json        | config of Bower                                               |
 | *.html            | __HTML files in Japanese__                                    |
 | favicon.ico       | favicon                                                       |
-| manifest.json     | _should delete_                                               |
 | robots.txt        |                                                               |
+|-------------------|---------------------------------------------------------------|
 
 ## Reference
 

@@ -1,0 +1,25 @@
+<div class="row main-content-row">
+    <div class="col-sm-12 signup-div">
+        
+        {% case page.lang %}
+        {% when 'jp' %}
+        <h2 id="signup-header">SkyWayは無料で利用可能です！</h2>
+        {% when 'en' %}
+        <h2 id="signup-header">Like what you see? SkyWay is free to try.</h2>
+        {% else %}
+        {% endcase %}
+        
+        <div class="divider-short"></div>
+
+        <a class="btn-paper btn-center" href='https://skyway.io/ds/registration/' target="_blank">
+            {% case page.lang %}
+            {% when 'jp' %}
+            登録を行う
+            {% when 'en' %}
+            Sign Up
+            {% else %}
+            {% endcase %}
+        </a>  
+
+    </div>
+</div>
