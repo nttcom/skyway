@@ -11754,9 +11754,12 @@ a {
 }
 
 .mini-headline-date {
+  float: right;
   margin-bottom: 8px;
+  margin-right: 8px;
   padding: 0;
   max-width: 160px;
+  min-width: 120px;
   height: 28px;
   line-height: 28px;
   text-align: center;
@@ -11790,6 +11793,7 @@ a {
   }
 
   .mini-headline-date {
+    float: none;
     margin-left: 15px;
     width: 100px;
   }

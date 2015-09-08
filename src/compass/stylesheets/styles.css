@@ -13987,9 +13987,12 @@ a {
 
 /* line 163, ../sass/pages/_index.scss */
 .mini-headline-date {
+  float: right;
   margin-bottom: 8px;
+  margin-right: 8px;
   padding: 0;
   max-width: 160px;
+  min-width: 120px;
   height: 28px;
   line-height: 28px;
   text-align: center;
@@ -13999,7 +14002,7 @@ a {
   border-radius: 5px;
 }
 
-/* line 176, ../sass/pages/_index.scss */
+/* line 182, ../sass/pages/_index.scss */
 .mini-headline-text {
   margin-left: -10px;
   font-size: 1.3em;
@@ -14009,30 +14012,31 @@ a {
 
 /* Medium Devices, Desktops */
 @media (max-width: 992px) {
-  /* line 188, ../sass/pages/_index.scss */
+  /* line 194, ../sass/pages/_index.scss */
   .highlight br {
     display: none;
   }
 }
 /* Portrait phones and smaller */
 @media (max-width: 768px) {
-  /* line 196, ../sass/pages/_index.scss */
+  /* line 202, ../sass/pages/_index.scss */
   .highlight {
     text-align: center;
     height: 170px;
   }
-  /* line 200, ../sass/pages/_index.scss */
+  /* line 206, ../sass/pages/_index.scss */
   .highlight i {
     font-size: 3em;
   }
 
-  /* line 205, ../sass/pages/_index.scss */
+  /* line 211, ../sass/pages/_index.scss */
   .mini-headline-date {
+    float: none;
     margin-left: 15px;
     width: 100px;
   }
 
-  /* line 212, ../sass/pages/_index.scss */
+  /* line 220, ../sass/pages/_index.scss */
   .mini-headline-text {
     margin: 0;
   }
