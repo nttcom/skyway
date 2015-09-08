@@ -12040,7 +12040,7 @@ button.close {
 }
 
 /* line 29, ../sass/utilities/_variables.scss */
-.paper-style, .documentation-menu, .support-div, .feature-box, .howto-step .code-section, .paper-style-div {
+.paper-style, .btn-share, .documentation-menu, .support-div, .feature-box, .howto-step .code-section, .paper-style-div {
   position: relative;
   padding: 8px;
   background-color: #fff;
@@ -13436,23 +13436,34 @@ a {
 
 /* Share button styles */
 /* line 3, ../sass/components/_share.scss */
-.share-button {
+.btn-share {
   position: fixed;
   right: 24px;
   width: 50px;
   height: 50px;
   z-index: 10;
-  /*    display:none;*/
+  border-radius: 50%;
 }
-
-/* line 16, ../sass/components/_share.scss */
-.share-button:hover {
+/* line 17, ../sass/components/_share.scss */
+.btn-share:hover {
   transform: scale(1.1, 1.1);
   -webkit-transform: scale(1.1, 1.1);
 }
+/* line 22, ../sass/components/_share.scss */
+.btn-share img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 28px;
+  width: 28px;
+  object-fit: scale-down;
+}
 
-/* line 21, ../sass/components/_share.scss */
-label {
+/* line 37, ../sass/components/_share.scss */
+.label-share {
   position: fixed;
   right: 20px;
   height: 30px;
@@ -13467,78 +13478,42 @@ label {
   z-index: 1;
 }
 
-/* line 41, ../sass/components/_share.scss */
-#share-button-tw {
-  bottom: 24px;
-  background: #55ACEE;
-}
-
-/* line 51, ../sass/components/_share.scss */
-#share-button-tw ::content * {
-  height: 28px;
-  width: 28px;
-}
-
-/* line 56, ../sass/components/_share.scss */
-#twitter-share-label {
-  bottom: 24px;
-}
-
-/* line 60, ../sass/components/_share.scss */
-#share-button-fb {
-  bottom: 90px;
-  background: #4E5FAD;
-  --iron-icon-height: 40px;
-  --iron-icon-width: 40px;
-  --paper-fab-background: #4E5FAD;
-}
-
-/* line 73, ../sass/components/_share.scss */
-#share-button-fb::icon {
-  height: 40px;
-  width: 40px;
-}
-
-/* line 78, ../sass/components/_share.scss */
-#facebook-share-label {
-  bottom: 90px;
-}
-
-/* line 82, ../sass/components/_share.scss */
-#share-button-git {
+/* line 57, ../sass/components/_share.scss */
+#btn-share-git {
   bottom: 156px;
   background: #3f3f3f;
   --iron-icon-height: 36px;
   --iron-icon-width: 36px;
 }
 
-/* line 92, ../sass/components/_share.scss */
-#github-share-label {
+/* line 67, ../sass/components/_share.scss */
+#label-share-git {
   bottom: 156px;
 }
 
-/* Portrait phones and smaller */
-@media (max-width: 767px) {
-  /* line 98, ../sass/components/_share.scss */
-  .share-button {
-    right: 8px;
-  }
-
-  /* line 102, ../sass/components/_share.scss */
-  #share-button-tw {
-    bottom: 8px;
-  }
-
-  /* line 106, ../sass/components/_share.scss */
-  #share-button-fb {
-    bottom: 74px;
-  }
-
-  /* line 110, ../sass/components/_share.scss */
-  #share-button-git {
-    bottom: 140px;
-  }
+/* line 71, ../sass/components/_share.scss */
+#btn-share-fb {
+  bottom: 90px;
+  background: #4E5FAD;
 }
+
+/* line 82, ../sass/components/_share.scss */
+#label-share-fb {
+  bottom: 90px;
+}
+
+/* line 86, ../sass/components/_share.scss */
+#btn-share-tw {
+  bottom: 24px;
+  background: #55ACEE;
+}
+
+/* line 96, ../sass/components/_share.scss */
+#label-share-twitter {
+  bottom: 24px;
+}
+
+/* Portrait phones and smaller */
 /* line 2, ../sass/pages/_demo.scss */
 .platform-logo {
   position: absolute;

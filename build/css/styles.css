@@ -7330,8 +7330,8 @@ button.close {
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url(../fonts/font-awesome/fontawesome-webfont.eot?1441091434);
-  src: url(../fonts/font-awesome/fontawesome-webfont.eot?&1441091434#iefix) format("embedded-opentype"), url(../fonts/font-awesome/fontawesome-webfont.woff2?1441091434) format("woff2"), url(../fonts/font-awesome/fontawesome-webfont.woff?1441091434) format("woff"), url(../fonts/font-awesome/fontawesome-webfont.ttf?1441091434) format("truetype"), url(../fonts/font-awesome/fontawesome-webfont.svg?1441091434#fontawesomeregular) format("svg");
+  src: url(../../fonts/font-awesome/fontawesome-webfont.eot);
+  src: url(../../fonts/font-awesome/fontawesome-webfont.eot?#iefix) format("embedded-opentype"), url(../../fonts/font-awesome/fontawesome-webfont.woff2) format("woff2"), url(../../fonts/font-awesome/fontawesome-webfont.woff) format("woff"), url(../../fonts/font-awesome/fontawesome-webfont.ttf) format("truetype"), url(../../fonts/font-awesome/fontawesome-webfont.svg#fontawesomeregular) format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -9970,7 +9970,7 @@ button.close {
   border-radius: 5px;
 }
 
-.paper-style, .documentation-menu, .support-div, .feature-box, .howto-step .code-section, .paper-style-div {
+.paper-style, .btn-share, .documentation-menu, .support-div, .feature-box, .howto-step .code-section, .paper-style-div {
   position: relative;
   padding: 8px;
   background-color: #fff;
@@ -11280,21 +11280,31 @@ a {
 }
 
 /* Share button styles */
-.share-button {
+.btn-share {
   position: fixed;
   right: 24px;
   width: 50px;
   height: 50px;
   z-index: 10;
-  /*    display:none;*/
+  border-radius: 50%;
 }
-
-.share-button:hover {
+.btn-share:hover {
   transform: scale(1.1, 1.1);
   -webkit-transform: scale(1.1, 1.1);
 }
+.btn-share img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 28px;
+  width: 28px;
+  object-fit: scale-down;
+}
 
-label {
+.label-share {
   position: fixed;
   right: 20px;
   height: 30px;
@@ -11309,66 +11319,36 @@ label {
   z-index: 1;
 }
 
-#share-button-tw {
-  bottom: 24px;
-  background: #55ACEE;
-}
-
-#share-button-tw ::content * {
-  height: 28px;
-  width: 28px;
-}
-
-#twitter-share-label {
-  bottom: 24px;
-}
-
-#share-button-fb {
-  bottom: 90px;
-  background: #4E5FAD;
-  --iron-icon-height: 40px;
-  --iron-icon-width: 40px;
-  --paper-fab-background: #4E5FAD;
-}
-
-#share-button-fb::icon {
-  height: 40px;
-  width: 40px;
-}
-
-#facebook-share-label {
-  bottom: 90px;
-}
-
-#share-button-git {
+#btn-share-git {
   bottom: 156px;
   background: #3f3f3f;
   --iron-icon-height: 36px;
   --iron-icon-width: 36px;
 }
 
-#github-share-label {
+#label-share-git {
   bottom: 156px;
 }
 
-/* Portrait phones and smaller */
-@media (max-width: 767px) {
-  .share-button {
-    right: 8px;
-  }
-
-  #share-button-tw {
-    bottom: 8px;
-  }
-
-  #share-button-fb {
-    bottom: 74px;
-  }
-
-  #share-button-git {
-    bottom: 140px;
-  }
+#btn-share-fb {
+  bottom: 90px;
+  background: #4E5FAD;
 }
+
+#label-share-fb {
+  bottom: 90px;
+}
+
+#btn-share-tw {
+  bottom: 24px;
+  background: #55ACEE;
+}
+
+#label-share-twitter {
+  bottom: 24px;
+}
+
+/* Portrait phones and smaller */
 .platform-logo {
   position: absolute;
   top: 0;
