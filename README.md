@@ -45,12 +45,8 @@ $ gulp
 | _includes/        | include files                                                 |
 | _layouts/         | template files                                                |
 | _sites/           | built files for local Web server. aren't pushed to GitHub.    |
-| assets/           |                                                               |
-| bower_components/ |                                                               |
 | build/            | output files from gulp                                        |
-| dist/styles/      |                                                               |
 | docs/             | documentation files                                           |
-| elements/         | from Polymer (to be deleted)                                  |
 | en/               | __HTML files in English__                                     |
 | gulp/             | gulp scripts                                                  |
 | images/           | __images__                                                    |
@@ -60,16 +56,17 @@ $ gulp
 | src/javascript/   | __scripts__                                                   |
 | styles/           | __css files__   **OLD**                                       |
 | unused/           | HTML files which haven't been optimized for Jekyll            |
+| vendor/           |                                                               |
 |-------------------|---------------------------------------------------------------|
 | .gitignore        |                                                               |
-| Gemfile           |                                                               |
-| LICENSE.md        |                                                               |
-| README.md         |                                                               |
 | _config.yml       | config of Jekyll                                              |
-| bower.json        | config of Bower                                               |
-| *.html            | __HTML files in Japanese__                                    |
 | favicon.ico       | favicon                                                       |
+| Gemfile           |                                                               |
+| Gemfile.lock      |                                                               |
+| gulpfule.js       | gulp build file (Reads contents of 'gulp' folder)             |
+| README.md         |                                                               |
 | robots.txt        |                                                               |
+| *.html            | __HTML files in Japanese__                                    |
 |-------------------|---------------------------------------------------------------|
 
 ## Reference
