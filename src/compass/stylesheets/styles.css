@@ -14281,20 +14281,19 @@ a {
 /* line 14, ../sass/pages/_news.scss */
 .news-headline {
   padding: 12px 8px 16px 8px;
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 /* line 24, ../sass/pages/_news.scss */
 .news-headline .news-headline-date {
   padding: 0;
-  margin-bottom: 8px;
+  margin: 8px 0;
   max-width: 160px;
   height: 28px;
-  line-height: 28px;
+  line-height: 30px;
   text-align: center;
   color: #FFF;
   background-color: #5285FF;
   border-radius: 5px;
-  margin-top: 8px;
 }
 /* line 38, ../sass/pages/_news.scss */
 .news-headline .news-headline-text {
