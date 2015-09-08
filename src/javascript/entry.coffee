@@ -10,4 +10,4 @@ share       = require './share'
 #support     = require './support'
 #highlight   = require './highlight/highlight.pack.js'
 
-console.log 'bundle.js loaded!'
+console.log 'app.js loaded!'

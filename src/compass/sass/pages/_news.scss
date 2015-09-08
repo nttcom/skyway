@@ -19,20 +19,20 @@
 //    border-width: 1px ;
 //    border-color: $skyway-blue;
     
-    font-size: 1.4em;
+    font-size: 1.2em;
     
     .news-headline-date {
         padding: 0;
-        margin-bottom: 8px;
+        margin: 8px 0;
+        
         max-width: 160px;
         height: 28px;
-        line-height: 28px;
+        line-height: 30px;
         text-align: center;
         color: #FFF;
         background-color: $skyway_blue;
         border-radius: 5px;
         
-        margin-top: 8px;
     }
     
     .news-headline-text {

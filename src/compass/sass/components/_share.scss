@@ -1,6 +1,8 @@
 /* Share button styles */
 
-.share-button {
+.btn-share {
+    @extend .paper-style;
+    
     position: fixed;
 
     right: 24px;
@@ -9,16 +11,32 @@
     height: 50px;
 
     z-index: 10;
-
-/*    display:none;*/
+    
+    border-radius: 50%;
+    
+    &:hover {
+        transform: scale(1.1, 1.1);
+        -webkit-transform: scale(1.1, 1.1);
+    }
+    
+    img {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        
+        height: 28px;
+        width: 28px;
+        
+        object-fit: scale-down;
+    }
 }
 
-.share-button:hover {
-    transform: scale(1.1, 1.1);
-    -webkit-transform: scale(1.1, 1.1);
-}
-
-label {
+.label-share {
+    @extend .paper-style-layer-1;
+    
     position: fixed;
 
     right: 20px;
@@ -27,59 +45,22 @@ label {
     line-height: 30px;
 
     margin: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0 10px;
 
-    color: #777;
+    color: #6a6a6a;
     background-color: #eee;
+//    border-color: #ddd;
+//    border-style: solid 1px;
+    
     opacity: 0;
     border-radius: 5px;
 
+    font-weight: 300;
+    
     z-index: 1;
 }
 
-#share-button-tw {
-    bottom: 24px;
-
-    background: #55ACEE;
-    
-//    --iron-icon-height: 28px !important;
-//    --iron-icon-width: 28px;
-
-}
-
-#share-button-tw ::content *{
-    height: 28px;
-    width: 28px;
-}
-
-#twitter-share-label {
-    bottom: 24px;
-}
-
-#share-button-fb {
-
-    bottom: 90px;
-    
-    background: #4E5FAD;
-
-    --iron-icon-height: 40px;
-    --iron-icon-width: 40px;
-
-    --paper-fab-background: #4E5FAD;
-
-}
-
-#share-button-fb::icon {
-    height: 40px;
-    width: 40px;
-}
-
-#facebook-share-label {
-    bottom: 90px;
-}
-
-#share-button-git {
+#btn-share-git {
     bottom: 156px;
     
     background: #3f3f3f;
@@ -89,28 +70,61 @@ label {
 
 }
 
-#github-share-label {
+#label-share-git {
     bottom: 156px;
 }
 
-/* Portrait phones and smaller */
-@media (max-width: 767px) {
-    .share-button {
-        right: 8px;
-    }
+#btn-share-fb {
+
+    bottom: 90px;
     
-    #share-button-tw {
-        bottom: 8px;
-    }
-    
-    #share-button-fb {
-        bottom: 74px;
-    }
-    
-    #share-button-git {
-        bottom: 140px;
-    }
+    background: #4E5FAD;
+
+//    --iron-icon-height: 40px;
+//    --iron-icon-width: 40px;
+
 }
+
+#label-share-fb {
+    bottom: 90px;
+}
+
+#btn-share-tw {
+    bottom: 24px;
+
+    background: #55ACEE;
+    
+//    --iron-icon-height: 28px !important;
+//    --iron-icon-width: 28px;
+
+}
+
+#label-share-tw {
+    bottom: 24px;
+}
+
+
+
+
+
+/* Portrait phones and smaller */
+//@media (max-width: 767px) {
+//    .share-button {
+//        right: 8px;
+//    }
+//    
+//    #share-button-tw {
+//        bottom: 8px;
+//    }
+//    
+//    #share-button-fb {
+//        bottom: 74px;
+//    }
+//    
+//    #share-button-git {
+//        bottom: 140px;
+//    }
+//}
     
 //@media only screen and (max-device-width: 580px){
 //    label {

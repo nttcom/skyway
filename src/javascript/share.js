@@ -8,46 +8,46 @@ $(document).ready(function() {
 //        console.log('Hoi!');
 //    });
     
-    $("#share-button-tw").mouseenter(function(){
-        $("#twitter-share-label").stop().animate({
+    $("#btn-share-git").mouseenter(function(){
+        $("#label-share-git").stop().animate({
             right: '76px',
             opacity: '0.8'
         }, 150);
             
     });
     
-    $("#share-button-tw").mouseleave(function(){
-        $("#twitter-share-label").stop().animate({
+    $("#btn-share-git").mouseleave(function(){
+        $("#label-share-git").stop().animate({
             right: '20px',
             opacity: '0.0'
         }, 250);
     });
     
-    $("#share-button-fb").mouseenter(function(){
-        $("#facebook-share-label").stop().animate({
+    $("#btn-share-fb").mouseenter(function(){
+        $("#label-share-fb").stop().animate({
             right: '76px',
             opacity: '0.8'
         }, 150);
             
     });
     
-    $("#share-button-fb").mouseleave(function(){
-        $("#facebook-share-label").stop().animate({
+    $("#btn-share-fb").mouseleave(function(){
+        $("#label-share-fb").stop().animate({
             right: '20px',
             opacity: '0.0'
         }, 250);
     });
     
-    $("#share-button-git").mouseenter(function(){
-        $("#github-share-label").stop().animate({
+    $("#btn-share-tw").mouseenter(function(){
+        $("#label-share-tw").stop().animate({
             right: '76px',
             opacity: '0.8'
         }, 150);
             
     });
     
-    $("#share-button-git").mouseleave(function(){
-        $("#github-share-label").stop().animate({
+    $("#btn-share-tw").mouseleave(function(){
+        $("#label-share-tw").stop().animate({
             right: '20px',
             opacity: '0.0'
         }, 250);
