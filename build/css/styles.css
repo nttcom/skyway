@@ -9961,7 +9961,7 @@ button.close {
   content: "";
 }
 
-.paper-style-layer-1, .btn-paper, .platform-logo, .demo-container, .documentation-other-menu, .support-box {
+.paper-style-layer-1, .btn-paper, .label-share, .platform-logo, .demo-container, .documentation-other-menu, .support-box {
   position: relative;
   padding: 8px;
   background-color: #fff;
@@ -11310,12 +11310,12 @@ a {
   height: 30px;
   line-height: 30px;
   margin: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  color: #777;
+  padding: 0 10px;
+  color: #6a6a6a;
   background-color: #eee;
   opacity: 0;
   border-radius: 5px;
+  font-weight: 300;
   z-index: 1;
 }
 
@@ -11344,7 +11344,7 @@ a {
   background: #55ACEE;
 }
 
-#label-share-twitter {
+#label-share-tw {
   bottom: 24px;
 }
 

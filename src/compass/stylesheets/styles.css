@@ -12030,7 +12030,7 @@ button.close {
 }
 
 /* line 15, ../sass/utilities/_variables.scss */
-.paper-style-layer-1, .btn-paper, .platform-logo, .demo-container, .documentation-other-menu, .support-box {
+.paper-style-layer-1, .btn-paper, .label-share, .platform-logo, .demo-container, .documentation-other-menu, .support-box {
   position: relative;
   padding: 8px;
   background-color: #fff;
@@ -13469,16 +13469,16 @@ a {
   height: 30px;
   line-height: 30px;
   margin: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  color: #777;
+  padding: 0 10px;
+  color: #6a6a6a;
   background-color: #eee;
   opacity: 0;
   border-radius: 5px;
+  font-weight: 300;
   z-index: 1;
 }
 
-/* line 57, ../sass/components/_share.scss */
+/* line 63, ../sass/components/_share.scss */
 #btn-share-git {
   bottom: 156px;
   background: #3f3f3f;
@@ -13486,30 +13486,30 @@ a {
   --iron-icon-width: 36px;
 }
 
-/* line 67, ../sass/components/_share.scss */
+/* line 73, ../sass/components/_share.scss */
 #label-share-git {
   bottom: 156px;
 }
 
-/* line 71, ../sass/components/_share.scss */
+/* line 77, ../sass/components/_share.scss */
 #btn-share-fb {
   bottom: 90px;
   background: #4E5FAD;
 }
 
-/* line 82, ../sass/components/_share.scss */
+/* line 88, ../sass/components/_share.scss */
 #label-share-fb {
   bottom: 90px;
 }
 
-/* line 86, ../sass/components/_share.scss */
+/* line 92, ../sass/components/_share.scss */
 #btn-share-tw {
   bottom: 24px;
   background: #55ACEE;
 }
 
-/* line 96, ../sass/components/_share.scss */
-#label-share-twitter {
+/* line 102, ../sass/components/_share.scss */
+#label-share-tw {
   bottom: 24px;
 }
 

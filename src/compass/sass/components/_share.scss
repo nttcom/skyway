@@ -35,6 +35,8 @@
 }
 
 .label-share {
+    @extend .paper-style-layer-1;
+    
     position: fixed;
 
     right: 20px;
@@ -43,14 +45,18 @@
     line-height: 30px;
 
     margin: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0 10px;
 
-    color: #777;
+    color: #6a6a6a;
     background-color: #eee;
+//    border-color: #ddd;
+//    border-style: solid 1px;
+    
     opacity: 0;
     border-radius: 5px;
 
+    font-weight: 300;
+    
     z-index: 1;
 }
 
@@ -93,7 +99,7 @@
 
 }
 
-#label-share-twitter {
+#label-share-tw {
     bottom: 24px;
 }
 
