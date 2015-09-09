@@ -35,16 +35,11 @@
     <link rel="import" href="{{ site.homedir[page.lang] }}elements/elements.html">
     <link rel="stylesheet" href="{{ site.homedir[page.lang] }}src/compass/stylesheets/styles.css">
 <!--    <link rel="stylesheet" href="{{ site.homedir[page.lang] }}build/css/styles.min.css">-->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <!-- endreplace-->
 
-    <!-- highlight.js -->
-    <link rel="stylesheet" href="{{ site.homedir[page.lang] }}styles/highlights/tomorrow-night.css">
-        <script src="{{ site.homedir[page.lang] }}src/javascript/highlight/highlight.pack.js"></script>
-    <!-- endhighlight -->
     
     <!-- The following script contains ALL JS code: -->
-    <script src="{{ site.homedir[page.lang] }}build/app.js"></script>
+    <script src="{{ site.homedir[page.lang] }}build/app.js" async></script>
 <!--    <script src="{{ site.homedir[page.lang] }}assets/js/jquery-2.1.4.min.js"></script>-->
 <!--    <script src="{{ site.homedir[page.lang] }}assets/js/bootstrap.min.js"></script>-->
 <!--    <script src="{{ site.homedir[page.lang] }}assets/js/main.min.js"></script>-->
@@ -85,6 +80,12 @@
         ga('create', 'UA-46095916-2', 'auto');
         ga('send', 'pageview');
     </script>
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- highlight.js -->
+    <link rel="stylesheet" href="{{ site.homedir[page.lang] }}styles/highlights/tomorrow-night.css">
+    <script src="{{ site.homedir[page.lang] }}src/javascript/highlight/highlight.pack.js" async></script>
+    <!-- endhighlight -->
 
 </body>
 
