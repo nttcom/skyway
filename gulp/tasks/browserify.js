@@ -14,6 +14,8 @@ var bundleLogger = require('../util/bundleLogger');
 var gulp         = require('gulp');
 var handleErrors = require('../util/handleErrors');
 var source       = require('vinyl-source-stream');
+var buffer       = require('vinyl-buffer');
+var uglify       = require('gulp-uglify');
 var config       = require('../config').browserify;
 var _            = require('lodash');
 
@@ -44,6 +46,9 @@ var browserifyTask = function(devMode) {
         // stream gulp compatible. Specify the
         // desired output filename here.
         .pipe(source(bundleConfig.outputName))
+        // Uglify the output file
+        .pipe(buffer())
+        .pipe(uglify())
         // Specify the output destination
         .pipe(gulp.dest(bundleConfig.dest))
         .pipe(browserSync.reload({
