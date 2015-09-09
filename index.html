@@ -32,13 +32,24 @@ description: WebRTCは、ブラウザや専用アプリ同士でリアルタイ�
             <div class="row row-top-images">
                 <div class="col-xs-6">
                     <a href="info-js.html">
-                        <img src="{{ site.homedir[page.lang] }}images/top_images/index_js_top.png" class="animation-image">
+                        <picture>
+                            <source
+                                media="(min-width: 500px)"
+                                srcset="{{ site.homedir[page.lang] }}images/top_images/index_js_top.png">
+
+                            <img src="{{ site.homedir[page.lang] }}images/top_images/index_js_top_small.png" class="animation-image">
+                        </picture>
                         <h3>JavaScript</h3>
                     </a>
                 </div>
                 <div class="col-xs-6">
                     <a href="info-mobile.html">
-                        <img src="{{ site.homedir[page.lang] }}images/top_images/index_mobile_top.png" class="animation-image">
+                        <picture>
+                            <source
+                                media="(min-width: 500px)"
+                                srcset="{{ site.homedir[page.lang] }}images/top_images/index_mobile_top.png">
+                                <img src="{{ site.homedir[page.lang] }}images/top_images/index_mobile_top_small.png" class="animation-image">
+                         </picture>
                          <h3>iOS/Android</h3>
                     </a>
                 </div>
