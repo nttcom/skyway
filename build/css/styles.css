@@ -11205,6 +11205,15 @@ a {
   margin: 0;
 }
 
+.navbar-inverse .nav li.dropdown.open > .dropdown-toggle,
+.navbar-inverse .nav li.dropdown.active > .dropdown-toggle,
+.navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle,
+.navbar,
+.navbar-inverse .navbar-inner {
+  filter: none;
+  background-image: none;
+}
+
 @media (min-width: 992px) {
   .navbar-tabs-centered {
     /*        position: absolute;*/
