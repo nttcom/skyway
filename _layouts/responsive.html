@@ -27,17 +27,9 @@
     {% else %}
     {% endcase %}
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="{{ site.homedir[page.lang] }}src/compass/stylesheets/styles.css">
-<!--    <link rel="stylesheet" href="{{ site.homedir[page.lang] }}build/css/styles.min.css">-->
-    <!-- endreplace-->
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="{{ site.homedir[page.lang] }}src/compass/stylesheets/styles.css" async>
 
-    
-    <!-- The following script contains ALL JS code: -->
-<!--    <script src="{{ site.homedir[page.lang] }}build/app.js" async></script>-->
-<!--    <script src="{{ site.homedir[page.lang] }}assets/js/jquery-2.1.4.min.js"></script>-->
-<!--    <script src="{{ site.homedir[page.lang] }}assets/js/bootstrap.min.js"></script>-->
-<!--    <script src="{{ site.homedir[page.lang] }}assets/js/main.min.js"></script>-->
     <!--[if lt IE 9]>
         <script src="{{ site.homedir[page.lang] }}src/javascript/compatibility/respond.src.js"></script>
         <script src="{{ site.homedir[page.lang] }}src/javascript/compatibility/html5.js"></script>
