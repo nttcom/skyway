@@ -11332,8 +11332,11 @@ a {
 #btn-share-git {
   bottom: 156px;
   background: #3f3f3f;
-  --iron-icon-height: 36px;
-  --iron-icon-width: 36px;
+}
+#btn-share-git img {
+  height: 36px !important;
+  width: 36px !important;
+  object-fit: scale-down;
 }
 
 #label-share-git {

@@ -13493,33 +13493,37 @@ a {
 #btn-share-git {
   bottom: 156px;
   background: #3f3f3f;
-  --iron-icon-height: 36px;
-  --iron-icon-width: 36px;
+}
+/* line 67, ../sass/components/_share.scss */
+#btn-share-git img {
+  height: 36px !important;
+  width: 36px !important;
+  object-fit: scale-down;
 }
 
-/* line 73, ../sass/components/_share.scss */
+/* line 74, ../sass/components/_share.scss */
 #label-share-git {
   bottom: 156px;
 }
 
-/* line 77, ../sass/components/_share.scss */
+/* line 78, ../sass/components/_share.scss */
 #btn-share-fb {
   bottom: 90px;
   background: #4E5FAD;
 }
 
-/* line 88, ../sass/components/_share.scss */
+/* line 83, ../sass/components/_share.scss */
 #label-share-fb {
   bottom: 90px;
 }
 
-/* line 92, ../sass/components/_share.scss */
+/* line 87, ../sass/components/_share.scss */
 #btn-share-tw {
   bottom: 24px;
   background: #55ACEE;
 }
 
-/* line 102, ../sass/components/_share.scss */
+/* line 92, ../sass/components/_share.scss */
 #label-share-tw {
   bottom: 24px;
 }
