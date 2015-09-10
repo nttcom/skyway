@@ -8597,6 +8597,7 @@ a {
   /* Tab Colours */
   color: #5285FF !important;
   opacity: 0.7;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
   font-weight: 400;
   font-size: 1.1em;
   /* TODO: Responsive resizing */
@@ -8604,6 +8605,7 @@ a {
 .navbar-tabs a:hover {
   color: #4265DF !important;
   opacity: 1.0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
 #logoButton {
@@ -8685,6 +8687,7 @@ a {
   color: #6a6a6a;
   background-color: #eee;
   opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   border-radius: 5px;
   font-weight: 300;
   z-index: 1;
@@ -9010,6 +9013,7 @@ a {
   margin: 14px 0 16px 0;
   color: #FFF;
   opacity: 0.6;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
   font-size: 1.85em;
   text-align: center;
 }
@@ -9048,6 +9052,7 @@ a {
   margin-top: 20px;
   color: #FFF;
   opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
   font-size: 1.8em;
   text-align: center;
 }
@@ -9216,6 +9221,7 @@ a {
   margin-left: 10px;
   color: #fff;
   opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
   font-size: 1.5em;
   height: auto;
 }
@@ -9471,6 +9477,7 @@ h1, h2, h3 {
   margin-left: 12px;
   color: #FFF;
   opacity: 0.6;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
   font-size: 1.5em;
 }
 

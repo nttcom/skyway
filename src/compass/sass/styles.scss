@@ -79,6 +79,7 @@ h1,h2,h3 {
         
         color: #FFF;
         opacity: 0.6;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
         font-size: 1.5em;
     }
 }

@@ -16,6 +16,7 @@
         margin: 14px 0 16px 0;
         color: #FFF;
         opacity: 0.6;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
         font-size: 1.85em;
         text-align: center;
     }
@@ -63,6 +64,7 @@
                 margin-top: 20px;
                 color: #FFF;
                 opacity: 0.8;
+                -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
                 font-size: 1.8em;
                 text-align: center;
             }
