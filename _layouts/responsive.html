@@ -30,11 +30,6 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="{{ site.homedir[page.lang] }}src/compass/stylesheets/styles.css" async>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
-
-    <!--[if lt IE 9]>
-        <script src="{{ site.homedir[page.lang] }}src/javascript/compatibility/respond.src.js"></script>
-        <script src="{{ site.homedir[page.lang] }}src/javascript/compatibility/html5.js"></script>
-    <![endif]-->
     
 </head>
 
@@ -59,11 +54,21 @@
     
     <!-- The following script contains ALL JS code: -->
     <script src="{{ site.homedir[page.lang] }}build/app.js" async></script>
-    <!--    <script src="{{ site.homedir[page.lang] }}assets/js/main.min.js"></script>-->
+    <!--[if lt IE 9]>
+        <script src="{{ site.homedir[page.lang] }}src/javascript/compatibility/respond.src.js"></script>
+        <script src="{{ site.homedir[page.lang] }}src/javascript/compatibility/html5.js"></script>
+    <![endif]-->
 
     <!-- highlight.js -->
     <link rel="stylesheet" href="{{ site.homedir[page.lang] }}styles/highlights/tomorrow-night.css">
     <script src="{{ site.homedir[page.lang] }}src/javascript/highlight/highlight.pack.js"></script>
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    
+    <!-- highlight.js -->
+    <link rel="stylesheet" href="{{ site.homedir[page.lang] }}styles/highlights/tomorrow-night.css">
+    <script src="{{ site.homedir[page.lang] }}src/javascript/highlight/highlight.pack.js" async></script>
+    <!-- endhighlight -->
     
     <!-- Google Analytics -->
     <script>
@@ -75,12 +80,6 @@
         ga('create', 'UA-46095916-2', 'auto');
         ga('send', 'pageview');
     </script>
-
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <!-- highlight.js -->
-    <link rel="stylesheet" href="{{ site.homedir[page.lang] }}styles/highlights/tomorrow-night.css">
-    <script src="{{ site.homedir[page.lang] }}src/javascript/highlight/highlight.pack.js" async></script>
-    <!-- endhighlight -->
 
 </body>
 
