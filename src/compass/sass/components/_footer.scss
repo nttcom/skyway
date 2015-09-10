@@ -87,7 +87,8 @@
 @include bp(xs) {
 
     #footer {
-        height: 180px;
+        height: auto;
+        padding-bottom: 16px;
         
         .divider {
             margin-top: 16px;
@@ -116,11 +117,19 @@
         }
     }
     
+
     .links-div {
+        margin: 0;
         margin-top: 16px;
         
+        width: 100%;
+        
+        display: table !important;
+        
         a {
-            font-size: 0.75em;
+            width: 100%;
+            display: table-row;
+            text-align: center;
         }
     }
     
