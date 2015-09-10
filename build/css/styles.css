@@ -8358,16 +8358,17 @@ a {
 .btn-feature-bottom {
   position: absolute;
   bottom: 0;
+  width: 100%;
   width: calc(100% + 16px);
   color: #fff;
-  background-color: #bfbfbf !important;
+  background-color: #3b4782 !important;
   background-color: rgba(0, 0, 0, 0.25) !important;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
 }
 .btn-feature-bottom:hover {
   color: #fff;
-  background-color: #d9d9d9 !important;
+  background-color: #425193 !important;
   background-color: rgba(0, 0, 0, 0.15) !important;
 }
 
@@ -8833,9 +8834,10 @@ a {
 .documentation-menu {
   background-color: royalblue;
   margin-bottom: 24px;
+  text-align: center;
 }
 .documentation-menu img {
-  display: table;
+  display: inline;
   margin: auto;
   margin-top: 16px;
   height: 80px;
@@ -8912,25 +8914,13 @@ a {
 .top-features-container [class^="col"]:nth-of-type(3n+1) .feature-box {
   background-color: #4E5FAD;
 }
-.top-features-container [class^="col"]:nth-of-type(3n+1) .feature-box p {
-  color: #b8bfde !important;
-  color: rgba(255, 255, 255, 0.6) !important;
-}
 
 .top-features-container [class^="col"]:nth-of-type(3n+2) .feature-box {
   background-color: #E63300;
 }
-.top-features-container [class^="col"]:nth-of-type(3n+2) .feature-box p {
-  color: #f5ad99 !important;
-  color: rgba(255, 255, 255, 0.6) !important;
-}
 
 .top-features-container [class^="col"]:nth-of-type(3n+3) .feature-box {
   background-color: #1CC05A;
-}
-.top-features-container [class^="col"]:nth-of-type(3n+3) .feature-box p {
-  color: #a4e6bd !important;
-  color: rgba(255, 255, 255, 0.6) !important;
 }
 
 .feature-box {
@@ -8941,9 +8931,11 @@ a {
   padding: 0;
   height: 320px;
   overflow: hidden;
+  background-color: #4E5FAD;
+  text-align: center;
 }
 .feature-box img {
-  display: table;
+  display: inline;
   margin: auto;
   margin-top: 28px;
   height: 80px;
@@ -8966,6 +8958,9 @@ a {
   overflow: hidden;
   text-align: center;
   font-size: 1.4em;
+  color: #fff;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  color: rgba(255, 255, 255, 0.6);
 }
 @media (max-width: 1199px) {
   .feature-box br {

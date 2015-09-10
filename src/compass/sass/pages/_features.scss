@@ -33,9 +33,9 @@ $colours: #4E5FAD, #E63300, #1CC05A;
         .feature-box {
             background-color: nth($colours, $i);
             
-            p {
-                @include alpha-attribute('color', rgba(#fff, 0.6), nth($colours, $i));
-            }
+//            p {
+//                @include alpha-attribute('color', rgba(#fff, 0.6), nth($colours, $i));
+//            }
         }
     }
 }
@@ -52,10 +52,14 @@ $colours: #4E5FAD, #E63300, #1CC05A;
     height: 320px;
     
     overflow: hidden;
+    
+    background-color: #4E5FAD; // For IE 8
+    
+    text-align: center;
 
     img {
-        display: table;
-        margin:auto;
+        display: inline;    // For IE 8. Bah.
+        margin: auto; 
         
         margin-top: 28px;
 
@@ -89,8 +93,9 @@ $colours: #4E5FAD, #E63300, #1CC05A;
         text-align: center;
         font-size: 1.4em;
 
-//        color: #fff; // For IE 8 etc. (Transparencies are ignored)
-//        color: rgba(255, 255, 255, 0.6);
+        color: #fff; // For IE 8 etc. (Transparencies are ignored)
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+        color: rgba(255, 255, 255, 0.6);
     }
     
     @include bp(md) {
