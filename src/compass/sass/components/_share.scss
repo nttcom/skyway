@@ -53,6 +53,7 @@
 //    border-style: solid 1px;
     
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     border-radius: 5px;
 
     font-weight: 300;
@@ -62,12 +63,13 @@
 
 #btn-share-git {
     bottom: 156px;
-    
     background: #3f3f3f;
-
-    --iron-icon-height: 36px;
-    --iron-icon-width: 36px;
-
+    
+    img {
+        height: 36px !important;
+        width: 36px !important;
+        object-fit: scale-down;
+    }
 }
 
 #label-share-git {
@@ -75,14 +77,8 @@
 }
 
 #btn-share-fb {
-
     bottom: 90px;
-    
     background: #4E5FAD;
-
-//    --iron-icon-height: 40px;
-//    --iron-icon-width: 40px;
-
 }
 
 #label-share-fb {
@@ -91,12 +87,7 @@
 
 #btn-share-tw {
     bottom: 24px;
-
     background: #55ACEE;
-    
-//    --iron-icon-height: 28px !important;
-//    --iron-icon-width: 28px;
-
 }
 
 #label-share-tw {

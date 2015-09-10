@@ -88,7 +88,7 @@ a {
 }
 
 .btn-inverted {
-    margin: 20px auto 16px auto;
+    margin: 0 auto;
     
     color: #fff;
     background-color: $skyway-blue;
@@ -228,17 +228,18 @@ a {
     position: absolute;
     bottom: 0;
     
+    width: 100%;
     width: calc(100% + 16px);
     
     color: #fff;
-    @include alpha-attribute('background-color', rgba(#000, 0.25), #fff);
+    @include alpha-attribute('background-color', rgba(#000, 0.25), #4E5FAD);
     
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     
     &:hover {
         color: #fff;
-        @include alpha-attribute('background-color', rgba(#000, 0.15), #fff);
+        @include alpha-attribute('background-color', rgba(#000, 0.15), #4E5FAD);
     }
 }
 
