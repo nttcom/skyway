@@ -8296,7 +8296,6 @@ a {
   border-style: solid;
   border-color: #85a9ff;
   text-align: left;
-  z-index: 10;
 }
 .btn-documentation-other i {
   float: left;
@@ -8532,7 +8531,8 @@ a {
 
 @media (max-width: 767px) {
   #footer {
-    height: 180px;
+    height: auto;
+    padding-bottom: 16px;
   }
   #footer .divider {
     margin-top: 16px;
@@ -8556,10 +8556,15 @@ a {
   }
 
   .links-div {
+    margin: 0;
     margin-top: 16px;
+    width: 100%;
+    display: table !important;
   }
   .links-div a {
-    font-size: 0.75em;
+    width: 100%;
+    display: table-row;
+    text-align: center;
   }
 }
 /* Navbar styles */
@@ -9454,12 +9459,12 @@ h1, h2, h3 {
 
 .top-section-short {
   position: relative;
-  height: 160px;
+  height: 200px;
   background-color: #5285FF;
 }
 .top-section-short h1 {
   position: relative;
-  top: 38px;
+  top: 50px;
   margin: 0px;
   margin-left: 12px;
   color: #FFF;
@@ -9467,9 +9472,10 @@ h1, h2, h3 {
 }
 .top-section-short h2 {
   position: relative;
-  top: 48px;
+  top: 72px;
   margin: 0;
   margin-left: 12px;
+  line-height: 28px;
   color: #FFF;
   opacity: 0.6;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
@@ -9575,10 +9581,11 @@ h1, h2, h3 {
 /* Portrait phones and smaller */
 @media (max-width: 767px) {
   .top-section-short h1 {
-    font-size: 2.5em;
+    font-size: 2.8em;
   }
   .top-section-short .h2-long {
-    font-size: 1.2em;
+    font-size: 1.35em;
+    line-height: 24px;
   }
 
   .background-blue {
