@@ -39,8 +39,13 @@
                 {% endcase %}
                 
                 <ul class="dropdown-menu">
-                    <li><a href="..{{page.url | remove_first: 'en/'}}">日本語</a></li>
-                    <li><a href="/en{{page.url | remove_first: 'en/'}}">English</a></li>
+                    {% case page.lang %}
+                    {% when 'jp' %}
+                    <li><a href="en/{{page.path}}">English</a></li>
+                    {% when 'en' %}
+                    <li><a href="{{page.url | remove: 'en/'}}">日本語</a></li>
+                    {% else %}
+                    {% endcase %}
                 </ul>
             </li>
             <li>
