@@ -55,13 +55,13 @@ h1,h2,h3 {
 .top-section-short {
     position: relative;
     
-    height: 160px;
+    height: 200px;
     background-color: $skyway_blue;
 
     h1 {
         position: relative;
         
-          top: 38px;
+          top: 50px;
 
           margin: 0px;
           margin-left: 12px;
@@ -73,9 +73,11 @@ h1,h2,h3 {
     
     h2 {
         position: relative;
-        top: 48px;
+        top: 72px;
         margin: 0;
         margin-left: 12px;
+        
+        line-height: 28px;
         
         color: #FFF;
         opacity: 0.6;
@@ -208,10 +210,11 @@ h1,h2,h3 {
     
     .top-section-short {
         h1 {
-            font-size: 2.5em;
+            font-size: 2.8em;
         }
         .h2-long {
-            font-size: 1.2em;
+            font-size: 1.35em;
+            line-height: 24px;
         }
     }
     .background-blue {
