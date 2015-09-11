@@ -43,7 +43,7 @@
                     {% when 'jp' %}
                     <li><a href="en/{{page.path}}">English</a></li>
                     {% when 'en' %}
-                    {% assign new_path = page.path | split: 'en/' | join 'test/' %}
+                    {% assign new_path = page.path | split: 'renewal' | join 'test/' %}
                     <li><a href="{{ new_path }}">日本語</a></li>
                     {% else %}
                     {% endcase %}
