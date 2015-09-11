@@ -8316,8 +8316,8 @@ a {
 
 .btn-div-bottom {
   margin: 8px -8px -8px -8px;
-  width: 108%;
   max-width: 295px;
+  width: 108%;
   width: calc(100% + 16px);
   color: #fff;
   background-color: #314fa9 !important;
@@ -8374,7 +8374,6 @@ a {
 .btn-feature {
   height: 78px;
   width: 100%;
-  max-width: 344px;
   width: calc(100% - 16px);
   margin: 8px !important;
   padding: 0;

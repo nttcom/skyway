@@ -167,8 +167,8 @@ a {
 .btn-div-bottom {    
     margin: 8px -8px -8px -8px;
     
-    width: 108%;
     max-width: 295px;
+    width: 108%; 
     width: calc(100% + 16px);
     
     color: #fff;
@@ -246,7 +246,6 @@ a {
     
     height: 78px;
     width: 100%;
-    max-width: 344px;           // For IE 8...
     width: calc(100% - 16px);   // For normal browsers
 
     margin: 8px !important;
