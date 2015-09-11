@@ -6,8 +6,8 @@ bootstrap   = require 'bootstrap'
 button      = require './button'
 share       = require './share'
 
-html5       = require './compatibility/html5'
-respond     = require './compatibility/respond.src.js'
+#html5       = require './compatibility/html5'
+#respond     = require './compatibility/respond.src.js'
 
 #support     = require './support'
 #highlight   = require './highlight/highlight.pack.js'
