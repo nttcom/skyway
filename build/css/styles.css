@@ -8922,9 +8922,8 @@ a {
   font-size: 1.85em;
   text-align: center;
 }
-.support-div button {
-  color: #fff;
-  margin: 24px auto;
+.support-div .btn-center {
+  margin: 24px auto !important;
 }
 
 @media (max-width: 767px) {

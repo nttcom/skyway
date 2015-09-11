@@ -59,18 +59,13 @@
     border-color: #afafaf;
     border-width: 1px;
     
-    
-//    color: #fff;
-//    background-color: $dark-blue;
-    
     h2 {
         font-size: 1.85em;
         text-align: center;
     }
     
-    button {
-        color: #fff;
-        margin: 24px auto;
+    .btn-center {
+        margin: 24px auto !important;
     }
 }
 
