@@ -12,7 +12,6 @@
     
     
     .divider {
-//        top: 110px;
         width: 350px;
         margin-top: 34px;
         
@@ -62,8 +61,6 @@
     }
 }
 
-
-
 .links-div {
     margin-top: 26px;
 
@@ -71,7 +68,6 @@
         display:inline-block; /* For IE 10 */
         -ms-flex: 1;
 
-//        position: relative;
         font-size: 1.0;
 
         color: #6f6f6f;
@@ -82,8 +78,42 @@
     }
 
 }
-    
 
+#footer-ie {
+    @extend #footer;
+    
+    height: auto;
+    padding-bottom: 16px;
+    
+    .logos-div {
+        margin-top: 8px !important;
+    }
+}
+    
+.links-div-ie {
+    
+    display: table;
+    
+    margin: 0;
+    margin-top: 16px;
+
+    width: 100%;
+    
+    a {
+        display: table-row;
+        width: 100%;
+        
+        text-align: center;
+        font-size: 1.0;
+
+        color: #6f6f6f;
+    }
+    
+    a:hover {
+        color: #bfbfbf;
+    }
+}
+    
 @include bp(xs) {
 
     #footer {
@@ -127,8 +157,9 @@
         display: table !important;
         
         a {
-            width: 100%;
             display: table-row;
+            width: 100%;
+            
             text-align: center;
         }
     }

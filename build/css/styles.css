@@ -8467,19 +8467,19 @@ a {
   border-left-width: 1px;
 }
 
-#footer {
+#footer, #footer-ie {
   position: relative;
   height: 240px;
   margin-top: 0px;
   color: #fff;
   background-color: #3f3f3f;
 }
-#footer .divider {
+#footer .divider, #footer-ie .divider {
   width: 350px;
   margin-top: 34px;
   border-color: #555555;
 }
-#footer p {
+#footer p, #footer-ie p {
   display: table;
   margin: auto;
   margin-top: 24px;
@@ -8529,15 +8529,40 @@ a {
   color: #bfbfbf;
 }
 
+#footer-ie {
+  height: auto;
+  padding-bottom: 16px;
+}
+#footer-ie .logos-div {
+  margin-top: 8px !important;
+}
+
+.links-div-ie {
+  display: table;
+  margin: 0;
+  margin-top: 16px;
+  width: 100%;
+}
+.links-div-ie a {
+  display: table-row;
+  width: 100%;
+  text-align: center;
+  font-size: 1.0;
+  color: #6f6f6f;
+}
+.links-div-ie a:hover {
+  color: #bfbfbf;
+}
+
 @media (max-width: 767px) {
-  #footer {
+  #footer, #footer-ie {
     height: auto;
     padding-bottom: 16px;
   }
-  #footer .divider {
+  #footer .divider, #footer-ie .divider {
     margin-top: 16px;
   }
-  #footer p {
+  #footer p, #footer-ie p {
     font-size: 1.0em;
     margin-top: 10px;
   }
@@ -8562,8 +8587,8 @@ a {
     display: table !important;
   }
   .links-div a {
-    width: 100%;
     display: table-row;
+    width: 100%;
     text-align: center;
   }
 }
