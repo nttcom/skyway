@@ -28,7 +28,25 @@
             {% else %}
             {% endcase %}
         </ul>
-        <ul class="nav navbar-nav  navbar-buttons">
+        <ul class="nav navbar-nav navbar-buttons">
+            
+            <!-- Alternative language switcher for IE 8 -->
+            
+            <!--[if gte IE 8]>
+            <li>
+                {% case page.lang %}
+                {% when 'jp' %}
+                <a class="btn-paper-flat btn-lang" href="en/{{page.path}}">English</a>
+                {% when 'en' %}
+                <a class="btn-paper-flat btn-lang" href="../{{page.path | remove: 'en/'}}">日本語</a>
+                {% else %}
+                {% endcase %}
+            </li>
+            <![endif]-->
+            
+            <!-- Language switcher for all other languages -->
+            
+            <!--[if !IE]> -->
             <li class="dropdown">
                 {% case page.lang %}
                 {% when 'jp' %}
@@ -48,6 +66,8 @@
                     {% endcase %}
                 </ul>
             </li>
+            <!-- <![endif]-->
+            
             <li>
                 <a class="btn-paper btn-login" href='https://skyway.io/ds/' target="_blank">
                     {% case page.lang %}

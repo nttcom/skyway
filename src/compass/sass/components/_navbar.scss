@@ -44,7 +44,6 @@
 
     font-weight: 400;
     font-size: 1.1em;
-    /* TODO: Responsive resizing */
 
     
     
@@ -79,11 +78,29 @@
 }
 
 .dropdown-toggle {
-  @include alpha-attribute('color', rgba(252, 57, 49, 0.8), #fff);
-  &:hover {
-    @include alpha-attribute('color', rgba(252, 57, 49, 1), #fff);
-    @include alpha-attribute('background-color', rgba(252, 57, 49, 0.2), #fff);
-  }
+    @include alpha-attribute('color', rgba(252, 57, 49, 0.8), #fff);
+    &:hover {
+        @include alpha-attribute('color', rgba(252, 57, 49, 1), #fff);
+        @include alpha-attribute('background-color', rgba(252, 57, 49, 0.2), #fff);
+    }
+}
+
+.btn-lang {
+    
+    width: 86px;
+    height: 36px;
+    line-height: 36px !important;
+
+    margin: 7px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 0 !important;
+    
+    @include alpha-attribute('color', rgba(252, 57, 49, 0.8), #fff);
+    &:hover {
+        @include alpha-attribute('color', rgba(252, 57, 49, 1), #fff);
+        @include alpha-attribute('background-color', rgba(252, 57, 49, 0.2), #fff);
+    }
 }
 
 .btn-login {

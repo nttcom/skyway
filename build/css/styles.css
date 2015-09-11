@@ -8630,7 +8630,6 @@ a {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
   font-weight: 400;
   font-size: 1.1em;
-  /* TODO: Responsive resizing */
 }
 .navbar-tabs a:hover {
   color: #4265DF !important;
@@ -8661,6 +8660,24 @@ a {
   color: rgba(252, 57, 49, 0.8) !important;
 }
 .dropdown-toggle:hover {
+  color: #fc3931 !important;
+  color: #fc3931 !important;
+  background-color: #fed7d6 !important;
+  background-color: rgba(252, 57, 49, 0.2) !important;
+}
+
+.btn-lang {
+  width: 86px;
+  height: 36px;
+  line-height: 36px !important;
+  margin: 7px;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding: 0 !important;
+  color: #fd615a !important;
+  color: rgba(252, 57, 49, 0.8) !important;
+}
+.btn-lang:hover {
   color: #fc3931 !important;
   color: #fc3931 !important;
   background-color: #fed7d6 !important;
