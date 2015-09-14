@@ -3,6 +3,7 @@ title:
   en: 'SkyWay - A Simple and Flexible WebRTC Platform'
 ogImage: http://nttcom.github.io/skyway/images/ogp.jpg
 url: skyway.io
+keywords: 'WebRTC,SkyWay,peerjs,skywayjs,RTC'
 homedir:
   jp: 
   en: ../
