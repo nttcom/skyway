@@ -49,7 +49,6 @@ $ gulp
 | node_modules/     |                                                               |
 | src/compass/      | __sass and css files__                                        |
 | src/javascript/   | __scripts__                                                   |
-| styles/           | __css files__   **OLD**                                       |
 | unused/           | HTML files which haven't been optimized for Jekyll            |
 | vendor/           |                                                               |
 |-------------------|---------------------------------------------------------------|
