@@ -35,8 +35,6 @@ $ gulp
 
 ## File and Folder Structures
 
-**THIS IS OUT OF DATE**
-
 | file / directory  | content                                                       |
 |:------------------|:--------------------------------------------------------------|
 | _includes/        | include files                                                 |
@@ -64,7 +62,6 @@ $ gulp
 | README.md         |                                                               |
 | robots.txt        |                                                               |
 | *.html            | __HTML files in Japanese__                                    |
-|-------------------|---------------------------------------------------------------|
 
 ## Reference
 
