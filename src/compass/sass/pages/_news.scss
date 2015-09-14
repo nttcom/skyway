@@ -1,0 +1,49 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+
+.news-container {
+    
+    padding-top: 20px;
+
+    .divider:last-child {
+        border-color: #fff;
+        margin-bottom: 40px;
+    }
+}
+
+.news-headline {
+    
+    padding: 12px 8px 16px 8px;
+    
+//    border-style: solid;
+//    border-width: 1px ;
+//    border-color: $skyway-blue;
+    
+    font-size: 1.2em;
+    
+    .news-headline-date {
+        padding: 0;
+        margin: 8px 0;
+        
+        max-width: 160px;
+        height: 28px;
+        line-height: 30px;
+        text-align: center;
+        color: #FFF;
+        background-color: $skyway_blue;
+        border-radius: 5px;
+        
+    }
+    
+    .news-headline-text {
+        
+        padding: 8px 12px;
+        
+        border-radius: 5px;
+        @include alpha-attribute('background-color', rgba($skyway-blue, 0.12), #fff);
+        
+        p {
+            margin: 0;
+        }
+    }
+}

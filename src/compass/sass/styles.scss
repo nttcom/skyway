@@ -1,0 +1,228 @@
+// Import Bootstrap Compass integration
+//@import "bootstrap-compass";
+
+// Import custom Bootstrap variables
+@import "bootstrap/bootstrap-variables";
+
+// Import Bootstrap for Sass
+@import "bootstrap";
+
+@import "utilities/mixins";
+@import "utilities/variables";
+
+@import "components/animation";
+@import "components/button";
+@import "components/footer";
+@import "components/navbar";
+@import "components/share";
+
+@import "pages/demo";
+@import "pages/documentation";
+@import "pages/features";
+@import "pages/index";
+@import "pages/info-page";
+@import "pages/news";
+@import "pages/support";
+
+
+/* Common Styles */
+
+* {
+    font-family: 'Open Sans', 'FontAwesome', 'Hiragino Kaku Gothic ProN', Meiryo, 'MS PGothic', Sans-serif;
+    font-weight: 200;
+    
+    line-height: 26px;
+}
+
+h1,h2,h3 {
+    font-weight: 200;
+}
+
+
+
+
+
+
+
+.top-section {
+    position: relative;
+    overflow: hidden;
+    
+    height: 600px;
+    background-color: $skyway_blue;
+}
+
+.top-section-short {
+    position: relative;
+    
+    height: 200px;
+    background-color: $skyway_blue;
+
+    h1 {
+        position: relative;
+        
+          top: 50px;
+
+          margin: 0px;
+          margin-left: 12px;
+
+          color: #FFF;
+          font-size: 3.2em;
+
+    }
+    
+    h2 {
+        position: relative;
+        top: 72px;
+        margin: 0;
+        margin-left: 12px;
+        
+        line-height: 28px;
+        
+        color: #FFF;
+        opacity: 0.6;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+        font-size: 1.5em;
+    }
+}
+
+.background {
+    position: relative;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    padding-top: 30px; 
+    padding-bottom: 30px;
+    background-color: #fff;
+}
+
+.background-blue {
+    @extend .background;
+     
+    background-color: $dark_blue;
+}
+
+.paper-style-div {
+
+    @extend .paper-style;
+
+    padding: 40px 20px;
+    margin: 10px 0px;
+
+    h2 {
+        margin: 0;
+        text-align: center;
+        font-size: 1.85em;
+        color: $dark-font;
+    }
+}
+
+.divider {
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0;
+    border-top-width: 1px;
+    border-color: $skyway_blue;
+}
+
+/* Signup div styles */
+
+.signup-div {
+    
+    padding: 60px 0px;
+    
+    h2 {
+        margin: 0;
+        text-align: center;
+        font-size: 1.85em;
+        color: #fff;
+    }
+    a {
+        left: 0;
+        right: 0;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+}
+
+.divider-short {
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    width: 100px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0;
+    border-top-width: 3px;
+    border-color: $skyway_blue;
+}
+
+.flex-box {
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: space-between; /* OLD - for IE 10 */
+}
+
+//  .flex-component {
+//      -webkit-box-flex: 1;      /* OLD - iOS 6-, Safari 3.1-6 */
+//      -moz-box-flex: 1;         /* OLD - Firefox 19- */
+///*          width: 33%;                For old syntax, otherwise collapses. */
+//      -webkit-flex: 1;          /* Chrome */
+//      -ms-flex: 1;              /* IE 10 */
+//      flex: 1;                  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+//  }
+
+
+
+
+
+
+
+/* Responsive code */
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .top-section-short {
+        br {
+            display: none;   
+        }
+    }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 767px) {
+    
+    .top-section-short {
+        h1 {
+            font-size: 2.5em;
+        }
+        .h2-long {
+            font-size: 1.35em;
+            line-height: 24px;
+        }
+    }
+    .background-blue {
+        padding: 0 !important;
+    }
+    
+    .paper-style-div {
+        margin: 0 !important;
+        border-radius: 0;
+    }
+}

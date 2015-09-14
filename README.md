@@ -1,8 +1,5 @@
 # SkyWay Renewal Project
 
-- [Staging Repository (This)](https://github.com/nttcom-webcore/skyway-renewal)
-- [Staging Site](http://nttcom-webcore.github.io/skyway-renewal/)
-
 ## IMPORTANT NOTICE
 
 - Don't use master branch. Please use gh-pages branch instead.
@@ -18,43 +15,53 @@ $ sudo gem install bundler
 ```
 2. install “github-pages” with Bundler.
 ```sh
-$ bundle install
+$ bundle install --path vendor/bundle
 ```
+3. Install npm, and then install all necessary packages:
+```sh
+$ sudo npm install
+```
+
+Make sure node and npm 
+
 
 #### Run
 
-1. run Jekyll.
+1. run gulp (Individual gulp tasks are kept in gulp/tasks/)
 ```
-$ bundle exec jekyll serve
+$ gulp
 ```
-2. access [http://localhost:4000/](http://localhost:4000/).
+2. access [http://localhost:3000/](http://localhost:3000/).
 
 ## File and Folder Structures
 
 | file / directory  | content                                                       |
 |:------------------|:--------------------------------------------------------------|
-| .tmp/styles/      | _unknown_                                                     |
 | _includes/        | include files                                                 |
 | _layouts/         | template files                                                |
 | _sites/           | built files for local Web server. aren't pushed to GitHub.    |
-| app/              | HTML files which haven't been optimized to Jekyll             |
-| bower_components/ |                                                               |
-| dist/styles/      | _unknown_                                                     |
-| elements/         |                                                               |
+| build/            | output files from gulp                                        |
+| docs/             | documentation files                                           |
 | en/               | __HTML files in English__                                     |
+| gulp/             | gulp scripts                                                  |
 | images/           | __images__                                                    |
-| scripts/          | __scripts__                                                   |
-| styles/           | __css files__                                                 |
+| news/             | contains news posts                                           |
+| node_modules/     |                                                               |
+| src/compass/      | __sass and css files__                                        |
+| src/javascript/   | __scripts__                                                   |
+| styles/           | __css files__   **OLD**                                       |
+| unused/           | HTML files which haven't been optimized for Jekyll            |
+| vendor/           |                                                               |
+|-------------------|---------------------------------------------------------------|
 | .gitignore        |                                                               |
-| Gemfile           |                                                               |
-| LICENSE.md        |                                                               |
-| README.md         |                                                               |
 | _config.yml       | config of Jekyll                                              |
-| bower.json        | config of Bower                                               |
-| *.html            | __HTML files in Japanese__                                    |
 | favicon.ico       | favicon                                                       |
-| manifest.json     | _should delete_                                               |
+| Gemfile           |                                                               |
+| Gemfile.lock      |                                                               |
+| gulpfule.js       | gulp build file (Reads contents of 'gulp' folder)             |
+| README.md         |                                                               |
 | robots.txt        |                                                               |
+| *.html            | __HTML files in Japanese__                                    |
 
 ## Reference
 

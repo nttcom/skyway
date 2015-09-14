@@ -1,0 +1,143 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+
+.features-header {
+
+    width: inherit;
+
+    
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0;
+
+    font-size: 2.8em;
+    line-height: 1.5em;
+    
+    text-align: left;
+
+    border-style: solid;
+    border-color: $skyway-blue;
+    border-width: 0;
+    border-bottom-width: 2px;
+
+}
+
+[class$="features-container"] {
+    margin-bottom: 60px;
+}
+
+$colours: #4E5FAD, #E63300, #1CC05A;
+
+@for $i from 1 through length($colours) {
+    .top-features-container [class^="col"]:nth-of-type(#{length($colours)}n+#{$i}) {
+        .feature-box {
+            background-color: nth($colours, $i);
+            
+//            p {
+//                @include alpha-attribute('color', rgba(#fff, 0.6), nth($colours, $i));
+//            }
+        }
+    }
+}
+
+.feature-box {
+    @extend .paper-style;
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 6px;
+    margin-right: 6px;
+    
+    padding: 0;
+    height: 320px;
+    
+    overflow: hidden;
+    
+    background-color: #4E5FAD; // For IE 8
+    
+    text-align: center;
+
+    img {
+        display: inline;    // For IE 8. Bah.
+        margin: auto; 
+        
+        margin-top: 28px;
+
+        height: 80px;
+
+        object-fit: scale-down;
+    }
+    
+    h3 {
+        display: table;
+        margin:auto;
+
+        margin-top: 24px;
+
+        text-align: center;
+        font-size: 2.2em;
+        
+        color: #fff;
+    }
+
+    p {
+        display: table;
+        margin: 20px auto;
+        
+        padding-left: 18px;
+        padding-right: 18px;
+
+        max-height: 100px;
+        overflow: hidden;
+
+        text-align: center;
+        font-size: 1.4em;
+
+        color: #fff; // For IE 8 etc. (Transparencies are ignored)
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+        color: rgba(255, 255, 255, 0.6);
+    }
+    
+    @include bp(md) {
+        br {
+            display:none;
+        }
+    }
+    
+    @include bp(sm) {
+        height: auto;
+        margin-bottom: 16px;
+        padding-bottom: 48px;
+        
+        img {
+            margin-top: 18px;
+            height: 64px;
+        }
+        
+        h3 {
+            margin-top: 12px;
+        }
+        
+        p {
+            margin: 10px auto;
+            font-size: 1.3em;
+        }
+    }
+}
+
+.mini-feature-column {
+//    @extend .h_r;
+    
+    h3 {
+        margin: 0;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        padding: 0;
+
+        line-height: 36px;
+
+        color: #5050b0;
+        text-align: center;
+        font-size: 2em;
+    }
+}

@@ -1,117 +1,138 @@
 ---
-layout: default
+layout: responsive
 lang: jp
 title:
 description: WebRTCは、ブラウザや専用アプリ同士でリアルタイムに映像、音声、データを送受信できる画期的な新技術です。SkyWayを使えば、サーバを準備することなく簡単に、WebRTCを使ったアプリが開発できます。
 ---
-<div id="content-div">
-    <h1 class="content-title">リアルタイムにつながるアプリを作ろう</h1>
-    <h2 class="content-subtitle">通信会社が提供する簡単で強力なWebRTCプラットフォーム</h2>
-    <div id="content-animation">
-        <link rel="stylesheet" href="{{ site.homedir[page.lang] }}styles/transmission-animation.css">
-        <div class='transmission-animation'>
-            <div class='circle-container'>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </div>
-        <a href="info-js.html">
-            <div class="animation-section" id="animation-web">
-                <div class="animation-image-div">
-                    <img src="{{ site.homedir[page.lang] }}images/top_images/index_js_top.png" class="animation-image">
-                </div>
-                <h3 class="animation-title">JavaScript</h3>
-            </div>
-        </a>
-        <a href="info-mobile.html">
-            <div class="animation-section" id="animation-android">
-                <div class="animation-image-div">
-                    <img src="{{ site.homedir[page.lang] }}images/top_images/index_mobile_top.png" class="animation-image">
-                </div>
-                <h3 class="animation-title">iOS/Android</h3>
-            </div>
-        </a>
-    </div>
-    <div></div>
-    <a href='https://skyway.io/ds/registration/' target="_blank"><paper-button class="topSectionButton white" raised>登録を行う</paper-button></a>
-</div>
 
+<!-- Top Section -->
 
-<paper-material id="highlights-div" elevation="2">
-    <h2 class="material-header">SkyWayを使うメリット</h2>
-    <div class="divider"></div>
+<div class="top-section">
+    <h1>リアルタイムにつながるアプリを作ろう</h1>
+    <h2>通信会社が提供する簡単で強力なWebRTCプラットフォーム</h2>
     
-    <div id="highlights-internal-div">
-        <div id="highlight1" class="highlight">
-            <i class="fa fa-video-camera fa-4x"></i>
-            <h3 class="highlight-title">マルチメディア通信</h3>
-            <div class="highlight-text">WebRTCの音声・映像・データ通信を利用可能</div>
-        </div>
-        <div id="highlight2" class="highlight">
-<!--            <img src="{{ site.homedir[page.lang] }}images/logo.png" class="highlight-icon"/>-->
-            <i class="fa fa-paper-plane fa-4x"></i>
-            <h3 class="highlight-title">アプリ開発に集中</h3>
-            <div class="highlight-text">サーバサイド不要、JavaScript/iOS/AndroidのSDK提供</div>
-        </div>
-        <div id="highlight3" class="highlight">
-            <i class="fa fa-lock fa-4x"></i>
-            <h3 class="highlight-title">セキュア</h3>
-            <div class="highlight-text">ビデオ通話、データ通信、シグナリングは全て暗号化</div>
-        </div>
-        <div id="highlight4" class="highlight">
-            <i class="fa fa-cogs fa-4x"></i>
-            <h3 class="highlight-title">豊富な拡張機能</h3>
-            <div class="highlight-text">TURN、音声認識、多人数接続、画面共有などの機能を提供</div>
+    <div class="container animation-container">
+        <div class="animation-content">
+            
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class='animated-transmission'>
+                        <div class='circle-container'>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-top-images">
+                <div class="col-xs-6">
+                    <a href="info-js.html">
+                        <picture>
+                            <source
+                                media="(max-width: 500px)"
+                                srcset="{{ site.homedir[page.lang] }}images/top_images/index_js_top_small.png">
+
+                            <img src="{{ site.homedir[page.lang] }}images/top_images/index_js_top.png" class="animation-image" alt="JavaScript Image">
+                        </picture>
+                        <h3>JavaScript</h3>
+                    </a>
+                </div>
+                <div class="col-xs-6">
+                    <a href="info-mobile.html">
+                        <picture>
+                            <source
+                                media="(max-width: 500px)"
+                                srcset="{{ site.homedir[page.lang] }}images/top_images/index_mobile_top_small.png">
+                                <img src="{{ site.homedir[page.lang] }}images/top_images/index_mobile_top.png" class="animation-image" alt="Mobile Image">
+                         </picture>
+                         <h3>iOS/Android</h3>
+                    </a>
+                </div>
+            </div>
+            
+            
         </div>
     </div>
-</paper-material>
-
-<div id="signup-div">
-    <h2 id="signup-header">SkyWayは無料で利用可能です！</h2>
-    <div class="divider-short"></div>
-    <a target="_blank" href='https://skyway.io/ds/registration/'><paper-button id="signupButton" raised class="white">登録を行う</paper-button></a>
+    
+    <a class="top-btn-desktop btn-paper btn-top-section" target="_blank" href='https://skyway.io/ds/registration/'>
+        登録を行う
+    </a>     
+    
 </div>
 
-<paper-material id="news-div" elevation="1">
-    <h2 class="material-header">最新情報</h2>
-    <div class="divider"></div>
+<!-- Main Page Content -->
 
-    <div id="news-headlines-div">
-        <div class="news-headline">
-            <div class="news-headline-date">2015.07.30</div>
-            <div class="news-headline-content">Android SDKをv0.1.1に更新しました。<br>
-                <a target="_blank" href="https://github.com/nttcom/SkyWay-Android-SDK/releases/latest">こちら</a>からダウンロード可能です。<br>
+<div class="background-blue">
+
+    <div class="container">
+
+        <div class="row main-content-row">
+            <div class="col-sm-12 paper-style-div">
+                <h2>SkyWayを使うメリット</h2>
+                <div class="divider"></div>
+
+                <div class="row">
+                    <div class="col-xs-12 col-md-10 col-md-offset-1">
+                        <div class="row">
+                            <div class="col-sm-3 highlight">
+                                <i class="fa fa-video-camera"></i>
+                                <h3>マルチメディア通信</h3>
+                                WebRTCの音声・映像・データ通信を利用可能
+                            </div>
+                            <div class="col-sm-3 highlight">
+                                <i class="fa fa-paper-plane"></i>
+                                <h3>アプリ開発に集中</h3>
+                                サーバサイド不要、JavaScript、iOSとAndroidのSDK提供
+                            </div>
+                            <div class="col-sm-3 highlight">
+                                <i class="fa fa-lock"></i>
+                                <h3>セキュア</h3>
+                                ビデオ通話、データ通信、シグナリングは全て暗号化
+                            </div>
+                            <div class="col-sm-3 highlight">
+                                <i class="fa fa-cogs"></i>
+                                <h3>豊富な拡張機能</h3>
+                                TURN、音声認識、多人数接続、画面共有などの機能を提供
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
             </div>
         </div>
-        <div class="news-headline">
-            <div class="news-headline-date">2015.07.28</div>
-            <div class="news-headline-content">各種ライブラリ、音声認識API、サンプルコード、セキュリティ文書を提供開始しました。<br>
-                詳しくは<a target="_blank" href="http://www.ntt.com/release/monthNEWS/detail/20150728.html">ニュースリリース</a>をご覧ください。<br>
-                利用方法については<a href="documentation.html">ドキュメント</a>をご覧ください。</div>
+        
+        {% include signup-div.html %} 
+        
+        <div class="row main-content-row">
+            <div class="col-sm-12 paper-style-div">
+                <h2>最新情報</h2>
+                <div class="divider"></div>
+                <div class="row">
+                    <div class="col-sm-10 col-sm-offset-1">
+                        {% for post in site.categories.news_jp limit:3 %}
+                            <div class="row mini-headline">
+                                <div class="col-sm-2">
+                                    <div class="row">
+                                        <div class="col-sm-10 col-sm-offset-1 mini-headline-date">
+                                            {{ post.date | date: "%Y.%m.%d " }}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-10 mini-headline-text">{{ post.excerpt }}</div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            
+                <a class="btn-paper btn-inverted btn-center" href='news.html'>
+                    すべてのニュース
+                </a>  
+            </div>
         </div>
-        <div class="news-headline">
-            <div class="news-headline-date">2015.07.28</div>
-            <div class="news-headline-content">サイトをリニューアルしました。</div>
-        </div>
-        <div class="news-headline">
-            <div class="news-headline-date">2015.06.05</div>
-            <div class="news-headline-content">SkyWay iOS/Android SDKを提供開始しました。<br>
-                詳しくは<a target="_blank" href="http://www.ntt.com/release/monthNEWS/detail/20150605.html">ニュースリリース</a>をご覧ください。<br>
-                利用方法については<a href="documentation.html">ドキュメント</a>をご覧ください。</div>
-        </div>
-        <div class="news-headline">
-            <div class="news-headline-date">2015.01.27</div>
-            <div class="news-headline-content">TURNサーバの無料トライアルを開始しました。<br>
-                TURNサーバの利用を希望される方は<a target="_blank" href="https://skyway.io/ds/turnrequest">こちら</a>からお申込み下さい。</div>
-        </div>
-        <paper-button id="newsButton" raised class="colorful">All News</paper-button>
     </div>
-</paper-material>
-
-<!--  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
-<!--  <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>-->
+</div>

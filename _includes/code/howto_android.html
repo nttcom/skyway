@@ -1,0 +1,20 @@
+import io.skyway.Peer.*;
+
+PeerOption options = new PeerOption();
+options.key = "{APIKEY}";
+options.domain = "{DOMAIN}";
+Peer peer = new Peer(getApplicationContext(),myId,options);
+
+peer.on(Peer.PeerEventEnum.OPEN, new OnCallback()
+{
+    public void onCallback(Object object)
+    {
+        DataConnection conn = peer.connect('dest-peer-id');
+        conn.on(DataEventEnum.DATA,new OnCallback()
+        {
+            public void onCallback(Object object){
+                conn.send("Hello SkyWay!");
+            }
+        });
+    }
+});

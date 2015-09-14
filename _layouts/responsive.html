@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="generator" content="SkyWay" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>{% if page.title %}{{ page.title }} ― {% endif %}{{ site.title[page.lang] }}</title>
+    
+
+    <meta name="description" content="{{ page.description }}">
+    <meta name="keywords" content="{{ site.keyboards }}">
+    
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} ― {% endif %}{{ site.title[page.lang] }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ site.url }}{{ page.url | replace: 'index.html', '' }}">
+    <meta property="og:image" content="{{ site.ogImage }}">
+    <meta property="og:description" content="{{ page.description }}">
+
+    {% case page.lang %}
+    {% when 'jp' %}
+    <link rel="shortcut icon" href="favicon.ico?v2">
+    {% when 'en' %}
+    <link rel="shortcut icon" href="../favicon.ico?v2">
+    {% else %}
+    {% endcase %}
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="{{ site.homedir[page.lang] }}build/css/styles.min.css" async>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+    
+</head>
+
+<body>
+    
+    <!-- TODO: What is this? -->
+    <span id="browser-sync-binding"></span>
+
+    <!-- Main Content -->
+    
+    <div>
+
+        {% include share.html %}
+
+        {% include navbar.html %}
+
+        {{ content }}
+
+        {% include footer.html %} 
+
+    </div>
+    
+    <!-- The following script contains ALL JS code: -->
+    <script src="{{ site.homedir[page.lang] }}build/app.js" async></script>
+    <!--[if lt IE 9]>
+        <script src="{{ site.homedir[page.lang] }}src/javascript/compatibility/respond.src.js"></script>
+        <script src="{{ site.homedir[page.lang] }}src/javascript/compatibility/html5.js"></script>
+    <![endif]-->
+
+    <!-- highlight.js -->
+    <link rel="stylesheet" href="{{ site.homedir[page.lang] }}styles/highlights/tomorrow-night.css">
+    <script src="{{ site.homedir[page.lang] }}src/javascript/highlight/highlight.pack.js"></script>
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    
+    <!-- highlight.js -->
+    <link rel="stylesheet" href="{{ site.homedir[page.lang] }}styles/highlights/tomorrow-night.css">
+    <script src="{{ site.homedir[page.lang] }}src/javascript/highlight/highlight.pack.js" async></script>
+    <!-- endhighlight -->
+    
+    <!-- Google Analytics -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-46095916-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+</body>
+
+</html>

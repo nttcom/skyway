@@ -1,17 +1,37 @@
 {% case page.lang %}
 {% when 'jp' %}
-<paper-fab src="{{ site.homedir[page.lang] }}images/share-icons/facebook.png" id="share-button-fb" class="share-button" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=skyway.io');"></paper-fab>
-<label id="facebook-share-label">Facebookでシェアする</label>
-<paper-fab src="{{ site.homedir[page.lang] }}images/share-icons/twitter.png" id="share-button-tw" class="share-button" onclick="window.open('https://twitter.com/intent/tweet?hashtags=skywayjs&original_referer=http%3A%2F%2Fnttcom.github.io%2Fskyway%2F&text=SkyWay%20-%20WebRTC%E3%82%92%E7%B0%A1%E5%8D%98%EF%BC%86%E6%9F%94%E8%BB%9F%E3%81%AB%E4%BD%BF%E3%81%88%E3%82%8B%E3%83%97%E3%83%A9%E3%83%83%E3%83%88%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0&tw_p=tweetbutton&url=http%3A%2F%2Fnttcom.github.io%2Fskyway');"></paper-fab>
-<label id="twitter-share-label">Twitterでシェアする</label>
-<paper-fab src="{{ site.homedir[page.lang] }}images/share-icons/github.png" id="share-button-git" class="share-button" onclick="window.open('https://github.com/nttcom/peerjs/');"></paper-fab>
-<label id="github-share-label">Githubでスターする</label>
+
+<a class="btn-share" id="btn-share-git" target="_blank" href="https://github.com/nttcom/peerjs/">
+    <img src="{{ site.homedir[page.lang] }}images/share-icons/github.png">
+</a>
+<label class="label-share" id="label-share-git">Githubでスターする</label>
+
+<a class="btn-share" id="btn-share-fb" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=skyway.io">
+    <img src="{{ site.homedir[page.lang] }}images/share-icons/facebook.png">
+</a>
+<label class="label-share" id="label-share-fb">Facebookでシェアする</label>
+
+<a class="btn-share" id="btn-share-tw" target="_blank" href="https://twitter.com/intent/tweet?hashtags=skywayjs&original_referer=http%3A%2F%2Fnttcom.github.io%2Fskyway%2F&text=SkyWay%20-%20WebRTC%E3%82%92%E7%B0%A1%E5%8D%98%EF%BC%86%E6%9F%94%E8%BB%9F%E3%81%AB%E4%BD%BF%E3%81%88%E3%82%8B%E3%83%97%E3%83%A9%E3%83%83%E3%83%88%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0&tw_p=tweetbutton&url=http%3A%2F%2Fnttcom.github.io%2Fskyway">
+    <img src="{{ site.homedir[page.lang] }}images/share-icons/twitter.png">
+</a>
+<label class="label-share" id="label-share-tw">Twitterでシェアする</label>
+
 {% when 'en' %}
-<paper-fab src="{{ site.homedir[page.lang] }}images/share-icons/facebook.png" id="share-button-fb" class="share-button" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=skyway.io');"></paper-fab>
-<label id="facebook-share-label">Share on Facebook</label>
-<paper-fab src="{{ site.homedir[page.lang] }}images/share-icons/twitter.png" id="share-button-tw" class="share-button" onclick="window.open('https://twitter.com/intent/tweet?hashtags=skywayjs&original_referer=http%3A%2F%2Fnttcom.github.io%2Fskyway%2Fen%2F&text=SkyWay%20-%20A%20Simple%20and%20Flexible%20WebRTC%20Platform&tw_p=tweetbutton&url=http%3A%2F%2Fnttcom.github.io%2Fskyway%2Fen%2F');"></paper-fab>
-<label id="twitter-share-label">Share on Twitter</label>
-<paper-fab src="{{ site.homedir[page.lang] }}images/share-icons/github.png" id="share-button-git" class="share-button" onclick="window.open('https://github.com/nttcom/peerjs/');"></paper-fab>
-<label id="github-share-label">Star on Github</label>
+
+<a class="btn-share" id="btn-share-git" target="_blank" href="https://github.com/nttcom/peerjs/">
+    <img src="{{ site.homedir[page.lang] }}images/share-icons/github.png">
+</a>
+<label class="label-share" id="label-share-git">Star on Github</label>
+
+<a class="btn-share" id="btn-share-fb" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=skyway.io">
+    <img src="{{ site.homedir[page.lang] }}images/share-icons/facebook.png">
+</a>
+<label class="label-share" id="label-share-fb">Share on Facebook</label>
+
+<a class="btn-share" id="btn-share-tw" target="_blank" href="https://twitter.com/intent/tweet?hashtags=skywayjs&original_referer=http%3A%2F%2Fnttcom.github.io%2Fskyway%2Fen%2F&text=SkyWay%20-%20A%20Simple%20and%20Flexible%20WebRTC%20Platform&tw_p=tweetbutton&url=http%3A%2F%2Fnttcom.github.io%2Fskyway%2Fen%2F">
+    <img src="{{ site.homedir[page.lang] }}images/share-icons/twitter.png">
+</a>
+<label class="label-share" id="label-share-tw">Share on Twitter</label>
+
 {% else %}
 {% endcase %}

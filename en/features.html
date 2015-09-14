@@ -1,131 +1,150 @@
 ---
-layout: default
+layout: responsive
 lang: en
 title: All Features
 description: WebRTC is a revolutionary new technology which allows the realtime communication of voice, videa and data via the browser and mobile applications. By using SkyWay, you can easily create an application without worrying about the server-side of programming.
 ---
-<div id="header-section">
-    <h1 id="header-title">SkyWay Features</h1>
-    <h2 id="header-subtitle">SkyWay provides powerful tools to help develop rich multiplatform WebRTC applications.</h2>
+
+<!-- Top Section -->
+
+<div class="top-section-short">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>SkyWay Features</h1>
+                <h2 class="h2-long">SkyWay provides powerful tools to help develop rich multiplatform WebRTC applications.</h2>
+            </div>
+        </div>
+    </div>
 </div>
 
-<div id="main-section">
+<!-- Main Page Content -->
 
-    <div class="main-features-container">
-        <h2 class="features-header">Top Features</h2>
-        <div id="top-features-inner" class="flex-box">
-            <div class="feature-box-container">
-                <paper-material class="feature-box" style="background-color:#4E5FAD;color:#fff;" elevation="2">
+<div class="background">
+
+    <div class="container">
+
+        <!-- Top Features -->
+        
+        <h2 class="features-header">New Features</h2>
+        
+        <div class="row top-features-container">
+            <div class="col-md-4">
+                <div class="feature-box">
                     <img src="{{ site.homedir[page.lang] }}images/feature_icons/mic.png">
                     <h3>Speech Recognition</h3>
-                        <p>The world's first multibrowser speech recognition API<br>(Japanese only)</p>
-                        <a href='https://nttcom.github.io/SkyWay-SpeechRec/' target="_blank">
-                          <paper-button>Try it out</paper-button>
-                        </a>
-                </paper-material>
-            </div>
+                    <p>The world's first multibrowser speech recognition API<br>(Japanese only)</p>
+                    <a class="btn-paper-flat btn-feature-bottom" target="_blank" href='https://nttcom.github.io/SkyWay-SpeechRec/'>
+                        Try it out
+                    </a>
+                </div>
 
-            <div class="feature-box-container">
-                <paper-material class="feature-box" style="background-color:#E63300;color:#fff;" elevation="2">
+            </div>
+            <div class="col-md-4">
+                <div class="feature-box">
                     <img src="{{ site.homedir[page.lang] }}images/feature_icons/multiparty.png">
                     <h3>MultiParty</h3>
-                        <p>Implement a WebRTC group chat application in only a few lines of code</p>
-                        <a href='https://github.com/nttcom/SkyWay-MultiParty' target="_blank">
-                          <paper-button>Try it out</paper-button>
-                        </a>
-                </paper-material>
+                    <p>Implement a WebRTC group chat application in only a few lines of code</p>
+                    <a class="btn-paper-flat btn-feature-bottom" target="_blank" href='https://github.com/nttcom/SkyWay-MultiParty'>
+                        Try it out
+                    </a>
+                </div>
             </div>
-
-            <div class="feature-box-container">
-                <paper-material class="feature-box" style="background-color:#1CC05A;color:#fff;" elevation="2">
+            <div class="col-md-4">
+                <div class="feature-box">
                     <img src="{{ site.homedir[page.lang] }}images/feature_icons/screenshare.png">
-                    <h3>Screen Share</h3>
-                        <p>Easily develop a browser extension to enable screensharing on your app</p>
-                        <a href='https://github.com/nttcom/SkyWay-ScreenShare' target="_blank">
-                          <paper-button>Try it out</paper-button>
-                        </a>
-                </paper-material>
+                    <h3>ScreenShare</h3>
+                    <p>Easily develop a browser extension to enable screensharing on your app</p>
+                    <a class="btn-paper-flat btn-feature-bottom" target="_blank" href='https://github.com/nttcom/SkyWay-ScreenShare'>
+                        Try it out
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
-
-    <div class="main-features-container">
+    
+        
+        
+        
+        
+        <!-- All Features -->
+        
         <h2 class="features-header">All Features</h2>
-        <div id="all-features-div" class="flex-box">
-            <div class="mini-feature-column">
-                <h3>SDKs</h3>
+        
+        <div class="row all-features-container">
+            
+            <!-- SDKs -->
+            
+            <div class="col-md-4">                
+                <div class="mini-feature-column">
+                    <h3>SDKs</h3>
 
-                <a href='info-js.html'>
-                  <paper-button id="mini-feature-button">
-                    <img src="{{ site.homedir[page.lang] }}images/JS_grey.png">
-                    <h2>JavaScript SDK</h2>
-                    <p>An SDK to develop web applications</p>
-                  </paper-button>
-                </a>
+                    <a class="btn-paper-flat btn-feature" href='info-js.html'>
+                        <img src="{{ site.homedir[page.lang] }}images/JS_grey.png">
+                        <h2>JavaScript SDK</h2>
+                        <p>An SDK to develop web applications</p>
+                    </a>
 
-                <a href='info-mobile.html'>
-                  <paper-button id="mini-feature-button">
-                    <img src="{{ site.homedir[page.lang] }}images/apple_grey.png">
-                    <h2>iOS SDK</h2>
-                    <p>An SDK to develop iOS applications</p>
-                  </paper-button>
-                </a>
+                    <a class="btn-paper-flat btn-feature" href='info-mobile.html'>
+                        <img src="{{ site.homedir[page.lang] }}images/apple_grey.png">
+                        <h2>iOS SDK</h2>
+                        <p>An SDK to develop iOS applications</p>
+                    </a>
 
-                <a href='info-mobile.html'>
-                  <paper-button id="mini-feature-button">
-                    <img src="{{ site.homedir[page.lang] }}images/android_grey.png">
-                    <h2>Android SDK</h2>
-                    <p>An SDK to develop Android applications</p>
-                  </paper-button>
-                </a>
+                    <a class="btn-paper-flat btn-feature" href='info-mobile.html'>
+                        <img src="{{ site.homedir[page.lang] }}images/android_grey.png">
+                        <h2>Android SDK</h2>
+                        <p>An SDK to develop Android applications</p>
+                    </a>
+                </div>
             </div>
-            <div class="mini-feature-column">
-                <h3>Libraries</h3>
+            
+            <!-- Libraries -->
+            
+            <div class="col-md-4">
+                <div class="mini-feature-column">
+                    <h3>Libraries</h3>
 
-                <a href='https://github.com/nttcom/SkyWay-ScreenShare' target="_blank">
-                  <paper-button id="mini-feature-button">
-                    <img src="{{ site.homedir[page.lang] }}images/feature_icons/screenshare_grey.png">
-                    <h2>Screen Share</h2>
-                    <p>A browser extension to enable screen sharing</p>
-                  </paper-button>
-                </a>
+                    <a class="btn-paper-flat btn-feature" target="_blank" href='https://github.com/nttcom/SkyWay-ScreenShare'>
+                        <img src="{{ site.homedir[page.lang] }}images/feature_icons/screenshare_grey.png">
+                        <h2>Screen Share</h2>
+                        <p>A browser extension to enable screen sharing</p>
+                    </a>
 
-                <a href='https://github.com/nttcom/SkyWay-MultiParty' target="_blank">
-                  <paper-button id="mini-feature-button">
-                    <img src="{{ site.homedir[page.lang] }}images/feature_icons/multiparty_grey.png">
-                    <h2>MultiParty</h2>
-                    <p>A library to simplify group chats</p>
-                  </paper-button>
-                </a>
+                    <a class="btn-paper-flat btn-feature" target="_blank" href='https://github.com/nttcom/SkyWay-MultiParty'>
+                        <img src="{{ site.homedir[page.lang] }}images/feature_icons/multiparty_grey.png">
+                        <h2>MultiParty</h2>
+                        <p>A library to simplify group chats</p>
+                    </a>
 
-                <a href='https://github.com/nttcom/peerjs/wiki/How-to-integrate-the-IE-and-Safari-Plugin-into-your-SkyWay-Application' target="_blank">
-                  <paper-button id="mini-feature-button">
-                    <img src="{{ site.homedir[page.lang] }}images/feature_icons/plugin_grey.png">
-                    <h2>IE & Safari Plugin</h2>
-                    <p>A plugin to enable SkyWay for IE and Safari</p>
-                  </paper-button>
-                </a>
+                    <a class="btn-paper-flat btn-feature" target="_blank" href='https://github.com/nttcom/peerjs/wiki/IE-and-Safari-plugin導入手順'>
+                        <img src="{{ site.homedir[page.lang] }}images/feature_icons/plugin_grey.png">
+                        <h2>IE & Safari Plugin</h2>
+                        <p>A plugin to enable SkyWay for IE and Safari</p>
+                    </a>
+                </div>
             </div>
+            
+            <!-- Open Beta Features -->
+            
+            <div class="col-md-4">
+                <div class="mini-feature-column">
+                    <h3>Open β Features</h3>
 
-            <div class="mini-feature-column">
-                <h3>Open β Features</h3>
+                    <a class="btn-paper-flat btn-feature" target="_blank" href='https://skyway.io/ds/turnrequest'>
+                        <img src="{{ site.homedir[page.lang] }}images/feature_icons/turn_grey.png">
+                        <h2>TURN</h2>
+                        <p>Use SkyWay on a wider variety of network environments</p>
+                    </a>
 
-                <a href='https://skyway.io/ds/turnrequest' target="_blank">
-                  <paper-button id="mini-feature-button">
-                    <img src="{{ site.homedir[page.lang] }}images/feature_icons/turn_grey.png">
-                    <h2>TURN</h2>
-                    <p>Use SkyWay on a wider variety of network environments</p>
-                  </paper-button>
-                </a>
-
-                <a href='https://nttcom.github.io/SkyWay-SpeechRec/' target="_blank">
-                  <paper-button id="mini-feature-button">
-                    <img src="{{ site.homedir[page.lang] }}images/feature_icons/mic_grey.png">
-                    <h2>Speech Recognition</h2>
-                    <p>Speech Recognition API (Japanese only)</p>
-                  </paper-button>
-                </a>
+                    <a class="btn-paper-flat btn-feature" target="_blank" href='https://nttcom.github.io/SkyWay-SpeechRec/'>
+                        <img src="{{ site.homedir[page.lang] }}images/feature_icons/mic_grey.png">
+                        <h2>Speech Recognition</h2>
+                        <p>Speech Recognition API (Japanese only)</p>
+                    </a>
+                </div>
             </div>
         </div>
+
     </div>
+    
 </div>

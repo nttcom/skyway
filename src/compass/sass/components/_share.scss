@@ -1,0 +1,156 @@
+/* Share button styles */
+
+.btn-share {
+    @extend .paper-style;
+    
+    position: fixed;
+
+    right: 24px;
+
+    width: 50px;
+    height: 50px;
+
+    z-index: 10;
+    
+    border-radius: 50%;
+    
+    &:hover {
+        transform: scale(1.1, 1.1);
+        -webkit-transform: scale(1.1, 1.1);
+    }
+    
+    img {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        
+        height: 28px;
+        width: 28px;
+        
+        object-fit: scale-down;
+    }
+}
+
+.label-share {
+    @extend .paper-style-layer-1;
+    
+    position: fixed;
+
+    right: 20px;
+
+    height: 30px;
+    line-height: 30px;
+
+    margin: 10px;
+    padding: 0 10px;
+
+    color: #6a6a6a;
+    background-color: #eee;
+//    border-color: #ddd;
+//    border-style: solid 1px;
+    
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    border-radius: 5px;
+
+    font-weight: 300;
+    
+    z-index: 1;
+}
+
+#btn-share-git {
+    bottom: 156px;
+    background: #3f3f3f;
+    
+    img {
+        height: 36px !important;
+        width: 36px !important;
+        object-fit: scale-down;
+    }
+}
+
+#label-share-git {
+    bottom: 156px;
+}
+
+#btn-share-fb {
+    bottom: 90px;
+    background: #4E5FAD;
+}
+
+#label-share-fb {
+    bottom: 90px;
+}
+
+#btn-share-tw {
+    bottom: 24px;
+    background: #55ACEE;
+}
+
+#label-share-tw {
+    bottom: 24px;
+}
+
+
+
+
+
+/* Portrait phones and smaller */
+//@media (max-width: 767px) {
+//    .share-button {
+//        right: 8px;
+//    }
+//    
+//    #share-button-tw {
+//        bottom: 8px;
+//    }
+//    
+//    #share-button-fb {
+//        bottom: 74px;
+//    }
+//    
+//    #share-button-git {
+//        bottom: 140px;
+//    }
+//}
+    
+//@media only screen and (max-device-width: 580px){
+//    label {
+//        display:none;
+//    }
+//
+//    .share-button {
+//        width: 90px;
+//        height: 90px;
+//    }
+//
+//    #share-button-tw ::content #icon {
+//        height: 54px;
+//        width: 54px;
+//
+//    }
+//
+//    #share-button-fb {
+//        bottom: 145px;
+//    }
+//
+//    #share-button-fb ::content #icon {
+//        height: 72px;
+//        width: 72px;
+//    }
+//
+//    #share-button-git {
+//        bottom: 266px;
+//    }
+//
+//    #share-button-git ::content #icon {
+//        height: 66px;
+//        width: 66px;
+//        margin-bottom: 1px;
+//    }
+//
+//}   
+      
