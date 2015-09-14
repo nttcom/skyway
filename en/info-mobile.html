@@ -35,7 +35,12 @@ description: Here we offer our iOS and Android SDKs for SkyWay. If you use SkyWa
                                 </div>
 
                                 <div class="img-trap">
-                                    <img class="img-responsive device-image" src="{{ site.homedir[page.lang] }}images/top_images/mobile_top.png">
+                                    <picture>
+                                        <source
+                                            media="(max-width: 500px)"
+                                            srcset="{{ site.homedir[page.lang] }}images/top_images/mobile_top_small.png">
+                                        <img class="img-responsive device-image" src="{{ site.homedir[page.lang] }}images/top_images/mobile_top.png" alt="Mobile Image">
+                                    </picture>
                                 </div>
                                 
                             </div>

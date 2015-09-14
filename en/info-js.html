@@ -34,7 +34,12 @@ description: Here we offer our Javascript SDK for SkyWay. If you use SkyWay, you
                                 </div>
 
                                 <div class="img-trap">
-                                    <img class="img-responsive device-image" src="{{ site.homedir[page.lang] }}images/top_images/js_top.png">
+                                    <picture>
+                                    <source
+                                        media="(max-width: 500px)"
+                                        srcset="{{ site.homedir[page.lang] }}images/top_images/js_top_small.png">
+                                        <img class="img-responsive device-image" src="{{ site.homedir[page.lang] }}images/top_images/js_top.png" alt="JavaScript Image">
+                                    </picture>
                                 </div>
                             </div>
                         </div>

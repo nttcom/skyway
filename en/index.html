@@ -8,8 +8,8 @@ description: WebRTC is a revolutionary new technology that allows browsers and a
 <!-- Top Section -->
 
 <div class="top-section">
-    <h1>Connect in real time</h1>
-    <h2>A powerful yet simple WebRTC platform.</h2>
+    <h1>Develop powerful real time applications.</h1>
+    <h2>A WebRTC platform backed with the knowledge of a telecom operator.</h2>
     
     <div class="container animation-container">
         <div class="animation-content">
@@ -32,13 +32,24 @@ description: WebRTC is a revolutionary new technology that allows browsers and a
             <div class="row row-top-images">
                 <div class="col-xs-6">
                     <a href="info-js.html">
-                        <img src="{{ site.homedir[page.lang] }}images/top_images/index_js_top.png" class="animation-image">
+                        <picture>
+                            <source
+                                media="(max-width: 500px)"
+                                srcset="{{ site.homedir[page.lang] }}images/top_images/index_js_top_small.png">
+
+                            <img src="{{ site.homedir[page.lang] }}images/top_images/index_js_top.png" class="animation-image" alt="JavaScript Image">
+                        </picture>
                         <h3>JavaScript</h3>
                     </a>
                 </div>
                 <div class="col-xs-6">
                     <a href="info-mobile.html">
-                        <img src="{{ site.homedir[page.lang] }}images/top_images/index_mobile_top.png" class="animation-image">
+                        <picture>
+                            <source
+                                media="(max-width: 500px)"
+                                srcset="{{ site.homedir[page.lang] }}images/top_images/index_mobile_top_small.png">
+                                <img src="{{ site.homedir[page.lang] }}images/top_images/index_mobile_top.png" class="animation-image" alt="Mobile Image">
+                         </picture>
                          <h3>iOS/Android</h3>
                     </a>
                 </div>
