@@ -1,8 +1,5 @@
 # SkyWay Renewal Project
 
-- [Staging Repository (This)](https://github.com/nttcom-webcore/skyway-renewal)
-- [Staging Site](http://nttcom-webcore.github.io/skyway-renewal/)
-
 ## IMPORTANT NOTICE
 
 - Don't use master branch. Please use gh-pages branch instead.
