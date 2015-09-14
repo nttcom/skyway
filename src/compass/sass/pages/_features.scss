@@ -82,7 +82,7 @@ $colours: #4E5FAD, #E63300, #1CC05A;
 
     p {
         display: table;
-        margin: 32px auto;
+        margin: 20px auto;
         
         padding-left: 18px;
         padding-right: 18px;
@@ -105,8 +105,9 @@ $colours: #4E5FAD, #E63300, #1CC05A;
     }
     
     @include bp(sm) {
-        height: 240px;
+        height: auto;
         margin-bottom: 16px;
+        padding-bottom: 48px;
         
         img {
             margin-top: 18px;
@@ -118,7 +119,8 @@ $colours: #4E5FAD, #E63300, #1CC05A;
         }
         
         p {
-            margin: 20px auto;
+            margin: 10px auto;
+            font-size: 1.3em;
         }
     }
 }

@@ -8996,7 +8996,7 @@ a {
 }
 .feature-box p {
   display: table;
-  margin: 32px auto;
+  margin: 20px auto;
   padding-left: 18px;
   padding-right: 18px;
   max-height: 100px;
@@ -9014,8 +9014,9 @@ a {
 }
 @media (max-width: 991px) {
   .feature-box {
-    height: 240px;
+    height: auto;
     margin-bottom: 16px;
+    padding-bottom: 48px;
   }
   .feature-box img {
     margin-top: 18px;
@@ -9025,7 +9026,8 @@ a {
     margin-top: 12px;
   }
   .feature-box p {
-    margin: 20px auto;
+    margin: 10px auto;
+    font-size: 1.3em;
   }
 }
 
