@@ -29,7 +29,7 @@ Make sure node and npm
 
 1. run gulp (Individual gulp tasks are kept in gulp/tasks/)
 ```
-$ gulp
+$ bundle exec gulp
 ```
 2. access [http://localhost:3000/](http://localhost:3000/).
 
