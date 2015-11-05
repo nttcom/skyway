@@ -61,9 +61,9 @@
         <!-- Q&A Section -->
     <div class="col-md-8">
         <div class="content">
-            <h2>Q&A</h2>
             <h3>全般</h3>
-
+            <h3>General Questions</h3>
+            
             <a id="q1"></a>
             <h4>Q. WebRTCについて教えて欲しい</h4>
             [スクリプトを参照](https://ghe.nttcloud.net/webcore-tu/notes/blob/master/projects/openstack-summit-2015/scripts.md)
@@ -122,6 +122,7 @@
 
             <h3>技術面</h3>
             <h3>Technical Aspects</h3>
+            
             <a id="q7"></a>
             <h4>Q. 従来のP2P技術との違いは何か？</h4>
             [スクリプトを参照](https://ghe.nttcloud.net/webcore-tu/notes/blob/master/projects/openstack-summit-2015/scripts.md)
@@ -220,10 +221,10 @@
             <li>しかし、まだ全てのPC・モバイルブラウザでの対応は完了していない為、SkyWayでも現状未サポートです。</li>
 
             ```
-            * FireFox     ：対応済み。但し、H.264を優先するようAPL側で設定が必要。
-            * Chrome      ：年内に対応する見込み
-            * IE/Safari   ：プラグインで対応しているものが存在
-            * iOS/Android ：ライブラリが対応済み
+            <li>FireFox     ：対応済み。但し、H.264を優先するようAPL側で設定が必要。</li>
+            <li>Chrome      ：年内に対応する見込み</li>
+            <li>IE/Safari   ：プラグインで対応しているものが存在</li>
+            <li>iOS/Android ：ライブラリが対応済み</li>
             ```
 
             <h4>Q. H.264 is not supported? Why is that? What is the current level of support?</h4>
@@ -234,184 +235,190 @@
             <li>But due to lack of support in all PC & mobile browsers, H.264 is not yet supported by SkyWay.</li>
 
             ```
-            * FireFox     ：Supported. However it is necessary to to set H.264 as preferred in the application-side settings.
-            * Chrome      ：Expected to be supported by the end of the year.
-            * IE/Safari   ：Some plugins offer support.
-            * iOS/Android ：Libraries offer support.
+            <li>FireFox     ：Supported. However it is necessary to to set H.264 as preferred in the application-side settings.</li>
+            <li>Chrome      ：Expected to be supported by the end of the year.</li>
+            <li>IE/Safari   ：Some plugins offer support.</li>
+            <li>iOS/Android ：Libraries offer support.</li>
             ```
 
-            ### デモ内容
-            <a id="q14"></a>
-            #### Q. Romoの操作はどうやって実現しているのか？
-            * WebRTCを使って、ハンドル操作を、PCのブラウザから、Romoに装着したiPhoneアプリに伝えます。
-            * iPhoneアプリがRomoを動かします。
-            * PCとiPhoneのカメラ映像もお互いに送信しています。
-            * 最初にクラウド上のサーバがブラウザとiPhoneの通信を仲介した後は、ブラウザとiPhoneがPeer-to-Peerでdirectに通信します
 
-            #### Q. How are you controlling the Romo robots?
-            * The controls from the steering wheel are communicated from the browser the iPhone app running on the Romo.
-            * The iPhone app controls the Romo.
-            * Camera feeds from both the PC and the iPhone are being sent to each other simultaneously
-            * Once the initial communication between browser and iPhone app has been negotiated by a server in the cloud, the browser and iPhone communicate directly over P2P.
+
+            <h3>デモ内容</h3>
+            <h3>Demo Contents</h3>
+            
+            <a id="q14"></a>
+            <h4>Q. Romoの操作はどうやって実現しているのか？</h4>
+            <li>WebRTCを使って、ハンドル操作を、PCのブラウザから、Romoに装着したiPhoneアプリに伝えます。</li>
+            <li>iPhoneアプリがRomoを動かします。</li>
+            <li>PCとiPhoneのカメラ映像もお互いに送信しています。</li>
+            <li>最初にクラウド上のサーバがブラウザとiPhoneの通信を仲介した後は、ブラウザとiPhoneがPeer-to-Peerでdirectに通信します</li>
+
+            <h4>Q. How are you controlling the Romo robots?</h4>
+            <li>The controls from the steering wheel are communicated from the browser the iPhone app running on the Romo.</li>
+            <li>The iPhone app controls the Romo.</li>
+            <li>Camera feeds from both the PC and the iPhone are being sent to each other simultaneously</li>
+            <li>Once the initial communication between browser and iPhone app has been negotiated by a server in the cloud, the browser and iPhone communicate directly over P2P.</li>
 
             <a id="q15"></a>
-            #### Q. 無線で直接制御しているのか？
-            * このデモでは、PCとiPhoneはWiFi経由で接続していますが、インターネット経由でどこからでも制御可能です。
+            <h4>Q. 無線で直接制御しているのか？</h4>
+            <li>このデモでは、PCとiPhoneはWiFi経由で接続していますが、インターネット経由でどこからでも制御可能です。</li>
 
-            #### Q. You're directly controlling Romo over Wifi?
-            * In this demo the PC and iPhone are directly connected over Wifi, but it is also possible to control Romo over the internet.
+            <h4>Q. You're directly controlling Romo over Wifi?</h4>
+            <li>In this demo the PC and iPhone are directly connected over Wifi, but it is also possible to control Romo over the internet.</li>
 
             <a id="q16"></a>
-            #### Q. これをどうビジネスにするつもりなのか？
-            * 検討中です。
+            <h4>Q. これをどうビジネスにするつもりなのか？</h4>
+            <li>検討中です。</li>
 
-            #### Q. How do you plan to use this for business?
-            * We are currently considering this.
+            <h4>Q. How do you plan to use this for business?</h4>
+            <li>We are currently considering this.</li>
 
-            ### 差別化要素、競合優位性
-            ### Differentiatial elements, Competitive advantages
+
+
+            <h3>差別化要素、競合優位性</h3>
+            <h3>Differentiatial elements, Competitive advantages</h3>
             <a id="q17"></a>
-            #### Q. SkyWayを利用するメリットは何か？
-            #### Q. What are the merits of using SkyWay?
+            <h4>Q. SkyWayを利用するメリットは何か？</h4>
+            <h4>Q. What are the merits of using SkyWay?</h4>
             [スクリプトを参照](https://ghe.nttcloud.net/webcore-tu/notes/blob/master/projects/openstack-summit-2015/scripts.md)
             <a id="q18"></a>
-            #### Q. コンペティターは誰か？
-            * WebRTCサービスとしては、先行者であるAT&T、Tokbox、Twillioなどが競争相手です。
-            * クラウドサービスとしては、Amazon, Verizon, AT&Tなどが競争相手です。
+            <h4>Q. コンペティターは誰か？</h4>
+            <li>WebRTCサービスとしては、先行者であるAT&T、Tokbox、Twillioなどが競争相手です。</li>
+            <li>クラウドサービスとしては、Amazon, Verizon, AT&Tなどが競争相手です。</li>
 
-            #### Q. Who are your competitors?
-            * As a WebRTC service; AT&T, Tokbok, Twillio are our main competitors.
-            * As a cloud service, we compete with Amazon, Verizon and AT&T.
+            <h4>Q. Who are your competitors?</h4>
+            <li>As a WebRTC service; AT&T, Tokbok, Twillio are our main competitors.</li>
+            <li>As a cloud service, we compete with Amazon, Verizon and AT&T.</li>
 
             <a id="q33"></a>
-            #### Q. 競合に対する優位性、御社の強みは？
-            * 我々の強みに関しては、我々は、
-              - 通信キャリアやISP向けのTier1 IPバックボーンネットワークの提供者であり、
-              - 日本最大のISP(OCN)であり、
-              - 日本最大の電話サービス事業者です。
-            * これらの、世界でも有数のネットワーク・テレコム事業者としての経験、実績、知名度、技術力が、我々の強みです。
-            * WebRTC分野においても、国内ではトップレベルの実績と知名度を持っています。
-            * クラウドサービスとしては、VPNへの接続が無料であること、ウィルス対策や仮想パッチ等のセキュリティ機能などが強みです
+            <h4>Q. 競合に対する優位性、御社の強みは？</h4>
+            <li>我々の強みに関しては、我々は、</li>
+              - 通信キャリアやISP向けのTier1 IPバックボーンネットワークの提供者であり、</li>
+              - 日本最大のISP(OCN)であり、</li>
+              - 日本最大の電話サービス事業者です。</li>
+            <li>これらの、世界でも有数のネットワーク・テレコム事業者としての経験、実績、知名度、技術力が、我々の強みです。</li>
+            <li>WebRTC分野においても、国内ではトップレベルの実績と知名度を持っています。</li>
+            <li>クラウドサービスとしては、VPNへの接続が無料であること、ウィルス対策や仮想パッチ等のセキュリティ機能などが強みです。</li>
 
 
-            * 競合最大手のOpenTokと比較して、以下のメリットがあります。
-              - MediaChannel（音声・映像）だけでなく、DataChannel（データ）にも対応
-              - サーバが日本にある為、接続が高速
-              - 日本語でのサポートが可能
+            <li>競合最大手のOpenTokと比較して、以下のメリットがあります。</li>
+              - MediaChannel（音声・映像）だけでなく、DataChannel（データ）にも対応</li>
+              - サーバが日本にある為、接続が高速</li>
+              - 日本語でのサポートが可能</li>
 
-            #### Q. What advantages do your have over the competition? Or, what are your companies strengths?
-            * Are strengths are:
-              - We offer a Tier1 IP backbone network for network carriers and ISPs,
-              - We own Japan's largest ISP (OCN),
-              - We are Japan's largest telephone service operator
-            * Even on the global stage, our experience, track record, name recognition, technical capabilities position us as a leading network telecom operator.
-            * Even in the field of WebRTC, our experience and recognition is domestically very highly regarded.
-            * As a cloud service, our free VPN connections, antivirus and virtual patch security functionality are our strengths.
+            <h4>Q. What advantages do your have over the competition? Or, what are your companies strengths?</h4>
+            <li>Are strengths are:</li>
+              - We offer a Tier1 IP backbone network for network carriers and ISPs,</li>
+              - We own Japan's largest ISP (OCN),</li>
+              - We are Japan's largest telephone service operator</li>
+            <li>Even on the global stage, our experience, track record, name recognition, technical capabilities position us as a leading network telecom operator.</li>
+            <li>Even in the field of WebRTC, our experience and recognition is domestically very highly regarded.</li>
+            <li>As a cloud service, our free VPN connections, antivirus and virtual patch security functionality are our strengths.</li>
 
             <a id="q19"></a>
-            #### Q. オープンソースで競合の模倣をどう防ぐつもりなのか？
-            * 現在の提供機能はベーシックな物である為、オープンソースで開発を進めてきました。
-            * 今後、コアコンピタンス部分は非公開で権利化する等の戦略を検討しています。
+            <h4>Q. オープンソースで競合の模倣をどう防ぐつもりなのか？</h4>
+            <li>現在の提供機能はベーシックな物である為、オープンソースで開発を進めてきました。</li>
+            <li>今後、コアコンピタンス部分は非公開で権利化する等の戦略を検討しています。</li>
 
-            #### Q. How do you plan to mitigate against imitation due to your open sourced nature?
-            * Our present functionality is currently basic, and has therefore been developed opensource.
-            * We are considering adopting the tactic of privately developing future competitive features.
+            <h4>Q. How do you plan to mitigate against imitation due to your open sourced nature?</h4>
+            <li>Our present functionality is currently basic, and has therefore been developed opensource.</li>
+            <li>We are considering adopting the tactic of privately developing future competitive features.</li>
 
             <a id="q20"></a>
-            #### Q. 内製で開発する理由は？
-            * 理由は様々あるが、開発スピードがひとつの理由です。
-            * 市場環境変化が速い現在、スピーディな開発と迅速な改善の繰り返しが重要です。
-            * 外注の場合、RFP、価格交渉等のプロセスが開発スピードを遅らせる恐れがあります。
+            <h4>Q. 内製で開発する理由は？</h4>
+            <li>理由は様々あるが、開発スピードがひとつの理由です。</li>
+            <li>市場環境変化が速い現在、スピーディな開発と迅速な改善の繰り返しが重要です。</li>
+            <li>外注の場合、RFP、価格交渉等のプロセスが開発スピードを遅らせる恐れがあります。</li>
 
-            #### Q. Why did you develop internally?
-            * One reason is because the speed of developing internally.
-            * In the currently rapidly changing market environment, having rapid development and improvement is necessary.
-            * With outsourcing the processes of negotiating prices, RFP etc can significantly slow development speed and reduce maneuverability.
+            <h4>Q. Why did you develop internally?</h4>
+            <li>One reason is because the speed of developing internally.</li>
+            <li>In the currently rapidly changing market environment, having rapid development and improvement is necessary.</li>
+            <li>With outsourcing the processes of negotiating prices, RFP etc can significantly slow development speed and reduce maneuverability.</li>
 
-            ### ビジネス戦略
-            ### Business Strategy
+            <h3>ビジネス戦略</h3>
+            <h3>Business Strategy</h3>
             <a id="q21"></a>
-            #### Q. マネタイズはどのように行うつもりか？
-            * 検討中です。
+            <h4>Q. マネタイズはどのように行うつもりか？</h4>
+            <li>検討中です。</li>
 
-            #### Q. How do you plan to monetise SkyWay?
-            * We are currently considering this.
+            <h4>Q. How do you plan to monetise SkyWay?</h4>
+            <li>We are currently considering this.</li>
 
             <a id="q23"></a>
-            #### Q. 既存の商材との競合についてはどう考えているのか？
-            * 検討中です。
+            <h4>Q. 既存の商材との競合についてはどう考えているのか？</h4>
+            <li>検討中です。</li>
 
-            #### Q. In what ways are you thinking about competiting with existing products.
-            * We are currently considering this.
+            <h4>Q. In what ways are you thinking about competiting with existing products.</h4>
+            <li>We are currently considering this.</li>
 
             <a id="q24"></a>
-            #### Q. IoT分野でどうビジネスをしていくつもりか？
-            * 検討中です。
+            <h4>Q. IoT分野でどうビジネスをしていくつもりか？</h4>
+            <li>検討中です。</li>
 
-            #### Q. How do you plan to do business in the field of IoT?
-            * We are currently considering this.
+            <h4>Q. How do you plan to do business in the field of IoT?</h4>
+            <li>We are currently considering this.</li>
 
-            ### 料金、SLA、保守、サポート
-            ### Fees, SLA, maintenance, support
+            <h3>料金、SLA、保守、サポート</h3>
+            <h3>Fees, SLA, maintenance, support</h3>
             <a id="q25"></a>
-            #### Q. 法人での利用、商用での利用は可能か？
-            * はい、可能です。
-            * しかし、SkyWayは現在トライアルサービスという位置付けで提供しています。
-            * 商用化については現在検討中で、一部の機能は有償化する可能性があります。
+            <h4>Q. 法人での利用、商用での利用は可能か？</h4>
+            <li>はい、可能です。</li>
+            <li>しかし、SkyWayは現在トライアルサービスという位置付けで提供しています。</li>
+            <li>商用化については現在検討中で、一部の機能は有償化する可能性があります。</li>
 
-            #### Q. Is it possible for corporations to use SkyWay, or to use it for commertial purposes?
-            * Yes, it is possible.
-            * However we are currently offering SkyWay as a trial service.
-            * We are currently considering the commercialisation of SkyWay, and may charge for some features in future.
+            <h4>Q. Is it possible for corporations to use SkyWay, or to use it for commertial purposes?</h4>
+            <li>Yes, it is possible.</li>
+            <li>However we are currently offering SkyWay as a trial service.</li>
+            <li>We are currently considering the commercialisation of SkyWay, and may charge for some features in future.</li>
 
             <a id="q26"></a>
-            #### Q. 料金は発生するか？無償で利用可能か？
-            * 無償でご利用頂けます。
-            * しかし、SkyWayは現在トライアルサービスという位置付けで提供しています。
-            * 商用化については現在検討中で、一部の機能は有償化する可能性があります。
+            <h4>Q. 料金は発生するか？無償で利用可能か？</h4>
+            <li>無償でご利用頂けます。</li>
+            <li>しかし、SkyWayは現在トライアルサービスという位置付けで提供しています。</li>
+            <li>商用化については現在検討中で、一部の機能は有償化する可能性があります。</li>
 
-            #### Q. Are the fees for using SkyWay? Can I use it royalty-free?
-            * SkyWay is offered royalty-free.
-            * However we are currently offering SkyWay as a trial service.
-            * * We are currently considering the commercialisation of SkyWay, and may charge for some features in future.
+            <h4>Q. Are the fees for using SkyWay? Can I use it royalty-free?</h4>
+            <li>SkyWay is offered royalty-free.</li>
+            <li>However we are currently offering SkyWay as a trial service.</li>
+            <li>We are currently considering the commercialisation of SkyWay, and may charge for some features in future.</li>
 
             <a id="q27"></a>
-            #### Q. 商用化、有償化の時期はいつか？
-            * 未定です。現在検討中です。お伝えできる確定情報はございません。
-            * 商用サービスにSkyWayをご利用頂く事は可能です。無償でご利用頂けます。
+            <h4>Q. 商用化、有償化の時期はいつか？</h4>
+            <li>未定です。現在検討中です。お伝えできる確定情報はございません。</li>
+            <li>商用サービスにSkyWayをご利用頂く事は可能です。無償でご利用頂けます。</li>
 
-            #### Q. When do you plan to commercialise SkyWay?
-            * This is currently under consideration and has yet to be decided. We cannot confirm any details about this at present.
-            * it is possible to use SkyWay in a commercial service. There are no costs for doing this.
+            <h4>Q. When do you plan to commercialise SkyWay?</h4>
+            <li>This is currently under consideration and has yet to be decided. We cannot confirm any details about this at present.</li>
+            <li>it is possible to use SkyWay in a commercial service. There are no costs for doing this.</li>
 
             <a id="q28"></a>
-            #### Q. 商用化、有償化時の料金はどのぐらいになるか？
-            * 未定です。現在検討中です。現時点でお伝えできる確定情報はございません。
-            * 競合他社の同種のサービスで有償提供されているものがあります。
-            * しかし、同じ料金体系になるかは不明です。
+            <h4>Q. 商用化、有償化時の料金はどのぐらいになるか？</h4>
+            <li>未定です。現在検討中です。現時点でお伝えできる確定情報はございません。</li>
+            <li>競合他社の同種のサービスで有償提供されているものがあります。</li>
+            <li>しかし、同じ料金体系になるかは不明です。</li>
 
-            #### Q. How much do you plan to charge for future commericalised components of SkyWay?
-            * This is currently under considerationd and is undetermined.  We cannot confirm any details about this at present.
-            * Some of our competitors offer similar services for a price.
-            * However, we have not yet determined whether we will use a similar price structure.
+            <h4>Q. How much do you plan to charge for future commericalised components of SkyWay?</h4>
+            <li>This is currently under considerationd and is undetermined.  We cannot confirm any details about this at present.</li>
+            <li>Some of our competitors offer similar services for a price.</li>
+            <li>However, we have not yet determined whether we will use a similar price structure.</li>
 
             <a id="q29"></a>
-            #### Q. SLAは存在するか？
-            * トライアルサービスのため、 SLAは存在しません。
-            * 商用化時には変更になる可能性がありますが、現時点でお伝えできる確定情報はございません。
+            <h4>Q. SLAは存在するか？</h4>
+            <li>トライアルサービスのため、 SLAは存在しません。</li>
+            <li>商用化時には変更になる可能性がありますが、現時点でお伝えできる確定情報はございません。</li>
 
-            #### Q. Do you have SLAs?
-            * As SkyWay is presently a trial service, there are no SLAs presently in place.
-            * This may change when SkyWay is commercialised, but we cannot confirm any details about this at present.
+            <h4>Q. Do you have SLAs?</h4>
+            <li>As SkyWay is presently a trial service, there are no SLAs presently in place.</li>
+            <li>This may change when SkyWay is commercialised, but we cannot confirm any details about this at present.</li>
 
             <a id="q30"></a>
-            #### Q. 保守、サポート体制はどのようになっているか？
-            * 平日日勤帯での対応となります。
-            * 商用化時には変更になる可能性がありますが、現時点でお伝えできる確定情報はございません。
+            <h4>Q. 保守、サポート体制はどのようになっているか？</h4>
+            <li>平日日勤帯での対応となります。</li>
+            <li>商用化時には変更になる可能性がありますが、現時点でお伝えできる確定情報はございません。</li>
 
-            #### Q. What maintenance or support systems do you have in place?
-            * We correspond with support enquiries during working hours (on weekdays).
-            * This may change when SkyWay is commercialised, but we cannot confirm any details about this at present.
+            <h4>Q. What maintenance or support systems do you have in place?</h4>
+            <li>We correspond with support enquiries during working hours (on weekdays).</li>
+            <li>This may change when SkyWay is commercialised, but we cannot confirm any details about this at present.</li>
         </div>
             
     </div>
