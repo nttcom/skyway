@@ -9455,14 +9455,48 @@ a {
   margin: 0;
 }
 
-.q_a h4 {
+.q_a .index {
+  color: #fff;
+  background-color: royalblue;
+  border-radius: 8px;
+  padding: 16px 0;
+}
+.q_a .index h2 {
+  text-align: center;
+  margin-top: 0px;
+}
+.q_a .index h2, .q_a .index h3 {
+  padding-left: 12px;
+}
+.q_a .index li {
+  list-style: none;
+}
+.q_a .index li a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  color: #bdcbf5 !important;
+  color: rgba(255, 255, 255, 0.65) !important;
+  background-color: #587be5 !important;
+  background-color: rgba(255, 255, 255, 0.12) !important;
+  padding: 0 20px;
+  border-color: #6384e6 !important;
+  border-color: rgba(255, 255, 255, 0.18) !important;
+}
+.q_a .index li a:hover {
+  background-color: #6787e7 !important;
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  color: #d9e1f9 !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.q_a .content h4 {
   color: #5285FF;
   padding-top: 16px;
 }
-
-.q_a li {
+.q_a .content li {
   color: #5a5a5a;
-  padding-left: 16px;
+  padding-left: 12px;
 }
 
 .preamble {

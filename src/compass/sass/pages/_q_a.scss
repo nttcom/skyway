@@ -1,11 +1,52 @@
-.q_a h4 {
+.q_a .index {
+    color: #fff;
+    background-color: $mid_blue;
+    border-radius: 8px;
     
-    color: $skyway_blue;
-    padding-top: 16px;
+    padding: 16px 0;
+    
+    h2 {
+        text-align: center;
+        margin-top: 0px;
+    }
+    
+    h2,h3 {
+        padding-left: 12px;
+    }
+    
+    li {
+        list-style: none;
+    
+        a {
+            text-decoration: none;
+            display: block;
+            width: 100%;
+            
+            @include alpha-attribute('color', rgba(#fff, 0.65), $mid_blue);
+            @include alpha-attribute('background-color', rgba(#fff, 0.12), $mid_blue);
+
+            padding: 0 20px;
+//            border-style: solid;
+//            border-width: 1px 0;
+            @include alpha-attribute('border-color', rgba(#fff, 0.18), $mid_blue);
+
+            &:hover {
+                @include alpha-attribute('background-color', rgba(#fff, 0.20), $mid_blue);
+                @include alpha-attribute('color', rgba(#fff, 0.8), $mid_blue);
+            }
+        }
+    }
 }
 
-.q_a li {
+.q_a .content {
     
-    color: $dark_font;
-    padding-left: 12px;
+    h4 {
+        color: $skyway_blue;
+        padding-top: 16px;
+    }
+    
+    li {    
+        color: $dark_font;
+        padding-left: 12px;
+    }
 }
