@@ -9455,6 +9455,10 @@ a {
   margin: 0;
 }
 
+.q_a {
+  padding-top: 16px;
+}
+
 .q_a .index {
   color: #fff;
   background-color: royalblue;
@@ -9464,6 +9468,9 @@ a {
 .q_a .index h2 {
   text-align: center;
   margin-top: 0px;
+}
+.q_a .index h3 {
+  font-size: 1.5em;
 }
 .q_a .index h2, .q_a .index h3 {
   padding-left: 12px;
