@@ -9497,6 +9497,15 @@ a {
   color: rgba(255, 255, 255, 0.8) !important;
 }
 
+.q_a .content h3 {
+  width: inherit;
+  padding-top: 32px;
+  padding-bottom: 12px;
+  border-style: solid;
+  border-width: 0;
+  border-bottom-width: 2px;
+  border-color: #5285FF;
+}
 .q_a .content h4 {
   color: #5285FF;
   padding-top: 16px;
@@ -9504,6 +9513,14 @@ a {
 .q_a .content li {
   color: #5a5a5a;
   padding-left: 12px;
+}
+.q_a .content .blue-divider {
+  padding-top: 20px;
+  width: inherit;
+  border-style: solid;
+  border-width: 0;
+  border-bottom-width: 2px;
+  border-color: #5285FF;
 }
 
 .preamble {

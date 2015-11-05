@@ -61,8 +61,7 @@
         <!-- Q&A Section -->
     <div class="col-md-8">
         <div class="content">
-            <h3>全般</h3>
-            <h3>General Questions</h3>
+            <h3>全般 / General Questions</h3>
             
             <a id="q1"></a>
             <h4>Q. WebRTCについて教えて欲しい</h4>
@@ -117,11 +116,7 @@
 
 
 
-
-
-
-            <h3>技術面</h3>
-            <h3>Technical Aspects</h3>
+            <h3>技術面 / Technical Aspects</h3>
             
             <a id="q7"></a>
             <h4>Q. 従来のP2P技術との違いは何か？</h4>
@@ -243,8 +238,7 @@
 
 
 
-            <h3>デモ内容</h3>
-            <h3>Demo Contents</h3>
+            <h3>デモ内容 / Demo Contents</h3>
             
             <a id="q14"></a>
             <h4>Q. Romoの操作はどうやって実現しているのか？</h4>
@@ -275,8 +269,8 @@
 
 
 
-            <h3>差別化要素、競合優位性</h3>
-            <h3>Differentiatial elements, Competitive advantages</h3>
+            <h3>差別化要素、競合優位性 / Differentiatial Elements, Competitive Advantages</h3>
+
             <a id="q17"></a>
             <h4>Q. SkyWayを利用するメリットは何か？</h4>
             <h4>Q. What are the merits of using SkyWay?</h4>
@@ -335,8 +329,8 @@
             <li>In the currently rapidly changing market environment, having rapid development and improvement is necessary.</li>
             <li>With outsourcing the processes of negotiating prices, RFP etc can significantly slow development speed and reduce maneuverability.</li>
 
-            <h3>ビジネス戦略</h3>
-            <h3>Business Strategy</h3>
+            <h3>ビジネス戦略 / Business Strategy</h3>
+            
             <a id="q21"></a>
             <h4>Q. マネタイズはどのように行うつもりか？</h4>
             <li>検討中です。</li>
@@ -358,8 +352,11 @@
             <h4>Q. How do you plan to do business in the field of IoT?</h4>
             <li>We are currently considering this.</li>
 
-            <h3>料金、SLA、保守、サポート</h3>
-            <h3>Fees, SLA, maintenance, support</h3>
+
+
+
+            <h3>料金、SLA、保守、サポート / Fees, SLA, Maintenance, Support</h3>
+
             <a id="q25"></a>
             <h4>Q. 法人での利用、商用での利用は可能か？</h4>
             <li>はい、可能です。</li>
