@@ -9455,6 +9455,16 @@ a {
   margin: 0;
 }
 
+.q_a h4 {
+  color: #5285FF;
+  padding-top: 16px;
+}
+
+.q_a li {
+  color: #5a5a5a;
+  padding-left: 16px;
+}
+
 .preamble {
   padding: 20px 0px;
   font-size: 1.2em;
