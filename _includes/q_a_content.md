@@ -65,15 +65,65 @@
             
             <a id="q1"></a>
             <h4>Q. WebRTCについて教えて欲しい</h4>
-            [スクリプトを参照](https://ghe.nttcloud.net/webcore-tu/notes/blob/master/projects/openstack-summit-2015/scripts.md)
+            <li>WebRTCは、ブラウザ間でリアルタイムなP2P通信を実現する技術です。</li>
+            <li>WebRTCは、HTML5標準の一部として、W3CとIETFで標準化が進められています。</li>
+            <li>従来、P2P通信を行うには、端末に専用のアプリやプラグインのインストールが必要でした。</li>
+            <li>P2P通信とは、例えば、ビデオチャット、画面共有、ファイル送受信などです。</li>
+            <li>WebRTCを用いると、ブラウザの内蔵機能だけで、これらのP2P通信が可能となります。</li>
+            <li>そのため、通信相手の端末やアプリに依存せずにコミュニケーションできます。</li>
+            <li>また、既存の他のサービスとの連携も容易となります。</li>
+            <li>よって、WebRTC技術の今後の応用に注目が集まっています。</li>
+            
+            <h4>Q. What is WebRTC?</h4>
+            <li>WebRTC is a technology which enables realtime P2P communication between browsers.</li>
+            <li>As part of the HTML5 standard, WebRTC is currently being standardised by W3C and IETF.</li>
+            <li>Until now, to perform P2P communication it was necessary to either install a specific application or plugin.</li>
+            <li>P2P communication can enable direct video chat, screen sharing and file sharing functionality.</li>
+            <li>Using WebRTC it is possible to perform such P2P communication using only your web browser.</li>
+            <li>It is easy to communicate without having to rely on your communication partner having the correct application installed.</li>
+            <li>In addition, it is possible to enable cooperation with other existing services.</li>
+            <li>WebRTC is gaining attention for it's future application areas.</li>
 
             <a id="q2"></a>
             <h4>Q. SkyWayについて教えて欲しい</h4>
-            [スクリプトを参照](https://ghe.nttcloud.net/webcore-tu/notes/blob/master/projects/openstack-summit-2015/scripts.md)
+            <li>SkyWayは、WebRTC技術を簡単に活用できる、アプリ開発者向けのプラットフォームです。</li>
+            <li>SkyWayをご利用いただくメリットについてご説明します。</li>
+            <li>WebRTCを利用するには、Webアプリの開発技術以外に、NWやサーバに関する知識が必要です。</li>
+            <li>例えば、セッション制御、NAT通過、仲介サーバの開発・構築技術などです。</li>
+            <li>SkyWayは、これらの複雑な通信制御処理、仲介サーバ、WebAPIなどを提供します。</li>
+            <li>これにより、Web開発者は、WebRTCアプリケーションをより簡単に開発できるようになります。</li>
+
+
+            <li>SkyWayは、2013年12月に国内初のWebRTCプラットフォームとして公開を開始しました。</li>
+            <li>アプリ開発者の方に、Webアプリやスマートフォンアプリ用の開発環境を提供しています。</li>
+            <li>開発登録数は2,200を超え、様々なシーンで活用されています。</li>
+            <li>SkyWayはオープンソースです。ライブラリ・ソースコード・開発者向けドキュメントをGitHub上で公開しています。</li>
+
+            <h4>Q. What is SkyWay?</h4>
+            <li>SkyWay is a platform directed towards application developers, enabling the easy utilisation of WebRTC technology.</li>
+            <li>What are some of the merits of using SkyWay?</li>
+            <li>When using WebRTC to biuld an application, additional knowledge is required beyond web application development technologies. For example, you also need knowledge about networks and servers.</li>
+            <li>This might include session control, bypassing NAT, development and construction of mediation servers.</li>
+            <li>SkyWay provides all these complicated background features and wraps them up in a simple API for implementation in your projects.</li>
+            <li>As a result Web developers can easily develop WebRTC applications without worrying about the backend details.</li>
+
+            <li>SkyWay was originally released in December 2013 as the first WebRTC platform in Japan.</li>
+            <li>We offer APIs and development environments for application developers to develop either for Web or smartphones.</li>
+            <li>We have over 2200 developers on board, with SkyWay being utilised in a variety of environments.</li>
+            <li>SkyWay is opensource. Our libraries, source code, and developer documentation is publically available on GitHub.</li>
 
             <a id="q3"></a>
             <h4>Q. HTML5ラボについて教えて欲しい</h4>
-            [スクリプトを参照](https://ghe.nttcloud.net/webcore-tu/notes/blob/master/projects/openstack-summit-2015/scripts.md)
+            <li>私達は、2013年7月から「NTTコミュニケーションズ HTML5ラボ」を展開しています。</li>
+            <li>これは、HTML5を活用した新たなICTサービスの開発を推進するプロジェクトです。</li>
+            <li>私達は、日本初のHTML5技術専門サイト「HTML5experts.jp」を2013年7月に開設しました。</li>
+            <li>セミナーや勉強会などを通じ、HTML5の啓発活動とWebサービス開発者の支援を行っています。</li>
+
+            <h4>Q. What is HTML5 Lab?</h4>
+            <li>We have been developing NTT Communication's "HTML5 Lab" since July 2013.</li>
+            <li>This is a project with the aim of advancing new ICT services using HTML5.</li>
+            <li>We also opened Japan's first HTML5 technology site, "HTML5experts.jp" in July 2013.</li>
+            <li>Through seminars and study sessions, we aim to provide enlightenment about HTML5 and support for web service developers.</li>
 
             <a id="q4"></a>
             <h4>Q. 導入事例について教えて欲しい</h4>
