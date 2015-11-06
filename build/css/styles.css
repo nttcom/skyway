@@ -9497,6 +9497,9 @@ a {
   color: rgba(255, 255, 255, 0.8) !important;
 }
 
+.q_a .content {
+  padding-bottom: 20px;
+}
 .q_a .content h3 {
   width: inherit;
   padding-top: 32px;
