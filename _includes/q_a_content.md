@@ -1,3 +1,7 @@
+<div class="up-button">
+    <i class="fa fa-arrow-circle-up"></i>
+</div>
+
 <div class="row">
 <!--    <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1">-->
     <div class="col-md-4">

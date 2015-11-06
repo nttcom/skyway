@@ -9458,6 +9458,23 @@ a {
 .q_a {
   padding-top: 16px;
 }
+.q_a .up-button {
+  position: fixed;
+  left: 25%;
+  top: 100px;
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  font-size: 2.8em;
+  text-align: center;
+  line-height: 57px;
+  color: #fff;
+  background-color: royalblue;
+  z-index: 10;
+}
+.q_a .up-button:hover {
+  background-color: rgba(65, 105, 225, 0.75);
+}
 
 .q_a .index {
   color: #fff;
