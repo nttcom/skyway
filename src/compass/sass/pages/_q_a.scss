@@ -59,6 +59,10 @@
         border-width: 0;
         border-bottom-width: 2px;
         border-color: $skyway_blue;
+        
+        &:first-of-type {
+            padding-top: 0px;
+        }
     }
     
     h4 {

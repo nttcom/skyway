@@ -9506,6 +9506,9 @@ a {
   border-bottom-width: 2px;
   border-color: #5285FF;
 }
+.q_a .content h3:first-of-type {
+  padding-top: 0px;
+}
 .q_a .content h4 {
   color: #5285FF;
   padding-top: 16px;
