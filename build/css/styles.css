@@ -9460,8 +9460,7 @@ a {
 }
 .q_a .up-button {
   position: fixed;
-  left: 25%;
-  top: 100px;
+  top: 30px;
   width: 60px;
   height: 60px;
   border-radius: 8px;
@@ -9470,6 +9469,8 @@ a {
   line-height: 57px;
   color: #fff;
   background-color: royalblue;
+  display: none;
+  cursor: pointer;
   z-index: 10;
 }
 .q_a .up-button:hover {

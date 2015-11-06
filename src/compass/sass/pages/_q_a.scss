@@ -5,8 +5,7 @@
     .up-button {
         position: fixed;
 
-        left: 25%;
-        top: 100px;
+        top: 30px;
         
         width: 60px;
         height: 60px;
@@ -19,6 +18,9 @@
         
         color: #fff;
         background-color: $mid_blue;
+        display: none;
+        
+        cursor: pointer;
         
         z-index: 10;
         
