@@ -147,7 +147,10 @@
             
             <a id="q7"></a>
             <h4>Q. 従来のP2P技術との違いは何か？</h4>
-            [スクリプトを参照](https://ghe.nttcloud.net/webcore-tu/notes/blob/master/projects/openstack-summit-2015/scripts.md)
+            <li>従来、P2P通信を行うには、端末に専用のアプリやプラグインのインストールが必要でした。</li>
+            <li>WebRTCを用いると、ブラウザの内蔵機能だけで、これらのP2P通信が可能となります。</li>
+            <li>そのため、通信相手の端末やアプリに依存せずにコミュニケーションできます。</li>
+            <li>また、既存の他のサービスとの連携も容易となります。</li>
 
             <a id="q8"></a>
             <h4>Q. P2Pでセキュリティをどう担保するのか？</h4>
@@ -186,8 +189,10 @@
             <li>ネットワークの状況に応じてアダプティブにビットレートを変更します。</li>
             <li>NW状況が悪ければ携帯電話並、NW状況が良ければMP3並の音質になります。</li>
             <li>最近、TwitCastingがopusを採用しました。高音質化でミュージシャンを取り込む狙いがあるそうです。</li>
-            http://japan.cnet.com/news/service/35069805/
-            http://japan.cnet.com/image/l/storage/35069805/storage/2015/09/02/d9e405eb3bdca786be43500936e7d37b/150902_t_01.jpg
+                <ul>
+                    <li>http://japan.cnet.com/news/service/35069805/</li>
+                    <li>http://japan.cnet.com/image/l/storage/35069805/storage/2015/09/02/d9e405eb3bdca786be43500936e7d37b/150902_t_01.jpg</li>
+                </ul>
 
             <li>映像はVP8というコーデックを使っており、帯域は100〜2000Kbpsで可変です。</li>
 
@@ -212,27 +217,35 @@
             <li>高品質・高圧縮率のフォーマットとして最も普及が進んでいるのはH.264(MPEG-4)です。</li>
             <li>しかし、H.264規格はメーカの特許を含む為、ライセンス料が発生するという問題がありました。</li>
             <li>そこで、Googleはウェブブラウザ向けにVP8を無償で公開しました。</li>
-            <li>http://gigazine.net/news/20140427-google-webm/</li>
+                <ul>
+                    <li>http://gigazine.net/news/20140427-google-webm/</li>
+                </ul>
 
             <h4>Q. What is VP8?</h4>
             <li>VP8 is a royalty-free video codec offered by Google.</li>
             <li>Currently the H.264 standard is popular, due to it's hgih quality and compression rate.</li>
             <li>H.264 incorporates patented technologies, and it's usage can therefore require license fee payments.</li>
             <li>Google released the royalty-free VP8 codec for the browser for this reason.</li>
-            <li>http://gigazine.net/news/20140427-google-webm/</li>
+                <ul>
+                    <li>http://gigazine.net/news/20140427-google-webm/</li>
+                </ul>
 
             <a id="q32"></a>
             <h4>Q. VP9とは？</h4>
             <li>VP9はVP8の後継コーデックで、より高品質な映像コーデックです。</li>
             <li>VP8と比較すると、同じ画質でVP8の半分のビットレートを実現しています。</li>
             <li>ライバルであるH.264やH.265よりも効率の良いコーデックにすることを目指し開発されています。</li>
-            <li>http://gigazine.net/news/20150407-youtube-vp9/</li>
+                <ul>
+                    <li>http://gigazine.net/news/20150407-youtube-vp9/</li>
+                </ul>
 
             <h4>Q. What is VP9?</h4>
             <li>VP9 is the successor to VP8 with higher picture quality.</li>
             <li>With the same picture quality, the bitrate is halved in comparison to VP8.</li>
             <li>It is being developed as a more efficient alternative to rival H.264 and H.265 codecs.</li>
-            <li>http://gigazine.net/news/20150407-youtube-vp9/</li>
+                <ul>
+                    <li>http://gigazine.net/news/20150407-youtube-vp9/</li>
+                </ul>
 
             <a id="q13"></a>
             <h4>Q. H264には対応していないのか？それはなぜか？対応状況は？</h4>
@@ -241,13 +254,12 @@
             <li>しかし、H.264規格はメーカの特許を含む為、ライセンス料が発生するという問題がありました。</li>
             <li>昨年(2014年)、CiscoがH.264コーデックをオープンソース化した事で、WebRTC標準にも採用されました。</li>
             <li>しかし、まだ全てのPC・モバイルブラウザでの対応は完了していない為、SkyWayでも現状未サポートです。</li>
-
-            ```
-            <li>FireFox     ：対応済み。但し、H.264を優先するようAPL側で設定が必要。</li>
-            <li>Chrome      ：年内に対応する見込み</li>
-            <li>IE/Safari   ：プラグインで対応しているものが存在</li>
-            <li>iOS/Android ：ライブラリが対応済み</li>
-            ```
+                <ul>
+                    <li>FireFox     ：対応済み。但し、H.264を優先するようAPL側で設定が必要。</li>
+                    <li>Chrome      ：年内に対応する見込み</li>
+                    <li>IE/Safari   ：プラグインで対応しているものが存在</li>
+                    <li>iOS/Android ：ライブラリが対応済み</li>
+                </ul>
 
             <h4>Q. H.264 is not supported? Why is that? What is the current level of support?</h4>
             <li>H.264 has recently been adopted by the WebRTC standard, but is not yet supported by every browser.</li>
@@ -255,19 +267,23 @@
             <li>H.264 incorporates patented technologies, and it's usage can therefore require license fee payments.</li>
             <li>It was adopted by WebRTC after Cisco opensourced the standard last year.</li>
             <li>But due to lack of support in all PC & mobile browsers, H.264 is not yet supported by SkyWay.</li>
-
-            ```
-            <li>FireFox     ：Supported. However it is necessary to to set H.264 as preferred in the application-side settings.</li>
-            <li>Chrome      ：Expected to be supported by the end of the year.</li>
-            <li>IE/Safari   ：Some plugins offer support.</li>
-            <li>iOS/Android ：Libraries offer support.</li>
-            ```
+                <ul>
+                    <li>FireFox     ：Supported. However it is necessary to to set H.264 as preferred in the application-side settings.</li>
+                    <li>Chrome      ：Expected to be supported by the end of the year.</li>
+                    <li>IE/Safari   ：Some plugins offer support.</li>
+                    <li>iOS/Android ：Libraries offer support.</li>
+                </ul>
 
 
             <h3>差別化要素、競合優位性 / Differentiatial Elements, Competitive Advantages</h3>
 
             <a id="q17"></a>
             <h4>Q. SkyWayを利用するメリットは何か？</h4>
+            <li>WebRTCを利用するには、Webアプリの開発技術以外に、NWやサーバに関する知識が必要です。</li>
+            <li>例えば、セッション制御、NAT通過、仲介サーバの開発・構築技術などです。</li>
+            <li>SkyWayは、これらの複雑な通信制御処理、仲介サーバ、WebAPIなどを提供します。</li>
+            <li>これにより、Web開発者は、WebRTCアプリケーションをより簡単に開発できるようになります。</li>
+
             <h4>Q. What are the merits of using SkyWay?</h4>
             [スクリプトを参照](https://ghe.nttcloud.net/webcore-tu/notes/blob/master/projects/openstack-summit-2015/scripts.md)
             <a id="q18"></a>
@@ -280,23 +296,29 @@
             <a id="q33"></a>
             <h4>Q. 競合に対する優位性、SkyWayの強みは？</h4>
             <li>我々の強みに関しては、我々は、</li>
-              - 通信キャリアやISP向けのTier1 IPバックボーンネットワークの提供者であり、</li>
-              - 日本最大のISP(OCN)であり、</li>
-              - 日本最大の電話サービス事業者です。</li>
+                <ul>
+                    <li>通信キャリアやISP向けのTier1 IPバックボーンネットワークの提供者であり、</li>
+                    <li>日本最大のISP(OCN)であり、</li>
+                    <li>日本最大の電話サービス事業者です。</li>
+                </ul>
             <li>これらの、世界でも有数のネットワーク・テレコム事業者としての経験、実績、知名度、技術力が、我々の強みです。</li>
             <li>WebRTC分野においても、国内ではトップレベルの実績と知名度を持っています。</li>
 
 
             <li>競合最大手のOpenTokと比較して、以下のメリットがあります。</li>
-              - MediaChannel（音声・映像）だけでなく、DataChannel（データ）にも対応</li>
-              - サーバが日本にある為、接続が高速</li>
-              - 日本語でのサポートが可能</li>
+                <ul>
+                  <li>MediaChannel（音声・映像）だけでなく、DataChannel（データ）にも対応</li>
+                  <li>サーバが日本にある為、接続が高速</li>
+                  <li>日本語でのサポートが可能</li>
+                </ul>
 
             <h4>Q. What advantages do your have over the competition? Or, what are your companies strengths?</h4>
             <li>Are strengths are:</li>
-              - We offer a Tier1 IP backbone network for network carriers and ISPs,</li>
-              - We own Japan's largest ISP (OCN),</li>
-              - We are Japan's largest telephone service operator</li>
+                <ul>
+                  <li>We offer a Tier1 IP backbone network for network carriers and ISPs,</li>
+                  <li>We own Japan's largest ISP (OCN),</li>
+                  <li>We are Japan's largest telephone service operator</li>
+                </ul>
             <li>Even on the global stage, our experience, track record, name recognition, technical capabilities position us as a leading network telecom operator.</li>
             <li>Even in the field of WebRTC, our experience and recognition is domestically very highly regarded.</li>
 
