@@ -16,9 +16,7 @@
                 <li><a href="#q2">SkyWayについて教えて欲しい</a></li>
                 <li><a href="#q3">HTML5ラボについて教えて欲しい</a></li>
                 <li><a href="#q4">導入事例について教えて欲しい</a></li>
-                <li><a href="#q5">利用するにはづすればよいか？</a></li>
-                <li><a href="#q6">OpenStackとの関連は？</a></li>
-                <li><a href="#q34">OpenStackの上で動いているのか？</a></li>
+                <li><a href="#q5">利用するにはすればよいか？</a></li>
             </div>
 
             <div class="index-block"> 
@@ -31,32 +29,27 @@
                 <li><a href="#q12">利用コーデックは？利用帯域は？</a></li>
                 <li><a href="#q31">VP8とは？</a></li>
                 <li><a href="#q32">VP9とは？</a></li>
-                <li><a href="#q13">H264には対応していないのか？それはなぜか？</a></li>
+                <li><a href="#q13">H264には対応していないのか？</a></li>
             </div>
-
-            <h3>デモ内容</h3>
-            <li><a href="#q14">Romoの操作はどうやって実現しているのか？</a></li>
-            <li><a href="#q15">無線で直接制御しているのか？</a></li>
-            <li><a href="#q16">これをどうビジネスにするつもりなのか？</a></li>
 
             <h3>差別化要素、競合優位性</h3>
             <li><a href="#q17">SkyWayを利用するメリットは何か？</a></li>
-            <li><a href="#q18">コンペティターは誰か？競合に対する優位性、御社の強みは？</a></li>
+            <li><a href="#q18">コンペティターは誰か？</a></li>
             <li><a href="#q33">競合に対する優位性、御社の強みは？</a></li>
             <li><a href="#q19">オープンソースで競合の模倣をどう防ぐつもりなのか？</a></li>
-            <li><a href="#q20">内製で開発する理由は？</a></li>
+            <li><a href="#q20">SkyWayを内製で開発する理由は？</a></li>
 
             <h3>ビジネス戦略</h3>
             <li><a href="#q21">マネタイズはどのように行うつもりか？</a></li>
             <li><a href="#q22">有償化したら誰も使わないのではないか？</a></li>
             <li><a href="#q23">既存の商材との競合についてはどう考えているのか？</a></li>
-            <li><a href="#q24">IoT分野でどうビジネスをしていくつもりか？</a></li>
+            <li><a href="#q24">SkyWayはIoT分野でもビジネスをしていくつもりか？</a></li>
 
             <h3>料金、SLA、保守、サポート</h3>
             <li><a href="#q25">法人での利用、商用での利用は可能か？</a></li>
             <li><a href="#q26">料金は発生するか？無償で利用可能か？</a></li>
-            <li><a href="#q27">商用化、有償化の時期はいつか？</a></li>
-            <li><a href="#q28">商用化、有償化時の料金はどのぐらいになるか？</a></li>
+            <li><a href="#q27">有償化の時期はいつか？</a></li>
+            <li><a href="#q28">有償化時の料金はどのぐらいになるか？</a></li>
             <li><a href="#q29">SLAは存在するか？</a></li>
             <li><a href="#q30">保守、サポート体制はどのようになっているか？</a></li>
         </div>
@@ -133,7 +126,7 @@
             <h4>Q. 導入事例について教えて欲しい</h4>
             <li>妻鳥通信工業様が、SkyWayを用いて、ビデオ通話による問合せ機能をWebサイトに埋め込めるサービスを開発しております。</li>
             <li>金融大手様が、SkyWayを、社内向けのWeb会議サービスにご利用されています。</li>
-            <li>日本科学未来館様が、このRomoを使って、離れた場所から子どもを見守るイベントを開催されました。</li>
+            <li>日本科学未来館様が、エデュケーショナルロボット「Romo」とSkyWayを組み合わせて、離れた場所から子どもを見守るイベントを開催されました。</li>
 
             <h4>Q. Can you give some examples of SkyWay being used?</h4>
             <li>A company named Mendori (Menbird) has added video call functionality to it's contact portal, and is using SkyWay to support the technology.</li>
@@ -148,26 +141,6 @@
                     <li>JavaScriptを利用する場合、お客様がご用意するWebサイトのドメインと同一にする</li>
                     <li>iOS/Androidを利用する場合、ソースコード上で同一の文字列を指定する</li>
                 </ul>
-
-            <a id="q6"></a>
-            <h4>Q. OpenStackとの関連は？</h4>
-            <li>OpenStackのモジュールアーキテクチャという特徴を生かして、OpenStackを、IaaSだけでなく、PaaSやIoT基盤にも活用していきます。</li>
-
-            <h4>Q. What is SkyWay's connection to OpenStack?</h4>
-            <li>Using the strengths of OpenStack's modular architecture, we are using it not just as an Iaas, but also as a PaaS and as an IoT foundation.</li>
-
-            <a id="q34"></a>
-            <h4>Q. OpenStackの上で動いているのか？</h4>
-            <li>このデモシステムは、OpenStack上で動作しています。</li>
-            <li>しかし、正式サービスとしてはまだ提供開始しておらず、現在検証中の段階です。</li>
-            <li>サービスの提供時期は未定です。</li>
-
-            <h4>Q. You're running upon OpenStack?</h4>
-            <li>This demo is running upon OpenStack.</li>
-            <li>However we have yet to roll this out to our official services.</li>
-            <li>We have not yet determined when we will begin to offer this service.</li>
-
-
 
 
             <h3>技術面 / Technical Aspects</h3>
@@ -291,38 +264,6 @@
             ```
 
 
-
-            <h3>デモ内容 / Demo Contents</h3>
-            
-            <a id="q14"></a>
-            <h4>Q. Romoの操作はどうやって実現しているのか？</h4>
-            <li>WebRTCを使って、ハンドル操作を、PCのブラウザから、Romoに装着したiPhoneアプリに伝えます。</li>
-            <li>iPhoneアプリがRomoを動かします。</li>
-            <li>PCとiPhoneのカメラ映像もお互いに送信しています。</li>
-            <li>最初にクラウド上のサーバがブラウザとiPhoneの通信を仲介した後は、ブラウザとiPhoneがPeer-to-Peerでdirectに通信します</li>
-
-            <h4>Q. How are you controlling the Romo robots?</h4>
-            <li>The controls from the steering wheel are communicated from the browser the iPhone app running on the Romo.</li>
-            <li>The iPhone app controls the Romo.</li>
-            <li>Camera feeds from both the PC and the iPhone are being sent to each other simultaneously</li>
-            <li>Once the initial communication between browser and iPhone app has been negotiated by a server in the cloud, the browser and iPhone communicate directly over P2P.</li>
-
-            <a id="q15"></a>
-            <h4>Q. 無線で直接制御しているのか？</h4>
-            <li>このデモでは、PCとiPhoneはWiFi経由で接続していますが、インターネット経由でどこからでも制御可能です。</li>
-
-            <h4>Q. You're directly controlling Romo over Wifi?</h4>
-            <li>In this demo the PC and iPhone are directly connected over Wifi, but it is also possible to control Romo over the internet.</li>
-
-            <a id="q16"></a>
-            <h4>Q. これをどうビジネスにするつもりなのか？</h4>
-            <li>検討中です。</li>
-
-            <h4>Q. How do you plan to use this for business?</h4>
-            <li>We are currently considering this.</li>
-
-
-
             <h3>差別化要素、競合優位性 / Differentiatial Elements, Competitive Advantages</h3>
 
             <a id="q17"></a>
@@ -332,21 +273,18 @@
             <a id="q18"></a>
             <h4>Q. コンペティターは誰か？</h4>
             <li>WebRTCサービスとしては、先行者であるAT&T、Tokbox、Twillioなどが競争相手です。</li>
-            <li>クラウドサービスとしては、Amazon, Verizon, AT&Tなどが競争相手です。</li>
 
             <h4>Q. Who are your competitors?</h4>
             <li>As a WebRTC service; AT&T, Tokbok, Twillio are our main competitors.</li>
-            <li>As a cloud service, we compete with Amazon, Verizon and AT&T.</li>
 
             <a id="q33"></a>
-            <h4>Q. 競合に対する優位性、御社の強みは？</h4>
+            <h4>Q. 競合に対する優位性、SkyWayの強みは？</h4>
             <li>我々の強みに関しては、我々は、</li>
               - 通信キャリアやISP向けのTier1 IPバックボーンネットワークの提供者であり、</li>
               - 日本最大のISP(OCN)であり、</li>
               - 日本最大の電話サービス事業者です。</li>
             <li>これらの、世界でも有数のネットワーク・テレコム事業者としての経験、実績、知名度、技術力が、我々の強みです。</li>
             <li>WebRTC分野においても、国内ではトップレベルの実績と知名度を持っています。</li>
-            <li>クラウドサービスとしては、VPNへの接続が無料であること、ウィルス対策や仮想パッチ等のセキュリティ機能などが強みです。</li>
 
 
             <li>競合最大手のOpenTokと比較して、以下のメリットがあります。</li>
@@ -361,19 +299,18 @@
               - We are Japan's largest telephone service operator</li>
             <li>Even on the global stage, our experience, track record, name recognition, technical capabilities position us as a leading network telecom operator.</li>
             <li>Even in the field of WebRTC, our experience and recognition is domestically very highly regarded.</li>
-            <li>As a cloud service, our free VPN connections, antivirus and virtual patch security functionality are our strengths.</li>
 
             <a id="q19"></a>
             <h4>Q. オープンソースで競合の模倣をどう防ぐつもりなのか？</h4>
             <li>現在の提供機能はベーシックな物である為、オープンソースで開発を進めてきました。</li>
-            <li>今後、コアコンピタンス部分は非公開で権利化する等の戦略を検討しています。</li>
+            <li>今後、コアコンピタンス部分で差別化する戦略を検討しています。</li>
 
             <h4>Q. How do you plan to mitigate against imitation due to your open sourced nature?</h4>
             <li>Our present functionality is currently basic, and has therefore been developed opensource.</li>
             <li>We are considering adopting the tactic of privately developing future competitive features.</li>
 
             <a id="q20"></a>
-            <h4>Q. 内製で開発する理由は？</h4>
+            <h4>Q. SkyWayを内製で開発する理由は？</h4>
             <li>理由は様々あるが、開発スピードがひとつの理由です。</li>
             <li>市場環境変化が速い現在、スピーディな開発と迅速な改善の繰り返しが重要です。</li>
             <li>外注の場合、RFP、価格交渉等のプロセスが開発スピードを遅らせる恐れがあります。</li>
@@ -400,7 +337,7 @@
             <li>We are currently considering this.</li>
 
             <a id="q24"></a>
-            <h4>Q. IoT分野でどうビジネスをしていくつもりか？</h4>
+            <h4>Q. SkyWayはIoT分野でもビジネスをしていくつもりか？</h4>
             <li>検討中です。</li>
 
             <h4>Q. How do you plan to do business in the field of IoT?</h4>
@@ -434,7 +371,7 @@
             <li>We are currently considering the commercialisation of SkyWay, and may charge for some features in future.</li>
 
             <a id="q27"></a>
-            <h4>Q. 商用化、有償化の時期はいつか？</h4>
+            <h4>Q. 有償化の時期はいつか？</h4>
             <li>未定です。現在検討中です。お伝えできる確定情報はございません。</li>
             <li>商用サービスにSkyWayをご利用頂く事は可能です。無償でご利用頂けます。</li>
 
@@ -443,7 +380,7 @@
             <li>it is possible to use SkyWay in a commercial service. There are no costs for doing this.</li>
 
             <a id="q28"></a>
-            <h4>Q. 商用化、有償化時の料金はどのぐらいになるか？</h4>
+            <h4>Q. 有償化時の料金はどのぐらいになるか？</h4>
             <li>未定です。現在検討中です。現時点でお伝えできる確定情報はございません。</li>
             <li>競合他社の同種のサービスで有償提供されているものがあります。</li>
             <li>しかし、同じ料金体系になるかは不明です。</li>
