@@ -131,17 +131,24 @@
             <h4>Q. Can you give some examples of SkyWay being used?</h4>
             <li>A company named Mendori (Menbird) has added video call functionality to it's contact portal, and is using SkyWay to support the technology.</li>
             <li>A large Japanese financial institution has introduced an internal webconferencing solution using SkyWay technology.</li>
-            <li>Japan's National Museum of Emerging Science and Innovation (Miraikan) has held events to showcase using Romo as a solution to watch over children over long distances.</li>
+            <li>Japan's National Museum of Emerging Science and Innovation (Miraikan) has held events to showcase using Romo (an educational robot) powered by SkyWay as a solution to watch over children over long distances.</li>
 
             <a id="q5"></a>
             <h4>Q. 利用するにはどうすればよいか？</h4>
-            <li>公式サイトからAPIキーを登録すれば利用できます。</li>
+            <li><a href="https://skyway.io/ds/">公式サイト</a>からAPIキーを登録すれば利用できます。</li>
             <li>APIキー登録時、「ドメイン」を指定する際は以下にご注意下さい。</li>
                 <ul>
                     <li>JavaScriptを利用する場合、お客様がご用意するWebサイトのドメインと同一にする</li>
                     <li>iOS/Androidを利用する場合、ソースコード上で同一の文字列を指定する</li>
                 </ul>
-
+                
+            <h4>Q. What do I need to do to use SkyWay？</h4>
+            <li>Before using SkyWay, you first need to register your application's API key on the <a href="https://skyway.io/ds/">SkyWay Dashboard</a></li>
+            <li>When registering your API key, be careful of the following points:</li>
+                <ul>
+                    <li>If you are using JavaScript, make sure this matches the domain you will use for your SkyWay application.</li>
+                    <li>If you are using iOS or Android, make sure the correct API key is included in your code.</li>
+                </ul>
 
             <h3>技術面 / Technical Aspects</h3>
             
@@ -151,6 +158,12 @@
             <li>WebRTCを用いると、ブラウザの内蔵機能だけで、これらのP2P通信が可能となります。</li>
             <li>そのため、通信相手の端末やアプリに依存せずにコミュニケーションできます。</li>
             <li>また、既存の他のサービスとの連携も容易となります。</li>
+            
+            <h4>Q. In what ways does WebRTC differ from existing P2P technologies?</h4>
+            <li>Until now P2P has required the installation of a native application or plugin.</li>
+            <li>Using WebRTC it is possible to perform P2P communication using only the functionality of your browser.</li>
+            <li>Can confidently communicate without ensuring all parties have the relevant application or endpoint hardware.</li>
+            <li>It is also possible to link with other existing services easily.</li>
 
             <a id="q8"></a>
             <h4>Q. P2Pでセキュリティをどう担保するのか？</h4>
@@ -201,6 +214,10 @@
             <li>The bitrate can change to suit the network conditions.</li>
             <li>Bad network conditions are on the level of a mobile phone call, good network conditions have audio quality on par with MP3 files.</li>
             <li>Recently TwitCasting has adopted Opus. They are aiming to attract musicians through the high audio quality.</li>
+                <ul>
+                    <li>http://japan.cnet.com/news/service/35069805/</li>
+                    <li>http://japan.cnet.com/image/l/storage/35069805/storage/2015/09/02/d9e405eb3bdca786be43500936e7d37b/150902_t_01.jpg</li>
+                </ul>
 
             <li>Video uses the VP8 codec, with a bitrates in the range of 100~2000Kbps.</li>
 
@@ -261,7 +278,7 @@
                     <li>iOS/Android ：ライブラリが対応済み</li>
                 </ul>
 
-            <h4>Q. H.264 is not supported? Why is that? What is the current level of support?</h4>
+            <h4>Q. Is H.264 not supported?</h4>
             <li>H.264 has recently been adopted by the WebRTC standard, but is not yet supported by every browser.</li>
             <li>Currently the H.264 standard is popular, due to it's hgih quality and compression rate.</li>
             <li>H.264 incorporates patented technologies, and it's usage can therefore require license fee payments.</li>
@@ -304,7 +321,6 @@
             <li>これらの、世界でも有数のネットワーク・テレコム事業者としての経験、実績、知名度、技術力が、我々の強みです。</li>
             <li>WebRTC分野においても、国内ではトップレベルの実績と知名度を持っています。</li>
 
-
             <li>競合最大手のOpenTokと比較して、以下のメリットがあります。</li>
                 <ul>
                   <li>MediaChannel（音声・映像）だけでなく、DataChannel（データ）にも対応</li>
@@ -312,7 +328,7 @@
                   <li>日本語でのサポートが可能</li>
                 </ul>
 
-            <h4>Q. What advantages do your have over the competition? Or, what are your companies strengths?</h4>
+            <h4>Q. What strengths does SkyWay have over other solutions?</h4>
             <li>Are strengths are:</li>
                 <ul>
                   <li>We offer a Tier1 IP backbone network for network carriers and ISPs,</li>
@@ -327,7 +343,7 @@
             <li>現在の提供機能はベーシックな物である為、オープンソースで開発を進めてきました。</li>
             <li>今後、コアコンピタンス部分で差別化する戦略を検討しています。</li>
 
-            <h4>Q. How do you plan to mitigate against imitation due to your open sourced nature?</h4>
+            <h4>Q. How do you plan to mitigate against any imitation due to your open sourced code?</h4>
             <li>Our present functionality is currently basic, and has therefore been developed opensource.</li>
             <li>We are considering adopting the tactic of privately developing future competitive features.</li>
 
@@ -337,7 +353,7 @@
             <li>市場環境変化が速い現在、スピーディな開発と迅速な改善の繰り返しが重要です。</li>
             <li>外注の場合、RFP、価格交渉等のプロセスが開発スピードを遅らせる恐れがあります。</li>
 
-            <h4>Q. Why did you develop internally?</h4>
+            <h4>Q. Why did you develop SkyWay internally?</h4>
             <li>One reason is because the speed of developing internally.</li>
             <li>In the currently rapidly changing market environment, having rapid development and improvement is necessary.</li>
             <li>With outsourcing the processes of negotiating prices, RFP etc can significantly slow development speed and reduce maneuverability.</li>
@@ -362,7 +378,7 @@
             <h4>Q. SkyWayはIoT分野でもビジネスをしていくつもりか？</h4>
             <li>検討中です。</li>
 
-            <h4>Q. How do you plan to do business in the field of IoT?</h4>
+            <h4>Q. Do you plan to target the the field of IoT with SkyWay?</h4>
             <li>We are currently considering this.</li>
 
 
