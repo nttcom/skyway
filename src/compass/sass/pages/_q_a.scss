@@ -1,0 +1,119 @@
+.q_a {
+    
+    padding-top: 16px;
+    
+    .up-button {
+        position: fixed;
+
+        top: 30px;
+        
+        width: 60px;
+        height: 60px;
+        
+        border-radius: 8px;
+        
+        font-size: 2.8em;
+        text-align: center;
+        line-height: 57px;
+        
+        color: #fff;
+        background-color: $mid_blue;
+        display: none;
+        
+        cursor: pointer;
+        
+        z-index: 10;
+        
+        &:hover {
+            background-color: rgba($mid_blue, 0.75);
+        }
+    }
+}
+
+.q_a .index {
+    color: #fff;
+    background-color: $mid_blue;
+    border-radius: 8px;
+    
+    padding: 16px 0;
+    
+    h2 {
+        text-align: center;
+        margin-top: 0px;
+    }
+    
+    h3 {
+        font-size: 1.5em;
+    }
+    
+    h2,h3 {
+        padding-left: 12px;
+    }
+    
+    li {
+        list-style: none;
+    
+        a {
+            text-decoration: none;
+            display: block;
+            width: 100%;
+            
+            @include alpha-attribute('color', rgba(#fff, 0.65), $mid_blue);
+            @include alpha-attribute('background-color', rgba(#fff, 0.12), $mid_blue);
+
+            line-height: 18px;
+            padding: 6px 20px;
+//            border-style: solid;
+//            border-width: 1px 0;
+            @include alpha-attribute('border-color', rgba(#fff, 0.18), $mid_blue);
+
+            &:hover {
+                @include alpha-attribute('background-color', rgba(#fff, 0.20), $mid_blue);
+                @include alpha-attribute('color', rgba(#fff, 0.8), $mid_blue);
+            }
+        }
+    }
+}
+
+.q_a .content {
+    
+    padding-bottom: 20px;
+    
+    h3 {
+        
+        width: inherit;
+        padding-top: 32px;
+        padding-bottom: 12px;
+        
+        border-style: solid;
+        border-width: 0;
+        border-bottom-width: 2px;
+        border-color: $skyway_blue;
+        
+        &:first-of-type {
+            padding-top: 0px;
+        }
+    }
+    
+    h4 {
+        color: $skyway_blue;
+        padding-top: 16px;
+    }
+    
+    li {    
+        color: $dark_font;
+        padding-left: 12px;
+    }
+    
+    .blue-divider {
+        
+        padding-top: 20px;
+        width: inherit;
+        
+        border-style: solid;
+        border-width: 0;
+        border-bottom-width: 2px;
+        border-color: $skyway_blue;
+        
+    }
+}
