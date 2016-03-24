@@ -1,0 +1,1 @@
+March 24, between 17:04PM and 17:52PM (JST), parts of the SkyWay system was became unusable for SSL certificate renewal work. All systems are currently back up and running. We are very sorry for may have caused you some trouble.
