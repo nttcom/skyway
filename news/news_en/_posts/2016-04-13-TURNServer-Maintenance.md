@@ -1,0 +1,1 @@
+The SkyWay TURN Service will be undergoing emergency maintenance on April 13th, 2016 between 12:30PM to 12:35PM (JST). All users connecting using the SkyWay TURN Service will be disconnected. We are sorry for any inconvenience this may cause.
