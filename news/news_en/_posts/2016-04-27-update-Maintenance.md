@@ -1,1 +1,1 @@
-The SkyWay servers will be undergoing maintenance on April 27th, 2016 between 7:30AM to 7:35AM (JST). During this time, there will be several service interruptions which are expected to last a few seconds each. We are sorry in advance for any inconvenience.
+The SkyWay servers will be undergoing maintenance on April 28th, 2016 between 7:30AM to 7:35AM (JST). During this time, there will be several service interruptions which are expected to last a few seconds each. We are sorry in advance for any inconvenience.
