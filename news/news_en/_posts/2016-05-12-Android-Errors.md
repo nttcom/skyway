@@ -1,0 +1,1 @@
+Starting from May 12th, 2016, 4:00AM (JST), there have been reports that some Android OS devices cannot connect to the SkyWay servers. We are currently working to resolve this issue. We appologize for any inconvenience this may cause.
