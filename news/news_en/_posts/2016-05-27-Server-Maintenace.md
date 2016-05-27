@@ -1,0 +1,1 @@
+The SkyWay servers will be be undergoing maintenance on May 30th between 7:00AM to 9:00AM (JST) as we release an English version of the SkyWay Developer's Dashboard. During this time, you may experience short periods of service interruption to all of our services including the developer's dashboard and videochat. We are sorry in advance for any inconvenience this may cause.
