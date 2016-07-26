@@ -1,0 +1,109 @@
+<h1>「多人数接続API及びSFU」のα版提供開始</h1>
+<div id='date'><i>2016年8月8日</i></div>
+
+<p>SkyWayに、多人数接続のルームAPIとSFU機能が追加されました！
+これらのAPIを使用することで、多人数参加のビデオチャットや音声通話を組み込んだアプリケーションが、10数行程度のコードで実現できます。</p>
+
+<h2>新規機能</h2>
+<div class='divider'></div>
+
+<h3>多人数接続（ルームAPI）</h3>
+
+<p>グループチャット等の多人数接続が簡易に実現できるようになりました。
+ルームの名前を指定するだけで、ルーム内の全員と通信を開始できます。もちろん1対1の通信にも利用可能です。</p>
+
+<p>名前を指定するだけでいくつものルームを作成できるので、多数のルームを持つグループチャットアプリケーションを簡単に作ることができます。</p>
+
+<h3>SFU</h3>
+
+<p>WebRTCは基本的にサーバ等は介さず、P2Pで直接通信を行います。SkyWayの既存のAPIも、P2P通信を行うものが基本となっています。</p>
+
+	<figure id='p2p'>
+		<img src='images/alpha-release/p2p.png' id='p2p_img' alt='P2P接続の通信'>
+		<figcaption>P2P接続の通信</figcaption>
+	</figure>
+
+<p><i>SFU</i>(Selective Forwarding Unit)とは、P2Pではなくサーバを経由してメディアやデータの送受信を行う技術です。</p>
+
+<div id=sfu_fullmesh>
+	<figure id='sfu' class=sfu_fullmesh_figure>
+		<img src='images/alpha-release/sfu.png' id='sfu_img' alt='SFUを使用した通信'>
+		<figcaption>SFUを使用した通信<br>（<strong>サーバに対してのみ</strong>ストリームを送信）</figcaption>
+	</figure>
+	<figure id='fullmesh' class=sfu_fullmesh_figure>
+		<img src='images/alpha-release/fullmesh.png' id='fullmesh_img' alt='フルメッシュ接続の通信'>
+		<figcaption>フルメッシュ接続の通信<br>（<strong>参加者全員に対して</strong>ストリームを送信）</figcaption>
+	</figure>
+
+</div>
+
+<p>今回追加されたAPIには<b>SFU</b>と<b>フルメッシュ</b>の2つのモードがあり、SFUモードではSkyWayのサーバを介して通信を行います。クライアントが送信を行うパスをSkyWayサーバのみに限定できるため、クライアントの負荷が軽減し、より多くの人と同時に通信できるようになりました。</p>
+
+<p>フルメッシュモードではルーム内の参加者全員とP2Pで接続します。</p>
+
+<h2>ご利用方法</h2>
+<div class='divider'></div>
+
+<p>注意事項をよくお読みになり、内容についてご承諾いただいた上でご利用ください。</p>
+
+<h3>注意事項</h3>
+
+<ul>
+<li>本バージョンのライブラリ(skyway.js)は既存のSkyWayのライブラリ(peer.js)、iOS/Android SDKと<strong>相互接続性がありません</strong>。
+<li>本ライブラリの使用にあたって、<strong>申請等は必要ありません</strong>。
+<li>2016/08/08現在、<strong>JavaScript版のみ</strong>の提供となります。
+<li><span class='attention'>SFUモードはGoogle Chromeの最新の安定バージョンでのみ</span>動作します。
+	<ul>
+		<li>フルメッシュモードはGoogle Chrome、Mozilla FireFoxの最新の安定バージョンで動作します。
+	</ul>
+<li>本バージョンのライブラリは開発段階にあり、予期せぬ不具合が発生する場合があります。
+<li>予告なく仕様を変更する場合があります。安定性を重視される場合は<a href='info-js.html' target='_blank'>現行のライブラリ</a>をご利用ください。
+<li>バグ報告やライブラリについてのお問い合わせは<a href='https://groups.google.com/forum/#!forum/skywayjs' target='_blank'>SkyWay Technical Forum</a>からお願いします。
+<li>本ライブラリによって生じたいかなる損害も補償できません。予めご了承ください。
+</ul>
+
+<h3>ライブラリ</h3>
+
+<p>以下のようにライブラリをインクルードしてご使用ください。</p>
+
+<pre>
+&lt;script type='text/javascript' src='//cdn.skyway.io/skyway.js'&gt;&lt;/script&gt;
+&lt;script type='text/javascript' src='//cdn.skyway.io/skyway.min.js'&gt;&lt;/script&gt;
+</pre>
+
+<h3>ドキュメント</h3>
+
+<p>新規APIのマニュアルは<a href='room-docs.html' target='_blank'>こちら</a>をご覧ください。</p>
+
+<p>既存のAPIの機能はそのままお使いいただけます。既存APIのマニュアルは<a href='http://nttcom.github.io/skyway/docs/#JS' target='_blank'>こちら</a>をご覧ください。</p>
+
+<h3>動作環境</h3>
+
+<ul>
+	<li>OS
+		<ul>
+			<li>Windows 7/8/10</li>
+			<li>Mac OS 10.10/10.11</li>
+		</ul>
+	</li>
+	<li>ブラウザ
+		<ul>
+			<li><b>SFUモードはGoogle Chromeの最新の安定バージョンのみ</b></li>
+			<li><b>フルメッシュモードはGoogle Chrome、もしくはMozilla Firefoxの最新の安定バージョン</b></li>
+		</ul>
+	</li>
+</ul>
+
+<h2>サンプルアプリ</h2>
+<div class='divider'></div>
+
+<p>今回追加されたAPIを使用したサンプルアプリを公開しています。</p>
+
+<ul>
+	<li><a href='https://example.skyway.io/sfu_videochat/index.html' target='_blank'>SFUを使用したグループビデオチャット</a></li>
+	<li><a href='https://example.skyway.io/fullmesh_videochat/index.html' target='_blank'>フルメッシュ接続のグループビデオチャット</a></li>
+</ul>
+
+<p><span class='attention'>ルーム名に簡易な文字列を入力すると、予期せぬ相手とチャットが開始する恐れがあります。</span>
+
+<p>サンプルアプリのコードは<a href='https://github.com/nttcom/SkyWay-JS-Sample' target='_blank'>こちら</a>で公開しています。</p>
