@@ -8773,6 +8773,65 @@ a {
 }
 
 /* Portrait phones and smaller */
+.alpha-release {
+  font-size: 1.2em;
+}
+.alpha-release h1 {
+  font-size: 2.3em;
+  font-weight: bold;
+  text-align: center;
+}
+.alpha-release h2 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 2em;
+  text-align: center;
+}
+.alpha-release h3 {
+  font-size: 1.35em;
+  font-weight: bold;
+  margin-top: 1.6em;
+}
+.alpha-release div#date {
+  text-align: right;
+  margin: 10px;
+}
+.alpha-release p {
+  clear: both;
+}
+.alpha-release a {
+  color: #5285FF;
+}
+.alpha-release .attention {
+  font-weight: bold;
+  color: red;
+}
+.alpha-release figure#p2p {
+  margin-bottom: 15px;
+}
+.alpha-release img#p2p_img {
+  width: 400px;
+  display: block;
+  margin: 0px auto;
+}
+.alpha-release div#sfu_fullmesh {
+  max-width: 800px;
+  margin: 0px auto;
+}
+.alpha-release figure.sfu_fullmesh_figure {
+  float: left;
+  margin: 20px;
+}
+.alpha-release img#sfu_img {
+  width: 350px;
+}
+.alpha-release img#fullmesh_img {
+  width: 350px;
+}
+.alpha-release figcaption {
+  text-align: center;
+}
+
 .platform-logo {
   position: absolute;
   top: 0;
@@ -9546,6 +9605,28 @@ a {
   border-width: 0;
   border-bottom-width: 2px;
   border-color: #5285FF;
+}
+
+.room-api h2 {
+  margin-top: 1em;
+}
+.room-api h3 {
+  margin-top: 1.5em;
+  margin-bottom: -0.5em;
+}
+.room-api h4 {
+  margin-top: 2em;
+  border-bottom: 1px solid #6b6b6b;
+}
+.room-api :not(pre) > code[class*="language-"], .room-api pre[class*="language-"] {
+  background: #f5f5f5;
+}
+.room-api code {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #0079ff;
+  background-color: #f3fdff;
+  border-radius: 4px;
 }
 
 .preamble {
