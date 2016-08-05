@@ -8821,6 +8821,7 @@ a {
 .alpha-release figure.sfu_fullmesh_figure {
   float: left;
   margin: 20px;
+  width: 350px;
 }
 .alpha-release img#sfu_img {
   width: 350px;
