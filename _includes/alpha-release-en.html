@@ -1,0 +1,104 @@
+<h1>Alpha release of multi-user connections and SFU functionality</h1>
+<div id='date'><i>August 8, 2016</i></div>
+
+<p>We have added a new API to SkyWay that lets you use a multi-user room API and SFU functionality. You can now connect to multiple users in about 10 lines of code.</p>
+
+<h2>New Features</h2>
+<div class='divider'></div>
+
+<h3>Multi-user connections (Room API)</h3>
+
+<p>Create group video chats easily with out new Room API! Just specify the room name and connect to all users in the room. Of course we still support 1 on 1 connections.</p>
+
+<h3>SFU</h3>
+
+<p>WebRTC is in generally a technology that connections P2P without using any servers. SkyWay's existing API is based on communication in a P2P fashion.</p>
+
+	<figure id='p2p'>
+		<img src='{{ site.homedir[page.lang] }}images/alpha-release/p2p.png' id='p2p_img' alt='P2P connection'>
+		<figcaption>P2P connection</figcaption>
+	</figure>
+
+<p><i>SFU</i>(Selective Forwarding Unit) is a technology that enables you to broadcast media and data via a server to multiple peers, instead of using connecting P2P.</p>
+
+<div id=sfu_fullmesh>
+	<figure id='sfu' class=sfu_fullmesh_figure>
+		<img src='{{ site.homedir[page.lang] }}images/alpha-release/sfu.png' id='sfu_img' alt='Communication using an SFU'>
+		<figcaption>Communication using an SFU<br>(Transmit only one stream to the server and receive multiple streams)</figcaption>
+	</figure>
+	<figure id='fullmesh' class=sfu_fullmesh_figure>
+		<img src='{{ site.homedir[page.lang] }}images/alpha-release/fullmesh.png' id='fullmesh_img' alt='Communication using a full mesh connection'>
+		<figcaption>Communication using a full mesh connection<br>(Send and receive streams from every peer)</figcaption>
+	</figure>
+
+</div>
+
+<p>There are 2 ways of using this new API, <b>SFU</b> and <b>full mesh</b>. Using the SFU mode relays all communication through SkyWay's servers. Since clients only have to send their data to one endpoint, it reduces stress on the clients, allowing more simultaneous connections.</p>
+
+<p>Using full mesh mode connects to all users in the room using P2P connections.</p>
+
+<h2>How to use</h2>
+<div class='divider'></div>
+
+<p>Please read the disclaimer and use it after understanding and agreeing to its contents.</p>
+
+<h3>Disclaimer</h3>
+
+<ul>
+<li>This version of the library (skyway.js) is <strong>not compatible</strong> with the existing SkyWay library (peer.js) or the iOS/Android SDKs.</li>
+<li>As of August 8th, 2016, we are providing the <strong>JavaScript version only</strong>.</li>
+<li><span class='attention'>SFU mode is supported only on the latest stable version of Google Chrome</span>.</li>
+	<ul>
+		<li>Full mesh mode is supported in the latest stable versions of Google Chrome and Mozilla Firefox.</li>
+	</ul>
+<li>This library is still in development and unexpected bugs and errors may occur. Use at your own risk.</li>
+<li>The APIs are subject to change without notification. If you value stability over new features, please use <a href='info-js.html' target='_blank'>our existing library</a>.</li>
+<li>Please direct all questions and bug reports about this new library to the <a href='https://groups.google.com/forum/#!forum/skywayjs' target='_blank'>SkyWay Technical Forum</a>.</li>
+<li>We provide no warranty in the use of this software. In no event shall NTT Communications or any associates be liable for any loss or damages caused by using this library or inability to use this software.</li>
+</ul>
+
+<h3>Library</h3>
+
+<p>Include one of the JavaScript libraries below in your HTML file.</p>
+
+<pre>
+&lt;script type='text/javascript' src='//cdn.skyway.io/skyway.js'&gt;&lt;/script&gt;
+&lt;script type='text/javascript' src='//cdn.skyway.io/skyway.min.js'&gt;&lt;/script&gt;
+</pre>
+
+<h3>Documents</h3>
+
+<p>For information on how to use the new API, look <a href='room-docs.html' target='_blank'>here</a>.</p>
+
+<p>You can use all previously existing API. Please look at the existing documentation <a href='docs/#JS' target='_blank'>here</a>.</p>
+
+<h3>System requirements</h3>
+
+<ul>
+	<li>OS
+		<ul>
+			<li>Windows 7/8/10</li>
+			<li>Mac OS 10.10/10.11</li>
+		</ul>
+	</li>
+	<li>Browsers
+		<ul>
+			<li>SFU mode is supported in <b>the latest stable version of Google Chrome</b></li>
+			<li>FullMesh mode is supported in <b>the latest stable versions of Google Chrome and Mozilla Firefox</b></li>
+		</ul>
+	</li>
+</ul>
+
+<h2>Sample apps</h2>
+<div class='divider'></div>
+
+<p>Here are some samples using the new API.</p>
+
+<ul>
+<li><a href='https://example.skyway.io/sfu_videochat/index.html' target='_blank'>SFU group video chat</a></li>
+<li><a href='https://example.skyway.io/fullmesh_videochat/index.html' target='_blank'>Full mesh group video chat</a></li>
+</ul>
+
+<p><span class='attention'>If you use simple names for the room, you might connect to people you don't know.</span></p>
+
+<p>The code for sample apps can be found <a href='https://github.com/nttcom/SkyWay-JS-Sample' target='_blank'>here</a>.</p>

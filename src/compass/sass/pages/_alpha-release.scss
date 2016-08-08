@@ -1,0 +1,74 @@
+.alpha-release {
+    
+    font-size: 1.2em;
+    
+    h1 {
+        font-size: 2.3em;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 2em;
+        font-weight: bold;
+        margin-top: 2em;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 1.35em;
+        font-weight: bold;
+        margin-top: 1.6em
+    }
+
+    div#date {
+        text-align: right;
+        margin: 10px;
+    }
+
+    p {
+        clear: both;
+    }
+
+    a {
+        color: #5285FF;
+    }
+
+    .attention {
+        font-weight: bold;
+        color: red;
+    }
+
+    figure#p2p {
+        margin-bottom: 15px;
+    }
+
+    img#p2p_img {
+        width: 400px;
+        display: block;
+        margin: 0px auto;
+    }
+
+    div#sfu_fullmesh {
+        max-width: 800px;
+        margin: 0px auto;
+    }
+
+    figure.sfu_fullmesh_figure {
+        float: left;
+        margin: 20px;
+        width: 350px;
+    }
+
+    img#sfu_img {
+        width: 350px;
+    }
+
+    img#fullmesh_img {
+        width: 350px;
+    }
+
+    figcaption {
+        text-align: center;
+    }
+}
