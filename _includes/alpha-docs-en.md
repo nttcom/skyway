@@ -28,9 +28,6 @@ meshRoom.on('stream', function(stream) {
     '<video autoplay class="remoteVideos" src="' + streamURL + '" id="video_' + peerId + '">'
   );
 });
-meshRoom.on('call', function(call){
-  call.answer(window.localStream);
-});
 meshRoom.on('peerLeave', function(peerId) {
   $('#video_' + peerId).remove();
 });
@@ -93,10 +90,6 @@ meshRoom.sendByWS('Hello world!');
 #### open `meshRoom.on('open', function() { ... });`
 
 Emitted when the server acknowledges this client joining the room.
-
-#### call `meshRoom.on('call', function(call) { ... });`
-
-Emitted when another user in the room is calling you. Connect to them using `call.answer(localStream)`.
 
 #### stream `meshRoom.on('stream', function(peerStream) { ... });`
 
