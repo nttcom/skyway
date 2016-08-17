@@ -29,9 +29,6 @@ meshRoom.on('stream', function(stream) {
     '<video autoplay class="remoteVideos" src="' + streamURL + '" id="video_' + peerId + '">'
   );
 });
-meshRoom.on('call', function(call){
-  call.answer(window.localStream);
-});
 meshRoom.on('peerLeave', function(peerId) {
   $('#video_' + peerId).remove();
 });
@@ -74,7 +71,7 @@ meshRoom.on('log', function(logs) {
 meshRoom.getLog();
 ```
 
-#### sendByWS(data)
+#### send(data)
 
 WebSocketを使用して、サーバを経由してルーム内の全てのユーザにデータを送信します。(将来的に、Data Channelを使用したP2Pで直接データを送信するメソッドが追加される予定です。)
 
@@ -86,7 +83,7 @@ meshRoom.on('data', function(message) {
   $('#messages').append('<div>' + message.src + ': ' + message.data + '</div>');
 });
 
-meshRoom.sendByWS('Hello world!');
+meshRoom.send('Hello world!');
 ```
 
 ### Events
@@ -94,10 +91,6 @@ meshRoom.sendByWS('Hello world!');
 #### open `meshRoom.on('open', function() { ... });`
 
 ユーザがルームへ入室したときに発生します。
-
-#### call `meshRoom.on('call', function(call) { ... });`
-
-ルーム内のユーザから接続があったときに発生します。`call.answer(localStream)` で接続出来ます。
 
 #### stream `meshRoom.on('stream', function(peerStream) { ... });`
 
