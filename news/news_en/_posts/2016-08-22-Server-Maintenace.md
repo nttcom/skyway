@@ -1,0 +1,1 @@
+The SkyWay servers will be undergoing maintenance on August 26th, 2016 between 7:00AM to 9:00AM (JST). During this time, you may experience short periods of service interruption to all of our services including the developer's dashboard and videochat. We are sorry in advance for any inconvenience.
