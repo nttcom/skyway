@@ -12,15 +12,15 @@ Join a room and connect to all users in the room. Returns either a `MeshRoom` or
   - mode {string}
     - Specify whether to join a full mesh room or an sfu room. Must be one of `'mesh'` or `'sfu'`. The mode is set to `'mesh'` if this option isn't specified.
   - stream {MediaStream}
-    - The MediaStream object to send to the other users in the room.
+    - The MediaStream object to send to the other users in the room. Works in receive only mode if not defined.
 
 ## MeshRoom
 
-A room connecting you to users in a peer to peer full mesh. Create using `peer.joinRoom('roomName', {mode: 'mesh'})`.
+A room connecting you to users in a peer to peer full mesh. Create using `peer.joinRoom('roomName', {mode: 'mesh', stream: localStream'})`.
 
 ``` javascript
 var peer = new Peer({key: myApiKey});
-var meshRoom = peer.joinRoom('AwesomeRoom', {mode: 'mesh'});
+var meshRoom = peer.joinRoom('AwesomeRoom', {mode: 'mesh', stream: localStream'});
 meshRoom.on('stream', function(stream) {
   var streamURL = URL.createObjectURL(stream);
   var remoteId = stream.peerId;
@@ -31,17 +31,9 @@ meshRoom.on('stream', function(stream) {
 meshRoom.on('peerLeave', function(peerId) {
   $('#video_' + peerId).remove();
 });
-meshRoom.call(myLocalStream);
 ```
 
 ### Functions
-
-#### call([stream])
-
-Creates a MediaConnection with all users in the room. Equivalent to doing `peer.call(id)` for all users in the room. Uses the stream provided in `joinRoom()` if stream argument is not provided.
-
-- stream {MediaStream}
-  - The MediaStream to send to the other peers.
 
 #### close()
 
@@ -85,6 +77,13 @@ meshRoom.on('data', function(message) {
 meshRoom.send('Hello world!');
 ```
 
+#### call([stream]) (experimental)
+
+Updates the stream. Can change from receive only mode to send/receive mode.
+
+- stream {MediaStream}
+  - The MediaStream to send to the other peers.
+
 ### Events
 
 #### open `meshRoom.on('open', function() { ... });`
@@ -124,11 +123,11 @@ Emitted when an error occurs.
 
 ## SFURoom
 
-A room connecting you to users using an SFU server. Create using `peer.joinRoom('roomName', {mode: 'sfu'})`.
+A room connecting you to users using an SFU server. Create using `peer.joinRoom('roomName', {mode: 'sfu', stream: localStream})`.
 
 ``` javascript
 var peer = new Peer({key: myApiKey});
-var sfuRoom = peer.joinRoom('AwesomeRoom', {mode: 'sfu'});
+var sfuRoom = peer.joinRoom('AwesomeRoom', {mode: 'sfu', stream: localStream});
 sfuRoom.on('stream', function(stream) {
   var streamURL = URL.createObjectURL(stream);
   var remoteId = stream.peerId;
@@ -139,17 +138,9 @@ sfuRoom.on('stream', function(stream) {
 sfuRoom.on('removeStream', function(stream) {
   $('#video_' + stream.peerId).remove();
 });
-sfuRoom.call(myLocalStream);
 ```
 
 ### Functions
-
-#### call([stream])
-
-Calls the SFU Server. Start sending your MediaStream and receiving the streams of the users in the room.
-
-- stream {MediaStream}
-  - The MediaStream to send to the other peers.
 
 #### close()
 
@@ -177,6 +168,13 @@ sfuRoom.on('log', function(logs) {
 });
 sfuRoom.getLog();
 ```
+
+#### call([stream]) (experimental)
+
+Updates the stream. Can change from receive only mode to send/receive mode.
+
+- stream {MediaStream}
+  - The MediaStream to send to the other peers.
 
 #### send(data)
 

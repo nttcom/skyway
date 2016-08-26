@@ -13,15 +13,15 @@
     - `'mesh'`(フルメッシュのルーム) か `'sfu'`(SFUを使用したルーム)のどちらかを指定
     - 指定しない場合のデフォルト値は`'mesh'`
   - stream {MediaStream}
-    - ルーム内の他のユーザに送られるMediaStream
+    - ルーム内の他のユーザに送られるMediaStream。指定されなかったら受信のみモードになります。
 
 ## MeshRoom
 
-他のユーザとフルメッシュ接続するタイプのルームです。`peer.joinRoom('roomName', {mode: 'mesh'})`の戻り値でMeshRoomのインスタンスを取得することができます。
+他のユーザとフルメッシュ接続するタイプのルームです。`peer.joinRoom('roomName', {mode: 'mesh', stream: localStream})`の戻り値でMeshRoomのインスタンスを取得することができます。
 
 ``` javascript
 var peer = new Peer({key: myApiKey});
-var meshRoom = peer.joinRoom('AwesomeRoom', {mode: 'mesh'});
+var meshRoom = peer.joinRoom('AwesomeRoom', {mode: 'mesh', stream: localStream});
 meshRoom.on('stream', function(stream) {
   var streamURL = URL.createObjectURL(stream);
   var remoteId = stream.peerId;
@@ -32,17 +32,9 @@ meshRoom.on('stream', function(stream) {
 meshRoom.on('peerLeave', function(peerId) {
   $('#video_' + peerId).remove();
 });
-meshRoom.call(myLocalStream);
 ```
 
 ### Functions
-
-#### call([stream])
-
-ルーム内のすべてのユーザに対してMediaConnectionを確立します。内部でルーム内の全ユーザに対して`peer.call(id)`を行っています。接続が確立すると'stream'イベントが発生し、他のユーザのストリームを取得することができます。引数のstreamが与えられなかった場合、`joinRoom()`のときに渡したストリームを使用します。
-
-- stream {MediaStream}
-  - ルーム内のユーザに送るMediaStream
 
 #### close()
 
@@ -85,6 +77,13 @@ meshRoom.on('data', function(message) {
 
 meshRoom.send('Hello world!');
 ```
+
+#### call([stream]) （実験的機能）
+
+送信しているMediaStreamを更新します。受信のみモードから双方向に切り替えることが出来ます。
+
+- stream {MediaStream}
+  - ルーム内のユーザに送るMediaStream
 
 ### Events
 
@@ -131,7 +130,7 @@ SFUサーバを介して他のユーザと接続するタイプのルームで�
 
 ``` javascript
 var peer = new Peer({key: myApiKey});
-var sfuRoom = peer.joinRoom('AwesomeRoom', {mode: 'sfu'});
+var sfuRoom = peer.joinRoom('AwesomeRoom', {mode: 'sfu', stream: localStream});
 sfuRoom.on('stream', function(stream) {
   var streamURL = URL.createObjectURL(stream);
   var remoteId = stream.peerId;
@@ -142,18 +141,9 @@ sfuRoom.on('stream', function(stream) {
 sfuRoom.on('removeStream', function(stream) {
   $('#video_' + stream.peerId).remove();
 });
-sfuRoom.call(myLocalStream);
 ```
 
 ### Functions
-
-#### call([stream])
-
-SFUサーバへの接続を開始します。接続が確立すると'stream'イベントが発生し、他のユーザのストリームを取得することができます。
-引数のstreamが与えられなかった場合、`joinRoom()`のときに渡したストリームを使用します。
-
-- stream {MediaStream}
-  - 他のユーザに送るMediaStream
 
 #### close()
 
@@ -196,6 +186,13 @@ sfuRoom.on('data', function(message) {
 
 sfuRoom.send('Hello world!');
 ```
+
+#### call([stream]) （実験的機能）
+
+送信しているMediaStreamを更新します。受信のみモードから双方向に切り替えることが出来ます。
+
+- stream {MediaStream}
+  - ルーム内のユーザに送るMediaStream
 
 ### Events
 
