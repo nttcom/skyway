@@ -29,9 +29,6 @@ meshRoom.on('stream', function(stream) {
     '<video autoplay class="remoteVideos" src="' + streamURL + '" id="video_' + peerId + '">'
   );
 });
-meshRoom.on('call', function(call){
-  call.answer(window.localStream);
-});
 meshRoom.on('peerLeave', function(peerId) {
   $('#video_' + peerId).remove();
 });
@@ -94,10 +91,6 @@ meshRoom.sendByWS('Hello world!');
 #### open `meshRoom.on('open', function() { ... });`
 
 ユーザがルームへ入室したときに発生します。
-
-#### call `meshRoom.on('call', function(call) { ... });`
-
-ルーム内のユーザから接続があったときに発生します。`call.answer(localStream)` で接続出来ます。
 
 #### stream `meshRoom.on('stream', function(peerStream) { ... });`
 
