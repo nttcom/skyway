@@ -1,0 +1,1 @@
+We have changed the support policy of SkyWay and renewed our <a href="support.html">support pages</a>.
