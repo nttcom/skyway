@@ -6,10 +6,16 @@ var $ = require('jquery');
 
 $(document).ready(function() {
 
-    const announce = 'https://skyway-support.zendesk.com/api/v2/help_center/ja/sections/207255008/articles.json';
-    const release = 'https://skyway-support.zendesk.com/api/v2/help_center/ja/sections/207271007/articles.json';
-    const maintenance = 'https://skyway-support.zendesk.com/api/v2/help_center/ja/sections/207271047/articles.json';
-    const failure = 'https://skyway-support.zendesk.com/api/v2/help_center/ja/sections/207255108/articles.json';
+    var href = window.location.href;
+    var prefix = 'ja';
+    if(href.match('\/en')){
+        prefix = 'en-us';
+    }
+
+    const announce = 'https://skyway-support.zendesk.com/api/v2/help_center/'+prefix+'/sections/207255008/articles.json';
+    const release = 'https://skyway-support.zendesk.com/api/v2/help_center/'+prefix+'/sections/207271007/articles.json';
+    const maintenance = 'https://skyway-support.zendesk.com/api/v2/help_center/'+prefix+'/sections/207271047/articles.json';
+    const failure = 'https://skyway-support.zendesk.com/api/v2/help_center/'+prefix+'/sections/207255108/articles.json';
 
     $.ajax({
         url: announce,
