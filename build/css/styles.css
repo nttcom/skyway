@@ -9281,6 +9281,34 @@ a {
     margin: 0;
   }
 }
+/* tab */
+#tab-menu {
+  padding: 0px;
+  list-style: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+#tab-menu li {
+  display: inline-block;
+  padding: 5px 25px;
+  background: #eee;
+}
+
+#tab-menu li.active {
+  background: #5285FF;
+  color: #fff;
+}
+
+/* タブの中身 */
+#tab-box div.inactive {
+  display: none;
+}
+
+#tab-box div.active {
+  display: block;
+}
+
 .top-container-left {
   height: 600px;
   background-color: royalblue;

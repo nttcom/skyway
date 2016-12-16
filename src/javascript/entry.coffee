@@ -6,6 +6,7 @@ bootstrap    = require 'bootstrap'
 button       = require './button'
 position     = require './position'
 share        = require './share'
+news         = require './news'
 
 #html5       = require './compatibility/html5'
 #respond     = require './compatibility/respond.src.js'

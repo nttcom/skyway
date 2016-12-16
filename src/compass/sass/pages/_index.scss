@@ -221,3 +221,30 @@
         margin: 0;
     }
 }
+
+/* tab */
+#tab-menu {
+    padding: 0px;
+    list-style: none;
+    text-align: center;
+    cursor: pointer;
+}
+#tab-menu li {
+    display: inline-block;
+    padding: 5px 25px;
+    background: #eee;
+}
+#tab-menu li.active {
+    background: $skyway_blue;
+    color: #fff;
+}
+
+/* タブの中身 */
+#tab-box {
+}
+#tab-box div.inactive {
+    display: none;
+}
+#tab-box div.active {
+    display: block;
+}
