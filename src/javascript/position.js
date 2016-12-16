@@ -1,5 +1,6 @@
 // Used for positioning the "Up" button on the Q&A page
 
+/**
 var $ = require('jquery');
 
 //function placeOnRightHandEdgeOfElement(toolbar, pageElement) {
@@ -41,3 +42,4 @@ $(document).ready(function() {
     });
 //    $("#toolbar").resize();
 });
+ **/
