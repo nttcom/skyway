@@ -230,13 +230,19 @@
     cursor: pointer;
 }
 #tab-menu li {
+    width: 170px;
+    margin-bottom: 5px;
     display: inline-block;
     padding: 5px 25px;
     background: #eee;
 }
 #tab-menu li.active {
-    background: $skyway_blue;
-    color: #fff;
+    border-width: 5px 5px 0 5px;
+    border-color: #eee;
+    border-style: solid;
+    background: #fff;
+    color: #000;
+    padding: 0px 20px 5px 20px;
 }
 
 /* タブの中身 */
