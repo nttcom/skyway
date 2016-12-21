@@ -106,45 +106,50 @@ description: WebRTC is a revolutionary new technology that allows browsers and a
             </div>
         </div>
         
-        {% include signup-div.html %} 
-        
+        {% include signup-div.html %}
+
         <div class="row main-content-row">
             <div class="col-sm-12 paper-style-div">
                 <h2>Our latest updates.</h2>
+
                 <div class="divider"></div>
                 <div class="row">
-                    <div class="col-sm-10 col-sm-offset-1">
-                        {% for post in site.categories.news_en limit:3 %}
-                            <div class="row mini-headline">
-                                <div class="col-sm-2">
-                                    <div class="row">
-                                        <div class="col-sm-10 col-sm-offset-1 mini-headline-date">
-                                            {{ post.date | date: "%Y.%m.%d " }}
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-10 mini-headline-text">{{ post.excerpt }}</div>
+                    <!-- タブメニュー -->
+                    <ul id="tab-menu">
+                        <li class="active">Announce</li>
+                        <li>Release</li>
+                        <li>Maintenance</li>
+                        <li>Failure</li>
+                    </ul>
+                    <!-- タブの中身 -->
+                    <div id="tab-box">
+                        <div id="tab0" class="active">
+                            <div class="row">
+                                <div class="col-sm-10 col-sm-offset-1" id="announce"></div>
                             </div>
-                        {% endfor %}
-                            <div class="row mini-headline">
-                                <div class="col-sm-2">
-                                    <div class="row">
-                                        <div class="col-sm-10 col-sm-offset-1 mini-headline-date">
-                                           2016.08.08
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-10 mini-headline-text">Alpha release of multi-user connection and SFU functionality.<br>For details and instructions, please see <a href="alpha-release.html">Alpha release of multi-user connection and SFU functionality</a>
-                                </div>
+                        </div>
+                        <div id="tab1" class="inactive">
+                            <div class="row">
+                                <div class="col-sm-10 col-sm-offset-1" id="release"></div>
                             </div>
+                        </div>
+                        <div id="tab2" class="inactive">
+                            <div class="row">
+                                <div class="col-sm-10 col-sm-offset-1" id="maintenance"></div>
+                            </div>
+                        </div>
+                        <div id="tab3" class="inactive">
+                            <div class="row">
+                                <div class="col-sm-10 col-sm-offset-1" id="failure"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            
-                <a class="btn-paper btn-inverted btn-center" href='news.html'>
+
+                <a class="btn-paper btn-inverted btn-center" href='https://support.skyway.io/hc/en-us/categories/204577147'>
                     All News
-                </a>  
+                </a>
             </div>
         </div>
-    
     </div>
 </div>
