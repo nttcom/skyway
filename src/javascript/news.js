@@ -6,12 +6,14 @@ var $ = require('jquery');
 
 $(document).ready(function() {
 
+    // 言語判定（英語ページの場合は英語の情報を取得するため）
     var href = window.location.href;
     var prefix = 'ja';
     if(href.match('\/en')){
         prefix = 'en-us';
     }
 
+    // APIリクエスト
     const announce = 'https://skyway-support.zendesk.com/api/v2/help_center/'+prefix+'/sections/207255008/articles.json';
     const release = 'https://skyway-support.zendesk.com/api/v2/help_center/'+prefix+'/sections/207271007/articles.json';
     const maintenance = 'https://skyway-support.zendesk.com/api/v2/help_center/'+prefix+'/sections/207271047/articles.json';
@@ -61,6 +63,7 @@ $(document).ready(function() {
         console.log('xhr failed');
     });
 
+    // タブ切り替え
     $('#tab-menu li').on('click', function(){
         if($(this).not('active')){
             // タブメニュー
@@ -99,11 +102,18 @@ $(document).ready(function() {
 
 });
 
+// 最新情報のDom生成
 function updateNews(obj,id){
     var dom = '';
-    for(var i = obj.articles.length - 1;i >= 0;i--){
-        // <div class="col-sm-2"><div class="row"><div class="col-sm-10 col-sm-offset-1 mini-headline-date">' + obj.articles[i].body.substr(4,10) + '</div></div></div>
-        dom += '<div class="row mini-headline"><div class="col-sm-2"><div class="row"><div class="col-sm-10 col-sm-offset-1 mini-headline-date">' + obj.articles[i].body.substr(4,10) + '</div></div></div><div class="col-sm-10 mini-headline-text">' + obj.articles[i].body + '</div></div>'
+    var cnt = obj.articles.length - 1;
+    if(obj.articles.length > 5) {
+        var cnt = 4;
+    }
+    for(var i = cnt;i >= 0;i--){
+        dom += '<div class="row mini-headline"><div class="col-sm-2"><div class="row"><div class="col-sm-10 col-sm-offset-1 mini-headline-date">'
+            + obj.articles[i].body.substr(4,10)
+            + '</div></div></div><div class="col-sm-10 mini-headline-text">'
+            + obj.articles[i].body + '</div></div>'
     }
     $('#'+id).html(dom);
 }
