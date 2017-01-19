@@ -105,15 +105,35 @@ $(document).ready(function() {
 // 最新情報のDom生成
 function updateNews(obj,id){
     var dom = '';
-    var cnt = obj.articles.length - 1;
-    if(obj.articles.length > 5) {
-        var cnt = 4;
+    object_array_sort(obj.articles,'body','asc',function(articles){
+        var cnt = articles.length - 1;
+        if(articles.length > 5) {
+            var cnt = 4;
+        }
+        for(var i = cnt;i >= 0;i--){
+            dom += '<div class="row mini-headline"><div class="col-sm-2"><div class="row"><div class="col-sm-10 col-sm-offset-1 mini-headline-date">'
+                + articles[i].body.substr(4,10)
+                + '</div></div></div><div class="col-sm-10 mini-headline-text">'
+                + articles[i].body + '</div></div>'
+        }
+        $('#'+id).html(dom);
+    });
+}
+
+// 並び替え
+function object_array_sort(data,key,order,fn){
+    var num_a = -1;
+    var num_b = 1;
+    if(order === 'asc'){
+        num_a = 1;
+        num_b = -1;
     }
-    for(var i = cnt;i >= 0;i--){
-        dom += '<div class="row mini-headline"><div class="col-sm-2"><div class="row"><div class="col-sm-10 col-sm-offset-1 mini-headline-date">'
-            + obj.articles[i].body.substr(4,10)
-            + '</div></div></div><div class="col-sm-10 mini-headline-text">'
-            + obj.articles[i].body + '</div></div>'
-    }
-    $('#'+id).html(dom);
+    data.sort(function(a, b){
+        var x = a[key];
+        var y = b[key];
+        if (x > y) return num_a;
+        if (x < y) return num_b;
+        return 0;
+    });
+    fn(data);
 }
