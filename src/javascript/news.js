@@ -104,13 +104,13 @@ $(document).ready(function() {
 
 // 最新情報のDom生成
 function updateNews(obj,id){
-    var dom = '';
-    object_array_sort(obj.articles,'body','asc',function(articles){
+    object_array_sort(obj.articles,'body','desc',function(articles){
         var cnt = articles.length - 1;
         if(articles.length > 5) {
             var cnt = 4;
         }
-        for(var i = cnt;i >= 0;i--){
+        var dom = '';
+        for(var i = 0;i <= cnt;i++){
             dom += '<div class="row mini-headline"><div class="col-sm-2"><div class="row"><div class="col-sm-10 col-sm-offset-1 mini-headline-date">'
                 + articles[i].body.substr(4,10)
                 + '</div></div></div><div class="col-sm-10 mini-headline-text">'
