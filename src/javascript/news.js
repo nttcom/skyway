@@ -14,10 +14,11 @@ $(document).ready(function() {
     }
 
     // APIリクエスト
-    const announce = 'https://skyway-support.zendesk.com/api/v2/help_center/'+prefix+'/sections/207255008/articles.json';
-    const release = 'https://skyway-support.zendesk.com/api/v2/help_center/'+prefix+'/sections/207271007/articles.json';
-    const maintenance = 'https://skyway-support.zendesk.com/api/v2/help_center/'+prefix+'/sections/207271047/articles.json';
-    const failure = 'https://skyway-support.zendesk.com/api/v2/help_center/'+prefix+'/sections/207255108/articles.json';
+    // リクエスト条件：最大取得件数4件、作成日で降順ソート
+    const announce = 'https://skyway-support.zendesk.com/api/v2/help_center/'+prefix+'/sections/207255008/articles.json?sort_by=created_at&sort_order=desc&per_page=4';
+    const release = 'https://skyway-support.zendesk.com/api/v2/help_center/'+prefix+'/sections/207271007/articles.json?sort_by=created_at&sort_order=desc&per_page=4';
+    const maintenance = 'https://skyway-support.zendesk.com/api/v2/help_center/'+prefix+'/sections/207271047/articles.json?sort_by=created_at&sort_order=desc&per_page=4';
+    const failure = 'https://skyway-support.zendesk.com/api/v2/help_center/'+prefix+'/sections/207255108/articles.json?sort_by=created_at&sort_order=desc&per_page=4';
 
     $.ajax({
         url: announce,
@@ -104,36 +105,12 @@ $(document).ready(function() {
 
 // 最新情報のDom生成
 function updateNews(obj,id){
-    object_array_sort(obj.articles,'body','desc',function(articles){
-        var cnt = articles.length - 1;
-        if(articles.length > 5) {
-            var cnt = 4;
-        }
-        var dom = '';
-        for(var i = 0;i <= cnt;i++){
-            dom += '<div class="row mini-headline"><div class="col-sm-2"><div class="row"><div class="col-sm-10 col-sm-offset-1 mini-headline-date">'
-                + articles[i].body.substr(4,10)
-                + '</div></div></div><div class="col-sm-10 mini-headline-text">'
-                + articles[i].body + '</div></div>'
-        }
-        $('#'+id).html(dom);
-    });
-}
-
-// 並び替え
-function object_array_sort(data,key,order,fn){
-    var num_a = -1;
-    var num_b = 1;
-    if(order === 'asc'){
-        num_a = 1;
-        num_b = -1;
+    var dom = '';
+    for(var i = 0;i < obj.articles.length;i++){
+        dom += '<div class="row mini-headline"><div class="col-sm-2"><div class="row"><div class="col-sm-10 col-sm-offset-1 mini-headline-date">'
+            + obj.articles[i].body.substr(4,10)
+            + '</div></div></div><div class="col-sm-10 mini-headline-text">'
+            + obj.articles[i].body + '</div></div>'
     }
-    data.sort(function(a, b){
-        var x = a[key];
-        var y = b[key];
-        if (x > y) return num_a;
-        if (x < y) return num_b;
-        return 0;
-    });
-    fn(data);
+    $('#'+id).html(dom);
 }
