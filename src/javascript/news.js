@@ -14,10 +14,11 @@ $(document).ready(function() {
     }
 
     // APIリクエスト
-    const announce = 'https://skyway-support.zendesk.com/api/v2/help_center/'+prefix+'/sections/207255008/articles.json';
-    const release = 'https://skyway-support.zendesk.com/api/v2/help_center/'+prefix+'/sections/207271007/articles.json';
-    const maintenance = 'https://skyway-support.zendesk.com/api/v2/help_center/'+prefix+'/sections/207271047/articles.json';
-    const failure = 'https://skyway-support.zendesk.com/api/v2/help_center/'+prefix+'/sections/207255108/articles.json';
+    // リクエスト条件：最大取得件数4件、作成日で降順ソート
+    const announce = 'https://skyway-support.zendesk.com/api/v2/help_center/'+prefix+'/sections/207255008/articles.json?sort_by=created_at&sort_order=desc&per_page=4';
+    const release = 'https://skyway-support.zendesk.com/api/v2/help_center/'+prefix+'/sections/207271007/articles.json?sort_by=created_at&sort_order=desc&per_page=4';
+    const maintenance = 'https://skyway-support.zendesk.com/api/v2/help_center/'+prefix+'/sections/207271047/articles.json?sort_by=created_at&sort_order=desc&per_page=4';
+    const failure = 'https://skyway-support.zendesk.com/api/v2/help_center/'+prefix+'/sections/207255108/articles.json?sort_by=created_at&sort_order=desc&per_page=4';
 
     $.ajax({
         url: announce,
@@ -105,11 +106,7 @@ $(document).ready(function() {
 // 最新情報のDom生成
 function updateNews(obj,id){
     var dom = '';
-    var cnt = obj.articles.length - 1;
-    if(obj.articles.length > 5) {
-        var cnt = 4;
-    }
-    for(var i = cnt;i >= 0;i--){
+    for(var i = 0;i < obj.articles.length;i++){
         dom += '<div class="row mini-headline"><div class="col-sm-2"><div class="row"><div class="col-sm-10 col-sm-offset-1 mini-headline-date">'
             + obj.articles[i].body.substr(4,10)
             + '</div></div></div><div class="col-sm-10 mini-headline-text">'
