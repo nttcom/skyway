@@ -78,9 +78,9 @@ meshRoom.on('data', function(message) {
 meshRoom.send('Hello world!');
 ```
 
-#### call([stream]) （実験的機能）
+#### replaceStream([stream])
 
-送信しているMediaStreamを更新します。受信のみモードから双方向に切り替えることが出来ます。
+送信しているMediaStreamを更新します。受信のみモードから双方向に切り替えることも出来ます。
 
 - stream {MediaStream}
   - ルーム内のユーザに送るMediaStream
@@ -187,9 +187,9 @@ sfuRoom.on('data', function(message) {
 sfuRoom.send('Hello world!');
 ```
 
-#### call([stream]) （実験的機能）
+#### replaceStream([stream]) 
 
-送信しているMediaStreamを更新します。受信のみモードから双方向に切り替えることが出来ます。
+送信しているMediaStreamを更新します。受信のみモードから双方向に切り替えることも出来ます。
 
 - stream {MediaStream}
   - ルーム内のユーザに送るMediaStream
