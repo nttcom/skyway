@@ -77,9 +77,9 @@ meshRoom.on('data', function(message) {
 meshRoom.send('Hello world!');
 ```
 
-#### call([stream]) (experimental)
+#### replaceStream([stream])
 
-Updates the stream. Can change from receive only mode to send/receive mode.
+Updates the stream. Can also change from receive only mode to send/receive mode.
 
 - stream {MediaStream}
   - The MediaStream to send to the other peers.
@@ -169,9 +169,9 @@ sfuRoom.on('log', function(logs) {
 sfuRoom.getLog();
 ```
 
-#### call([stream]) (experimental)
+#### replaceStream([stream])
 
-Updates the stream. Can change from receive only mode to send/receive mode.
+Updates the stream. Can also change from receive only mode to send/receive mode.
 
 - stream {MediaStream}
   - The MediaStream to send to the other peers.
