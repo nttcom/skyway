@@ -9016,18 +9016,6 @@ a {
   margin-bottom: 60px;
 }
 
-.top-features-container [class^="col"]:nth-of-type(3n+1) .feature-box {
-  background-color: #4E5FAD;
-}
-
-.top-features-container [class^="col"]:nth-of-type(3n+2) .feature-box {
-  background-color: #E63300;
-}
-
-.top-features-container [class^="col"]:nth-of-type(3n+3) .feature-box {
-  background-color: #1CC05A;
-}
-
 .feature-box {
   margin-top: 10px;
   margin-bottom: 10px;
