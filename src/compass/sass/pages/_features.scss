@@ -26,20 +26,6 @@
     margin-bottom: 60px;
 }
 
-$colours: #4E5FAD, #E63300, #1CC05A;
-
-@for $i from 1 through length($colours) {
-    .top-features-container [class^="col"]:nth-of-type(#{length($colours)}n+#{$i}) {
-        .feature-box {
-            background-color: nth($colours, $i);
-            
-//            p {
-//                @include alpha-attribute('color', rgba(#fff, 0.6), nth($colours, $i));
-//            }
-        }
-    }
-}
-
 .feature-box {
     @extend .paper-style;
     
