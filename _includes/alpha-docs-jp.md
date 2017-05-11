@@ -26,7 +26,7 @@ meshRoom.on('stream', function(stream) {
   var streamURL = URL.createObjectURL(stream);
   var remoteId = stream.peerId;
   $('#videos').append(
-    '<video autoplay class="remoteVideos" src="' + streamURL + '" id="video_' + peerId + '">'
+    '<video autoplay class="remoteVideos" src="' + streamURL + '" id="video_' + remoteId + '">'
   );
 });
 meshRoom.on('peerLeave', function(peerId) {
@@ -135,7 +135,7 @@ sfuRoom.on('stream', function(stream) {
   var streamURL = URL.createObjectURL(stream);
   var remoteId = stream.peerId;
   $('#videos').append(
-    '<video autoplay class="remoteVideos" src="' + streamURL + '" id="video_' + peerId + '">'
+    '<video autoplay class="remoteVideos" src="' + streamURL + '" id="video_' + remoteId + '">'
   );
 });
 sfuRoom.on('removeStream', function(stream) {
