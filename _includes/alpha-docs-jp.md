@@ -47,7 +47,7 @@ meshRoom.on('peerLeave', function(peerId) {
 ``` javascript
 meshRoom.on('log', function(logs) {
   for (var i = 0; i < logs.length; i++) {
-    var log = logs[i];
+    var log = JSON.parse(logs[i]);
     switch(log.messageType) {
       case 'ROOM_USER_JOIN':
         $('#logs').append('<div>' + log.message.src + ' joined the room.</div>');
@@ -56,7 +56,7 @@ meshRoom.on('log', function(logs) {
         $('#logs').append('<div>' + log.message.src + ' left the room.</div>');
         break;
       case 'ROOM_DATA':
-        $('#logs').append('<div>' + log.src + ': ' + log.message.data + '</div>');
+        $('#logs').append('<div>' + log.message.src + ': ' + log.message.data + '</div>');
         break;
     }
 });
@@ -156,7 +156,7 @@ sfuRoom.on('removeStream', function(stream) {
 ``` javascript
 sfuRoom.on('log', function(logs) {
   for (var i = 0; i < logs.length; i++) {
-    var log = logs[i];
+    var log = JSON.parse(logs[i]);
     switch(log.messageType) {
       case 'ROOM_USER_JOIN':
         $('#logs').append('<div>' + log.message.src + ' joined the room.</div>');
@@ -165,7 +165,7 @@ sfuRoom.on('log', function(logs) {
         $('#logs').append('<div>' + log.message.src + ' left the room.</div>');
         break;
       case 'ROOM_DATA':
-        $('#logs').append('<div>' + log.src + ': ' + log.message.data + '</div>');
+        $('#logs').append('<div>' + log.message.src + ': ' + log.message.data + '</div>');
         break;
     }
 });
