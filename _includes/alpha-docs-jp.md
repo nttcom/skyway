@@ -59,6 +59,7 @@ meshRoom.on('log', function(logs) {
         $('#logs').append('<div>' + log.message.src + ': ' + log.message.data + '</div>');
         break;
     }
+  }
 });
 meshRoom.getLog();
 ```
@@ -168,6 +169,7 @@ sfuRoom.on('log', function(logs) {
         $('#logs').append('<div>' + log.message.src + ': ' + log.message.data + '</div>');
         break;
     }
+  }
 });
 sfuRoom.getLog();
 ```
