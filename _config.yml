@@ -7,9 +7,7 @@ keywords: 'WebRTC,SkyWay,peerjs,skywayjs,RTC'
 homedir:
   jp: 
   en: ../
-new_url:
-  jp: https://webrtc.ecl.ntt.com
-  en: https://webrtc.ecl.ntt.com/en
+new_url: https://webrtc.ecl.ntt.com
 unsupportedBrowser:
   jp: '現在Internet Explorer 9 以下のブラウザに対応していません。<br>最新の<a href="http://windows.microsoft.com/ie" target="_blank">Internet Explorer</a>, または<a href="https://chrome.google.com/" target="_blank">Google Chrome</a>か<a href="https://mozilla.org/firefox/" target="_blank">Firefox</a>の利用を推奨します。'
   en: 'This site does not currently support Internet Explorer 9 or lower. <br>We recommend upgrading to the latest <a href="http://windows.microsoft.com/ie" target="_blank">Internet Explorer</a>, <a href="https://chrome.google.com/">Google Chrome</a>, or <a href="https://mozilla.org/firefox/" target="_blank">Firefox</a>'
