@@ -14,7 +14,7 @@ layout: responsive
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
-                <h1>{{ new_url_strings[0] }}移転しました{{ new_url_strings[1] }}</h1>
+                <h1>{% if page.lang == 'jp' %}移転しました{% else %}Moved{% endif %}</h1>
             </div>
         </div>
     </div>
@@ -27,9 +27,9 @@ layout: responsive
         <div class="row">
             <div class="col-xs-12 col-sm-10 col-sm-offset-1">
                 <div class="support-div">
-                    <h2>このページは <a href="{{ migration_url }}">{{ new_url }}</a> に移転しました</h2>
+                    <h2>{% if page.lang == 'jp' %}このページは{% else %}This page has been moved to{% endif %} <a href="{{ migration_url }}">{{ new_url }}</a> {% if page.lang == 'jp' %}に移転しました{% else %}.{% endif %}</h2>
                     <a class="btn-paper btn-inverted btn-center" href="{{ migration_url }}">
-                        移動する
+                        {% if page.lang == 'jp' %}移動する{% else %}Visit{% endif %}
                     </a>
                     <script>
                         if (location.search !== '?noredirect' ) {
