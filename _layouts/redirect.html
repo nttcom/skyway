@@ -1,0 +1,46 @@
+---
+layout: responsive
+---
+
+{% assign new_url = site.new_url | append: page.new_url %}
+{% assign new_url_strings = new_url | split: '#' %}
+{% capture migration_url %}{{ new_url_strings[0] }}?origin=skyway{% if new_url_strings[1] %}#{{ new_url_strings[1] }}{% endif %}{% endcapture %}
+
+<meta http-equiv="refresh" content="10; URL={{ migration_url }}">
+
+<!-- Top Section -->
+
+<div class="top-section-short">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>{% if page.lang == 'jp' %}移転しました{% else %}Moved{% endif %}</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Main Page Content -->
+
+<div class="background">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+                <div class="support-div">
+                    <h2>{% if page.lang == 'jp' %}このページは{% else %}This page has been moved to{% endif %} <a href="{{ migration_url }}">{{ new_url }}</a> {% if page.lang == 'jp' %}に移転しました{% else %}.{% endif %}</h2>
+                    <a class="btn-paper btn-inverted btn-center" href="{{ migration_url }}">
+                        {% if page.lang == 'jp' %}移動する{% else %}Visit{% endif %}
+                    </a>
+                    <script>
+                        if (location.search !== '?noredirect' ) {
+                            setTimeout(function() {
+                                location.href = '{{ migration_url }}';
+                            }, 100);
+                        }
+                    </script>
+                    {{ content }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
